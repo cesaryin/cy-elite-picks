@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CY Elite Picks - Dashboard</title>
+<style>
+  :root{
+    --bg:#0a0e1c; --card:#131a2e; --card2:#1a2240; --line:#27304f;
+    --txt:#e8ecf8; --mut:#93a0c4; --gold:#f5c542; --green:#3ddc84;
+    --red:#ff5d6c; --blue:#5b8cff; --orange:#ff9f43; --purple:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{overflow-x:hidden;max-width:100%}
+  body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',Arial,sans-serif;line-height:1.5;padding:20px;max-width:1240px;margin:0 auto}
+  img{max-width:100%}
+  /* ===== HEADER ===== */
+  .brand{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .crown{font-size:38px}
+  .brand h1{font-size:30px;background:linear-gradient(90deg,#f5c542,#ff9f43);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:1px}
+  .brand small{display:block;color:var(--mut);font-size:13px;letter-spacing:3px;text-transform:uppercase}
+  /* ===== CALENDARIO COMPACTO (boton + desplegable) ===== */
+  .cal-bar{position:relative;display:flex;align-items:center;gap:10px;margin:14px 0}
+  .cal-btn{background:var(--card);border:1px solid var(--line);color:var(--txt);padding:7px 14px;border-radius:10px;font-size:13.5px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:7px}
+  .cal-btn:hover{border-color:var(--gold)}
+  .cal-btn .ar{color:var(--gold);font-size:11px}
+  .cal-hint{font-size:12px;color:var(--mut)}
+  .cal-pop{display:none;position:absolute;top:calc(100% + 8px);left:0;z-index:60;background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.55);width:320px;max-width:92vw}
+  .cal-pop.open{display:block}
+  .cal-title{font-size:11px;color:var(--mut);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
+  .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+  .day{padding:6px 2px;text-align:center;border-radius:8px;border:1px solid transparent;background:transparent;cursor:default;font-size:10px;color:#566184}
+  .day b{display:block;font-size:13px}
+  .day.has{cursor:pointer;color:var(--txt);border-color:var(--gold);background:var(--card2)}
+  .day.has:hover{background:#232c54}
+  .day.sel{background:var(--gold);color:#0a0e1c;border-color:var(--gold)}
+  .day.sel b{color:#0a0e1c}
+  .day .dot{display:block;width:5px;height:5px;border-radius:50%;background:var(--gold);margin:2px auto 0}
+  .day:not(.has) .dot{display:none}
+  .day.sel .dot{background:#0a0e1c}
+  /* ===== BALANCE GLOBAL ===== */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:16px}
+  .stat-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+  .stat-card .v{font-size:24px;font-weight:800}
+  .stat-card .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+  .v.g{color:var(--green)} .v.r{color:var(--red)} .v.o{color:var(--gold)} .v.b{color:var(--blue)}
+  /* ===== CARDS ===== */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px;position:relative}
+  .hero{background:linear-gradient(135deg,#1a2240 0%,#232c54 100%);border:2px solid var(--gold)}
+  h2{font-size:19px;margin:0 0 14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700;margin-right:6px}
+  .tg-gold{background:rgba(245,197,66,.15);color:var(--gold);border:1px solid var(--gold)}
+  .tg-green{background:rgba(61,220,132,.12);color:var(--green)}
+  .tg-red{background:rgba(255,93,108,.12);color:var(--red)}
+  .tg-blue{background:rgba(91,140,255,.12);color:var(--blue)}
+  .tg-orange{background:rgba(255,159,67,.12);color:var(--orange)}
+  .tg-purple{background:rgba(167,139,250,.12);color:var(--purple)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{color:var(--mut);text-align:left;font-weight:600;padding:8px 10px;border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+  td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  .big{font-size:32px;font-weight:800;color:var(--gold)}
+  .grid{display:grid;gap:16px}
+  .cols2{grid-template-columns:1fr 1fr}
+  @media(max-width:900px){.cols2{grid-template-columns:1fr}}
+  ul{padding-left:20px}
+  li{margin-bottom:7px;font-size:14px}
+  .note{background:rgba(255,159,67,.08);border-left:3px solid var(--orange);padding:12px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin-top:12px}
+  .danger{background:rgba(255,93,108,.08);border-left-color:var(--red)}
+  .ok{background:rgba(61,220,132,.08);border-left-color:var(--green)}
+  .stars{color:var(--gold);letter-spacing:2px}
+  .logo{width:26px;height:26px;vertical-align:middle;margin-right:6px;object-fit:contain}
+  .flag{width:26px;height:18px;vertical-align:middle;margin-right:6px;border-radius:3px;object-fit:cover}
+  .vs{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin:8px 0}
+  .vs img.flag{width:34px;height:24px}
+  .src{font-size:12px;color:var(--mut)}
+  .src a{color:var(--blue);text-decoration:none}
+  .footer{text-align:center;color:var(--mut);font-size:12px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
+  .money{font-weight:700;color:var(--green)}
+  .pend{color:var(--orange);font-weight:700}
+  /* tarjeta Elite dorada */
+  .stat-card.elite{background:linear-gradient(135deg,rgba(245,197,66,.16),rgba(255,159,67,.08));border:1.5px solid var(--gold)}
+  .stat-card.elite .v{color:var(--gold)}
+  .stat-card.elite .l{color:var(--gold);opacity:.9}
+  /* botones de rango del gráfico */
+  .rangebtns{display:flex;gap:4px}
+  .rangebtns button{background:var(--card);border:1px solid var(--line);color:var(--mut);font-size:11px;padding:3px 9px;border-radius:7px;cursor:pointer;font-family:inherit}
+  .rangebtns button.active{background:var(--gold);color:#0a0e1c;border-color:var(--gold);font-weight:700}
+  /* candado premium */
+  .locked-src{filter:blur(6px);user-select:none;pointer-events:none}
+  .lockover{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;z-index:5}
+  .lockbtn{display:inline-flex;flex-direction:column;align-items:center;background:linear-gradient(135deg,#f5c542,#ff9f43);color:#0a0e1c;font-weight:800;border:none;padding:7px 16px;border-radius:20px;font-size:13px;font-family:inherit;box-shadow:0 3px 14px rgba(245,197,66,.4);text-align:center;cursor:default;margin-top:40px}
+  .lockbtn small{display:block;font-weight:600;font-size:9px;opacity:.8;margin-top:1px}
+  .logo-emblem{flex:0 0 auto}
+  /* insignia de equipo/país en texto (se ve sin internet, ideal para compartir) */
+  .tm{display:inline-block;background:var(--card2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:11px;font-weight:700;color:var(--txt);margin-right:5px;vertical-align:middle;letter-spacing:.3px}
+  /* ===== TABLET (≤900px) ===== */
+  @media(max-width:900px){
+    body{padding:16px}
+    .stats{grid-template-columns:repeat(3,1fr)}
+  }
+  /* ===== MOVIL (≤700px) ===== */
+  @media(max-width:700px){
+    body{padding:10px}
+    .crown{font-size:28px}
+    .brand h1{font-size:21px}
+    .brand small{font-size:10px;letter-spacing:1.5px}
+    .cal-btn{font-size:12.5px;padding:6px 11px}
+    .cal-hint{display:none}
+    .cal-pop{width:290px;padding:11px}
+    .stat-card{padding:10px}
+    .stat-card .v{font-size:18px}
+    .stat-card .l{font-size:9.5px}
+    .card{padding:13px;border-radius:12px}
+    h2{font-size:15.5px}
+    .big{font-size:24px}
+    .vs{font-size:14px;flex-wrap:wrap;gap:6px}
+    .vs img.flag{width:26px;height:18px}
+    li{font-size:13px}
+    .note{font-size:12.5px;padding:10px}
+    .tag{font-size:10.5px;padding:2px 8px}
+    /* tablas: se deslizan con el dedo en vez de romperse */
+    table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    th,td{white-space:nowrap;font-size:12.5px;padding:7px 8px}
+    .logo{width:20px;height:20px}
+    .flag{width:20px;height:14px}
+    .footer{font-size:11px}
+  }
+  /* ===== MOVIL CHICO (≤400px) ===== */
+  @media(max-width:400px){
+    .cal-pop{width:260px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .brand h1{font-size:18px}
+  }
+  /* ===== IMPRESIÓN / PDF ===== */
+  @page{ size:A4; margin:9mm }
+  @media print{
+    *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important }
+    html,body{ background:#0a0e1c !important; padding:0 !important; max-width:100% !important }
+    .cal-bar{ display:none !important }
+    .card,.stat-card{ break-inside:avoid }
+    .grid.cols2{ grid-template-columns:1fr 1fr }
+    a{ color:var(--blue) !important; text-decoration:none }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ MARCA ============ -->
+<div class="brand">
+  <svg class="logo-emblem" viewBox="0 0 50 46" width="46" height="42" xmlns="http://www.w3.org/2000/svg">
+    <!-- balón de fútbol (arriba) -->
+    <circle cx="25" cy="14" r="12" fill="#fff" stroke="#0a0e1c" stroke-width="1"/>
+    <polygon points="25,9 29.5,12.3 27.8,17.5 22.2,17.5 20.5,12.3" fill="#0a0e1c"/>
+    <path d="M25 2.2 L25 9 M13.2 14 L20.5 12.3 M36.8 14 L29.5 12.3 M19.5 24 L22.2 17.5 M30.5 24 L27.8 17.5" stroke="#0a0e1c" stroke-width="1" fill="none"/>
+    <!-- pelota de béisbol (abajo izquierda) -->
+    <circle cx="13.5" cy="31" r="11" fill="#fff" stroke="#0a0e1c" stroke-width="1"/>
+    <path d="M6.7 24 Q11 31 6.7 38 M20.3 24 Q16 31 20.3 38" stroke="#e23b4b" stroke-width="1.3" fill="none"/>
+    <!-- balón de baloncesto (abajo derecha) -->
+    <circle cx="36.5" cy="31" r="11" fill="#ff9f43" stroke="#0a0e1c" stroke-width="1"/>
+    <path d="M25.5 31 H47.5 M36.5 20 V42 M28.5 22 Q36.5 31 28.5 40 M44.5 22 Q36.5 31 44.5 40" stroke="#0a0e1c" stroke-width="1.1" fill="none"/>
+  </svg>
+  <div>
+    <h1>CY ELITE PICKS</h1>
+    <small>Sistema de análisis deportivo · MLB · Soccer · NBA · Banca en unidades</small>
+  </div>
+</div>
+
+<!-- ============ CALENDARIO COMPACTO ============ -->
+<div class="cal-bar">
+  <button class="cal-btn" id="calBtn">📅 <span id="calLabel">Elegir día</span> <span class="ar">▼</span></button>
+  <span class="cal-hint">Toca para ver otros días</span>
+  <div class="cal-pop" id="calPop">
+    <div class="cal-title">Junio 2026 · los días dorados tienen informe</div>
+    <div class="cal" id="cal"></div>
+  </div>
+</div>
+
+<!-- ============ BALANCE GLOBAL (contenido estático; el JS lo reemplaza si corre) ============ -->
+<div class="stats" id="stats">
+  <div class="stat-card"><div class="v g">5</div><div class="l">Ganados</div></div>
+  <div class="stat-card"><div class="v r">1</div><div class="l">Perdidos</div></div>
+  <div class="stat-card"><div class="v o">3</div><div class="l">Pendientes</div></div>
+  <div class="stat-card"><div class="v b">83%</div><div class="l">% Acierto</div></div>
+  <div class="stat-card"><div class="v g">+3.28U</div><div class="l">Neto (U)</div></div>
+  <div class="stat-card"><div class="v b">7.0U</div><div class="l">Arriesgado</div></div>
+</div>
+
+<!-- ============ ESTADÍSTICAS AVANZADAS ============ -->
+<div class="card" id="advCard">
+  <h2>📈 Estadísticas avanzadas — nuestro rendimiento</h2>
+  <div id="advstats">
+    <div class="stats" style="margin-bottom:14px">
+      <div class="stat-card"><div class="v g">+46.9%</div><div class="l">ROI</div></div>
+      <div class="stat-card"><div class="v g">4V 🔥</div><div class="l">Racha actual</div></div>
+      <div class="stat-card elite"><div class="v">🏆 2-0</div><div class="l">Jugada Elite (5★)</div></div>
+      <div class="stat-card"><div class="v g">+2.09U</div><div class="l">Neto Elite</div></div>
+      <div class="stat-card"><div class="v b">+0.55U</div><div class="l">U por pick</div></div>
+    </div>
+    <div style="background:var(--card2);border-radius:12px;padding:14px 10px 8px;margin-bottom:14px">
+      <div style="margin:0 0 8px 6px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px">💰 Evolución de la banca (U)</div>
+      <svg viewBox="0 0 560 150" style="width:100%;height:auto">
+        <line x1="30" y1="120" x2="530" y2="120" stroke="var(--line)" stroke-dasharray="3 3"/>
+        <path d="M30,120 L30,105.7 L280,30 L530,30 L530,120 Z" fill="rgba(245,197,66,.15)"/>
+        <path d="M30,105.7 L280,30 L530,30" fill="none" stroke="var(--gold)" stroke-width="2.5"/>
+        <circle cx="30" cy="105.7" r="3.5" fill="var(--gold)"/><text x="30" y="96" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+0.5U</text><text x="30" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/11</text>
+        <circle cx="280" cy="30" r="3.5" fill="var(--gold)"/><text x="280" y="21" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+3.3U</text><text x="280" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/12</text>
+        <circle cx="530" cy="30" r="3.5" fill="var(--gold)"/><text x="530" y="21" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+3.3U</text><text x="530" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/13</text>
+      </svg>
+    </div>
+    <div class="grid cols2">
+      <div><div style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">🏅 Por deporte</div>
+        <table><tr><th>Deporte</th><th>G-P</th><th>Neto</th><th>ROI</th></tr>
+          <tr><td>Soccer</td><td>4-0</td><td style="font-weight:700;color:var(--green)">+3.57U</td><td style="color:var(--green)">+71%</td></tr>
+          <tr><td>MLB</td><td>1-1</td><td style="font-weight:700;color:var(--red)">-0.29U</td><td style="color:var(--red)">-15%</td></tr>
+        </table></div>
+      <div><div style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">🎯 Por tipo de apuesta</div>
+        <table><tr><th>Tipo</th><th>G-P</th><th>Neto</th><th>ROI</th></tr>
+          <tr><td>Total</td><td>2-0</td><td style="font-weight:700;color:var(--green)">+2.09U</td><td style="color:var(--green)">+70%</td></tr>
+          <tr><td>Spread</td><td>1-0</td><td style="font-weight:700;color:var(--green)">+0.71U</td><td style="color:var(--green)">+71%</td></tr>
+          <tr><td>ML</td><td>2-1</td><td style="font-weight:700;color:var(--green)">+0.48U</td><td style="color:var(--green)">+16%</td></tr>
+        </table></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTENIDO DEL DIA (estático; el JS lo reemplaza y habilita el calendario) ============ -->
+<div id="contenido">
+<div style="margin:4px 0 14px;color:var(--mut);font-size:14px">📋 Informe del <b style="color:var(--gold)">sábado, 13 de junio de 2026</b></div>
+
+<div class="card hero">
+  <span class="tag tg-gold">🏆 JUGADA ELITE DEL DÍA</span>
+  <span class="tag tg-green">CONFIANZA ⭐⭐⭐⭐⭐</span>
+  <span class="tag tg-blue">1.5U · 3% de banca</span>
+  <div class="vs" style="margin-top:12px">
+    <span class="tm">NYK</span> Knicks <span style="color:var(--mut)">@</span> <span class="tm">SAS</span> Spurs — <span style="color:var(--mut);font-size:14px">🏀 FINAL NBA · Juego 5 · 8:30 PM ET</span>
+  </div>
+  <h2>UNDER 216.5 PUNTOS — en Kalshi: comprar "NO" en Over 216.5</h2>
+  <div class="big">-110</div>
+  <div style="color:var(--mut);font-size:13px">💵 1.5U (3% de banca) → ganancia ≈ <span class="money">+1.36U</span></div>
+  <ul style="margin-top:12px">
+    <li><b>🧠 Modelo SportsLine (10,000 simulaciones) proyecta 212 puntos</b> y da el Under como acierto del 58%.</li>
+    <li><b>📈 El Under pegó en 3 de los 4 partidos de la Final</b> — y en LOS DOS jugados en San Antonio (cancha de hoy).</li>
+    <li>Juego de eliminación = ritmo lento, defensas apretadas. Wembanyama 29 proy. / Brunson 24.</li>
+    <li><b>Knicks lideran 3-1</b> — hoy pueden ser campeones por primera vez desde 1973. <b>Kornet (Spurs) en duda.</b></li>
+    <li>Jugamos el total (no el ganador) porque las capas chocan en quién gana, pero todas coinciden en pocos puntos.</li>
+  </ul>
+  <div class="note ok"><b>✅ En Kalshi:</b> Knicks vs Spurs → Total de puntos → "Over 216.5" → comprar <b>NO a ≤53¢ (-110 o mejor)</b>. 1.5U.</div>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <span class="tag tg-purple">🥈 PICK VALOR — ⭐⭐⭐⭐ (1U)</span>
+    <h2 style="margin-top:10px"><span class="tm">CHC</span>Cubs ML vs <span class="tm">SF</span>Giants (9:05 PM ET)</h2>
+    <div class="big" style="font-size:26px">-122 <span style="font-size:14px;color:var(--mut)">1U (2%) → ganancia ≈ +0.82U</span></div>
+    <ul style="margin-top:10px">
+      <li><b>💰 Sharp money (Action PRO):</b> 73% de apuestas pero <b>80% del dinero</b> en Cubs.</li>
+      <li><b>⚾ Ventaja de pitcheo clara:</b> Ben Brown (<b>1.74 ERA</b>) vs McDonald (4.15).</li>
+      <li>En Kalshi: "SÍ" Cubs. <b>No peor que -133.</b></li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag tg-orange">🥉 PICK CONDICIONAL — ⭐⭐⭐⭐ (1U solo si cumple)</span>
+    <h2 style="margin-top:10px"><span class="tm">SUI</span>Suiza -1.5 vs <span class="tm">QAT</span>Qatar (3:00 PM ET)</h2>
+    <div class="big" style="font-size:26px">≤ -160 <span style="font-size:14px;color:var(--mut)">spread Suiza (gana por 2+)</span></div>
+    <ul style="margin-top:10px">
+      <li><b>🧠 Experto SportsLine:</b> Suiza invicta en oficiales desde nov-2024; Qatar perdió con Palestina, Túnez, Zimbabue e Irlanda.</li>
+      <li>Suiza -550 a ganar (impagable) → la vía es el spread -1.5 con Xhaka y Kobel.</li>
+      <li><b>Condición:</b> solo si en Kalshi está a -160 o mejor.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🌙 Cierre del día — 13 de junio</h2>
+  <table>
+    <tr><th>Pick</th><th>Cuota</th><th>U</th><th>Resultado</th><th>+/- U</th></tr>
+    <tr><td><span class="tm">NYK</span>Under 216.5 Knicks-Spurs</td><td>-110</td><td>1.5U</td><td class="pend">⏳ Pendiente</td><td>—</td></tr>
+    <tr><td><span class="tm">CHC</span>Cubs ML</td><td>-122</td><td>1U</td><td class="pend">⏳ Pendiente</td><td>—</td></tr>
+    <tr><td><span class="tm">SUI</span>Suiza -1.5 (condicional)</td><td>≤-160</td><td>1U</td><td class="pend">⏳ Pendiente</td><td>—</td></tr>
+  </table>
+  <div class="note">💵 Banca guía $500 · 1U = $10 (2%) · Jugada Elite 1.5U (3%) · total del día 3.5U.</div>
+</div>
+
+<div class="card locked">
+  <h2>📚 Fuentes del día</h2>
+  <div class="lockover"><div class="lockbtn">🔒 Coming Soon<small>Acceso premium</small></div></div>
+  <p class="src locked-src">Action Network PRO · SportsLine · CBS Sports · MLB.com · Linemate · ESPN · DraftKings Network · Covers · FanDuel Research</p>
+</div>
+
+<div class="note" style="background:rgba(91,140,255,.08);border-left-color:var(--blue)">📱 ¿Ves esto en el celular? Para el <b>calendario y los días anteriores</b>, abre este archivo con el navegador <b>Chrome</b> (no dentro de WhatsApp).</div>
+</div>
+
+<div class="footer">
+  CY Elite Picks · Solo cuotas jugables (regla riesgo/beneficio) · Ninguna apuesta es 100% segura — juega solo dinero que puedas perder.<br>
+  Pide "picks del día" cada mañana y se agrega el nuevo día al calendario.
+</div>
+
+<script>
+/* =====================================================================
+   REGISTRO DE PICKS — una fila por pick. resultado: "W" gana, "L" pierde,
+   "P" pendiente, "X" cancelado. u = unidades arriesgadas (Elite 1.5=3%, resto 1=2%). neto = ganancia/perdida en U.
+   ===================================================================== */
+const RESULTADOS = [
+  // ===== 15 JUNIO =====   campos: deporte (NBA/MLB/Soccer), tipo (ML/Total/Spread), conf (5=Elite,4=Valor)
+  {fecha:"2026-06-15", deporte:"MLB",    tipo:"ML",     conf:5, pick:"Rays ML @ Dodgers (sharp +20% + Martinez 2.43 vs Lauer 5.47)", cuota:"+144", u:1.5, resultado:"P", neto:0},
+  {fecha:"2026-06-15", deporte:"MLB",    tipo:"ML",     conf:4, pick:"Angels ML @ D-backs (sharp +19% + Ureña 2.44 vs Nelson 5.19)", cuota:"+117", u:1,   resultado:"P", neto:0},
+  {fecha:"2026-06-15", deporte:"Soccer", tipo:"Total",  conf:4, pick:"Over 2.5 goles Bélgica-Egipto (De Bruyne/Lukaku vs Salah)",     cuota:"-115", u:1,   resultado:"P", neto:0},
+  // ===== 14 JUNIO ===== (sin picks — pausa, sin crédito)
+  // ===== 13 JUNIO ===== (orden cronológico del día: Suiza 3pm, Cubs tarde, NBA noche)
+  {fecha:"2026-06-13", deporte:"Soccer", tipo:"Spread", conf:4, pick:"Suiza -1.5 vs Qatar (condicional ≤-160)",      cuota:"-160", u:1,   resultado:"L", neto:-1.00},
+  {fecha:"2026-06-13", deporte:"MLB",    tipo:"ML",     conf:4, pick:"Cubs ML vs Giants (sharp 80% + Ben Brown)",    cuota:"-122", u:1,   resultado:"W", neto:0.82},
+  {fecha:"2026-06-13", deporte:"NBA",    tipo:"Total",  conf:5, pick:"NBA Under 216.5 · Knicks-Spurs Juego 5",       cuota:"-110", u:1.5, resultado:"W", neto:1.36},
+  // ===== 12 JUNIO =====
+  {fecha:"2026-06-12", deporte:"Soccer", tipo:"Total",  conf:5, pick:"NO Over 2.5 goles · Canadá-Bosnia (Under)",    cuota:"-150", u:1.5, resultado:"W", neto:1.00},
+  {fecha:"2026-06-12", deporte:"Soccer", tipo:"ML",     conf:4, pick:"SÍ USA gana a Paraguay",                       cuota:"+105", u:1,   resultado:"W", neto:1.05},
+  {fecha:"2026-06-12", deporte:"MLB",    tipo:"Spread", conf:4, pick:"Brewers -1.5 vs Phillies (Misiorowski 15K)",   cuota:"-140", u:1,   resultado:"W", neto:0.71},
+  // ===== 11 JUNIO =====
+  {fecha:"2026-06-11", deporte:"Soccer", tipo:"Total",  conf:5, pick:"NO Over 2.5 goles · México-Sudáfrica (Under)", cuota:"-138", u:1.5, resultado:"W", neto:1.09},
+  {fecha:"2026-06-11", deporte:"MLB",    tipo:"ML",     conf:4, pick:"SÍ Royals vs Rangers (sharp +33%)",            cuota:"-122", u:1,   resultado:"L", neto:-1.00},
+  {fecha:"2026-06-11", deporte:"Soccer", tipo:"ML",     conf:4, pick:"SÍ México gana a Sudáfrica",                   cuota:"-233", u:1,   resultado:"W", neto:0.43},
+];
+
+/* =====================================================================
+   INFORMES POR DIA — cada día se agrega aquí con su HTML completo.
+   ===================================================================== */
+const M = "https://a.espncdn.com/i/teamlogos/mlb/500/";   // logos MLB
+const F = "https://flagcdn.com/w40/";                      // banderas
+const N = "https://a.espncdn.com/i/teamlogos/nba/500/";   // logos NBA
+
+const DIAS = {
+"2026-06-15": `
+<div class="card hero">
+  <span class="tag tg-gold">🏆 JUGADA ELITE DEL DÍA</span>
+  <span class="tag tg-green">CONFIANZA ⭐⭐⭐⭐⭐</span>
+  <span class="tag tg-blue">1.5U · 3% de banca</span>
+  <div class="vs" style="margin-top:12px">
+    <img class="logo" src="${M}tb.png"> Rays <span style="color:var(--mut)">@</span> <img class="logo" src="${M}lad.png"> Dodgers — <span style="color:var(--mut);font-size:14px">⚾ MLB · 10:10 PM ET · Dodger Stadium</span>
+  </div>
+  <h2>RAYS GANAN (ML) — en Kalshi: comprar "SÍ" Rays</h2>
+  <div class="big">+144</div>
+  <div style="color:var(--mut);font-size:13px">💵 1.5U (3% de banca) → ganancia ≈ <span class="money">+2.16U</span> · cuota PLUS = gran riesgo/beneficio</div>
+  <ul style="margin-top:12px">
+    <li><b>💰 Dinero inteligente (Action PRO):</b> los Rays reciben solo 28% de las apuestas pero <b>48% del dinero</b> (+20%) — los profesionales cargados al perro.</li>
+    <li><b>⚾ Ventaja de pitcheo brutal:</b> Nick Martinez (<b>6-2, 2.43 ERA</b>) vs Eric Lauer (<b>2-5, 5.47 ERA</b>) — casi 3 carreras de diferencia en ERA.</li>
+    <li>Es cuota PLUS (+144): aunque los Dodgers son locales fuertes, el valor está claramente del lado de Tampa.</li>
+    <li>⚠️ Riesgo: los Dodgers en casa pegan; por eso es valor (no favorito seguro). El edge lo justifica.</li>
+  </ul>
+  <div class="note ok"><b>✅ En Kalshi:</b> mercado Rays vs Dodgers → comprar <b>"SÍ" Rays a +144 o mejor</b> (no peor que +125). 1.5U.</div>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <span class="tag tg-purple">🥈 PICK VALOR — ⭐⭐⭐⭐ (1U)</span>
+    <h2 style="margin-top:10px"><img class="logo" src="${M}laa.png">Angels ML @ <img class="logo" src="${M}ari.png">D-backs (8:40 PM ET)</h2>
+    <div class="big" style="font-size:26px">+117 <span style="font-size:14px;color:var(--mut)">1U (2%) → ganancia ≈ +1.17U</span></div>
+    <ul style="margin-top:10px">
+      <li><b>💰 Sharp money:</b> Angels 44% apuestas / <b>63% del dinero</b> (+19%).</li>
+      <li><b>⚾ Pitcheo a favor:</b> Walbert Ureña (<b>2.44 ERA</b>) vs Ryne Nelson (<b>5.19 ERA</b>).</li>
+      <li>Otra cuota PLUS con dinero pro + ventaja de abridor. En Kalshi "SÍ" Angels, no peor que +100.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag tg-orange">🥉 PICK MUNDIAL — ⭐⭐⭐⭐ (1U)</span>
+    <h2 style="margin-top:10px"><img class="flag" src="${F}be.png">Bélgica vs <img class="flag" src="${F}eg.png">Egipto — Over 2.5 goles (3:00 PM ET)</h2>
+    <div class="big" style="font-size:26px">-115 <span style="font-size:14px;color:var(--mut)">1U → ganancia ≈ +0.87U</span></div>
+    <ul style="margin-top:10px">
+      <li><b>🧠 Experto Jon Eimer</b> (12-5-2 en el Mundial) respalda el Over 2.5.</li>
+      <li>Ataques de sobra: <b>De Bruyne y Lukaku</b> (Bélgica) vs <b>Salah y Marmoush</b> (Egipto), y ambas defensas son explotables.</li>
+      <li>En Kalshi: "Over 2.5 goals" en el partido. No peor que -125.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <h2>📊 Tablero completo del día — todo lo evaluado</h2>
+  <table>
+    <tr><th>Jugada</th><th>Cuota</th><th>Capas a favor</th><th>Confianza</th><th>Veredicto</th></tr>
+    <tr><td><img class="logo" src="${M}tb.png">Rays ML @ Dodgers</td><td><b>+144</b></td><td>Sharp +20% + Martinez 2.43 vs Lauer 5.47</td><td class="stars">★★★★★</td><td><span class="tag tg-gold">ELITE (1.5U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}laa.png">Angels ML @ D-backs</td><td><b>+117</b></td><td>Sharp +19% + Ureña 2.44 vs Nelson 5.19</td><td class="stars">★★★★</td><td><span class="tag tg-green">JUGAR (1U)</span></td></tr>
+    <tr><td><img class="flag" src="${F}be.png">Over 2.5 Bélgica-Egipto</td><td><b>-115</b></td><td>Experto Eimer + 4 estrellas ofensivas</td><td class="stars">★★★★</td><td><span class="tag tg-green">JUGAR (1U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}det.png">Tigers ML @ Astros</td><td>+117</td><td>Sharp +15% + Melton 2.81 vs Teng 3.71</td><td class="stars">★★★</td><td><span class="tag tg-orange">CASI — brecha de pitcheo menor</span></td></tr>
+    <tr><td><img class="logo" src="${M}phi.png">Phillies ML vs Marlins</td><td>-194</td><td>Wheeler 2.22 vs Gusto 6.00… pero fuera de rango</td><td class="stars">★★★</td><td><span class="tag tg-red">NO (cuota -194)</span></td></tr>
+    <tr><td><img class="logo" src="${M}chc.png">Cubs ML vs Rockies</td><td>-200</td><td>Imanaga vs Lorenzen 7.54… fuera de rango</td><td class="stars">★★</td><td><span class="tag tg-red">NO (regla -160)</span></td></tr>
+    <tr><td><img class="logo" src="${M}sd.png">Padres / <img class="logo" src="${M}min.png">Twins (sharp)</td><td>+133/+150</td><td>Sharp fuerte PERO abridor TBD</td><td class="stars">★★</td><td><span class="tag tg-red">NO (pitcher sin confirmar)</span></td></tr>
+    <tr><td><img class="flag" src="${F}es.png">España -1.5 vs Cabo Verde</td><td>~-200</td><td>Favorito enorme pero cuota impagable</td><td class="stars">★★</td><td><span class="tag tg-red">NO (fuera de rango)</span></td></tr>
+  </table>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <h2>💰 Radar de capas (15 junio · Action PRO)</h2>
+    <table>
+      <tr><th>Equipo</th><th>% Apuestas</th><th>% Dinero</th><th>Señal</th></tr>
+      <tr><td><img class="logo" src="${M}sd.png">Padres</td><td>33%</td><td><b>67%</b></td><td><span class="tag tg-orange">+34% (pitcher TBD)</span></td></tr>
+      <tr><td><img class="logo" src="${M}tb.png">Rays</td><td>28%</td><td><b>48%</b></td><td><span class="tag tg-green">+20% 🔥</span></td></tr>
+      <tr><td><img class="logo" src="${M}min.png">Twins</td><td>23%</td><td><b>43%</b></td><td><span class="tag tg-orange">+20% (TBD)</span></td></tr>
+      <tr><td><img class="logo" src="${M}laa.png">Angels</td><td>44%</td><td><b>63%</b></td><td><span class="tag tg-green">+19% 🔥</span></td></tr>
+      <tr><td><img class="logo" src="${M}det.png">Tigers</td><td>46%</td><td><b>61%</b></td><td><span class="tag tg-green">+15%</span></td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h2>⚾ Pitcheo clave del día (MLB.com)</h2>
+    <table>
+      <tr><th>Juego (ET)</th><th>Abridores (ERA)</th></tr>
+      <tr><td><b><img class="logo" src="${M}tb.png">@<img class="logo" src="${M}lad.png">10:10</b></td><td><b>Martinez 2.43 vs Lauer 5.47</b> ⭐ Elite</td></tr>
+      <tr><td><b><img class="logo" src="${M}laa.png">@<img class="logo" src="${M}ari.png">8:40</b></td><td><b>Ureña 2.44 vs Nelson 5.19</b> ⭐</td></tr>
+      <tr><td><img class="logo" src="${M}det.png">@<img class="logo" src="${M}hou.png">8:10</td><td>Melton 2.81 vs Teng 3.71</td></tr>
+      <tr><td><img class="logo" src="${M}mia.png">@<img class="logo" src="${M}phi.png">6:40</td><td>Gusto 6.00 vs Wheeler 2.22</td></tr>
+      <tr><td><img class="logo" src="${M}nym.png">@<img class="logo" src="${M}cin.png">7:10</td><td>Myers 4.05 vs Burns 2.14</td></tr>
+    </table>
+    <div class="note"><b>🏀 NBA:</b> temporada terminada — Knicks campeones 2026. Volvemos en la próxima temporada. <b>⚽ Mundial:</b> hoy España, Bélgica, Uruguay e Irán debutan.</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🌙 Cierre del día — 15 de junio</h2>
+  <table>
+    <tr><th>Pick</th><th>Cuota</th><th>U</th><th>Resultado</th><th>+/- U</th></tr>
+    <tr><td><img class="logo" src="${M}tb.png">Rays ML @ Dodgers</td><td>+144</td><td>1.5U</td><td class="pend">⏳ Pendiente</td><td>—</td></tr>
+    <tr><td><img class="logo" src="${M}laa.png">Angels ML @ D-backs</td><td>+117</td><td>1U</td><td class="pend">⏳ Pendiente</td><td>—</td></tr>
+    <tr><td><img class="flag" src="${F}be.png">Over 2.5 Bélgica-Egipto</td><td>-115</td><td>1U</td><td class="pend">⏳ Pendiente</td><td>—</td></tr>
+  </table>
+  <div class="note">💵 Banca guía $500 · 1U = $10 (2%) · Jugada Elite 1.5U (3%) · total del día 3.5U. (El domingo 14 se saltó — pausa.) Cierre en el informe del día 16.</div>
+</div>
+
+<div class="card">
+  <h2>📚 Fuentes del día</h2>
+  <div class="lockover"><div class="lockbtn">🔒 Coming Soon<small>Acceso premium</small></div></div>
+  <p class="src locked-src">
+    <a href="https://www.actionnetwork.com/mlb/public-betting">Action Network PRO — sharp money</a> ·
+    <a href="https://www.cbssports.com/soccer/news/belgium-egypt-odds-prediction-time-2026-world-cup-picks-best-bets/">CBS/SportsLine — Bélgica vs Egipto</a> ·
+    <a href="https://www.mlb.com/es/probable-pitchers">MLB.com — Lanzadores</a> ·
+    <a href="https://linemate.io/mlb/trends">Linemate (vía Chrome)</a> ·
+    <a href="https://www.espn.com/nba/recap?gameId=401859967">ESPN — Knicks 94-90 campeones (cierre día 13)</a>
+  </p>
+</div>
+`,
+"2026-06-13": `
+<div class="card hero">
+  <span class="tag tg-gold">🏆 JUGADA ELITE DEL DÍA</span>
+  <span class="tag tg-green">CONFIANZA ⭐⭐⭐⭐⭐</span>
+  <span class="tag tg-blue">1.5U · 3% de banca</span>
+  <div class="vs" style="margin-top:12px">
+    <img class="logo" src="${N}ny.png" alt="NYK"> Knicks <span style="color:var(--mut)">@</span> <img class="logo" src="${N}sa.png" alt="SAS"> Spurs — <span style="color:var(--mut);font-size:14px">🏀 FINAL NBA · Juego 5 · 8:30 PM ET · Frost Bank Center</span>
+  </div>
+  <h2>UNDER 216.5 PUNTOS — en Kalshi: comprar "NO" en Over 216.5</h2>
+  <div class="grid cols2">
+    <div>
+      <div class="big">-110</div>
+      <div style="color:var(--mut);font-size:13px">💵 1.5U (3% de banca) → ganancia ≈ <span class="money">+1.36U</span> · Verifica en Kalshi: Sports → Basketball → este juego → Total</div>
+      <ul style="margin-top:12px">
+        <li><b>Convergencia limpia (sin contradicciones):</b> modelo SportsLine ✅ + tendencia de la serie ✅ + contexto de eliminación ✅.</li>
+        <li><b>🧠 El modelo SportsLine (10,000 simulaciones) proyecta 212 puntos</b> y da el Under como acierto del 58%.</li>
+        <li><b>📈 El Under pegó en 3 de los 4 partidos de la Final</b> — y en LOS DOS jugados en San Antonio (la cancha de hoy).</li>
+        <li>Juego de eliminación = ritmo más lento, más medio campo, defensas apretadas.</li>
+        <li>Wembanyama proyectado 29 pts, Brunson 24 — estrellas presentes, pero serie defensiva.</li>
+      </ul>
+    </div>
+    <div>
+      <b>📋 Estado de la serie y lesiones:</b>
+      <ul style="margin-top:8px">
+        <li><img class="logo" src="${N}ny.png"><b>Knicks lideran 3-1</b> tras remontada épica de 29 pts en el J4 (tip-in de Anunoby). Hoy pueden ser CAMPEONES por primera vez desde 1973.</li>
+        <li><img class="logo" src="${N}sa.png"><b>Spurs -5.5 / -195 ML</b>, locales y obligados a ganar. <b>Luke Kornet (enfermedad) en duda.</b></li>
+        <li><b>Dato brutal de los Knicks:</b> 3-0 (recto y contra el spread) en juegos de cierre de serie estos playoffs, TODOS de visita, por margen promedio de <b>+39.3 pts</b>. Y cubren 8 partidos seguidos de visitante.</li>
+        <li><b>Por qué el Under y no el lado:</b> el modelo da a los Spurs 62.7% de ganar pero los Knicks cierran series como nadie — las capas CHOCAN en el ganador, así que jugamos el total, donde TODO se alinea.</li>
+      </ul>
+      <div class="note ok"><b>✅ En Kalshi:</b> mercado Knicks vs Spurs → Total de puntos → "Over 216.5" → comprar <b>NO a ≤53¢ (-110 o mejor)</b>. 1.5U.</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <span class="tag tg-purple">🥈 PICK VALOR — ⭐⭐⭐⭐ (1U)</span>
+    <h2 style="margin-top:10px"><img class="logo" src="${M}chc.png">Cubs ML vs <img class="logo" src="${M}sf.png">Giants (9:05 PM ET)</h2>
+    <div class="big" style="font-size:26px">-122 <span style="font-size:14px;color:var(--mut)">1U (2%) → ganancia ≈ +0.82U</span></div>
+    <ul style="margin-top:10px">
+      <li><b>💰 Sharp money confirmado (tu Action PRO):</b> 73% de apuestas pero <b>80% del dinero</b> en Cubs (+7%). Los profesionales cargados a Chicago.</li>
+      <li><b>⚾ Ventaja de pitcheo clara:</b> Ben Brown (<b>1.74 ERA</b>) vs Trevor McDonald (4.15). Aquí SÍ hay diferencia de abridor (la regla que nos faltó con los Royals).</li>
+      <li>3,029 apuestas registradas = muestra confiable.</li>
+      <li>En Kalshi: "SÍ" Cubs. <b>No peor que -133.</b></li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag tg-orange">🥉 PICK CONDICIONAL — ⭐⭐⭐⭐ (1U solo si cumple)</span>
+    <h2 style="margin-top:10px"><img class="flag" src="${F}ch.png">Suiza -1.5 vs <img class="flag" src="${F}qa.png">Qatar (3:00 PM ET)</h2>
+    <div class="big" style="font-size:26px">≤ -160 <span style="font-size:14px;color:var(--mut)">buscar el spread en Kalshi (Suiza gana por 2+)</span></div>
+    <ul style="margin-top:10px">
+      <li><b>🧠 Experto SportsLine (Martin Green):</b> "Suiza debería pasar por encima de Qatar." Suiza <b>invicta en partidos oficiales desde noviembre 2024</b>; Qatar perdió hace poco con Palestina, Túnez, Zimbabue e Irlanda.</li>
+      <li>Brecha de nivel enorme: Suiza -550 a ganar (impagable como ML) → la vía es el spread -1.5 con Xhaka, Kobel y Manzambi.</li>
+      <li>Se espera que Suiza deje el arco en cero.</li>
+      <li><b>Condición:</b> en Kalshi, "Switzerland wins by over 1.5 goals" solo si está a -160 o mejor; si está peor, el día queda con 2 picks.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <h2>📊 Tablero completo del día — todo lo evaluado</h2>
+  <table>
+    <tr><th>Jugada</th><th>Cuota</th><th>Capas a favor</th><th>Confianza</th><th>Veredicto</th></tr>
+    <tr><td><img class="logo" src="${N}ny.png">Under 216.5 Knicks-Spurs</td><td><b>-110</b></td><td>Modelo (212) + Under 3/4 + ambos en SA Under</td><td class="stars">★★★★★</td><td><span class="tag tg-gold">ELITE (1.5U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}chc.png">Cubs ML</td><td><b>-122</b></td><td>Sharp 80% dinero + Ben Brown 1.74 vs 4.15</td><td class="stars">★★★★</td><td><span class="tag tg-green">JUGAR (1U)</span></td></tr>
+    <tr><td><img class="flag" src="${F}ch.png">Suiza -1.5</td><td>≤-160</td><td>Experto + invicta 2024 + Qatar en crisis</td><td class="stars">★★★★</td><td><span class="tag tg-orange">CONDICIONAL (1U)</span></td></tr>
+    <tr><td><img class="logo" src="${N}ny.png">Knicks ML (¡campeón!)</td><td>+162</td><td>3-0 en cierres por +39 avg… pero modelo da Spurs</td><td class="stars">★★★</td><td><span class="tag tg-orange">OPCIONAL "soñador" (0.5U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}det.png">Tigers ML (Skubal)</td><td>-138</td><td>Skubal 2.70 ace… sin señal sharp clara</td><td class="stars">★★★</td><td><span class="tag tg-orange">SIN APUESTA</span></td></tr>
+    <tr><td><img class="logo" src="${M}nyy.png">Yankees ML (Schlittler 1.87)</td><td>-122</td><td>Gran pitcher… pero 77% público = riesgo</td><td class="stars">★★★</td><td><span class="tag tg-red">NO (público excesivo)</span></td></tr>
+    <tr><td><img class="logo" src="${M}lad.png">Dodgers ML @ White Sox</td><td>-194</td><td>Yamamoto… pero 87% público + cuota fuera de rango</td><td class="stars">★★</td><td><span class="tag tg-red">NO (regla -160)</span></td></tr>
+    <tr><td><img class="flag" src="${F}br.png">Brasil ML vs Marruecos</td><td>-150</td><td>Favorito… pero defensa frágil y Marruecos fuerte</td><td class="stars">★★</td><td><span class="tag tg-red">NO (Marruecos peligroso)</span></td></tr>
+  </table>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <h2>💰 Radar de capas (13 junio · Action PRO activo)</h2>
+    <table>
+      <tr><th>Capa</th><th>Señal del día</th></tr>
+      <tr><td>💰 Sharp money MLB</td><td><img class="logo" src="${M}chc.png">Cubs (80% dinero, +7%) 🔥 · <img class="logo" src="${M}tex.png">Rangers spread (+20% dinero)</td></tr>
+      <tr><td>🏀 Sharp/Público NBA</td><td>64% de apuestas en Knicks +5.5 (público con el perro y la narrativa de cierre)</td></tr>
+      <tr><td>🧠 Modelos/Expertos</td><td>SportsLine: Under 216.5 (NBA) y Suiza domina · Eimer: Under Brasil-Marruecos</td></tr>
+      <tr><td>📰 Última hora</td><td>Kornet (Spurs) en duda · Knicks a 1 triunfo del título · USA arrolló 4-1 ayer</td></tr>
+      <tr><td>🏦 Line shopping</td><td>Suiza -550 ML impagable → ir al spread · Dodgers/Brasil fuera de rango</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h2>⚾ Pitcheo clave del día (MLB.com)</h2>
+    <table>
+      <tr><th>Juego (ET)</th><th>Abridores (ERA)</th></tr>
+      <tr><td><b><img class="logo" src="${M}chc.png">@<img class="logo" src="${M}sf.png">9:05</b></td><td><b>Ben Brown 1.74 vs McDonald 4.15</b> ⭐ pick del día</td></tr>
+      <tr><td><img class="logo" src="${M}det.png">@<img class="logo" src="${M}cle.png">3:10</td><td>Skubal 2.70 (as) vs Cantillo 4.57</td></tr>
+      <tr><td><img class="logo" src="${M}nyy.png">@<img class="logo" src="${M}tor.png">2:07</td><td>Schlittler 1.87 vs Gausman 3.60</td></tr>
+      <tr><td><img class="logo" src="${M}tex.png">@<img class="logo" src="${M}bos.png">3:10</td><td>deGrom 3.18 vs Suárez 3.18 (parejo)</td></tr>
+      <tr><td><img class="logo" src="${M}lad.png">@<img class="logo" src="${M}chw.png">3:10</td><td>Yamamoto 2.68 vs Burke 3.88</td></tr>
+    </table>
+    <div class="note"><b>⚽ Mundial hoy:</b> Qatar-Suiza (3 PM), Brasil-Marruecos (6 PM, peligroso), Haití-Escocia (9 PM). <b>🏀 La gran noche:</b> los Knicks pueden coronarse.</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🌙 Cierre del día — 13 de junio · <span style="color:var(--green)">2-1, +1.18U</span></h2>
+  <table>
+    <tr><th>Pick</th><th>Cuota</th><th>U</th><th>Resultado</th><th>+/- U</th></tr>
+    <tr><td><img class="logo" src="${N}ny.png">Under 216.5 Knicks-Spurs</td><td>-110</td><td>1.5U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (94-90 = 184)</td><td class="money">+1.36U</td></tr>
+    <tr><td><img class="logo" src="${M}chc.png">Cubs ML</td><td>-122</td><td>1U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (6-1)</td><td class="money">+0.82U</td></tr>
+    <tr><td><img class="flag" src="${F}ch.png">Suiza -1.5 (condicional)</td><td>≤-160</td><td>1U</td><td style="color:var(--red);font-weight:700">❌ PERDIÓ (empate 1-1)</td><td style="color:var(--red);font-weight:700">-1.00U</td></tr>
+  </table>
+  <div class="note ok"><b>🏆 ¡La Jugada Elite (Under NBA) pegó otra vez — 3-0 en Elites!</b> Knicks 94-90 = 184 pts (Under 216.5 ✅) y campeones (Brunson 45). Cubs 6-1 con jonrón al primer lanzamiento. <b>🔬 Autopsia Suiza (🟡 A varianza + lección):</b> favorita -550 ganaba 1-0 pero Qatar empató en el minuto 94'. El -1.5 en el Mundial es arriesgado (partidos cerrados); regla nueva: evitar spreads -1.5 en fútbol salvo brecha extrema. Detalle en LECCIONES.md (#002).</div>
+</div>
+
+<div class="card">
+  <h2>📚 Fuentes del día</h2>
+  <div class="lockover"><div class="lockbtn">🔒 Coming Soon<small>Acceso premium</small></div></div>
+  <p class="src locked-src">
+    <a href="https://www.actionnetwork.com/mlb/public-betting">Action Network PRO — sharp money (sesión activa)</a> ·
+    <a href="https://www.cbssports.com/nba/news/knicks-spurs-odds-prediction-spread-2026-nba-finals-picks-game-5-best-bets/">CBS/SportsLine — modelo Juego 5</a> ·
+    <a href="https://www.cbssports.com/soccer/news/switzerland-qatar-odds-prediction-time-2026-world-cup-picks-best-bets/">CBS/SportsLine — Suiza vs Qatar</a> ·
+    <a href="https://www.mlb.com/es/probable-pitchers">MLB.com — Lanzadores</a> ·
+    <a href="https://linemate.io/mlb/trends">Linemate (vía Chrome)</a> ·
+    <a href="https://www.espn.com/soccer/match/_/gameId/760417/paraguay-united-states">ESPN — USA 4-1 (cierre día 12)</a> ·
+    <a href="https://www.washingtonpost.com/sports/mlb/2026/06/12/jacob-misiorowski-brewers/716270d4-66d8-11f1-bdd4-805ebb99a693_story.html">WaPo — Misiorowski 15K (cierre día 12)</a>
+  </p>
+</div>
+`,
+"2026-06-12": `
+<div class="card hero">
+  <span class="tag tg-gold">🏆 JUGADA ELITE DEL DÍA</span>
+  <span class="tag tg-green">CONFIANZA ⭐⭐⭐⭐⭐</span>
+  <span class="tag tg-blue">1.5U · 3% de banca</span>
+  <div class="vs" style="margin-top:12px">
+    <img class="flag" src="${F}ca.png" alt="CAN"> Canadá <span style="color:var(--mut)">vs</span> <img class="flag" src="${F}ba.png" alt="BIH"> Bosnia — <span style="color:var(--mut);font-size:14px">Mundial 2026 · 3:00 PM ET · BMO Field, Toronto</span>
+  </div>
+  <h2>UNDER 2.5 GOLES — en Kalshi: comprar "NO" en Over 2.5</h2>
+  <div class="grid cols2">
+    <div>
+      <div class="big">-150</div>
+      <div style="color:var(--mut);font-size:13px">💵 1.5U (3% de banca) → ganancia ≈ <span class="money">+1.00U</span> · Precio verificado EN VIVO en tu Kalshi (Over 2.5: NO a 60¢) ✅</div>
+      <ul style="margin-top:12px">
+        <li><b>Convergencia de capas:</b> experto SportsLine (Severance) ✅ + estado real de equipos ✅ + contexto del torneo ✅ + precio Kalshi = libros ✅.</li>
+        <li><b>🚨 La noticia clave: Alphonso Davies NO juega</b> — la estrella y motor ofensivo de Canadá (15 goles) está lesionado. Menos ataque = menos goles.</li>
+        <li>Bosnia es #64 del ranking FIFA, de los equipos más débiles del torneo, y saldrá a encerrarse.</li>
+        <li>Tendencia del torneo: los inaugurales son cerrados — ayer México 2-0 (Under ✅).</li>
+        <li>Kalshi mueve $5.7M en este partido: mercado líquido, precio justo.</li>
+      </ul>
+    </div>
+    <div>
+      <b>📋 Estado de los equipos:</b>
+      <ul style="margin-top:8px">
+        <li><img class="flag" src="${F}ca.png"><b>Canadá:</b> local en Toronto (apertura canadiense del Mundial), pero SIN Davies (Bayern). Mercado le da 55% de ganar — el músculo está, el gol fino no.</li>
+        <li><img class="flag" src="${F}ba.png"><b>Bosnia:</b> sin su generación dorada (Džeko ya retirado del nivel élite), ranking #64, llega a defender el empate.</li>
+        <li><b>Guion esperado:</b> Canadá domina, Bosnia se encierra, 1-0 o 2-0. Todos esos marcadores pagan el Under.</li>
+        <li><b>Riesgo:</b> gol tempranero de Canadá que obligue a Bosnia a abrirse — por eso Under 2.5 y no 1.5.</li>
+      </ul>
+      <div class="note ok"><b>✅ En Kalshi:</b> Mercado "Canada vs Bosnia and Herzegovina" → sección Spread and Total → "Over 2.5 goals scored" → comprar <b>NO a ≤62¢</b> (no peor que -163). 1.5U.</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <span class="tag tg-purple">🥈 PICK VALOR — ⭐⭐⭐⭐ (1U)</span>
+    <h2 style="margin-top:10px"><img class="flag" src="${F}us.png">USA gana a <img class="flag" src="${F}py.png">Paraguay (9:00 PM ET, SoFi Stadium)</h2>
+    <div class="big" style="font-size:26px">+105 <span style="font-size:14px;color:var(--mut)">1U (2%) → ganancia ≈ +1.05U</span></div>
+    <ul style="margin-top:10px">
+      <li><b>🏦 Line shopping ganador:</b> FanDuel paga USA a -110; <b>en tu Kalshi está a +105</b> — verificado en vivo. Misma apuesta, mucho mejor pago. Esa diferencia ES el valor.</li>
+      <li>USA #17 del ranking vs Paraguay #41. Pulisic sano y liderando, debut mundialista en casa con SoFi lleno.</li>
+      <li>⚠️ <b>El riesgo real: 30% de empate</b> (Kalshi). Paraguay promedió 1.33 goles por partido en eliminatorias con 3 empates 0-0 — viene a amarrar. Por eso solo 1U.</li>
+      <li>En Kalshi: "SÍ" USA. <b>No peor que -110.</b></li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag tg-orange">⚾ PICK CONDICIONAL — ⭐⭐⭐⭐ (1U solo si la cuota cumple)</span>
+    <h2 style="margin-top:10px"><img class="logo" src="${M}mil.png">Brewers -1.5 vs <img class="logo" src="${M}phi.png">Phillies (7:40 PM ET)</h2>
+    <div class="big" style="font-size:26px">≤ -150 <span style="font-size:14px;color:var(--mut)">buscar el spread en Kalshi: Sports → Baseball → este juego</span></div>
+    <ul style="margin-top:10px">
+      <li><b>⚾ El mejor duelo de pitcheo del día (desbalanceado):</b> Jacob Misiorowski (7-2, <b>1.50 ERA</b>, 1 carrera limpia en sus últimas 7 aperturas — temporada de Cy Young) vs Andrew Painter (<b>1-7, 6.21 ERA</b>).</li>
+      <li><b>💰 Sharp money:</b> Action Network muestra el dinero profesional cargado a Milwaukee (solo 15% de apuestas en Phillies).</li>
+      <li><b>📈 Tendencias:</b> Phillies 1-10 contra el spread cuando abre Painter; equipo de Misiorowski 9-4 ATS.</li>
+      <li>Modelo: Brewers 61.8%. Su ML está a -250 → NO jugable (regla CY Elite). <b>La vía es el spread -1.5.</b></li>
+      <li><b>Condición estricta:</b> si en Kalshi "Milwaukee wins by over 1.5 runs" está peor que -150, NO se juega y el día queda con 2 picks.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <h2>📊 Tablero completo del día — todo lo evaluado</h2>
+  <table>
+    <tr><th>Jugada</th><th>Cuota</th><th>Capas a favor</th><th>Confianza</th><th>Veredicto</th></tr>
+    <tr><td><img class="flag" src="${F}ca.png">Under 2.5 Canadá-Bosnia</td><td><b>-150</b></td><td>Experto + Davies OUT + Bosnia débil + precio par</td><td class="stars">★★★★★</td><td><span class="tag tg-gold">ELITE (1.5U)</span></td></tr>
+    <tr><td><img class="flag" src="${F}us.png">USA ML vs Paraguay</td><td><b>+105</b></td><td>Ranking + Pulisic + Kalshi paga mejor que libros</td><td class="stars">★★★★</td><td><span class="tag tg-green">JUGAR (1U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}mil.png">Brewers -1.5</td><td>≤-150</td><td>Sharp + Misiorowski vs Painter + 1-10 ATS</td><td class="stars">★★★★</td><td><span class="tag tg-orange">CONDICIONAL (1U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}mil.png">Brewers ML</td><td>-250</td><td>Todas… pero cuota fuera de rango</td><td class="stars">★★★</td><td><span class="tag tg-red">NO (regla -160)</span></td></tr>
+    <tr><td><img class="flag" src="${F}us.png">Under 2.5 USA-Paraguay</td><td>-183</td><td>Experto (Green) + Paraguay 1.33 goles/juego</td><td class="stars">★★★</td><td><span class="tag tg-red">NO (Kalshi -183, fuera de rango)</span></td></tr>
+    <tr><td><img class="flag" src="${F}ca.png">Canadá ML</td><td>-122</td><td>Local… pero sin Davies y el experto prefiere el Under</td><td class="stars">★★★</td><td><span class="tag tg-orange">SIN APUESTA</span></td></tr>
+    <tr><td><img class="logo" src="${M}lad.png">Dodgers ML @ White Sox</td><td>~-190</td><td>85% público encima + Sasaki irregular (4.03)</td><td class="stars">★★</td><td><span class="tag tg-red">NO</span></td></tr>
+    <tr><td>📈 Props Linemate (Lee O0.5 H -240, unders -300)</td><td>-240 a -350</td><td>Tendencias 100%… con cuotas imposibles</td><td class="stars">★★</td><td><span class="tag tg-red">NO (sin valor)</span></td></tr>
+  </table>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <h2>💰 Radar de capas (12 junio)</h2>
+    <table>
+      <tr><th>Capa</th><th>Señal del día</th></tr>
+      <tr><td>💰 Sharp money</td><td><img class="logo" src="${M}mil.png">Brewers (15% apuestas Phillies, dinero en MIL) 🔥</td></tr>
+      <tr><td>📈 Linemate (jugables)</td><td>Fortes U1.5 H+C+CI -127 (80/100/100%) · Clement O1.5 -111 vs NYY · Peraza O0.5 H -150</td></tr>
+      <tr><td>🧠 Expertos</td><td>SportsLine: Under Canadá (-150) y Under USA (-166) · Modelo: Brewers 61.8%</td></tr>
+      <tr><td>📰 Última hora</td><td><b>Davies OUT (Canadá)</b> · 3 rojas ayer en el Azteca · Pulisic confirmado titular</td></tr>
+      <tr><td>🏦 Line shopping</td><td>USA: Kalshi +105 vs FanDuel -110 ✅ · Under CAN: par (-150)</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h2>⚾ Pitcheo clave del día (MLB.com)</h2>
+    <table>
+      <tr><th>Juego (ET)</th><th>Abridores (ERA)</th></tr>
+      <tr><td><b><img class="logo" src="${M}phi.png">@<img class="logo" src="${M}mil.png">7:40</b></td><td><b>Painter 6.21 vs Misiorowski 1.50</b> ⭐ el desbalance del día</td></tr>
+      <tr><td><img class="logo" src="${M}atl.png">@<img class="logo" src="${M}nym.png">7:15</td><td>Strider 4.00 vs McLean</td></tr>
+      <tr><td><img class="logo" src="${M}lad.png">@<img class="logo" src="${M}chw.png">7:40</td><td>Sasaki 4.03 vs Kay</td></tr>
+      <tr><td><img class="logo" src="${M}tex.png">@<img class="logo" src="${M}bos.png">7:10</td><td>Leiter vs Gray 3.20</td></tr>
+    </table>
+    <div class="note"><b>🏀 NBA:</b> hoy no hay juego. <b>MAÑANA sábado 13: Juego 5</b> <img class="logo" src="${N}ny.png">Knicks (3-1) @ <img class="logo" src="${N}sa.png">Spurs (Spurs -5.5 / Knicks +180 / 216.5). Los Knicks pueden ser campeones — análisis completo mañana.</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🌙 Cierre del día — 12 de junio · <span style="color:var(--green)">3-0, +2.76U 🔥</span></h2>
+  <table>
+    <tr><th>Pick</th><th>Cuota</th><th>U</th><th>Resultado</th><th>+/- U</th></tr>
+    <tr><td><img class="flag" src="${F}ca.png">Under 2.5 Canadá-Bosnia</td><td>-150</td><td>1.5U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (1-1, 2 goles)</td><td class="money">+1.00U</td></tr>
+    <tr><td><img class="flag" src="${F}us.png">USA ML</td><td>+105</td><td>1U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (4-1, doblete Balogun)</td><td class="money">+1.05U</td></tr>
+    <tr><td><img class="logo" src="${M}mil.png">Brewers -1.5</td><td>-140</td><td>1U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (6-0)</td><td class="money">+0.71U</td></tr>
+  </table>
+  <div class="note ok"><b>🟢 0 pérdidas — no hay autopsia hoy, el proceso funcionó perfecto.</b><br>
+  La joya: <b>Misiorowski lanzó juego completo de 1 hit con 15 ponches</b> en el 6-0 — exactamente la ventaja de pitcheo que marcamos (1.50 ERA vs 6.21 de Painter). El Under de Canadá pegó con Davies fuera (Canadá sin gol hasta el 78'). Y USA arrolló como decía el ranking. Las 3 capas alineadas = 3 aciertos.</div>
+</div>
+
+<div class="card">
+  <h2>📚 Fuentes del día</h2>
+  <div class="lockover"><div class="lockbtn">🔒 Coming Soon<small>Acceso premium</small></div></div>
+  <p class="src locked-src">
+    <a href="https://kalshi.com/markets/kxwcgame/world-cup-game/kxwcgame-26jun12canbih">Kalshi — Canadá vs Bosnia (precio en vivo)</a> ·
+    <a href="https://kalshi.com/markets/kxwcgame/world-cup-game/kxwcgame-26jun12usapar">Kalshi — USA vs Paraguay (precio en vivo)</a> ·
+    <a href="https://linemate.io/mlb/trends">Linemate (leído en vivo vía Chrome)</a> ·
+    <a href="https://www.actionnetwork.com/mlb/public-betting">Action Network</a> ·
+    <a href="https://www.cbssports.com/soccer/news/2026-world-cup-picks-odds-predictions-best-bets-usa-paraguay-canada-bosnia-herzegovina-friday/">CBS/SportsLine — Picks Mundial día 2</a> ·
+    <a href="https://www.fanduel.com/research/brewers-vs-phillies-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-6-12-2026">FanDuel Research — Brewers-Phillies</a> ·
+    <a href="https://www.mlb.com/es/probable-pitchers">MLB.com — Lanzadores</a> ·
+    <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico">ESPN — México 2-0 (cierre día 11)</a> ·
+    <a href="https://www.mlb.com/gameday/rangers-vs-royals/2026/06/11/824101/final/video">MLB — Rangers 4-2 Royals (cierre día 11)</a>
+  </p>
+</div>
+`,
+"2026-06-11": `
+<div class="card hero">
+  <span class="tag tg-gold">🏆 JUGADA ELITE DEL DÍA</span>
+  <span class="tag tg-green">CONFIANZA ⭐⭐⭐⭐⭐</span>
+  <span class="tag tg-blue">1.5U · 3% de banca</span>
+  <div class="vs" style="margin-top:12px">
+    <img class="flag" src="${F}mx.png" alt="MEX"> México <span style="color:var(--mut)">vs</span> <img class="flag" src="${F}za.png" alt="RSA"> Sudáfrica — <span style="color:var(--mut);font-size:14px">Mundial 2026 · 3:00 PM ET · Estadio Azteca</span>
+  </div>
+  <h2>UNDER 2.5 GOLES — en Kalshi: comprar "NO" en Over 2.5</h2>
+  <div class="grid cols2">
+    <div>
+      <div class="big">-138</div>
+      <div style="color:var(--mut);font-size:13px">💵 1.5U (3% de banca) → ganancia ≈ <span class="money">+1.09U</span> · Cuota jugable ✅ (buen riesgo/beneficio)</div>
+      <ul style="margin-top:12px">
+        <li><b>3 fuentes expertas coinciden:</b> SportsLine (Brandt Sutton), CBS Sports y FOX Sports.</li>
+        <li>Sudáfrica: Under 3.5 goles en 11 de sus últimos 13 partidos; ataque muy limitado.</li>
+        <li>México: solo 2 goles en contra en los últimos 8 partidos (defensa de hierro).</li>
+        <li>Partido inaugural de Mundial = equipos conservadores, pocos espacios.</li>
+        <li>Correlación extra: "Ambos anotan – NO" como respaldo del mismo guion.</li>
+      </ul>
+    </div>
+    <div>
+      <b>📋 Estado de los equipos (clave del análisis):</b>
+      <ul style="margin-top:8px">
+        <li><img class="flag" src="${F}mx.png"><b>México — SIN BAJAS:</b> Montes, Edson Álvarez, Chávez y Vega TODOS recuperados. Invicto 2026, venía de 5-1 a Serbia.</li>
+        <li><b>⭐ Estrella:</b> Raúl Jiménez (Fulham) titular y en forma — pero a sus 34 años en partido cerrado, su mercado de gol (+150) no entra al sistema.</li>
+        <li><b>XI México:</b> Rangel; Gallardo, Vásquez, Montes, Reyes; B. Gutiérrez, Lira, Fidalgo; Quiñones, Alvarado, Jiménez.</li>
+        <li><img class="flag" src="${F}za.png"><b>Sudáfrica:</b> XI completo (Williams; Mudau, Okon, Mbokazi, Modiba; Mokoena, Sithole, Mbatha; Moremi, Foster, Appollis). Su estrella Lyle Foster (Burnley) llega sin gol en sus últimos 5 con la selección.</li>
+        <li>Altitud 2,200m + 87,000 en el Azteca → Sudáfrica se encierra: guion perfecto para el Under.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <span class="tag tg-purple">🥈 PICK VALOR — ⭐⭐⭐⭐ (1U)</span>
+    <h2 style="margin-top:10px"><img class="logo" src="${M}kc.png">Royals vs <img class="logo" src="${M}tex.png">Rangers (2:10 PM ET)</h2>
+    <div class="big" style="font-size:26px">-122 <span style="font-size:14px;color:var(--mut)">1U (2%) → ganancia ≈ +0.82U</span></div>
+    <ul style="margin-top:10px">
+      <li><b>💰 La señal sharp más fuerte del día</b> (Action Network): 35% de apuestas pero <b>68% del dinero</b> en KC = profesionales cargando.</li>
+      <li><b>El modelo de ESPN da 55.5% a los Royals</b> — por encima del 55% que exige la cuota -122. Hay valor.</li>
+      <li><b>⚾ Duelo de pitchers:</b> Michael Wacha (4-4, 3.44 ERA, veterano estable en casa) vs Kumar Rocker (2-5, 3.54). Wacha controla mejor el tráfico; Kauffman es parque grande.</li>
+      <li>En Kalshi: "SÍ" Royals. <b>No peor que -133.</b></li>
+      <li>⚠️ Riesgo: Rocker lanzó 6 entradas en blanco a KC el 30 de mayo. Por eso 1U y no 1.5U.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag tg-orange">⚠️ SEGURA PERO CUOTA BAJA — opcional</span>
+    <h2 style="margin-top:10px"><img class="flag" src="${F}mx.png">México gana (ML)</h2>
+    <div class="big" style="font-size:26px">-233 <span style="font-size:14px;color:var(--mut)">1U → ganas solo ≈ +0.43U</span></div>
+    <ul style="margin-top:10px">
+      <li>Es la jugada con más probabilidad del día (4 fuentes + sin bajas + Azteca)…</li>
+      <li>…pero <b>desde hoy entra la regla CY Elite: cuotas peores que -160 NO son pick principal</b> — arriesgas $233 por ganar $100, mal riesgo/beneficio.</li>
+      <li>Se registró hoy porque se dio en el informe de la mañana; queda como referencia. A futuro, favoritos así solo se usan si el precio mejora o en mercados alternos con valor.</li>
+    </ul>
+    <div class="note"><b>🏀 NBA hoy:</b> sin juego. Sábado 13: Juego 5 <img class="logo" src="${N}ny.png">Knicks (3-1) @ <img class="logo" src="${N}sa.png">Spurs — Spurs -5.5 / Knicks +180 / Total 216.5. Knicks remontaron 29 pts en el J4 (tip-in de Anunoby). Análisis completo el sábado.</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>📊 Tablero completo del día — todo lo evaluado</h2>
+  <table>
+    <tr><th>Jugada</th><th>Cuota</th><th>Fuentes a favor</th><th>Confianza</th><th>Veredicto</th></tr>
+    <tr><td><img class="flag" src="${F}mx.png">Under 2.5 México-Sudáfrica</td><td><b>-138</b></td><td>SportsLine, CBS, FOX</td><td class="stars">★★★★★</td><td><span class="tag tg-gold">ELITE (1.5U)</span></td></tr>
+    <tr><td><img class="logo" src="${M}kc.png">Royals ML</td><td><b>-122</b></td><td>Sharp +33% · ESPN 55.5%</td><td class="stars">★★★★</td><td><span class="tag tg-green">JUGAR (1U)</span></td></tr>
+    <tr><td><img class="flag" src="${F}mx.png">México ML</td><td>-233</td><td>FOX, CBS, SportsLine, RotoWire</td><td class="stars">★★★★★</td><td><span class="tag tg-orange">CUOTA BAJA — opcional</span></td></tr>
+    <tr><td><img class="logo" src="${M}det.png">Tigers ML vs Twins</td><td>-121</td><td>FanDuel, Covers… <b>sharp en contra</b></td><td class="stars">★★★</td><td><span class="tag tg-red">CANCELADO</span></td></tr>
+    <tr><td><img class="flag" src="${F}kr.png">Corea-Chequia<img class="flag" src="${F}cz.png" style="margin-left:6px">: BTTS / Over 2.5</td><td>-110</td><td>CBS y Eimer divididos</td><td class="stars">★★★</td><td><span class="tag tg-orange">SIN APUESTA</span></td></tr>
+    <tr><td><img class="logo" src="${M}lad.png">Dodgers ML @ Pirates</td><td>-163</td><td>84% del público encima = trampa</td><td class="stars">★★</td><td><span class="tag tg-red">NO</span></td></tr>
+    <tr><td><img class="logo" src="${M}chc.png">Cubs ML @ Rockies (Coors)</td><td>-138</td><td>Argumento débil + Coors Field</td><td class="stars">★★</td><td><span class="tag tg-red">NO</span></td></tr>
+    <tr><td><img class="flag" src="${F}mx.png">México -1.5 goles</td><td>+127</td><td>Sin respaldo de fuentes</td><td class="stars">★★</td><td><span class="tag tg-red">NO</span></td></tr>
+  </table>
+  <div class="note danger"><b>🚨 Tigers CANCELADO:</b> los expertos lo daban, pero Action Network reveló dinero profesional en Minnesota (37% apuestas / 51% dinero). Regla CY Elite: si expertos y dinero sharp chocan → no se juega.</div>
+</div>
+
+<div class="grid cols2">
+  <div class="card">
+    <h2>💰 Radar sharp money (Action Network)</h2>
+    <table>
+      <tr><th>Equipo</th><th>% Apuestas</th><th>% Dinero</th><th>Señal</th></tr>
+      <tr><td><img class="logo" src="${M}kc.png">Royals</td><td>35%</td><td><b>68%</b></td><td><span class="tag tg-green">SHARP FUERTE 🔥</span></td></tr>
+      <tr><td><img class="logo" src="${M}min.png">Twins</td><td>37%</td><td><b>51%</b></td><td><span class="tag tg-orange">Sharp moderado</span></td></tr>
+      <tr><td><img class="logo" src="${M}lad.png">Dodgers</td><td><b>84%</b></td><td>n/d</td><td><span class="tag tg-red">Público excesivo</span></td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--mut);margin-top:10px">% dinero ≫ % apuestas = pocas apuestas pero grandes = profesionales.</p>
+  </div>
+  <div class="card">
+    <h2>⚾ Pitcheo del día (MLB.com) — el factor #1 en la pelota</h2>
+    <table>
+      <tr><th>Juego (ET)</th><th>Abridores (ERA)</th></tr>
+      <tr><td><img class="logo" src="${M}stl.png">@<img class="logo" src="${M}nym.png">1:10</td><td>Dobbins 2.77 vs Scott 2.50</td></tr>
+      <tr><td><img class="logo" src="${M}ari.png">@<img class="logo" src="${M}mia.png">1:10</td><td>Kelly 5.71 vs Phillips 2.08</td></tr>
+      <tr><td><img class="logo" src="${M}min.png">@<img class="logo" src="${M}det.png">1:10</td><td>Matthews 4.15 vs Montero 3.95</td></tr>
+      <tr><td><b><img class="logo" src="${M}tex.png">@<img class="logo" src="${M}kc.png">2:10</b></td><td><b>Rocker 3.54 vs Wacha 3.44</b> ⭐</td></tr>
+      <tr><td><img class="logo" src="${M}chc.png">@<img class="logo" src="${M}col.png">3:10</td><td>Cabrera 4.99 vs Feltner 4.22</td></tr>
+      <tr><td><img class="logo" src="${M}lad.png">@<img class="logo" src="${M}pit.png">6:40</td><td>Wrobleski 2.62 vs Keller 4.81</td></tr>
+      <tr><td><img class="logo" src="${M}sea.png">@<img class="logo" src="${M}bal.png">7:05</td><td>Woo 3.74 vs Bradish 3.89</td></tr>
+      <tr><td><img class="logo" src="${M}atl.png">@<img class="logo" src="${M}chw.png">7:40</td><td>Pérez 3.02 vs TBD</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🌙 Cierre del día — 11 de junio · <span style="color:var(--green)">2-1, +0.52U</span></h2>
+  <table>
+    <tr><th>Pick</th><th>Cuota</th><th>U</th><th>Resultado</th><th>+/- U</th></tr>
+    <tr><td><img class="flag" src="${F}mx.png">Under 2.5 México-Sudáfrica</td><td>-138</td><td>1.5U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (México 2-0)</td><td class="money">+1.09U</td></tr>
+    <tr><td><img class="flag" src="${F}mx.png">México ML</td><td>-233</td><td>1U</td><td style="color:var(--green);font-weight:700">✅ GANÓ (2-0, Quiñones y Jiménez)</td><td class="money">+0.43U</td></tr>
+    <tr><td><img class="logo" src="${M}kc.png">Royals ML</td><td>-122</td><td>1U</td><td style="color:var(--red);font-weight:700">❌ PERDIÓ (KC 2-4 TEX)</td><td style="color:var(--red);font-weight:700">-1.00U</td></tr>
+  </table>
+  <div class="note danger"><b>🔬 AUTOPSIA DE LA PÉRDIDA — Royals ML · Clasificación: 🟠 B (error de proceso leve)</b><br>
+  Solo 2 capas a favor (sharp money + modelo ESPN 55.5%) y <b>una en contra que ignoramos</b>: Sports Illustrated daba valor a los Rangers. Además el pitcheo era PAREJO (Wacha 3.44 vs Rocker 3.54 — sin ventaja real) y Rocker ya había blanqueado a KC el 30 de mayo. El sharp money solo no basta.<br>
+  <b>✅ Corrección aplicada:</b> Protocolo de Convergencia Total (3+ capas y cero contradicciones mayores) + en MLB el pitcheo debe ser FAVORABLE, no parejo, para jugar un ML. Detalle completo en LECCIONES.md (#001).</div>
+  <div class="note ok"><b>Lo que SÍ funcionó:</b> las dos jugadas del Mundial (4 fuentes + contexto + sin bajas) pegaron exactamente con el guion previsto: partido cerrado, México 2-0. Proceso correcto = resultado correcto.</div>
+</div>
+
+<div class="card">
+  <h2>📚 Fuentes del día</h2>
+  <div class="lockover"><div class="lockbtn">🔒 Coming Soon<small>Acceso premium</small></div></div>
+  <p class="src locked-src">
+    <a href="https://kalshi.com/markets/kxwcgame/world-cup-game/kxwcgame-26jun11mexrsa">Kalshi — México vs Sudáfrica</a> ·
+    <a href="https://www.actionnetwork.com/mlb/public-betting">Action Network</a> ·
+    <a href="https://www.sportsline.com/">SportsLine</a> ·
+    <a href="https://www.cbssports.com/soccer/news/2026-world-cup-picks-odds-predictions-best-bets-mexico-south-africa-south-korea-czechia-thursday/">CBS Sports</a> ·
+    <a href="https://www.foxsports.com/stories/soccer/world-cup-day-1-best-bets-mexico-south-africa">FOX Sports</a> ·
+    <a href="https://www.mlb.com/es/probable-pitchers">MLB.com Lanzadores</a> ·
+    <a href="https://www.mlb.com/es/starting-lineups">MLB.com Alineaciones</a> ·
+    <a href="https://www.covers.com/picks/mlb">Covers</a> ·
+    <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-africa-preview-predicted-lineups-team-news-world-cup-preview-117405">RotoWire (alineaciones)</a> ·
+    <a href="https://www.espn.com/mlb/game/_/gameId/401815717/rangers-royals">ESPN (modelo 55.5% KC)</a> ·
+    <a href="https://linemate.io">Linemate</a> ·
+    <a href="https://outlier.bet">Outlier</a> ·
+    <a href="https://www.bet365.com">Bet365</a> ·
+    <a href="https://www.hardrock.bet">Hard Rock Bet</a>
+  </p>
+</div>
+`
+};
+
+/* =====================================================================
+   MOTOR DEL DASHBOARD (no tocar)
+   ===================================================================== */
+var CHART_RANGE='all';
+function setChartRange(r){CHART_RANGE=r;pintarAvanzadas();}
+function fmtU(n){return (n>=0?"+":"")+n.toFixed(2)+"U";}
+function pintarAvanzadas(){
+  const dec = RESULTADOS.filter(r=>r.resultado==="W"||r.resultado==="L");
+  const cont = document.getElementById("advstats");
+  if(!dec.length){cont.innerHTML="<p style='color:var(--mut)'>Aún sin picks resueltos — las estadísticas aparecen tras el primer cierre.</p>";return;}
+  const W=dec.filter(r=>r.resultado==="W").length, L=dec.length-W;
+  const neto=dec.reduce((s,r)=>s+r.neto,0), inv=dec.reduce((s,r)=>s+r.u,0);
+  const roi=inv?100*neto/inv:0;
+  // racha actual
+  const chrono=[...dec].sort((a,b)=> a.fecha<b.fecha?-1:a.fecha>b.fecha?1:0);
+  let streak=0; const last=chrono[chrono.length-1].resultado;
+  for(let i=chrono.length-1;i>=0;i--){ if(chrono[i].resultado===last) streak++; else break; }
+  const rachaTxt=(last==="W"? streak+"V 🔥" : streak+"D");
+  // jugada elite (5*)
+  const eli=dec.filter(r=>r.conf===5); const eliW=eli.filter(r=>r.resultado==="W").length;
+  const eliNeto=eli.reduce((s,r)=>s+r.neto,0);
+  // agrupar por campo
+  function grupo(campo){const m={};dec.forEach(r=>{const k=r[campo]||"—";(m[k]=m[k]||{w:0,l:0,neto:0,inv:0});if(r.resultado==="W")m[k].w++;else m[k].l++;m[k].neto+=r.neto;m[k].inv+=r.u;});return m;}
+  function filas(m){return Object.keys(m).sort((a,b)=>m[b].neto-m[a].neto).map(k=>{const g=m[k];const r=g.inv?100*g.neto/g.inv:0;return `<tr><td>${k}</td><td>${g.w}-${g.l}</td><td style="font-weight:700;color:${g.neto>=0?'var(--green)':'var(--red)'}">${fmtU(g.neto)}</td><td style="color:${r>=0?'var(--green)':'var(--red)'}">${r>=0?'+':''}${r.toFixed(0)}%</td></tr>`;}).join("");}
+  const porDep=grupo("deporte"), porTipo=grupo("tipo");
+  // chart de banca acumulada (en U) por día
+  const dias={}; RESULTADOS.forEach(r=>{dias[r.fecha]=(dias[r.fecha]||0)+r.neto;});
+  const fechas=Object.keys(dias).sort(); let cum=0; let pts=fechas.map(f=>{cum+=dias[f];return{f,cum};});
+  if(CHART_RANGE!=='all' && pts.length){const Nd=parseInt(CHART_RANGE,10);const md=new Date(pts[pts.length-1].f+"T12:00:00");pts=pts.filter(p=>(md-new Date(p.f+"T12:00:00"))/86400000 < Nd);}
+  if(!pts.length)pts=[{f:fechas[fechas.length-1]||"",cum:neto}];
+  const w=560,h=150,pad=30;
+  const max=Math.max(...pts.map(p=>p.cum),0), min=Math.min(...pts.map(p=>p.cum),0); const rng=(max-min)||1;
+  const X=i=>pad+(i*(w-2*pad)/Math.max(pts.length-1,1)); const Y=v=>h-pad-((v-min)/rng)*(h-2*pad);
+  const line=pts.map((p,i)=>`${i?'L':'M'}${X(i).toFixed(1)},${Y(p.cum).toFixed(1)}`).join(" ");
+  const area=`M${X(0).toFixed(1)},${Y(min).toFixed(1)} `+pts.map((p,i)=>`L${X(i).toFixed(1)},${Y(p.cum).toFixed(1)}`).join(" ")+` L${X(pts.length-1).toFixed(1)},${Y(min).toFixed(1)} Z`;
+  const dots=pts.map((p,i)=>`<circle cx="${X(i).toFixed(1)}" cy="${Y(p.cum).toFixed(1)}" r="3.5" fill="var(--gold)"/><text x="${X(i).toFixed(1)}" y="${(Y(p.cum)-9).toFixed(1)}" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">${p.cum>=0?'+':''}${p.cum.toFixed(1)}U</text><text x="${X(i).toFixed(1)}" y="${h-8}" fill="var(--mut)" font-size="10" text-anchor="middle">${p.f.slice(5).replace('-','/')}</text>`).join("");
+  const zeroY=Y(0).toFixed(1);
+  function rb(r,t){return `<button class="${CHART_RANGE===r?'active':''}" onclick="setChartRange('${r}')">${t}</button>`;}
+  cont.innerHTML=`
+  <div class="stats" style="margin-bottom:14px">
+    <div class="stat-card"><div class="v ${roi>=0?'g':'r'}">${roi>=0?'+':''}${roi.toFixed(1)}%</div><div class="l">ROI</div></div>
+    <div class="stat-card"><div class="v ${last==='W'?'g':'r'}">${rachaTxt}</div><div class="l">Racha actual</div></div>
+    <div class="stat-card elite"><div class="v">🏆 ${eliW}-${eli.length-eliW}</div><div class="l">Jugada Elite (5★)</div></div>
+    <div class="stat-card"><div class="v ${eliNeto>=0?'g':'r'}">${fmtU(eliNeto)}</div><div class="l">Neto Elite</div></div>
+    <div class="stat-card"><div class="v b">${fmtU(neto/(dec.length||1))}</div><div class="l">U por pick</div></div>
+  </div>
+  <div style="background:var(--card2);border-radius:12px;padding:14px 10px 8px;margin-bottom:14px">
+    <div style="margin:0 0 8px 6px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px"><span style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px">💰 Evolución de la banca (U)</span><span class="rangebtns">${rb('7','7 días')}${rb('30','30 días')}${rb('all','Todo')}</span></div>
+    <svg viewBox="0 0 ${w} ${h}" style="width:100%;height:auto">
+      <defs><linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--gold)" stop-opacity="0.25"/><stop offset="100%" stop-color="var(--gold)" stop-opacity="0"/></linearGradient></defs>
+      <line x1="${pad}" y1="${zeroY}" x2="${w-pad}" y2="${zeroY}" stroke="var(--line)" stroke-dasharray="3 3"/>
+      <path d="${area}" fill="url(#ga)"/>
+      <path d="${line}" fill="none" stroke="var(--gold)" stroke-width="2.5"/>
+      ${dots}
+    </svg>
+  </div>
+  <div class="grid cols2">
+    <div><div style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">🏅 Por deporte</div>
+      <table><tr><th>Deporte</th><th>G-P</th><th>Neto</th><th>ROI</th></tr>${filas(porDep)}</table></div>
+    <div><div style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">🎯 Por tipo de apuesta</div>
+      <table><tr><th>Tipo</th><th>G-P</th><th>Neto</th><th>ROI</th></tr>${filas(porTipo)}</table></div>
+  </div>`;
+}
+function pintarBalance(){
+  const dec = RESULTADOS.filter(r=>r.resultado==="W"||r.resultado==="L");
+  const w = dec.filter(r=>r.resultado==="W").length;
+  const l = dec.filter(r=>r.resultado==="L").length;
+  const p = RESULTADOS.filter(r=>r.resultado==="P").length;
+  const neto = RESULTADOS.reduce((s,r)=>s+(r.neto||0),0);
+  const inv = RESULTADOS.filter(r=>r.resultado!=="X").reduce((s,r)=>s+r.u,0);
+  const pct = dec.length? Math.round(100*w/dec.length) : null;
+  document.getElementById("stats").innerHTML = `
+    <div class="stat-card"><div class="v g">${w}</div><div class="l">Ganados</div></div>
+    <div class="stat-card"><div class="v r">${l}</div><div class="l">Perdidos</div></div>
+    <div class="stat-card"><div class="v o">${p}</div><div class="l">Pendientes</div></div>
+    <div class="stat-card"><div class="v b">${pct===null?"—":pct+"%"}</div><div class="l">% Acierto</div></div>
+    <div class="stat-card"><div class="v ${neto>=0?"g":"r"}">${neto>=0?"+":""}${neto.toFixed(2)}U</div><div class="l">Neto (U)</div></div>
+    <div class="stat-card"><div class="v b">${inv.toFixed(1)}U</div><div class="l">Arriesgado</div></div>`;
+}
+function pintarCalendario(){
+  const cal = document.getElementById("cal");
+  const dows = ["D","L","M","X","J","V","S"];
+  let html = "";
+  for(let d=1; d<=30; d++){
+    const key = "2026-06-" + String(d).padStart(2,"0");
+    const dow = dows[new Date(2026,5,d).getDay()];
+    const has = DIAS[key] ? "has" : "";
+    html += `<div class="day ${has}" data-dia="${key}"><span style="font-size:10px">${dow}</span><b>${d}</b><span class="dot"></span></div>`;
+  }
+  cal.innerHTML = html;
+  cal.querySelectorAll(".day.has").forEach(el=>{
+    el.addEventListener("click",()=>seleccionar(el.dataset.dia));
+  });
+}
+function seleccionar(key){
+  document.querySelectorAll(".day").forEach(e=>e.classList.remove("sel"));
+  const el = document.querySelector(`.day[data-dia="${key}"]`);
+  if(el) el.classList.add("sel");
+  const f = new Date(key+"T12:00:00");
+  const nombre = f.toLocaleDateString("es-MX",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  document.getElementById("calLabel").textContent = nombre;
+  document.getElementById("calPop").classList.remove("open");
+  document.getElementById("contenido").innerHTML =
+    `<div style="margin:4px 0 14px;color:var(--mut);font-size:14px">📋 Informe del <b style="color:var(--gold)">${nombre}</b></div>` + DIAS[key];
+}
+/* abrir/cerrar el desplegable del calendario */
+document.getElementById("calBtn").addEventListener("click",(e)=>{
+  e.stopPropagation();
+  document.getElementById("calPop").classList.toggle("open");
+});
+document.getElementById("calPop").addEventListener("click",(e)=>e.stopPropagation());
+document.addEventListener("click",()=>document.getElementById("calPop").classList.remove("open"));
+pintarBalance();
+pintarAvanzadas();
+pintarCalendario();
+const dias = Object.keys(DIAS).sort();
+seleccionar(dias[dias.length-1]); // abre el día más reciente
+</script>
+
+</body>
+</html>
