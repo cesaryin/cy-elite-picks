@@ -119,9 +119,13 @@
     li{font-size:13px}
     .note{font-size:12.5px;padding:10px}
     .tag{font-size:10.5px;padding:2px 8px}
-    /* tablas: se deslizan con el dedo en vez de romperse */
+    /* tablas: los nombres largos (1ª columna) bajan de línea; las anchas se deslizan con el dedo */
     table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
-    th,td{white-space:nowrap;font-size:12.5px;padding:7px 8px}
+    th,td{white-space:nowrap;font-size:12px;padding:6px 7px}
+    td:first-child,th:first-child{white-space:normal;min-width:96px}
+    table::-webkit-scrollbar{height:6px}
+    table::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+    table::-webkit-scrollbar-track{background:var(--line);border-radius:3px}
     .logo{width:20px;height:20px}
     .flag{width:20px;height:14px}
     .footer{font-size:11px}
