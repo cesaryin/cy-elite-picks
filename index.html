@@ -71,6 +71,8 @@
   .ok{background:rgba(61,220,132,.08);border-left-color:var(--green)}
   .stars{color:var(--gold);letter-spacing:2px}
   .logo{width:26px;height:26px;vertical-align:middle;margin-right:6px;object-fit:contain}
+  /* Padres (marrón/dorado) se pierde en fondo oscuro → chip claro para que resalte */
+  img.logo[src*="sd.png"]{background:#fff;border-radius:5px;padding:1px}
   .flag{width:26px;height:18px;vertical-align:middle;margin-right:6px;border-radius:3px;object-fit:cover}
   .vs{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin:8px 0}
   .vs img.flag{width:34px;height:24px}
