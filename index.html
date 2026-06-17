@@ -98,6 +98,8 @@
   .lockover{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;z-index:5}
   .lockbtn{display:inline-flex;flex-direction:column;align-items:center;background:linear-gradient(135deg,#f5c542,#ff9f43);color:#0a0e1c;font-weight:800;border:none;padding:7px 16px;border-radius:20px;font-size:13px;font-family:inherit;box-shadow:0 3px 14px rgba(245,197,66,.4);text-align:center;cursor:default;margin-top:40px}
   .lockbtn small{display:block;font-weight:600;font-size:9px;opacity:.8;margin-top:1px}
+  /* Coming Soon / Fuentes premium OCULTO en TODA la web (cualquier tarjeta con el candado) hasta implementar el muro */
+  .card:has(.lockbtn){display:none !important}
   .logo-emblem{flex:0 0 auto}
   /* insignia de equipo/país en texto (se ve sin internet, ideal para compartir) */
   .tm{display:inline-block;background:var(--card2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:11px;font-weight:700;color:var(--txt);margin-right:5px;vertical-align:middle;letter-spacing:.3px}
