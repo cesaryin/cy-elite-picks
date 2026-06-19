@@ -89,6 +89,42 @@
   .stat-card.elite{background:linear-gradient(135deg,rgba(245,197,66,.16),rgba(255,159,67,.08));border:1.5px solid var(--gold)}
   .stat-card.elite .v{color:var(--gold)}
   .stat-card.elite .l{color:var(--gold);opacity:.9}
+  /* ===== HISTORIAL NUEVO (estilo Action) ===== */
+  .num{font-variant-numeric:tabular-nums}
+  .stathero .htop{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+  .stathero .hlab{font-size:15px;font-weight:700}
+  .stathero .hbig{font-size:34px;font-weight:800;margin-top:2px}
+  .stathero .hkpis{text-align:right;font-size:14px;line-height:1.7;color:var(--mut);font-weight:600}
+  .stathero .hkpis b{font-weight:800}
+  .periods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+  .pcard{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:14px;cursor:pointer;transition:border-color .15s,background .15s}
+  .pcard:hover{border-color:var(--mut)}
+  .pcard.active{border-color:var(--gold);background:var(--card2)}
+  .pcard .t{font-size:13.5px;font-weight:700;margin-bottom:6px}
+  .pcard .u{font-size:26px;font-weight:800;line-height:1}
+  .pcard .rec{font-size:15px;font-weight:700;margin-top:4px}
+  .pcard .roi{font-size:12px;color:var(--mut);margin-top:4px;font-weight:600}
+  .elitebar{background:linear-gradient(135deg,rgba(245,197,66,.16),rgba(255,159,67,.07));border:1.5px solid var(--gold);border-radius:14px;padding:14px 16px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .elitebar .el{font-size:13px;font-weight:800;color:var(--gold);letter-spacing:.3px}
+  .elitebar .el small{display:block;font-weight:600;color:var(--mut);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .elitebar .erec{font-size:26px;font-weight:800;color:var(--gold)}
+  .elitebar .enet{font-size:14px;font-weight:700}
+  .sec-t{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);font-weight:700;margin:18px 4px 8px}
+  .sports{display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+  .scard{flex:0 0 128px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 12px;text-align:center;position:relative}
+  .scard .star{position:absolute;top:8px;left:8px;color:var(--green);font-size:13px}
+  .scard .ico{font-size:30px}
+  .scard .nm{font-size:13px;font-weight:800;letter-spacing:.5px;margin-top:6px;text-transform:uppercase}
+  .scard .rec{font-size:16px;font-weight:800;margin-top:4px}
+  .scard .u{font-size:12.5px;font-weight:700;margin-top:2px}
+  .favbets .row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .favbets .rl{width:84px;font-size:12px;font-weight:700;color:var(--mut);text-transform:uppercase;flex:0 0 auto}
+  .favbets .bar{flex:1;height:13px;border-radius:7px;overflow:hidden;display:flex;background:#0f1730}
+  .favbets .bar i{display:block;height:100%}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:12px;font-size:12.5px;color:var(--mut)}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+  @media(max-width:480px){.stathero .hbig{font-size:28px}.pcard .u{font-size:20px}.pcard .t{font-size:12px}.periods{gap:7px}.pcard{padding:11px}}
   /* botones de rango del gráfico */
   .rangebtns{display:flex;gap:4px}
   .rangebtns button{background:var(--card);border:1px solid var(--line);color:var(--mut);font-size:11px;padding:3px 9px;border-radius:7px;cursor:pointer;font-family:inherit}
@@ -136,7 +172,7 @@
     /* tablas: los nombres largos (1ª columna) bajan de línea; las anchas se deslizan con el dedo */
     table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
     th,td{white-space:nowrap;font-size:12px;padding:6px 7px}
-    td:first-child,th:first-child{white-space:normal;min-width:96px}
+    td:first-child,th:first-child{white-space:nowrap}
     table::-webkit-scrollbar{height:6px}
     table::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
     table::-webkit-scrollbar-track{background:var(--line);border-radius:3px}
@@ -194,57 +230,20 @@
   </div>
 </div>
 
-<!-- ============ BALANCE GLOBAL (contenido estático; el JS lo reemplaza si corre) ============ -->
-<div class="stats" id="stats">
-  <div class="stat-card"><div class="v g">10</div><div class="l">Ganados</div></div>
-  <div class="stat-card"><div class="v r">7</div><div class="l">Perdidos</div></div>
-  <div class="stat-card"><div class="v o">2</div><div class="l">Pendientes</div></div>
-  <div class="stat-card"><div class="v b">59%</div><div class="l">% Acierto</div></div>
-  <div class="stat-card"><div class="v g">+1.30U</div><div class="l">Neto (U)</div></div>
-  <div class="stat-card"><div class="v b">22.5U</div><div class="l">Arriesgado</div></div>
-</div>
-
-<!-- ============ ESTADÍSTICAS AVANZADAS ============ -->
-<div class="card" id="advCard">
-  <h2>📈 Estadísticas avanzadas — nuestro rendimiento</h2>
-  <div id="advstats">
-    <div class="stats" style="margin-bottom:14px">
-      <div class="stat-card"><div class="v g">+6.5%</div><div class="l">ROI</div></div>
-      <div class="stat-card"><div class="v g">2G 🔥</div><div class="l">Racha actual</div></div>
-      <div class="stat-card elite"><div class="v">🏆 4-2</div><div class="l">Jugada Elite (5★)</div></div>
-      <div class="stat-card"><div class="v g">+1.50U</div><div class="l">Neto Elite</div></div>
-      <div class="stat-card"><div class="v g">+0.08U</div><div class="l">U por pick</div></div>
-    </div>
-    <div style="background:var(--card2);border-radius:12px;padding:14px 10px 8px;margin-bottom:14px">
-      <div style="margin:0 0 8px 6px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px">💰 Evolución de la banca (U)</div>
-      <svg viewBox="0 0 560 150" style="width:100%;height:auto">
-        <line x1="30" y1="120" x2="530" y2="120" stroke="var(--line)" stroke-dasharray="3 3"/>
-        <path d="M30,120 L30,111 L113,61 L197,40 L280,103 L363,130 L447,111 L530,97 L530,120 Z" fill="rgba(245,197,66,.12)"/>
-        <path d="M30,111 L113,61 L197,40 L280,103 L363,130 L447,111 L530,97" fill="none" stroke="var(--gold)" stroke-width="2.5"/>
-        <circle cx="30" cy="111" r="3.5" fill="var(--gold)"/><text x="30" y="102" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+0.5U</text><text x="30" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/11</text>
-        <circle cx="113" cy="61" r="3.5" fill="var(--gold)"/><text x="113" y="52" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+3.3U</text><text x="113" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/12</text>
-        <circle cx="197" cy="40" r="3.5" fill="var(--gold)"/><text x="197" y="31" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+4.5U</text><text x="197" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/13</text>
-        <circle cx="280" cy="103" r="3.5" fill="var(--gold)"/><text x="280" y="94" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+1.0U</text><text x="280" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/15</text>
-        <circle cx="363" cy="130" r="3.5" fill="var(--red)"/><text x="363" y="118" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">-0.5U</text><text x="363" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/16</text>
-        <circle cx="447" cy="111" r="3.5" fill="var(--gold)"/><text x="447" y="102" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+0.5U</text><text x="447" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/17</text>
-        <circle cx="530" cy="97" r="3.5" fill="var(--gold)"/><text x="530" y="88" fill="var(--txt)" font-size="11" font-weight="700" text-anchor="middle">+1.3U</text><text x="530" y="142" fill="var(--mut)" font-size="10" text-anchor="middle">06/18</text>
-      </svg>
-    </div>
-    <div class="grid cols2">
-      <div><div style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">🏅 Por deporte</div>
-        <table><tr><th>Deporte</th><th>G-P</th><th>Neto</th><th>ROI</th></tr>
-          <tr><td>Soccer</td><td>5-2</td><td style="font-weight:700;color:var(--green)">+2.62U</td><td style="color:var(--green)">+31%</td></tr>
-          <tr><td>MLB</td><td>4-5</td><td style="font-weight:700;color:var(--red)">-2.68U</td><td style="color:var(--red)">-27%</td></tr>
-          <tr><td>NBA</td><td>1-0</td><td style="font-weight:700;color:var(--green)">+1.36U</td><td style="color:var(--green)">+91%</td></tr>
-        </table></div>
-      <div><div style="font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">🎯 Por tipo de apuesta</div>
-        <table><tr><th>Tipo</th><th>G-P</th><th>Neto</th><th>ROI</th></tr>
-          <tr><td>Total</td><td>3-1</td><td style="font-weight:700;color:var(--green)">+2.45U</td><td style="color:var(--green)">+45%</td></tr>
-          <tr><td>Spread</td><td>1-1</td><td style="font-weight:700;color:var(--red)">-0.29U</td><td style="color:var(--red)">-15%</td></tr>
-          <tr><td>ML</td><td>6-5</td><td style="font-weight:700;color:var(--red)">-0.86U</td><td style="color:var(--red)">-7%</td></tr>
-        </table></div>
+<!-- ============ HISTORIAL (el JS lo recalcula desde RESULTADOS; abajo el fallback estático) ============ -->
+<div id="histwrap">
+  <div class="card stathero">
+    <div class="htop">
+      <div><div class="hlab">Todo</div><div class="hbig g num">+1.30u ▲</div></div>
+      <div class="hkpis">Aciertos <b class="g">59%</b><br>ROI <b class="g">+6.5%</b><br>Récord <b class="g">10-7</b></div>
     </div>
   </div>
+  <div class="periods">
+    <div class="pcard"><div class="t">Últimos 7</div><div class="u r num">-1.98u ▼</div><div class="rec r num">5-6</div><div class="roi">ROI <span class="r">-15%</span></div></div>
+    <div class="pcard"><div class="t">Últimos 30</div><div class="u g num">+1.30u ▲</div><div class="rec g num">10-7</div><div class="roi">ROI <span class="g">+6.5%</span></div></div>
+    <div class="pcard active"><div class="t">Todo</div><div class="u g num">+1.30u ▲</div><div class="rec g num">10-7</div><div class="roi">ROI <span class="g">+6.5%</span></div></div>
+  </div>
+  <div class="elitebar"><div class="el">🏆 Jugada Elite<small>Confianza 5★</small></div><div class="erec num">4-2</div><div class="enet g num">Neto +1.50u ▲</div></div>
 </div>
 
 <!-- ============ CONTENIDO DEL DIA (estático; el JS lo reemplaza y habilita el calendario) ============ -->
@@ -1470,8 +1469,56 @@ document.getElementById("calBtn").addEventListener("click",(e)=>{
 });
 document.getElementById("calPop").addEventListener("click",(e)=>e.stopPropagation());
 document.addEventListener("click",()=>document.getElementById("calPop").classList.remove("open"));
-pintarBalance();
-pintarAvanzadas();
+/* ===== HISTORIAL NUEVO (calcula y dibuja desde RESULTADOS) ===== */
+var PER='all';
+function setPer(k){PER=k;pintarHistorial();}
+function fmtu(n){return (n>=0?"+":"")+n.toFixed(2)+"u";}
+function pintarHistorial(){
+  const dec=RESULTADOS.filter(r=>r.resultado==="W"||r.resultado==="L");
+  const cont=document.getElementById("histwrap"); if(!cont)return;
+  if(!dec.length){cont.innerHTML="<div class='card'><p style='color:var(--mut)'>Aún sin picks resueltos — el historial aparece tras el primer cierre.</p></div>";return;}
+  const chrono=[...dec].sort((a,b)=>a.fecha<b.fecha?-1:1);
+  const lastDate=chrono[chrono.length-1].fecha;
+  function inWin(Nd){if(!Nd)return chrono;const md=new Date(lastDate+"T12:00:00");return chrono.filter(r=>(md-new Date(r.fecha+"T12:00:00"))/86400000 < Nd);}
+  function ag(arr){const W=arr.filter(r=>r.resultado==="W").length,L=arr.length-W,neto=arr.reduce((s,r)=>s+r.neto,0),inv=arr.reduce((s,r)=>s+r.u,0);return{W,L,neto,roi:inv?100*neto/inv:0,win:arr.length?Math.round(100*W/arr.length):0};}
+  const PD={'7':{lab:'Últimos 7',a:inWin(7)},'30':{lab:'Últimos 30',a:inWin(30)},'all':{lab:'Todo',a:chrono}};
+  Object.keys(PD).forEach(k=>PD[k].s=ag(PD[k].a));
+  const cur=PD[PER]||PD['all'],up=cur.s.neto>=0,c=up?'g':'r';
+  const dmap={};cur.a.forEach(r=>dmap[r.fecha]=(dmap[r.fecha]||0)+r.neto);
+  const fechas=Object.keys(dmap).sort();let cm=0;const pts=fechas.map(f=>{cm+=dmap[f];return cm;});
+  if(!pts.length)pts.push(cur.s.neto);
+  const w=560,h=150,pad=30,mx=Math.max(...pts,0),mn=Math.min(...pts,0),rng=(mx-mn)||1;
+  const X=i=>pad+(i*(w-2*pad)/Math.max(pts.length-1,1)),Y=v=>h-pad-((v-mn)/rng)*(h-2*pad);
+  const line=pts.map((v,i)=>`${i?'L':'M'}${X(i).toFixed(0)},${Y(v).toFixed(0)}`).join(" ");
+  const area=line+` L${X(pts.length-1).toFixed(0)},${h-8} L${X(0).toFixed(0)},${h-8} Z`;
+  const col=up?'var(--green)':'var(--red)',fill=up?'rgba(61,220,132,.10)':'rgba(255,93,108,.10)';
+  const eli=dec.filter(r=>r.conf===5),eW=eli.filter(r=>r.resultado==="W").length,eN=eli.reduce((s,r)=>s+r.neto,0);
+  const SP={Soccer:{n:'Fútbol',i:'⚽'},MLB:{n:'MLB',i:'⚾'},NBA:{n:'NBA',i:'🏀'}};
+  const dep={};dec.forEach(r=>{const k=r.deporte;(dep[k]=dep[k]||{W:0,L:0,neto:0});if(r.resultado==="W")dep[k].W++;else dep[k].L++;dep[k].neto+=r.neto;});
+  const ord=Object.keys(dep).sort((a,b)=>dep[b].neto-dep[a].neto),best=ord[0];
+  const sportsHTML=ord.map(k=>{const g=dep[k],m=SP[k]||{n:k,i:'🎯'},sc=g.neto>=0?'g':'r';return `<div class="scard">${k===best?'<span class="star">★</span>':''}<div class="ico">${m.i}</div><div class="nm">${m.n}</div><div class="rec ${sc}">${g.W}-${g.L}</div><div class="u ${sc} num">${fmtu(g.neto)} ${g.neto>=0?'▲':'▼'}</div></div>`;}).join("");
+  const TC={ML:'var(--purple)',Total:'var(--orange)',Spread:'var(--blue)',Prop:'#2dd4bf',Future:'var(--mut)'};
+  const favHTML=ord.map(k=>{const tp={};dec.filter(r=>r.deporte===k).forEach(r=>tp[r.tipo]=(tp[r.tipo]||0)+1);const tot=Object.values(tp).reduce((a,b)=>a+b,0)||1;const seg=Object.keys(tp).map(t=>`<i style="width:${(100*tp[t]/tot).toFixed(0)}%;background:${TC[t]||'var(--mut)'}"></i>`).join("");return `<div class="row"><span class="rl">${(SP[k]||{n:k}).n}</span><div class="bar">${seg}</div></div>`;}).join("");
+  const pc=['7','30','all'].map(k=>{const d=PD[k],u=d.s.neto>=0,cc=u?'g':'r';return `<div class="pcard ${k===PER?'active':''}" onclick="setPer('${k}')"><div class="t">${d.lab}</div><div class="u ${cc} num">${fmtu(d.s.neto)} ${u?'▲':'▼'}</div><div class="rec ${cc} num">${d.s.W}-${d.s.L}</div><div class="roi">ROI <span class="${cc}">${(d.s.roi>=0?'+':'')+d.s.roi.toFixed(1)}%</span></div></div>`;}).join("");
+  cont.innerHTML=`
+  <div class="card stathero">
+    <div class="htop"><div><div class="hlab">${cur.lab}</div><div class="hbig ${c} num">${fmtu(cur.s.neto)} ${up?'▲':'▼'}</div></div>
+    <div class="hkpis">Aciertos <b class="${c}">${cur.s.win}%</b><br>ROI <b class="${c}">${(cur.s.roi>=0?'+':'')+cur.s.roi.toFixed(1)}%</b><br>Récord <b class="${c}">${cur.s.W}-${cur.s.L}</b></div></div>
+    <svg viewBox="0 0 ${w} ${h}" style="width:100%;height:auto;margin-top:12px">
+      <line x1="${pad}" y1="${Y(0).toFixed(0)}" x2="${w-pad}" y2="${Y(0).toFixed(0)}" stroke="var(--line)" stroke-dasharray="3 3"/>
+      <path d="${area}" fill="${fill}"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="periods">${pc}</div>
+  <div class="elitebar"><div class="el">🏆 Jugada Elite<small>Confianza 5★</small></div><div class="erec num">${eW}-${eli.length-eW}</div><div class="enet ${eN>=0?'g':'r'} num">Neto ${fmtu(eN)} ${eN>=0?'▲':'▼'}</div></div>
+  <div class="sec-t">Por deporte</div>
+  <div class="sports">${sportsHTML}</div>
+  <div class="sec-t">Apuestas favoritas (por tipo)</div>
+  <div class="card favbets">${favHTML}
+    <div class="legend"><span><span class="dot" style="background:var(--blue)"></span>Spread</span><span><span class="dot" style="background:var(--purple)"></span>ML</span><span><span class="dot" style="background:var(--orange)"></span>Total</span><span><span class="dot" style="background:#2dd4bf"></span>Props</span><span><span class="dot" style="background:var(--mut)"></span>Futuros</span></div>
+  </div>`;
+}
+pintarHistorial();
 pintarCalendario();
 const dias = Object.keys(DIAS).sort();
 seleccionar(dias[dias.length-1]); // abre el día más reciente
