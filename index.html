@@ -72,7 +72,7 @@
   .stars{color:var(--gold);letter-spacing:2px}
   .logo{width:26px;height:26px;vertical-align:middle;margin-right:6px;object-fit:contain}
   /* Padres (marrón/dorado) se pierde en fondo oscuro → chip claro para que resalte */
-  img.logo[src*="sd.png"]{background:#fff;border-radius:5px;padding:1px}
+  img.logo[src*="sd.png"],img.logo[src*="nyy.png"],img.logo[src*="kc.png"]{background:#fff;border-radius:5px;padding:1px}
   .flag{width:26px;height:18px;vertical-align:middle;margin-right:6px;border-radius:3px;object-fit:cover}
   .vs{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin:8px 0}
   .vs img.flag{width:34px;height:24px}
@@ -125,6 +125,8 @@
   .legend span{display:inline-flex;align-items:center;gap:6px}
   .legend .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
   @media(max-width:480px){.stathero .hbig{font-size:28px}.pcard .u{font-size:20px}.pcard .t{font-size:12px}.periods{gap:7px}.pcard{padding:11px}}
+  /* colores del historial (verde positivo / rojo negativo) */
+  #histwrap .g{color:var(--green)} #histwrap .r{color:var(--red)} #histwrap .b{color:var(--blue)} #histwrap .gold{color:var(--gold)} #histwrap .mut{color:var(--mut)}
   /* botones de rango del gráfico */
   .rangebtns{display:flex;gap:4px}
   .rangebtns button{background:var(--card);border:1px solid var(--line);color:var(--mut);font-size:11px;padding:3px 9px;border-radius:7px;cursor:pointer;font-family:inherit}
@@ -172,7 +174,7 @@
     /* tablas: los nombres largos (1ª columna) bajan de línea; las anchas se deslizan con el dedo */
     table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
     th,td{white-space:nowrap;font-size:12px;padding:6px 7px}
-    td:first-child,th:first-child{white-space:nowrap}
+    td:first-child,th:first-child{white-space:normal;min-width:118px}
     table::-webkit-scrollbar{height:6px}
     table::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
     table::-webkit-scrollbar-track{background:var(--line);border-radius:3px}
@@ -474,10 +476,10 @@ const DIAS = {
   <h2>📊 Tablero del día — evaluado</h2>
   <table>
     <tr><th>Jugada</th><th>Cuota</th><th>Motivo</th><th>Veredicto</th></tr>
-    <tr><td><img class="logo" src="${M}bos.png">Red Sox @ <img class="logo" src="${M}sea.png">Mariners ML</td><td>-115</td><td>Modelo B- (+4%) + Miller 1.54 vs Suárez 3.21 + localía (4 capas)</td><td style="color:var(--gold);font-weight:700">✅ ELITE 1.5U</td></tr>
-    <tr><td><img class="logo" src="${M}stl.png">Cardinals ML @ <img class="logo" src="${M}kc.png">Royals</td><td>-113</td><td>Favorito visitante: McGreevy 2.99 vs Lugo 3.86 + sharp +15%</td><td style="color:var(--green);font-weight:700">✅ VALOR 1U</td></tr>
-    <tr><td><img class="logo" src="${M}laa.png">Angels ML @ <img class="logo" src="${M}ath.png">Athletics</td><td>+144</td><td>Mayor sharp del día (+38%) + Soriano 2.79 vs Springs 5.13, pero es perro de carretera y perdimos 4 perros esta semana</td><td style="color:var(--mut)">⏸️ observación</td></tr>
-    <tr><td><img class="logo" src="${M}cle.png">Guardians ML @ <img class="logo" src="${M}hou.png">Astros</td><td>+113</td><td>Sharp +30% + pitcheo real (Bibee 3.96 vs Imai 6.43), pero perro y ofensiva irregular</td><td style="color:var(--mut)">⏸️ observación</td></tr>
+    <tr><td><img class="logo" src="${M}sea.png">Mariners ML</td><td>-115</td><td>Modelo B- (+4%) + Miller 1.54 vs Suárez 3.21 + localía (4 capas)</td><td style="color:var(--gold);font-weight:700">✅ ELITE 1.5U</td></tr>
+    <tr><td><img class="logo" src="${M}stl.png">Cardinals ML</td><td>-113</td><td>Favorito visitante: McGreevy 2.99 vs Lugo 3.86 + sharp +15%</td><td style="color:var(--green);font-weight:700">✅ VALOR 1U</td></tr>
+    <tr><td><img class="logo" src="${M}laa.png">Angels ML</td><td>+144</td><td>Mayor sharp del día (+38%) + Soriano 2.79 vs Springs 5.13, pero es perro de carretera y perdimos 4 perros esta semana</td><td style="color:var(--mut)">⏸️ observación</td></tr>
+    <tr><td><img class="logo" src="${M}cle.png">Guardians ML</td><td>+113</td><td>Sharp +30% + pitcheo real (Bibee 3.96 vs Imai 6.43), pero perro y ofensiva irregular</td><td style="color:var(--mut)">⏸️ observación</td></tr>
     <tr><td><img class="logo" src="${M}chw.png">White Sox / <img class="logo" src="${M}min.png">Twins (perros)</td><td>+178 / +156</td><td>El sharp va al perro pero el PITCHEO está en contra (Skubal y Soroka mandan) → trampa SYS-002</td><td style="color:var(--mut)">❌ descartado</td></tr>
     <tr><td><img class="flag" src="${F}us.png">USA -170 / <img class="logo" src="${M}nyy.png">Yankees -257</td><td>—</td><td>Favoritos dominantes fuera de rango como pick simple → van al PARLAY del día</td><td style="color:var(--mut)">🎲 parlay</td></tr>
   </table>
@@ -506,8 +508,8 @@ const DIAS = {
   <h2 style="margin-top:10px">2 favoritos dominantes combinados → <span style="color:var(--purple)">+121</span></h2>
   <table>
     <tr><th>Pata</th><th>Cuota sola</th><th>Por qué</th></tr>
-    <tr><td><img class="logo" src="${M}nyy.png">Yankees ML vs Reds</td><td>-257</td><td>Schlittler 1.82 (7-3) en casa vs ofensiva floja de Cincinnati — muy superior</td></tr>
-    <tr><td><img class="flag" src="${F}us.png">USA ML vs Australia</td><td>-170</td><td>Local en Seattle y viene de golear 4-1 a Paraguay; claramente superior</td></tr>
+    <tr><td><img class="logo" src="${M}nyy.png">Yankees ML</td><td>-257</td><td>Schlittler 1.82 (7-3) en casa vs ofensiva floja de Cincinnati — muy superior</td></tr>
+    <tr><td><img class="flag" src="${F}us.png">USA ML</td><td>-170</td><td>Local en Seattle y viene de golear 4-1 a Paraguay; claramente superior</td></tr>
   </table>
   <div class="note danger">⚠️ Jugada de RIESGO y OPCIONAL: las DOS patas deben ganar. <b>NO entra al balance ni al récord.</b> Combinar dos grandes favoritos sube la cuota (-257 + -170 → <b>+121</b>). En Kalshi se juega como <b>"Combo"</b>. Excluí a los Tigers (Skubal): el sharp los fadea hoy. Nunca con dinero que necesites.</div>
 </div>
@@ -517,8 +519,8 @@ const DIAS = {
   <h2 style="margin-top:10px">Resultados verificados (ESPN + CBS + MLB.com)</h2>
   <table>
     <tr><th>Pick</th><th>Cuota</th><th>Marcador</th><th>Resultado</th><th>+/-</th></tr>
-    <tr><td><img class="logo" src="${M}min.png">Twins ML @ Rangers</td><td>-126</td><td>9-3</td><td style="color:var(--green);font-weight:700">✅ W</td><td style="color:var(--green)">+0.79U</td></tr>
-    <tr><td><img class="logo" src="${M}atl.png">Braves ML vs Giants (Elite)</td><td>-144</td><td>PPD</td><td style="color:var(--mut);font-weight:700">⊘ ANULADO</td><td style="color:var(--mut)">0.0U</td></tr>
+    <tr><td><img class="logo" src="${M}min.png">Twins ML</td><td>-126</td><td>9-3</td><td style="color:var(--green);font-weight:700">✅ W</td><td style="color:var(--green)">+0.79U</td></tr>
+    <tr><td><img class="logo" src="${M}atl.png">Braves ML (Elite)</td><td>-144</td><td>PPD</td><td style="color:var(--mut);font-weight:700">⊘ ANULADO</td><td style="color:var(--mut)">0.0U</td></tr>
   </table>
   <div class="note">🔬 <b>Autopsia:</b> ✅ <b>Twins 9-3</b> (Joe Ryan 5 entradas en blanco, 7 K; jonrones de Brooks Lee, Kreidler y Larnach) — barrida a Texas. El perfil que buscamos —<b>favorito con pitcheo a favor</b>— volvió a pagar. ⊘ <b>La Elite (Braves-Giants) se POSPUSO por lluvia</b> (Tormenta Tropical Arthur; se repone el 31-ago) → la apuesta se anula y se reembolsa en Kalshi (no cuenta W/L). Las anulaciones por clima son parte del juego: el capital queda intacto. Verificado en ESPN + CBS + MLB.com.</div>
 </div>
