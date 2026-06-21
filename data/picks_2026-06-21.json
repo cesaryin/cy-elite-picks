@@ -1,0 +1,74 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "SF ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -144,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: ventaja de pitcheo enorme (Logan Webb 3.46 vs Ryan Gusto 7.24, factor #1 en MLB), MIA con abridor que regala carreras, y SF con ofensiva funcional (4.8 carreras en forma). Aunque MIA llega 7-3 en casa, el matchup de lomita es dominante y SYS-002 se cumple (perro/favorito con bat real + ventaja de ERA real).",
+      "equipos": [
+        "SF",
+        "MIA"
+      ],
+      "destacado": "SF",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SF",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -106,
+      "unidades": 1.0,
+      "razon": "Chase Burns (2.01 ERA, 8-1) supera con claridad a Elmer Rodríguez (4.15, 0-1, sin track record). A precio casi flat (-106) hay valor: la ventaja real de abridor justifica favorito y CIN tiene ofensiva decente (4.4 carreras) para apoyar. NYY caliente en casa es la única contra, pero la cuota paga el riesgo.",
+      "equipos": [
+        "CIN",
+        "NYY"
+      ],
+      "destacado": "CIN",
+      "hora": "12:35 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CIN",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "Belgium ML",
+        "deporte": "Mundial",
+        "destacado": "BEL",
+        "cuota": -250
+      },
+      {
+        "pick": "Uruguay ML",
+        "deporte": "Mundial",
+        "destacado": "URU",
+        "cuota": -230
+      }
+    ],
+    "cuota_combinada": 101,
+    "nota": "Dos favoritos razonables y en buena forma (BEL DWWDW como local, URU sólida defensivamente) combinados a +101 con valor real frente a sus probabilidades."
+  },
+  "descartes": [
+    "MIL@ATL: ATL favorito pero llega 3-7 y anotando 3.1; sin convergencia limpia para ML ni total.",
+    "WSH@TB: TB con buen pitcheo pero forma ofensiva pobre en casa; total y ML sin valor claro.",
+    "CWS@DET: matchup parejo de abridores, DET -119 sin margen de valor.",
+    "CLE@HOU: ERAs casi idénticas, HOU -136 es precio justo sin valor.",
+    "KSA@ESP: España -1000 fuera de rango; spread -2.5 sin valor seguro.",
+    "IRN@BEL y CPV@URU como ML simples quedan caros o arriesgados, mejor aprovechados en parlay.",
+    "EGY@NZL: Egipto -170 al límite del rango y NZL local impredecible; sin margen."
+  ],
+  "resumen": "Día de poco ruido pero con dos jugadas MLB de valor apoyadas en pitcheo: SF como apuesta principal (1.5U) por la enorme ventaja de Webb sobre Gusto, y CIN (1U) con Burns dominando a precio flat. Sumamos un parlay opcional de dos favoritos sólidos del Mundial (BEL+URU) a +101 que no cuenta en el balance. Riesgo total en picks: 2.5 unidades."
+}
