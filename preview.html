@@ -164,16 +164,24 @@ const cls=p=>p?"g":"r";
 function filt(p){if(p>=999)return R;const fs=[...new Set(R.map(x=>x.f))].sort().slice(-p);return R.filter(x=>fs.includes(x.f));}
 function serieDe(a){const byd={};a.forEach(x=>byd[x.f]=(byd[x.f]||0)+neto(x));const ds=Object.keys(byd).sort();let ac=0;return ds.map(f=>({f,ac:(ac+=byd[f])}));}
 function byDay(){const m={};R.forEach(x=>(m[x.f]=m[x.f]||[]).push(x));return m;}
+function smooth(P){if(P.length<2)return P.length?("M"+P[0][0]+","+P[0][1]):"";let d="M"+P[0][0].toFixed(1)+","+P[0][1].toFixed(1);for(let i=0;i<P.length-1;i++){const p0=P[i-1]||P[i],p1=P[i],p2=P[i+1],p3=P[i+2]||P[i+1];const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;d+="C"+c1x.toFixed(1)+","+c1y.toFixed(1)+" "+c2x.toFixed(1)+","+c2y.toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
 
-const VW=320;
-function chart(a){const S=serieDe(a),v=S.map(s=>s.ac),H=120,pad=12;if(!v.length){graf.innerHTML="";return;}
+// Gráfica de ÁREA SUAVE bicolor: verde sobre cero, rojo bajo cero. Altura compacta.
+const VW=340;
+function chart(a){const S=serieDe(a),v=S.map(s=>s.ac),H=88,pad=7;if(!v.length){graf.innerHTML="";return;}
  const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
  const X=i=>v.length>1?pad+i/(v.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
- const pts=v.map((val,i)=>X(i).toFixed(1)+","+Y(val).toFixed(1)).join(" ");
- const col=v[v.length-1]>=0?"#3fb950":"#f85149";
+ const P=v.map((val,i)=>[X(i),Y(val)]),line=smooth(P),Y0=Y(0);
+ const area=line+" L"+X(v.length-1).toFixed(1)+","+Y0.toFixed(1)+" L"+X(0).toFixed(1)+","+Y0.toFixed(1)+" Z";
  graf.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet">'
- +'<line x1="0" y1="'+Y(0)+'" x2="'+VW+'" y2="'+Y(0)+'" stroke="#30363d" stroke-dasharray="4"/>'
- +'<polyline points="'+pts+'" fill="none" stroke="'+col+'" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>';}
+ +'<defs><linearGradient id="agv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".55"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>'
+ +'<linearGradient id="agr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f85149" stop-opacity="0"/><stop offset="1" stop-color="#f85149" stop-opacity=".55"/></linearGradient>'
+ +'<clipPath id="aup"><rect x="0" y="0" width="'+VW+'" height="'+Y0+'"/></clipPath>'
+ +'<clipPath id="adn"><rect x="0" y="'+Y0+'" width="'+VW+'" height="'+(H-Y0)+'"/></clipPath></defs>'
+ +'<path d="'+area+'" fill="url(#agv)" clip-path="url(#aup)"/><path d="'+area+'" fill="url(#agr)" clip-path="url(#adn)"/>'
+ +'<line x1="0" y1="'+Y0+'" x2="'+VW+'" y2="'+Y0+'" stroke="#30363d" stroke-dasharray="3"/>'
+ +'<path d="'+line+'" fill="none" stroke="#3fb950" stroke-width="2.4" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#aup)"/>'
+ +'<path d="'+line+'" fill="none" stroke="#f85149" stroke-width="2.4" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#adn)"/></svg>';}
 
 let per=30;
 function setPer(p){per=p;document.querySelectorAll('.pill').forEach(e=>e.classList.toggle('on',+e.dataset.p===p));
