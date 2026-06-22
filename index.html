@@ -11,11 +11,6 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,
 header{text-align:center;padding:14px 0 8px}
 header h1{font-size:23px;letter-spacing:.5px;font-weight:800}
 header .fecha{color:#8b949e;font-size:14px;margin-top:4px}
-.record{display:flex;justify-content:space-between;align-items:center;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:10px 14px;margin:8px 0 2px;font-weight:800}
-.record .rl{color:#8b949e;font-size:11px;letter-spacing:.5px}
-.record .rw{font-size:16px}
-.record .g{color:#3fb950}
-.record .r{color:#f85149}
 .card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:15px 16px;margin:13px 0}
 .card .badge{font-size:11px;font-weight:800;letter-spacing:.6px;color:#8b949e;margin-bottom:10px}
 .card.elite{border:1px solid #d4af37;background:linear-gradient(160deg,#1e1a0e,#161b22)}
@@ -45,6 +40,44 @@ header .fecha{color:#8b949e;font-size:14px;margin-top:4px}
 .descartes{font-size:13px;color:#8b949e;margin:8px 2px}
 .descartes summary{cursor:pointer;font-weight:700;color:#c9d1d9;padding:6px 0}
 .descartes li{margin:6px 0 6px 18px}
+/* ===== HISTORIAL (scope #hist) ===== */
+#hist{margin:6px 0 2px}
+#hist .g{color:#3fb950}#hist .r{color:#f85149}
+.hist-acc{width:100%;display:flex;align-items:center;gap:10px;background:#161b22;border:1px solid #30363d;border-radius:13px;padding:12px 15px;cursor:pointer;color:#e6edf3}
+.hist-acc .ic{font-size:17px}.hist-acc .ti{font-weight:800;font-size:14.5px}
+.hist-acc .nt{margin-left:auto;font-weight:900;font-size:16px}.hist-acc .ar{color:#8b949e;font-weight:700;font-size:12px}
+.hist-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 13px 13px;margin-top:-7px;padding:14px;background:#0f141a}
+.hist-card{background:linear-gradient(160deg,#11161d,#161b22);border:1px solid #30363d;border-radius:14px;padding:13px 15px}
+.hist-head{display:flex;justify-content:space-between;align-items:flex-start}
+.hist-lbl{font-size:11px;font-weight:800;letter-spacing:.5px;color:#8b949e}
+.hist-neto{font-size:33px;font-weight:900;line-height:1.05;margin-top:1px}
+.hist-meta{text-align:right;font-size:12.5px;font-weight:700;color:#c9d1d9;padding-top:3px}
+.hist-meta div{margin-bottom:2px}
+.hist-graf{margin:4px 0 8px}
+.hist-pills{display:flex;gap:7px}
+.hist-pill{flex:1;text-align:center;background:#0d1117;border:1px solid #30363d;border-radius:9px;padding:7px;font-size:12.5px;font-weight:700;color:#8b949e;cursor:pointer}
+.hist-pill.on{border-color:#58a6ff;color:#fff;background:#1b2230}
+.hist-elite{text-align:center;max-width:250px;margin:13px auto 4px;background:linear-gradient(160deg,#1e1a0e,#161b22);border:1px solid #d4af37;border-radius:13px;padding:9px 16px}
+.hist-elite .et{color:#f0c75e;font-size:10.5px;font-weight:800;letter-spacing:.5px}
+.hist-elite .ev{font-weight:900;font-size:16px;margin-top:3px}
+.hist-cal3{display:flex;gap:11px;margin-top:12px}
+.hist-cal-left{flex:0 0 45%}
+.hist-cal-right{flex:1;min-width:0}
+.hist-cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
+.hist-cal-h button{background:#0f141a;border:1px solid #30363d;color:#e6edf3;border-radius:6px;width:22px;height:21px;cursor:pointer;font-size:10px;padding:0}
+.hist-cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:11.5px}
+.hist-dow{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:2px}
+.hist-dow div{text-align:center;font-size:7px;color:#6e7681;font-weight:700}
+.hist-mes{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.hist-mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:4px;font-size:8px;font-weight:700;color:#586069;background:#0f141a}
+.hist-mc.empty{background:transparent}
+.hist-mc.win{background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;cursor:pointer}
+.hist-mc.loss{background:#3a1414;color:#f85149;border:1px solid #5c2020;cursor:pointer}
+.hist-dcard{background:#0f141a;border:1px solid #30363d;border-radius:10px;padding:9px 10px}
+.hist-dh{font-size:11px;font-weight:800;color:#8b949e;margin-bottom:5px}
+.hist-drow{display:flex;justify-content:space-between;font-size:11px;padding:4px 0;border-top:1px solid #21262d;gap:6px}
+.hist-drow span:first-child{font-weight:700}
+.hist-hint{color:#586069;font-size:11px;text-align:center;padding:20px 6px}
 footer{text-align:center;color:#6e7681;font-size:12px;padding:22px 0 6px;line-height:1.7}
 @media(min-width:600px){body{padding:24px}}
 </style>
@@ -55,10 +88,87 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:22px 0 6px;line-he
 <h1>👑 CY Elite Picks</h1>
 <div class="fecha">22 de junio de 2026</div>
 </header>
-<div class="record"><span class="rl">RÉCORD · últimos 3</span><span class="rw">2-1</span><span class="g">+0.82U</span></div><div class="card elite"><div class="badge">🥇 JUGADA ELITE · ⭐⭐⭐⭐⭐</div><div class="row"><div class="logos"><img class="logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" alt=""></div><div class="info"><div class="pick">CHC ML</div><div class="sub">MLB · 6:10 PM CT</div></div><div class="odds"><div class="cuota neg">-122</div><div class="u">1.5U</div></div></div><div class="razon">Convergencia clara: Senga abre con ERA 9.00 y record 0-5 (desastre absoluto) ante una ofensiva de Chicago en gran forma (6.0 carreras/juego, 6-4). Ventaja de pitcheo REAL (Imanaga 4.26 vs Senga 9.00) y mejor record general. Cuota dentro de rango con valor.</div></div><div class="card valor"><div class="badge">🥈 PICK DE VALOR · ⭐⭐⭐⭐</div><div class="row"><div class="logos"><img class="logo" src="https://flagcdn.com/w80/dz.png" alt=""></div><div class="info"><div class="pick">Algeria handicap -1</div><div class="sub">Mundial · 10:00 PM CT</div></div><div class="odds"><div class="cuota neg">-114</div><div class="u">1.0U</div></div></div><div class="razon">Argelia llega goleando (GUA 7-0, BOL 4-0, NED 1-0) y en forma WDWWL, mientras Jordania trae racha lamentable DDLLL encajando en serie (SUI 4-1, AUT 3-1). Handicap -1 a -114 ofrece valor frente a una defensa rival que filtra goles.</div></div><div class="card bronce"><div class="badge">🥉 PICK BRONCE · ⭐⭐⭐</div><div class="row"><div class="logos"><img class="logo" src="https://flagcdn.com/w80/no.png" alt=""></div><div class="info"><div class="pick">Norway ML</div><div class="sub">Mundial · 7:00 PM CT</div></div><div class="odds"><div class="cuota">+120</div><div class="u">1.0U</div></div></div><div class="razon">Noruega como local (+120) ante Senegal que llega en mala racha como visitante (cayo 3-1 con Francia, perdio con USA). Noruega viene de golear a Iraq 4-1 y ganar a Suecia; el factor casa y la forma reciente le dan valor a +120 frente a un perro de poco peso.</div></div><div class="card parlay"><div class="badge">🎲 PARLAY DEL DÍA · Combo · no cuenta en el balance</div><div class="patas"><div class="pata"><img class="logo sm" src="https://flagcdn.com/w80/ar.png" alt=""><span class="pn">Argentina ML</span><span class="pc">-230</span></div><div class="pata"><img class="logo sm" src="https://a.espncdn.com/i/teamlogos/mlb/500/tb.png" alt=""><span class="pn">TB ML</span><span class="pc">-186</span></div></div><div class="combo"><span>Combinado</span><span class="cuota">+120</span></div><div class="razon">Dos favoritos solidos y limpios: Argentina (WWWWW, goleando a todos) ante una Austria inferior, y Tampa Bay con Rasmussen (2.59 ERA) en casa frente a un KC zurdo flojo. Combinado +120 con valor real.</div></div><div class="resumen">📝 Dia de 3 jugadas con riesgo total de 3.5 unidades. La apuesta estrella es Chicago en Nueva York aprovechando el colapso de Senga (ERA 9.00, 0-5) ante una ofensiva en racha. Sumamos el handicap de Argelia castigando a una Jordania que encaja goles, y a Noruega en casa contra un Senegal flojo de visita. El parlay opcional combina a Argentina y Tampa Bay (favoritos solidos) a cuota +120, sin contar en el balance.</div><details class="descartes"><summary>❌ Descartes del día</summary><ul><li>NYY -127 vs DET: Cole superior pero cuota cargada y DET defiende bien en casa, valor justo, no convergencia para subir.</li><li>KC +160 @ TB: Rasmussen domina y TB anota poco; perro sin ventaja de pitcheo, descartado por SYS-002.</li><li>TEX vs MIA: abridores casi identicos (2.97 vs 3.10) y forma pareja, sin edge.</li><li>PHI @ WSH: abridor visitante sin confirmar (null), imposible evaluar matchup.</li><li>HOU @ TOR: Hunter Brown 1.10 es muestra minima; duelo cerrado sin valor claro en ML ni total.</li><li>France -1100 vs Iraq: cuota extrema fuera de rango; spread -2.5 arriesgado contra un Iraq que empato a Espana.</li></ul></details>
+<div id="hist">
+  <div class="hist-acc" onclick="histTog()">
+    <span class="ic">📊</span><span class="ti">Rendimiento del sistema</span>
+    <span class="nt g" id="histNet">+0.8U</span><span class="ar" id="histAr">▾</span>
+  </div>
+  <div class="hist-panel" id="histPanel" style="display:none">
+    <div class="hist-card">
+      <div class="hist-head">
+        <div><div class="hist-lbl" id="histLbl">HISTORIAL COMPLETO</div><div class="hist-neto" id="histHNet">—</div></div>
+        <div class="hist-meta"><div><span id="histRoi">—</span> ROI</div><div id="histRec">—</div></div>
+      </div>
+      <div class="hist-graf" id="histGraf"></div>
+      <div class="hist-pills">
+        <div class="hist-pill" data-p="7">7 días</div>
+        <div class="hist-pill" data-p="30">30 días</div>
+        <div class="hist-pill on" data-p="999">Todo</div>
+      </div>
+    </div>
+    <div class="hist-elite"><div class="et">🏆 JUGADA ELITE · ⭐⭐⭐⭐⭐</div><div class="ev" id="histElite">—</div></div>
+    <div class="hist-cal3">
+      <div class="hist-cal-left">
+        <div class="hist-cal-h"><button onclick="histMesNav(-1)">◀</button><span class="lbl" id="histMesLbl">—</span><button onclick="histMesNav(1)">▶</button></div>
+        <div class="hist-dow"><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div></div>
+        <div class="hist-mes" id="histMes"></div>
+      </div>
+      <div class="hist-cal-right" id="histDiaPicks"></div>
+    </div>
+  </div>
+</div><script>
+(function(){
+var R=[{"f": "2026-06-21", "dep": "MLB", "pk": "SF ML", "c": 4, "o": -144, "u": 1.0, "r": "L", "n": -1.0}, {"f": "2026-06-21", "dep": "MLB", "pk": "CIN ML", "c": 4, "o": -102, "u": 1.0, "r": "W", "n": 0.98}, {"f": "2026-06-21", "dep": "MLB", "pk": "WSH/TB u8.5", "c": 3, "o": -119, "u": 1.0, "r": "W", "n": 0.84}];
+var DEP={"MLB":"⚾","Mundial":"⚽","Soccer":"⚽","Fútbol":"⚽","NBA":"🏀"};
+var MED={5:"🥇",4:"🥈",3:"🥉"};
+var HMES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+var VW=340;
+function fmt(n){return (n>=0?"+":"")+n.toFixed(1)+"U";}
+function cls(p){return p?"g":"r";}
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+function agg(a){var w=0,l=0,n=0,rk=0;a.forEach(function(x){if(x.r==="W")w++;if(x.r==="L")l++;if(x.r!=="P"){n+=x.n;rk+=x.u;}});return {w:w,l:l,neto:n,roi:rk?n/rk*100:0,acc:(w+l)?w/(w+l)*100:0};}
+function serie(a){var byd={};a.forEach(function(x){byd[x.f]=(byd[x.f]||0)+x.n;});var ds=Object.keys(byd).sort();var ac=0;return ds.map(function(f){ac+=byd[f];return {f:f,ac:ac};});}
+function filt(p){if(p>=999)return R;var u=[];R.forEach(function(x){if(u.indexOf(x.f)<0)u.push(x.f);});var keep=u.sort().slice(-p);return R.filter(function(x){return keep.indexOf(x.f)>=0;});}
+function byDay(){var m={};R.forEach(function(x){(m[x.f]=m[x.f]||[]).push(x);});return m;}
+function smooth(P){if(P.length<2)return P.length?("M"+P[0][0]+","+P[0][1]):"";var d="M"+P[0][0].toFixed(1)+","+P[0][1].toFixed(1);for(var i=0;i<P.length-1;i++){var p0=P[i-1]||P[i],p1=P[i],p2=P[i+1],p3=P[i+2]||P[i+1];var c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;d+="C"+c1x.toFixed(1)+","+c1y.toFixed(1)+" "+c2x.toFixed(1)+","+c2y.toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
+function chart(a){var S=serie(a),v=S.map(function(s){return s.ac;}),H=66,pad=6;var g=document.getElementById('histGraf');if(!v.length){g.innerHTML="";return;}
+ var mn=Math.min.apply(null,[0].concat(v)),mx=Math.max.apply(null,[0].concat(v)),rg=(mx-mn)||1;
+ var X=function(i){return v.length>1?pad+i/(v.length-1)*(VW-2*pad):VW/2;},Y=function(val){return pad+(1-(val-mn)/rg)*(H-2*pad);};
+ var P=v.map(function(val,i){return [X(i),Y(val)];}),line=smooth(P),Y0=Y(0);
+ var area=line+" L"+X(v.length-1).toFixed(1)+","+Y0.toFixed(1)+" L"+X(0).toFixed(1)+","+Y0.toFixed(1)+" Z";
+ g.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet">'
+ +'<defs><linearGradient id="hgv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".55"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>'
+ +'<linearGradient id="hgr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f85149" stop-opacity="0"/><stop offset="1" stop-color="#f85149" stop-opacity=".55"/></linearGradient>'
+ +'<clipPath id="hup"><rect x="0" y="0" width="'+VW+'" height="'+Y0+'"/></clipPath>'
+ +'<clipPath id="hdn"><rect x="0" y="'+Y0+'" width="'+VW+'" height="'+(H-Y0)+'"/></clipPath></defs>'
+ +'<path d="'+area+'" fill="url(#hgv)" clip-path="url(#hup)"/><path d="'+area+'" fill="url(#hgr)" clip-path="url(#hdn)"/>'
+ +'<line x1="0" y1="'+Y0+'" x2="'+VW+'" y2="'+Y0+'" stroke="#30363d" stroke-dasharray="3"/>'
+ +'<path d="'+line+'" fill="none" stroke="#3fb950" stroke-width="2.4" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#hup)"/>'
+ +'<path d="'+line+'" fill="none" stroke="#f85149" stroke-width="2.4" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#hdn)"/></svg>';}
+function setPer(p){var pl=document.querySelectorAll('.hist-pill');for(var i=0;i<pl.length;i++)pl[i].className="hist-pill"+(+pl[i].dataset.p===p?" on":"");
+ var a=filt(p),s=agg(a);
+ document.getElementById('histLbl').textContent=p>=999?"HISTORIAL COMPLETO":("ÚLTIMOS "+p+" DÍAS");
+ var hn=document.getElementById('histHNet');hn.textContent=fmt(s.neto);hn.className="hist-neto "+cls(s.neto>=0);
+ var rr=document.getElementById('histRoi');rr.textContent=(s.roi>=0?"+":"")+s.roi.toFixed(0)+"%";rr.className=cls(s.roi>=0);
+ document.getElementById('histRec').textContent=s.w+"-"+s.l+" · "+s.acc.toFixed(0)+"% ac.";
+ chart(a);}
+var calY,calM;
+function pintarMes(){var sd=(new Date(calY,calM,1).getDay()+6)%7,days=new Date(calY,calM+1,0).getDate(),MD=byDay();var c="";for(var i=0;i<sd;i++)c+='<div class="hist-mc empty"></div>';for(var d=1;d<=days;d++){var f=calY+"-"+("0"+(calM+1)).slice(-2)+"-"+("0"+d).slice(-2);var ps=MD[f];if(ps){var z=agg(ps);c+='<div class="hist-mc '+(z.neto>=0?"win":"loss")+'" onclick="histVerDia(\''+f+'\')">'+d+'</div>';}else c+='<div class="hist-mc">'+d+'</div>';}document.getElementById('histMesLbl').textContent=HMES[calM]+" "+calY;document.getElementById('histMes').innerHTML=c;}
+function hhint(){document.getElementById('histDiaPicks').innerHTML='<div class="hist-hint">toca un día con color ←</div>';}
+window.histMesNav=function(s){calM+=s;if(calM<0){calM=11;calY--;}if(calM>11){calM=0;calY++;}pintarMes();hhint();};
+window.histVerDia=function(f){var a=R.filter(function(x){return x.f===f;});if(!a.length){hhint();return;}var h='<div class="hist-dcard"><div class="hist-dh">📕 '+f.slice(8)+' '+HMES[+f.slice(5,7)-1].slice(0,3)+'</div>';a.forEach(function(x){var dot=x.r==="W"?"🟢":x.r==="L"?"🔴":"⚪";h+='<div class="hist-drow"><span>'+(MED[x.c]||"•")+' '+(DEP[x.dep]||"")+' '+esc(x.pk)+'</span><span class="'+cls(x.n>=0)+'">'+dot+' '+fmt(x.n)+'</span></div>';});h+='</div>';document.getElementById('histDiaPicks').innerHTML=h;};
+window.histTog=function(){var p=document.getElementById('histPanel');var o=p.style.display!=="none";p.style.display=o?"none":"block";document.getElementById('histAr').textContent=o?"▾":"▴";};
+// init
+var e=agg(R.filter(function(x){return x.c===5;}));document.getElementById('histElite').innerHTML=e.w+"-"+e.l+' · <span class="'+cls(e.neto>=0)+'">'+fmt(e.neto)+'</span>';
+var pills=document.querySelectorAll('.hist-pill');for(var k=0;k<pills.length;k++)pills[k].onclick=(function(el){return function(){setPer(+el.dataset.p);};})(pills[k]);
+setPer(999);
+var ult=R.length?R[R.length-1].f:null;if(ult){calY=+ult.slice(0,4);calM=+ult.slice(5,7)-1;}else{var now=new Date();calY=now.getFullYear();calM=now.getMonth();}
+pintarMes();hhint();
+})();
+</script><div class="card elite"><div class="badge">🥇 JUGADA ELITE · ⭐⭐⭐⭐⭐</div><div class="row"><div class="logos"><img class="logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" alt=""></div><div class="info"><div class="pick">CHC ML</div><div class="sub">MLB · 6:10 PM CT</div></div><div class="odds"><div class="cuota neg">-122</div><div class="u">1.5U</div></div></div><div class="razon">Convergencia clara: Senga abre con ERA 9.00 y record 0-5 (desastre absoluto) ante una ofensiva de Chicago en gran forma (6.0 carreras/juego, 6-4). Ventaja de pitcheo REAL (Imanaga 4.26 vs Senga 9.00) y mejor record general. Cuota dentro de rango con valor.</div></div><div class="card valor"><div class="badge">🥈 PICK DE VALOR · ⭐⭐⭐⭐</div><div class="row"><div class="logos"><img class="logo" src="https://flagcdn.com/w80/dz.png" alt=""></div><div class="info"><div class="pick">Algeria handicap -1</div><div class="sub">Mundial · 10:00 PM CT</div></div><div class="odds"><div class="cuota neg">-114</div><div class="u">1.0U</div></div></div><div class="razon">Argelia llega goleando (GUA 7-0, BOL 4-0, NED 1-0) y en forma WDWWL, mientras Jordania trae racha lamentable DDLLL encajando en serie (SUI 4-1, AUT 3-1). Handicap -1 a -114 ofrece valor frente a una defensa rival que filtra goles.</div></div><div class="card bronce"><div class="badge">🥉 PICK BRONCE · ⭐⭐⭐</div><div class="row"><div class="logos"><img class="logo" src="https://flagcdn.com/w80/no.png" alt=""></div><div class="info"><div class="pick">Norway ML</div><div class="sub">Mundial · 7:00 PM CT</div></div><div class="odds"><div class="cuota">+120</div><div class="u">1.0U</div></div></div><div class="razon">Noruega como local (+120) ante Senegal que llega en mala racha como visitante (cayo 3-1 con Francia, perdio con USA). Noruega viene de golear a Iraq 4-1 y ganar a Suecia; el factor casa y la forma reciente le dan valor a +120 frente a un perro de poco peso.</div></div><div class="card parlay"><div class="badge">🎲 PARLAY DEL DÍA · Combo · no cuenta en el balance</div><div class="patas"><div class="pata"><img class="logo sm" src="https://flagcdn.com/w80/ar.png" alt=""><span class="pn">Argentina ML</span><span class="pc">-230</span></div><div class="pata"><img class="logo sm" src="https://a.espncdn.com/i/teamlogos/mlb/500/tb.png" alt=""><span class="pn">TB ML</span><span class="pc">-186</span></div></div><div class="combo"><span>Combinado</span><span class="cuota">+120</span></div><div class="razon">Dos favoritos solidos y limpios: Argentina (WWWWW, goleando a todos) ante una Austria inferior, y Tampa Bay con Rasmussen (2.59 ERA) en casa frente a un KC zurdo flojo. Combinado +120 con valor real.</div></div><div class="resumen">📝 Dia de 3 jugadas con riesgo total de 3.5 unidades. La apuesta estrella es Chicago en Nueva York aprovechando el colapso de Senga (ERA 9.00, 0-5) ante una ofensiva en racha. Sumamos el handicap de Argelia castigando a una Jordania que encaja goles, y a Noruega en casa contra un Senegal flojo de visita. El parlay opcional combina a Argentina y Tampa Bay (favoritos solidos) a cuota +120, sin contar en el balance.</div><details class="descartes"><summary>❌ Descartes del día</summary><ul><li>NYY -127 vs DET: Cole superior pero cuota cargada y DET defiende bien en casa, valor justo, no convergencia para subir.</li><li>KC +160 @ TB: Rasmussen domina y TB anota poco; perro sin ventaja de pitcheo, descartado por SYS-002.</li><li>TEX vs MIA: abridores casi identicos (2.97 vs 3.10) y forma pareja, sin edge.</li><li>PHI @ WSH: abridor visitante sin confirmar (null), imposible evaluar matchup.</li><li>HOU @ TOR: Hunter Brown 1.10 es muestra minima; duelo cerrado sin valor claro en ML ni total.</li><li>France -1100 vs Iraq: cuota extrema fuera de rango; spread -2.5 arriesgado contra un Iraq que empato a Espana.</li></ul></details>
 <footer>
 Apuesta con responsabilidad — ninguna jugada es segura; el sistema busca valor a largo plazo.<br>
-Actualizado: 06/22/2026 11:00 AM CT
+Actualizado: 06/22/2026 12:12 PM CT
 </footer>
 </div>
 </body>
