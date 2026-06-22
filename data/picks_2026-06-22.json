@@ -1,0 +1,95 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -126,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: Cole (2.57) supera de forma real a Framber (4.09), NYY tiene el mejor record de la liga (46-30) y ofensiva caliente (5.5 carreras en forma) vs un DET 33-44. Ventaja de abridor real, no nominal, dentro de rango jugable.",
+      "equipos": [
+        "NYY",
+        "DET"
+      ],
+      "destacado": "NYY",
+      "hora": "5:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CHC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -111,
+      "unidades": 1.0,
+      "razon": "Senga llega con ERA de 9.00 (0-5) y NYM regala overs (8/10) por su pitcheo. CHC viene 6-4 anotando 6.0 por juego y con Imanaga (4.26) tiene clara ventaja de matchup. Mejor valor en el ML casi pick'em.",
+      "equipos": [
+        "CHC",
+        "NYM"
+      ],
+      "destacado": "CHC",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIA ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -124,
+      "unidades": 1.0,
+      "razon": "Phillips (3.10) tiene ventaja sobre Rocker (4.17, 2-6) y MIA llega 7-3 en casa con buen balance (4.2 a favor, 3.4 en contra). TEX cede 6.3 carreras en forma. Favorito moderado con valor.",
+      "equipos": [
+        "TEX",
+        "MIA"
+      ],
+      "destacado": "MIA",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIA",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -174
+      },
+      {
+        "pick": "ARG ML",
+        "deporte": "Mundial",
+        "destacado": "ARG",
+        "cuota": -196
+      }
+    ],
+    "cuota_combinada": 138,
+    "nota": "Dos favoritos solidos pero razonables: TB con Rasmussen (2.59) sobre KC, y Argentina en racha perfecta (WWWWW) vs Austria. Combinado a +138 con valor."
+  },
+  "descartes": [
+    "KC @ TB: TB -174 fuera de rango; KC perro sin ventaja de pitcheo (Rasmussen 2.59 domina), sin valor en el perro.",
+    "PHI @ WSH: sin cuotas disponibles, no jugable.",
+    "HOU @ TOR: Hunter Brown 1.10 es muestra minima y TOR sin abridor listado; demasiada incertidumbre para fiarse.",
+    "AUT @ ARG: Argentina -196 fuera de rango para pick individual; Austria a +590 sin valor real (se usa ARG solo en parlay).",
+    "IRQ @ FRA: Francia -1200 extremo, sin valor; spread -2.5 arriesgado.",
+    "SEN @ NOR: formas mediocres de ambos (Noruega WDWDL), sin convergencia clara de valor.",
+    "ALG @ JOR: Argelia -180 fuera de rango y Jordania en mala racha sin upside jugable."
+  ],
+  "resumen": "Dia con base en MLB. Tres jugadas de moneyline con ventaja real de pitcheo: NYY con Cole sobre Detroit (1.5U) como jugada principal, CHC aprovechando el desastre de Senga (1U) y MIA en casa con Phillips (1U). Riesgo total 3.5U. Aparte, un parlay opcional de dos favoritos solidos (TB + Argentina) a +138 que no cuenta en el balance. En el Mundial no aparecio valor limpio para picks individuales."
+}

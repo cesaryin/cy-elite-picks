@@ -1,0 +1,32 @@
+[
+  {
+    "fecha": "2026-06-21",
+    "pick": "SF ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -144,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0
+  },
+  {
+    "fecha": "2026-06-21",
+    "pick": "CIN ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -102,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.98
+  },
+  {
+    "fecha": "2026-06-21",
+    "pick": "WSH/TB u8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -119,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.84
+  }
+]
