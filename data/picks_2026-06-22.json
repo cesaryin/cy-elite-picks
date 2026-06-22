@@ -2,33 +2,12 @@
   "picks": [
     {
       "nivel": "oro",
-      "pick": "NYY ML",
-      "deporte": "MLB",
-      "tipo": "ML",
-      "cuota": -126,
-      "unidades": 1.5,
-      "razon": "Convergencia clara: Cole (2.57) supera de forma real a Framber (4.09), NYY tiene el mejor record de la liga (46-30) y ofensiva caliente (5.5 carreras en forma) vs un DET 33-44. Ventaja de abridor real, no nominal, dentro de rango jugable.",
-      "equipos": [
-        "NYY",
-        "DET"
-      ],
-      "destacado": "NYY",
-      "hora": "5:10 PM CT",
-      "resolucion": {
-        "mercado": "ml",
-        "equipo": "NYY",
-        "lado": null,
-        "linea": null
-      }
-    },
-    {
-      "nivel": "plata",
       "pick": "CHC ML",
       "deporte": "MLB",
       "tipo": "ML",
-      "cuota": -111,
-      "unidades": 1.0,
-      "razon": "Senga llega con ERA de 9.00 (0-5) y NYM regala overs (8/10) por su pitcheo. CHC viene 6-4 anotando 6.0 por juego y con Imanaga (4.26) tiene clara ventaja de matchup. Mejor valor en el ML casi pick'em.",
+      "cuota": -122,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: Senga abre con ERA 9.00 y record 0-5 (desastre absoluto) ante una ofensiva de Chicago en gran forma (6.0 carreras/juego, 6-4). Ventaja de pitcheo REAL (Imanaga 4.26 vs Senga 9.00) y mejor record general. Cuota dentro de rango con valor.",
       "equipos": [
         "CHC",
         "NYM"
@@ -43,22 +22,43 @@
       }
     },
     {
-      "nivel": "bronce",
-      "pick": "MIA ML",
-      "deporte": "MLB",
-      "tipo": "ML",
-      "cuota": -124,
+      "nivel": "plata",
+      "pick": "Algeria handicap -1",
+      "deporte": "Mundial",
+      "tipo": "handicap -1",
+      "cuota": -114,
       "unidades": 1.0,
-      "razon": "Phillips (3.10) tiene ventaja sobre Rocker (4.17, 2-6) y MIA llega 7-3 en casa con buen balance (4.2 a favor, 3.4 en contra). TEX cede 6.3 carreras en forma. Favorito moderado con valor.",
+      "razon": "Argelia llega goleando (GUA 7-0, BOL 4-0, NED 1-0) y en forma WDWWL, mientras Jordania trae racha lamentable DDLLL encajando en serie (SUI 4-1, AUT 3-1). Handicap -1 a -114 ofrece valor frente a una defensa rival que filtra goles.",
       "equipos": [
-        "TEX",
-        "MIA"
+        "ALG",
+        "JOR"
       ],
-      "destacado": "MIA",
-      "hora": "5:40 PM CT",
+      "destacado": "ALG",
+      "hora": "10:00 PM CT",
+      "resolucion": {
+        "mercado": "spread",
+        "equipo": "ALG",
+        "lado": null,
+        "linea": -1.0
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Norway ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": 120,
+      "unidades": 1.0,
+      "razon": "Noruega como local (+120) ante Senegal que llega en mala racha como visitante (cayo 3-1 con Francia, perdio con USA). Noruega viene de golear a Iraq 4-1 y ganar a Suecia; el factor casa y la forma reciente le dan valor a +120 frente a un perro de poco peso.",
+      "equipos": [
+        "SEN",
+        "NOR"
+      ],
+      "destacado": "NOR",
+      "hora": "7:00 PM CT",
       "resolucion": {
         "mercado": "ml",
-        "equipo": "MIA",
+        "equipo": "NOR",
         "lado": null,
         "linea": null
       }
@@ -67,29 +67,28 @@
   "parlay": {
     "patas": [
       {
+        "pick": "Argentina ML",
+        "deporte": "Mundial",
+        "destacado": "ARG",
+        "cuota": -230
+      },
+      {
         "pick": "TB ML",
         "deporte": "MLB",
         "destacado": "TB",
-        "cuota": -174
-      },
-      {
-        "pick": "ARG ML",
-        "deporte": "Mundial",
-        "destacado": "ARG",
-        "cuota": -196
+        "cuota": -186
       }
     ],
-    "cuota_combinada": 138,
-    "nota": "Dos favoritos solidos pero razonables: TB con Rasmussen (2.59) sobre KC, y Argentina en racha perfecta (WWWWW) vs Austria. Combinado a +138 con valor."
+    "cuota_combinada": 120,
+    "nota": "Dos favoritos solidos y limpios: Argentina (WWWWW, goleando a todos) ante una Austria inferior, y Tampa Bay con Rasmussen (2.59 ERA) en casa frente a un KC zurdo flojo. Combinado +120 con valor real."
   },
   "descartes": [
-    "KC @ TB: TB -174 fuera de rango; KC perro sin ventaja de pitcheo (Rasmussen 2.59 domina), sin valor en el perro.",
-    "PHI @ WSH: sin cuotas disponibles, no jugable.",
-    "HOU @ TOR: Hunter Brown 1.10 es muestra minima y TOR sin abridor listado; demasiada incertidumbre para fiarse.",
-    "AUT @ ARG: Argentina -196 fuera de rango para pick individual; Austria a +590 sin valor real (se usa ARG solo en parlay).",
-    "IRQ @ FRA: Francia -1200 extremo, sin valor; spread -2.5 arriesgado.",
-    "SEN @ NOR: formas mediocres de ambos (Noruega WDWDL), sin convergencia clara de valor.",
-    "ALG @ JOR: Argelia -180 fuera de rango y Jordania en mala racha sin upside jugable."
+    "NYY -127 vs DET: Cole superior pero cuota cargada y DET defiende bien en casa, valor justo, no convergencia para subir.",
+    "KC +160 @ TB: Rasmussen domina y TB anota poco; perro sin ventaja de pitcheo, descartado por SYS-002.",
+    "TEX vs MIA: abridores casi identicos (2.97 vs 3.10) y forma pareja, sin edge.",
+    "PHI @ WSH: abridor visitante sin confirmar (null), imposible evaluar matchup.",
+    "HOU @ TOR: Hunter Brown 1.10 es muestra minima; duelo cerrado sin valor claro en ML ni total.",
+    "France -1100 vs Iraq: cuota extrema fuera de rango; spread -2.5 arriesgado contra un Iraq que empato a Espana."
   ],
-  "resumen": "Dia con base en MLB. Tres jugadas de moneyline con ventaja real de pitcheo: NYY con Cole sobre Detroit (1.5U) como jugada principal, CHC aprovechando el desastre de Senga (1U) y MIA en casa con Phillips (1U). Riesgo total 3.5U. Aparte, un parlay opcional de dos favoritos solidos (TB + Argentina) a +138 que no cuenta en el balance. En el Mundial no aparecio valor limpio para picks individuales."
+  "resumen": "Dia de 3 jugadas con riesgo total de 3.5 unidades. La apuesta estrella es Chicago en Nueva York aprovechando el colapso de Senga (ERA 9.00, 0-5) ante una ofensiva en racha. Sumamos el handicap de Argelia castigando a una Jordania que encaja goles, y a Noruega en casa contra un Senegal flojo de visita. El parlay opcional combina a Argentina y Tampa Bay (favoritos solidos) a cuota +120, sin contar en el balance."
 }
