@@ -34,15 +34,15 @@ header h1{font-size:23px;letter-spacing:.5px;font-weight:800}
 /* calendario: mes IZQ (días pequeños) + picks DER */
 .calbtn{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px 13px;color:#c9d1d9;font-weight:700;cursor:pointer;font-size:13.5px;margin-top:14px}
 .cal3{display:flex;gap:11px;margin-top:8px}
-.cal-left{flex:0 0 50%}
+.cal-left{flex:0 0 45%}
 .cal-right{flex:1;min-width:0}
 .cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
 .cal-h button{background:#0f141a;border:1px solid #30363d;color:#e6edf3;border-radius:6px;width:22px;height:21px;cursor:pointer;font-size:10px;padding:0}
 .cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:11.5px}
 .dow{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:2px}
-.dow div{text-align:center;font-size:7.5px;color:#6e7681;font-weight:700}
+.dow div{text-align:center;font-size:7px;color:#6e7681;font-weight:700}
 .mes-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
-.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:5px;font-size:9px;font-weight:700;color:#586069;background:#0f141a}
+.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:4px;font-size:8px;font-weight:700;color:#586069;background:#0f141a}
 .mc.empty{background:transparent}
 .mc.win{background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;cursor:pointer}
 .mc.loss{background:#3a1414;color:#f85149;border:1px solid #5c2020;cursor:pointer}
@@ -168,7 +168,7 @@ function smooth(P){if(P.length<2)return P.length?("M"+P[0][0]+","+P[0][1]):"";le
 
 // Gráfica de ÁREA SUAVE bicolor: verde sobre cero, rojo bajo cero. Altura compacta.
 const VW=340;
-function chart(a){const S=serieDe(a),v=S.map(s=>s.ac),H=88,pad=7;if(!v.length){graf.innerHTML="";return;}
+function chart(a){const S=serieDe(a),v=S.map(s=>s.ac),H=66,pad=6;if(!v.length){graf.innerHTML="";return;}
  const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
  const X=i=>v.length>1?pad+i/(v.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
  const P=v.map((val,i)=>[X(i),Y(val)]),line=smooth(P),Y0=Y(0);
