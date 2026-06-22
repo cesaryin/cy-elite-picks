@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CY Elite Picks — historial v3</title>
+<title>CY Elite Picks — historial v4</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:16px}
@@ -16,46 +16,37 @@ header h1{font-size:23px;letter-spacing:.5px;font-weight:800}
 .acc .ic{font-size:18px}.acc .ti{font-weight:800;font-size:15px}
 .acc .nt{margin-left:auto;font-weight:900;font-size:16px}.acc .ar{color:#8b949e;font-weight:700}
 .panel{border:1px solid #30363d;border-top:none;border-radius:0 0 13px 13px;margin-top:-7px;padding:14px;background:#0f141a}
-/* tarjeta única: stats DENTRO de la gráfica */
-.hcard{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:14px 14px 6px}
-.hstats{display:flex;justify-content:space-between;margin-bottom:8px}
-.hstats div{text-align:center;flex:1}
-.hstats b{display:block;font-size:18px;font-weight:800;line-height:1.1}
-.hstats span{font-size:10px;color:#8b949e;font-weight:700;letter-spacing:.3px}
+/* tarjeta: stats IZQUIERDA + gráfica DERECHA */
+.hcard{display:flex;gap:12px;align-items:center;background:#161b22;border:1px solid #30363d;border-radius:14px;padding:13px}
+.hstats{flex:0 0 auto;display:flex;flex-direction:column;gap:8px}
+.hstats div{line-height:1}
+.hstats b{font-size:17px;font-weight:800}
+.hstats span{font-size:10px;color:#8b949e;font-weight:700;margin-left:5px}
+.hgraf{flex:1;min-width:0;display:flex;align-items:center}
 /* elite centrado */
 .elite{text-align:center;max-width:250px;margin:14px auto 4px;background:linear-gradient(160deg,#1e1a0e,#161b22);border:1px solid #d4af37;border-radius:13px;padding:10px 16px}
 .elite .et{color:#f0c75e;font-size:10.5px;font-weight:800;letter-spacing:.5px}
 .elite .ev{font-weight:900;font-size:17px;margin-top:3px}
-/* etiquetas */
-.gtit{display:flex;align-items:center;gap:8px;margin:18px 2px 6px}
-.gtit .b{background:#58a6ff;color:#04101f;font-size:11px;font-weight:900;border-radius:6px;padding:2px 8px}
-.gtit .d{font-size:12px;color:#8b949e}
-/* CAL 1 — tira de rachas */
-.strip{display:flex;gap:5px;overflow-x:auto;padding:2px 0 6px}
-.sq{flex:0 0 auto;width:30px;height:30px;border-radius:7px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;font-weight:800;background:#161b22;color:#586069}
-.sq small{font-size:8px;opacity:.8}
-.sq.win{background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;cursor:pointer}
-.sq.loss{background:#3a1414;color:#f85149;border:1px solid #5c2020;cursor:pointer}
-/* CAL 2 — heatmap mini */
-.heat{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,13px);gap:3px;overflow-x:auto;padding:2px 0}
-.hsq{width:13px;height:13px;border-radius:3px;background:#161b22}
-.hsq.win{background:#2ea043;cursor:pointer}.hsq.loss{background:#da3633;cursor:pointer}
-.hsq.empty{background:transparent}
-.heat-side{display:flex;align-items:center;gap:9px}
-.heat-lbl{display:grid;grid-template-rows:repeat(7,13px);gap:3px;font-size:8px;color:#586069;text-align:right}
-/* CAL 3 — desplegable */
-.calbtn{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px 13px;color:#c9d1d9;font-weight:700;cursor:pointer;font-size:13.5px}
-.cal-h{display:flex;align-items:center;justify-content:space-between;margin:8px 0}
-.cal-h button{background:#161b22;border:1px solid #30363d;color:#e6edf3;border-radius:8px;width:32px;height:28px;cursor:pointer}
-.cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:13.5px}
-.dow{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px}
-.dow div{text-align:center;font-size:9px;color:#6e7681;font-weight:700}
-.mes-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:7px;font-size:12px;font-weight:700;color:#586069;background:#161b22}
+/* calendario desplegable: mes IZQUIERDA + picks DERECHA */
+.calbtn{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px 13px;color:#c9d1d9;font-weight:700;cursor:pointer;font-size:13.5px;margin-top:14px}
+.cal3{display:flex;gap:11px;margin-top:8px}
+.cal-left{flex:0 0 53%}
+.cal-right{flex:1;min-width:0}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.cal-h button{background:#0f141a;border:1px solid #30363d;color:#e6edf3;border-radius:7px;width:26px;height:24px;cursor:pointer;font-size:11px}
+.cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:12.5px}
+.dow{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:3px}
+.dow div{text-align:center;font-size:8px;color:#6e7681;font-weight:700}
+.mes-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:6px;font-size:10px;font-weight:700;color:#586069;background:#0f141a}
 .mc.empty{background:transparent}
 .mc.win{background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;cursor:pointer}
 .mc.loss{background:#3a1414;color:#f85149;border:1px solid #5c2020;cursor:pointer}
-#diaPicks{margin-top:8px}
+.dcard{background:#0f141a;border:1px solid #30363d;border-radius:10px;padding:9px 10px}
+.dh{font-size:11px;font-weight:800;color:#8b949e;margin-bottom:5px}
+.drow{display:flex;justify-content:space-between;font-size:11.5px;padding:4px 0;border-top:1px solid #21262d;gap:6px}
+.drow span:first-child{font-weight:700;white-space:nowrap}
+.cal-hint{color:#586069;font-size:11.5px;text-align:center;padding:24px 8px}
 /* picks */
 .foco{text-align:center;color:#6e7681;font-size:12px;margin:28px 0 4px;letter-spacing:.5px}
 .card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:15px 16px;margin:13px 0}
@@ -68,8 +59,6 @@ header h1{font-size:23px;letter-spacing:.5px;font-weight:800}
 .odds{text-align:right;flex-shrink:0}.cuota{font-size:22px;font-weight:800}
 .u{background:#21262d;border-radius:8px;padding:2px 9px;font-size:12px;font-weight:700;display:inline-block;margin-top:3px}
 .razon{color:#c9d1d9;font-size:13.5px;margin-top:11px}
-.secho{font-size:11px;font-weight:800;padding:2px 7px;border-radius:6px;margin-left:5px}
-.sechoW{background:#0f2e1a;color:#3fb950}.sechoL{background:#3a1414;color:#f85149}
 footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-height:1.7}
 </style>
 </head>
@@ -77,7 +66,7 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
 <div class="wrap">
 <header>
 <h1>👑 CY Elite Picks</h1>
-<div class="intro">Historial v3 — gráfica A con los números dentro.<br>Y 3 calendarios compactos para elegir (o quitarlo).</div>
+<div class="intro">Historial v4 — números a la izquierda / gráfica a la derecha.<br>Calendario: mes a la izquierda, picks del día a la derecha.</div>
 </header>
 
 <div class="acc" onclick="tog()">
@@ -86,7 +75,7 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
 </div>
 <div class="panel" id="panel">
 
-  <!-- TARJETA ÚNICA: stats DENTRO de la gráfica A -->
+  <!-- stats IZQ + gráfica DER -->
   <div class="hcard">
     <div class="hstats">
       <div><b id="sNet">—</b><span>Neto</span></div>
@@ -94,30 +83,20 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
       <div><b id="sAcc">—</b><span>Aciertos</span></div>
       <div><b id="sRec">—</b><span>Récord</span></div>
     </div>
-    <div id="gA"></div>
+    <div class="hgraf" id="gA"></div>
   </div>
 
   <div class="elite"><div class="et">🏆 JUGADA ELITE · ⭐⭐⭐⭐⭐</div><div class="ev" id="eliteV">—</div></div>
 
-  <!-- ===== 3 CALENDARIOS COMPACTOS ===== -->
-  <div class="gtit"><span class="b">CAL · OPCIÓN 1</span><span class="d">Tira de días (la más compacta)</span></div>
-  <div class="strip" id="strip"></div>
-
-  <div class="gtit"><span class="b">CAL · OPCIÓN 2</span><span class="d">Mini-heatmap (estilo GitHub)</span></div>
-  <div class="heat-side">
-    <div class="heat-lbl"><div>L</div><div></div><div>X</div><div></div><div>V</div><div></div><div>D</div></div>
-    <div class="heat" id="heat"></div>
+  <button class="calbtn" onclick="togMes()">📅 Calendario por día <span id="calAr">▴</span></button>
+  <div class="cal3" id="mesWrap">
+    <div class="cal-left">
+      <div class="cal-h"><button onclick="mesNav(-1)">◀</button><span class="lbl" id="mesLbl">—</span><button onclick="mesNav(1)">▶</button></div>
+      <div class="dow"><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div></div>
+      <div class="mes-grid" id="mesGrid"></div>
+    </div>
+    <div class="cal-right" id="diaPicks"></div>
   </div>
-
-  <div class="gtit"><span class="b">CAL · OPCIÓN 3</span><span class="d">Oculto: se abre solo si quieres</span></div>
-  <button class="calbtn" onclick="togMes()">📅 Ver calendario por día ▾</button>
-  <div id="mesWrap" style="display:none">
-    <div class="cal-h"><button onclick="mesNav(-1)">◀</button><span class="lbl" id="mesLbl">—</span><button onclick="mesNav(1)">▶</button></div>
-    <div class="dow"><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div></div>
-    <div class="mes-grid" id="mesGrid"></div>
-  </div>
-
-  <div id="diaPicks"></div>
 </div>
 
 <div class="foco">⬇  EL FOCO DE LA WEB: TUS PICKS  ⬇</div>
@@ -142,7 +121,7 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
   <div class="razon">Argelia llega goleando (7-0, 4-0) y Jordania en caída libre (DDLLL). Hándicap -1 a -105 ofrece valor real ante una defensa rival floja.</div>
 </div>
 
-<footer>VISTA PREVIA · dime qué calendario quieres (1, 2, 3 o ninguno).<br>Luego lo integro a tu web oficial con tus datos reales.</footer>
+<footer>VISTA PREVIA · dime si así te gusta el tamaño y el layout (números izq / gráfica der · mes izq / picks der).</footer>
 </div>
 
 <script>
@@ -171,17 +150,15 @@ const R=[
  {f:"2026-06-21",d:"MLB",t:"ML",c:5,o:-142,u:1.5,r:"L"},
  {f:"2026-06-21",d:"MLB",t:"ML",c:4,o:101,u:1,r:"W"},
 ];
-const DEP={"MLB":"⚾ MLB","Soccer":"⚽ Fútbol","NBA":"🏀 NBA"};
+const DEP={"MLB":"⚾","Soccer":"⚽","NBA":"🏀"};
 const neto=x=>{const d=x.o>0?1+x.o/100:1+100/(-x.o);return x.r==="W"?x.u*(d-1):x.r==="L"?-x.u:0;};
 function agg(a){let w=0,l=0,n=0,rk=0;a.forEach(x=>{if(x.r==="W")w++;if(x.r==="L")l++;if(x.r!=="P"){n+=neto(x);rk+=x.u;}});return{w,l,neto:n,roi:rk?n/rk*100:0,acc:(w+l)?w/(w+l)*100:0};}
 const fmt=n=>(n>=0?"+":"")+n.toFixed(1)+"U";
 const cls=p=>p?"g":"r";
-const fkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 function serie(){const byd={};R.forEach(x=>byd[x.f]=(byd[x.f]||0)+neto(x));const ds=Object.keys(byd).sort();let ac=0;return ds.map(f=>({f,dia:byd[f],ac:(ac+=byd[f])}));}
 function byDay(){const m={};R.forEach(x=>(m[x.f]=m[x.f]||[]).push(x));return m;}
 function smooth(P){if(P.length<2)return P.length?("M"+P[0][0]+","+P[0][1]):"";let d="M"+P[0][0].toFixed(1)+","+P[0][1].toFixed(1);for(let i=0;i<P.length-1;i++){const p0=P[i-1]||P[i],p1=P[i],p2=P[i+1],p3=P[i+2]||P[i+1];const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;d+="C"+c1x.toFixed(1)+","+c1y.toFixed(1)+" "+c2x.toFixed(1)+","+c2y.toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
 
-// stats + elite
 function setStat(id,txt,pos){const e=document.getElementById(id);e.textContent=txt;e.className=cls(pos);}
 (function(){const s=agg(R);
  document.getElementById('accNet').textContent=fmt(s.neto);document.getElementById('accNet').className="nt "+cls(s.neto>=0);
@@ -190,9 +167,9 @@ function setStat(id,txt,pos){const e=document.getElementById(id);e.textContent=t
  const e=agg(R.filter(x=>x.c===5));document.getElementById('eliteV').innerHTML=e.w+"-"+e.l+' · <span class="'+cls(e.neto>=0)+'">'+fmt(e.neto)+'</span>';
 })();
 
-// GRÁFICA A — área degradada bicolor suave
-const VW=340;
-(function(){const S=serie(),v=S.map(s=>s.ac),H=110,pad=10;const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
+// GRÁFICA A
+const VW=300;
+(function(){const S=serie(),v=S.map(s=>s.ac),H=120,pad=8;const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
  const X=i=>S.length>1?pad+i/(S.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
  const P=v.map((val,i)=>[X(i),Y(val)]),line=smooth(P),Y0=Y(0);
  const area=line+" L"+X(v.length-1).toFixed(1)+","+Y0.toFixed(1)+" L"+X(0).toFixed(1)+","+Y0.toFixed(1)+" Z";
@@ -208,19 +185,14 @@ const VW=340;
 })();
 
 const MD=byDay();
-// CAL 1 — tira
-(function(){const fs=[...new Set(R.map(x=>x.f))].sort();let h="";fs.forEach(f=>{const z=agg(MD[f]);const k=z.neto>=0?"win":"loss";h+='<div class="sq '+k+'" onclick="verDia(\''+f+'\')">'+f.slice(8)+'<small>'+z.w+'-'+z.l+'</small></div>';});strip.innerHTML=h;})();
-// CAL 2 — heatmap mini
-(function(){const fs=[...new Set(R.map(x=>x.f))].sort();const first=new Date(fs[0]+"T00:00"),last=new Date(fs[fs.length-1]+"T00:00");const sd=(first.getDay()+6)%7;let h="";for(let i=0;i<sd;i++)h+='<div class="hsq empty"></div>';for(let d=new Date(first);d<=last;d.setDate(d.getDate()+1)){const f=fkey(d);const ps=MD[f];if(ps){const z=agg(ps);h+='<div class="hsq '+(z.neto>=0?"win":"loss")+'" title="'+f+'" onclick="verDia(\''+f+'\')"></div>';}else h+='<div class="hsq"></div>';}heat.innerHTML=h;})();
-// CAL 3 — mes navegable (oculto)
 const MES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 let calY=2026,calM=5;
 function pintarMes(){const sd=(new Date(calY,calM,1).getDay()+6)%7,days=new Date(calY,calM+1,0).getDate();let c="";for(let i=0;i<sd;i++)c+='<div class="mc empty"></div>';for(let d=1;d<=days;d++){const f=calY+"-"+String(calM+1).padStart(2,"0")+"-"+String(d).padStart(2,"0");const ps=MD[f];if(ps){const z=agg(ps);c+='<div class="mc '+(z.neto>=0?"win":"loss")+'" onclick="verDia(\''+f+'\')">'+d+'</div>';}else c+='<div class="mc">'+d+'</div>';}document.getElementById('mesLbl').textContent=MES[calM]+" "+calY;document.getElementById('mesGrid').innerHTML=c;}
-function mesNav(s){calM+=s;if(calM<0){calM=11;calY--;}if(calM>11){calM=0;calY++;}pintarMes();document.getElementById('diaPicks').innerHTML="";}
-function togMes(){const w=document.getElementById('mesWrap');w.style.display=w.style.display==="none"?"block":"none";}
-pintarMes();
-
-function verDia(f){const a=R.filter(x=>x.f===f),med={5:"🥇",4:"🥈",3:"🥉"};let h='<div class="card" style="margin-top:10px"><div class="badge">📕 '+f+'</div>';a.forEach(x=>{const res=x.r==="W"?'<span class="secho sechoW">GANÓ</span>':x.r==="L"?'<span class="secho sechoL">PERDIÓ</span>':'<span class="secho">VOID</span>';h+='<div style="display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #21262d;font-size:13px"><span>'+(med[x.c]||"•")+' '+x.t+' '+DEP[x.d].slice(0,2)+' <span style="color:#8b949e">'+(x.o>0?"+":"")+x.o+'</span></span><span class="'+cls(neto(x)>=0)+'">'+fmt(neto(x))+res+'</span></div>';});h+='</div>';document.getElementById('diaPicks').innerHTML=h;}
+function mesNav(s){calM+=s;if(calM<0){calM=11;calY--;}if(calM>11){calM=0;calY++;}pintarMes();hint();}
+function togMes(){const w=document.getElementById('mesWrap');const o=w.style.display!=="none";w.style.display=o?"none":"flex";document.getElementById('calAr').textContent=o?"▾":"▴";}
+function hint(){document.getElementById('diaPicks').innerHTML='<div class="cal-hint">toca un día con color ←</div>';}
+function verDia(f){const a=R.filter(x=>x.f===f);if(!a.length){hint();return;}const med={5:"🥇",4:"🥈",3:"🥉"};let h='<div class="dcard"><div class="dh">📕 '+f.slice(8)+' '+MES[+f.slice(5,7)-1].slice(0,3)+'</div>';a.forEach(x=>{const dot=x.r==="W"?"🟢":x.r==="L"?"🔴":"⚪";h+='<div class="drow"><span>'+(med[x.c]||"•")+' '+DEP[x.d]+' '+x.t+'</span><span class="'+cls(neto(x)>=0)+'">'+dot+' '+fmt(neto(x))+'</span></div>';});h+='</div>';document.getElementById('diaPicks').innerHTML=h;}
+pintarMes();verDia("2026-06-16");
 
 function tog(){const p=panel,o=p.style.display!=="none";p.style.display=o?"none":"block";document.getElementById('accAr').textContent=o?"▾":"▴";}
 </script>
