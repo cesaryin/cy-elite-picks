@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CY Elite Picks — 3 estilos de historial</title>
+<title>CY Elite Picks — historial v2 + gráficas</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:16px}
@@ -12,51 +12,41 @@ header{text-align:center;padding:10px 0 4px}
 header h1{font-size:23px;letter-spacing:.5px;font-weight:800}
 .intro{color:#8b949e;font-size:13.5px;text-align:center;margin:6px 0 4px}
 .g{color:#3fb950}.r{color:#f85149}
-/* etiqueta de estilo */
-.sep{margin:26px 0 10px;border-top:1px dashed #30363d;padding-top:16px}
-.etq{display:inline-block;background:#58a6ff;color:#04101f;font-size:12px;font-weight:900;letter-spacing:.5px;border-radius:7px;padding:4px 11px}
-.etqd{color:#8b949e;font-size:12.5px;margin:6px 2px 2px}
-/* ===== ESTILO 1: tira compacta ===== */
-.tira{display:flex;align-items:center;gap:10px;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:11px 14px;flex-wrap:wrap}
-.tira .k{font-size:10px;font-weight:900;letter-spacing:.8px;color:#8b949e}
-.tira .v{font-size:14px;font-weight:800}
-.tira .dot{color:#30363d}
-.tira .mas{margin-left:auto;color:#58a6ff;font-size:12px;font-weight:700}
-/* ===== ESTILO 2: tarjeta linemate ===== */
-.t2{background:linear-gradient(160deg,#11161d,#161b22);border:1px solid #30363d;border-radius:16px;padding:15px 16px}
-.t2 .lbl{font-size:11px;font-weight:800;letter-spacing:.6px;color:#8b949e}
-.t2 .top{display:flex;align-items:flex-end;justify-content:space-between;margin:2px 0 2px}
-.t2 .neto{font-size:34px;font-weight:900;line-height:1}
-.t2 .meta{text-align:right;font-size:12.5px;color:#c9d1d9;font-weight:700}
-.t2 .spark{margin:8px 0 2px}
-.pills{display:flex;gap:7px;margin-top:8px}
-.pill{flex:1;text-align:center;background:#0d1117;border:1px solid #30363d;border-radius:9px;padding:7px;font-size:12.5px;font-weight:700;color:#8b949e;cursor:pointer}
-.pill.on{border-color:#d4af37;color:#f0c75e;background:#1e1a0e}
-/* ===== ESTILO 3: acordeon ===== */
-.acc{width:100%;display:flex;align-items:center;gap:10px;background:#161b22;border:1px solid #30363d;border-radius:13px;padding:13px 15px;cursor:pointer;color:#e6edf3}
-.acc .ic{font-size:18px}
-.acc .ti{font-weight:800;font-size:15px}
-.acc .nt{margin-left:auto;font-weight:900;font-size:16px}
-.acc .ar{color:#8b949e;font-weight:700}
-.panel{display:none;border:1px solid #30363d;border-top:none;border-radius:0 0 13px 13px;margin-top:-7px;padding:14px;background:#0f141a}
-.row3{display:flex;gap:18px;margin:4px 0 8px;flex-wrap:wrap}
-.row3 div{font-size:13px;color:#c9d1d9}.row3 b{display:block;font-size:16px;color:#e6edf3}
-.elite{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(90deg,#1e1a0e,#161b22);border:1px solid #d4af37;border-radius:11px;padding:9px 13px;margin:10px 0;font-weight:800}
-.elite .l{color:#f0c75e;font-size:11.5px;letter-spacing:.4px}
-.sub-h{font-size:11.5px;font-weight:800;letter-spacing:.5px;color:#8b949e;margin:12px 2px 6px}
-.scroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
-.chip{flex:0 0 auto;background:#161b22;border:1px solid #30363d;border-radius:11px;padding:8px 12px;min-width:96px}
-.chip .n{font-size:11.5px;color:#8b949e;font-weight:700}.chip .v{font-size:14px;font-weight:800;margin-top:2px}.chip .s{font-size:10.5px;color:#8b949e}
-.bar{display:flex;align-items:center;gap:9px;margin:6px 0}
-.bar .nm{width:62px;font-size:12.5px;font-weight:700;color:#c9d1d9}
-.bar .track{flex:1;background:#21262d;border-radius:6px;height:9px;overflow:hidden}
-.bar .fill{height:100%;border-radius:6px}
-.bar .pc{width:84px;text-align:right;font-size:11.5px;color:#8b949e;font-weight:700}
-.calgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:6px;margin-top:6px}
-.cd{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:6px 3px;text-align:center;cursor:pointer}
-.cd .d{font-size:13px;font-weight:800}.cd .res{font-size:9.5px;font-weight:800;margin-top:1px}.cd.on{border-color:#58a6ff}
-#diaPicks{margin-top:8px}
-/* ===== PICKS (estilo actual, el foco) ===== */
+/* botón desplegable */
+.acc{width:100%;display:flex;align-items:center;gap:10px;background:#161b22;border:1px solid #30363d;border-radius:13px;padding:13px 15px;cursor:pointer;color:#e6edf3;margin-top:8px}
+.acc .ic{font-size:18px}.acc .ti{font-weight:800;font-size:15px}
+.acc .nt{margin-left:auto;font-weight:900;font-size:16px}.acc .ar{color:#8b949e;font-weight:700}
+.panel{border:1px solid #30363d;border-top:none;border-radius:0 0 13px 13px;margin-top:-7px;padding:14px;background:#0f141a}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;margin:4px 0 6px}
+.stats div{background:#161b22;border:1px solid #30363d;border-radius:11px;padding:9px 4px;font-size:11px;color:#8b949e;font-weight:700}
+.stats b{display:block;font-size:18px;margin-bottom:2px}
+/* elite centrado */
+.elite{text-align:center;max-width:250px;margin:14px auto 6px;background:linear-gradient(160deg,#1e1a0e,#161b22);border:1px solid #d4af37;border-radius:13px;padding:10px 16px}
+.elite .et{color:#f0c75e;font-size:10.5px;font-weight:800;letter-spacing:.5px}
+.elite .ev{font-weight:900;font-size:17px;margin-top:3px}
+/* etiqueta gráfica */
+.gtit{display:flex;align-items:center;gap:8px;margin:16px 2px 4px}
+.gtit .b{background:#58a6ff;color:#04101f;font-size:11px;font-weight:900;border-radius:6px;padding:2px 8px}
+.gtit .d{font-size:12px;color:#8b949e}
+.gbox{background:#0d1117;border:1px solid #21262d;border-radius:12px;padding:8px}
+/* calendario mensual */
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin:6px 0 8px}
+.cal-h button{background:#161b22;border:1px solid #30363d;color:#e6edf3;border-radius:8px;width:34px;height:30px;cursor:pointer;font-size:15px}
+.cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:14px}
+.dow{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:5px}
+.dow div{text-align:center;font-size:10px;color:#6e7681;font-weight:700}
+.mes-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:9px;font-size:13px;font-weight:700;color:#586069;background:#161b22}
+.mc.empty{background:transparent}
+.mc.win{background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;cursor:pointer}
+.mc.loss{background:#3a1414;color:#f85149;border:1px solid #5c2020;cursor:pointer}
+.mc.eq{background:#21262d;color:#c9d1d9;cursor:pointer}
+.leg{display:flex;gap:14px;justify-content:center;margin-top:9px;font-size:11px;color:#8b949e}
+.leg span{display:inline-flex;align-items:center;gap:5px}
+.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+#diaPicks{margin-top:10px}
+/* picks (foco) */
 .foco{text-align:center;color:#6e7681;font-size:12px;margin:30px 0 4px;letter-spacing:.5px}
 .card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:15px 16px;margin:13px 0}
 .card .badge{font-size:11px;font-weight:800;letter-spacing:.6px;color:#8b949e;margin-bottom:10px}
@@ -80,73 +70,41 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
 <div class="wrap">
 <header>
 <h1>👑 CY Elite Picks</h1>
-<div class="intro">3 estilos de historial — elige el que más te guste.<br>Datos de ejemplo (tu registro real, jun). Los picks abajo son el foco.</div>
+<div class="intro">Historial v2 — más limpio. Elige tu gráfica favorita (A, B o C).<br>Datos de ejemplo (tu registro real, jun).</div>
 </header>
 
-<!-- ESTILO 1 -->
-<div class="sep">
-  <span class="etq">ESTILO 1 · COMPACTO</span>
-  <div class="etqd">Una tira fina. Casi no ocupa espacio: récord + racha + neto de un vistazo. Máximo protagonismo para los picks.</div>
-</div>
-<div class="tira">
-  <span class="k">RENDIMIENTO</span>
-  <span class="v" id="t1rec">—</span><span class="dot">·</span>
-  <span class="v" id="t1acc">—</span><span class="dot">·</span>
-  <span class="v" id="t1str">—</span>
-  <span class="v" id="t1net">—</span>
-  <span class="mas">historial ▸</span>
-</div>
-
-<!-- ESTILO 2 -->
-<div class="sep">
-  <span class="etq">ESTILO 2 · TARJETA LINEMATE</span>
-  <div class="etqd">Tarjeta con neto grande, gráfico de tu banca (sparkline) y períodos 7/30/Todo. Equilibrado y muy pro.</div>
-</div>
-<div class="t2">
-  <div class="lbl" id="t2lbl">ÚLTIMOS 30 DÍAS</div>
-  <div class="top">
-    <div class="neto" id="t2net">—</div>
-    <div class="meta"><span id="t2roi">—</span> ROI<br><span id="t2rec">—</span> · <span id="t2acc">—</span></div>
-  </div>
-  <div class="spark" id="t2spark"></div>
-  <div class="pills">
-    <div class="pill" data-p="7">7 días</div>
-    <div class="pill on" data-p="30">30 días</div>
-    <div class="pill" data-p="999">Todo</div>
-  </div>
-</div>
-
-<!-- ESTILO 3 -->
-<div class="sep">
-  <span class="etq">ESTILO 3 · PANEL DESPLEGABLE</span>
-  <div class="etqd">Botón discreto que despliega TODO: gráfico, Elite, por deporte, por tipo y calendario. Ideal para estudiar dónde acierta y falla el sistema, sin robar foco a los picks.</div>
-</div>
 <div class="acc" onclick="tog()">
-  <span class="ic">📊</span>
-  <span class="ti">Rendimiento del sistema</span>
-  <span class="nt" id="t3net">—</span>
-  <span class="ar" id="t3ar">▾</span>
+  <span class="ic">📊</span><span class="ti">Rendimiento del sistema</span>
+  <span class="nt" id="accNet">—</span><span class="ar" id="accAr">▴</span>
 </div>
 <div class="panel" id="panel">
-  <div class="row3">
-    <div><b id="p3net">—</b>Neto</div>
-    <div><b id="p3roi">—</b>ROI</div>
-    <div><b id="p3acc">—</b>Aciertos</div>
-    <div><b id="p3rec">—</b>Récord</div>
+  <div class="stats">
+    <div><b id="sNet">—</b>Neto</div>
+    <div><b id="sRoi">—</b>ROI</div>
+    <div><b id="sAcc">—</b>Aciertos</div>
+    <div><b id="sRec">—</b>Récord</div>
   </div>
-  <div id="p3chart"></div>
-  <div class="elite"><span class="l">🏆 JUGADA ELITE · ⭐⭐⭐⭐⭐</span><span id="p3elite">—</span></div>
-  <div class="sub-h">POR DEPORTE</div>
-  <div class="scroll" id="p3dep"></div>
-  <div class="sub-h">POR TIPO DE APUESTA</div>
-  <div id="p3tipo"></div>
-  <div class="sub-h">📅 CALENDARIO — toca un día</div>
-  <div class="calgrid" id="p3cal"></div>
+
+  <div class="elite"><div class="et">🏆 JUGADA ELITE · ⭐⭐⭐⭐⭐</div><div class="ev" id="eliteV">—</div></div>
+
+  <div class="gtit"><span class="b">GRÁFICA A</span><span class="d">Área degradada (como tu foto)</span></div>
+  <div class="gbox" id="gA"></div>
+
+  <div class="gtit"><span class="b">GRÁFICA B</span><span class="d">Barras por día (ganó/perdió)</span></div>
+  <div class="gbox" id="gB"></div>
+
+  <div class="gtit"><span class="b">GRÁFICA C</span><span class="d">Línea moderna con punto (tipo app)</span></div>
+  <div class="gbox" id="gC"></div>
+
+  <div class="gtit"><span class="b" style="background:#d4af37">📅 CALENDARIO</span><span class="d">navega meses con ◀ ▶ · toca un día</span></div>
+  <div class="cal-h"><button onclick="mesNav(-1)">◀</button><span class="lbl" id="mesLbl">—</span><button onclick="mesNav(1)">▶</button></div>
+  <div class="dow"><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div></div>
+  <div class="mes-grid" id="mesGrid"></div>
+  <div class="leg"><span><i class="sw" style="background:#0f2e1a;border:1px solid #1f5c37"></i>día +</span><span><i class="sw" style="background:#3a1414;border:1px solid #5c2020"></i>día −</span><span><i class="sw" style="background:#161b22"></i>sin picks</span></div>
   <div id="diaPicks"></div>
 </div>
 
-<!-- PICKS (FOCO) -->
-<div class="foco">⬇ ⬇ ⬇  EL FOCO DE LA WEB: TUS PICKS  ⬇ ⬇ ⬇</div>
+<div class="foco">⬇  EL FOCO DE LA WEB: TUS PICKS  ⬇</div>
 
 <div class="card elite-c">
   <div class="badge">🥇 JUGADA ELITE · ⭐⭐⭐⭐⭐</div>
@@ -155,7 +113,7 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
     <div class="info"><div class="pick">CHC ML</div><div class="psub">MLB · 6:10 PM CT</div></div>
     <div class="odds"><div class="cuota">-116</div><div class="u">1.5U</div></div>
   </div>
-  <div class="razon">Senga abre con ERA 9.00 (0-5) frente a Imanaga (4.26). CHC con mejor forma ofensiva. ML a -116 paga más que la probabilidad real del favorito ante un abridor en crisis (+EV).</div>
+  <div class="razon">Senga abre con ERA 9.00 (0-5) frente a Imanaga (4.26). CHC con mejor forma ofensiva. ML a -116 paga más que la probabilidad real del favorito (+EV).</div>
 </div>
 
 <div class="card">
@@ -165,20 +123,10 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
     <div class="info"><div class="pick">Argelia hándicap -1</div><div class="psub">Mundial · 10:00 PM CT</div></div>
     <div class="odds"><div class="cuota">-105</div><div class="u">1.0U</div></div>
   </div>
-  <div class="razon">Argelia llega goleando (7-0, 4-0) y Jordania en caída libre (DDLLL) encajando en sus últimos partidos. Hándicap -1 a -105 ofrece valor real ante una defensa rival floja.</div>
+  <div class="razon">Argelia llega goleando (7-0, 4-0) y Jordania en caída libre (DDLLL). Hándicap -1 a -105 ofrece valor real ante una defensa rival floja.</div>
 </div>
 
-<div class="card">
-  <div class="badge">🥉 PICK BRONCE · ⭐⭐⭐</div>
-  <div class="crow">
-    <img class="logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/mia.png">
-    <div class="info"><div class="pick">MIA ML</div><div class="psub">MLB · 5:40 PM CT</div></div>
-    <div class="odds"><div class="cuota">-124</div><div class="u">1.0U</div></div>
-  </div>
-  <div class="razon">Phillips (3.10) supera a Rocker (4.17, 2-6) y Miami viene 7-3 con buena defensa. Texas con pitcheo flojo. Valor en el local en racha.</div>
-</div>
-
-<footer>VISTA PREVIA · dime qué estilo de historial prefieres (1, 2 o 3)<br>y lo integro a tu web oficial con tus datos reales.</footer>
+<footer>VISTA PREVIA · dime qué gráfica prefieres (A, B o C) y si el historial limpio te gusta así.<br>Luego lo integro a tu web oficial con tus datos reales.</footer>
 </div>
 
 <script>
@@ -211,32 +159,70 @@ const DEP={"MLB":"⚾ MLB","Soccer":"⚽ Fútbol","NBA":"🏀 NBA"};
 const neto=x=>{const d=x.o>0?1+x.o/100:1+100/(-x.o);return x.r==="W"?x.u*(d-1):x.r==="L"?-x.u:0;};
 function agg(a){let w=0,l=0,n=0,rk=0;a.forEach(x=>{if(x.r==="W")w++;if(x.r==="L")l++;if(x.r!=="P"){n+=neto(x);rk+=x.u;}});return{w,l,neto:n,roi:rk?n/rk*100:0,acc:(w+l)?w/(w+l)*100:0};}
 const fmt=n=>(n>=0?"+":"")+n.toFixed(1)+"U";
-const cls=n=>n>=0?"g":"r";
-function filt(p){if(p>=999)return R;const fs=[...new Set(R.map(x=>x.f))].sort().slice(-p);return R.filter(x=>fs.includes(x.f));}
-function racha(){let s=0,res=null;for(let i=R.length-1;i>=0;i--){if(R[i].r==="P")continue;if(res===null)res=R[i].r;if(R[i].r===res)s++;else break;}return res?(s+(res==="W"?"W 🔥":"L ❄️")):"—";}
-function chart(el,a,h){const byd={};a.forEach(x=>byd[x.f]=(byd[x.f]||0)+neto(x));const ds=Object.keys(byd).sort();let ac=0;const pts=ds.map(f=>{ac+=byd[f];return ac;});if(!pts.length){el.innerHTML="";return;}const W=520,mn=Math.min(0,...pts),mx=Math.max(0,...pts),rg=(mx-mn)||1;const X=i=>ds.length>1?i/(ds.length-1)*W:W/2,Y=v=>h-((v-mn)/rg)*h;const ln=pts.map((v,i)=>X(i).toFixed(1)+","+Y(v).toFixed(1)).join(" ");const col=ac>=0?"#3fb950":"#f85149";el.innerHTML='<svg viewBox="0 0 '+W+' '+h+'" width="100%" height="'+h+'" preserveAspectRatio="none"><line x1="0" y1="'+Y(0)+'" x2="'+W+'" y2="'+Y(0)+'" stroke="#30363d" stroke-dasharray="4"/><polyline points="'+ln+'" fill="none" stroke="'+col+'" stroke-width="2.5"/></svg>';}
+const cls=p=>p?"g":"r";
+function serie(){const byd={};R.forEach(x=>byd[x.f]=(byd[x.f]||0)+neto(x));const ds=Object.keys(byd).sort();let ac=0;return ds.map(f=>({f,dia:byd[f],ac:(ac+=byd[f])}));}
+function smooth(P){if(P.length<2)return P.length?("M"+P[0][0]+","+P[0][1]):"";let d="M"+P[0][0].toFixed(1)+","+P[0][1].toFixed(1);for(let i=0;i<P.length-1;i++){const p0=P[i-1]||P[i],p1=P[i],p2=P[i+1],p3=P[i+2]||P[i+1];const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;d+="C"+c1x.toFixed(1)+","+c1y.toFixed(1)+" "+c2x.toFixed(1)+","+c2y.toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
 
-// ESTILO 1
-(function(){const s=agg(R);t1rec.textContent=s.w+"-"+s.l;t1rec.className="v";t1acc.textContent=s.acc.toFixed(0)+"%";t1str.textContent=racha();t1net.textContent=fmt(s.neto);t1net.className="v "+cls(s.neto);})();
-
-// ESTILO 2
-let per2=30;
-function setPer2(p){per2=p;document.querySelectorAll('.t2 .pill').forEach(e=>e.classList.toggle('on',+e.dataset.p===p));const a=filt(p),s=agg(a);t2lbl.textContent=p>=999?"HISTORIAL COMPLETO":("ÚLTIMOS "+p+" DÍAS");t2net.textContent=fmt(s.neto);t2net.className="neto "+cls(s.neto);t2roi.textContent=(s.roi>=0?"+":"")+s.roi.toFixed(0)+"%";t2rec.textContent=s.w+"-"+s.l;t2acc.textContent=s.acc.toFixed(0)+"% ac.";chart(t2spark,a,46);}
-document.querySelectorAll('.t2 .pill').forEach(e=>e.onclick=()=>setPer2(+e.dataset.p));
-setPer2(30);
-
-// ESTILO 3
-function tog(){const p=panel;const o=p.style.display==="block";p.style.display=o?"none":"block";t3ar.textContent=o?"▾":"▴";}
-(function(){
- const s=agg(R);t3net.textContent=fmt(s.neto);t3net.className="nt "+cls(s.neto);
- p3net.textContent=fmt(s.neto);p3net.className=cls(s.neto);p3roi.textContent=(s.roi>=0?"+":"")+s.roi.toFixed(0)+"%";p3acc.textContent=s.acc.toFixed(0)+"%";p3rec.textContent=s.w+"-"+s.l;
- chart(p3chart,R,64);
- const e=agg(R.filter(x=>x.c===5));p3elite.textContent=e.w+"-"+e.l+" · "+fmt(e.neto);
- let hd="";[...new Set(R.map(x=>x.d))].forEach(d=>{const z=agg(R.filter(x=>x.d===d));hd+='<div class="chip"><div class="n">'+DEP[d]+'</div><div class="v '+cls(z.neto)+'">'+fmt(z.neto)+'</div><div class="s">'+z.w+'-'+z.l+' · '+z.acc.toFixed(0)+'%</div></div>';});p3dep.innerHTML=hd;
- let ht="";[...new Set(R.map(x=>x.t))].forEach(t=>{const z=agg(R.filter(x=>x.t===t));ht+='<div class="bar"><div class="nm">'+t+'</div><div class="track"><div class="fill" style="width:'+z.acc.toFixed(0)+'%;background:'+(z.neto>=0?"#3fb950":"#f85149")+'"></div></div><div class="pc">'+z.w+'-'+z.l+' '+fmt(z.neto)+'</div></div>';});p3tipo.innerHTML=ht;
- const fs=[...new Set(R.map(x=>x.f))].sort().reverse();let hc="";fs.forEach(f=>{const z=agg(R.filter(x=>x.f===f));hc+='<div class="cd" onclick="verDia(\''+f+'\')"><div class="d">'+f.slice(8)+'</div><div class="res '+cls(z.neto)+'">'+z.w+'-'+z.l+'</div></div>';});p3cal.innerHTML=hc;
+// stats + elite
+function setStat(id,txt,pos){const e=document.getElementById(id);e.textContent=txt;e.className=cls(pos);}
+(function(){const s=agg(R);
+ document.getElementById('accNet').textContent=fmt(s.neto);document.getElementById('accNet').className="nt "+cls(s.neto>=0);
+ setStat('sNet',fmt(s.neto),s.neto>=0);setStat('sRoi',(s.roi>=0?"+":"")+s.roi.toFixed(0)+"%",s.roi>=0);
+ setStat('sAcc',s.acc.toFixed(0)+"%",s.acc>=50);setStat('sRec',s.w+"-"+s.l,s.w>=s.l);
+ const e=agg(R.filter(x=>x.c===5));document.getElementById('eliteV').innerHTML=e.w+"-"+e.l+' · <span class="'+cls(e.neto>=0)+'">'+fmt(e.neto)+'</span>';
 })();
-function verDia(f){document.querySelectorAll('.cd').forEach(e=>e.classList.toggle('on',e.getAttribute('onclick').includes(f)));const a=R.filter(x=>x.f===f);const med={5:"🥇",4:"🥈",3:"🥉"};let h='<div class="card" style="margin-top:10px"><div class="badge">📕 '+f+'</div>';a.forEach(x=>{const res=x.r==="W"?'<span class="secho sechoW">GANÓ</span>':x.r==="L"?'<span class="secho sechoL">PERDIÓ</span>':'<span class="secho">VOID</span>';h+='<div style="display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #21262d;font-size:13px"><span>'+(med[x.c]||"•")+' '+x.t+' '+DEP[x.d].slice(0,2)+' <span style="color:#8b949e">'+(x.o>0?"+":"")+x.o+'</span></span><span>'+fmt(neto(x))+res+'</span></div>';});h+='</div>';diaPicks.innerHTML=h;}
+
+const VW=340;
+// GRÁFICA A — área degradada bicolor suave (estilo foto)
+(function(){const S=serie(),v=S.map(s=>s.ac),H=120,pad=10;const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
+ const X=i=>S.length>1?pad+i/(S.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
+ const P=v.map((val,i)=>[X(i),Y(val)]),line=smooth(P),Y0=Y(0);
+ const area=line+" L"+X(v.length-1).toFixed(1)+","+Y0.toFixed(1)+" L"+X(0).toFixed(1)+","+Y0.toFixed(1)+" Z";
+ gA.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet">'
+ +'<defs><linearGradient id="agv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".5"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>'
+ +'<linearGradient id="agr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f85149" stop-opacity="0"/><stop offset="1" stop-color="#f85149" stop-opacity=".5"/></linearGradient>'
+ +'<clipPath id="aup"><rect x="0" y="0" width="'+VW+'" height="'+Y0+'"/></clipPath>'
+ +'<clipPath id="adn"><rect x="0" y="'+Y0+'" width="'+VW+'" height="'+(H-Y0)+'"/></clipPath></defs>'
+ +'<path d="'+area+'" fill="url(#agv)" clip-path="url(#aup)"/><path d="'+area+'" fill="url(#agr)" clip-path="url(#adn)"/>'
+ +'<line x1="0" y1="'+Y0+'" x2="'+VW+'" y2="'+Y0+'" stroke="#30363d" stroke-dasharray="3"/>'
+ +'<path d="'+line+'" fill="none" stroke="#3fb950" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#aup)"/>'
+ +'<path d="'+line+'" fill="none" stroke="#f85149" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#adn)"/></svg>';
+})();
+// GRÁFICA B — barras por día
+(function(){const S=serie(),v=S.map(s=>s.dia),H=120,pad=10;const mx=Math.max(0.1,...v.map(Math.abs));
+ const Y0=H/2,step=(VW-2*pad)/S.length,bw=step*0.6;let bars="";
+ v.forEach((val,i)=>{const x=pad+i*step+(step-bw)/2,h=Math.abs(val)/mx*(H/2-pad),y=val>=0?Y0-h:Y0,col=val>=0?"#3fb950":"#f85149";bars+='<rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+Math.max(h,1.5).toFixed(1)+'" rx="2.5" fill="'+col+'"/>';});
+ gB.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet"><line x1="0" y1="'+Y0+'" x2="'+VW+'" y2="'+Y0+'" stroke="#30363d"/>'+bars+'</svg>';
+})();
+// GRÁFICA C — línea moderna con punto
+(function(){const S=serie(),v=S.map(s=>s.ac),H=120,pad=12;const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
+ const X=i=>S.length>1?pad+i/(S.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
+ const P=v.map((val,i)=>[X(i),Y(val)]),line=smooth(P),fin=v[v.length-1]>=0,col=fin?"#3fb950":"#f85149";
+ const base=Y(mn),area=line+" L"+X(v.length-1).toFixed(1)+","+base.toFixed(1)+" L"+X(0).toFixed(1)+","+base.toFixed(1)+" Z";
+ const lx=X(v.length-1),ly=Y(v[v.length-1]);
+ gC.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet">'
+ +'<defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+col+'" stop-opacity=".4"/><stop offset="1" stop-color="'+col+'" stop-opacity="0"/></linearGradient></defs>'
+ +'<path d="'+area+'" fill="url(#cg)"/><line x1="0" y1="'+Y(0)+'" x2="'+VW+'" y2="'+Y(0)+'" stroke="#30363d" stroke-dasharray="3"/>'
+ +'<path d="'+line+'" fill="none" stroke="'+col+'" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linecap="round"/>'
+ +'<circle cx="'+lx.toFixed(1)+'" cy="'+ly.toFixed(1)+'" r="7" fill="'+col+'" opacity=".25"/><circle cx="'+lx.toFixed(1)+'" cy="'+ly.toFixed(1)+'" r="3.5" fill="'+col+'"/></svg>';
+})();
+
+// CALENDARIO mensual navegable
+const MES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+let calY=2026,calM=5;
+function pintarMes(){
+ const startDow=(new Date(calY,calM,1).getDay()+6)%7,days=new Date(calY,calM+1,0).getDate();
+ const byd={};R.forEach(x=>{const d=new Date(x.f+"T00:00");if(d.getFullYear()===calY&&d.getMonth()===calM)(byd[d.getDate()]=byd[d.getDate()]||[]).push(x);});
+ let c="";for(let i=0;i<startDow;i++)c+='<div class="mc empty"></div>';
+ for(let d=1;d<=days;d++){const ps=byd[d];if(ps){const z=agg(ps);const k=z.neto>0?"win":z.neto<0?"loss":"eq";c+='<div class="mc '+k+'" onclick="verDiaMes('+d+')">'+d+'</div>';}else c+='<div class="mc">'+d+'</div>';}
+ document.getElementById('mesLbl').textContent=MES[calM]+" "+calY;document.getElementById('mesGrid').innerHTML=c;
+}
+function mesNav(s){calM+=s;if(calM<0){calM=11;calY--;}if(calM>11){calM=0;calY++;}pintarMes();document.getElementById('diaPicks').innerHTML="";}
+function verDiaMes(d){verDia(calY+"-"+String(calM+1).padStart(2,"0")+"-"+String(d).padStart(2,"0"));}
+function verDia(f){const a=R.filter(x=>x.f===f),med={5:"🥇",4:"🥈",3:"🥉"};let h='<div class="card" style="margin-top:10px"><div class="badge">📕 '+f+'</div>';a.forEach(x=>{const res=x.r==="W"?'<span class="secho sechoW">GANÓ</span>':x.r==="L"?'<span class="secho sechoL">PERDIÓ</span>':'<span class="secho">VOID</span>';h+='<div style="display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #21262d;font-size:13px"><span>'+(med[x.c]||"•")+' '+x.t+' '+DEP[x.d].slice(0,2)+' <span style="color:#8b949e">'+(x.o>0?"+":"")+x.o+'</span></span><span class="'+cls(neto(x)>=0)+'">'+fmt(neto(x))+res+'</span></div>';});h+='</div>';document.getElementById('diaPicks').innerHTML=h;}
+pintarMes();
+
+function tog(){const p=panel,o=p.style.display!=="none";p.style.display=o?"none":"block";document.getElementById('accAr').textContent=o?"▾":"▴";}
 </script>
 </body>
 </html>
