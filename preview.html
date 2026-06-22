@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CY Elite Picks — historial v4</title>
+<title>CY Elite Picks — historial v5</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:16px}
@@ -16,29 +16,33 @@ header h1{font-size:23px;letter-spacing:.5px;font-weight:800}
 .acc .ic{font-size:18px}.acc .ti{font-weight:800;font-size:15px}
 .acc .nt{margin-left:auto;font-weight:900;font-size:16px}.acc .ar{color:#8b949e;font-weight:700}
 .panel{border:1px solid #30363d;border-top:none;border-radius:0 0 13px 13px;margin-top:-7px;padding:14px;background:#0f141a}
-/* tarjeta: stats IZQUIERDA + gráfica DERECHA */
-.hcard{display:flex;gap:12px;align-items:center;background:#161b22;border:1px solid #30363d;border-radius:14px;padding:13px}
-.hstats{flex:0 0 auto;display:flex;flex-direction:column;gap:8px}
-.hstats div{line-height:1}
-.hstats b{font-size:17px;font-weight:800}
-.hstats span{font-size:10px;color:#8b949e;font-weight:700;margin-left:5px}
-.hgraf{flex:1;min-width:0;display:flex;align-items:center}
+/* HERO gráfica */
+.hcard{background:linear-gradient(160deg,#11161d,#161b22);border:1px solid #30363d;border-radius:14px;padding:14px 15px}
+.hhead{display:flex;justify-content:space-between;align-items:flex-start}
+.hlbl{font-size:11px;font-weight:800;letter-spacing:.5px;color:#8b949e}
+.hneto{font-size:35px;font-weight:900;line-height:1.05;margin-top:1px}
+.hmeta{text-align:right;font-size:12.5px;font-weight:700;color:#c9d1d9;padding-top:3px}
+.hmeta div{margin-bottom:2px}
+.hgraf{margin:6px 0 8px}
+.pills{display:flex;gap:7px}
+.pill{flex:1;text-align:center;background:#0d1117;border:1px solid #30363d;border-radius:9px;padding:8px;font-size:12.5px;font-weight:700;color:#8b949e;cursor:pointer}
+.pill.on{border-color:#58a6ff;color:#fff;background:#1b2230}
 /* elite centrado */
 .elite{text-align:center;max-width:250px;margin:14px auto 4px;background:linear-gradient(160deg,#1e1a0e,#161b22);border:1px solid #d4af37;border-radius:13px;padding:10px 16px}
 .elite .et{color:#f0c75e;font-size:10.5px;font-weight:800;letter-spacing:.5px}
 .elite .ev{font-weight:900;font-size:17px;margin-top:3px}
-/* calendario desplegable: mes IZQUIERDA + picks DERECHA */
+/* calendario: mes IZQ (días pequeños) + picks DER */
 .calbtn{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px 13px;color:#c9d1d9;font-weight:700;cursor:pointer;font-size:13.5px;margin-top:14px}
 .cal3{display:flex;gap:11px;margin-top:8px}
-.cal-left{flex:0 0 53%}
+.cal-left{flex:0 0 50%}
 .cal-right{flex:1;min-width:0}
-.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
-.cal-h button{background:#0f141a;border:1px solid #30363d;color:#e6edf3;border-radius:7px;width:26px;height:24px;cursor:pointer;font-size:11px}
-.cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:12.5px}
-.dow{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:3px}
-.dow div{text-align:center;font-size:8px;color:#6e7681;font-weight:700}
-.mes-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
-.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:6px;font-size:10px;font-weight:700;color:#586069;background:#0f141a}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
+.cal-h button{background:#0f141a;border:1px solid #30363d;color:#e6edf3;border-radius:6px;width:22px;height:21px;cursor:pointer;font-size:10px;padding:0}
+.cal-h .lbl{font-weight:800;text-transform:capitalize;font-size:11.5px}
+.dow{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:2px}
+.dow div{text-align:center;font-size:7.5px;color:#6e7681;font-weight:700}
+.mes-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.mc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:5px;font-size:9px;font-weight:700;color:#586069;background:#0f141a}
 .mc.empty{background:transparent}
 .mc.win{background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;cursor:pointer}
 .mc.loss{background:#3a1414;color:#f85149;border:1px solid #5c2020;cursor:pointer}
@@ -66,7 +70,7 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
 <div class="wrap">
 <header>
 <h1>👑 CY Elite Picks</h1>
-<div class="intro">Historial v4 — números a la izquierda / gráfica a la derecha.<br>Calendario: mes a la izquierda, picks del día a la derecha.</div>
+<div class="intro">Historial v5 — gráfica tipo Linemate (color cambia según vamos +/−).<br>Calendario con días más pequeños.</div>
 </header>
 
 <div class="acc" onclick="tog()">
@@ -75,15 +79,17 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
 </div>
 <div class="panel" id="panel">
 
-  <!-- stats IZQ + gráfica DER -->
   <div class="hcard">
-    <div class="hstats">
-      <div><b id="sNet">—</b><span>Neto</span></div>
-      <div><b id="sRoi">—</b><span>ROI</span></div>
-      <div><b id="sAcc">—</b><span>Aciertos</span></div>
-      <div><b id="sRec">—</b><span>Récord</span></div>
+    <div class="hhead">
+      <div><div class="hlbl" id="hLbl">ÚLTIMOS 30 DÍAS</div><div class="hneto" id="hNet">—</div></div>
+      <div class="hmeta"><div><span id="hRoi">—</span> ROI</div><div id="hRec">—</div></div>
     </div>
-    <div class="hgraf" id="gA"></div>
+    <div class="hgraf" id="graf"></div>
+    <div class="pills">
+      <div class="pill" data-p="7">7 días</div>
+      <div class="pill on" data-p="30">30 días</div>
+      <div class="pill" data-p="999">Todo</div>
+    </div>
   </div>
 
   <div class="elite"><div class="et">🏆 JUGADA ELITE · ⭐⭐⭐⭐⭐</div><div class="ev" id="eliteV">—</div></div>
@@ -121,7 +127,7 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:24px 0 6px;line-he
   <div class="razon">Argelia llega goleando (7-0, 4-0) y Jordania en caída libre (DDLLL). Hándicap -1 a -105 ofrece valor real ante una defensa rival floja.</div>
 </div>
 
-<footer>VISTA PREVIA · dime si así te gusta el tamaño y el layout (números izq / gráfica der · mes izq / picks der).</footer>
+<footer>VISTA PREVIA · prueba los botones 7/30/Todo (cambia color según vamos +/−) y el calendario.</footer>
 </div>
 
 <script>
@@ -155,34 +161,33 @@ const neto=x=>{const d=x.o>0?1+x.o/100:1+100/(-x.o);return x.r==="W"?x.u*(d-1):x
 function agg(a){let w=0,l=0,n=0,rk=0;a.forEach(x=>{if(x.r==="W")w++;if(x.r==="L")l++;if(x.r!=="P"){n+=neto(x);rk+=x.u;}});return{w,l,neto:n,roi:rk?n/rk*100:0,acc:(w+l)?w/(w+l)*100:0};}
 const fmt=n=>(n>=0?"+":"")+n.toFixed(1)+"U";
 const cls=p=>p?"g":"r";
-function serie(){const byd={};R.forEach(x=>byd[x.f]=(byd[x.f]||0)+neto(x));const ds=Object.keys(byd).sort();let ac=0;return ds.map(f=>({f,dia:byd[f],ac:(ac+=byd[f])}));}
+function filt(p){if(p>=999)return R;const fs=[...new Set(R.map(x=>x.f))].sort().slice(-p);return R.filter(x=>fs.includes(x.f));}
+function serieDe(a){const byd={};a.forEach(x=>byd[x.f]=(byd[x.f]||0)+neto(x));const ds=Object.keys(byd).sort();let ac=0;return ds.map(f=>({f,ac:(ac+=byd[f])}));}
 function byDay(){const m={};R.forEach(x=>(m[x.f]=m[x.f]||[]).push(x));return m;}
-function smooth(P){if(P.length<2)return P.length?("M"+P[0][0]+","+P[0][1]):"";let d="M"+P[0][0].toFixed(1)+","+P[0][1].toFixed(1);for(let i=0;i<P.length-1;i++){const p0=P[i-1]||P[i],p1=P[i],p2=P[i+1],p3=P[i+2]||P[i+1];const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;d+="C"+c1x.toFixed(1)+","+c1y.toFixed(1)+" "+c2x.toFixed(1)+","+c2y.toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
 
-function setStat(id,txt,pos){const e=document.getElementById(id);e.textContent=txt;e.className=cls(pos);}
-(function(){const s=agg(R);
- document.getElementById('accNet').textContent=fmt(s.neto);document.getElementById('accNet').className="nt "+cls(s.neto>=0);
- setStat('sNet',fmt(s.neto),s.neto>=0);setStat('sRoi',(s.roi>=0?"+":"")+s.roi.toFixed(0)+"%",s.roi>=0);
- setStat('sAcc',s.acc.toFixed(0)+"%",s.acc>=50);setStat('sRec',s.w+"-"+s.l,s.w>=s.l);
- const e=agg(R.filter(x=>x.c===5));document.getElementById('eliteV').innerHTML=e.w+"-"+e.l+' · <span class="'+cls(e.neto>=0)+'">'+fmt(e.neto)+'</span>';
-})();
+const VW=320;
+function chart(a){const S=serieDe(a),v=S.map(s=>s.ac),H=120,pad=12;if(!v.length){graf.innerHTML="";return;}
+ const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
+ const X=i=>v.length>1?pad+i/(v.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
+ const pts=v.map((val,i)=>X(i).toFixed(1)+","+Y(val).toFixed(1)).join(" ");
+ const col=v[v.length-1]>=0?"#3fb950":"#f85149";
+ graf.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet">'
+ +'<line x1="0" y1="'+Y(0)+'" x2="'+VW+'" y2="'+Y(0)+'" stroke="#30363d" stroke-dasharray="4"/>'
+ +'<polyline points="'+pts+'" fill="none" stroke="'+col+'" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>';}
 
-// GRÁFICA A
-const VW=300;
-(function(){const S=serie(),v=S.map(s=>s.ac),H=120,pad=8;const mn=Math.min(0,...v),mx=Math.max(0,...v),rg=(mx-mn)||1;
- const X=i=>S.length>1?pad+i/(S.length-1)*(VW-2*pad):VW/2,Y=val=>pad+(1-(val-mn)/rg)*(H-2*pad);
- const P=v.map((val,i)=>[X(i),Y(val)]),line=smooth(P),Y0=Y(0);
- const area=line+" L"+X(v.length-1).toFixed(1)+","+Y0.toFixed(1)+" L"+X(0).toFixed(1)+","+Y0.toFixed(1)+" Z";
- gA.innerHTML='<svg viewBox="0 0 '+VW+' '+H+'" width="100%" preserveAspectRatio="xMidYMid meet">'
- +'<defs><linearGradient id="agv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".5"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>'
- +'<linearGradient id="agr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f85149" stop-opacity="0"/><stop offset="1" stop-color="#f85149" stop-opacity=".5"/></linearGradient>'
- +'<clipPath id="aup"><rect x="0" y="0" width="'+VW+'" height="'+Y0+'"/></clipPath>'
- +'<clipPath id="adn"><rect x="0" y="'+Y0+'" width="'+VW+'" height="'+(H-Y0)+'"/></clipPath></defs>'
- +'<path d="'+area+'" fill="url(#agv)" clip-path="url(#aup)"/><path d="'+area+'" fill="url(#agr)" clip-path="url(#adn)"/>'
- +'<line x1="0" y1="'+Y0+'" x2="'+VW+'" y2="'+Y0+'" stroke="#30363d" stroke-dasharray="3"/>'
- +'<path d="'+line+'" fill="none" stroke="#3fb950" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#aup)"/>'
- +'<path d="'+line+'" fill="none" stroke="#f85149" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" clip-path="url(#adn)"/></svg>';
-})();
+let per=30;
+function setPer(p){per=p;document.querySelectorAll('.pill').forEach(e=>e.classList.toggle('on',+e.dataset.p===p));
+ const a=filt(p),s=agg(a);
+ hLbl.textContent=p>=999?"HISTORIAL COMPLETO":("ÚLTIMOS "+p+" DÍAS");
+ hNet.textContent=fmt(s.neto);hNet.className="hneto "+cls(s.neto>=0);
+ hRoi.textContent=(s.roi>=0?"+":"")+s.roi.toFixed(0)+"%";hRoi.className=cls(s.roi>=0);
+ hRec.textContent=s.w+"-"+s.l+" · "+s.acc.toFixed(0)+"% ac.";
+ chart(a);
+}
+document.querySelectorAll('.pill').forEach(e=>e.onclick=()=>setPer(+e.dataset.p));
+(function(){const s=agg(R);document.getElementById('accNet').textContent=fmt(s.neto);document.getElementById('accNet').className="nt "+cls(s.neto>=0);
+ const e=agg(R.filter(x=>x.c===5));document.getElementById('eliteV').innerHTML=e.w+"-"+e.l+' · <span class="'+cls(e.neto>=0)+'">'+fmt(e.neto)+'</span>';})();
+setPer(30);
 
 const MD=byDay();
 const MES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
