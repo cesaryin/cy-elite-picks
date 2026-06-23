@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CY Elite — TikTok test</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{background:#000;display:flex;align-items:center;justify-content:center;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#e6edf3;overflow:hidden}
+.phone{position:relative;width:min(100vw,430px);aspect-ratio:9/16;max-height:100vh;background:radial-gradient(120% 80% at 50% 0%,#161b22,#0d1117 70%);overflow:hidden}
+/* barras de progreso tipo stories */
+.bars{position:absolute;top:12px;left:12px;right:12px;display:flex;gap:5px;z-index:9}
+.bars i{flex:1;height:3px;background:#ffffff22;border-radius:3px;overflow:hidden}
+.bars i b{display:block;height:100%;width:0;background:#f0c75e;border-radius:3px}
+.bars i.on b{animation:fill linear forwards}
+.bars i.done b{width:100%}
+@keyframes fill{from{width:0}to{width:100%}}
+.brand{position:absolute;top:26px;left:0;right:0;text-align:center;font-size:13px;font-weight:900;letter-spacing:1px;color:#f0c75e;z-index:8}
+/* escenas */
+.scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:14% 8% 12%;opacity:0;pointer-events:none}
+.scene.active{opacity:1}
+.ln{opacity:0;transform:translateY(22px)}
+.scene.active .ln{animation:up .55s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.pop{opacity:0;transform:scale(.5)}
+.scene.active .pop{animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes pop{to{opacity:1;transform:none}}
+.k{font-size:14px;font-weight:800;letter-spacing:1px;color:#8b949e;margin-bottom:10px}
+.big{font-size:46px;font-weight:900;line-height:1.05;margin:6px 0}
+.huge{font-size:64px;font-weight:900;line-height:1}
+.mid{font-size:26px;font-weight:800;line-height:1.2;margin:6px 0}
+.sm{font-size:17px;color:#c9d1d9;font-weight:600;margin-top:8px;line-height:1.4}
+.gold{color:#f0c75e}.green{color:#3fb950}.red{color:#f85149}
+.logo{width:120px;height:120px;object-fit:contain;margin-bottom:6px;filter:drop-shadow(0 6px 20px #0008)}
+.chip{display:inline-block;background:#1e1a0e;border:1px solid #d4af37;color:#f0c75e;font-weight:900;font-size:22px;border-radius:14px;padding:8px 18px;margin-top:12px}
+.tag{display:inline-block;background:#21262d;border-radius:9px;padding:4px 12px;font-size:15px;font-weight:700;margin-top:10px;color:#c9d1d9}
+.stat{font-size:40px;font-weight:900;margin:4px 0}
+.flame{font-size:50px}
+.cta{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:11px 16px;margin-top:14px;font-size:15px;font-weight:800;color:#58a6ff}
+.replay{position:absolute;bottom:18px;left:0;right:0;text-align:center;z-index:9}
+.replay button{background:#ffffff14;border:1px solid #ffffff33;color:#fff;border-radius:20px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer}
+.disc{position:absolute;bottom:54px;left:0;right:0;text-align:center;font-size:10px;color:#6e7681;z-index:7}
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="bars" id="bars"></div>
+  <div class="brand">👑 CY ELITE PICKS</div>
+
+  <!-- 1 gancho -->
+  <div class="scene">
+    <div class="ln k" style="animation-delay:.05s">HOY MI SISTEMA DETECTÓ…</div>
+    <div class="ln big" style="animation-delay:.25s">una jugada</div>
+    <div class="ln huge gold" style="animation-delay:.45s">🔒 ELITE</div>
+    <div class="ln sm" style="animation-delay:.8s">5 capas alineadas · valor real (+EV)</div>
+  </div>
+
+  <!-- 2 el pick -->
+  <div class="scene">
+    <img class="pop logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" alt="">
+    <div class="ln k" style="animation-delay:.25s">EL PICK DEL DÍA</div>
+    <div class="ln big" style="animation-delay:.4s">Chicago Cubs <span class="gold">gana</span></div>
+    <div class="ln chip" style="animation-delay:.6s">ML · -122 · 1.5U</div>
+    <div class="ln tag" style="animation-delay:.8s">⚾ MLB · 6:10 PM</div>
+  </div>
+
+  <!-- 3 crisis rival -->
+  <div class="scene">
+    <div class="ln k" style="animation-delay:.05s">¿POR QUÉ? 👀</div>
+    <div class="ln mid" style="animation-delay:.25s">El abridor rival está<br><span class="red">EN CRISIS</span></div>
+    <div class="ln sm" style="animation-delay:.55s">Kodai Senga (NYM)</div>
+    <div class="ln stat red" style="animation-delay:.75s">ERA 9.00 · 0-5 😵</div>
+  </div>
+
+  <!-- 4 chicago fuego -->
+  <div class="scene">
+    <div class="ln flame" style="animation-delay:.05s">🔥</div>
+    <div class="ln mid" style="animation-delay:.25s">Y Chicago viene<br><span class="green">ENCENDIDO</span></div>
+    <div class="ln stat green" style="animation-delay:.5s">6.0 carreras/juego</div>
+    <div class="ln sm" style="animation-delay:.75s">Su abridor: <b class="green">4.26</b> vs <b class="red">9.00</b> ✅</div>
+  </div>
+
+  <!-- 5 +EV -->
+  <div class="scene">
+    <div class="ln huge gold" style="animation-delay:.05s">+EV 💰</div>
+    <div class="ln mid" style="animation-delay:.35s">La cuota paga MÁS<br>que la probabilidad real</div>
+    <div class="ln sm" style="animation-delay:.7s">= valor a largo plazo,<br>no corazonadas.</div>
+  </div>
+
+  <!-- 6 cta -->
+  <div class="scene">
+    <div class="ln big" style="animation-delay:.05s">📊 Récord<br><span class="green">100% verificable</span></div>
+    <div class="ln sm" style="animation-delay:.4s">Sin inventos. Todo público.</div>
+    <div class="ln mid gold" style="animation-delay:.65s">Sígueme para<br>el pick diario 🎯</div>
+    <div class="ln cta" style="animation-delay:.95s">🔗 link en bio</div>
+  </div>
+
+  <div class="disc">+18 · Juega responsable · Ninguna apuesta es segura</div>
+  <div class="replay"><button onclick="play(0)">↻ Reproducir de nuevo</button></div>
+</div>
+
+<script>
+var dur=[3000,3800,3600,3800,3200,4200];
+var scenes=document.querySelectorAll('.scene');
+var bars=document.getElementById('bars');
+for(var b=0;b<scenes.length;b++)bars.innerHTML+='<i><b></b></i>';
+var segs=bars.querySelectorAll('i');
+var t1,t2,cur=0;
+function play(start){
+  clearTimeout(t1);clearTimeout(t2);
+  cur=start||0;step();
+}
+function step(){
+  scenes.forEach(function(s,k){s.classList.toggle('active',k===cur);});
+  segs.forEach(function(s,k){
+    s.classList.remove('on','done');
+    var bar=s.querySelector('b');
+    if(k<cur){s.classList.add('done');}
+    else if(k===cur){bar.style.animationDuration=dur[cur]+'ms';s.classList.add('on');}
+    else{bar.style.width='0';}
+  });
+  t1=setTimeout(function(){
+    cur++;
+    if(cur>=scenes.length){cur=0;}
+    step();
+  },dur[cur]);
+}
+play(0);
+</script>
+</body>
+</html>
