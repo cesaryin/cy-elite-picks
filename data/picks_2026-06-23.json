@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -104,
+      "unidades": 1.5,
+      "razon": "Convergencia de 3 capas: Eduardo Rodriguez (2.45 ERA, 6-2) supera con claridad a Kyle Leahy (4.63), bullpen AZ 2.86 vs STL 4.35 (cierre asegurado con Sewald 3.18), y a precio casi de moneda (-104) el favorito real paga valor. Ventaja de pitcheo completa de punta a cierre.",
+      "equipos": [
+        "AZ",
+        "STL"
+      ],
+      "destacado": "AZ",
+      "hora": "6:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CLE ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -114,
+      "unidades": 1.0,
+      "razon": "Parker Messick (2.70 ERA, 7-3) por encima de Sean Burke (3.89), bullpen CLE elite 3.22 con Cade Smith (2.78, 24 saves) frente al 3.78 de CWS. Total bajo de 7.0 confirma que el mercado ve dominio de pitcheo de Cleveland; ML a -114 ofrece valor sobre el equipo completo.",
+      "equipos": [
+        "CLE",
+        "CWS"
+      ],
+      "destacado": "CLE",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -160,
+      "unidades": 1.0,
+      "razon": "Disparidad de abridores enorme: Sonny Gray (3.12, 8-1) contra Sean Sullivan (10.29) y el peor bullpen del dia (COL 5.25, Vodnik 7.06). Aun con la variancia de Coors, la ventaja de pitcheo y cierre (Chapman 2.08) justifica el favoritismo a -160.",
+      "equipos": [
+        "BOS",
+        "COL"
+      ],
+      "destacado": "BOS",
+      "hora": "7:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -188
+      },
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -170
+      }
+    ],
+    "cuota_combinada": 143,
+    "nota": "Dos favoritos solidos por matchup: McClanahan (3.33) + cierre Baker (1.78) ante Avila (5.50) de KC; y Luzardo sobre Littell (5.45) con Duran (1.75) cerrando para PHI. Ambos limpios sin precio extremo."
+  },
+  "descartes": [
+    "HOU/TOR: Bieber sin ERA dato, cuotas ajustadas, sin valor claro.",
+    "SEA/PIT: SEA -126 con Munoz (5.27) inestable al cierre; sin edge limpio.",
+    "TEX/MIA: Fairbanks (6.14) cierra por MIA, contradiccion con el favoritismo, sin valor.",
+    "NYY/DET: dos buenos abridores y precio parejo, sin margen.",
+    "MIL/CIN: ambos abridores muy flojos pero tendencia de over baja (3/10), total no convence.",
+    "LAD/MIN: solo MIN jugable; pese a su ofensiva, LAD demasiado solido para tomar el perro.",
+    "ATL/SD: abridor SD nulo y precio parejo, sin dato suficiente.",
+    "ATH/SF: bullpen ATH 4.80 vs ofensiva volatil, sin convergencia.",
+    "BAL/LAA: abridores flojos pero closers inestables ambos lados, sin edge.",
+    "Mundial: Portugal -700, England -526, Croatia -205 todos fuera del rango jugable; sin valor."
+  ],
+  "resumen": "Dia con fuerte sesgo a ventajas de pitcheo en la Nacional/AL. Riesgo total 3.5 unidades en tres moneylines: Arizona como jugada principal por dominio de E-Rod y bullpen elite, Cleveland respaldado por Messick y Cade Smith, y Boston aprovechando la brecha brutal de abridores en Coors. Parlay opcional aparte (no cuenta al balance) uniendo a Tampa Bay y Philadelphia, favoritos limpios por matchup a cuota combinada +143."
+}

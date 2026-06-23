@@ -28,5 +28,35 @@
     "unidades": 1.0,
     "resultado": "W",
     "neto_u": 0.84
+  },
+  {
+    "fecha": "2026-06-22",
+    "pick": "CHC ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -122,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0
+  },
+  {
+    "fecha": "2026-06-22",
+    "pick": "Algeria handicap -1",
+    "deporte": "Mundial",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0
+  },
+  {
+    "fecha": "2026-06-22",
+    "pick": "Norway ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 120,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.2
   }
 ]
