@@ -1,0 +1,97 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TOR ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -158,
+      "unidades": 1.5,
+      "razon": "Convergencia de 3 capas: ventaja de abridor real (T. Yesavage 3.76 vs M. Burrows 5.79), bullpen elite que asegura el cierre (2.96 colectivo, L. Varland 0.84) y localia. HOU llega con ofensiva apenas promedio (4.2 cf) y abridor de 5.79 de ERA. Cuota dentro de rango con respaldo de equipo COMPLETO.",
+      "equipos": [
+        "HOU",
+        "TOR"
+      ],
+      "destacado": "TOR",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TOR",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "ATL/SD u8.0",
+      "deporte": "MLB",
+      "tipo": "u8.0",
+      "cuota": -115,
+      "unidades": 1.0,
+      "razon": "Choque de dos bullpens elite (ATL 2.0 con R. Iglesias 1.42; SD 2.78 con M. Miller 0.79) que blindan el cierre, mas M. Perez (2.78) abriendo por ATL. La ofensiva de ATL esta fria (3.0 carreras en 10 juegos) y SD anota moderado en casa. Tendencia hacia under sostenida por el pitcheo.",
+      "equipos": [
+        "ATL",
+        "SD"
+      ],
+      "destacado": null,
+      "hora": "7:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Brazil Hándicap -1.5",
+      "deporte": "Mundial",
+      "tipo": "Hándicap -1.5",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "Brasil en racha goleadora (WWWDW: 3, 6, 2 y 3 goles en sus ultimos partidos) frente a una Escocia irregular que viene de caer 0-1 con Marruecos. Con el ML cargado a -320 sin valor, el Hándicap -1.5 a -108 captura el margen real de superioridad de Brasil.",
+      "equipos": [
+        "BRA",
+        "SCO"
+      ],
+      "destacado": "BRA",
+      "hora": "5:00 PM CT",
+      "resolucion": {
+        "mercado": "spread",
+        "equipo": "BRA",
+        "lado": null,
+        "linea": -1.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "Brazil ML",
+        "deporte": "Mundial",
+        "destacado": "BRA",
+        "cuota": -320
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -178
+      }
+    ],
+    "cuota_combinada": 105,
+    "nota": "Dos favoritos solidos y razonables: Brasil en gran forma ante una Escocia inferior, y LAD con S. Ohtani (1.47) dominante sobre MIN. Combinada con valor en +105."
+  },
+  "descartes": [
+    "BOS@COL: BOS -168 fuera de rango y total 11 en Coors sin lado claro; COL con pitcheo pesimo pero ofensiva volatil.",
+    "LAD@MIN ML individual: LAD -178 fuera de rango para pick suelto (solo apto para parlay).",
+    "MIL@CIN: under 9.5 atractivo por bullpens y bajas carreras, pero MIL -145 sin ventaja de abridor dominante; no llega a valor claro.",
+    "NYY@DET: Skubal elite favorece under 7.5, pero Weathers (4.13) y ofensiva NYY meten ruido; sin convergencia limpia.",
+    "ATH@SF: Gage Jump (2.37) vs Mahle (6.04) tienta, pero bullpen de ATH debil (4.74) resta seguridad al ML.",
+    "South Korea -165: fuera del rango permitido (-160 max).",
+    "Switzerland 143 vs Canada: formas identicas (DWDDW), sin edge suficiente para pick.",
+    "Morocco -550 / Haiti: favorito demasiado pesado, sin valor.",
+    "QAT@BIH y MEX@CZE: sin cuotas disponibles."
+  ],
+  "resumen": "Dia de 3 jugadas con riesgo total de 3.5 unidades. La apuesta principal es Toronto a ganar por su clara ventaja de abridor, bullpen elite y localia. Le acompanan el under 8 en Atlanta-San Diego respaldado por dos bullpens dominantes y ofensivas frias, y el Hándicap -1.5 de Brasil por su racha goleadora ante una Escocia inferior. Como extra opcional, un parlay de Brasil y los Dodgers a +105 que no afecta el balance."
+}

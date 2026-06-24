@@ -58,5 +58,35 @@
     "unidades": 1.0,
     "resultado": "W",
     "neto_u": 1.2
+  },
+  {
+    "fecha": "2026-06-23",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -104,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.44
+  },
+  {
+    "fecha": "2026-06-23",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0
+  },
+  {
+    "fecha": "2026-06-23",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -160,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.62
   }
 ]
