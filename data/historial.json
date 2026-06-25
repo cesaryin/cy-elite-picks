@@ -88,5 +88,53 @@
     "unidades": 1.0,
     "resultado": "W",
     "neto_u": 0.62
+  },
+  {
+    "fecha": "2026-06-24",
+    "pick": "TOR ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -158,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "HOU 3-1 TOR"
+  },
+  {
+    "fecha": "2026-06-24",
+    "pick": "ATL/SD u8.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -115,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.87,
+    "marcador": "ATL 2-5 SD"
+  },
+  {
+    "fecha": "2026-06-24",
+    "pick": "Brazil Hándicap -1.5",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "BRA 3-0 SCO"
+  },
+  {
+    "fecha": "2026-06-24",
+    "pick": "PARLAY: Brazil ML + LAD ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 105,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "BRA 3-0 SCO / LAD 4-3 MIN",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]

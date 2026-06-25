@@ -1,0 +1,93 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "PHI Spread -1.5",
+      "deporte": "MLB",
+      "tipo": "Spread -1.5",
+      "cuota": -105,
+      "unidades": 1.5,
+      "razon": "Convergencia 3 capas: C. Sánchez (1.80 ERA, 9-3) domina a un WSH con Cavalli (4.07) y bullpen flojo (4.31); ofensiva PHI en forma (6.4 cf, over 6/10) y cierre elite con J. Duran (1.69). El -1.5 a -105 paga mejor que el ML cargado (-170) con respaldo total.",
+      "equipos": [
+        "PHI",
+        "WSH"
+      ],
+      "destacado": "PHI",
+      "hora": "5:45 PM CT",
+      "resolucion": {
+        "mercado": "spread",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": -1.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -149,
+      "unidades": 1.0,
+      "razon": "C. Schlittler (1.71 ERA, 8-3) frente a un BOS hundido (3-7, 3.3 cf) y bullpen NYY elite (3.18) con D. Bednar cerrando. Matchup de pitcheo + forma claramente a favor; cuota dentro de rango con valor real.",
+      "equipos": [
+        "NYY",
+        "BOS"
+      ],
+      "destacado": "NYY",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Japan ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": -112,
+      "unidades": 1.0,
+      "razon": "Japón en racha sólida (WWWDW) con defensa hermética: 1-0 a SCO, ENG e ISL como local. Suecia irregular (WLDWL) y vulnerable atrás (5-1 ante NED y POL). Localía + forma defensiva dan valor al ML a -112.",
+      "equipos": [
+        "SWE",
+        "JPN"
+      ],
+      "destacado": "JPN",
+      "hora": "6:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "JPN",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -170
+      },
+      {
+        "pick": "Germany ML",
+        "deporte": "Mundial",
+        "destacado": "GER",
+        "cuota": -180
+      }
+    ],
+    "cuota_combinada": 148,
+    "nota": "Dos favoritos sólidos y razonables: PHI con Sánchez (1.80) y Duran cerrando; Alemania con 5 victorias seguidas (WWWWW) y ataque en forma ante un Ecuador empatón. Combinada +148 con respaldo en ambas patas."
+  },
+  "descartes": [
+    "SEA -144: Miller domina pero ofensiva SEA paupérrima (2.3 cf) y cerrador Muñoz 5.08; riesgo alto sin valor neto.",
+    "TOR -152: ambos abridores ~4.0, bullpen elite pero ML perdió por inercia reciente (HOU 3-1 TOR); sin ventaja clara.",
+    "GER ML -180 suelto: fuera de rango como pick individual, se aprovecha solo en parlay.",
+    "KC/TB, HOU/DET, AZ/STL, CHC/NYM: matchups equilibrados sin convergencia ni cuota con valor claro.",
+    "CIV -600 y NED -950: favoritos extremos sin valor; CUW y TUN sin opción real."
+  ],
+  "resumen": "Tres jugadas con riesgo total de 3.5U. La principal es el spread -1.5 de Filadelfia, donde Sánchez y un bullpen elite respaldan ganar por 2+ ante un Washington flojo. Sumamos el ML de los Yankees apoyado en Schlittler y un BOS en caída, y un tercer pick más especulativo con Japón por su forma defensiva en casa. Parlay aparte (no cuenta en balance) con PHI y Alemania a +148."
+}
