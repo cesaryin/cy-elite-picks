@@ -1,0 +1,95 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "PHI Spread -1.5",
+      "deporte": "MLB",
+      "tipo": "Spread -1.5",
+      "cuota": 105,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: Z. Wheeler (2.11 ERA, 7-1) domina y NYM sale SIN abridor confirmado con bullpen flojo (D. Williams 4.44). NYM en 2-8 recibiendo 7.6 carreras por juego; PHI 7-3 anotando 7.4. Run line +105 paga de mas para esta ventaja triple (pitcheo + ofensiva en forma + defensa rival colapsada).",
+      "equipos": [
+        "PHI",
+        "NYM"
+      ],
+      "destacado": "PHI",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "spread",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": -1.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor enorme: N. Martinez (2.73, 6-2) frente a Z. Gallen hundido en 6.10 ERA. TB tiene el mejor record de la liga (45-33), juega en casa y su cerrador B. Baker (2.01, 20 sv) asegura el cierre. SYS-003: el matchup de pitcheo respalda el ML sin pagar cuota extrema.",
+      "equipos": [
+        "AZ",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "France ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": -160,
+      "unidades": 1.0,
+      "razon": "Francia llega goleando de forma consistente (3-1, 3-1, 3-1, 3-0 en sus victorias) con WLWWW. Noruega filtra atras (SWE 3-1, SEN 3-2) y depende de empates 0-0/1-1. El ataque francés ataca una defensa irregular; -160 ofrece valor frente a su nivel real.",
+      "equipos": [
+        "FRA",
+        "NOR"
+      ],
+      "destacado": "FRA",
+      "hora": "2:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "FRA",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIL ML",
+        "deporte": "MLB",
+        "destacado": "MIL",
+        "cuota": -260
+      },
+      {
+        "pick": "France ML",
+        "deporte": "Mundial",
+        "destacado": "FRA",
+        "cuota": -160
+      }
+    ],
+    "cuota_combinada": 125,
+    "nota": "Dos favoritos sólidos pero razonables: J. Misiorowski (1.45 ERA, 8-3) y el mejor record (49-29) en casa para MIL; Francia goleando ante una Noruega defensivamente frágil. Combinado +125 con valor real."
+  },
+  "descartes": [
+    "ATL @ SF: ATL con record alto pero forma de 2-8 y 2.9 carreras anotadas; sin abridor SF claro, demasiada incertidumbre.",
+    "CHC @ MIL ML: MIL -260 fuera de rango como pick suelto (solo apto para parlay).",
+    "LAD @ SD: matchup parejo (Sasaki 4.76 vs Buehler 3.96), bullpen SD elite anula valor del ML.",
+    "MIA @ STL: M. Meyer en forma pero cerrador Fairbanks (6.75) añade riesgo al cierre; sin margen claro.",
+    "ESP @ URU: Uruguay invicto reciente con 5 empates/derrotas ajustadas, España -145 sin valor suficiente.",
+    "Egypt vs Iran: defensa iraní fuerte pero mercado equilibrado (Draw 160), sin edge claro.",
+    "Belgium/Senegal: favoritos extremos (-525/-425), nunca rentables."
+  ],
+  "resumen": "Tres jugadas hoy con riesgo total de 3.5 unidades. La principal es la run line de PHI (1.5U) apoyada en Wheeler dominante y un NYM en caída sin abridor; sumo TB ML (1U) por la enorme ventaja de pitcheo sobre Gallen, y Francia ML (1U) por su ataque goleador. Parlay opcional aparte combinando MIL y Francia a +125."
+}

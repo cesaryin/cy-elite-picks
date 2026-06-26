@@ -136,5 +136,53 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-06-25",
+    "pick": "PHI Spread -1.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -105,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.43,
+    "marcador": "PHI 10-5 WSH"
+  },
+  {
+    "fecha": "2026-06-25",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -149,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "NYY 3-6 BOS"
+  },
+  {
+    "fecha": "2026-06-25",
+    "pick": "Japan ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": -112,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "SWE 1-1 JPN"
+  },
+  {
+    "fecha": "2026-06-25",
+    "pick": "PARLAY: PHI ML + Germany ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 148,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "PHI 10-5 WSH / GER 1-2 ECU",
+    "patas_res": [
+      "W",
+      "L"
+    ]
   }
 ]
