@@ -184,5 +184,53 @@
       "W",
       "L"
     ]
+  },
+  {
+    "fecha": "2026-06-26",
+    "pick": "PHI Spread -1.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 105,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "PHI 2-1 NYM"
+  },
+  {
+    "fecha": "2026-06-26",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -136,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.74,
+    "marcador": "AZ 1-6 TB"
+  },
+  {
+    "fecha": "2026-06-26",
+    "pick": "France ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": -160,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.62,
+    "marcador": "FRA 4-1 NOR"
+  },
+  {
+    "fecha": "2026-06-26",
+    "pick": "PARLAY: MIL ML + France ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 125,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CHC 2-6 MIL / FRA 4-1 NOR",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]

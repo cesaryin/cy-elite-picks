@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -118,
+      "unidades": 1.5,
+      "razon": "Ventaja de abridor dominante: C. Burns 2.00 ERA y 9-1 frente a J. Jones 5.75 ERA, una diferencia real (no nominal, cumple SYS-002/003). Bullpen de CIN solido (3.53) con ofensiva en forma (4.4 carreras). Cuota dentro de rango con +EV claro por el mismatch de pitcheo.",
+      "equipos": [
+        "CIN",
+        "PIT"
+      ],
+      "destacado": "CIN",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CIN",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Portugal ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": -105,
+      "unidades": 1.0,
+      "razon": "Portugal llega WWWDW con autoridad (5-0 a Uzbekistan, 2-0 a USA) y mayor nivel individual. Colombia viene fuerte pero cayo ante Francia y es claramente inferior en plantilla. A -105 paga como pick-em un favorito real: valor. El Mundial viene rindiendo en la memoria (France ML, Brazil).",
+      "equipos": [
+        "POR",
+        "COL"
+      ],
+      "destacado": "POR",
+      "hora": "6:30 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "Portugal",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -163,
+      "unidades": 1.0,
+      "razon": "K. Harrison 2.50 ERA y 8-1 frente a D. Peterson 6.09 ERA: mismatch de pitcheo enorme. MIL es el mejor equipo del dia (50-29), juega en casa, bullpen solido (3.48) y forma defensiva elite (2.8 carreras en contra). Cuota dentro de rango con respaldo de matchup.",
+      "equipos": [
+        "CHC",
+        "MIL"
+      ],
+      "destacado": "MIL",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "TOR ML",
+        "deporte": "MLB",
+        "destacado": "TOR",
+        "cuota": -185
+      },
+      {
+        "pick": "SEA ML",
+        "deporte": "MLB",
+        "destacado": "SEA",
+        "cuota": -148
+      }
+    ],
+    "cuota_combinada": 158,
+    "nota": "Dos favoritos con ventaja de pitcheo real: D. Cease 2.75 y cerrador Varland 0.82 ante C. Quantrill; L. Gilbert 3.29 frente a S. Cecconi 4.48. Pese a la derrota previa de TOR, el analisis de hoy lo justifica por el dominio de Cease y el bullpen elite."
+  },
+  "descartes": [
+    "LAD/SD: LAD -198 fuera de rango y SD +168 sin respaldo de matchup.",
+    "ARG -660 y ENG -650: favoritos extremos sin valor ni para parlay.",
+    "ATL/SF: Webb vs Elder muy parejo, bullpen ATL elite no compensa cuota sin valor claro.",
+    "WSH/BAL: practicamente pick-em entre dos abridores buenos, sin borde.",
+    "Austria/Algeria: empate plausible pero sin convergencia para apostar.",
+    "AZ/TB: abridores con muestras minimas (Cabrera 0.00, Sulser 5.40) generan incertidumbre."
+  ],
+  "resumen": "Dia centrado en mismatches de pitcheo. Apuesta fuerte por Cincinnati con Burns dominando a un Jared Jones de 5.75, apoyo de valor en Portugal a precio de pick-em y un respaldo en Milwaukee con Harrison ante Peterson. Riesgo total 3.5 unidades en picks, mas un parlay opcional (TOR + SEA, +158) que no cuenta en el balance."
+}
