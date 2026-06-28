@@ -1,0 +1,93 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -119,
+      "unidades": 1.5,
+      "razon": "Ventaja de abridor decisiva: H. Brown (1.40 ERA) frente a J. Flaherty (5.35, 1-8) que llega hundido. Houston viene caliente (7-3 en sus ultimos 10) y su bullpen lo cierra con J. Hader (0.82). Detroit anota apenas 4.0 por juego en su forma reciente. Tres capas alineadas (abridor, bullpen, forma) en cuota jugable.",
+      "equipos": [
+        "HOU",
+        "DET"
+      ],
+      "destacado": "HOU",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 120,
+      "unidades": 1.0,
+      "razon": "Valor en el local: M. King (3.33) supera con claridad a E. Sheehan (5.32). El bullpen de San Diego es el mejor del cruce (2.84) con M. Miller (0.79, 21 svs) para cerrar, mientras LA depende de un abridor flojo. Pagando plus por el equipo con mejor pitcheo y cierre, hay +EV real.",
+      "equipos": [
+        "LAD",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "PHI ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -156,
+      "unidades": 1.0,
+      "razon": "J. Luzardo (4.00) enfrenta a un abridor de relevo en C. Pérez (4.99). Philadelphia es la ofensiva mas productiva del dia (6.3 carreras por juego en su forma) ante un NYM hundido (3-7, recibe 6.3). Con J. Duran (1.63) cerrando, el matchup completo favorece al visitante.",
+      "equipos": [
+        "PHI",
+        "NYM"
+      ],
+      "destacado": "PHI",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BAL ML",
+        "deporte": "MLB",
+        "destacado": "BAL",
+        "cuota": -195
+      },
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -190
+      }
+    ],
+    "cuota_combinada": 131,
+    "nota": "Dos locales con ventaja clara de abridor: K. Bradish (3.64) vs Z. Littell (5.40) ante un WSH en mala forma (3-7), y D. Rasmussen (2.62) vs M. Kelly (5.71) con TB como mejor equipo del dia (47-33). Combinado en rango y con respaldo real."
+  },
+  "descartes": [
+    "ATL ML -159: Sale domina pero ATL llega frio (3-7, 2.9 carreras); riesgo alto pese al pitcheo.",
+    "CHC +140 en MIL: buen valor pero MIL es el mejor record (50-30) y Woodruff solido; demasiado parejo.",
+    "Canada -151 (Mundial): forma irregular (perdio con Suiza) y RSA viene de ganar; sin convergencia clara.",
+    "NYY/BOS ML pick'em: duelo demasiado parejo (Rodón vs Gray) sin valor definido.",
+    "AZ/TB total y spreads: sin edge limpio frente al ML."
+  ],
+  "resumen": "Tres apuestas en MLB con riesgo total de 3.5 unidades: la jugada principal en Houston por su ventaja de pitcheo y forma, mas valor en San Diego como local y en la ofensiva de Filadelfia. Parlay aparte (no cuenta en balance) con dos locales favoritos bien respaldados por su abridor."
+}

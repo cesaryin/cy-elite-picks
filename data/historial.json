@@ -232,5 +232,53 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-06-27",
+    "pick": "CIN ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -118,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.27,
+    "marcador": "CIN 9-7 PIT"
+  },
+  {
+    "fecha": "2026-06-27",
+    "pick": "Portugal ML",
+    "deporte": "Mundial",
+    "nivel": "plata",
+    "cuota": -105,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "POR 0-0 COL"
+  },
+  {
+    "fecha": "2026-06-27",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -163,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CHC 8-2 MIL"
+  },
+  {
+    "fecha": "2026-06-27",
+    "pick": "PARLAY: TOR ML + SEA ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 158,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TEX 7-4 TOR / SEA 3-4 CLE",
+    "patas_res": [
+      "L",
+      "L"
+    ]
   }
 ]
