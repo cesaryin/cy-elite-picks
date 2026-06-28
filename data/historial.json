@@ -251,8 +251,8 @@
     "nivel": "plata",
     "cuota": -105,
     "unidades": 1.0,
-    "resultado": "P",
-    "neto_u": 0.0,
+    "resultado": "L",
+    "neto_u": -1.0,
     "marcador": "POR 0-0 COL"
   },
   {
