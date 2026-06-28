@@ -171,7 +171,7 @@ var calY,calM;
 function pintarMes(){var sd=(new Date(calY,calM,1).getDay()+6)%7,days=new Date(calY,calM+1,0).getDate(),MD=byDay();var c="";for(var i=0;i<sd;i++)c+='<div class="hist-mc empty"></div>';for(var d=1;d<=days;d++){var f=calY+"-"+("0"+(calM+1)).slice(-2)+"-"+("0"+d).slice(-2);var ps=MD[f];if(ps){var z=agg(ps);c+='<div class="hist-mc '+(z.neto>=0?"win":"loss")+'" onclick="histVerDia(\''+f+'\')">'+d+'</div>';}else c+='<div class="hist-mc">'+d+'</div>';}document.getElementById('histMesLbl').textContent=HMES[calM]+" "+calY;document.getElementById('histMes').innerHTML=c;}
 function hhint(){document.getElementById('histDiaPicks').innerHTML='<div class="hist-hint">toca un día con color ←</div>';}
 window.histMesNav=function(s){calM+=s;if(calM<0){calM=11;calY--;}if(calM>11){calM=0;calY++;}pintarMes();hhint();};
-window.histVerDia=function(f){var a=R.filter(function(x){return x.f===f;});if(!a.length){hhint();return;}var h='<div class="hist-dcard"><div class="hist-dh">📕 '+f.slice(8)+' '+HMES[+f.slice(5,7)-1].slice(0,3)+'</div>';a.forEach(function(x){var dot=x.r==="W"?"🟢":x.r==="L"?"🔴":"⚪";h+='<div class="hist-drow"><span>'+(MED[x.c]||"•")+' '+(DEP[x.dep]||"")+' '+esc(x.pk).replace("Hándicap ","")+'</span><span class="'+cls(x.n>=0)+'">'+dot+' '+fmt(x.n)+'</span></div>';});h+='</div>';document.getElementById('histDiaPicks').innerHTML=h;};
+window.histVerDia=function(f){var a=R.filter(function(x){return x.f===f;});if(!a.length){hhint();return;}var h='<div class="hist-dcard"><div class="hist-dh">📕 '+f.slice(8)+' '+HMES[+f.slice(5,7)-1].slice(0,3)+'</div>';a.forEach(function(x){var dot=x.r==="W"?"🟢":x.r==="L"?"🔴":"⚪";h+='<div class="hist-drow"><span>'+(MED[x.c]||"•")+' '+(DEP[x.dep]||"")+' '+esc(x.pk).replace("Hándicap ","").replace("Spread ","")+'</span><span class="'+cls(x.n>=0)+'">'+dot+' '+fmt(x.n)+'</span></div>';});h+='</div>';document.getElementById('histDiaPicks').innerHTML=h;};
 window.histTog=function(){var p=document.getElementById('histPanel');var o=p.style.display!=="none";p.style.display=o?"none":"block";document.getElementById('histAr').textContent=o?"▾":"▴";};
 window.histTogMes=function(){var w=document.getElementById('histMesWrap');var o=w.style.display!=="none";w.style.display=o?"none":"flex";document.getElementById('histCalAr').textContent=o?"▾":"▴";};
 // init
@@ -187,7 +187,7 @@ function cmpDx(i){var d=document.getElementById('cmpd'+i);d.style.display=d.styl
 </script><details class="descartes"><summary>❌ Descartes del día</summary><ul><li>ATL ML -159: Sale domina pero ATL llega frio (3-7, 2.9 carreras); riesgo alto pese al pitcheo.</li><li>CHC +140 en MIL: buen valor pero MIL es el mejor record (50-30) y Woodruff solido; demasiado parejo.</li><li>Canada -151 (Mundial): forma irregular (perdio con Suiza) y RSA viene de ganar; sin convergencia clara.</li><li>NYY/BOS ML pick&#x27;em: duelo demasiado parejo (Rodón vs Gray) sin valor definido.</li><li>AZ/TB total y spreads: sin edge limpio frente al ML.</li></ul></details>
 <footer>
 Apuesta con responsabilidad — ninguna jugada es segura; el sistema busca valor a largo plazo.<br>
-Actualizado: 06/28/2026 11:30 AM CT
+Actualizado: 06/28/2026 12:20 PM CT
 </footer>
 </div>
 </body>
