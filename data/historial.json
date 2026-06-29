@@ -280,5 +280,53 @@
       "L",
       "L"
     ]
+  },
+  {
+    "fecha": "2026-06-28",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -119,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.26,
+    "marcador": "HOU 7-5 DET"
+  },
+  {
+    "fecha": "2026-06-28",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 120,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "LAD 4-2 SD"
+  },
+  {
+    "fecha": "2026-06-28",
+    "pick": "PHI ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -156,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.64,
+    "marcador": "PHI 5-4 NYM"
+  },
+  {
+    "fecha": "2026-06-28",
+    "pick": "PARLAY: BAL ML + TB ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 131,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "WSH 6-4 BAL / AZ 1-5 TB",
+    "patas_res": [
+      "L",
+      "W"
+    ]
   }
 ]

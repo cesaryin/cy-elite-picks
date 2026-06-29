@@ -1,0 +1,95 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "unidades": 1.5,
+      "razon": "Ventaja de abridor enorme y limpia: E. Rodriguez (2.27 ERA, 6-2) en casa frente a T. Mahle (5.49 ERA, 1-7), uno de los peores abridores del dia. SF llega con ofensiva apagada (3.4 carreras/juego en sus ultimos 10) y AZ respalda con bullpen solido (3.00 era). Convergencia de tres capas (pitcheo dominante + localia + bullpen) sin contradiccion mayor, con cuota dentro de rango.",
+      "equipos": [
+        "SF",
+        "AZ"
+      ],
+      "destacado": "AZ",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -138,
+      "unidades": 1.0,
+      "razon": "P. Lambert (3.28 ERA, 6-4) supera con claridad a Z. Matthews (4.56) y MIN trae un bullpen muy flojo (4.78 era) que se cae al final. HOU viene 7-3 en sus ultimos 10 y cierra con J. Hader (0.75 ERA) intacto. Pitcheo + bullpen elite + forma se alinean en favor del local.",
+      "equipos": [
+        "MIN",
+        "HOU"
+      ],
+      "destacado": "HOU",
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Netherlands ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": 130,
+      "unidades": 1.0,
+      "razon": "Netherlands llega en gran momento en el torneo (5-1 a Sweden, 3-1 a Tunisia) jugando como local, mientras Morocco viene de sufrir mas en ataque-defensa (4-2 a Haiti). El nivel ofensivo neerlandes reciente y la localia justifican el valor en un ML que paga +130 estando en mejor forma de torneo.",
+      "equipos": [
+        "MAR",
+        "NED"
+      ],
+      "destacado": "NED",
+      "hora": "8:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NED",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "SEA ML",
+        "deporte": "MLB",
+        "destacado": "SEA",
+        "cuota": -206
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -175
+      }
+    ],
+    "cuota_combinada": 133,
+    "nota": "Dos locales con ventaja clara de abridor: G. Kirby (3.94) ante R. Johnson (8.84 ERA) y R. Suarez (2.83, BOS 7-3) ante M. Mikolas (5.24). Favoritos solidos pero no extremos."
+  },
+  "descartes": [
+    "PIT ML: B. Ashcraft (3.07) tiene mejor numero que A. Nola (5.58), pero la ofensiva de PHI esta encendida (6.4 carreras) y Duran (1.57) cierra; sin margen claro.",
+    "DET +113: Mize aporta ventaja, pero ML perdedor en racha y NYY con Bednar elite; valor menor.",
+    "Brazil ML -135: Japan empato con Sweden y Netherlands, es rival peligroso; sin convergencia clara.",
+    "TEX/CLE u7.5: dos abridores con ERA bajo invitan al under, pero ambos bullpens y forma no dan respaldo suficiente.",
+    "MIA -140: Alcantara solido y COL con bullpen pesimo, pero Coors y Fairbanks (6.75) cerrando agregan ruido.",
+    "GER -278 y SEA/BOS sueltos: fuera de rango individual jugable, se usan solo en parlay.",
+    "CHC -154: forma de local fuerte, pero abridor de SD desconocido y bullpen rival elite (Mason Miller) restan seguridad."
+  ],
+  "resumen": "Dia con riesgo total de 3.5 unidades en tres picks de MLB y Mundial. La apuesta principal es Arizona en casa, donde E. Rodriguez aplasta a un Mahle en mala forma; acompañan Houston por su ventaja de pitcheo y bullpen, y Netherlands por su gran momento de torneo como local. Ademas un parlay informativo de dos locales con claro mejor abridor (Seattle y Boston)."
+}
