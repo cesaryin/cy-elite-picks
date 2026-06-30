@@ -1,0 +1,76 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "LAD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -165,
+      "unidades": 1.5,
+      "razon": "J. Wrobleski (2.71 ERA, 9-2) marca una ventaja enorme de abridor sobre J. Springs (5.52) y un bullpen rival de 4.62. LAD trae el mejor record de las mayores (55-30), ofensiva en forma (5.6 carreras, 7-3) y un cierre fiable con T. Scott (2.10). Convergencia de pitcheo+ofensiva+bullpen sin contradiccion; el ML a -165 paga mejor que su probabilidad real.",
+      "equipos": [
+        "LAD",
+        "ATH"
+      ],
+      "destacado": "LAD",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "LAD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -120,
+      "unidades": 1.0,
+      "razon": "G. Jax (3.33) supera con claridad a N. Cameron (4.50) y, sobre todo, KC arrastra un bullpen de 4.99 con L. Erceg (5.40) cerrando: ventaja de cierre clave para TB. Tampa llega 7-3, anotando 5.1 y permitiendo solo 3.2, con B. Baker (1.95, 21 SV) atras. Valor a -120.",
+      "equipos": [
+        "TB",
+        "KC"
+      ],
+      "destacado": "TB",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Mexico ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": 125,
+      "unidades": 1.0,
+      "razon": "Mexico llega con pleno de victorias en el torneo (RSA 2-0, KOR 1-0, CZE 3-0), defensa sin goles encajados en sus ultimos partidos y de local. Ecuador firmo dos arranques flojos (0-1 vs CIV, 0-0 Curacao) pese a vencer a Alemania. A 125 el local en mejor estado del cuadro ofrece valor sobre su probabilidad.",
+      "equipos": [
+        "ECU",
+        "MEX"
+      ],
+      "destacado": "MEX",
+      "hora": "8:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MEX",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "PHI -224 ML fuera de rango; el Spread -1.5 tiene valor pero la perdida reciente por run line aconseja no forzar.",
+    "DET/NYY: Skubal vs Schlittler casi se anulan y la ofensiva NYY esta apagada (2.6 carreras); sin valor claro.",
+    "SD@CHC: gran pitcheo SD pero CHC viene 8-2 anotando 7.2 en casa, choque sin lado limpio.",
+    "France -347 ML fuera de rango y sin valor pese a su forma.",
+    "Norway +113: rival CIV solido y partido parejo, no ofrece margen suficiente."
+  ],
+  "resumen": "Tres jugadas con riesgo total de 3.5U. La principal es Los Angeles con clara ventaja de abridor y bullpen ante un rival flojo en el montículo. Acompañan Tampa Bay, que explota el bullpen débil de Kansas City, y México como local en plena racha del torneo. Sin parlay hoy por la racha reciente: solo el valor más limpio."
+}

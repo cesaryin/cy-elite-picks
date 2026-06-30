@@ -328,5 +328,53 @@
       "L",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-06-29",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -136,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.1,
+    "marcador": "SF 4-5 AZ"
+  },
+  {
+    "fecha": "2026-06-29",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIN 5-4 HOU"
+  },
+  {
+    "fecha": "2026-06-29",
+    "pick": "Netherlands ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 130,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MAR 1-1 NED"
+  },
+  {
+    "fecha": "2026-06-29",
+    "pick": "PARLAY: SEA ML + BOS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 133,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAA 2-6 SEA / WSH 3-6 BOS",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]
