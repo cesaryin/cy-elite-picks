@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CY Elite — TikTok del día</title>
+<title>CY Elite — Videos del día</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;padding:16px;line-height:1.5}
 .wrap{max-width:480px;margin:0 auto}
 h1{font-size:20px;text-align:center;margin:8px 0 2px}
-.sub{text-align:center;color:#8b949e;font-size:13px;margin-bottom:14px}
+.sub{text-align:center;color:#8b949e;font-size:13px;margin-bottom:16px}
+.card{background:#11161d;border:1px solid #30363d;border-radius:16px;padding:14px;margin-bottom:18px}
+.ch{font-size:15px;font-weight:800;margin-bottom:10px;color:#f0c75e}
 .vid{width:100%;aspect-ratio:9/16;border:1px solid #30363d;border-radius:14px;overflow:hidden;background:#000}
-.vid video,.vid iframe{width:100%;height:100%;border:0;display:block;object-fit:cover}
-.btn{display:block;width:100%;text-align:center;background:#f0c75e;color:#1a1505;font-weight:900;font-size:16px;border:0;border-radius:12px;padding:14px;margin:12px 0;text-decoration:none;cursor:pointer}
-.box{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:13px 14px;margin:10px 0}
-.box h3{font-size:12px;color:#8b949e;letter-spacing:.5px;margin-bottom:7px}
-textarea{width:100%;background:#0d1117;color:#e6edf3;border:1px solid #30363d;border-radius:9px;padding:10px;font-size:13px;font-family:inherit;resize:vertical;min-height:120px}
+.vid video{width:100%;height:100%;border:0;display:block;object-fit:cover}
+.btn{display:block;width:100%;text-align:center;background:#f0c75e;color:#1a1505;font-weight:900;font-size:16px;border:0;border-radius:12px;padding:13px;margin:11px 0;text-decoration:none;cursor:pointer}
+.box{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px}
+.box h3{font-size:11px;color:#8b949e;letter-spacing:.5px;margin-bottom:6px}
+textarea{width:100%;background:#0d1117;color:#e6edf3;border:1px solid #30363d;border-radius:9px;padding:10px;font-size:13px;font-family:inherit;resize:vertical;min-height:115px}
 .copy{background:#21262d;color:#e6edf3;border:1px solid #30363d;border-radius:8px;padding:7px 12px;font-size:12px;font-weight:700;cursor:pointer;margin-top:8px}
-.tit{font-size:14px;font-weight:700;color:#e6edf3}
 footer{text-align:center;color:#6e7681;font-size:11px;padding:18px 0;line-height:1.7}
 </style></head>
 <body><div class="wrap">
-<h1>🎬 TikTok del día</h1>
-<div class="sub">2026-06-29 · descarga el MP4 y sube</div>
-<div class="vid"><video src="video.mp4?v=2026-06-29" autoplay muted loop playsinline poster="">tu navegador no soporta video</video></div>
-<a class="btn" href="video.mp4?v=2026-06-29" download="cy-elite-2026-06-29.mp4">⬇️ Descargar MP4</a>
-<div class="box"><h3>TÍTULO / PRIMER COMENTARIO</h3>
-<textarea id="tit" readonly style="min-height:auto;height:50px">📊 Análisis del día — MLB</textarea>
-<button class="copy" onclick="cp('tit')">📋 Copiar título</button></div>
+<h1>🎬 Videos del día</h1>
+<div class="sub">2026-06-28 · elige cuáles subir · descarga el MP4 y copia la descripción</div>
+<div class="card">
+<div class="ch">🥇 JUGADA ELITE · HOU ML</div>
+<div class="vid"><video src="video_1.mp4?v=2026-06-28" autoplay muted loop playsinline>tu navegador no soporta video</video></div>
+<a class="btn" href="video_1.mp4?v=2026-06-28" download="cy-elite-1-2026-06-28.mp4">⬇️ Descargar MP4</a>
 <div class="box"><h3>DESCRIPCIÓN (copia y pega en TikTok)</h3>
-<textarea id="desc" readonly>📊 El análisis de hoy:
-Ventaja de abridor enorme y limpia: E. Rodriguez (2.27 ERA, 6-2) en casa frente a T. Mahle (5.49 ERA, 1-7), uno de los peores abridores del dia. SF llega con ofensiva apagada 
+<textarea id="d1" readonly>📊 El análisis de hoy:
+Ventaja de abridor decisiva: H. Brown (1.40 ERA) frente a J. Flaherty (5.35, 1-8) que llega hundido. Houston viene caliente (7-3 en sus ultimos 10) y su bullpen lo cierra con 
 
 ¿Quién crees que gana? 👇
 #mlb #beisbol #baseball #deportes #grandesligas</textarea>
-<button class="copy" onclick="cp('desc')">📋 Copiar descripción</button></div>
-<footer>Súbelo a TikTok con una música trending · +18 · Juega responsable</footer>
+<button class="copy" onclick="cp('d1')">📋 Copiar descripción</button></div>
+</div><div class="card">
+<div class="ch">🥈 PICK DE VALOR · SD ML</div>
+<div class="vid"><video src="video_2.mp4?v=2026-06-28" autoplay muted loop playsinline>tu navegador no soporta video</video></div>
+<a class="btn" href="video_2.mp4?v=2026-06-28" download="cy-elite-2-2026-06-28.mp4">⬇️ Descargar MP4</a>
+<div class="box"><h3>DESCRIPCIÓN (copia y pega en TikTok)</h3>
+<textarea id="d2" readonly>📊 El análisis de hoy:
+Valor en el local: M. King (3.33) supera con claridad a E. Sheehan (5.32). El bullpen de San Diego es el mejor del cruce (2.84) con M. Miller (0.79, 21 svs) para cerrar, mient
+
+¿Quién crees que gana? 👇
+#mlb #beisbol #baseball #deportes #grandesligas</textarea>
+<button class="copy" onclick="cp('d2')">📋 Copiar descripción</button></div>
+</div><div class="card">
+<div class="ch">🥉 PICK BRONCE · PHI ML</div>
+<div class="vid"><video src="video_3.mp4?v=2026-06-28" autoplay muted loop playsinline>tu navegador no soporta video</video></div>
+<a class="btn" href="video_3.mp4?v=2026-06-28" download="cy-elite-3-2026-06-28.mp4">⬇️ Descargar MP4</a>
+<div class="box"><h3>DESCRIPCIÓN (copia y pega en TikTok)</h3>
+<textarea id="d3" readonly>📊 El análisis de hoy:
+J. Luzardo (4.00) enfrenta a un abridor de relevo en C. Pérez (4.99). Philadelphia es la ofensiva mas productiva del dia (6.3 carreras por juego en su forma) ante un NYM hundi
+
+¿Quién crees que gana? 👇
+#mlb #beisbol #baseball #deportes #grandesligas</textarea>
+<button class="copy" onclick="cp('d3')">📋 Copiar descripción</button></div>
+</div>
+<footer>Súbelos a TikTok con música trending · +18 · Juega responsable</footer>
 </div>
 <script>function cp(id){var t=document.getElementById(id);t.select();document.execCommand('copy');event.target.textContent='✅ Copiado';setTimeout(function(){event.target.textContent='📋 Copiar';},1500);}</script>
 </body></html>
