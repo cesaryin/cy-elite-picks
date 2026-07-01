@@ -376,5 +376,38 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-06-30",
+    "pick": "LAD ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -165,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 0.91,
+    "marcador": "LAD 9-3 ATH"
+  },
+  {
+    "fecha": "2026-06-30",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -120,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.83,
+    "marcador": "TB 10-4 KC"
+  },
+  {
+    "fecha": "2026-06-30",
+    "pick": "Mexico ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 125,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.25,
+    "marcador": "ECU 0-2 MEX"
   }
 ]
