@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -124,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: TB llega 8-2 en sus ultimos 10 anotando 5.7 y permitiendo 3.0, con el mejor bullpen del duelo (3.75, Baker 1.95). KC esta 3-7 y recibe 7.8 carreras por juego en casa, con bullpen 4.80 y cerrador Erceg en 5.23. El pitcheo abridor es parejo (Seymour 4.32 vs Kolek 4.15), pero la forma ofensiva y la superioridad de relevo inclinan el ML hacia Tampa a cuota razonable.",
+      "equipos": [
+        "TB",
+        "KC"
+      ],
+      "destacado": "TB",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Switzerland ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": -107,
+      "unidades": 1.0,
+      "razon": "Suiza esta invicta en el torneo (Qatar 1-1 D, Bosnia 4-1 W, Canada 2-1 W) con solidez defensiva y localia. Argelia llega irregular en la fase (0-3 L ante Argentina, 2-1 W Jordania, 3-3 D Austria) mostrando fragilidad atras, y juega como visitante. A cuota casi pareja, el local en mejor equilibrio ofensivo-defensivo ofrece valor.",
+      "equipos": [
+        "ALG",
+        "SUI"
+      ],
+      "destacado": "SUI",
+      "hora": "10:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SUI",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "u7 CIN@MIL",
+      "deporte": "MLB",
+      "tipo": "u7",
+      "cuota": -107,
+      "unidades": 1.0,
+      "razon": "Duelo de dos abridores dominantes: Misiorowski 1.45 en casa y Burns 2.36 (9-1). CIN es la ofensiva mas fria de los 10 ultimos juegos (3.6 carreras) y MIL controla con bullpen 3.57. Con una linea ya baja de 7 y ambos brazos en gran momento, el under tiene respaldo.",
+      "equipos": [
+        "CIN",
+        "MIL"
+      ],
+      "destacado": null,
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.0
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIL ML",
+        "deporte": "MLB",
+        "destacado": "MIL",
+        "cuota": -196
+      },
+      {
+        "pick": "SEA ML",
+        "deporte": "MLB",
+        "destacado": "SEA",
+        "cuota": -214
+      }
+    ],
+    "cuota_combinada": 121,
+    "nota": "Dos locales con pitcheo elite: Misiorowski (1.45) respalda a Milwaukee 8-2 en casa, y Bryce Miller (1.97) frente a unos Angelinos limitados como visitante."
+  },
+  "descartes": [
+    "PHI ML -129: PHI en buena forma pero Rangel 4.50 sin dominio claro sobre Jones; sin margen extra de valor.",
+    "MIA@COL o12: Coors con dos abridores flojos invita al over, pero linea de 12 ya muy inflada, poco valor.",
+    "STL@ATL u8.5: bullpen ATL elite y ofensivas frias apoyan el under, pero Waldrep sin historial (0.00) mete incertidumbre.",
+    "Spain -1.5: Espana fuerte en casa pero con juegos 1-0 y 0-0 recientes, el handicap es arriesgado.",
+    "Portugal ML -141: dos empates recientes (0-0 COL, 1-1 COD) restan confianza; no repetir por inercia.",
+    "SD +165 / LAD -195: LAD demasiado cargado y Sasaki 4.88 irregular; sin lado con valor limpio."
+  ],
+  "resumen": "Dia con 3.5 unidades en juego: apuesta principal a Tampa Bay por su forma y ventaja de bullpen ante un Kansas City vulnerable, mas Suiza como local invicto en el torneo y el under en el duelo de aces Misiorowski-Burns. El parlay opcional combina a Milwaukee y Seattle, ambos locales con pitcheo dominante."
+}

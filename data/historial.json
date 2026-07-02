@@ -409,5 +409,53 @@
     "resultado": "W",
     "neto_u": 1.25,
     "marcador": "ECU 0-2 MEX"
+  },
+  {
+    "fecha": "2026-07-01",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -132,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.14,
+    "marcador": "TB 4-0 KC"
+  },
+  {
+    "fecha": "2026-07-01",
+    "pick": "PHI ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -142,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.7,
+    "marcador": "PIT 6-10 PHI"
+  },
+  {
+    "fecha": "2026-07-01",
+    "pick": "Belgium ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 113,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.13,
+    "marcador": "SEN 2-3 BEL"
+  },
+  {
+    "fecha": "2026-07-01",
+    "pick": "PARLAY: MIL ML + MIA ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 167,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CIN 2-4 MIL / MIA 3-6 COL",
+    "patas_res": [
+      "W",
+      "L"
+    ]
   }
 ]
