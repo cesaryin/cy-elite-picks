@@ -1,13 +1,13 @@
 {
   "picks": [
     {
-      "nivel": "oro",
+      "nivel": "plata",
       "pick": "TB ML",
       "deporte": "MLB",
       "tipo": "ML",
-      "cuota": -124,
-      "unidades": 1.5,
-      "razon": "Convergencia clara: TB llega 8-2 en sus ultimos 10 anotando 5.7 y permitiendo 3.0, con el mejor bullpen del duelo (3.75, Baker 1.95). KC esta 3-7 y recibe 7.8 carreras por juego en casa, con bullpen 4.80 y cerrador Erceg en 5.23. El pitcheo abridor es parejo (Seymour 4.32 vs Kolek 4.15), pero la forma ofensiva y la superioridad de relevo inclinan el ML hacia Tampa a cuota razonable.",
+      "cuota": -122,
+      "unidades": 1.0,
+      "razon": "Con pitcheo abridor parejo (Seymour 4.32 vs Kolek 4.15), la ventaja de TB esta en el equipo completo: forma 8-2 (5.7 cf, 3.0 cc) frente a un KC 3-7 que permite 7.8 carreras por juego. El bullpen tambien inclina la balanza: TB 3.75 con Baker (1.95, 21 svs) vs un pen de KC en 4.8 con Erceg (5.23). Favorito con valor real a -122.",
       "equipos": [
         "TB",
         "KC"
@@ -23,12 +23,33 @@
     },
     {
       "nivel": "plata",
-      "pick": "Switzerland ML",
+      "pick": "MIA ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -139,
+      "unidades": 1.0,
+      "razon": "Ventaja clara de abridor: Gusto (5.06) supera a un Lorenzen en 6.83 y 3-9. MIA llega 7-3 con solo 3.0 carreras en contra por juego, mientras COL (34-53) es el peor local y arrastra un bullpen en 5.43. La ofensiva funcional de Miami (SYS-002) respalda el favoritismo a -139.",
+      "equipos": [
+        "MIA",
+        "COL"
+      ],
+      "destacado": "MIA",
+      "hora": "2:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIA",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "SUI ML",
       "deporte": "Mundial",
       "tipo": "ML",
-      "cuota": -107,
+      "cuota": -112,
       "unidades": 1.0,
-      "razon": "Suiza esta invicta en el torneo (Qatar 1-1 D, Bosnia 4-1 W, Canada 2-1 W) con solidez defensiva y localia. Argelia llega irregular en la fase (0-3 L ante Argentina, 2-1 W Jordania, 3-3 D Austria) mostrando fragilidad atras, y juega como visitante. A cuota casi pareja, el local en mejor equilibrio ofensivo-defensivo ofrece valor.",
+      "razon": "Suiza en casa suma tres partidos del torneo sin perder (Qatar 1-1, Bosnia 4-1, Canada 2-1) con solidez ofensiva y defensiva. Argelia mostro fragilidad atras: 0-3 ante Argentina y 3-3 con Austria, un defensa que concede. Localia + forma del torneo dan valor a -112.",
       "equipos": [
         "ALG",
         "SUI"
@@ -41,54 +62,34 @@
         "lado": null,
         "linea": null
       }
-    },
-    {
-      "nivel": "bronce",
-      "pick": "u7 CIN@MIL",
-      "deporte": "MLB",
-      "tipo": "u7",
-      "cuota": -107,
-      "unidades": 1.0,
-      "razon": "Duelo de dos abridores dominantes: Misiorowski 1.45 en casa y Burns 2.36 (9-1). CIN es la ofensiva mas fria de los 10 ultimos juegos (3.6 carreras) y MIL controla con bullpen 3.57. Con una linea ya baja de 7 y ambos brazos en gran momento, el under tiene respaldo.",
-      "equipos": [
-        "CIN",
-        "MIL"
-      ],
-      "destacado": null,
-      "hora": "1:10 PM CT",
-      "resolucion": {
-        "mercado": "total",
-        "equipo": null,
-        "lado": "under",
-        "linea": 7.0
-      }
     }
   ],
   "parlay": {
     "patas": [
       {
-        "pick": "MIL ML",
-        "deporte": "MLB",
-        "destacado": "MIL",
-        "cuota": -196
-      },
-      {
         "pick": "SEA ML",
         "deporte": "MLB",
         "destacado": "SEA",
         "cuota": -214
+      },
+      {
+        "pick": "ESP ML",
+        "deporte": "Mundial",
+        "destacado": "ESP",
+        "cuota": -350
       }
     ],
-    "cuota_combinada": 121,
-    "nota": "Dos locales con pitcheo elite: Misiorowski (1.45) respalda a Milwaukee 8-2 en casa, y Bryce Miller (1.97) frente a unos Angelinos limitados como visitante."
+    "cuota_combinada": -113,
+    "nota": "SEA con B. Miller (1.97) en casa ante un LAA ofensivamente irregular; Espana en casa (4-0 KSA, 1-0 URU) frente a una Austria que solo defiende con dificultad. Dos favoritos solidos combinados con valor."
   },
   "descartes": [
-    "PHI ML -129: PHI en buena forma pero Rangel 4.50 sin dominio claro sobre Jones; sin margen extra de valor.",
-    "MIA@COL o12: Coors con dos abridores flojos invita al over, pero linea de 12 ya muy inflada, poco valor.",
-    "STL@ATL u8.5: bullpen ATL elite y ofensivas frias apoyan el under, pero Waldrep sin historial (0.00) mete incertidumbre.",
-    "Spain -1.5: Espana fuerte en casa pero con juegos 1-0 y 0-0 recientes, el handicap es arriesgado.",
-    "Portugal ML -141: dos empates recientes (0-0 COL, 1-1 COD) restan confianza; no repetir por inercia.",
-    "SD +165 / LAD -195: LAD demasiado cargado y Sasaki 4.88 irregular; sin lado con valor limpio."
+    "CIN@MIL: MIL -205 fuera de rango; duelo de ases (Misiorowski 1.45 vs Burns 2.36) hace el ML de CIN muy volatil, el under 7 (-117) es tentador pero sin convergencia clara.",
+    "CWS@CLE: pick'em real (-107/-109), sin borde; Cade Smith cierra fuerte para CLE, sin valor definido.",
+    "STL@ATL: Waldrep abre con ERA 0.00 (0-0), sin muestra fiable; se evita apostar sobre un abridor sin datos.",
+    "DET@TEX: abridores parejos (Valdez 4.05 vs Eovaldi 3.95) y precios ajustados, sin borde.",
+    "SD@LAD: LAD -196 fuera de rango y Sasaki (4.88) no garantiza; SD 165 con bullpen elite es especulativo.",
+    "CRO@POR: Portugal empatando de mas (0-0 COL, 1-1 COD); patron de bajo rendimiento reciente, se evita el ML a -149.",
+    "AUT@ESP: Spain -350 fuera de rango para pick individual (usado solo en parlay)."
   ],
-  "resumen": "Dia con 3.5 unidades en juego: apuesta principal a Tampa Bay por su forma y ventaja de bullpen ante un Kansas City vulnerable, mas Suiza como local invicto en el torneo y el under en el duelo de aces Misiorowski-Burns. El parlay opcional combina a Milwaukee y Seattle, ambos locales con pitcheo dominante."
+  "resumen": "Dia de tres jugadas de valor por 3U totales: TB y MIA como favoritos respaldados por forma, bullpen y ventaja de abridor, y Suiza en casa apoyada en su forma del torneo. Se anade un parlay de dos favoritos solidos (SEA + Espana) que no cuenta en el balance. Riesgo total: 3 unidades."
 }
