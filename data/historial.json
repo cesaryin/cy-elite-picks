@@ -457,5 +457,53 @@
       "W",
       "L"
     ]
+  },
+  {
+    "fecha": "2026-07-02",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -122,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.82,
+    "marcador": "TB 5-2 KC"
+  },
+  {
+    "fecha": "2026-07-02",
+    "pick": "MIA ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -139,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIA 4-14 COL"
+  },
+  {
+    "fecha": "2026-07-02",
+    "pick": "SUI ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": -112,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.89,
+    "marcador": "ALG 0-2 SUI"
+  },
+  {
+    "fecha": "2026-07-02",
+    "pick": "PARLAY: SEA ML + ESP ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": -113,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAA 0-1 SEA / AUT 0-3 ESP",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]

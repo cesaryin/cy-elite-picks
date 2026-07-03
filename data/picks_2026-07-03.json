@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -112,
+      "unidades": 1.0,
+      "razon": "N. Martinez (2.66 ERA, 7-2) es claramente superior a S. Arrighetti (4.00) y TB llega con el mejor record del circuito (51-33) y forma 8-2 anotando 5.8 por juego con solo 2.9 en contra. Bullpen fiable (3.70) con B. Baker (1.89, 22 SV). A cuota casi pick'em hay valor en el mejor equipo con la mejor loma.",
+      "equipos": [
+        "TB",
+        "HOU"
+      ],
+      "destacado": "TB",
+      "hora": "7:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -153,
+      "unidades": 1.0,
+      "razon": "K. Harrison domina (2.57 ERA, 8-1) frente a un J. Cabrera inexperto (0-1). MIL tiene el mejor record de las mayores (53-32) y forma 7-3, con bullpen sólido (3.61) y T. Megill al cierre. Ventaja real de abridor + equipo completo superior justifican el favoritismo.",
+      "equipos": [
+        "MIL",
+        "AZ"
+      ],
+      "destacado": "MIL",
+      "hora": "8:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Egypt ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": 135,
+      "unidades": 1.0,
+      "razon": "Egipto llega invicto en el torneo (Belgium 1-1 D, New Zealand 3-1 W, Iran 1-1 D) mientras Australia alterna (Turkey 2-0 W, USA 0-2 L, Paraguay 0-0 D). Con la solidez defensiva egipcia y una racha sin derrotas, +135 ofrece valor real ante una local irregular.",
+      "equipos": [
+        "EGY",
+        "AUS"
+      ],
+      "destacado": "EGY",
+      "hora": "1:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "EGY",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -250
+      },
+      {
+        "pick": "Colombia ML",
+        "deporte": "Mundial",
+        "destacado": "COL",
+        "cuota": -235
+      }
+    ],
+    "cuota_combinada": 100,
+    "nota": "S. Ohtani (1.58 ERA, 8-2) y LAD (57-31, 8-2 en forma) en casa ante SD; Colombia local invicta y en racha (WWWWD, torneo Uzbekistan 3-1, Congo 1-0, Portugal 0-0 D) frente a un Ghana que viene de perder. Dos favoritos sólidos y bien respaldados."
+  },
+  "descartes": [
+    "CHC -130: hot 9-1 pero D. Peterson (5.86 ERA) es un riesgo grande de abridor, sin ventaja limpia.",
+    "NYY -186: fuera de rango y forma reciente 2-8 preocupante pese al buen bullpen.",
+    "TOR -126: Cease muy superior a Castillo pero ofensiva de TOR floja (3.4 carreras, 41-46) contradice el ML.",
+    "Argentina -700 / spread -2: fuera de rango y CPV llega de tres empates cerrados; el hándicap -2 es exigente.",
+    "Colombia -1 hándicap: Colombia gana pero anota poco (0-0 vs Portugal), un margen de 2 goles es forzado.",
+    "SF -154 en Coors sin abridor confirmado (away null): dato incompleto, no se toca."
+  ],
+  "resumen": "Tres apuestas por 3 unidades: dos ML de MLB apoyadas en abridores dominantes (Martinez con TB y Harrison con MIL, ambos equipos entre los mejores del año) y un ML especulativo con Egipto invicto en el Mundial. Parlay opcional de dos favoritos sólidos (LAD con Ohtani + Colombia local) a cuota combinada +100. Riesgo total: 3U (parlay aparte)."
+}
