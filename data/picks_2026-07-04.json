@@ -1,0 +1,95 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -153,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: Woodruff (2.59 ERA) domina el matchup de abridores frente a Merrill Kelly (5.84 ERA, 5-8), ventaja real y no nominal. MIL llega 7-3 en sus ultimos 10 con el mejor record de la liga (54-32) y bullpen sano (3.53). Con abridor superior, forma y profundidad de relevo, el ML paga valor razonable.",
+      "equipos": [
+        "MIL",
+        "AZ"
+      ],
+      "destacado": "MIL",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Morocco ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": -136,
+      "unidades": 1.0,
+      "razon": "Marruecos llega invicto en el torneo (D vs Brasil, W Escocia, W Haiti, W Netherlands) con ofensiva funcional (4-3 y 4-2 en sus ultimas victorias). Canada alterna (goleo a Qatar pero cayo 1-2 con Suiza) y muestra irregularidad. Forma del torneo y mayor solidez ofensiva respaldan el favoritismo con valor.",
+      "equipos": [
+        "MAR",
+        "CAN"
+      ],
+      "destacado": "MAR",
+      "hora": "12:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MAR",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TEX ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -101,
+      "unidades": 1.0,
+      "razon": "Precio de pick'em con ventajas apiladas: Rocker (3.83) supera a Flaherty (4.97, 1-8), TEX viene 7-3 en casa y su bullpen es de los mejores del dia (3.35 con Latz cerrando a 1.71 ERA y 18 saves) frente a un pen de Detroit sostenido por Jansen (5.23). A precio par es +EV claro.",
+      "equipos": [
+        "DET",
+        "TEX"
+      ],
+      "destacado": "TEX",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TEX",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -250
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -164
+      }
+    ],
+    "cuota_combinada": 125,
+    "nota": "Dos favoritos con ventaja de abridor marcada: Yamamoto (2.67) contra Canning (7.09) en Dodger Stadium, y Sonny Gray (2.69, 9-1) contra Aldegheri (4.85). Ambos con bullpen superior; combinacion solida fuera del rango individual."
+  },
+  "descartes": [
+    "TB@HOU: duelo Rasmussen-Brown a precios casi identicos, sin valor claro en ML ni margen en un total ya bajo (7.0)",
+    "MIN@NYY: NYY -149 con ofensiva fria (3.0 carreras) y Beck debutando (6.00), no hay respaldo suficiente",
+    "SF@COL: Coors con total 12 y bullpens debiles hace el ML de SF muy volatil",
+    "NYM@ATL: Sale domina pero ATL -169 fuera de rango y solo NYM jugable, sin valor",
+    "TOR@SEA: solo TOR jugable con Bieber debutando a 6.00 frente a Gilbert, sin edge",
+    "France ML -562 fuera de rango pese al gran momento; sin valor pagable",
+    "MIA@ATH: Alcantara con cerrador Fairbanks a 6.84 resta seguridad al cierre"
+  ],
+  "resumen": "Cuatro jugadas para el 4 de julio con 3.5U en riesgo: la principal es Milwaukee, donde Woodruff aplasta el matchup ante Kelly con la mejor forma de la liga. Complemento con Marruecos, invicto en el torneo, y Texas a precio par con ventaja de bullpen sobre un Flaherty en mala racha. Ademas un parlay de dos favoritos con abridores dominantes (Yamamoto y Sonny Gray) que combinan a +125."
+}

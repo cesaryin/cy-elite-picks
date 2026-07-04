@@ -505,5 +505,53 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-03",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -112,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.89,
+    "marcador": "TB 3-1 HOU"
+  },
+  {
+    "fecha": "2026-07-03",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -153,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.65,
+    "marcador": "MIL 7-4 AZ"
+  },
+  {
+    "fecha": "2026-07-03",
+    "pick": "Egypt ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 135,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "EGY 1-1 AUS"
+  },
+  {
+    "fecha": "2026-07-03",
+    "pick": "PARLAY: LAD ML + Colombia ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 100,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "SD 3-4 LAD / GHA 0-1 COL",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]
