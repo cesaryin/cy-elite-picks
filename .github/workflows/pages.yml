@@ -1,0 +1,35 @@
+name: Publicar web (Pages)
+
+# Despliegue MODERNO de GitHub Pages como workflow normal de Actions:
+# visible, re-lanzable y SIN la cola "legacy" que se atascaba con
+# deployments zombie (incidentes del 2 y 4 de julio de 2026).
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Solo un deploy a la vez; un push nuevo cancela el anterior
+# (asi nunca se acumulan despliegues en cola).
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
