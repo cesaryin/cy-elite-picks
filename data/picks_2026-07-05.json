@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -160,
+      "unidades": 1.5,
+      "razon": "Ventaja de abridor dominante: R. Suarez 2.94 ERA frente a R. Johnson 7.40 ERA, uno de los peores abridores en actividad. Boston llega 7-3 en sus ultimos 10 con ofensiva funcional (4.9 CF) y bullpen de cierre elite con A. Chapman (2.10, 17 sv), mientras LAA promedia solo 3.2 carreras y viene 4-6. Convergencia de pitcheo+bullpen+forma sin contradiccion mayor.",
+      "equipos": [
+        "BOS",
+        "LAA"
+      ],
+      "destacado": "BOS",
+      "hora": "8:30 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 103,
+      "unidades": 1.0,
+      "razon": "Fuerte desnivel de pitcheo a favor del local: E. Rodriguez 2.21 ERA (7-2) frente a B. Sproat 5.28. Arizona juega en casa con bullpen solido (3.35) y recibe dinero positivo pese a la clara ventaja del abridor. El precio +103 paga mas que la probabilidad real de un local con el mejor abridor del duelo.",
+      "equipos": [
+        "MIL",
+        "AZ"
+      ],
+      "destacado": "AZ",
+      "hora": "3:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Brazil ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": -130,
+      "unidades": 1.0,
+      "razon": "Brasil llega invicto en el torneo (Marruecos 1-1 D, Haiti 3-0 W, Escocia 3-0 W, Japon 2-1 W) con defensa firme y localia. Noruega es irregular: aunque venció a Costa de Marfil y Senegal, fue goleada 1-4 por Francia y concede goles. Nivel superior y forma de torneo consistente respaldan el ML a cuota razonable.",
+      "equipos": [
+        "NOR",
+        "BRA"
+      ],
+      "destacado": "BRA",
+      "hora": "3:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BRA",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -160
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -210
+      }
+    ],
+    "cuota_combinada": 140,
+    "nota": "Dos favoritos con ventaja de abridor clara: BOS con Suarez ante un 7.40 ERA, y LAD (59-31, 8-2) enfrentando a JP Sears con 6.97 ERA. Ambos locales/ofensivas superiores con bullpen fuerte."
+  },
+  "descartes": [
+    "TB @ HOU: abridor de TB sin confirmar y ML casi pick'em, sin valor claro.",
+    "England @ Mexico: Mexico 5-0 en el torneo y solido en casa, England +145 sin margen fiable; duelo parejo, se descarta.",
+    "DET @ TEX: Mize da ventaja pero DET fallo recientemente y precio ajustado, sin valor suficiente.",
+    "SF @ COL: total 13 y bullpens volatiles (Romano 9.00), demasiado ruido para un lado seguro.",
+    "PHI @ KC: Nola 6.04 ERA neutraliza la ventaja de PHI pese al mal KC.",
+    "STL @ CHC: ambos abridores flojos (Liberatore 5.33, Assad 4.53), sin convergencia."
+  ],
+  "resumen": "Dia con 3 jugadas y riesgo total de 3.5 unidades. La apuesta principal es Boston por el enorme desnivel de abridores (Suarez 2.94 vs Johnson 7.40) mas su bullpen elite. Complemento con Arizona a dinero positivo por el dominio de E. Rodriguez y con Brasil, invicto y de nivel superior en el torneo. Parlay opcional de dos favoritos con ventaja de pitcheo (BOS + LAD) a cuota +140. Manteniendo disciplina tras la racha negativa: solo el valor mas claro y respaldado."
+}
