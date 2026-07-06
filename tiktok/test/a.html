@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CY Elite — TikTok</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}
+body{background:#000;display:flex;align-items:center;justify-content:center;font-family:'Inter',-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#e6edf3;overflow:hidden}
+.phone{--c1:#005A9C;--c2:#EF3E42;position:relative;width:min(100vw,430px);aspect-ratio:9/16;max-height:100vh;background:#0d1117;overflow:hidden}
+.bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.bg .grad{position:absolute;inset:-25%;background:radial-gradient(circle at 28% 18%,var(--c1),transparent 55%),radial-gradient(circle at 75% 82%,var(--c2),transparent 50%),#0a0e14;opacity:.9;animation:drift 13s ease-in-out infinite alternate}
+.bg .crest{position:absolute;top:46%;left:50%;width:140%;transform:translate(-50%,-50%);opacity:.08;filter:blur(1px);animation:spin 40s linear infinite}
+.bg .over{position:absolute;inset:0;background:linear-gradient(180deg,#0d1117dd,#0d111799 38%,#0d1117 92%)}
+.bg .dot{position:absolute;border-radius:50%;background:#fff;opacity:0;animation:float linear infinite}
+@keyframes drift{to{transform:translate(3%,-3%) scale(1.1)}}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes float{0%{transform:translateY(110%);opacity:0}10%{opacity:.5}90%{opacity:.5}100%{transform:translateY(-20%);opacity:0}}
+.brand{position:absolute;top:11%;left:0;right:0;text-align:center;font-size:13px;font-weight:900;letter-spacing:1px;color:#f0c75e;z-index:8;text-shadow:0 2px 8px #000}
+/* zona segura para POST: deja libre 30% inferior (caption/usuario/musica) y margenes laterales (botones) */
+.scene{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:19% 11% 30%;opacity:0;pointer-events:none}
+.scene.active{opacity:1}
+.ln{opacity:0;transform:translateY(22px);text-shadow:0 2px 12px #000a}
+.scene.active .ln{animation:up .5s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.pop{opacity:0;transform:scale(.5)}.scene.active .pop{animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes pop{to{opacity:1;transform:none}}
+.k{font-size:14px;font-weight:800;letter-spacing:1px;color:#c9d1d9;margin-bottom:8px}
+.big{font-size:44px;font-weight:900;line-height:1.05;margin:6px 0}
+.huge{font-size:60px;font-weight:900;line-height:1}
+.mid{font-size:25px;font-weight:800;line-height:1.25;margin:6px 0}
+.sm{font-size:17px;color:#e6edf3;font-weight:600;margin-top:8px;line-height:1.45}
+.gold{color:#f0c75e}.green{color:#3fb950}
+.logo{width:118px;height:118px;object-fit:contain;margin-bottom:6px;filter:drop-shadow(0 8px 24px #000c)}
+.chip{display:inline-block;background:#1e1a0e;border:1px solid #d4af37;color:#f0c75e;font-weight:900;font-size:24px;border-radius:14px;padding:8px 20px;margin-top:12px}
+.tag{display:inline-block;background:#00000066;border:1px solid #ffffff22;border-radius:9px;padding:4px 12px;font-size:15px;font-weight:700;margin-top:10px}
+.cta{background:#00000066;border:1px solid #58a6ff;border-radius:14px;padding:11px 16px;margin-top:14px;font-size:16px;font-weight:800;color:#7cc0ff}
+.disc{position:absolute;top:15%;left:0;right:0;text-align:center;font-size:9.5px;color:#9aa3ac;z-index:7;text-shadow:0 1px 6px #000}
+
+.clip{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tint{position:absolute;inset:0;background:linear-gradient(160deg,var(--c1),transparent 55%),linear-gradient(340deg,var(--c2),transparent 60%);opacity:.5;mix-blend-mode:overlay}
+.vig{position:absolute;inset:0;box-shadow:inset 0 0 150px 70px #000d}
+.kb{animation:kb 16s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.14)}}
+.crest2{position:absolute;top:46%;left:50%;width:150%;transform:translate(-50%,-50%);opacity:.10;filter:blur(1px);animation:zoomP 9s ease-in-out infinite alternate}
+@keyframes zoomP{to{transform:translate(-52%,-48%) scale(1.18)}}
+.beam{position:absolute;top:-25%;bottom:-25%;width:24%;left:-40%;transform:rotate(16deg);background:linear-gradient(90deg,transparent,#ffffff16,transparent);animation:beam 7s linear infinite}
+.b2{width:12%;animation-delay:3.2s}
+@keyframes beam{from{left:-40%}to{left:135%}}
+.sweep{position:absolute;inset:-30%;background:conic-gradient(from 0deg at 50% 47%,transparent 0 84%,#f0c75e1f 93%,transparent 100%);animation:spin 15s linear infinite}
+</style></head>
+<body><div class="phone">
+<div class="bg"><video class="clip" src="fondo_mlb.mp4" autoplay muted loop playsinline></video><div class="tint"></div><div class="over"></div></div>
+<div class="brand">👑 CY ELITE PICKS</div>
+
+<div class="scene">
+  <div class="ln huge" style="animation-delay:0s">📊</div>
+  <div class="ln big" style="animation-delay:.12s">Mi sistema analizó<br>los juegos de hoy</div>
+  <div class="ln sm" style="animation-delay:.5s">datos reales, no opiniones</div>
+</div>
+
+<div class="scene">
+  <img class="pop logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/lad.png" alt="">
+  <div class="ln k" style="animation-delay:.25s">VENTAJA POR LOS NÚMEROS</div>
+  <div class="ln big gold" style="animation-delay:.4s">LAD</div>
+  <div class="ln tag" style="animation-delay:.7s">⚾ MLB · 7:10 PM CT</div>
+</div>
+
+<div class="scene">
+  <div class="ln k" style="animation-delay:0s">LOS NÚMEROS 📊</div>
+  <div class="ln mid" style="animation-delay:.2s">S. Ohtani (1.58 ERA, 8-2) domina la loma y LAD llega 8-2 anotando 5.9 por juego; el bullpen (3.40) cierra con ventaja clara</div>
+</div>
+
+<div class="scene">
+  <div class="ln huge gold" style="animation-delay:0s">📊</div>
+  <div class="ln mid" style="animation-delay:.3s">Mejor pitcheo,<br>mejor forma</div>
+  <div class="ln sm" style="animation-delay:.65s">ventaja estadística clara</div>
+</div>
+
+<div class="scene">
+  <div class="ln big" style="animation-delay:0s">Análisis<br><span class="green">con datos reales</span></div>
+  <div class="ln mid gold" style="animation-delay:.4s">Sígueme para el<br>análisis diario ⚾</div>
+  <div class="ln cta" style="animation-delay:.8s">más en mi perfil 👀</div>
+</div>
+
+<div class="disc">Contenido informativo y estadístico · +18</div>
+</div>
+<script>
+var bg=document.querySelector('.bg');
+for(var p=0;p<14;p++){var d=document.createElement('div');d.className='dot';d.style.left=(Math.random()*100)+'%';d.style.animationDuration=(6+Math.random()*8)+'s';d.style.animationDelay=(-Math.random()*10)+'s';d.style.width=d.style.height=(3+Math.random()*5)+'px';bg.appendChild(d);}
+var dur=[2300,3600,4200,3000,4200];
+var scenes=document.querySelectorAll('.scene'),t1,cur=0;
+window.__done=false;
+function play(s){clearTimeout(t1);cur=s||0;step();}
+function step(){
+ scenes.forEach(function(x,k){x.classList.toggle('active',k===cur);});
+ t1=setTimeout(function(){cur++;if(cur>=scenes.length){window.__done=true;cur=0;}step();},dur[cur]);
+}
+play(0);
+</script></body></html>
