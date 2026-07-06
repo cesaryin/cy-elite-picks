@@ -601,5 +601,53 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-05",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -160,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 0.94,
+    "marcador": "BOS 7-5 LAA"
+  },
+  {
+    "fecha": "2026-07-05",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 103,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIL 3-2 AZ"
+  },
+  {
+    "fecha": "2026-07-05",
+    "pick": "Brazil ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": -130,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "NOR 2-1 BRA"
+  },
+  {
+    "fecha": "2026-07-05",
+    "pick": "PARLAY: BOS ML + LAD ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 140,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "BOS 7-5 LAA / SD 5-2 LAD",
+    "patas_res": [
+      "W",
+      "L"
+    ]
   }
 ]

@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -110,
+      "unidades": 1.5,
+      "razon": "TB (52-35) llega 8-2 en sus ultimos 10 con 5.8 carreras a favor y 2.5 en contra, mientras NYY se hunde a 1-9 anotando solo 2.7 y recibiendo 6.2. Jax (3.45) sostiene el juego y el bullpen local es elite (3.76 con Baker 1.83, 23 sv). Aunque Schlittler (2.08) es buen abridor, la brecha de forma, localia y bullpen convergen; a -110 el ML paga mas que la probabilidad real.",
+      "equipos": [
+        "NYY",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "PHI Spread -1.5",
+      "deporte": "MLB",
+      "tipo": "Spread -1.5",
+      "cuota": -125,
+      "unidades": 1.0,
+      "razon": "C. Sánchez (2.00 ERA, 10-3) domina frente a N. Cameron (4.95) y a una ofensiva de KC que es la peor del cartel: 2.4 carreras por juego y 2-8 en sus ultimos 10 con 7.3 recibidas. Ventaja de abridor real y clara, rival sin poder ofensivo: el margen de 2+ carreras tiene mas valor que el ML cargado a -200.",
+      "equipos": [
+        "PHI",
+        "KC"
+      ],
+      "destacado": "PHI",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "spread",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": -1.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "MIL es el mejor equipo del dia (55-33) con abridor en forma en Drohan (3.12) frente a May (4.80), y bullpen mas fiable (3.22 vs 4.18). Con cuotas parejas a -108 pese a la ventaja de pitcheo y record, hay valor en el ML del visitante.",
+      "equipos": [
+        "MIL",
+        "STL"
+      ],
+      "destacado": "MIL",
+      "hora": "6:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -200
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -225
+      }
+    ],
+    "cuota_combinada": 117,
+    "nota": "Dos favoritos solidos con ventaja de pitcheo evidente: PHI con Sánchez (2.00) ante KC (2.4 c/j, 2-8), y LAD (59-32, 7-3) frente a un Freeland horrendo (7.25) y bullpen de COL en 5.47. Convergencia limpia en ambos."
+  },
+  "descartes": [
+    "ESP-POR: ambas selecciones invictas y en gran forma en el Mundial; Spain -111 y el handicap -0.5 pagan poco para un partido tan parejo, sin valor claro.",
+    "ATL ML -130: López buen abridor pero forma reciente mediocre (4-6) y NYM competitivo; sin margen suficiente.",
+    "HOU-WSH o10: linea ya inflada a 10 pese a los dos abridores flojos; Hader (0.60) frena el over tardio.",
+    "AZ/SD: Pfaadt (5.40) vs Buehler (4.61) en juego sin ventaja de pitcheo real ni convergencia.",
+    "COL ML +190: Freeland (7.25) y bullpen 5.47 no dan seguridad como perro.",
+    "TOR-SF: cuotas parejas sin ventaja de abridor ni forma que genere valor."
+  ],
+  "resumen": "Dia con 3.5 unidades en riesgo. La apuesta principal es Tampa en casa, respaldada por la caida de Nueva York y su bullpen elite. La complementa el margen de Filadelfia con Sánchez dominando a Kansas City, y Milwaukee como mejor equipo con ventaja de pitcheo. El parlay opcional junta a Filadelfia y los Dodgers, ambos con superioridad clara de abridor."
+}
