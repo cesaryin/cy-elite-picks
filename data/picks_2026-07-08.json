@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -148,
+      "unidades": 1.5,
+      "razon": "Convergencia clarisima: T. Melton (2.05 ERA, 4-1) domina frente a J. Springs (5.79 ERA, 3-8), una de las mayores brechas de abridores del dia. DET juega en casa con forma 7-3 (6.0 CF, 3.8 CC) contra un ATH hundido 2-8 que permite 6.5 carreras por juego. El bullpen de DET (3.82) supera al de ATH (4.72). Tres capas solidas alineadas sin contradiccion.",
+      "equipos": [
+        "ATH",
+        "DET"
+      ],
+      "destacado": "DET",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -145,
+      "unidades": 1.0,
+      "razon": "K. Harrison (2.82 ERA, 8-1) es superior a M. McGreevy (3.12) y MIL llega como el mejor equipo del dia (58-33) con forma 8-2 (4.9 CF, solo 3.2 CC). El bullpen de MIL (3.12, Megill) es mas fiable que el de STL (4.22). Ventaja de abridor real + ofensiva ordenada + relevo mas seguro sostienen el valor a -145.",
+      "equipos": [
+        "MIL",
+        "STL"
+      ],
+      "destacado": "MIL",
+      "hora": "6:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -137,
+      "unidades": 1.0,
+      "razon": "C. Burns (2.40 ERA, 10-1) es el abridor mas dominante del enfrentamiento y lanza en casa. PHI llega SIN abridor confirmado en los datos, una incertidumbre que favorece a CIN pese a su forma floja. La ventaja de pitcheo abridor es la capa central que da valor al ML local moderado.",
+      "equipos": [
+        "PHI",
+        "CIN"
+      ],
+      "destacado": "CIN",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CIN",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "NYM ML",
+        "deporte": "MLB",
+        "destacado": "NYM",
+        "cuota": -177
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -236
+      }
+    ],
+    "cuota_combinada": 123,
+    "nota": "Dos locales favoritos con ventaja clara: C. Scott (3.49) sobre S. Cruz (5.08) para NYM en casa, y LAD (60-33) frente a un COL cuyo bullpen (5.31, Romano 7.36) es el peor del dia. Combinado con valor a +123."
+  },
+  "descartes": [
+    "COL ML +200: perro sin abridor real fiable ante bullpen LAD elite; no cumple SYS-002.",
+    "SEA -130: buen pitcheo pero cierre de MIA no decisivo y ofensiva local en forma (7-3, 7.1 CF), matchup demasiado parejo.",
+    "ATL +101: mejor equipo y bullpen elite (Iglesias), pero forma 3-7 y visita restan seguridad; valor no lo bastante limpio.",
+    "TEX -153: Gore (4.31) no ofrece ventaja de abridor sobre Urena (3.03); sin respaldo.",
+    "SF/TOR: Cease (2.79) frente a Webb (3.66) equilibra un ML casi pick'em, sin valor claro.",
+    "Spreads/handicaps del dia: mercado que peor rinde (-0.14U), sin ventaja de precio suficiente hoy."
+  ],
+  "resumen": "Dia solo de MLB. La jugada principal es DET en casa por la enorme brecha de abridores (Melton 2.05 vs Springs 5.79) y forma opuesta (7-3 vs 2-8), con 1.5U. Sumo MIL (Harrison + mejor equipo y bullpen) y CIN (Burns dominante ante Filadelfia sin abridor confirmado) a 1U cada una. Riesgo total 3.5U, mas un parlay opcional NYM+LAD a +123 que no computa en balance. Enfoque selectivo por la racha reciente, evitando spreads."
+}

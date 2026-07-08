@@ -697,5 +697,53 @@
       "L",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-07",
+    "pick": "MIA ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -122,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.23,
+    "marcador": "SEA 5-6 MIA"
+  },
+  {
+    "fecha": "2026-07-07",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -124,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.81,
+    "marcador": "BOS 8-1 CWS"
+  },
+  {
+    "fecha": "2026-07-07",
+    "pick": "Colombia ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 125,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "COL 0-0 SUI"
+  },
+  {
+    "fecha": "2026-07-07",
+    "pick": "PARLAY: DET ML + TEX ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 113,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "ATH 2-6 DET / LAA 3-8 TEX",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]
