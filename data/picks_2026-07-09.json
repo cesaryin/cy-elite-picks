@@ -1,0 +1,75 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -156,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: Rasmussen (2.78, 7-4) supera a un Blackburn de muestra corta, y detras aparece el bullpen mas fiable con Baker (1.73 ERA, 25 saves) para cerrar. TB llega 7-3 con la mejor defensa de carreras del duelo (2.9 CC) y NYY se hunde 2-8 con ofensiva paralizada (3.1 CF, 5.6 CC). Pitcheo+bullpen+forma alineados sin contradiccion, en cuota jugable.",
+      "equipos": [
+        "NYY",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "12:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SEA ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor marcada: B. Miller (1.71 ERA, 4-2) frente a J. Junk (4.80). El bullpen visitante (3.38) es solido mientras que el cierre local descansa en Fairbanks (6.75). SEA viaja con defensa fuerte (2.5 CC en forma) y el total bajo (8.0) confirma que el mercado espera duelo de pitcheo donde manda el brazo elite de Seattle.",
+      "equipos": [
+        "SEA",
+        "MIA"
+      ],
+      "destacado": "SEA",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SEA",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CLE ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -130,
+      "unidades": 1.0,
+      "razon": "G. Williams (3.89, 9-4) llega con mejor ERA y mucho mejor record que Ober (4.59), y por detras Cleveland tiene un bullpen dominante (3.27) con Cade Smith (2.83, 26 saves) que blinda finales; el bullpen de MIN (4.68) es un punto debil. Ventaja de rotacion+relevo que justifica el favoritismo corto pese a la buena forma local.",
+      "equipos": [
+        "CLE",
+        "MIN"
+      ],
+      "destacado": "CLE",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "MIL ML: viene de caer 1-5 ante STL y la memoria muestra perdidas repetidas; sin valor claro para insistir por inercia.",
+    "PHI ML -163: fuera del rango jugable y Luzardo enfrenta a un Cincinnati que ya nos rindio como local; sin margen.",
+    "Morocco/France: France -175 fuera de rango, Morocco +550 sin respaldo pese a su racha; total u2.5 sin valor claro con Francia atacando.",
+    "ATL @ PIT: ventaja de bullpen de Atlanta real pero ML muy parejo (-115) y ofensiva de PIT en forma; poco margen."
+  ],
+  "resumen": "Dia enfocado en MLB con tres jugadas de valor por pitcheo y bullpen: Tampa Bay como apuesta principal (1.5U) apoyada en su rotacion, cierre elite y el colapso ofensivo de NYY; Seattle (1U) por el dominio de Miller ante un rival de cierre fragil; y Cleveland (1U) por su ventaja de rotacion y relevo. Sin parlay al no haber dos favoritos limpios en rango. Riesgo total: 3.5U."
+}
