@@ -793,5 +793,38 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-09",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -156,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "NYY 12-4 TB"
+  },
+  {
+    "fecha": "2026-07-09",
+    "pick": "SEA ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -136,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "SEA 4-8 MIA"
+  },
+  {
+    "fecha": "2026-07-09",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -130,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.77,
+    "marcador": "CLE 5-2 MIN"
   }
 ]

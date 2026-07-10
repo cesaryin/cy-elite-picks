@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "Boston Red Sox ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 109,
+      "unidades": 1.5,
+      "razon": "Convergencia de 4 capas sin contradiccion mayor: S. Gray (2.61 ERA, 10-1) domina el duelo de abridores contra N. McLean (3.73, 6-5); BOS llega 8-2 en sus ultimos 10 con diferencial +1.4 carreras, mientras NYM (40-54) permite 6.6 por juego en su ultima decena; el cierre tambien favorece a BOS con A. Chapman (2.28, 19 SV) contra D. Williams (4.70). Recibir +109 en el lado con mejor abridor, mejor forma y mejor cerrador es valor claro: el mercado paga como perro al equipo que llega mejor en todas las capas.",
+      "equipos": [
+        "BOS",
+        "NYM"
+      ],
+      "destacado": "BOS",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Chicago Cubs ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -112,
+      "unidades": 1.0,
+      "razon": "Brecha enorme de abridores: S. Imanaga (4.28) contra H. Greene, que llega con 21.60 de ERA y 0-1 en la temporada. CHC esta 7-3 anotando 6.2 por juego, mientras CIN esta 3-7 produciendo apenas 3.4; ademas el cerrador de CIN, E. Pagán (6.46), es un riesgo en el cierre contra J. Webb (3.18). Un equipo de 52-41 en plena forma pagando solo -112 contra un equipo de 42-50 frio y con abridor vulnerable es +EV real en el ML; el spread -1.5 se descarta por menor seguridad.",
+      "equipos": [
+        "CHC",
+        "CIN"
+      ],
+      "destacado": "CHC",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Minnesota Twins ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -130,
+      "unidades": 1.0,
+      "razon": "LAA (37-57) llega 2-8 en sus ultimos 10 y manda a G. Rodriguez con 8.06 de ERA; MIN esta 7-3 con diferencial +1.4 (5.0 a favor, 3.6 en contra) y ventaja clara de abridor con Z. Matthews (4.43) en casa. La unica capa en contra es el bullpen de MIN (4.57), pero contra una ofensiva que anota 3.9 por juego y un abridor rival en crisis, -130 sigue pagando mas de lo que indica la probabilidad real del matchup.",
+      "equipos": [
+        "LAA",
+        "MIN"
+      ],
+      "destacado": "MIN",
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "Atlanta Braves ML",
+        "deporte": "MLB",
+        "destacado": "ATL",
+        "cuota": -165
+      },
+      {
+        "pick": "Chicago White Sox ML",
+        "deporte": "MLB",
+        "destacado": "CWS",
+        "cuota": -166
+      }
+    ],
+    "cuota_combinada": 157,
+    "nota": "Dos favoritos solidos con convergencia completa: ATL con C. Sale (2.27 ERA, 9-6) mas el mejor bullpen del dia (2.36, R. Iglesias 2.30) contra un STL 4-6; y CWS en casa con S. Burke (3.56) contra un ATH que llega 1-9, anota 3.4 por juego y manda a J. Lopez con 7.04 de ERA. Combinado +157 con valor real en ambas patas."
+  },
+  "descartes": [
+    "NYY ML -159 vs WSH: la brecha de pitcheo (4.29 vs 7.11 y bullpen 3.14 vs 5.81) es real, pero NYY llega 3-7 anotando 3.9 por juego contra un WSH que produce 6.5; contradiccion mayor de forma para un favorito caro, sin valor claro.",
+    "Spain ML -160 vs Belgium: España domina el torneo (5 partidos sin gol en contra, 1-0 a Portugal), pero sus triunfos ante rivales de nivel son por la minima (1-0 URU, 1-0 POR) y el empate paga 295: el riesgo real de empate hace que -160 no pague lo suficiente; el Hándicap -1 tampoco cubre los escenarios de 1-0.",
+    "TB ML -120 vs SEA: N. Martinez (2.61) da ventaja de abridor, pero SEA solo permite 2.9 carreras en sus ultimos 10 y tiene mejor bullpen (3.42 vs 4.25); valor demasiado fino.",
+    "DET ML -123 vs PHI: forma 8-2 y mejor abridor, pero el cierre favorece claramente a PHI (J. Duran 1.42, 23 SV contra K. Jansen 4.76) y PHI es mejor equipo de fondo; contradiccion que impide el pick.",
+    "Over 8.5 COL@SF: tendencia fuerte (SF 10/10 y COL 8/10 de overs) y T. Gordon con 6.95 de ERA, pero R. Ray (3.45) contradice la tesis por el lado de SF; sin convergencia limpia.",
+    "PIT ML -124 vs MIL: B. Ashcraft (3.24, 9-3) es ventaja real, pero MIL (59-34, 7-3) tiene mejor bullpen (3.16 vs 4.25) y mejor plantel completo; capas cruzadas, sin lado claro.",
+    "MIA ML -119 vs CLE: forma explosiva (8-2, 7.5 carreras por juego) pero P. Messick (2.80) es el mejor abridor del duelo y P. Fairbanks (6.75) compromete el cierre de MIA; contradicciones en ambos lados.",
+    "LAD -250 y AZ +214: LAD fuera de rango y el duelo S. Ohtani (1.79) vs E. Rodriguez (2.25) es demasiado parejo para forzar cualquier mercado."
+  ],
+  "resumen": "Dia con tres jugadas de valor claro en MLB, todas en moneyline donde el analisis converge: Boston con Gray como perro pagado de mas ante unos Mets en caida, los Cubs aprovechando un abridor rival en crisis y unos Twins en casa contra el peor equipo del dia. Riesgo total: 3.5 unidades. Se suma un combinado opcional de Atlanta y White Sox a +157 que no cuenta en el balance. El futbol se queda fuera: España domina pero la cuota no cubre el riesgo real de empate."
+}
