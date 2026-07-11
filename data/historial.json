@@ -826,5 +826,53 @@
     "resultado": "W",
     "neto_u": 0.77,
     "marcador": "CLE 5-2 MIN"
+  },
+  {
+    "fecha": "2026-07-10",
+    "pick": "Boston Red Sox ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 109,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.63,
+    "marcador": "BOS 6-2 NYM"
+  },
+  {
+    "fecha": "2026-07-10",
+    "pick": "Chicago Cubs ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -112,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CHC 0-4 CIN"
+  },
+  {
+    "fecha": "2026-07-10",
+    "pick": "Minnesota Twins ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -130,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "LAA 4-3 MIN"
+  },
+  {
+    "fecha": "2026-07-10",
+    "pick": "PARLAY: Atlanta Braves ML + Chicago White Sox ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 157,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 1-2 STL / ATH 1-14 CWS",
+    "patas_res": [
+      "L",
+      "W"
+    ]
   }
 ]

@@ -1,0 +1,97 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "Milwaukee Brewers ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -128,
+      "unidades": 1.5,
+      "razon": "Convergencia de 4 capas sin contradiccion mayor: S. Drohan (2.97 ERA, 4-2) domina el duelo ante B. Chandler (4.82 ERA, 3-8); bullpen MIL 3.35 con T. Megill (3.00, 14 SV) vs 4.10 de PIT con G. Soto (4.15); forma 7-3 con +1.0 de diferencial de carreras (4.6 a favor, 3.6 en contra) contra un PIT de 5-5 que permite 5.8; y record global 59-34 vs 47-47. A -128 la cuota paga mas que la probabilidad real de un equipo superior en abridor, relevo, forma y plantel.",
+      "equipos": [
+        "MIL",
+        "PIT"
+      ],
+      "destacado": "MIL",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Detroit Tigers ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 118,
+      "unidades": 1.0,
+      "razon": "Perro con valor real y ofensiva funcional (SYS-002): DET viene 9-1 anotando 6.1 y permitiendo solo 2.7 carreras por juego, mientras PHI esta 5-5 anotando apenas 4.0. El duelo de abridores es paridad total (C. Mize 2.64 vs C. Sánchez 2.62), lo que anula la ventaja de ace por la que el mercado carga a PHI, y el bullpen DET (3.68) es levemente mejor que el de PHI (3.94). Local, en su mejor momento y a +118 cuando su probabilidad real supera el 46% implicito: +EV claro.",
+      "equipos": [
+        "PHI",
+        "DET"
+      ],
+      "destacado": "DET",
+      "hora": "5:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Chicago White Sox ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "Precio de moneda al aire (-108) para un desajuste claro: B. Hudson (2.25 ERA) supera a G. Jump (3.77), el bullpen CWS (3.43) aventaja por mucho al de ATH (4.79), y la forma es abismal: ATH 1-9 en sus ultimos 10 permitiendo 7.7 carreras por juego y anotando solo 3.4, contra un CWS de local que permite 4.2. Tres capas alineadas (abridor, bullpen, forma+localia) pagadas como pick'em: el mercado no esta cobrando el colapso de ATH.",
+      "equipos": [
+        "ATH",
+        "CWS"
+      ],
+      "destacado": "CWS",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "Minnesota Twins ML",
+        "deporte": "MLB",
+        "destacado": "MIN",
+        "cuota": -175
+      },
+      {
+        "pick": "Los Angeles Dodgers ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -283
+      }
+    ],
+    "cuota_combinada": 113,
+    "nota": "Dos favoritos con ventaja de abridor dominante: J. Ryan (2.85 ERA) vs R. Johnson (6.99 ERA, 1-4) contra un LAA 2-8 que anota 3.9 por juego; y Y. Yamamoto (2.49 ERA, 9-5) de local vs B. Pfaadt (4.84), con bullpen LAD 3.13 respaldando. Ambas patas pasan el filtro de pitcheo+forma por si solas y el combinado a +113 paga con valor.",
+    "cuota_combinada_nota": null
+  },
+  "descartes": [
+    "TOR ML -104: valor cercano (T. Yesavage 3.31 vs W. Buehler 5.07 y SD en 3-7), pero es visitante ante un bullpen elite (M. Miller 0.96) y CWS ofrecia el mismo precio con localia y un rival en peor colapso.",
+    "BOS ML +134: NYM permite 7.0 carreras por juego y BOS viene 8-2, pero el abridor de BOS no esta confirmado en los datos; sin esa capa no se completa la convergencia para jugarlo.",
+    "Over 8.5 COL-SF: K. Freeland 7.46 + T. Mahle 5.70 + bullpen COL 5.37 y tendencia 9/10 de SF apuntan al over, pero SF solo anota 4.7 por juego y el precio -115 no dejaba margen suficiente frente a mis tres ML elegidos.",
+    "SEA-TB: duelo parejo de abridores (Gilbert 3.19 vs Jax 3.60), total en 7.0 y cuotas de pick'em sin ninguna capa dominante; no hay ventaja real que explotar.",
+    "ATL ML -106: R. López 3.18 y bullpen 2.56 son reales, pero ATL esta 5-5 y STL de local permite solo 4.0 por juego; ventaja insuficiente para un tercer boleto.",
+    "MIA ML -151: forma 7-3 y 6.7 carreras por juego a favor, pero CLE tiene mejor bullpen (3.35 vs 4.05) y el cierre de MIA con P. Fairbanks (6.75 ERA) contradice la jugada.",
+    "England ML -106: Inglaterra invicta en el torneo, pero Noruega llega de vencer a Brasil 2-1 y a Costa de Marfil 2-1; a precio de moneda al aire contra un rival asi no hay +EV claro.",
+    "Argentina ML -145: 5 victorias de 5 en el torneo, pero concedio 2 goles en cada uno de sus ultimos dos (3-2 a Cabo Verde y 3-2 a Egipto) y Suiza viene de ganar 4-3 a Colombia con 4W1D; el precio no cubre el riesgo real de empate."
+  ],
+  "resumen": "Dia selectivo centrado en el mercado con ventaja mas clara: tres moneylines de MLB con convergencia completa. Milwaukee lidera la carta con superioridad en abridor, bullpen y forma ante Pittsburgh; Detroit como local en racha de 9-1 paga de mas contra un Phillies sin ventaja real de pitcheo; y los White Sox reciben a un Athletics en caida libre a precio de pick'em. Se suma un combinado de Twins y Dodgers apoyado en duelos de abridores muy desnivelados. Riesgo total del dia: 3.5 unidades."
+}
