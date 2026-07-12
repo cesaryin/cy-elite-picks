@@ -1,0 +1,59 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "Boston Red Sox ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -110,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia en 4 capas sin contradiccion: ventaja clara de abridor (P. Tolle 3.14 ERA vs Z. Thornton 4.35 y record 0-1), forma opuesta (BOS 8-2 permitiendo solo 3.0 carreras por juego vs NYM 4-6 permitiendo 7.4), bullpen superior (3.50 con A. Chapman en 2.28 y 19 saves vs D. Williams en 4.70) y matchup contra un equipo 40-56. Pagar -110, casi moneda al aire, por el equipo superior en pitcheo, bullpen y forma es valor claro (+EV real sobre su probabilidad).",
+      "equipos": [
+        "BOS",
+        "NYM"
+      ],
+      "destacado": "BOS",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Houston Astros / Texas Rangers over 9",
+      "deporte": "MLB",
+      "tipo": "o9",
+      "cuota": -104,
+      "unidades": 1.0,
+      "razon": "Triple capa alineada al over: abridores muy vulnerables (C. Javier con 10.22 ERA y M. Gore con 4.72), ambas defensas regalando carreras (HOU permite 5.6 y TEX 5.8 por juego en sus ultimos 10) y doble tendencia de overs (8/10 para AMBOS sobre 8.5). El ambiente combinado de carreras (~10 por juego) supera la linea de 9 y la cuota -104 paga casi parejo por un escenario claramente cargado al over. El unico freno son los cerradores elite (J. Hader 0.59, J. Latz 1.65), por eso queda en 1U y no como jugada maxima.",
+      "equipos": [
+        "HOU",
+        "TEX"
+      ],
+      "destacado": null,
+      "hora": "1:35 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.0
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "MIL/PIT: contradiccion mayor entre capas — P. Skenes (3.58) domina el matchup de abridores pero el bullpen de PIT (4.33, G. Soto 4.05) es claramente peor que el de MIL (3.39); sin convergencia, sin pick.",
+    "BAL -148 vs KC: capas de forma y bullpen a favor, pero la ofensiva de KC sigue funcional (4.8 CF) y a -148 el precio paga apenas lo justo; valor marginal, no suficiente en dia de maxima exigencia.",
+    "NYY -102 @ WSH: enorme ventaja de bullpen (3.13 vs 5.47) pero el abridor rival es levemente mejor y la ofensiva de WSH esta caliente en casa (6.1 CF, 7/10 overs); dos contradicciones bloquean el pick.",
+    "PHI/DET: duelo de ases (Z. Wheeler 2.28 vs T. Skubal 3.06) casi moneda al aire; PHI +109 falla SYS-002 con ofensiva fria (3.6 CF) y DET viene 8-2; sin lado con valor claro.",
+    "CWS -127 vs ATH: ATH esta en caida libre (1-9, 3.0 CF) pero N. Schultz con 6.00 de ERA es una contradiccion de abridor demasiado grande para pagar favorito.",
+    "ATL +111 @ STL: bullpen elite (2.67) y ofensiva funcional (5.8 CF), pero D. Young abre como opener con solo 1 decision y ATL viene 4-6 de visita; demasiada incertidumbre en el abridor.",
+    "AZ +188 @ LAD: E. Sheehan flojo (4.91) da algo de argumento, pero el bullpen de LAD es elite (2.94, T. Scott 2.63) y M. Bratt no tiene muestra real (0-0); especulativo puro en dia que exige disciplina.",
+    "MIN -133 vs LAA: forma opuesta (6-4 vs 2-8) pero J. Soriano (3.40) es mejor abridor que T. Bradley (3.67); ventaja de mercado sin ventaja de pitcheo, no hay +EV claro.",
+    "PARLAY: el unico favorito en el rango -160/-360 era LAD -225 y su abridor (E. Sheehan 4.91) no pasa el analisis individual; sin dos patas limpias, mejor sin parlay."
+  ],
+  "resumen": "Dia de disciplina total: solo dos jugadas con valor genuino de una cartelera llena de contradicciones. La apuesta principal es Boston ML a -110 en Nueva York, donde el abridor, el bullpen, la forma y el matchup apuntan al mismo lado contra un Mets que permite 7.4 carreras por juego. La acompaña el over 9 entre Houston y Texas, empujado por dos abridores muy castigados y ambas ofensivas con 8 de 10 overs recientes. Sin parlay hoy: no habia dos favoritos limpios en rango. Riesgo total del dia: 2.5 unidades."
+}

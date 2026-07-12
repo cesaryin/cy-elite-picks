@@ -874,5 +874,53 @@
       "L",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-11",
+    "pick": "Milwaukee Brewers ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -128,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "MIL 6-7 PIT"
+  },
+  {
+    "fecha": "2026-07-11",
+    "pick": "Detroit Tigers ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 118,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "PHI 4-2 DET"
+  },
+  {
+    "fecha": "2026-07-11",
+    "pick": "Chicago White Sox ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "ATH 0-1 CWS"
+  },
+  {
+    "fecha": "2026-07-11",
+    "pick": "PARLAY: Minnesota Twins ML + Los Angeles Dodgers ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 113,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "LAA 3-5 MIN / AZ 9-2 LAD",
+    "patas_res": [
+      "W",
+      "L"
+    ]
   }
 ]
