@@ -922,5 +922,27 @@
       "W",
       "L"
     ]
+  },
+  {
+    "fecha": "2026-07-12",
+    "pick": "Boston Red Sox ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -110,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.36,
+    "marcador": "BOS 3-2 NYM"
+  },
+  {
+    "fecha": "2026-07-12",
+    "pick": "Houston Astros / Texas Rangers over 9",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -104,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.96,
+    "marcador": "HOU 5-6 TEX"
   }
 ]
