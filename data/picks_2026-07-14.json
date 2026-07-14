@@ -1,0 +1,35 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "Francia vs España u2.5 goles",
+      "deporte": "Mundial",
+      "tipo": "u2.5",
+      "cuota": -110,
+      "unidades": 1.0,
+      "razon": "Choque de las dos mejores defensas del torneo: Francia ha recibido 1 gol en 5 partidos del Mundial (4 vallas invictas: 3-0 IRQ, 3-0 SWE, 1-0 PAR, 2-0 MAR) y España también solo 1 gol en 5 (1-0 URU, 3-0 AUT, 1-0 POR). Capa clave: en fase eliminatoria los marcadores se cerraron — los últimos 4 duelos de eliminación combinados dieron totales de 1, 3, 1 y 2 goles (3 de 4 bajo la línea). Semifinal entre dos invictos 5-0 favorece un partido táctico y cauteloso, y la cuota -110 paga por encima de la probabilidad real de un partido de pocos goles entre estas defensas.",
+      "equipos": [
+        "ESP",
+        "FRA"
+      ],
+      "destacado": null,
+      "hora": "2:00 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 2.5
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "Juego MLB (Cease vs Sánchez): datos incompletos — equipos en null, sin bullpen, sin ofensiva y sin forma reciente. SYS-001 y SYS-004 impiden dar cualquier pick sin saber qué lineups enfrentan a estos abridores. Descartado por integridad de datos.",
+    "Francia ML +140: sin localía real (Mundial en sede neutral) y ante una España también 5-0 con defensa idéntica; el empate a +210 es un desenlace muy vivo en semifinal pareja y el ML de soccer ya costó recientemente en partidos cerrados. Sin ventaja clara, no hay valor suficiente.",
+    "Ambos marcan no +118: tiene valor (8 vallas invictas combinadas en 10 partidos), pero está correlacionado con el under ya tomado y el h2h muestra marcadores con ambos anotando (5-4, 2-1, 1-2 en 3 de los últimos 5); doblar exposición al mismo guion en racha negativa sería forzar.",
+    "España +225 y team totals: España sin edge medible sobre Francia para pagar ese riesgo; España u1.5 (-225) fuera del rango de cuotas jugables y Francia u1.5 (-160) paga menos que el under del juego con la misma tesis.",
+    "Sin jugada Elite hoy: el h2h reciente contradice parcialmente la tesis baja (5-4 y 2-1 en enfrentamientos directos), y esa contradicción impide la convergencia perfecta que exige el nivel máximo. Mejor sin Elite que una forzada.",
+    "Sin parlay: no existen dos patas de favoritos en el rango -160/-360 con análisis limpio (el único juego MLB viene corrupto y en el Mundial no hay favoritos de ese perfil)."
+  ],
+  "resumen": "Día ultra selectivo: el único juego de MLB llegó con datos corruptos y se descarta por completo, así que todo el análisis se concentra en la semifinal Francia-España. La jugada del día es el under 2.5 goles: dos defensas que solo han permitido 1 gol cada una en todo el torneo y eliminatorias que se han cerrado a marcadores mínimos. Riesgo total: 1 unidad, sin parlay."
+}
