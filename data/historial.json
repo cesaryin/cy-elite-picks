@@ -944,5 +944,16 @@
     "resultado": "W",
     "neto_u": 0.96,
     "marcador": "HOU 5-6 TEX"
+  },
+  {
+    "fecha": "2026-07-14",
+    "pick": "Francia vs España u2.5 goles",
+    "deporte": "Mundial",
+    "nivel": "plata",
+    "cuota": -110,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.91,
+    "marcador": "ESP 2-0 FRA"
   }
 ]

@@ -1,0 +1,56 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "Argentina vs England over 2 goles",
+      "deporte": "Mundial",
+      "tipo": "o2",
+      "cuota": -128,
+      "unidades": 1.5,
+      "razon": "Convergencia total en goles con ambas fuentes coincidiendo: Argentina anotó en sus 5 partidos del torneo (14 goles, 2.8 por juego; 3-1 a Suiza, 3-2 a Egipto y Cabo Verde) y England encadena 4 partidos anotando 2+ (2-0 Panamá, 2-1 Congo DR, 3-2 México, 2-1 Noruega). En defensa, Argentina concedió en sus últimos 4 y England en sus últimos 3. De los 10 partidos combinados del torneo: 7 cerraron con 3+ goles, 2 en exactamente 2 y solo 1 quedó bajo la línea (0-0 ENG-GHA en el debut). La línea 2.0 además da push exacto en 2 goles: los únicos marcadores perdedores (0-0, 1-0, 0-1) ocurrieron 1 vez en 10 partidos combinados. A -128 el over paga más que su probabilidad real mostrada.",
+      "equipos": [
+        "ARG",
+        "ENG"
+      ],
+      "destacado": null,
+      "hora": "2:00 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 2.0
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Argentina vs England ambos marcan sí",
+      "deporte": "Mundial",
+      "tipo": "Ambos marcan sí",
+      "cuota": -115,
+      "unidades": 1.0,
+      "razon": "Cuatro capas alineadas: Argentina marcó en sus 5 partidos del torneo (nunca menos de 2 goles); England marcó en 4 seguidos con 2+ por juego; la defensa argentina concedió en sus últimos 4 (2 goles vs Cabo Verde y Egipto, 1 vs Suiza); y England concedió en sus últimos 3 (Congo DR, México, Noruega), señal de que en la fase de eliminación su portería ya no está limpia. A -115 el mercado implica ~53.5%, pero la frecuencia mostrada por ambos ataques y defensas en el torneo sugiere una probabilidad claramente mayor: hay valor real.",
+      "equipos": [
+        "ARG",
+        "ENG"
+      ],
+      "destacado": null,
+      "hora": "2:00 PM CT",
+      "resolucion": {
+        "mercado": "btts",
+        "equipo": null,
+        "lado": "si",
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "Argentina ML +200: forma superior (5W, 14 goles), pero en semifinal a 90 minutos el empate es un desenlace muy probable en un mercado a 3 vías; el valor sobre la implícita del 33% es demasiado fino para arriesgar.",
+    "England ML +175: viene de un 0-0 vs Ghana y sus triunfos son por margen mínimo ante rivales inferiores; enfrenta al ataque más productivo del cuadro (2.8 goles/pj de Argentina). Sin valor.",
+    "Spread 0.0 (draw no bet) de cualquier lado: sin ventaja clara entre dos invictos y es el mercado donde exijo más valor; la ventaja hoy está en los goles, no en el ganador.",
+    "Team total Argentina o0.5 (-256) y England u1.5 (-250): fuera del rango jugable de cuotas (-160/+200).",
+    "England team total o1.5 (+183): England lleva 4 partidos con 2+, pero exigirle 2 goles a la mejor racha ofensiva rival en semifinal es especulativo; el BTTS captura la misma tesis con más seguridad.",
+    "Parlay: solo hay un partido hoy y no existen 2 patas limpias e independientes en el rango de favoritos razonables (las únicas cuotas -250/-256 se contradicen entre sí con la tesis de goles). Mejor sin parlay."
+  ],
+  "resumen": "Día de un solo partido: la semifinal Argentina-England, y todo el valor está en los goles, no en el ganador. Ambos llegan anotando (Argentina marcó en sus 5 juegos del torneo, England 2+ en 4 seguidos) y ambos conceden en la fase decisiva. Van 2.5 unidades en juego: 1.5U al over 2 (con protección de push en el empate 1-1 o 2-0 exacto) y 1U al ambos marcan sí. Se descarta el ganador del partido por el alto riesgo de empate a 90 minutos y la falta de valor claro en las cuotas."
+}
