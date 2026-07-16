@@ -1,0 +1,35 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "Philadelphia Phillies u4.5 carreras (team total)",
+      "deporte": "MLB",
+      "tipo": "team total u4.5",
+      "cuota": 100,
+      "unidades": 1.0,
+      "razon": "El lineup de PHI está congelado: .192 de avg y ops .518 en la semana, con solo 1 hr y 35 k en 4 juegos, y apenas 3.1 carreras por juego en sus últimos 10 (overs 3/10 a la línea de 8.5). Enfrenta a C. Scott (3.17 era, 2-1) y detrás un bullpen NYM de 3.84 de era. La convergencia de ofensiva fría + abridor rival en forma + tendencia de unders hace que la línea de 4.5 a cuota +100 pague más de lo que esa producción reciente justifica.",
+      "equipos": [
+        "NYM",
+        "PHI"
+      ],
+      "destacado": "PHI",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "PHI",
+        "lado": "under",
+        "linea": 4.5
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "NYM ML +110: falla SYS-004 — ofensiva de NYM fría (2.8 c/j y ops .669 en la semana, .682 vs derechos), y en el cierre D. Williams (4.83 era) contra J. Duran (1.38 era, 24 sv) es una desventaja clara de bullpen.",
+    "NYM F5 ML +100: la ventaja de abridor es real (C. Scott 3.17 era vs A. Nola 5.75), pero el fip de Scott (4.17 vs 4.57) achica la brecha real y el lineup de NYM no impulsa (2.8 c/j); sin ofensiva funcional no hay ML, ni siquiera F5.",
+    "PHI ML -130: pagar de favorito con A. Nola en 5.75 de era (3-6) y una ofensiva bateando .192 en la semana no tiene ningún valor.",
+    "PHI Spread -1.5 +150: exigir margen de 2+ carreras a un equipo que anota 3.1 por juego es contradictorio; además el spread es el mercado de peor rendimiento del sistema y aquí no hay ventaja.",
+    "u9.5 del juego y F5 u5.5: aunque ambas ofensivas están frías, A. Nola (5.75 era) y las 6.8 carreras en contra por juego de NYM en sus últimos 10 contaminan el lado del under global; el team total de PHI aísla la parte limpia de la tesis con mejor cuota.",
+    "Sin partidos de Mundial hoy y sin segunda pata razonable en el rango -160/-360, no hay parlay."
+  ],
+  "resumen": "Cartelera mínima: un solo juego (NYM-PHI) y sin fútbol, así que no se fuerza nada. La jugada del día es el under 4.5 de carreras de Philadelphia a cuota par: su ofensiva está en su peor momento (.518 de ops semanal, 3.1 c/j en los últimos 10) contra C. Scott, que llega en forma. No hay convergencia perfecta para una jugada Elite ni patas limpias para combinada. Riesgo total del día: 1 unidad."
+}

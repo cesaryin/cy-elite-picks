@@ -955,5 +955,27 @@
     "resultado": "W",
     "neto_u": 0.91,
     "marcador": "ESP 2-0 FRA"
+  },
+  {
+    "fecha": "2026-07-15",
+    "pick": "Argentina vs England over 2 goles",
+    "deporte": "Mundial",
+    "nivel": "oro",
+    "cuota": -128,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.17,
+    "marcador": "ARG 2-1 ENG"
+  },
+  {
+    "fecha": "2026-07-15",
+    "pick": "Argentina vs England ambos marcan sí",
+    "deporte": "Mundial",
+    "nivel": "plata",
+    "cuota": -115,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.87,
+    "marcador": "ARG 2-1 ENG"
   }
 ]
