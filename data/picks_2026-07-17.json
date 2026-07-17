@@ -1,0 +1,80 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "Detroit Tigers vs Los Angeles Angels u4.5 primeras 5 entradas",
+      "deporte": "MLB",
+      "tipo": "F5 u4.5",
+      "cuota": -121,
+      "unidades": 1.5,
+      "razon": "Convergencia total en las primeras 5: T. Melton llega encendido (1.82 ERA, 5-1) contra una ofensiva de LAA fria (.717 ops y 3.0 c/pj en la semana, .703 vs derechos), y R. Detmers tiene mejor fondo del que aparenta (fip 3.61) contra un lineup de DET helado (.660 ops, 4.0 c/pj y 30 K en 3 juegos, .714 vs zurdos). Ambos equipos vienen anotando poco (DET 4.7 cf con solo 3/10 overs; LAA 3.9 cf en racha 2-8). El F5 ademas aisla a los abridores y elimina el riesgo de los bullpens flojos del cierre (K. Jansen 4.56 era). Es el mercado de mayor +EV del juego, muy por encima de su ML.",
+      "equipos": [
+        "DET",
+        "LAA"
+      ],
+      "destacado": null,
+      "hora": "8:38 PM CT",
+      "resolucion": {
+        "mercado": "f5_total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 4.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "Baltimore Orioles vs Houston Astros over 8.5 carreras",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -120,
+      "unidades": 1.0,
+      "razon": "Dos ofensivas en su mejor momento contra abridores con fondo debil: BAL batea .284 con .922 ops, 6.3 c/pj y 8 HR en la semana, y HOU responde con .822 ops, 5.7 c/pj y 7 HR. D. Kremer tiene un fip de 5.13 (muy por encima de su 4.09 de era) y P. Lambert tambien sobrerinde (era 3.14 pero fip 4.26). HOU viene con tendencia clarisima de overs (8/10 sobre 8.5) y su forma reciente permite 5.8 c/pj. Poder por ambos lados + abridores vulnerables + parque en racha de carreras: el total paga mejor que cualquier ML de este juego.",
+      "equipos": [
+        "BAL",
+        "HOU"
+      ],
+      "destacado": null,
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "Washington Nationals ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -109,
+      "unidades": 1.0,
+      "razon": "El colapso ofensivo de ATH es extremo: 1-9 en sus ultimos 10 con 2.8 cf y 6.9 cc, y en la semana apenas 0.7 c/pj con .489 ops. WSH tiene el cruce ideal contra el zurdo G. Jump: batea .269 con .789 ops vs zurdos, su mejor split, y C. Cavalli (3.83 era, fip 3.57) es como minimo igual de bueno que el abridor rival. El riesgo real es el bullpen de WSH (5.11 era), pero enfrente hay un lineup congelado incapaz de castigarlo y un bullpen de ATH tambien flojo (4.79). Cuota casi pick'em (-109) para el equipo claramente superior en este cruce: valor real, no favorito cargado.",
+      "equipos": [
+        "WSH",
+        "ATH"
+      ],
+      "destacado": "WSH",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "WSH",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "NYY ML vs LAD: aunque R. Sasaki llega mal (5.33 era, fip 5.16) y LAD viene helado (.553 ops), el bullpen de LAD es elite (2.93) y su ofensiva de temporada (.784 ops vs derechos) puede despertar en cualquier momento; ML sin ventaja suficiente.",
+    "MIN ML +120: forma 7-3 y buen split vs derechos (.760) contra C. Rea (4.75/4.73), pero la linea de 11.0 en Wrigley anticipa un juego de alta varianza que mata la ventaja del pitcheo; sin claridad no doy otro ML.",
+    "TEX/ATL u8: C. Sale (2.20 era) y la ofensiva helada de ATL (2.0 c/pj) apuntan al under, pero TEX batea mejor a zurdos (.756) y trae 9/10 overs; contradiccion mayor, no es jugable.",
+    "SD/KC u10 +105: los datos gritan under (KC .581 ops y 2.0 c/pj), pero una linea de 10.0 para estas ofensivas es una anomalia que sugiere condiciones de parque muy favorables al bateo; no peleo contra esa senal.",
+    "MIL ML -150: Henderson mejor que Alcantara y MIA frio, pero la cuota ya cobra toda esa ventaja y el ML de MIL viene de fallar; sin valor real.",
+    "CWS/TOR: contradicciones cruzadas — TOR batea .649 vs zurdos pero CWS llega ardiendo (8.0 c/pj, .905 ops) contra un buen S. Miles; ningun mercado queda limpio.",
+    "CIN/COL en Coors: total 12.0, cerradores con era de 6-7 y ofensivas irregulares; caos puro sin ventaja medible.",
+    "TB/BOS y STL/AZ: sin abridor confirmado en un lado, falta la capa #1 del analisis MLB.",
+    "Parlay: no hay dos favoritos limpios en el rango -160/-360 — ATL -205 tiene la ofensiva congelada (.516 ops, 2.0 c/pj) y SEA -156 batea .666 ops en la semana; mejor sin parlay que uno forzado."
+  ],
+  "resumen": "Dia solo de MLB con tres jugadas y 3.5 unidades en riesgo. La apuesta principal es el under 4.5 en las primeras 5 entradas de Tigers-Angels, donde dos abridores en buen fondo chocan con dos lineups frios y el mercado F5 elimina el riesgo de los bullpens. La acompanan el over 8.5 de Orioles-Astros, con dos ofensivas calientes contra abridores de fip alto, y el ML de Washington a cuota casi pareja contra unos Athletics que anotan 0.7 carreras por juego en la semana. Sin parlay hoy: no habia dos patas limpias que justificaran el combinado."
+}

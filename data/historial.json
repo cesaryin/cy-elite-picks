@@ -977,5 +977,16 @@
     "resultado": "W",
     "neto_u": 0.87,
     "marcador": "ARG 2-1 ENG"
+  },
+  {
+    "fecha": "2026-07-16",
+    "pick": "Philadelphia Phillies u4.5 carreras (team total)",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 100,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.0,
+    "marcador": "NYM 4-1 PHI"
   }
 ]
