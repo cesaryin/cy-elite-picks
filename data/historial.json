@@ -988,5 +988,38 @@
     "resultado": "W",
     "neto_u": 1.0,
     "marcador": "NYM 4-1 PHI"
+  },
+  {
+    "fecha": "2026-07-17",
+    "pick": "Detroit Tigers vs Los Angeles Angels u4.5 primeras 5 entradas",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -121,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.24,
+    "marcador": "DET 2-1 LAA"
+  },
+  {
+    "fecha": "2026-07-17",
+    "pick": "Baltimore Orioles vs Houston Astros over 8.5 carreras",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -120,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "BAL 3-2 HOU"
+  },
+  {
+    "fecha": "2026-07-17",
+    "pick": "Washington Nationals ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -109,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.92,
+    "marcador": "WSH 23-4 ATH"
   }
 ]
