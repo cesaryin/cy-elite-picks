@@ -829,7 +829,7 @@
   },
   {
     "fecha": "2026-07-10",
-    "pick": "Boston Red Sox ML",
+    "pick": "BOS ML",
     "deporte": "MLB",
     "nivel": "oro",
     "cuota": 109,
@@ -862,7 +862,7 @@
   },
   {
     "fecha": "2026-07-10",
-    "pick": "PARLAY: Atlanta Braves ML + Chicago White Sox ML",
+    "pick": "PARLAY: Atlanta Braves ML + CWS ML",
     "deporte": "Parlay",
     "nivel": "parlay",
     "cuota": 157,
@@ -910,7 +910,7 @@
   },
   {
     "fecha": "2026-07-11",
-    "pick": "PARLAY: Minnesota Twins ML + Los Angeles Dodgers ML",
+    "pick": "PARLAY: Minnesota Twins ML + LAD ML",
     "deporte": "Parlay",
     "nivel": "parlay",
     "cuota": 113,
@@ -925,7 +925,7 @@
   },
   {
     "fecha": "2026-07-12",
-    "pick": "Boston Red Sox ML",
+    "pick": "BOS ML",
     "deporte": "MLB",
     "nivel": "oro",
     "cuota": -110,
@@ -936,7 +936,7 @@
   },
   {
     "fecha": "2026-07-12",
-    "pick": "Houston Astros / Texas Rangers over 9",
+    "pick": "HOU/TEX o9",
     "deporte": "MLB",
     "nivel": "plata",
     "cuota": -104,
@@ -947,7 +947,7 @@
   },
   {
     "fecha": "2026-07-14",
-    "pick": "Francia vs España u2.5 goles",
+    "pick": "FRA/ESP u2.5",
     "deporte": "Mundial",
     "nivel": "plata",
     "cuota": -110,
@@ -958,7 +958,7 @@
   },
   {
     "fecha": "2026-07-15",
-    "pick": "Argentina vs England over 2 goles",
+    "pick": "ARG/ENG o2",
     "deporte": "Mundial",
     "nivel": "oro",
     "cuota": -128,
@@ -969,7 +969,7 @@
   },
   {
     "fecha": "2026-07-15",
-    "pick": "Argentina vs England ambos marcan sí",
+    "pick": "ARG/ENG ambos marcan sí",
     "deporte": "Mundial",
     "nivel": "plata",
     "cuota": -115,
@@ -980,7 +980,7 @@
   },
   {
     "fecha": "2026-07-16",
-    "pick": "Philadelphia Phillies u4.5 carreras (team total)",
+    "pick": "PHI team total u4.5",
     "deporte": "MLB",
     "nivel": "plata",
     "cuota": 100,
@@ -991,7 +991,7 @@
   },
   {
     "fecha": "2026-07-17",
-    "pick": "Detroit Tigers vs Los Angeles Angels u4.5 primeras 5 entradas",
+    "pick": "DET/LAA F5 u4.5",
     "deporte": "MLB",
     "nivel": "oro",
     "cuota": -121,
@@ -1002,7 +1002,7 @@
   },
   {
     "fecha": "2026-07-17",
-    "pick": "Baltimore Orioles vs Houston Astros over 8.5 carreras",
+    "pick": "BAL/HOU o8.5",
     "deporte": "MLB",
     "nivel": "plata",
     "cuota": -120,
@@ -1013,7 +1013,7 @@
   },
   {
     "fecha": "2026-07-17",
-    "pick": "Washington Nationals ML",
+    "pick": "WSH ML",
     "deporte": "MLB",
     "nivel": "bronce",
     "cuota": -109,
