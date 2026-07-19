@@ -1,0 +1,99 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "DET/LAA u9.5",
+      "deporte": "MLB",
+      "tipo": "u9.5",
+      "cuota": -122,
+      "unidades": 1.5,
+      "razon": "Convergencia de 4 capas sin contradiccion mayor: C. Mize llega con FIP 3.24 (ERA 2.79) contra una ofensiva de LAA congelada (1.0 c/j y ops .550 en la semana, forma 2-8); DET tambien viene frio con el bate (3.0 c/j, ops .565), asi que ambos lados apuntan a pocas carreras; los juegos de DET van 2/10 al over 8.5 y promedian ~6.5 carreras totales (4.6 a favor, 1.9 en contra); y el bullpen de DET (3.39) sostiene el cierre. El unico riesgo es R. Johnson (6.75), pero la linea alta de 9.5 da colchon incluso si DET anota 5-6.",
+      "equipos": [
+        "DET",
+        "LAA"
+      ],
+      "destacado": null,
+      "hora": "3:07 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 9.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "WSH ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -149,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor REAL: F. Griffin (2.77, 10-2, FIP 4.11) contra J. Lopez (6.83, FIP 5.26). SYS-004 cumplido de sobra: WSH batea 9.0 c/j con ops .900 en la semana y .794 vs zurdos (Lopez es L). El rival esta en caida libre: ATH 1-9 en sus ultimos 10 permitiendo 8.0 c/j. El bullpen de WSH (5.29) es el riesgo, pero el de ATH (5.11) es igual de malo y todas las demas capas apuntan al mismo lado; a -149 la cuota paga mas que la probabilidad real.",
+      "equipos": [
+        "WSH",
+        "ATH"
+      ],
+      "destacado": "WSH",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "WSH",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "ESP ML",
+      "deporte": "Mundial",
+      "tipo": "ML",
+      "cuota": 125,
+      "unidades": 1.0,
+      "razon": "Las dos fuentes del torneo coinciden: Espana llega 5-0 con solo 2 goles en contra y ante el camino mas duro (Francia 2-0, Portugal 1-0, Belgica 2-1, Uruguay 1-0). Argentina gana pero concede en LOS CINCO partidos del torneo (7 goles en contra: 3-2 a CPV y EGY, 2-1 a ENG), y esa defensa permeable choca con la mejor defensa del Mundial. A +125 pagan como si Espana fuera apenas 44% y el matchup de estilos (solidez vs porteria fragil) la pone por encima de eso: valor real.",
+      "equipos": [
+        "ARG",
+        "ESP"
+      ],
+      "destacado": "ESP",
+      "hora": "2:00 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "ESP",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BAL Spread +1.5",
+        "deporte": "MLB",
+        "destacado": "BAL",
+        "cuota": -202
+      },
+      {
+        "pick": "CHC ML",
+        "deporte": "MLB",
+        "destacado": "CHC",
+        "cuota": -175
+      }
+    ],
+    "cuota_combinada": 135,
+    "nota": "BAL +1.5: abridores parejos (B. Young 3.42 vs H. Brown 3.57), BAL 7-3 permitiendo 3.4 c/j y HOU con ofensiva helada (3.0 c/j, ops .635) — que HOU gane por 2+ es poco probable. CHC ML: S. Imanaga en casa contra MIN que batea .685 de ops vs zurdos y 3.7 c/j en la semana, mientras CHC produce 5.3 c/j con ops .748 ante Z. Matthews (FIP 4.79). Dos favoritos razonables, no extremos.",
+    "cuota_combinada_nota": null
+  },
+  "descartes": [
+    "BAL/HOU o8.5: anti-inercia dura — este mismo over perdio 3-2 el 7/17 en esta serie y HOU sigue frio (3.0 c/j); sin justificacion nueva no se repite.",
+    "LAD/NYY u9: tentador (ambos 3/10 al over, bullpens elite), pero el JSON no trae abridores y sin esa capa no hay base suficiente (SYS-001).",
+    "PIT ML -107: Skenes (FIP 3.27) es real, pero PIT batea .715 de ops vs zurdos (Cantillo es L), el bullpen de PIT (4.46) es debil y no hay F5 disponible para aislar al abridor.",
+    "SD/KC: KC caliente (.803 ops) vs Marquez (FIP 5.34), pero el bullpen de KC (4.65, Erceg 5.21) contra el de SD (3.32, Miller 0.89) es una contradiccion mayor en el cierre.",
+    "MIN ML +144: falla SYS-002/004 — ofensiva de .646 ops y 3.7 c/j contra zurdo (.685 vs L); un perro sin bates no se juega.",
+    "CIN/COL o11: hay capas (Coors, bullpens 5.25 y Pagan 6.06), pero la linea de 11 exige un tiroteo que las tendencias (5/10 ambos al over 8.5) no garantizan.",
+    "SF/SEA u7 +104: Gilbert (FIP 3.62) apoya, pero los dos equipos suman ~8.3 c/j recientes contra una linea de solo 7.",
+    "STL/AZ u9: edge marginal — STL frio (.581 ops) apoya, pero AZ anota 5.0 c/j en su forma y los FIP de ambos abridores son mediocres.",
+    "ARG/ESP o2.5 +130: los 5 juegos de ARG fueron over, pero los de Espana promedian 2.0 goles; fuentes en contradiccion = cautela, y prefiero el lado del partido."
+  ],
+  "autopsia": "El cierre del 7/18 dejo la leccion clara: el under de juego completo (NYM/PHI u8.5) gano porque el analisis de pitcheo mando, mientras que el TB team total u4.5 perdio (TB anoto 6 en un 6-7) — los team totals ajustados dejan cero margen de error. El CWS F5 ML cayo 0-1: el abridor cumplio pero la ofensiva no produjo ni una carrera, otra confirmacion de que sin bates funcionales el pick se cae aunque el pitcheo domine. El auto-diagnostico es contundente: totales +2.49U contra ML -3.0U, asi que hoy el ancla del dia es un under respaldado por ambas ofensivas frias y los ML que doy exigen ventaja de abridor real MAS lineup caliente.",
+  "resumen": "Tres jugadas hoy con 3.5U en riesgo: el under 9.5 en DET/LAA como ancla del dia (pitcheo elite de Mize contra dos lineups congelados), Washington con ventaja enorme de abridor y bates ardiendo ante unos Athletics en caida libre, y Espana con valor a +125 en la final por su defensa impenetrable contra una Argentina que concede en cada partido. Aparte, un parlay de dos favoritos razonables (BAL +1.5 y Cubs con Imanaga en casa) que combina a +135 y no cuenta en el balance."
+}

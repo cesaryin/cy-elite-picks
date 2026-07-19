@@ -1021,5 +1021,53 @@
     "resultado": "W",
     "neto_u": 0.92,
     "marcador": "WSH 23-4 ATH"
+  },
+  {
+    "fecha": "2026-07-18",
+    "pick": "TB team total u4.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -105,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "TB 6-7 BOS"
+  },
+  {
+    "fecha": "2026-07-18",
+    "pick": "NYM/PHI u8.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -105,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.95,
+    "marcador": "NYM 1-6 PHI"
+  },
+  {
+    "fecha": "2026-07-18",
+    "pick": "CWS F5 ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -115,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CWS 0-1 TOR"
+  },
+  {
+    "fecha": "2026-07-18",
+    "pick": "PARLAY: Detroit Tigers ML + Philadelphia Phillies ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 141,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "DET 7-0 LAA / NYM 1-6 PHI",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]
