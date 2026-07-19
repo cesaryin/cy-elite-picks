@@ -2,7 +2,7 @@
   "picks": [
     {
       "nivel": "oro",
-      "pick": "Tampa Bay Rays u4.5 carreras (team total)",
+      "pick": "TB team total u4.5",
       "deporte": "MLB",
       "tipo": "team total u4.5",
       "cuota": -105,
@@ -23,7 +23,7 @@
     },
     {
       "nivel": "plata",
-      "pick": "Mets vs Phillies u8.5 carreras",
+      "pick": "NYM/PHI u8.5",
       "deporte": "MLB",
       "tipo": "u8.5",
       "cuota": -105,
@@ -34,7 +34,7 @@
         "PHI"
       ],
       "destacado": null,
-      "hora": "3:05 PM CT",
+      "hora": "2:05 PM CT",
       "resolucion": {
         "mercado": "total",
         "equipo": null,
@@ -44,7 +44,7 @@
     },
     {
       "nivel": "bronce",
-      "pick": "Chicago White Sox F5 ML",
+      "pick": "CWS F5 ML",
       "deporte": "MLB",
       "tipo": "F5 ML",
       "cuota": -115,
