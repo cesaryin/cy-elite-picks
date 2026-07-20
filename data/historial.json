@@ -1069,5 +1069,53 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-19",
+    "pick": "DET/LAA u9.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -122,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.23,
+    "marcador": "DET 2-3 LAA"
+  },
+  {
+    "fecha": "2026-07-19",
+    "pick": "WSH ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -149,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.67,
+    "marcador": "WSH 5-2 ATH"
+  },
+  {
+    "fecha": "2026-07-19",
+    "pick": "ESP ML",
+    "deporte": "Mundial",
+    "nivel": "bronce",
+    "cuota": 125,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.25,
+    "marcador": "ARG 0-1 ESP"
+  },
+  {
+    "fecha": "2026-07-19",
+    "pick": "PARLAY: BAL Spread +1.5 + CHC ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 135,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "BAL 5-2 HOU / MIN 1-10 CHC",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]

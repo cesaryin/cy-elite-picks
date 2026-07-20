@@ -1,0 +1,82 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -138,
+      "unidades": 1.5,
+      "razon": "Convergencia de 4 capas sin contradiccion mayor: P. Tolle (3.11 ERA, FIP 3.58) supera a S. Baz (4.19 ERA), BOS llega 10-0 en sus ultimos 10 permitiendo solo 1.6 c/j, la ofensiva esta en llamas (7.0 c/j, ops .899 y 9 HR en la semana) y el bullpen 3.30 cierra con A. Chapman (2.05, 21 saves). Enfrente, el lineup de BAL viene frio (.577 ops semanal) ante un zurdo. Pitcheo + forma + ofensiva + bullpen alineados en casa.",
+      "equipos": [
+        "BAL",
+        "BOS"
+      ],
+      "destacado": "BOS",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "PIT ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 104,
+      "unidades": 1.0,
+      "razon": "Perro con ventaja real de abridor: B. Ashcraft (3.49 ERA, FIP 3.59, 9-3) supera a R. Weathers (4.15 ERA). SYS-004 cumplido: ofensiva PIT caliente (5.7 c/j, ops .809 semanal) y batea .721 ops vs zurdos, mientras el lineup de NYY esta congelado (1.7 c/j, ops .590 en la semana). PIT 7-3 con 6.9 c/j a favor. A +104 la cuota paga mas que la probabilidad real; el bullpen PIT 4.44 vs el de NYY es el riesgo asumido que lo deja en 1U.",
+      "equipos": [
+        "PIT",
+        "NYY"
+      ],
+      "destacado": "PIT",
+      "hora": "6:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PIT",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "WSH ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -117,
+      "unidades": 1.0,
+      "razon": "El mayor desajuste de abridores del dia: K. Freeland llega con 7.36 ERA (2-8, FIP 4.61) contra A. Alvarez (4.04 ERA, FIP 3.53). La ofensiva de WSH es la mas caliente del slate (9.7 c/j, ops .921 y 6 HR en la semana) y su split vs zurdos (.269/.789 ops) cruza perfecto contra Freeland. Riesgos reales: Coors y bullpen WSH 6.17, por eso es especulativo a 1U y no mas arriba, pero la ventaja ofensiva-abridor justifica el precio.",
+      "equipos": [
+        "WSH",
+        "COL"
+      ],
+      "destacado": "WSH",
+      "hora": "7:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "WSH",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "Parlay descartado: las unicas patas fuera de rango jugable eran MIL -203 (valida: J. Misiorowski 1.62 ERA/FIP 2.69 en casa vs Peralta 4.66) y TEX -163, pero TEX permite 7.4 c/j en sus ultimos 10 (10/10 overs) contra un CWS en forma 6-4 con solo 2.8 c/j en contra: pata sucia, mejor sin parlay que uno forzado",
+    "TOR -144: Cease es dominante (2.56/FIP 2.80) pero el lineup de TOR esta congelado (1.7 c/j, ops .542 semanal) — SYS-004 bloquea el ML; el perfil era under del juego pero hoy no hay cuota de total disponible",
+    "MIN/CLE: J. Ryan (FIP 3.19) da ventaja pero ambas ofensivas frias (.626 y .651 ops, menos de 3 c/j) — SYS-004 tumba ambos ML; otro perfil de under sin cuota ofertada",
+    "PHI -127: C. Sanchez (2.62) es elite pero PHI anota 2.7 c/j con ops .694 semanal y 3.0 c/j en sus ultimos 10 — un abridor no gana solo (SYS-004)",
+    "ATL -138: ofensiva en llamas (9.7 c/j) vs Sears 5.03, pero SD tambien llega con 8.7 c/j y ops .957 contra un Elder mediocre (4.12/FIP 4.32): partido bilateral de bates, el valor real estaba en el over y no hay cuota de total",
+    "MIA/HOU: R. Blanco sin ERA ni record en los datos — imposible evaluar el matchup (SYS-001), y ambas ofensivas heladas",
+    "AZ -150: ATH viene 1-9 pero sus bates despertaron (.916 ops, 7.0 c/j semanal) y Bratt (6.00 ERA) no da seguridad al precio",
+    "DET +104: FIP 4.00 vs 5.56 de Taillon tienta, pero CHC anota 6.0 c/j en casa con ops .812 y la ofensiva DET es marginal (.660 ops) — valor insuficiente para tercera jugada frente a WSH",
+    "KC -108: FIPs casi identicos (4.09 vs 4.14) = ventaja nominal, y bullpen KC 4.87 con cerrador de 5.40 — SYS-002/SYS-003",
+    "CWS +156: contra deGrom (3.49/FIP 3.66) en casa no hay valor real; TEX -163 fuera de rango individual"
+  ],
+  "autopsia": "El cierre mas reciente fue positivo: DET/LAA u9.5, WSH ML y ESP ML ganaron por convergencia real de pitcheo, forma y ofensiva. Las lecciones vienen del dia anterior: TB team total u4.5 fallo en un juego de 13 carreras (TB 6-7 BOS) — un under de equipo exige entorno completo de pocas carreras, no solo confianza en el abridor; y CWS F5 ML perdio 0-1 porque un lineup frio no sostiene ni un F5. Hoy lo aplico: cada ML dado tiene ofensiva funcional comprobada con datos, y los lineups helados quedaron descartados aunque tuvieran buen abridor.",
+  "resumen": "Dia de 3 jugadas y 3.5U de riesgo total, todas en MLB porque hoy el mercado solo ofrecio cuotas de moneyline (sin totales, spreads ni F5 disponibles, que es donde mas rinde el sistema). La jugada principal es Boston en casa: racha de 10-0, bates encendidos con 7 carreras por juego, mejor abridor y Chapman al cierre contra un Baltimore frio al bate. La acompanan Pittsburgh como perro con valor (mejor abridor y ofensiva caliente contra un lineup de Yankees congelado) y Washington ante el peor abridor del dia en Colorado, asumiendo el riesgo de Coors con la ofensiva mas caliente del calendario. Sin parlay: no hubo dos patas limpias que justificaran el combinado."
+}
