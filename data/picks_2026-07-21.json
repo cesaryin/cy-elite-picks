@@ -1,0 +1,79 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -133,
+      "unidades": 1.5,
+      "razon": "Convergencia total: R. Suarez (3.15, fip 3.13, el mejor fip del dia) contra un BAL que abanico 53 veces en sus ultimos 4 juegos (ops .655) y batea .698 vs zurdos. BOS llega 10-0 en sus ultimos 10 permitiendo solo 2.0 carreras por juego, con ofensiva encendida (6.8 c/j, ops .869 y 10 hr en la semana) ante K. Bradish (fip 4.09). Bullpen 3.30 con Chapman (1.99, 22 sv) para cerrar. A -133 la cuota no cobra toda esta ventaja.",
+      "equipos": [
+        "BAL",
+        "BOS"
+      ],
+      "destacado": "BOS",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CLE ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -138,
+      "unidades": 1.0,
+      "razon": "P. Messick (2.73, fip 3.56, 8-5) tiene ventaja real sobre K. Rojas, cuya era 2.79 esconde un fip 4.19 en apenas 2 decisiones. MIN llega frio: 3.0 c/j, ops .663 con 30 K en 4 juegos y solo .680 vs zurdos, justo el perfil que Messick castiga. CLE en cambio anota 5.0 c/j con ops .912 y 8 hr en la semana, y el bullpen (3.40 con C. Smith 2.78 y 28 sv) domina al de MIN (4.11) en el cierre. Local y forma 6-4 con diferencial positivo.",
+      "equipos": [
+        "MIN",
+        "CLE"
+      ],
+      "destacado": "CLE",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "D. Rasmussen (3.26, fip 3.64) supera claro a K. Gausman (4.33, 4-8) y enfrenta al lineup mas congelado del dia: TOR con 1.5 c/j y ops .539 en la semana. La ofensiva de TB es funcional (ops .727 reciente, .755 vs derechos, 7 hr) y el equipo es 11 juegos mejor en la tabla (57-42 vs 46-54), pero el mercado solo pide -108: valor puro. Riesgo controlado en el cierre con B. Baker (1.69, 25 sv).",
+      "equipos": [
+        "TB",
+        "TOR"
+      ],
+      "destacado": "TB",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "PIT/NYY: anti-inercia dura — PIT ML acaba de perder 5-8 en esta misma serie y no hay justificacion nueva; NYY ML falla SYS-004 (ofensiva 3.2 c/j y ops .660 en la semana) a -144.",
+    "LAD/PHI: Z. Wheeler (2.13) es elite pero PHI batea .685 ops vs zurdos ante J. Wrobleski (2.69, 10-2) y el bullpen de LAD (3.00) supera al de PHI (3.95); sin ventaja clara a -117.",
+    "SD/ATL: ATL anota 8.0 c/j con ops 1.010, pero SD tambien llega caliente (7.0 c/j, .894) y los fip de los abridores son casi identicos (4.29 vs 4.34); perfil de over, pero hoy el juego no trae cuota de total.",
+    "CIN/SEA: C. Burns (2.54, 11-1) tiene ventaja real sobre L. Castillo, pero el bullpen de CIN (4.20 con Pagan 6.23 cerrando) mata el ML de visita; sin cuota F5 disponible para aislar al abridor, no hay mercado jugable.",
+    "WSH/COL: la ofensiva de WSH viene a 9.0 c/j pero Mikolas (5.53, fip 5.10) y el peor bullpen del dia (6.59) convierten el -104 en moneda al aire.",
+    "ATH/AZ: el abridor de AZ (K. Drake) no trae era ni fip en los datos; sin informacion del matchup de pitcheo no se apuesta (SYS-001).",
+    "CWS/TEX y STL/LAA: perfiles claros de over (TEX 10/10 overs) y de under (LAA 1.8 c/j), pero ningun juego trae cuota de total hoy; los ML no tienen valor."
+  ],
+  "autopsia": "El cierre del 20/07 dejo 2-1: BOS ML y WSH ML ganaron, el patron que funciona sigue siendo favorito moderado con ofensiva funcional y ventaja real de pitcheo. PIT ML (+104) cayo 5-8 ante NYY: el perro anoto pero no alcanzo, y la leccion es no tomar perros cuyo rival cierra mejor el juego; hoy aplico anti-inercia y no toco esa serie. El auto-diagnostico confirma que los totales son mi mejor mercado, pero hoy ningun juego trae cuota de total, asi que exijo mas capas a cada ML.",
+  "resumen": "Dia de solo moneylines (no hay cuotas de totales ni F5 disponibles), asi que se exigio convergencia maxima en cada pick. Tres jugadas: Boston en casa con Suarez y racha de 10-0 ante un Baltimore que no deja de ponchar, Cleveland con clara ventaja de abridor y bullpen contra un Minnesota frio, y Tampa Bay a cuota casi pareja pese a ser un equipo muy superior contra el lineup mas congelado del dia. Sin parlay: ningun favorito del dia cae en el rango correcto para combinarse. Riesgo total: 3.5 unidades."
+}

@@ -1117,5 +1117,38 @@
       "W",
       "W"
     ]
+  },
+  {
+    "fecha": "2026-07-20",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -138,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.09,
+    "marcador": "BAL 5-6 BOS"
+  },
+  {
+    "fecha": "2026-07-20",
+    "pick": "PIT ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 104,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "PIT 5-8 NYY"
+  },
+  {
+    "fecha": "2026-07-20",
+    "pick": "WSH ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -117,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.85,
+    "marcador": "WSH 7-3 COL"
   }
 ]
