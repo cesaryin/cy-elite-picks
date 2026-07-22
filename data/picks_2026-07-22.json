@@ -1,0 +1,80 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CLE ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -126,
+      "unidades": 1.5,
+      "razon": "CLE llega encendido: .888 ops y 5.0 carreras/juego en la semana, con 8 hr, y en casa 7-3 (4.7 a favor, 3.6 en contra). Su bullpen es elite (3.35, C. Smith 2.72 con 29 saves) para blindar cualquier cierre ajustado. Enfrente, MIN trae una ofensiva helada (.628 ops, 2.8 c/j la ultima semana) y S. Cecconi (fip 4.29) alcanza para contenerla; B. Ober (4.32) no intimida al lineup local. Convergencia clara de forma ofensiva, bullpen y localia contra un rival apagado, con valor a -126.",
+      "equipos": [
+        "MIN",
+        "CLE"
+      ],
+      "destacado": "CLE",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "STL/LAA u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -101,
+      "unidades": 1.0,
+      "razon": "Choque de dos ofensivas congeladas: STL apenas .611 ops y 3.6 c/j en la semana, y LAA aun peor con .636 ops, 2.4 c/j y 50 ks en 5 juegos. Ambas rara vez pasan la linea (STL over_8.5 3/10, LAA 2/10). R. Detmers (fip 3.51) y H. Dobbins (4.03) ofrecen pitcheo suficiente y los bullpens rondan el 4.00. Total bajo con respaldo solido a -101 y en la categoria que mejor viene rindiendo.",
+      "equipos": [
+        "STL",
+        "LAA"
+      ],
+      "destacado": null,
+      "hora": "3:07 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -109,
+      "unidades": 1.0,
+      "razon": "TB batea caliente (.802 ops, 4.8 c/j y 9 hr en la semana) mientras TOR atraviesa un apagon ofensivo extremo (.526 ops, 1.6 c/j y .195 avg en 5 juegos). El precio es casi pick'em (-109) para el equipo con la enorme ventaja de momento ofensivo, y B. Baker (1.69, 25 saves) asegura el cierre. Valor real fadeando a un lineup local muerto de bate.",
+      "equipos": [
+        "TB",
+        "TOR"
+      ],
+      "destacado": "TB",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "PIT/NYY: NYY -168 fuera de rango y con ofensiva local fria (3.2 c/j, .660 ops); ademas PIT perdio ayer ante NYY (5-8), no lo repito por inercia con M. Fried enfrente.",
+    "WSH/COL: Coors mas dos bullpens pesimos (5.66 y 5.12) vuelven el ML volatil, y el o11.5 es una linea altisima de batir; sin valor limpio pese al bateo caliente de WSH.",
+    "SD/ATL: dos ofensivas ardientes pero pitcheo y bullpens elite (M. Miller 0.86, R. Iglesias 2.36) enfrian el over, y el ML es pick'em sin valor.",
+    "MIA/HOU: dos ofensivas frias (MIA 3.2 c/j, HOU 3.8 c/j) y dos buenos abridores; HOU -120 no tiene respaldo ofensivo (SYS-004).",
+    "CIN/SEA: SEA tiene la ventaja de pitcheo (E. Hancock 3.17 vs B. Singer fip 5.11) pero su ofensiva esta fria (.646 ops) y -157 deja el valor demasiado justo.",
+    "NYM/MIL: dos abridores sub-3 ERA (C. Scott 2.87, L. Henderson 2.97) con ofensivas templadas; MIL -143 sin edge claro para justificar el precio.",
+    "CWS/TEX: pick'em con abridor de TEX mejor (T. Alexander 2.79) pero forma de over 10/10 que contradice; escenario turbio, sin lado con valor.",
+    "Parlay: sin dos patas limpias en rango -160/-360; los candidatos (NYY, SEA) cargan ofensivas frias, mejor sin parlay."
+  ],
+  "autopsia": "El cierre mas reciente dejo una leccion nitida: PIT ML (7/20) cayo 5-8 ante NYY, un perro con ofensiva irregular en Nueva York no tenia margen, por eso hoy evito repetir PIT frente al mismo rival con M. Fried en la loma. En positivo, CLE ML y TB ML (7/21) acertaron apoyados en ofensivas calientes y bullpens confiables, el mismo patron que vuelvo a priorizar hoy con CLE y TB. La lectura clara: fadear lineups apagados y respaldarme en momento ofensivo + bullpen elite viene rindiendo, mientras los ML de perro sin bateo son la trampa a evitar.",
+  "resumen": "Hoy tres jugadas MLB con 3.5 unidades en riesgo: la Elite en CLE ML (ofensiva caliente, bullpen elite y localia ante una MIN helada), un under en STL/LAA respaldado por dos lineups congelados, y TB ML fadeando el apagon ofensivo de TOR con precio casi pick'em. Sin parlay por falta de dos patas limpias. Riesgo total: 3.5 unidades."
+}
