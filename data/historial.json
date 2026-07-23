@@ -1183,5 +1183,38 @@
     "resultado": "W",
     "neto_u": 0.93,
     "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-07-22",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -126,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "MIN 10-6 CLE"
+  },
+  {
+    "fecha": "2026-07-22",
+    "pick": "STL/LAA u8.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -101,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.99,
+    "marcador": "STL 1-0 LAA"
+  },
+  {
+    "fecha": "2026-07-22",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -109,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.92,
+    "marcador": "TB 4-2 TOR"
   }
 ]

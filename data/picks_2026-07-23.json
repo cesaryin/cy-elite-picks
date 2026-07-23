@@ -1,0 +1,78 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -112,
+      "unidades": 1.5,
+      "razon": "TOR atraviesa un colapso ofensivo total: apenas .508 ops, .184 avg y 1.7 carreras/juego en la última semana, incapaz de sostener un marcador. TB llega con bate funcional (.782 ops, 4.7 c/j y .756 vs derechos como I. Seymour... perdón, como S. Bieber R) y mejor abridor: I. Seymour (4.79) frente a S. Bieber (5.70 ERA, 5.21 FIP). Sumado a la brecha de nivel (59-42 vs 46-56), TB solo necesita 3-4 carreras para ganar. Cuota casi pick'em (-112) que NO descuenta lo helado que está el lineup local: 4 capas alineadas.",
+      "equipos": [
+        "TB",
+        "TOR"
+      ],
+      "destacado": "TB",
+      "hora": "2:07 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "ATL Spread -1.5",
+      "deporte": "MLB",
+      "tipo": "Spread -1.5",
+      "cuota": -122,
+      "unidades": 1.0,
+      "razon": "C. Sale (2.06 ERA, 3.16 FIP) es el abridor más dominante del día y enfrenta a un SD que batea solo .671 ops vs zurdos; su rival K. Hart (5.66) es muy vulnerable y la ofensiva de ATL (.916 ops, 7.0 c/j en la semana) debería marcar diferencia en casa (6-4, 5.8 c/f). La brecha de pitcheo elite-vs-flojo respalda el margen de -1.5. Riesgo asumido: SD trae poder (.944 ops, 15 HR en 6j), pero su split ante zurdos lo neutraliza frente a Sale.",
+      "equipos": [
+        "SD",
+        "ATL"
+      ],
+      "destacado": "ATL",
+      "hora": "11:15 AM CT",
+      "resolucion": {
+        "mercado": "spread",
+        "equipo": "ATL",
+        "lado": null,
+        "linea": -1.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 103,
+      "unidades": 1.0,
+      "razon": "Contraste de momento extremo: AZ 8-2 con ofensiva ardiente (.903 ops, 6.7 c/j, 11 HR en 6j) contra un STL helado (.571 ops, 3.2 c/j, 4-6). El bullpen de AZ (3.35) supera al de STL (4.10). M. McGreevy exhibe 2.92 ERA, pero su 4.19 FIP y récord 4-7 delatan que no es tan dominante; a +103 (dinero par) el equipo claramente más caliente ofrece valor. Especulativa por su split solo .677 vs derechos.",
+      "equipos": [
+        "AZ",
+        "STL"
+      ],
+      "destacado": "AZ",
+      "hora": "4:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CLE ML -144: anti-inercia — cayó 10-6 ante MIN ayer y MIN batea .758 vs derechos frente a G. Williams (R); demasiado riesgo de repetir el castigo sin justificación nueva y fuerte.",
+    "MIN ML +119: ofensiva fría (.669 ops, 4.0 c/j en la semana), sin respaldo para el perro pese a la cuota.",
+    "MIN/CLE u7.5: la tendencia de under es fuerte (2/10 y 3/10), pero las 16 carreras de ayer y CLE caliente (.875 ops) lo vuelven inseguro.",
+    "SD ML +203: perro sin ventaja real de abridor (K. Hart 5.66 vs C. Sale 2.06) pese al bate caliente; SYS-002 lo descarta.",
+    "KC/DET: ERAs de abridores engañosas (FIP 4.59 y 4.03), juego impredecible; DET -217 fuera de valor y KC con bullpen de 4.83.",
+    "Parlay: solo ATL (-251) y DET (-217) caían en rango de favorito; DET -217 no ofrece +EV real como segunda pata (juego demasiado incierto), así que mejor sin parlay."
+  ],
+  "autopsia": "En el último cierre (07-22), CLE ML -126 perdió 10-6: el error fue confiar en un favorito cuyo rival (MIN) explotó con el bate, por eso hoy, con MIN otra vez bateando .758 vs derechos, no reincido en CLE. Acertaron STL/LAA u8.5 y TB ML: fadear lineups apagados y los totales bajos vienen siendo lo más rentable (Total 7-2 en el historial), y esa misma lógica sostiene el TB de hoy ante una TOR en colapso ofensivo.",
+  "resumen": "Día de 5 juegos MLB sin fútbol. Ataco tres frentes con 3.5 unidades en riesgo: la jugada principal (1.5U) es apoyar a Tampa Bay en el ML fadeando a una Toronto hundida a 1.7 carreras/juego y con Bieber (5.70) en el montículo. Sumo (1U) el spread de Atlanta con Sale dominando a un San Diego flojo ante zurdos, y una jugada de valor (1U) sobre Arizona, el equipo más caliente del día a dinero par. Sin parlay hoy: no apareció una segunda pata de favorito con valor real."
+}
