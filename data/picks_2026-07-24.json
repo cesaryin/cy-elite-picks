@@ -1,0 +1,84 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "AZ/WSH o9.5",
+      "deporte": "MLB",
+      "tipo": "o9.5",
+      "cuota": -112,
+      "unidades": 1.5,
+      "razon": "Dos ofensivas ardiendo: AZ con .933 ops y 7.1 c/j en la semana, WSH con .940 ops y 8.5 c/j; ambas castigan zurdos (AZ .781, WSH .787 vs L) y los dos abridores son L. C. Palmquist llega con 8.74 era y el bullpen de WSH en 5.58 casi garantizan que AZ produzca; E. Rodríguez tiene 2.62 era pero su FIP 4.15 avisa regresion ante un lineup encendido. AZ over 7/10 en sus ultimos 10 y WSH batea en casa: la via al over la marca AZ machacando a un abridor de 8.74.",
+      "equipos": [
+        "AZ",
+        "WSH"
+      ],
+      "destacado": null,
+      "hora": "5:45 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -124,
+      "unidades": 1.0,
+      "razon": "BOS 9-1 en sus ultimos 10, en casa y con el bate caliente (.793 ops, 5.9 c/j en la semana) frente a un TOR con ofensiva congelada (.524 ops, 1.9 c/j) y floja vs zurdos (.642) ante el zurdo P. Sandoval. Bullpen de BOS elite en el cierre (A. Chapman 1.93 era). T. Yesavage es decente (3.78) pero el lineup visitante apenas produce carreras, lo que hace muy dificil que TOR gane.",
+      "equipos": [
+        "TOR",
+        "BOS"
+      ],
+      "destacado": "BOS",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYY/PHI u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -114,
+      "unidades": 1.0,
+      "razon": "Duelo de brazos de alto nivel: C. Schlittler 2.20 era/3.12 FIP contra J. Luzardo 3.43 era/3.27 FIP. NYY llega helado (.620 ops, 3.0 c/j en la semana) y ambos equipos vienen over 3/10. Los bullpens dominan el cierre (D. Bednar 2.53, J. Duran 1.32 era). El unico riesgo es el PHI caliente (.818 la semana), pero vs derecho batea solo .715 y enfrenta al mejor abridor del juego.",
+      "equipos": [
+        "NYY",
+        "PHI"
+      ],
+      "destacado": null,
+      "hora": "5:45 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "COL/MIL: MIL -300 fuera de rango y con bate frio (.693 ops la semana); spread MIL -1.5 evitado por ser mi peor mercado.",
+    "KC/DET: Skubal elite pero DET -271 fuera de rango; KC batea .760 la semana y con Beck Way (FIP 4.47) el under 7.5 no queda limpio.",
+    "CHC/PIT: pick'em real (-108/-112) sin margen; ademas PIT viene de perder ML vs NYY.",
+    "ATL/BAL: abridor de BAL sin definir (null), imposible evaluar el matchup; y el spread ATL ya fallo recientemente.",
+    "LAD/NYM: dos abridores flojos (Sasaki 4.98, Manaea 4.74); LAD -136 sin valor claro y NYM helado no da lado limpio al total.",
+    "CLE/TB: under 7.5 con soporte pero -125 muy caro; no forzar TB tras dos caidas seguidas.",
+    "SD/MIA: abridor de MIA null y Márquez 5.24 vuelve ruidoso cualquier lado.",
+    "HOU/CWS: CWS -129 pero con bate frio (.644 ops la semana), sin convergencia.",
+    "SEA/TEX: pick'em; el over 9/10 de TEX choca con B. Miller elite, sin lado limpio.",
+    "ATH/MIN: dos abridores malos pero MIN helado (.619 ops) y under-leaning 3/10 enturbian el over.",
+    "CIN/STL: STL con bate frio (.603 ops) y Lowder malo; sin lado de valor claro.",
+    "LAA/SF: SF -157 con LAA helada, pero SF tambien frio (.613 ops); el valor no es lo bastante limpio."
+  ],
+  "autopsia": "El cierre mas reciente (23-jul) fue mixto: AZ ML acerto, pero TB ML volvio a caer ante TOR (1-3) — el bate de TB no produjo y es la segunda vez que TOR nos gana, leccion de anti-inercia que hoy respeto fadeando a TOR con BOS. El ATL Spread -1.5 duele fino: ATL gano 6-5, pero por solo 1 carrera, asi que el -1.5 fallo aunque el ML habria entrado. El auto-diagnostico confirma que el spread es mi peor mercado (-1.0U), por eso hoy lo evito y me apoyo en totales, que vienen 7-2 (+4.71U).",
+  "resumen": "Tres jugadas hoy con 3.5U en riesgo total. La principal es el over 9.5 en Arizona-Washington: dos ofensivas encendidas (7.1 y 8.5 carreras/juego la ultima semana) contra C. Palmquist (8.74 era) y un bullpen local en 5.58. Sumo Boston ML en casa (9-1 en sus ultimos 10 y bate caliente) ante un Toronto con la ofensiva congelada (1.9 c/j), y el under 7.5 en Yankees-Phillies, duelo de C. Schlittler y J. Luzardo con bullpens que cierran fuerte. Sin parlay: los unicos favoritos en rango (MIL -300, DET -271) no ofrecen valor combinado limpio."
+}
