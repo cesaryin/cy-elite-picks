@@ -1,0 +1,97 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TOR/BOS u8.0",
+      "deporte": "MLB",
+      "tipo": "u8.0",
+      "cuota": -114,
+      "unidades": 1.5,
+      "razon": "Duelo de dos ases derechos: D. Cease 2.67 ERA/2.92 FIP y S. Gray 2.48 ERA/3.84 FIP. La ofensiva de TOR está congelada (.199/.511 y 1.9 carreras/pj en la semana; solo .695 ops vs derechos ante Gray) y BOS es modesto vs derechos (.688 ops ante Cease). Cierre blindado por ambos lados (Varland 1.04, Chapman 1.87). Tres capas alineadas hacia pocas carreras con línea de solo 8.0.",
+      "equipos": [
+        "TOR",
+        "BOS"
+      ],
+      "destacado": null,
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 125,
+      "unidades": 1.0,
+      "razon": "AZ llega encendido (ofensiva 7.0 c/j y ops .906 en la semana, .275/.787 vs zurdos ante el L Griffin) y 8-2 en sus últimos 10. Griffin engaña con 2.68 ERA pero su FIP 4.06 avisa regresión, y detrás tiene el peor bullpen del día (WSH 5.50 vs AZ 3.39, que decide el cierre). Plus money (+125) sobre el equipo más caliente y con mejor relevo.",
+      "equipos": [
+        "AZ",
+        "WSH"
+      ],
+      "destacado": "AZ",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 114,
+      "unidades": 1.0,
+      "razon": "SD viene con poder real (6.4 c/j, .894 ops y 16 HR en 7 juegos) frente a un MIA en caída libre: 0-10 en sus últimos 10 y ofensiva fría (3.2 c/j, .644 ops). Ventaja enorme en el cierre: Mason Miller 0.84 por SD contra un Fairbanks a 7.42 ERA por MIA. Plus money (+114) fadeando a un equipo que no gana hace diez partidos.",
+      "equipos": [
+        "SD",
+        "MIA"
+      ],
+      "destacado": "SD",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "DET ML",
+        "deporte": "MLB",
+        "destacado": "DET",
+        "cuota": -186
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -170
+      }
+    ],
+    "cuota_combinada": 144,
+    "nota": "Dos ases dominantes en spots favorables: C. Mize (2.79/3.17) en casa ante una ofensiva modesta de KC (.701 ops, 3.4 c/j) y Y. Yamamoto (2.78) frente a un NYM congelado (.694 ops, 3.2 c/j, 1/10 overs). Combinada +144, no cuenta al balance."
+  },
+  "descartes": [
+    "WSH -151: bullpen a 5.50 ERA y ERA de Griffin engañosa (FIP 4.06), sin valor por ese lado.",
+    "MIL -238: fuera de rango ML y Gasser flojo (4.91) resta seguridad pese a ser el mejor equipo.",
+    "CIN/STL u8.5: STL congelado (.563 ops) tienta el under, pero Greene con 6.06 ERA mete demasiado riesgo de carreras.",
+    "NYY/PHI y ATH/MIN: abridor local en null, no evaluables con rigor.",
+    "ATL/BAL: pick'em real (-105/-114) sin borde claro y el spread es mi peor mercado (-1.0U), lo evito.",
+    "LAD/NYM u7.5: buen spot de pitcheo pero línea muy baja y LAD sí anota; preferí LAD ML en el parlay.",
+    "HOU +109: valor decente, pero CWS está 7-3 en casa con Burke sólido (3.20); me quedé con AZ y SD.",
+    "AZ/WSH over: no repito por inercia el over que cayó ayer en esta misma serie (3-2)."
+  ],
+  "autopsia": "El cierre reciente dejó lección: el AZ/WSH o9.5 murió en un 3-2 (5 carreras) — era un partido de pitcheo que debí leer como under, no forzar el over. Hoy no repito ese over en la misma serie (anti-inercia) y me apoyo en mi mejor mercado, los totales (+4.09U), con un under de dos ases en TOR/BOS. Además esquivo el spread, mi peor mercado (-1.0U). Los aciertos de u7.5 y ML de valor confirman que lo que funciona es la lectura de pitcheo más precio, no cargar favoritos caros.",
+  "resumen": "Día de 3 picks straight con 3.5U en riesgo. La Elite es el under de TOR/BOS: dos ases (Cease y Gray) contra una ofensiva de Toronto congelada, con bullpens de cierre. La acompañan dos ML con plus money: Arizona en gran forma ante el peor bullpen del día (Washington), y San Diego fadeando a un Miami hundido en 0-10. Sumo un parlay opcional (no cuenta al balance) de dos ases dominantes, Detroit (Mize) + Dodgers (Yamamoto) a +144. Evito el spread, mi peor mercado, y no reincido en el over de AZ/WSH que cayó ayer."
+}
