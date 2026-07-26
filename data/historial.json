@@ -1218,6 +1218,39 @@
     "marcador": "AZ 10-6 STL"
   },
   {
+    "fecha": "2026-07-24",
+    "pick": "AZ/WSH o9.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -112,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "AZ 3-2 WSH"
+  },
+  {
+    "fecha": "2026-07-24",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -124,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.81,
+    "marcador": "TOR 4-6 BOS"
+  },
+  {
+    "fecha": "2026-07-24",
+    "pick": "NYY/PHI u7.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.88,
+    "marcador": "NYY 1-0 PHI"
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -1251,36 +1284,51 @@
     "marcador": "TB 12-2 TOR"
   },
   {
-    "fecha": "2026-07-24",
-    "pick": "AZ/WSH o9.5",
+    "fecha": "2026-07-25",
+    "pick": "TOR/BOS u8.0",
     "deporte": "MLB",
     "nivel": "oro",
-    "cuota": -112,
+    "cuota": -114,
     "unidades": 1.5,
-    "resultado": "L",
-    "neto_u": -1.5,
-    "marcador": "AZ 3-2 WSH"
+    "resultado": "W",
+    "neto_u": 1.32,
+    "marcador": "TOR 6-0 BOS"
   },
   {
-    "fecha": "2026-07-24",
-    "pick": "BOS ML",
+    "fecha": "2026-07-25",
+    "pick": "AZ ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -124,
+    "cuota": 125,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.81,
-    "marcador": "TOR 4-6 BOS"
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "AZ 3-5 WSH"
   },
   {
-    "fecha": "2026-07-24",
-    "pick": "NYY/PHI u7.5",
+    "fecha": "2026-07-25",
+    "pick": "SD ML",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -114,
+    "cuota": 114,
     "unidades": 1.0,
     "resultado": "W",
-    "neto_u": 0.88,
-    "marcador": "NYY 1-0 PHI"
+    "neto_u": 1.14,
+    "marcador": "SD 7-2 MIA"
+  },
+  {
+    "fecha": "2026-07-25",
+    "pick": "PARLAY: DET ML + LAD ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 144,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "KC 3-2 DET / LAD 4-3 NYM",
+    "patas_res": [
+      "L",
+      "W"
+    ]
   }
 ]

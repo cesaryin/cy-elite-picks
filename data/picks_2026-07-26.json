@@ -1,0 +1,82 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "NYY/PHI u8.0",
+      "deporte": "MLB",
+      "tipo": "u8.0",
+      "cuota": -114,
+      "unidades": 1.5,
+      "razon": "Duelo de dos ofensivas heladas: NYY .602 ops y 3.0 c/j, PHI .659 ops y 3.0 c/j en la semana. Enfrente C. Sánchez domina (2.65 ERA, 3.05 FIP) y W. Warren aguanta (4.00 ERA). Bullpens de cierre elite (D. Bednar 2.42, J. Duran 1.29) blindan el final y ambos vienen con solo 2/10 overs en su racha. El total 8.0 tiene techo bajo.",
+      "equipos": [
+        "NYY",
+        "PHI"
+      ],
+      "destacado": null,
+      "hora": "6:20 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 109,
+      "unidades": 1.0,
+      "razon": "SD llega encendido (7.3 c/j, .906 ops y 15 HR en la semana) y saca plus money ante un MIA hundido: 0-10 en sus últimos 10, apenas 2.5 c/j y .621 ops. Ventaja enorme de cierre con M. Miller 0.84 frente a P. Fairbanks 7.42. Con dos abridores flojos (W. Buehler 5.23, J. Junk 5.09) la ofensiva caliente decide el shootout y el visitante superior paga de más.",
+      "equipos": [
+        "SD",
+        "MIA"
+      ],
+      "destacado": "SD",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TOR/BOS u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "TOR es la ofensiva más fría del día (.585 ops, 2.6 c/j y solo .642 ops vs zurdos) y enfrenta al buen zurdo R. Suárez (3.15 ERA, 3.13 FIP). BOS tampoco carbura (.646 ops, 4.2 c/j) ante K. Gausman. Con cerradores elite que sellan el final (L. Varland 1.04, A. Chapman 1.87), el total 7.5 pinta claramente bajo.",
+      "equipos": [
+        "TOR",
+        "BOS"
+      ],
+      "destacado": null,
+      "hora": "12:35 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "AZ/WSH: anti-inercia — AZ perdió ML y over ante WSH en la serie previa; hoy ambas ofensivas calientes y total 10.0 es lectura murky, sin valor limpio.",
+    "COL/MIL: Misiorowski dominante (1.57 ERA) pero MIL ML -350 fuera de rango y el Spread -1.5 es mi peor mercado (0-1, -1.0U); COL no está tan muerto (.761 vs derechos).",
+    "LAD/NYM: LAD elite (67-38) pero dos abridores flojos (5.13 y 5.01) hacen shootout de alta varianza y -154 paga caro.",
+    "CHC/PIT: CHC ofensiva caliente (7.0 c/j) pero su abridor Taillon 5.38 arruina la ventaja; PIT helado (.577 ops). Sin lado limpio.",
+    "SEA/TEX: dos buenos abridores (Gilbert, deGrom) pero TEX está caliente y con 8/10 overs, contradice el under 7.0.",
+    "HOU/CWS: Blanco 7.71 ERA demasiado volátil para respaldar HOU pick'em.",
+    "KC/DET: DET -192 fuera de rango y anti-inercia (perdió ante KC hace poco); ambas ofensivas frías.",
+    "CLE/TB: Messick 2.68 frena a TB pese a su bat caliente; -125 sin margen suficiente.",
+    "CIN/STL: under considerado (STL .576 ops) pero bullpens flojos (Pagán 5.31) restan seguridad; elegí TOR/BOS con cerradores elite.",
+    "ATL/BAL, LAA/SF, ATH/MIN: pick'ems o favoritos fuera de rango sin capa clara de valor."
+  ],
+  "autopsia": "El ATL Spread -1.5 fue buena lectura mal ejecutada: ATL ganó 6-5, el ML entraba y el -1.5 pidió de más — es mi peor mercado (0-1, -1.0U). El doble golpe AZ vs WSH (ML y over) sí fue fallo de proceso: insistir contra un rival que ya lo tenía medido. Hoy me apoyo en mi mejor mercado, los totales (9-3, +5.41U), evito el spread y por anti-inercia dejo fuera cualquier AZ o DET repetidos.",
+  "resumen": "Tres jugadas por 3.5 unidades, cargando a mi mercado más rentable. La principal es el under 8.0 de NYY/PHI: dos ofensivas heladas (3.0 c/j cada una), Sánchez dominante y bullpens de cierre elite. Sumo valor con SD +109, visitante caliente (7.3 c/j) ante un MIA hundido en 0-10, y cierro con el under 7.5 de TOR/BOS por dos bats fríos y el buen zurdo Suárez. Sin parlay hoy: no hay dos favoritos limpios y razonables en rango. Riesgo total 3.5U."
+}
