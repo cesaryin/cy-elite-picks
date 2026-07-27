@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "WSH ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -120,
+      "unidades": 1.5,
+      "razon": "WSH llega escupiendo fuego: .965 ops y 6.5 c/j en la semana (indice 108, vs derechos .763) frente a un M. Scherzer hundido en 10.23 ERA y 5.84 FIP. Enfrente TOR esta helado: 2.7 c/j, .623 ops y apenas .641 vs zurdos, justo contra el zurdo A. Alvarez (3.57 FIP). Forma 6-4 y 7.1 c/j contra 3-7 y 2.4. Convergencia clara de pitcheo + ofensiva + split + forma; el unico reparo es el bullpen local (5.59), mitigado por lo apagado del bate visitante.",
+      "equipos": [
+        "TOR",
+        "WSH"
+      ],
+      "destacado": "WSH",
+      "hora": "5:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "WSH",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "BAL/DET u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -109,
+      "unidades": 1.0,
+      "razon": "Duelo de abridores solidos y derechos: K. Bradish 3.49 y K. Montero 3.14. Las dos ofensivas caminan en ~4 c/j la ultima semana (BAL .714 y 4.0, DET .711 y 3.9) y ninguna castiga de mas al RHP (.719/.721). Tendencia de under fuerte (BAL 4/10 y DET 3/10 en o8.5) y bullpens finos (3.43 y 3.41). Es un under de verdad, con dos bates moderados, no un total bajo con ofensiva explosiva de por medio.",
+      "equipos": [
+        "BAL",
+        "DET"
+      ],
+      "destacado": null,
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "unidades": 1.0,
+      "razon": "MIL es el mejor equipo del beisbol (66-39) y llega bateando .851 ops con 5.5 c/j (vs derechos .761) contra un T. Mahle de 2-9 y 5.31 ERA. SF responde con ofensiva mediana (.687 ops) y B. Sproat (5.09) tampoco frena; ademas el bullpen de MIL (3.26, Megill 2.97) cierra mejor. Mejor equipo + ofensiva caliente + ventaja de relevo respaldan el ML pese a que ambos abridores son flojos.",
+      "equipos": [
+        "MIL",
+        "SF"
+      ],
+      "destacado": "MIL",
+      "hora": "8:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -186
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -175
+      }
+    ],
+    "cuota_combinada": 142,
+    "nota": "Dos favoritos con pitcheo dominante: Z. Wheeler (2.16) + J. Duran (1.29) contra un MIA en racha de 0-10 y helado (2.8 c/j); y BOS 8-2 con P. Tolle (3.31) + A. Chapman (1.87) frente a J. Perkins (6.75) y un ATH que regala 7.4 c/j. Combinada +142 con valor real."
+  },
+  "descartes": [
+    "SEA/TEX: Kirby es mejor abridor pero TEX batea caliente en casa (.797, 5.2 c/j) con Latz elite cerrando; SEA -136 con ofensiva fria (.696) no ofrece valor, es coin flip.",
+    "AZ/PIT: dos abridores flojos, AZ caliente pero con split vs derechos frio (.680, Keller R) y PIT helada (.596); total y ML sin lectura clara.",
+    "PHI/MIA: Wheeler aplasta a un MIA 0-10, pero PHI -186 esta fuera de rango y solo queda el spread -1.5 (mi peor mercado, -1.0U); lo aprovecho en el parlay.",
+    "CLE/CIN: Burns es elite (2.42) pero CLE tiene mejor bullpen y CIN esta helada (.598); CLE +138 falla SYS-002 (peor abridor), sin ventaja real.",
+    "ATL/NYM: ATL es mejor equipo, pero Z. Thornton (1.93, muestra minima) es una incognita y el bate de ATL es solo decente; valor inferior al de MIL.",
+    "NYY/CWS: Fried domina, pero la ofensiva de NYY esta congelada (.616, 3.5 c/j); riesgo SYS-004 aunque el matchup de zurdo ayude.",
+    "CHC/STL: CHC caliente vs STL helada, pero el abridor de STL viene null (pitcheo sin confirmar) y Peterson 5.97 mete varianza; demasiada incertidumbre.",
+    "HOU/LAA: precio de coin flip y Ureña (2.78) frena a HOU; sin margen de valor.",
+    "BOS/ATH: BOS claramente superior, lo llevo al parlay (ML -175) en vez de forzar el spread -1.5."
+  ],
+  "autopsia": "El ultimo cierre dejo una leccion nitida: el u8.0 de NYY/PHI fue fallo de proceso — poner under con la ofensiva de PHI de por medio es jugar contra fuego y se fueron a 11. El total bajo no respetaba ese poder ofensivo. En cambio SD ML y TOR/BOS u7.5 confirman mis dos terrenos ganadores: ML de favorito claro y unders con DOS ofensivas frias. Por eso hoy el u8.5 de BAL/DET se apoya en dos bates apagados de verdad (~4 c/j) y no en uno explosivo. Y respeto el auto-diagnostico: el spread es mi peor mercado (-1.0U), lo evito y me sostengo en ML (13-4, +7.78U) y totales (10-4, +4.84U).",
+  "resumen": "Dia de 3 picks MLB por 3.5U en total. La Elite es WSH ML (1.5U): ofensiva encendida contra un Scherzer hundido y un Toronto helado, la convergencia mas limpia del dia. Acompanan el u8.5 de BAL/DET (1.0U), un under de verdad con dos abridores buenos y dos bates moderados, y MIL ML (1.0U), el mejor equipo del beisbol con la ofensiva prendida ante un Mahle de 2-9. Aparte, un parlay opcional PHI + BOS a +142. Evito el spread, mi mercado mas flojo, y me concentro en ML de favorito solido y un total con respaldo real."
+}
