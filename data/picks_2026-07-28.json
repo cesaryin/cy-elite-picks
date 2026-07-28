@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -150,
+      "unidades": 1.5,
+      "razon": "Convergencia de 4 capas sin contradiccion mayor: J. Bennett (2.58 ERA, 3.58 FIP) zurdo domina y ATH batea solo .637 ops y 3.7 c/pj en la semana; ademas ATH permite 6.9 carreras/pj en sus ultimos 10 (pitcheo colapsado) frente a un G. Jump zurdo de 4.42, y BOS crushea zurdos (.780 vs zurdos), lo que compensa su .662 ops general. Bullpen elite con A. Chapman (1.82) y pen 3.27 vs pen ATH 4.84. Forma 8-2 vs 3-7.",
+      "equipos": [
+        "BOS",
+        "ATH"
+      ],
+      "destacado": "BOS",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -103,
+      "unidades": 1.0,
+      "razon": "Ofensiva de AZ encendida: .861 ops y 6.6 c/pj en la semana, contra un PIT congelado en .574 ops y 3.0 c/pj (K 59). Abridores parejos (B. Pfaadt 4.43 vs B. Chandler 4.47 con record 3-8), pero el bullpen de PIT es flojo (4.44) frente al 3.44 de AZ. A -103 (practicamente even) la brecha de forma ofensiva da valor claro.",
+      "equipos": [
+        "AZ",
+        "PIT"
+      ],
+      "destacado": "AZ",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CHC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -114,
+      "unidades": 1.0,
+      "razon": "Ofensiva de CHC ardiente: .817 ops y 6.7 c/pj en la semana, castigando ambas manos (.794 vs zurdos, .739 vs derechos). STL viene helado (.574 ops, 3.3 c/pj) y en caida libre 2-8 en sus ultimos 10, con bullpen 4.28 vs 3.85 de CHC. La enorme brecha ofensiva y de forma respalda el valor a -114.",
+      "equipos": [
+        "CHC",
+        "STL"
+      ],
+      "destacado": "CHC",
+      "hora": "6:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "SD ML",
+        "deporte": "MLB",
+        "destacado": "SD",
+        "cuota": -217
+      },
+      {
+        "pick": "ATL ML",
+        "deporte": "MLB",
+        "destacado": "ATL",
+        "cuota": -163
+      }
+    ],
+    "cuota_combinada": 136,
+    "nota": "Dos favoritos con mismatch claro: SD tiene a M. King (3.24) vs M. Lorenzen (6.53), ofensiva de 5.8 c/pj y a M. Miller (0.82) cerrando, ante un COL con bullpen 5.26 y forma 3-7. ATL manda a C. Sale zurdo elite (2.19) contra un NYM debil vs zurdos (.708) y de solo 45-62. Combinada +136 con valor."
+  },
+  "descartes": [
+    "MIL ML: anti-inercia dura, fue blanqueada 0-3 por SF ayer en la misma serie; no se repite sin ventaja nueva y fuerte.",
+    "TOR/WSH: WSH batea caliente (.918 ops) pero su bullpen 5.01 es el riesgo que ya costo el 2-3 de ayer vs TOR; anti-inercia me frena de repetir WSH.",
+    "TB ML -185, MIN -172, LAD -193, SD ML -217, ATL ML -163: fuera del rango de pick individual (-160 a +200); SD y ATL van al parlay.",
+    "PHI/MIA: A. Nola (5.82) inestable y MIA 1-9 pero favorito; PHI cayo ayer vs MIA (inercia). Sin lado limpio.",
+    "CLE/CIN u9: dos ofensivas frias, pero el abridor de CIN sin confirmar anade riesgo; no fuerzo el total.",
+    "NYY/CWS: NYY con ofensiva helada .598 ops y 3.7 c/pj (bandera SYS-004), no respaldo su ML pese a G. Cole.",
+    "BAL/DET: coin-flip; T. Melton 1.95 ERA es riesgo aunque su FIP 4.14 apunte a regresion.",
+    "HOU/LAA: linea casi pick-em (-111/-108), valor demasiado delgado.",
+    "ATL/NYM under 7.5: C. Sale invita al under pero ATL trae tendencia de over 7/10, descartado."
+  ],
+  "autopsia": "El cierre del 27-jul dejo matices: WSH ML cayo 2-3 vs TOR por una sola carrera (decision defendible que se fue por varianza/bullpen), pero MIL fue blanqueada 0-3 por SF, por eso hoy respeto el anti-inercia y NO repito MIL en la misma serie. El u8.5 de BAL/DET exploto a 13 carreras: mala lectura de total. Con el auto-diagnostico claro (spread mi peor mercado -1.0U, ML el mejor 12-6 +3.92U), hoy me apoyo en ML con valor real y evito el spread por completo.",
+  "resumen": "Dia apoyado en mi mejor mercado (ML) tras la racha negativa, priorizando mismatches limpios. Riesgo total 3.5U: BOS como jugada principal (1.5U) por su ventaja de pitcheo, bullpen y forma sobre un ATH hundido; AZ (1U) por su ofensiva encendida a precio casi even contra un PIT congelado; y CHC (1U) montado sobre la mayor brecha ofensiva del dia frente a un STL en caida libre. Aparte, un parlay opcional SD + ATL a +136 con dos favoritos solidos. Evito el spread (mi peor mercado) y el ML de MIL por anti-inercia."
+}

@@ -1299,6 +1299,39 @@
     ]
   },
   {
+    "fecha": "2026-07-26",
+    "pick": "NYY/PHI u8.0",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -114,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "NYY 4-11 PHI"
+  },
+  {
+    "fecha": "2026-07-26",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 109,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.09,
+    "marcador": "SD 5-3 MIA"
+  },
+  {
+    "fecha": "2026-07-26",
+    "pick": "TOR/BOS u7.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TOR 1-6 BOS"
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -1332,36 +1365,51 @@
     "marcador": "TB 12-2 TOR"
   },
   {
-    "fecha": "2026-07-26",
-    "pick": "NYY/PHI u8.0",
+    "fecha": "2026-07-27",
+    "pick": "WSH ML",
     "deporte": "MLB",
     "nivel": "oro",
-    "cuota": -114,
+    "cuota": -120,
     "unidades": 1.5,
     "resultado": "L",
     "neto_u": -1.5,
-    "marcador": "NYY 4-11 PHI"
+    "marcador": "TOR 3-2 WSH"
   },
   {
-    "fecha": "2026-07-26",
-    "pick": "SD ML",
+    "fecha": "2026-07-27",
+    "pick": "BAL/DET u8.5",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": 109,
+    "cuota": -109,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 1.09,
-    "marcador": "SD 5-3 MIA"
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "BAL 8-5 DET"
   },
   {
-    "fecha": "2026-07-26",
-    "pick": "TOR/BOS u7.5",
+    "fecha": "2026-07-27",
+    "pick": "MIL ML",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -108,
+    "cuota": -136,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TOR 1-6 BOS"
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIL 0-3 SF"
+  },
+  {
+    "fecha": "2026-07-27",
+    "pick": "PARLAY: PHI ML + BOS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 142,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "PHI 7-8 MIA / BOS 4-2 ATH",
+    "patas_res": [
+      "L",
+      "W"
+    ]
   }
 ]
