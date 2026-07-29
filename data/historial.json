@@ -1332,39 +1332,6 @@
     "marcador": "TOR 1-6 BOS"
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": null
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-07-27",
     "pick": "WSH ML",
     "deporte": "MLB",
@@ -1410,6 +1377,87 @@
     "patas_res": [
       "L",
       "W"
+    ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-07-28",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -150,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "BOS 3-4 ATH"
+  },
+  {
+    "fecha": "2026-07-28",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -103,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.97,
+    "marcador": "AZ 8-7 PIT"
+  },
+  {
+    "fecha": "2026-07-28",
+    "pick": "CHC ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.88,
+    "marcador": "CHC 10-2 STL"
+  },
+  {
+    "fecha": "2026-07-28",
+    "pick": "PARLAY: SD ML + ATL ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 136,
+    "unidades": 0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "COL 7-8 SD",
+    "patas_res": [
+      "W",
+      "P"
     ]
   }
 ]

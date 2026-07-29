@@ -1,0 +1,77 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CHC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -120,
+      "unidades": 1.5,
+      "razon": "Convergencia clara: la ofensiva de CHC llega ardiendo (.817 ops y 6.5 c/j en la semana) contra un D. May (R) con 4.59 ERA, y CHC batea .744 ops vs derechos. STL viene desplomado (2-8 en sus ultimos 10, apenas .582 ops y 3.4 c/j). M. Boyd (3.81) le da ventaja de abridor. El modelo apoya con 58.7% vs 54.5% implicito, sin contradiccion en las capas.",
+      "equipos": [
+        "CHC",
+        "STL"
+      ],
+      "destacado": "CHC",
+      "hora": "6:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 109,
+      "unidades": 1.0,
+      "razon": "Valor real de perro: E. Rodriguez (2.64 ERA) es claramente superior a J. Jones (3.72) y AZ trae la ofensiva mas caliente del dia (.870 ops, 6.9 c/j en la semana). PIT batea frio (.625 ops los ultimos 7 dias) y su bullpen es flojo (4.35). El modelo da 57% a AZ frente a 47.8% implicito, casi +10 puntos de ventaja pagando plus.",
+      "equipos": [
+        "AZ",
+        "PIT"
+      ],
+      "destacado": "AZ",
+      "hora": "11:35 AM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -135,
+      "unidades": 1.0,
+      "razon": "G. Rodriguez llega hundido con 8.54 ERA y LAA tiene una ofensiva muerta (.649 ops, 3.0 c/j en la semana). HOU llega 7-3 en sus ultimos 10 con Hader (1.23) cerrando y ofensiva funcional (5.0 c/j, 10 HR la semana). El modelo respalda con 61.6% vs 57.4% implicito.",
+      "equipos": [
+        "HOU",
+        "LAA"
+      ],
+      "destacado": "HOU",
+      "hora": "8:38 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "BOS ML vs ATH: anti-inercia, perdio ayer 3-4 contra el mismo rival y total 10.5 muy alto, sin justificacion nueva y fuerte.",
+    "MIL ML vs SF: perdio 0-3 hace dos dias contra el mismo rival; evito repetir por inercia.",
+    "NYY ML: abridor elite pero ofensiva helada (.591 ops la semana) y modelo solo 51.6%, sin valor a -149.",
+    "TEX/TB: ambos bullpens y cierres elite, mercado equilibrado (modelo 50/50), sin ventaja clara.",
+    "COL @ SD: abridor local sin dato, no evaluable con rigor."
+  ],
+  "autopsia": "Ayer BOS ML (-150) fue caro y cayo por una carrera ante ATH: pick de favorito cargado donde la seguridad ya estaba en el precio, justo el error que la memoria marca en oro (5-7, margen -13.3). Hoy corrijo apoyandome en valor real: un perro con edge medible (AZ +109) y favoritos moderados con convergencia fuerte, evitando repetir BOS y MIL por inercia. El spread sigue siendo mi peor mercado, por eso hoy no lo toco.",
+  "resumen": "Tres picks de MLB por valor real, 3.5U en riesgo total: CHC ML como jugada principal (ofensiva caliente vs equipo hundido), AZ ML como perro con ventaja de abridor y ofensiva encendida, y HOU ML contra un abridor destrozado. Evito favoritos cargados y el spread tras la racha reciente."
+}
