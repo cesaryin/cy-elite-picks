@@ -1380,39 +1380,6 @@
     ]
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": null
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-07-28",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -1459,5 +1426,71 @@
       "W",
       "P"
     ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-07-29",
+    "pick": "CHC ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -120,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "CHC 2-3 STL"
+  },
+  {
+    "fecha": "2026-07-29",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 109,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.09,
+    "marcador": "AZ 3-0 PIT"
+  },
+  {
+    "fecha": "2026-07-29",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -135,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.74,
+    "marcador": "HOU 7-4 LAA"
   }
 ]

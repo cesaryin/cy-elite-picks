@@ -1,0 +1,57 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "CHC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -103,
+      "unidades": 1.0,
+      "razon": "CHC llega con la ofensiva mas caliente del dia: .818 ops, 6.7 carreras/juego y 6 HR en la ultima semana, y .742 ops vs derechos justo cuando STL abre con Pallante (R). Enfrente, STL esta frio (.603 ops, 3.7 c/j). Assad (3.86) da un abridor solido y el modelo da 55.7% a CHC contra 50.7% implicito, edge real a cuota de pick'em. Aunque cayo ajustado ante STL, hoy cambia el abridor rival y el bat esta encendido, lo que justifica repetir.",
+      "equipos": [
+        "CHC",
+        "STL"
+      ],
+      "destacado": "CHC",
+      "hora": "1:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -117,
+      "unidades": 1.0,
+      "razon": "CWS en casa con ofensiva en forma (.711 ops, 5.2 c/j, 8 HR en la semana) y Burke (3.19 ERA, 3.66 FIP) frente a Weathers (4.25) y una ofensiva de NYY muy fria (.602 ops la ultima semana, 67 ponches). CWS batea .720 ops vs zurdos, matchup favorable ante el abridor L rival. El modelo apoya con 55.6% a CWS. Valor razonable a -117 en un juego que el mercado ve pick'em.",
+      "equipos": [
+        "NYY",
+        "CWS"
+      ],
+      "destacado": "CWS",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "TB ML -163: modelo (55.4%) por debajo del implicito (62%) y ofensiva local fria (.617 ops); TEX batea decente vs zurdos, sin valor claro.",
+    "MIN -143 y ATL -149: el modelo los da por debajo de su probabilidad implicita, favoritos caros sin edge.",
+    "BOS -179/-1.5: fuera de rango en ML, modelo por debajo del implicito y ademas acaba de perder ante ATH (anti-inercia).",
+    "SEA +130: modelo da edge pero la ofensiva de SEA esta fria y LAD batea .800 ops en casa; riesgo alto.",
+    "SF ML: abridor visitante sin definir (null), imposible evaluar el matchup.",
+    "PIT ML: Lowder es flojo pero la ofensiva de PIT tambien viene fria (.642 ops), edge del modelo demasiado corto."
+  ],
+  "autopsia": "El cierre anterior dejo dos ML de favorito que cayeron por una carrera (BOS 3-4 ATH, CHC 2-3 STL): decisiones defendibles perdidas por margen minimo, no fallos de proceso. La leccion dura sigue siendo el oro (4-8, -7.12U): pagaba favoritos obvios sin margen sobre la cuota. Hoy no fuerzo oro, evito el spread (mi peor mercado, -1.0U) y me apoyo en ML donde el modelo marca edge REAL sobre el implicito, no solo en el favorito mas 'seguro'.",
+  "resumen": "Dia selectivo tras la mala racha: dos ML con ventaja del modelo sobre la cuota. CHC (1U) con la ofensiva mas caliente ante un STL frio, y CWS (1U) en casa con bat en forma y mejor abridor frente a un NYY apagado. Sin oro ni parlay hoy por falta de convergencia perfecta y de favoritos con valor. Riesgo total: 2 unidades."
+}
