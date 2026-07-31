@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -147,
+      "unidades": 1.0,
+      "razon": "C. Mize (2.70 ERA, 3.13 FIP) domina frente a J. Springs, zurdo con ERA 6.23 y FIP 5.54. La ofensiva de DET llega caliente (.812 ops y 6.0 carreras/juego en la semana) y el bullpen de ATH es flojo (4.78). El modelo da 65.9% a DET vs 59.5% implícito, edge claro. Único matiz: DET vs zurdos temporada .685, por eso no sube a Elite.",
+      "equipos": [
+        "DET",
+        "ATH"
+      ],
+      "destacado": "DET",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "PIT ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -125,
+      "unidades": 1.0,
+      "razon": "P. Skenes (3.65 ERA, 3.12 FIP) es claramente superior a H. Greene (7.06 ERA en muestra corta) y CIN llega frío (.632 ops y 2.9 carreras/juego la última semana, con 89 K). El modelo da 56.2% a PIT sobre 55.6% implícito. La ventaja de abridor es real, no nominal, y respalda el ML de perro/pickem.",
+      "equipos": [
+        "PIT",
+        "CIN"
+      ],
+      "destacado": "PIT",
+      "hora": "5:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PIT",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIA/NYM o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -107,
+      "unidades": 1.0,
+      "razon": "Duelo de abridores mediocres: J. Junk (4.89) vs F. Peralta (4.99), ambos con FIP >4.3. Se suman bullpens vulnerables, con el cerrador de MIA P. Fairbanks en 6.75. MIA reparte poder (.743 ops y 10 HR en 7 juegos) y NYM impulsa 4.9 carreras/juego en casa. Contexto favorable a que la línea de 8.5 se supere.",
+      "equipos": [
+        "MIA",
+        "NYM"
+      ],
+      "destacado": null,
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "SEA ML",
+        "deporte": "MLB",
+        "destacado": "SEA",
+        "cuota": -173
+      },
+      {
+        "pick": "TOR ML",
+        "deporte": "MLB",
+        "destacado": "TOR",
+        "cuota": -187
+      }
+    ],
+    "cuota_combinada": 142,
+    "nota": "Dos favoritos con ventaja de abridor y rival apagado: B. Miller (2.75) frente a una ofensiva de MIN fría (.614 ops), y D. Cease (2.46) con bullpen élite (Varland 0.98) ante un STL congelado (.576 ops)."
+  },
+  "descartes": [
+    "MIL ML -181 y jugable solo LAA: MIL fuera de rango y LAA +149 sin respaldo ofensivo suficiente.",
+    "TB ML -142: el modelo (54.6%) da MENOS que el implícito (58.7%), alerta de precio caro pese a Martinez.",
+    "HOU ML -131: modelo 55.4% por debajo del 56.7% implícito, sin valor real.",
+    "SD ML -150: modelo 56.4% inferior al 60% implícito, favorito cargado sin margen.",
+    "KC/COL o11.0: línea inflada en Coors; modelo 10.78 queda por debajo y KC llega frío.",
+    "WSH ML -102: ofensiva caliente pero bullpen 5.04 frente a Iglesias/ATL, coin flip sin ventaja clara.",
+    "Todos los spread evitados: es mi peor mercado (-1.0U) y no hay ventaja clara hoy."
+  ],
+  "autopsia": "El CHC ML del 30-jul entró y confirma que apoyarse en ventaja de abridor + ofensiva funcional es el camino; el ML sigue siendo mi mejor mercado (+6.42U). Las pérdidas recientes de oro (BOS -150, CHC -120) fueron favoritos caros que ganaban poco margen: hoy evito forzar Elite y priorizo edges medidos por el modelo. Sigo esquivando el spread, que es mi único mercado en rojo.",
+  "resumen": "Día enfocado en ML con ventaja real de abridor: DET (Mize vs Springs) y PIT (Skenes) como platas de 1U cada una, más un bronce al over de MIA/NYM por abridores y bullpens flojos. Sin Elite hoy por disciplina tras el mal tramo del oro. Riesgo total: 3.0 unidades, más un parlay opcional SEA+TOR que no cuenta en el balance."
+}
