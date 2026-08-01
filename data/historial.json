@@ -1461,6 +1461,28 @@
     "marcador": "HOU 7-4 LAA"
   },
   {
+    "fecha": "2026-07-30",
+    "pick": "CHC ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -103,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.97,
+    "marcador": "CHC 4-2 STL"
+  },
+  {
+    "fecha": "2026-07-30",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -117,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.85,
+    "marcador": "NYY 1-2 CWS"
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -1494,25 +1516,51 @@
     "marcador": "TB 12-2 TOR"
   },
   {
-    "fecha": "2026-07-30",
-    "pick": "CHC ML",
+    "fecha": "2026-07-31",
+    "pick": "DET ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -103,
+    "cuota": -147,
     "unidades": 1.0,
     "resultado": "W",
-    "neto_u": 0.97,
-    "marcador": "CHC 4-2 STL"
+    "neto_u": 0.68,
+    "marcador": "DET 13-1 ATH"
   },
   {
-    "fecha": "2026-07-30",
-    "pick": "CWS ML",
+    "fecha": "2026-07-31",
+    "pick": "PIT ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -125,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "PIT 7-8 CIN"
+  },
+  {
+    "fecha": "2026-07-31",
+    "pick": "MIA/NYM o8.5",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -117,
+    "cuota": -107,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.85,
-    "marcador": "NYY 1-2 CWS"
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIA 5-2 NYM"
+  },
+  {
+    "fecha": "2026-07-31",
+    "pick": "PARLAY: SEA ML + TOR ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 142,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIN 5-3 SEA / STL 1-3 TOR",
+    "patas_res": [
+      "L",
+      "W"
+    ]
   }
 ]

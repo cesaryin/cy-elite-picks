@@ -1,0 +1,78 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -149,
+      "unidades": 1.0,
+      "razon": "DET llega con el bate encendido: ultimos 7 dias .895 ops y 7.8 carreras/pj, y enfrenta a J. Perkins (6.45 ERA, FIP 4.35) respaldado por un bullpen ATH pesimo (5.15). ATH ademas viene apagado (.597 ops, 3.0 c/pj). El modelo da 63.3% a DET vs 59.8% implicito, apoyando el valor. Convergencia ofensiva+pitcheo rival+bullpen rival.",
+      "equipos": [
+        "DET",
+        "ATH"
+      ],
+      "destacado": "DET",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 139,
+      "unidades": 1.0,
+      "razon": "Perro con valor: MIN 7-3 en sus ultimos 10 con ofensiva funcional vs derechos (.747 ops) frente a L. Gilbert (R). SEA esta hundido (2-8 L10, 3.3 c/pj) y Prielipp (4.73) es batible. El modelo da 48.1% a MIN vs solo 41.8% implicito, edge claro sobre una cuota de perro.",
+      "equipos": [
+        "MIN",
+        "SEA"
+      ],
+      "destacado": "MIN",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 141,
+      "unidades": 1.0,
+      "razon": "Valor en el perro: TB esta en congelacion ofensiva total (.584 ops, 2.0 carreras/pj ultimos 6) mientras CWS pega (12 HR y 4.9 c/pj en la semana). J. Hicks (3.19) iguala el duelo de abridores. El modelo da 53.0% a CWS contra apenas 41.4% implicito, la mayor brecha del dia; riesgo por el bullpen elite de TB, por eso bronce.",
+      "equipos": [
+        "CWS",
+        "TB"
+      ],
+      "destacado": "CWS",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "PHI ML -149: el modelo da 49.3% (menos que el 59.8% implicito), avisa de que el mercado lo tiene caro pese a Sanchez; sin valor.",
+    "CLE ML -175: ofensiva local helada (.492 ops, 2.2 c/pj), cuota cargada sin margen.",
+    "NYY/CHC: pick'em real, NYY con bate frio (.603 ops); sin edge medible.",
+    "TEX ML -128: modelo 51.9% < 56.1% implicito y HOU 9-1 muy caliente pese a Blanco; sin valor.",
+    "CWS/TB u7.5: dos buenos abridores pero CWS batea (4.9 c/pj), no hay under limpio.",
+    "F5 en cualquier juego: es mi peor mercado del historial (-1.0U), sin ventaja clara hoy."
+  ],
+  "autopsia": "El cierre del 31-jul fue mayormente varianza: PIT cayo 7-8 por una sola carrera (juego moneda, decision razonable) y el o8.5 MIA/NYM murio porque el pitcheo aguanto (5-2). El parlay SEA+TOR fue el error de proceso: apilar dos favoritos correlacionados que ya venia fallando. Hoy me apoyo en ML (mi mercado ganador, +5.18U) buscando edge real del modelo, evito el F5 (-1.0U) y no fuerzo oro tras el 3-8 en Elite.",
+  "resumen": "Dia con tres jugadas de valor en MLB por 3 unidades totales: DET ML y dos perros con edge del modelo (MIN y CWS). Sin jugada Elite por disciplina tras la mala racha en oro, y sin parlay por falta de patas limpias en rango."
+}
