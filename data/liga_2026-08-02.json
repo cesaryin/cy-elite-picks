@@ -1,0 +1,194 @@
+{
+ "fecha": "2026-08-02",
+ "rpg": 4.496,
+ "era": 4.183,
+ "pf": {
+  "SF": 97.1,
+  "NYM": 104.7,
+  "MIL": 98.1,
+  "CHC": 100.6,
+  "BAL": 98.9,
+  "CIN": 97.8,
+  "HOU": 97.2,
+  "SD": 92.3,
+  "STL": 92.8,
+  "PHI": 107.7,
+  "LAD": 95.8,
+  "SEA": 93.6,
+  "TOR": 101.2,
+  "MIA": 92.4,
+  "ATL": 101.5,
+  "KC": 104.7,
+  "AZ": 102.3,
+  "WSH": 105.1,
+  "DET": 98.1,
+  "NYY": 106.6,
+  "BOS": 98.5,
+  "CWS": 97.3,
+  "TEX": 97.2,
+  "CLE": 103.4,
+  "MIN": 93.3,
+  "COL": 107.4,
+  "PIT": 106.4,
+  "LAA": 90.5,
+  "ATH": 125.3,
+  "TB": 98.9
+ },
+ "pf_detalle": {
+  "SF": {
+   "pf": 97.1,
+   "bruto": 93.8,
+   "juegos": 53
+  },
+  "NYM": {
+   "pf": 104.7,
+   "bruto": 109.8,
+   "juegos": 54
+  },
+  "MIL": {
+   "pf": 98.1,
+   "bruto": 96.0,
+   "juegos": 54
+  },
+  "CHC": {
+   "pf": 100.6,
+   "bruto": 101.2,
+   "juegos": 54
+  },
+  "BAL": {
+   "pf": 98.9,
+   "bruto": 97.7,
+   "juegos": 53
+  },
+  "CIN": {
+   "pf": 97.8,
+   "bruto": 95.4,
+   "juegos": 54
+  },
+  "HOU": {
+   "pf": 97.2,
+   "bruto": 94.2,
+   "juegos": 55
+  },
+  "SD": {
+   "pf": 92.3,
+   "bruto": 83.8,
+   "juegos": 55
+  },
+  "STL": {
+   "pf": 92.8,
+   "bruto": 84.3,
+   "juegos": 51
+  },
+  "PHI": {
+   "pf": 107.7,
+   "bruto": 116.1,
+   "juegos": 55
+  },
+  "LAD": {
+   "pf": 95.8,
+   "bruto": 91.2,
+   "juegos": 55
+  },
+  "SEA": {
+   "pf": 93.6,
+   "bruto": 86.6,
+   "juegos": 55
+  },
+  "TOR": {
+   "pf": 101.2,
+   "bruto": 102.6,
+   "juegos": 53
+  },
+  "MIA": {
+   "pf": 92.4,
+   "bruto": 84.1,
+   "juegos": 55
+  },
+  "ATL": {
+   "pf": 101.5,
+   "bruto": 103.1,
+   "juegos": 56
+  },
+  "KC": {
+   "pf": 104.7,
+   "bruto": 110.0,
+   "juegos": 53
+  },
+  "AZ": {
+   "pf": 102.3,
+   "bruto": 105.0,
+   "juegos": 53
+  },
+  "WSH": {
+   "pf": 105.1,
+   "bruto": 110.7,
+   "juegos": 55
+  },
+  "DET": {
+   "pf": 98.1,
+   "bruto": 96.0,
+   "juegos": 54
+  },
+  "NYY": {
+   "pf": 106.6,
+   "bruto": 114.7,
+   "juegos": 49
+  },
+  "BOS": {
+   "pf": 98.5,
+   "bruto": 96.8,
+   "juegos": 54
+  },
+  "CWS": {
+   "pf": 97.3,
+   "bruto": 94.3,
+   "juegos": 55
+  },
+  "TEX": {
+   "pf": 97.2,
+   "bruto": 94.1,
+   "juegos": 53
+  },
+  "CLE": {
+   "pf": 103.4,
+   "bruto": 107.1,
+   "juegos": 55
+  },
+  "MIN": {
+   "pf": 93.3,
+   "bruto": 86.0,
+   "juegos": 55
+  },
+  "COL": {
+   "pf": 107.4,
+   "bruto": 115.4,
+   "juegos": 55
+  },
+  "PIT": {
+   "pf": 106.4,
+   "bruto": 113.5,
+   "juegos": 55
+  },
+  "LAA": {
+   "pf": 90.5,
+   "bruto": 80.0,
+   "juegos": 54
+  },
+  "ATH": {
+   "pf": 125.3,
+   "bruto": 152.8,
+   "juegos": 55
+  },
+  "TB": {
+   "pf": 98.9,
+   "bruto": 97.5,
+   "juegos": 52
+  }
+ },
+ "fuente": {
+  "rpg": "real",
+  "era": "real",
+  "pf": "real (30 parques)"
+ }
+}

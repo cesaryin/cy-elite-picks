@@ -1,0 +1,78 @@
+{
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -115,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor real: K. Montero (3.34 ERA) sobre G. Jump (4.00) y bullpen mas fiable (3.57 vs 4.90 de ATH). La ofensiva de Detroit llega encendida (.939 ops y 8.8 carreras_pj en la semana) frente a un ATH ultimo en su division. El modelo da 61.5% a DET vs ~53.5% implicito, apoyo claro al valor. Unico matiz: DET rinde menos vs zurdos (.690 ops), por eso no sube a Elite.",
+      "equipos": [
+        "DET",
+        "ATH"
+      ],
+      "destacado": "DET",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 152,
+      "unidades": 1.0,
+      "razon": "Perro con valor puro: J. Bennett (2.74 ERA, zurdo) supera con claridad a E. Sheehan (4.95). Boston llega 8-2 en sus ultimos 10 con ofensiva funcional (.756 ops, 4.9 carreras_pj) y bullpen elite con A. Chapman (1.67) para cerrar. El modelo da 54.6% a BOS cuando el mercado solo le asigna ~39.7% (+152), una brecha de valor grande a favor del visitante.",
+      "equipos": [
+        "BOS",
+        "LAD"
+      ],
+      "destacado": "BOS",
+      "hora": "6:20 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 144,
+      "unidades": 1.0,
+      "razon": "Arizona llega caliente (7-3, 6.0 carreras_pj y .753 ops en la semana) contra un Cleveland con la ofensiva congelada (.606 ops, 3.5 carreras_pj). El modelo favorece al perro con 51.3% frente a ~41% implicito (+144), señal de que el mercado sobrevalora a CLE. Ofensiva funcional respalda el ML de valor; el bullpen de CLE es el contrapeso, por eso queda como tercer pick.",
+      "equipos": [
+        "AZ",
+        "CLE"
+      ],
+      "destacado": "AZ",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CIN ML -156: C. Burns domina, pero el modelo da solo 55% (implicito 61%), avisa de que el mercado lo tiene caro; sin valor.",
+    "MIA ML -123: el modelo favorece a NYM (52.3%) pese al abridor local desconocido; contradiccion, se evita.",
+    "MIL ML -232: fuera de rango de cuota y demasiado cargado para ser rentable.",
+    "HOU ML -142: buen matchup pero modelo (59.6%) casi igual al implicito (58.7%), margen minimo, sin valor.",
+    "NYY/CHC: ofensiva de NYY fria (.601 ops) y modelo muy parejo; sin ventaja clara.",
+    "CWS/TB: anti-inercia (CWS ML perdio 0-1 ante TB ayer) y TB con bateo congelado hace el juego impredecible."
+  ],
+  "autopsia": "El ultimo cierre (1-ago) fueron dos ML de perro (CWS y MIN) que cayeron por UNA sola carrera: decisiones defendibles tumbadas por varianza, no fallos de proceso. Aun asi, hoy no repito CWS/TB por inercia. Refuerzo lo que la memoria marca como fuerte: el ML es mi mejor mercado (+3.85U) y evito el Spread (-1.0U). Priorizo perros/favoritos ligeros donde el modelo me da ventaja numerica sobre el precio.",
+  "resumen": "Tres jugadas de moneyline con respaldo del modelo y valor sobre la cuota: DET y BOS como picks solidos (1U cada uno) y AZ como tercer pick de valor (1U). Riesgo total 3 unidades, todo en ML —mi mercado mas rentable— y sin parlay ni spreads en una jornada donde toca ser mas selectivo por la racha negativa."
+}
