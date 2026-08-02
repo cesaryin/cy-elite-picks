@@ -1,13 +1,34 @@
 {
   "picks": [
     {
+      "nivel": "oro",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -142,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas sin contradiccion: (1) ventaja real de abridor, P. Lambert 3.06 ERA (FIP 4.03) contra K. Rocker 4.03 ERA y 4-8; (2) SYS-004 cumplido con holgura: Houston batea .273 con ops .858 y 5.8 carreras/juego en la ultima semana y su split vs derechos es .746, mientras Texas llega helado (.201, ops .646, 3.3 c/j y 73 ponches en 7 juegos) justo contra un derecho; (3) forma 9-1 en los ultimos 10 con 5.8 anotadas por juego frente a 4-6 del rival; (4) cierre asegurado: bullpen 3.45 con J. Hader 1.17 de ERA, superior al de Texas en momentos de alta leverage. El modelo da 59.6% a HOU frente al 58.7% implicito de la cuota, sin alerta de contradiccion, y el precio queda en la banda -145/-115 donde el sistema es rentable.",
+      "equipos": [
+        "TEX",
+        "HOU"
+      ],
+      "destacado": "HOU",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
       "nivel": "plata",
       "pick": "DET ML",
       "deporte": "MLB",
       "tipo": "ML",
-      "cuota": -115,
+      "cuota": -114,
       "unidades": 1.0,
-      "razon": "Ventaja de abridor real: K. Montero (3.34 ERA) sobre G. Jump (4.00) y bullpen mas fiable (3.57 vs 4.90 de ATH). La ofensiva de Detroit llega encendida (.939 ops y 8.8 carreras_pj en la semana) frente a un ATH ultimo en su division. El modelo da 61.5% a DET vs ~53.5% implicito, apoyo claro al valor. Unico matiz: DET rinde menos vs zurdos (.690 ops), por eso no sube a Elite.",
+      "razon": "Precio de casi moneda para un desajuste claro: Detroit llega con la ofensiva mas caliente del dia (.332 de average, ops .939 y 8.8 carreras por juego en 6 encuentros, 10 jonrones) contra un bullpen de Oakland de 4.90 de ERA que es el peor de la cartelera, y K. Montero (3.34) supera a G. Jump (4.00). ATH viene 2-8 con 6.5 carreras permitidas por juego. El modelo respalda con 61.5% a DET frente al 53.3% implicito, un margen de 8 puntos a favor. Unico matiz que lo deja fuera del nivel maximo: DET tiene ops .690 vs zurdos de temporada y Jump lanza con la izquierda, por eso 1U y no mas.",
       "equipos": [
         "DET",
         "ATH"
@@ -22,57 +43,56 @@
       }
     },
     {
-      "nivel": "plata",
-      "pick": "BOS ML",
-      "deporte": "MLB",
-      "tipo": "ML",
-      "cuota": 152,
-      "unidades": 1.0,
-      "razon": "Perro con valor puro: J. Bennett (2.74 ERA, zurdo) supera con claridad a E. Sheehan (4.95). Boston llega 8-2 en sus ultimos 10 con ofensiva funcional (.756 ops, 4.9 carreras_pj) y bullpen elite con A. Chapman (1.67) para cerrar. El modelo da 54.6% a BOS cuando el mercado solo le asigna ~39.7% (+152), una brecha de valor grande a favor del visitante.",
-      "equipos": [
-        "BOS",
-        "LAD"
-      ],
-      "destacado": "BOS",
-      "hora": "6:20 PM CT",
-      "resolucion": {
-        "mercado": "ml",
-        "equipo": "BOS",
-        "lado": null,
-        "linea": null
-      }
-    },
-    {
       "nivel": "bronce",
-      "pick": "AZ ML",
+      "pick": "TB team total u3.5",
       "deporte": "MLB",
-      "tipo": "ML",
-      "cuota": 144,
+      "tipo": "team total u3.5",
+      "cuota": 111,
       "unidades": 1.0,
-      "razon": "Arizona llega caliente (7-3, 6.0 carreras_pj y .753 ops en la semana) contra un Cleveland con la ofensiva congelada (.606 ops, 3.5 carreras_pj). El modelo favorece al perro con 51.3% frente a ~41% implicito (+144), señal de que el mercado sobrevalora a CLE. Ofensiva funcional respalda el ML de valor; el bullpen de CLE es el contrapeso, por eso queda como tercer pick.",
+      "razon": "Ataque de Tampa en congelacion total: .184 de average, ops .532 y 1.7 carreras por juego en sus ultimos 6, con 46 ponches; en sus ultimos 10 promedia 2.9 anotadas. Enfrenta al zurdo A. Kay (4.25) y su split vs zurdos (.686 ops) es notablemente peor que vs derechos (.748). Detras, el bullpen de Chicago es el mejor del dia por ERA (3.11) con G. Taylor 2.47, asi que el cierre tampoco regala carreras. Pagando +111 por que un lineup que promedia menos de 2 carreras no llegue a 4, el precio esta claramente por encima de la probabilidad real. Evito el ML de CWS por anti-inercia tras la derrota de ayer en esta misma serie.",
       "equipos": [
-        "AZ",
-        "CLE"
+        "CWS",
+        "TB"
       ],
-      "destacado": "AZ",
+      "destacado": "TB",
       "hora": "12:40 PM CT",
       "resolucion": {
-        "mercado": "ml",
-        "equipo": "AZ",
-        "lado": null,
-        "linea": null
+        "mercado": "team_total",
+        "equipo": "TB",
+        "lado": "under",
+        "linea": 3.5
       }
     }
   ],
-  "parlay": null,
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIL ML",
+        "deporte": "MLB",
+        "destacado": "MIL",
+        "cuota": -232
+      },
+      {
+        "pick": "PIT Spread +1.5",
+        "deporte": "MLB",
+        "destacado": "PIT",
+        "cuota": -175
+      }
+    ],
+    "cuota_combinada": 125,
+    "nota": "Milwaukee (69-41) manda a J. Misiorowski (1.58 ERA, 2.61 FIP) contra unos Angels con ops .576 y 2.8 carreras por juego en la semana y 2-8 en sus ultimos 10; ademas MIL batea .784 de ops y 5.2 c/j. La segunda pata no pide que Pittsburgh gane: solo que no pierda por 2 o mas ante C. Burns, con un lineup que castiga a derechos (.779 ops en ese split, 4.4 c/j en 7 juegos) y un bullpen de Cincinnati con cerrador de 4.63. No cuenta en el balance.",
+    "cuota_combinada_nota": null
+  },
   "descartes": [
-    "CIN ML -156: C. Burns domina, pero el modelo da solo 55% (implicito 61%), avisa de que el mercado lo tiene caro; sin valor.",
-    "MIA ML -123: el modelo favorece a NYM (52.3%) pese al abridor local desconocido; contradiccion, se evita.",
-    "MIL ML -232: fuera de rango de cuota y demasiado cargado para ser rentable.",
-    "HOU ML -142: buen matchup pero modelo (59.6%) casi igual al implicito (58.7%), margen minimo, sin valor.",
-    "NYY/CHC: ofensiva de NYY fria (.601 ops) y modelo muy parejo; sin ventaja clara.",
-    "CWS/TB: anti-inercia (CWS ML perdio 0-1 ante TB ayer) y TB con bateo congelado hace el juego impredecible."
+    "CWS ML +124: el modelo le da 54% y hay valor teorico, pero perdio ayer 0-1 contra este mismo rival y la regla anti-inercia lo bloquea; el valor lo tomo por el team total de TB.",
+    "LAA ML +188: fuera de la banda rentable (+140 o mas no tiene evidencia de funcionar) y con ofensiva en ops .576.",
+    "BOS ML +152: buen abridor (J. Bennett 2.74) y 8-2 reciente, pero precio fuera de la zona validada y LAD batea .786 vs derechos... el zurdo Bennett choca con ese split solo parcialmente; sin convergencia limpia.",
+    "PHI ML -136: Z. Wheeler es el mejor abridor del dia, pero Philadelphia viene 2-8 en 10 juegos y el modelo solo le da 51.1% frente al 57.6% implicito: contradiccion grande, descartado.",
+    "KC/COL o11.5: dos bullpens de 4.96 y 5.20 invitan al over, pero la linea ya esta inflada a 11.5 y no hay margen de precio.",
+    "AZ ML +144 y CLE ML -175: uno fuera de banda por arriba, el otro paga menos de lo que vale con Cleveland bateando ops .606 en la semana.",
+    "STL/TOR: M. Scherzer con 9.49 de ERA tienta el over, pero San Luis promedia 2.1 carreras por juego en 7 encuentros; capas contradictorias, sin pick."
   ],
-  "autopsia": "El ultimo cierre (1-ago) fueron dos ML de perro (CWS y MIN) que cayeron por UNA sola carrera: decisiones defendibles tumbadas por varianza, no fallos de proceso. Aun asi, hoy no repito CWS/TB por inercia. Refuerzo lo que la memoria marca como fuerte: el ML es mi mejor mercado (+3.85U) y evito el Spread (-1.0U). Priorizo perros/favoritos ligeros donde el modelo me da ventaja numerica sobre el precio.",
-  "resumen": "Tres jugadas de moneyline con respaldo del modelo y valor sobre la cuota: DET y BOS como picks solidos (1U cada uno) y AZ como tercer pick de valor (1U). Riesgo total 3 unidades, todo en ML —mi mercado mas rentable— y sin parlay ni spreads en una jornada donde toca ser mas selectivo por la racha negativa."
+  "autopsia": "Las dos derrotas del ultimo cierre (MIN +139 y CWS +141, este ultimo por 0-1) tienen la misma raiz y no es mala suerte: me fui a perros de +140 o mas, justo la banda donde el historial no muestra ninguna evidencia de rentabilidad. CWS incluso fue una decision acertable que cayo por una carrera, pero el precio no compensaba el riesgo. Hoy corrijo el CRITERIO de precio, no el mercado: la Elite va en -142, dentro de la zona donde el sistema acierta el 61%, y el unico perro que juego es un team total under de +111 con respaldo estadistico extremo, no un ML de perro caro. Tambien mantengo la disciplina del bronce y la plata, que son los niveles que estan sosteniendo el balance mientras el oro se corrige.",
+  "resumen": "Dia de tres jugadas con 3.5 unidades en riesgo. La principal es Houston en casa ante Texas: mejor abridor, ofensiva encendida (5.8 carreras por juego) contra un lineup visitante helado y Hader cerrando, todo a un precio razonable. Complemento con Detroit, que llega bateando .332 y 8.8 carreras por juego frente al peor bullpen del dia, y con el under del team total de Tampa Bay, que promedia 1.7 carreras por juego en su ultima semana y encima enfrenta a un zurdo que le sienta mal. Evito por completo los perros de precio alto que costaron el ultimo cierre. El parlay va aparte y no toca el balance.",
+  "riesgo_total_unidades": 3.5
 }
