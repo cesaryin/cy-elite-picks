@@ -1595,5 +1595,53 @@
     "resultado": "W",
     "neto_u": 0.93,
     "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-02",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -142,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.06,
+    "marcador": "TEX 3-7 HOU"
+  },
+  {
+    "fecha": "2026-08-02",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.88,
+    "marcador": "DET 11-0 ATH"
+  },
+  {
+    "fecha": "2026-08-02",
+    "pick": "TB team total u3.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 111,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.11,
+    "marcador": "CWS 9-1 TB"
+  },
+  {
+    "fecha": "2026-08-02",
+    "pick": "PARLAY: MIL ML + PIT Spread +1.5",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 125,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIL 0-3 LAA / PIT 2-10 CIN",
+    "patas_res": [
+      "L",
+      "L"
+    ]
   }
 ]

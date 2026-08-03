@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "STL/NYY u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -119,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia de cuatro capas sin contradicción. Pitcheo: C. Schlittler llega con 2.04 de ERA y 2.95 de FIP, y M. McGreevy sostiene 3.57 con FIP 4.25 aceptable. Bullpens: NYY 2.57 con D. Bednar (2.61, 24 saves) y STL 3.77 con R. O'Brien (3.43, 26 saves), es decir el cierre también está blindado. Ofensiva (SYS-004): las dos están heladas, STL con .589 de ops y 2.4 carreras/juego y NYY con .565 de ops y 3.4 carreras/juego en la semana, ambos con muchísimos ponches (50 y 69). Tendencia: STL 2/10 y NYY 3/10 en overs de 8.5, y en sus últimos 10 NYY promedia 3.2 a favor y 3.3 en contra. La línea de 8.0 a -119 cae en la banda de precio donde el sistema sí gana. Nota: la línea del mercado es 8.0, se juega el under a partir de ahí.",
+      "equipos": [
+        "STL",
+        "NYY"
+      ],
+      "destacado": null,
+      "hora": "6:05 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SF ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 104,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor real y no nominal: L. Webb (3.93 ERA, 3.66 FIP) contra un abridor de TEX aún sin confirmar, así que el único pitcheo medible del partido está del lado de SF. Ofensiva funcional a favor: SF viene con .720 de ops y 4.9 carreras/juego en la semana (8 HR) y batea .738 de ops vs derechos, mientras TEX está frío con .648 de ops y 3.1 carreras/juego con 74 ponches en 7 juegos. Bullpen SF 3.38, muy parejo al 3.45 local, así que no hay desventaja en el cierre. El modelo da 54.2% a SF frente a 49% implícito de +104: perro-favorito real cobrando plus.",
+      "equipos": [
+        "SF",
+        "TEX"
+      ],
+      "destacado": "SF",
+      "hora": "7:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SF",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -132,
+      "unidades": 1.0,
+      "razon": "Ofensiva claramente superior y en llamas: HOU con .305 de avg, .909 de ops, 6.5 carreras/juego y 9 HR en la semana, y .749 de ops vs derechos, justo lo que necesita frente a S. Bieber (5.74 ERA, 5.15 FIP). Enfrente TOR apenas suma .689 de ops y 3.8 carreras/juego. Forma 9-1 en sus últimos 10 con 6.0 carreras a favor y localía. El cierre lo sostiene el bullpen de 3.44 con J. Hader (1.17). El riesgo asumido es C. Javier (7.17 ERA en muestra corta, aunque su FIP 4.62 dice menos daño), por eso va como tercer pick y no más arriba; el precio -132 está en la banda rentable del sistema.",
+      "equipos": [
+        "TOR",
+        "HOU"
+      ],
+      "destacado": "HOU",
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "NYY ML",
+        "deporte": "MLB",
+        "destacado": "NYY",
+        "cuota": -217
+      },
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -174
+      }
+    ],
+    "cuota_combinada": 130,
+    "nota": "NYY manda a C. Schlittler (2.04 ERA, 2.95 FIP) con bullpen de 2.57 contra un STL con .589 de ops y 2.4 carreras/juego. TB tiene la ventaja de pitcheo más grande del día: I. Seymour (4.37) frente a M. Lorenzen (6.54) y un bullpen rival de 5.20 con J. Romano en 5.74, contra los 3.96 de TB y B. Baker (1.45, 31 saves) para cerrar."
+  },
+  "descartes": [
+    "WSH/PHI: PHI -175 fuera de rango y el abridor visitante no está confirmado; WSH +144 choca con SYS-004 (ofensiva de .663 de ops y 3.3 carreras/juego).",
+    "PIT/MIL: dos abridores flojos (5.05 y 4.56) pero ofensivas frías (3.3 y 3.6 carreras/juego) matan el over, y ambos ML ya fallaron por inercia reciente; sin capa nueva, fuera.",
+    "LAD/CHC: CHC +104 es tentador con M. Boyd (3.41), pero el abridor de LAD no está publicado y el bullpen de CHC (4.32) es el peor punto del partido; se descarta por falta de convergencia.",
+    "SD/AZ: mercado prácticamente 50-50 (-102/-118) y el modelo también (50.6/49.4); sin edge no se apuesta.",
+    "TB/COL en Coors: total de 11.5 y bullpen local de 5.20 hacen ruidoso cualquier lado; TB -174 queda fuera de banda para pick, se aprovecha solo en parlay."
+  ],
+  "autopsia": "El último cierre salió 3-0 con HOU ML, DET ML y el team total u3.5 de TB: los tres nacieron de cruzar ofensiva reciente con el abridor rival, y ese es el filtro que repito hoy. El parlay sí fue fallo de proceso: MIL ML entró por inercia después de haber perdido ya con ese mismo equipo, y el Spread +1.5 de PIT era pedirle margen a un lineup que promedia 3.6 carreras. Corrección concreta: en los totales no me voy al over solo porque los abridores sean malos, exijo también bullpens permisivos, y por eso hoy la Elite es un under con dos cerradores de menos de 2.70 detrás. El oro va 3-7 por pagar de más en favoritos cargados, así que hoy la jugada grande está a -119 y no en la zona peor de -140.",
+  "resumen": "Tres jugadas con 3.5 unidades en riesgo total: la principal es el under 8.5 en Yankee Stadium (1.5U) con dos abridores en forma, bullpens de élite y las dos ofensivas heladas; SF a plus con L. Webb contra un TEX frío (1U); y HOU en casa con el lineup más caliente del día frente a S. Bieber (1U). Aparte, el parlay informativo NYY + TB a +130, que no afecta el balance."
+}
