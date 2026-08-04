@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 113,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia en el precio correcto. Capa 1 (ofensiva, SYS-004): Detroit llega con el mejor lineup del dia — .340 de average, 1.001 de ops, 11.0 carreras por juego y 11 jonrones en sus ultimos 5, y .739 de ops vs derechos, justo la mano de E. Hancock. Capa 2 (rival): Seattle es la ofensiva mas floja de este grupo (ops .689 de temporada, indice 96) y viene con 3.9 carreras a favor y 5.3 en contra en sus ultimos 10, ademas de un split pobre vs zurdos. Capa 3 (bullpen): los relevos estan igualados (3.57 vs 3.57), asi que el desempate lo pone el bate, no el cierre. Capa 4 (precio/modelo): el modelo da 56.1% a Detroit contra apenas 47% implicito en +113 — el perro de linea es en realidad el mejor equipo del duelo hoy y la cuota esta dentro de la banda rentable del sistema.",
+      "equipos": [
+        "DET",
+        "SEA"
+      ],
+      "destacado": "DET",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "KC team total u3.5",
+      "deporte": "MLB",
+      "tipo": "team total u3.5",
+      "cuota": 111,
+      "unidades": 1.0,
+      "razon": "Kansas City no esta impulsando: 2.8 carreras por juego y .689 de ops en sus ultimos 6, y 2.9 carreras a favor en sus ultimos 10 con record 3-7. Enfrente tiene a J. Ryan (3.52 ERA, 3.67 FIP), el abridor mas consistente del juego, y detras un bullpen de Minnesota en 3.64 con Gomez cerrando en 3.42 — no hay via facil ni contra el abridor ni en el cierre. Pagando +111 para un equipo cuya media real de anotacion ronda las 3 carreras, el precio esta por encima de la probabilidad; evito el ML de Minnesota porque el modelo lo contradice (51.2% a KC frente al 59% implicito del favorito) y ataco el lado del juego donde los datos si son claros.",
+      "equipos": [
+        "MIN",
+        "KC"
+      ],
+      "destacado": "KC",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "KC",
+        "lado": "under",
+        "linea": 3.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYM team total u3.5",
+      "deporte": "MLB",
+      "tipo": "team total u3.5",
+      "cuota": -125,
+      "unidades": 1.0,
+      "razon": "La ofensiva de los Mets esta en caida libre: .176 de average, .486 de ops, 1.8 carreras por juego y 54 ponches en sus ultimos 6 partidos, con un indice ofensivo de 95 en temporada. Enfrente J. Cantillo (3.88 ERA, 4.00 FIP) y, sobre todo, el bullpen mas fiable del dia: Cleveland en 3.29 con C. Smith cerrando en 2.45 y 30 salvamentos, asi que las entradas finales tampoco ofrecen alivio. Mismo motivo por el que no toco el ML de Cleveland (-153 queda fuera de la banda de precio rentable y su propio bate viene irregular): el valor esta en limitar la anotacion de Nueva York, no en pagar de mas por el ganador.",
+      "equipos": [
+        "NYM",
+        "CLE"
+      ],
+      "destacado": "NYM",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "NYM",
+        "lado": "under",
+        "linea": 3.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -275
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -214
+      }
+    ],
+    "cuota_combinada": 100,
+    "nota": "Filadelfia manda a J. Luzardo (3.57 ERA, 3.35 FIP) contra Z. Littell (4.94 ERA, 5.50 FIP) y respalda con bullpen 3.91 y J. Duran en 1.93; Washington carga ademas un bullpen en 4.92. Los Dodgers ponen a T. Skubal (2.79 ERA, 3.11 FIP) con su lineup en .783 de ops y 4.4 carreras por juego la ultima semana. Dos ventajas de abridor claras que solas quedan fuera del rango jugable; combinadas pagan +100 con valor.",
+    "nota_extra": null
+  },
+  "descartes": [
+    "BOS ML -130: el modelo le da 51.6% frente a 56.5% implicito y su split vs derechos (.686) choca con el bate caliente reciente; contradiccion que impide el pick.",
+    "MIN ML -144: bullpen de KC en 5.30 invita, pero el modelo da 51.2% a Kansas City, contradiccion mayor de 8 puntos.",
+    "SF ML +167: TEX esta helado (2.3 c/j, .570 ops) y el modelo da 56% a San Francisco, pero B. Tidwell casi no tiene muestra y la banda +140 o mas no ha demostrado rentabilidad en el sistema.",
+    "COL ML +143 en Coors: el modelo la respalda (58.6%), pero es un equipo 45-68 con bullpen en 5.49; riesgo sin respaldo estructural.",
+    "MIL/PIT u7.5: dos buenos abridores, pero ambos lineups tienen sus mejores splits precisamente vs derechos (.774 y .753), lo que debilita el under.",
+    "ATL ML -145 y CLE ML -153: precio por encima de la probabilidad que dan modelo y capas; se paga de mas por la seguridad.",
+    "TB ML -162: fuera del rango jugable y con Peralta (4.99) en Coors."
+  ],
+  "autopsia": "Del ultimo cierre, HOU y DET ML y el team total under de TB fueron decisiones limpias: gane por lineup real y por bullpen, no por nombre. El fallo de proceso reciente esta claro en la memoria: MIN a +139 y CWS a +141 fueron perros caros de una banda que no ha demostrado nada (0-1 en +140 o mas), y el oro va 2-7 justamente por precios mal elegidos, no por analisis flojo. Hoy corrijo el CRITERIO de precio: la Elite se queda en la banda medida como rentable y solo si el modelo la acompana, y ademas dejo de amontonar ML — dos de los tres picks son team totals donde el dato ofensivo es inequivoco. El parlay tambien lo aprieto: 0-4 acumulado y venia armado con favoritos tibios; hoy exijo ventaja de abridor evidente en las dos patas."
+}

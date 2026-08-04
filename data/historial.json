@@ -1564,39 +1564,6 @@
     "marcador": "CWS 0-1 TB"
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": null
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-08-02",
     "pick": "HOU ML",
     "deporte": "MLB",
@@ -1642,6 +1609,87 @@
     "patas_res": [
       "L",
       "L"
+    ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "STL/NYY u8.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -119,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "SF ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 104,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -132,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": null
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "PARLAY: NYY ML + TB ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 130,
+    "unidades": 0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "",
+    "patas_res": [
+      "P",
+      "P"
     ]
   }
 ]
