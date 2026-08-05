@@ -1582,6 +1582,54 @@
     ]
   },
   {
+    "fecha": "2026-08-03",
+    "pick": "STL/NYY u8.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -119,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "STL 13-7 NYY"
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "SF ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 104,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.04,
+    "marcador": "SF 5-1 TEX"
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -132,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TOR 3-1 HOU"
+  },
+  {
+    "fecha": "2026-08-03",
+    "pick": "PARLAY: NYY ML + TB ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 130,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "STL 13-7 NYY / TB 13-9 COL",
+    "patas_res": [
+      "L",
+      "W"
+    ]
+  },
+  {
     "fecha": "2026-06-22",
     "pick": "CHC ML",
     "deporte": "MLB",
@@ -1661,53 +1709,5 @@
     "resultado": "W",
     "neto_u": 0.93,
     "marcador": "TB 12-2 TOR"
-  },
-  {
-    "fecha": "2026-08-03",
-    "pick": "STL/NYY u8.5",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -119,
-    "unidades": 1.5,
-    "resultado": "L",
-    "neto_u": -1.5,
-    "marcador": "STL 13-7 NYY"
-  },
-  {
-    "fecha": "2026-08-03",
-    "pick": "SF ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": 104,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 1.04,
-    "marcador": "SF 5-1 TEX"
-  },
-  {
-    "fecha": "2026-08-03",
-    "pick": "HOU ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -132,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "TOR 3-1 HOU"
-  },
-  {
-    "fecha": "2026-08-03",
-    "pick": "PARLAY: NYY ML + TB ML",
-    "deporte": "Parlay",
-    "nivel": "parlay",
-    "cuota": 130,
-    "unidades": 0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "STL 13-7 NYY / TB 13-9 COL",
-    "patas_res": [
-      "L",
-      "W"
-    ]
   }
 ]
