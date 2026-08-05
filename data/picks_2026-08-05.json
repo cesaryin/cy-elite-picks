@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -118,
+      "unidades": 1.5,
+      "razon": "Convergencia de cuatro capas sin contradicción: (1) abridor, C. Mize 2.70 ERA y FIP 3.13 contra M. Bratt 5.23 ERA / 5.10 FIP en su primer tramo de temporada (0-1); (2) bullpen, San Diego 2.85 con M. Miller (0.76, 28 saves) frente a un relevo de Arizona con cerrador quemado (P. Sewald 6.28), es decir la ventaja crece en el cierre; (3) ofensiva funcional: SD llega con 4.6 carreras/juego y ops .707 en la semana y viene 8-2 en sus últimos 10 con 5.2 anotadas y 3.5 recibidas; (4) matchup de mano: Mize es derecho y Arizona batea solo .229 con ops .677 vs derechos en la temporada, su punto débil. El modelo apoya con 58.3% para SD contra 54.1% implícito de -118, y el precio está en la banda donde el sistema sí gana (-115 a +100).",
+      "equipos": [
+        "SD",
+        "AZ"
+      ],
+      "destacado": "SD",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 138,
+      "unidades": 1.0,
+      "razon": "Perro con ofensiva claramente funcional, que es lo que exige SYS-002/004: Detroit lleva 9.8 carreras por juego, avg .315, ops .950 y 11 HR en la última semana, y batea .248/.743 vs derechos (B. Woo es derecho). Enfrente, Seattle está apagado: ops .626 y 3.0 carreras/juego en 6 partidos, con ops .702 vs derechos y forma de 3.5 anotadas y 5.6 recibidas en sus últimos 10. Los abridores están casi igualados (Anderson 4.24 / FIP 3.99 vs Woo 4.56) y los bullpens también (3.93 vs 3.90), así que la diferencia real la pone el lineup. El modelo da 60.3% a Detroit frente a solo 42% implícito en +138: es el mayor desajuste del día, aunque el precio queda fuera de la banda ideal de la Elite y lo juego a 1U.",
+      "equipos": [
+        "DET",
+        "SEA"
+      ],
+      "destacado": "DET",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYM/CLE u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.0",
+      "cuota": -117,
+      "unidades": 1.0,
+      "razon": "Under construido con las cuatro piezas que exige un total, no con proyecciones: abridores buenos por ambos lados (C. Scott 2.99 ERA/3.77 FIP y T. Bibee 3.81/4.47), bullpen local de élite (Cleveland 3.24 con C. Smith 2.45 y 30 saves) y dos ofensivas pobres — Mets con ops .545 y 2.4 carreras/juego en la semana e índice ofensivo 95 de temporada, Cleveland índice 94 y solo .691 de ops vs derechos, que es la mano de Scott. La tendencia lo confirma: los Mets solo han pasado de 8.5 en 2 de 10 y Cleveland en 3 de 10, con 4.2/3.0 y 3.1/4.5 de carreras a favor y contra. El riesgo es el bullpen de NY (4.12 con D. Williams a 4.30), por eso va a 1U y no más.",
+      "equipos": [
+        "NYM",
+        "CLE"
+      ],
+      "destacado": null,
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "HOU ML",
+        "deporte": "MLB",
+        "destacado": "HOU",
+        "cuota": -181
+      },
+      {
+        "pick": "CLE Spread +1.5",
+        "deporte": "MLB",
+        "destacado": "CLE",
+        "cuota": -181
+      }
+    ],
+    "cuota_combinada": 141,
+    "nota": "Houston tiene la mayor brecha de abridor del día (H. Brown 3.42 vs J. Taillon 5.92 y FIP 5.89), viene 8-2 con 5.4 anotadas y su lineup está en llamas (6.3 c/j, ops .934), mientras Toronto llega con ops .633 y 3.2 c/j; además J. Hader cierra a 1.17. La segunda pata usa el mismo argumento del under: los Mets están anotando 2.4 carreras por juego y Cleveland tiene bullpen 3.24 en casa, así que un margen de más de una carrera en contra es improbable.",
+    "nota_extra": null
+  },
+  "descartes": [
+    "TB @ COL: total 12 en Coors y ML de TB a -158 fuera de la banda rentable; el bullpen de Colorado (5.51) invita al over pero la línea ya lo paga todo.",
+    "WSH @ PHI: Painter con 6.72 ERA hace inviable el ML de PHI a -186 y Washington llega con ops .599 y 2.3 c/j, así que ni el over ni el perro tienen respaldo real.",
+    "CWS @ BOS: dos abridores de ERA sub-3.05 y bullpens 3.05/2.79 apuntaban al u8.5, pero Boston lleva 7.2 carreras/juego con 15 HR en 6 juegos: contradicción mayor, no lo toco.",
+    "PIT @ MIL: Skenes vs Harrison con ambas ofensivas frías (.571 y .661 de ops) ya está reflejado en un total de 7.0; sin margen.",
+    "LAD @ CHC: Lauer 4.50/FIP 5.38 y bullpen LAD 4.00 contra CHC que batea .792 vs zurdos; el mercado a -122 no deja valor y el modelo apenas separa (57.4%).",
+    "SF @ TEX: el abridor local no tiene ERA registrada, dato insuficiente para una capa de pitcheo fiable."
+  ],
+  "autopsia": "Del último cierre, el KC team total u3.5 fue fallo de proceso: apoyé un under de equipo sin mirar que el rival abría flojo, y el 8-2 no fue mala suerte; el NYM u3.5 sí era decisión defendible que cayó por varianza. El diagnóstico es claro: mis oro (3-8) están cayendo por pagar de más o irme a perros de +139/+141 sin ofensiva que respalde, mientras plata y bronce (19-11) ganan en la banda de precio razonable. Hoy corrijo el criterio, no el mercado: la Elite va a una cuota de -118 con abridor, bullpen, forma y split de mano alineados, y el perro caliente de +138 baja a 1U aunque el modelo lo ame. Los parlays van 0-6, así que dejo de apilar dos favoritos de gustito y meto una pata de colchón (+1.5) apoyada en bullpen.",
+  "resumen": "Día largo de MLB y tres jugadas con riesgo total de 3.5 unidades: San Diego a moneyline como jugada principal (mejor abridor, mejor bullpen, mejor forma y el matchup de mano a favor), Detroit como perro con la ofensiva más caliente de la liga frente a un Seattle apagado, y el under 8 en Cleveland con dos abridores sólidos y dos lineups improductivos. El parlay informativo combina Houston con el spread de Cleveland para +141."
+}
