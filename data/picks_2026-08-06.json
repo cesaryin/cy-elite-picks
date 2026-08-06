@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "ATL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -140,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia de cuatro capas en el precio correcto (-140, la mejor banda del sistema). Abridores: M. Pérez 3.24 ERA en casa contra J. Junk 4.58 (fip 4.26), ventaja real y no nominal. Bullpen: ATL 3.08 con R. Iglesias (2.63, 24 saves) frente a un relevo de MIA de 4.27 y un cerrador roto (P. Fairbanks 6.37) — el cierre del juego pesa a favor del local. Ofensiva funcional (SYS-004): ATL viene con .803 ops y 5.2 carreras/juego en la semana y sostiene .705 ops vs zurdos... el lineup impulsa; MIA está frío con .614 ops y 3.0 carreras/juego y solo .705 vs zurdos, justo lo que abre hoy. Forma: ATL 8-2 en sus últimos 10 (4.0 a favor / 3.3 contra) contra un MIA que anota 3.8. El modelo apoya con 60.1% a ATL sobre 58.3% implícito, sin contradicción. Sin conflicto entre capas: es la jugada más sólida del día.",
+      "equipos": [
+        "MIA",
+        "ATL"
+      ],
+      "destacado": "ATL",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "ATL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 116,
+      "unidades": 1.0,
+      "razon": "Valor de precio con justificación NUEVA respecto al juego anterior de la serie: hoy cambia el matchup de manos. SEA batea .648 ops vs zurdos (su peor split) y enfrenta a F. Valdez (L), mientras DET llega con la ofensiva más caliente del board: .310 avg, .936 ops, 8.4 carreras/juego y 11 HR en 5 juegos, con 7.6 carreras a favor en sus últimos 10. SEA en cambio está en 3.3 carreras/juego y .674 ops, y su bullpen (3.93) no es mejor que el de DET (3.94). B. Miller (2.80) es la capa contraria y por eso no es Elite, pero a +116 (46.3% implícito) el modelo da 55.6% a DET: nueve puntos de sobra en el lado del perro con la mejor ofensiva del día.",
+      "equipos": [
+        "DET",
+        "SEA"
+      ],
+      "destacado": "DET",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "LAA team total u3.5",
+      "deporte": "MLB",
+      "tipo": "team total u3.5",
+      "cuota": 112,
+      "unidades": 1.0,
+      "razon": "Aquí el valor no está en el ML (BAL -183 es caro) sino en el bate visitante, y va justificado con abridor + bullpen + ofensiva, no con la proyección de total. LAA está en colapso ofensivo: .179 avg, .489 ops, 1.8 carreras/juego y 56 K en 5 juegos, y solo 2.5 carreras a favor en sus últimos 10 (2-8). Enfrenta a B. Young (3.31 ERA, 8-2, fip 4.03) y su split vs derechos es apenas .688 ops. Detrás, el bullpen de BAL (4.12) con A. Kittredge no es elite pero tampoco tiene que serlo contra un lineup que no llega a 2 carreras por juego. A +112 el mercado pide solo 47% a que LAA no pase de 3 carreras; con su ritmo actual esa probabilidad es claramente mayor.",
+      "equipos": [
+        "LAA",
+        "BAL"
+      ],
+      "destacado": "LAA",
+      "hora": "11:35 AM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "LAA",
+        "lado": "under",
+        "linea": 3.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BAL ML",
+        "deporte": "MLB",
+        "destacado": "BAL",
+        "cuota": -183
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -177
+      }
+    ],
+    "cuota_combinada": 142,
+    "nota": "Dos favoritos con ventaja de abridor y bullpen medibles, no elegidos por ser favoritos. BAL: B. Young 3.31 (8-2) contra R. Johnson 7.63 ERA (fip 5.36) y un LAA con .489 ops y 1.8 carreras/juego en la semana. BOS: R. Suárez 3.15 (fip 3.06) más el mejor cierre del board (bullpen 2.77, A. Chapman 1.67 y 27 saves) y una ofensiva de 7.2 carreras/juego con .876 ops y 14 HR en 6 juegos, contra L. Castillo 5.06 y un CWS en .594 ops. Sueltas quedan fuera del rango jugable; combinadas a +142 sí pagan más que su probabilidad. No cuenta en el balance.",
+    "cuota_combinada_": null
+  },
+  "descartes": [
+    "TOR ML -112 con D. Cease (2.41) parecía obvio, pero SYS-004 lo tumba: TOR está en .585 ops, 3.2 carreras/juego y .632 vs zurdos justo contra un abridor zurdo; sin ofensiva no hay ML.",
+    "BOS ML -177 y PHI ML -314 quedan fuera del rango de cuota jugable; BOS Spread -1.5 a +108 pide 48% de cubrir por 2+, demasiado ajustado para arriesgar unidades.",
+    "NYM/CLE: el ML está en línea con el modelo (53% vs 53.5% implícito) y el u8.5 de esta serie ya se pagó con 11 carreras; sin edge, fuera.",
+    "SD/AZ es un coin flip real (-108/-112) con un abridor sin historial (K. Drake, 0-0); nada que explotar.",
+    "PIT/MIL: MIL -124 sin respaldo ofensivo (3.3 carreras/juego y .653 ops) y PIT peor todavía (.575 ops); dos lineups fríos con bullpens casi idénticos, se descarta.",
+    "MIN +111 tienta por el bullpen de KC (4.94 con L. Erceg en 6.37), pero M. Wacha (3.51) sobre B. Ober (4.45) y MIN en .193 avg dejan el edge demasiado fino para un pick.",
+    "WSH/PHI: total 9.0 con la proyección infladísima (11.3) y sin capa clara; el modelo de total no sirve para elegir over/under y aquí no hay otro apoyo."
+  ],
+  "autopsia": "Del último cierre, DET ML (2-4) fue una decisión defendible que se cayó por dos carreras contra un buen abridor: proceso correcto, margen mínimo. SD ML (4-10) sí fue mal proceso: compré un favorito de precio sin exigirle a su ofensiva ni al parque. Y el u8.5 de NYM/CLE confirma el patrón del diagnóstico: mis totales van 4-8 porque los justifico con abridores y me olvido del bullpen y del ritmo real de carreras. Hoy corrijo el criterio, no el mercado: el único total que doy es de un solo equipo, con abridor rival, bullpen y ofensiva de 1.8 carreras/juego apuntando al mismo lado, y bajo la exposición en la banda de +100/+140 donde el sistema apenas empata.",
+  "resumen": "Tres jugadas en MLB por 3.5 unidades de riesgo total. La principal es Atlanta en casa: mejor abridor, mucho mejor bullpen, ofensiva en racha y Miami frío, todo a un precio razonable de -140. Añado Detroit como perro a +116 porque Seattle es el peor equipo del día contra zurdos y Detroit llega con 8.4 carreras por juego, y el bate de los Angels bajo 3.5 carreras a +112 con un lineup que promedia 1.8. Fuera quedan Toronto (buen pitcheo, lineup apagado) y todos los coin flips sin edge.",
+  "parlay_nota": null
+}

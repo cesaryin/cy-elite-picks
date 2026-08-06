@@ -1630,6 +1630,54 @@
     ]
   },
   {
+    "fecha": "2026-08-04",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 113,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.69,
+    "marcador": "DET 8-0 SEA"
+  },
+  {
+    "fecha": "2026-08-04",
+    "pick": "KC team total u3.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 111,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIN 2-8 KC"
+  },
+  {
+    "fecha": "2026-08-04",
+    "pick": "NYM team total u3.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -125,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "NYM 6-2 CLE"
+  },
+  {
+    "fecha": "2026-08-04",
+    "pick": "PARLAY: PHI ML + LAD ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 100,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "WSH 0-5 PHI / LAD 1-5 CHC",
+    "patas_res": [
+      "W",
+      "L"
+    ]
+  },
+  {
     "fecha": "2026-06-22",
     "pick": "CHC ML",
     "deporte": "MLB",
@@ -1711,50 +1759,50 @@
     "marcador": "TB 12-2 TOR"
   },
   {
-    "fecha": "2026-08-04",
-    "pick": "DET ML",
+    "fecha": "2026-08-05",
+    "pick": "SD ML",
     "deporte": "MLB",
     "nivel": "oro",
-    "cuota": 113,
+    "cuota": -118,
     "unidades": 1.5,
-    "resultado": "W",
-    "neto_u": 1.69,
-    "marcador": "DET 8-0 SEA"
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "SD 4-10 AZ"
   },
   {
-    "fecha": "2026-08-04",
-    "pick": "KC team total u3.5",
+    "fecha": "2026-08-05",
+    "pick": "DET ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": 111,
+    "cuota": 138,
     "unidades": 1.0,
     "resultado": "L",
     "neto_u": -1.0,
-    "marcador": "MIN 2-8 KC"
+    "marcador": "DET 2-4 SEA"
   },
   {
-    "fecha": "2026-08-04",
-    "pick": "NYM team total u3.5",
+    "fecha": "2026-08-05",
+    "pick": "NYM/CLE u8.5",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -125,
+    "cuota": -117,
     "unidades": 1.0,
     "resultado": "L",
     "neto_u": -1.0,
-    "marcador": "NYM 6-2 CLE"
+    "marcador": "NYM 6-5 CLE"
   },
   {
-    "fecha": "2026-08-04",
-    "pick": "PARLAY: PHI ML + LAD ML",
+    "fecha": "2026-08-05",
+    "pick": "PARLAY: HOU ML + CLE Spread +1.5",
     "deporte": "Parlay",
     "nivel": "parlay",
-    "cuota": 100,
+    "cuota": 141,
     "unidades": 0,
     "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "WSH 0-5 PHI / LAD 1-5 CHC",
+    "marcador": "TOR 5-4 HOU / NYM 6-5 CLE",
     "patas_res": [
-      "W",
+      "L",
       "L"
     ]
   }
