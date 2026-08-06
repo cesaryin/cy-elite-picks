@@ -13,11 +13,19 @@ permissions:
   pages: write
   id-token: write
 
-# Solo un deploy a la vez; un push nuevo cancela el anterior
-# (asi nunca se acumulan despliegues en cola).
+# Un deploy a la vez, PERO SIN CANCELAR el que ya esta corriendo.
+#
+# OJO (bug del 6-ago-2026): antes esto tenia cancel-in-progress: true. Cuando
+# llegaban dos disparos casi a la vez -el push del motor y el "auto-rescate"
+# que el propio motor lanzaba 2 minutos despues- el segundo CANCELABA al
+# primero, y como el primero ya habia creado el deployment en Pages, el segundo
+# moria con "Deployment cancelled". Resultado: ninguno terminaba y la web se
+# quedaba sin actualizar. Es justo lo contrario de lo que se buscaba.
+# GitHub recomienda false para Pages precisamente por esto: los despliegues se
+# ENCOLAN y el ultimo gana, en vez de matarse entre ellos.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
