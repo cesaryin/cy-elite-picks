@@ -1805,5 +1805,53 @@
     "resultado": "W",
     "neto_u": 0.93,
     "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-06",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -140,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.07,
+    "marcador": "MIA 3-11 ATL"
+  },
+  {
+    "fecha": "2026-08-06",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 116,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.16,
+    "marcador": "DET 11-0 SEA"
+  },
+  {
+    "fecha": "2026-08-06",
+    "pick": "LAA team total u3.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 112,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "LAA 4-1 BAL"
+  },
+  {
+    "fecha": "2026-08-06",
+    "pick": "PARLAY: BAL ML + BOS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 142,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "LAA 4-1 BAL / CWS 11-12 BOS",
+    "patas_res": [
+      "L",
+      "W"
+    ]
   }
 ]

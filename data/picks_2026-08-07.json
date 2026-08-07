@@ -1,0 +1,80 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -102,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas sin contradiccion. Pitcheo: D. Rasmussen (2.91 ERA, 10-5, FIP 3.35) supera a L. Gilbert (3.46, FIP 3.64). Bullpen: 3.54 de Tampa con B. Baker (1.42, 32 saves) frente al 4.06 de Seattle con A. Muñoz (3.89) cerrando, es decir la ventaja crece en las entradas 6-9. Ofensiva funcional (SYS-004): TB llega con .711 ops y 4.8 carreras por juego en la semana y batea .263/.755 vs derechos, que es justo la mano de Gilbert; Seattle esta helado (.656 ops, 3.0 c/j) y va 4-6 con 5.8 carreras en contra en sus ultimos 10, mientras TB va 7-3. El modelo da 55.3% a Tampa contra 50.5% implicito en la cuota, o sea el mercado esta cobrando un pick'em por el mejor equipo del duelo: la cuota cae en la mejor banda historica del sistema (-115 a +100).",
+      "equipos": [
+        "TB",
+        "SEA"
+      ],
+      "destacado": "TB",
+      "hora": "8:45 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -121,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor y de lineup a la vez. K. Montero llega con 3.17 ERA y 8-6, y San Francisco todavia no anuncia abridor, lo que ya es una desventaja estructural para el local. Ofensiva (SYS-004): Detroit esta en su mejor momento del año con .322 avg, .947 ops y 8.8 carreras por juego en los ultimos 6, y batea .248/.745 vs derechos; SF esta apagado con .615 ops y 3.0 c/j y solo 4-6 en sus ultimos 10. El modelo da 61.4% a Detroit contra 54.8% implicito, apoyo claro y precio dentro de la banda rentable. No lo llevo a oro por el abridor local sin confirmar, que introduce incertidumbre real.",
+      "equipos": [
+        "DET",
+        "SF"
+      ],
+      "destacado": "DET",
+      "hora": "9:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -126,
+      "unidades": 1.0,
+      "razon": "Desequilibrio grande en el montículo: R. Ray (3.08 ERA, 10-6) contra R. Blanco (7.36 ERA, 0-1, FIP 4.96). Bullpen: San Diego tiene el mejor del dia con 2.77 de ERA colectiva y M. Miller (0.74, 28 saves), asi que la ventaja se sostiene los nueve innings. Ofensiva funcional: los Padres vienen con 5.3 carreras por juego y .744 ops en la semana; Houston batea bien en general (.913 ops semanal) pero cae a .234/.703 vs zurdos, que es la mano de Ray. El modelo da 59.4% a SD contra 55.7% implicito. Es bronce y no mas porque el bate visitante esta caliente y puede castigar cualquier error.",
+      "equipos": [
+        "HOU",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CLE ML -136: Messick (2.57) domina a Schultz (5.82) en el papel, pero el modelo da 54.3% cuando la cuota exige 57.6% y CLE batea apenas .223/.655 vs zurdos, justo la mano del rival. Contradiccion, fuera.",
+    "ATL +137 en Yankee Stadium: T. Mahle (5.13 ERA) es el peor abridor del duelo frente a M. Fried (3.12) y ATL cae a .712 ops vs zurdos; el modelo favorece a NYY. Sin valor.",
+    "TEX -147: BAL viene con .618 ops y 2.5 carreras por juego, pero el modelo da solo 52.7% frente a 59.5% implicito. Pagar de mas por un favorito, descartado.",
+    "CIN/WSH y CHC/KC: abridor visitante sin confirmar, no se puede sostener un analisis de pitcheo (SYS-001).",
+    "PIT team total u4.5 (-139): la linea tienta con un lineup en .578 ops, pero el bullpen visitante es 3.99 y el under de team total es exactamente donde el sistema lleva perdiendo (LAA u3.5 cerro en 4). No repito el patron sin margen.",
+    "BOS Spread -1.5: el matchup es total (Perkins 6.72, bullpen ATH 4.93, BOS con 8.3 c/j) pero la probabilidad de ganar por 2+ queda demasiado cerca del 56.7% que exige la cuota. Analisis a favor, margen insuficiente.",
+    "MIL -182, PHI -206, LAD -186, CHC -163: todos fuera de rango o con el modelo por debajo de la implicita.",
+    "Totales del dia: ningun juego pasa el filtro de cuatro puntos (bullpen, parque, ofensivas calientes, carga del abridor); no fuerzo un over/under."
+  ],
+  "autopsia": "Del ultimo cierre, los dos ML (ATL y DET) fueron decisiones limpias que ganaron por matchup de abridor y lineup caliente: ese es el proceso que funciona y el que repito hoy. El LAA team total u3.5 no fue mala suerte: cerro en 4 carreras, fallo por una, y el patron ya se repite (KC u3.5 cerro en 8, NYM u3.5 en 6) — estoy poniendo la linea del under por debajo de lo que la ofensiva real produce. La correccion de hoy es de criterio, no de mercado: no firmo ningun under sin que el bullpen contrario este quemado Y las dos ofensivas frias; hoy ninguno lo cumple, asi que no hay totales. Y el parlay va en null porque solo encontre una pata con precio decente: combinar favoritos sin ventaja propia es como llevo 0-8.",
+  "resumen": "Dia de tres jugadas y 3.5 unidades en riesgo, todas de moneyline porque ahi esta el valor real hoy y ningun total pasa el filtro. La principal es Tampa Bay en Seattle a pick'em: mejor abridor, bullpen bastante mejor y un lineup local congelado. Detroit acompaña con su bateo mas caliente del año y un abridor sin confirmar del otro lado, y San Diego cierra la noche con Robbie Ray frente a un abridor de 7.36 de efectividad y el mejor bullpen de la jornada. Sin parlay: no hubo dos patas con ventaja propia, y combinar favoritos por ser favoritos es tirar informacion."
+}
