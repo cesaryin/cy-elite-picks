@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -101,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas y a precio de valor. Ofensiva: TB llega con .749 ops y 5.0 carreras por juego en la semana y batea .755 de ops vs derechos, justo la mano de G. Kirby; SEA en cambio va con .642 ops y 2.7 carreras por juego y solo .700 vs derechos, ante G. Jax (3.63). Pitcheo parejo (3.63 vs 3.76 de ERA, FIP 4.06 vs 3.77), asi que el desempate lo pone el bullpen: 3.55 de TB con B. Baker (1.59, 33 saves) frente a 3.99 de SEA con A. Muñoz en 3.89, y con linea de 7 carreras cada entrada tardia pesa doble. Forma 7-3 contra 4-6 y SEA recibiendo 5.3 carreras por juego. El modelo da 54.3% a TB frente al 50.2% implicito de -101: valor real en la mejor banda historica del sistema (-115 a +100), sin pagar sobreprecio por un favorito.",
+      "equipos": [
+        "TB",
+        "SEA"
+      ],
+      "destacado": "TB",
+      "hora": "8:50 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "ATL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor REAL, no nominal: C. Sale 2.08 de ERA y 2.95 de FIP contra G. Cole en 3.42 (FIP 3.88). La capa ofensiva la respalda: ATL viene con .848 ops y 5.5 carreras por juego en la semana con 12 jonrones, mientras NYY esta en .199 de average, .657 ops y 2.8 carreras por juego con 57 ponches, y solo .722 de ops vs zurdos, que es exactamente lo que enfrenta hoy. Forma 8-2 con 4.7 anotadas y 2.3 permitidas frente a 5-5 con 2.8 anotadas. Unica contradiccion: el bullpen de NYY es mejor (2.66 vs 3.31), por eso va a 1U y no a nivel Elite. Precio -136 dentro de la banda rentable y modelo en 57.8%, en linea con la implicita.",
+      "equipos": [
+        "ATL",
+        "NYY"
+      ],
+      "destacado": "ATL",
+      "hora": "2:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "ATL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 108,
+      "unidades": 1.0,
+      "razon": "Perro con ofensiva funcional, que es lo que exige el sistema para tomar un ML de underdog: HOU batea .305 con .851 ops y 5.0 carreras por juego en la semana y tiene .750 de ops vs derechos, la mano de M. King; SD se queda en .705 vs derechos y 4.7 carreras. En el monticulo P. Lambert (3.06) supera a King (3.45) y el bullpen visitante (3.33 con J. Hader en 1.08) aguanta el cierre. Forma 8-2 con 5.7 anotadas y 3.2 permitidas contra 6-4. El modelo da 50.8% a HOU frente al 48.1% implicito de +108: pequeño pero real, por eso solo 1U.",
+      "equipos": [
+        "HOU",
+        "SD"
+      ],
+      "destacado": "HOU",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -254
+      },
+      {
+        "pick": "CHC ML",
+        "deporte": "MLB",
+        "destacado": "CHC",
+        "cuota": -162
+      }
+    ],
+    "cuota_combinada": 125,
+    "nota": "Cada pata elegida por valor propio, no por ser favorita. BOS: 9-1 en los ultimos 10 con 7.5 carreras por juego, .310 y .956 ops en la semana, J. Bennett (2.90) mejor que G. Jump (4.59) y bullpen 3.10 con A. Chapman en 1.86 frente al 5.14 del bullpen de ATH, que llega 1-9 y con .584 ops. CHC: C. Holmes (2.39) contra S. Lugo (4.41), ofensiva de .776 ops y 5.3 carreras por juego, y bullpen rival de 4.43 con L. Erceg en 6.21. El combinado paga +125 (44% implicito) y ambas patas superan holgadamente esa cuota conjunta.",
+    "cuota_combinada_nota": null
+  },
+  "descartes": [
+    "CLE ML -124: el modelo da 53.1% frente al 55.4% implicito y la ofensiva de CLE cae a .659 de ops vs zurdos justo contra A. Kay (L). Sin valor.",
+    "NYM ML +125 en PIT: la ofensiva de NYM (5.5 c/j, .808 ops) atrae, pero el abridor R. Stock tiene una muestra minima (0-1, FIP 4.19) y el bullpen de NYM esta en 4.10 con D. Williams en 4.66. Demasiada incertidumbre para arriesgar.",
+    "TOR/PHI o9.5: Scherzer 7.92 y Nola 5.55 invitan al over, pero ambos bullpens son solidos (3.86 y 3.73 con cerradores en 1.38 y 1.83) y TOR llega con .610 ops y 3.3 carreras por juego. No pago -112 con una ofensiva muerta.",
+    "LAA/MIA u7.5: dos ofensivas gelidas, pero los bullpens son 4.11 y 4.31 y el cerrador de MIA esta en 6.37 de ERA; es exactamente el under que revienta en las entradas 6-9, el error que ya cometi con LAA y KC.",
+    "COL/STL: total inflado por el bullpen de COL (5.43), pero ambos abridores zurdos flojos con lineups irregulares y el ML de STL a -153 no paga lo suficiente.",
+    "LAD ML -171: fuera de la banda rentable y ademas LAD llega 2-8 permitiendo 5.7 carreras; AZ batea .783 de ops vs derechos y 5.1 c/j en casa.",
+    "BAL ML +136: la ofensiva de BAL esta en 1.7 carreras por juego y .566 ops en la semana; SYS-004 lo tumba de inmediato."
+  ],
+  "autopsia": "Del ultimo cierre, DET ML a -121 fue una decision defendible que cayo 2-5 con SF: proceso correcto, resultado adverso. Lo que si fue fallo de proceso fue insistir con SD ML por tercera vez en la misma serie despues de la paliza 4-10; hoy corrijo la inercia y me pongo del lado contrario, con HOU, porque los datos de hoy lo respaldan. TB ML fue el unico acierto y repite hoy solo porque el analisis de este juego lo justifica por si mismo: ofensiva caliente vs lineup frio, bullpen superior y precio en la banda que mas rinde. En totales, mi problema medido es el sesgo al under (3-7): hoy revise cuatro unders y los descarte todos por bullpen flojo o cerrador quemado, en vez de forzarlos.",
+  "resumen": "Dia con 3 picks de MLB y 3.5 unidades de riesgo total. La jugada principal es Tampa Bay a moneyline en Seattle a precio practicamente parejo, con ofensiva caliente, bullpen superior y un rival que apenas anota 2.7 carreras por juego. Le acompañan Atlanta con C. Sale ante unos Yankees en .657 de ops, y Houston como perro con valor gracias a su bateo en .851 de ops y a J. Hader cerrando. Descarte todos los totales del dia porque en cada uno habia bullpen flojo o cerrador con ERA alta, que es justo lo que me viene rompiendo los unders. El parlay del dia combina Boston y los Cubs, ambos con ventaja real de abridor y bullpen.",
+  "parlay_nota": null
+}
