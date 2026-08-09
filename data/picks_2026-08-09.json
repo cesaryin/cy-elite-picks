@@ -1,0 +1,76 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -104,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas y precio en la mejor banda del sistema (pick'em). Ofensiva: TB llega con .771 ops y 5.3 carreras/juego en la semana, mientras Seattle está en 2.3 c/j y .640 ops (6 juegos), la peor ofensiva activa del cartel. Matchup de mano: Tampa abre con el zurdo I. Seymour y Seattle batea .221/.652 vs zurdos en la temporada. Bullpen: 3.51 con B. Baker (1.55, 34 saves) contra 4.13 de Seattle; el cierre lo controla Tampa. Forma: 8-2 vs 3-7 en los últimos 10 (4.0 anotadas y 3.6 recibidas contra 2.5 y 5.0). El modelo apoya con 55.1% frente a 50.9% implícito, sin contradicción con ninguna capa; el único punto en contra es que E. Hancock (3.33) es el mejor abridor del duelo, y eso ya está pagado en una cuota de -104.",
+      "equipos": [
+        "TB",
+        "SEA"
+      ],
+      "destacado": "TB",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -119,
+      "unidades": 1.0,
+      "razon": "Repetición justificada por un cambio de abridor claramente favorable, no por inercia: hoy Detroit manda a T. Melton (1.58 ERA, 7-1) frente a L. Webb (3.74). La ofensiva de Detroit es la más caliente del día (.297 avg, .846 ops y 7.0 carreras/juego en 6 partidos, y .742 ops vs derechos, que es la mano de Webb), mientras San Francisco está congelado: .179 avg, .574 ops y 3.0 c/j, con 4-6 en los últimos 10. Forma de racha: DET 7-3 con 8.6 anotadas y 2.6 recibidas por juego. El modelo respalda con 61.8% frente al 54.3% implícito y el precio está dentro de la banda rentable (-140/-115).",
+      "equipos": [
+        "DET",
+        "SF"
+      ],
+      "destacado": "DET",
+      "hora": "3:05 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -235
+      },
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -204
+      }
+    ],
+    "cuota_combinada": 113,
+    "nota": "Dos patas elegidas por valor propio, no por ser favoritas. Boston: ofensiva de 9.0 carreras/juego y .968 ops en la semana, bullpen 3.14 con A. Chapman (1.86, 27 saves), contra un Oakland 1-9 con .194 avg y .557 ops y bullpen de 5.26. Filadelfia: J. Luzardo (3.36) frente a un Toronto que batea .216/.631 vs zurdos y llega con 3.6 c/j, mientras PHI produce 5.6 c/j y .806 ops. El combinado paga +113 cuando la probabilidad conjunta estimada supera ese 47%.",
+    "nota_extra": null
+  },
+  "descartes": [
+    "ATL/NYY: ATL +126 con modelo en 44.7% (prácticamente igual al implícito) y ya cayó 4-5 ante este mismo rival; sin ventaja nueva, no se repite.",
+    "AZ +131 vs LAD: hay argumento (AZ .781 ops vs zurdos y LAD frío con .670 ops), pero el cerrador Sewald (6.23) y la banda +100/+140 no justifican un tercer pick en racha negativa.",
+    "CWS +111: el modelo da 52.8% vs 47.4% implícito, pero las ofensivas y bullpens están demasiado parejos para llamarlo valor claro.",
+    "HOU/SD: sin abridor confirmado en San Diego, imposible evaluar la capa principal.",
+    "MIL -254: Misiorowski domina, pero el precio es extremo y el modelo (62%) queda por debajo del implícito (71.8%): pagar de más.",
+    "Totales del día: ningún under pasa el filtro (bullpens flojos en CIN, KC, COL y ofensivas calientes en BOS, DET, HOU); tampoco hay over con las cuatro capas a favor.",
+    "BAL/TEX: dos ofensivas apagadas (1.8 y 3.7 c/j) y edge del modelo mínimo sobre TEX -124."
+  ],
+  "autopsia": "Del último cierre, ATL -136 (4-5) y HOU +108 (2-3) fueron decisiones defendibles que cayeron por una carrera: proceso correcto, margen mínimo. La lección real no está ahí sino en la insistencia: volver a ATL y a HOU contra los mismos rivales de la serie sin una capa nueva es el patrón que más me cuesta. Lo que sí funciona es lo que hoy repito: TB con ofensiva caliente y bullpen superior a precio de pick'em, la banda de cuota donde el sistema acierta. En totales, mis unders vienen 2-7 porque infravaloro el bullpen y las ofensivas en racha; hoy no fuerzo ninguno y exijo las cuatro condiciones antes de tocar ese mercado.",
+  "resumen": "Día corto y selectivo tras dos jornadas en rojo: solo dos jugadas con valor real, ambas en MLB. Tampa Bay a precio de moneda en Seattle es la apuesta principal por su ofensiva caliente, el bullpen dominante y el pésimo split de los Marineros ante zurdos. Detroit vuelve a la lista únicamente porque hoy abre Melton con 1.58 de efectividad frente a una ofensiva de San Francisco en .574 de ops. Riesgo total: 2.5 unidades, más un parlay informativo (Boston + Filadelfia) que no cuenta en el balance."
+}
