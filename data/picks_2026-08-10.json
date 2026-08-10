@@ -1,0 +1,57 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS F5 Spread -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 Spread -0.5",
+      "cuota": -115,
+      "unidades": 1.5,
+      "razon": "Convergencia de 4 capas y a precio de banda buena: S. Gray (2.78 ERA, 14-2, FIP 3.74) contra J. Taillon (5.96 ERA, FIP 5.89) es la mayor brecha de abridores del día, y el F5 aísla precisamente esa ventaja. La ofensiva de Boston está funcional de verdad (SYS-004): .318/.897 y 8.2 carreras por juego en la última semana, con 7-3 de forma anotando 7.4 c/j. Toronto llega frío con .222/.632 y 4.3 c/j, y su split vs derechos (.700) no le da margen contra Gray. El modelo da 66.9% a BOS frente al 62% implícito del ML -164, así que apoyo sin contradicción; tomo el -0.5 a -115 en vez del ML del juego porque el precio del F5 es mejor y evito el bullpen de Toronto (Varland 1.34) en el cierre.",
+      "equipos": [
+        "BOS",
+        "TOR"
+      ],
+      "destacado": "BOS",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": -0.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIL/SD u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -122,
+      "unidades": 1.0,
+      "razon": "Under justificado por las cuatro comprobaciones que suelen reventarlos: (1) bullpens de élite en AMBOS lados, que es donde mueren los unders — SD 2.76 con M. Miller (0.91, 29 sv) y MIL 3.27 con Megill (2.58); (2) parque de San Diego supresor de carreras; (3) ninguna ofensiva caliente: MIL .721 OPS y 4.3 c/j en la semana con 74 ponches, SD .725 y 4.6 c/j, y MIL solo 1/10 de overs de 8.5 en sus últimos diez permitiendo 3.0 c/j; (4) abridores sanos y buenos, L. Henderson 2.70 (FIP 3.62) y C. Mize 3.40 (FIP 3.28), ninguno con pinta de salida corta. No toco el ML porque el modelo se inclina a SD (53.7%) y ahí no hay ventaja clara.",
+      "equipos": [
+        "MIL",
+        "SD"
+      ],
+      "destacado": null,
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "TB ML -163 en ATH: F. Peralta llega con 5.37 ERA y TB es .683 OPS vs zurdos ante J. Lopez; el precio no paga la incertidumbre pese a que TB viene ganando.",
+    "AZ ML -185 vs COL: fuera de rango y el modelo (56.1%) queda muy por debajo del 64.9% implícito; el mercado lo tiene caro.",
+    "HOU/SF u8.5: cumple parque y ofensivas frías, pero el bullpen de SF (4.05) es el punto flojo que suele romper el under en las entradas 6-9. No lo fuerzo.",
+    "NYM ML +136 en ATL: la ofensiva de los Mets está caliente (7.0 c/j, 12 HR en 6 juegos) y el precio tiene valor, pero el bullpen (3.99 con Williams a 4.66) contra un ATL 8-2 con Iglesias detrás me quita la convergencia limpia.",
+    "LAD ML -325 y KC: precio inservible, y el modelo solo da 57% a LAD frente a un 76% implícito.",
+    "BAL/MIN y PHI/STL: cuotas de moneda al aire (-111/103 y -102/-105) sin ninguna capa que rompa el empate; ofensivas de ambos lados por debajo de 3.5-5.4 c/j sin ventaja de abridor clara a favor del lado barato."
+  ],
+  "autopsia": "Del último cierre, TB ML y DET ML fueron decisiones bien construidas y entraron; el parlay cayó por BOS 3-4 ante ATH, un margen de una carrera: mala suerte, no mal proceso, pero confirma que combinar favoritos sin ventaja propia sigue siendo 0-9 y hoy no armo uno solo por darlo. La lección real está en los totales: 1-6 en unders porque los perdí en el bullpen y con ofensivas que sí estaban calientes (NYM/CLE u8.5 que acabó 6-5, LAA u3.5 que acabó en 4). Hoy solo firmo un under si los DOS bullpens son de élite y ninguna ofensiva viene por encima de sus números, que es justo el caso de MIL/SD. Y corrijo el precio: dejo de pagar -164 en el ML de Boston y me llevo la misma ventaja del abridor en el F5 a -115.",
+  "resumen": "Día corto y selectivo: dos jugadas y sin parlay. La principal va sobre la mayor brecha de abridores del calendario, S. Gray contra J. Taillon, jugada en las primeras cinco entradas para pagar menos y no depender de bullpens. La segunda es el under en San Diego, donde dos bullpens dominantes, un parque que castiga y dos ofensivas tibias sostienen el número. Riesgo total del día: 2.5 unidades."
+}
