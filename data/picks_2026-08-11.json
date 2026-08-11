@@ -1,0 +1,78 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -124,
+      "unidades": 1.5,
+      "razon": "Convergencia de cuatro capas sin contradicción mayor y a precio de la banda rentable. (1) Ofensiva funcional y caliente: DET viene con .274/.763 ops y 5.7 carreras por juego en la semana, y su split contra derechos es .247/.738, justo la mano de T. Bibee. (2) El abridor visitante es el punto débil real: Bibee llega 4-11 con 3.85 de ERA pero FIP 4.54, es decir peor de lo que aparenta, frente a D. Anderson (4.01 ERA, FIP 3.99), que rinde a la par. (3) Forma: DET 7-3 en sus últimos 10 con 7.5 carreras a favor y solo 2.7 en contra; CLE 3-7 con 4.7-5.5 y un lineup tibio (.695 ops, 4.5 c/j, .692 vs derechos). (4) Bullpens parejos (3.71 vs 3.58), así que la ventaja de lineup y localía no se diluye al cierre; la única objeción es K. Jansen (3.82) por debajo de C. Smith, riesgo menor y no estructural. El modelo apoya con 57.3% frente al 55.4% implícito de -124, y el precio está en el tramo -140/-115 donde el sistema mejor rinde. No hay inercia: es un rival nuevo para este pick.",
+      "equipos": [
+        "CLE",
+        "DET"
+      ],
+      "destacado": "DET",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "TEX ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -149,
+      "unidades": 1.0,
+      "razon": "Desajuste de pitcheo enorme y ofensiva rival paralizada. R. Johnson abre por LAA con 7.11 de ERA y FIP 5.57, el peor abridor de la jornada, mientras TEX presenta a C. Bradford (zurdo, FIP 4.01) y respalda con un bullpen de 3.37 y J. Latz (1.83, 23 saves), muy por encima del 4.28 angelino. La capa ofensiva es la que decide: LAA está en .201/.578 con 2.1 carreras por juego en la última semana, 73 ponches, y solo 3-7 con 2.1 c/j en sus últimos 10; contra zurdos batea .699, sin poder para castigar a Bradford. TEX no es una máquina (.668 ops semanal) pero produce 4.5 c/j y su split vs derechos es .707, suficiente contra un abridor con esos números. El modelo refuerza fuerte: 71.1% a TEX frente al 59.8% implícito de la cuota, la mayor brecha del día a favor. Pago algo por encima de mi banda ideal, por eso va a 1U y no como Elite.",
+      "equipos": [
+        "TEX",
+        "LAA"
+      ],
+      "destacado": "TEX",
+      "hora": "8:38 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TEX",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -171
+      },
+      {
+        "pick": "CWS ML",
+        "deporte": "MLB",
+        "destacado": "CWS",
+        "cuota": -154
+      }
+    ],
+    "cuota_combinada": 161,
+    "nota": "Dos patas elegidas por ventaja propia, no por ser favoritas. TB: N. Martinez (2.65) y bullpen con B. Baker (1.55, 34 saves) contra un ATH que abre con M. Barnett (5.56 ERA), tiene bullpen de 5.52 y viene 2-8 permitiendo 7.5 carreras por juego, con lineup en .613 de ops. CWS: S. Burke (3.08, FIP 3.61) y bullpen de 3.14 frente a N. Lodolo (4.60) y un CIN que batea .196 con 3.3 c/j en la semana y .695 vs derechos; el modelo da 60.9% a CWS, prácticamente igual al 60.6% implícito, sin contradicción. Recuerdo que el parlay no cuenta en el balance y que combinar favoritos sin ventaja real es margen cero: aquí las dos patas tienen respaldo de pitcheo y bullpen, no solo precio.",
+    "descartes": []
+  },
+  "descartes": [
+    "BOS ML/F5 vs TOR: acaba de perder ahí (BOS 1-2) y hoy enfrenta a D. Cease (2.28 ERA, FIP 2.73) con BOS en .703 vs derechos; sin justificación nueva, prohibido repetir por inercia.",
+    "TOR ML -141: el modelo lo pone en 47.7% frente al 58.5% implícito (contradicción de casi 11 puntos) y su lineup batea .621 vs zurdos ante P. Sandoval; sin valor.",
+    "CHC ML -159: el modelo da 52.7% contra 61.4% implícito y WSH no tiene abridor confirmado en los datos; demasiada incertidumbre para pagar ese precio.",
+    "MIL ML -143: modelo 51% vs 58.8% implícito y SD llega con 4.9 c/j y bullpen de 2.74 con M. Miller (0.89); no hay margen.",
+    "SEA/NYY u8.5 y u8: dos ofensivas gélidas invitan al under, pero es parque corto y el bullpen de SEA está en 4.11; ya vengo fallando unders por infravalorar la ofensiva (2-5), así que paso.",
+    "LAA team total u3.5: perdió exactamente ese pick el 6/8 (LAA anotó 4); no lo repito por inercia.",
+    "PIT ML -113: modelo 48.6% vs 53% implícito y el lineup de PIT solo produce 3.3 c/j en la semana; ventaja de P. Skenes ya está en el precio.",
+    "TB team total o5.5 y total o10: la ofensiva de TB y el bullpen de ATH lo invitan, pero TB promedia 4.8 c/j en 10 juegos y la línea exige 6+; sin valor real.",
+    "KC/LAD: ML de LAD a -272 y KC a +218 quedan fuera del rango jugable, y la ERA de 12.00 de B. Snell es muestra mínima."
+  ],
+  "autopsia": "Del último cierre, el BOS F5 Spread -0.5 fue una decisión defendible que se cayó por un 1-2: el margen fue mínimo, no un error de lectura, pero sí me deja una lección de precio: en F5 a -0.5 el empate te mata y no cobré nada por ese riesgo. El acierto de MIL/SD u7.5 confirma que los unders funcionan cuando los DOS bullpens son buenos, no cuando solo me gusta el abridor. El diagnóstico es claro: mis totales van 2-6 y elijo under en el 88%, así que hoy exijo las cuatro condiciones completas antes de firmar un total y por eso no doy ninguno; y el ML, que va 18-12 con +5.49U, se lleva el peso, pero solo en la banda -140/-115 donde de verdad gano.",
+  "resumen": "Día de MLB con dos jugadas y riesgo total de 2.5 unidades. La principal es Detroit en casa: lineup caliente (.763 ops, 5.7 carreras por juego) contra un Bibee cuyo FIP 4.54 delata su ERA, con Cleveland 3-7 y frío, a una cuota razonable de -124. La segunda es Texas en Anaheim, donde el rival abre con 7.11 de ERA y su ofensiva promedia 2.1 carreras por juego; el modelo le da 71% cuando el mercado paga como 60%. No doy tercer pick ni ningún total: los unders me vienen castigando por infravalorar la ofensiva y hoy ninguno cumple todas las condiciones. El parlay va aparte, con Tampa Bay y White Sox, ambos con ventaja real de abridor y bullpen."
+}
