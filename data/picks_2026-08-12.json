@@ -1,0 +1,79 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 105,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia de cuatro capas en el mismo lado y con precio de perro. Pitcheo: R. Ray (3.24) supera a D. May (4.30) y, sobre todo, es zurdo contra un lineup de MIL que batea .689 de ops vs zurdos y llega frío (.691 ops, 3.9 carreras/juego y 70 ponches en la semana). Bullpen: San Diego 2.73 de ERA con M. Miller (0.89, 30 saves) es el mejor cierre del enfrentamiento frente al 3.46 de Milwaukee, así que las entradas 7-9 favorecen al local. Ofensiva funcional (SYS-004): SD viene a 5.1 carreras por juego con .806 de ops y 12 HR en siete días, y 7-3 en sus últimos diez. El modelo da 57.2% a SD contra apenas 48.8% implícito en el +105: es la mayor brecha de valor del cartel y con precio que paga de más por un equipo que llega mejor que su rival.",
+      "equipos": [
+        "MIL",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "TB F5 Spread -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 Spread -0.5",
+      "cuota": -135,
+      "unidades": 1.0,
+      "razon": "El ML completo (-206) está fuera de rango y de valor, pero el tramo de abridores sí paga: D. Rasmussen (2.75 ERA, 3.28 FIP, 11-5) contra J. Perkins (7.04 ERA, 2-8) es la ventaja de abridor más grande del día. Tampa llega con la ofensiva más caliente del cartel (.811 ops, 5.8 carreras/juego, 12 HR en seis juegos) y batea .760 de ops vs derechos, justo la mano de Perkins; Oakland en cambio está en .616 de ops y 4.1 c/j con 60 ponches en la semana. El F5 aísla precisamente lo mejor (abridor + bateo) y evita depender del cierre. Modelo: 65.2% a TB. Precio dentro de la banda rentable (-140/-115).",
+      "equipos": [
+        "TB",
+        "ATH"
+      ],
+      "destacado": "TB",
+      "hora": "2:05 PM CT",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "TB",
+        "lado": null,
+        "linea": -0.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CHC/WSH o9.5",
+      "deporte": "MLB",
+      "tipo": "o9.5",
+      "cuota": -107,
+      "unidades": 1.0,
+      "razon": "Over justificado por las cuatro comprobaciones que suelo exigirle a un under, aquí todas a favor de las carreras: (1) ambos bullpens con margen, el de Washington en 4.74 de ERA es de los peores del día; (2) los dos abridores son vulnerables, D. Peterson llega con 5.35 de ERA y el local J. Kent no tiene registro de MLB, escenario de pocas entradas y relevo temprano; (3) las DOS ofensivas están calientes de verdad en carreras, no solo en ops: CHC 6.2 carreras por juego (.820 ops, 10 HR) y WSH 6.5 c/j (.815 ops), y ambos abridores son zurdos contra lineups que castigan zurdos (CHC .806 y WSH .786 de ops vs L); (4) tendencia de overs 6/10 en los dos equipos. Es el único total del día donde las cuatro capas empujan al mismo lado.",
+      "equipos": [
+        "CHC",
+        "WSH"
+      ],
+      "destacado": null,
+      "hora": "5:45 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.5
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "TEX ML -136 vs LAA: anti-inercia, el ML de Texas acaba de caer 2-3 contra este mismo rival en la serie y no hay una mejora nueva y fuerte que lo justifique (TEX viene con .626 de ops en la semana).",
+    "PHI ML -158: Wheeler domina, pero el modelo da 53.1% frente al 61% implícito de la cuota; se paga de más y la ofensiva de PHI (4.7 c/j, .729 ops) no respalda el precio.",
+    "TB ML -206 y TB Spread -1.5 -131: el ML está fuera de rango y cubrir -1.5 con un favorito de ese calibre ronda el 45-47%, por debajo del 57% implícito.",
+    "BOS ML -119 en TOR: buena convergencia (Suárez zurdo contra un TOR de .625 ops vs zurdos, bullpen 3.14 con Chapman), pero ya se falló en esta misma serie y prefiero no cargar dos picks al mismo rival; queda fuera por prudencia, no por análisis.",
+    "KC/LAD y COL/AZ: cuotas de los lados con valor fuera de rango (-225, -171) y ofensivas visitantes frías.",
+    "BAL/MIN: mercado partido (-102/-105), sin ventaja real de ninguna capa.",
+    "PARLAY: no hay dos favoritos de -160 a -360 con valor propio hoy (TB -206 y CHC -159 tienen el modelo por debajo o igual a su implícita, LAD -225 con el modelo en 47%). Combinar favoritos sin ventaja tiene margen cero por matemática pura, así que se omite."
+  ],
+  "autopsia": "El TEX ML a -149 fue fallo de proceso doble: precio en la banda peor de -140, que en mi historial pierde dinero (58% acertado cuando exigía 60%), y además contra un rival de la misma serie por inercia; cayó 2-3, o sea decisión mala aunque el margen fuera mínimo. El DET ML, en cambio, es el patrón que sí funciona: ML en banda razonable con ofensiva local caliente, y ahí el sistema va 17-12. Hoy corrijo el criterio de precio: la Elite se va a un +105 con valor medido en vez de pagar de más por un favorito obvio, y el único total que doy va al over porque mis unders (2-5) venían infravalorando bullpens flojos y ofensivas encendidas.",
+  "resumen": "Tres jugadas y 3.5 unidades de riesgo total. La principal es San Diego a +105 en casa: mejor abridor, bullpen muy superior, lineup encendido y un rival frío contra zurdos, con el modelo dándole 57% cuando la cuota solo exige 49%. La segunda ataca el tramo de abridores en Oakland, donde la diferencia entre Rasmussen y Perkins es enorme y el ML completo ya no paga. La tercera es el over de Chicago-Washington, el único total del día donde abridores, bullpens y las dos ofensivas apuntan al mismo lado. Sin parlay hoy: ningún favorito pesado muestra ventaja real y combinarlos sería regalar margen."
+}

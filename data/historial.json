@@ -1956,6 +1956,28 @@
     ]
   },
   {
+    "fecha": "2026-08-10",
+    "pick": "BOS F5 Spread -0.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -115,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "BOS 1-2 TOR"
+  },
+  {
+    "fecha": "2026-08-10",
+    "pick": "MIL/SD u7.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -122,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.82,
+    "marcador": "MIL 2-3 SD"
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -1989,25 +2011,44 @@
     "marcador": "TB 12-2 TOR"
   },
   {
-    "fecha": "2026-08-10",
-    "pick": "BOS F5 Spread -0.5",
+    "fecha": "2026-08-11",
+    "pick": "DET ML",
     "deporte": "MLB",
     "nivel": "oro",
-    "cuota": -115,
+    "cuota": -124,
     "unidades": 1.5,
-    "resultado": "L",
-    "neto_u": -1.5,
-    "marcador": "BOS 1-2 TOR"
+    "resultado": "W",
+    "neto_u": 1.21,
+    "marcador": "CLE 4-6 DET",
+    "clv": 2.3,
+    "cuota_cierre": -136
   },
   {
-    "fecha": "2026-08-10",
-    "pick": "MIL/SD u7.5",
+    "fecha": "2026-08-11",
+    "pick": "TEX ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -122,
+    "cuota": -149,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.82,
-    "marcador": "MIL 2-3 SD"
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TEX 2-3 LAA",
+    "clv": -0.7,
+    "cuota_cierre": -145
+  },
+  {
+    "fecha": "2026-08-11",
+    "pick": "PARLAY: TB ML + CWS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 161,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 12-4 ATH / CIN 5-4 CWS",
+    "patas_res": [
+      "W",
+      "L"
+    ]
   }
 ]
