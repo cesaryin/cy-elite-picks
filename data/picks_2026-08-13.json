@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -104,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia y a precio de valor: T. Bradley (3.76 ERA, 3.97 FIP, 9-4) contra A. Nola hundido (5.47 ERA, 4.93 FIP, 3-9) es la mayor brecha de abridores del dia en un juego pagado a dinero parejo. Capa ofensiva: MIN viene con .272/.775 OPS y 5.1 carreras por juego en la semana y batea .251/.740 vs derechos, justo la mano de Nola; PHI apenas .246/.729 y 4.3 c/j. Bullpen equilibrado (MIN 3.62 vs PHI 3.44), asi que la ventaja del abridor no se diluye. El modelo da 57.1% a MIN contra 50.5% implicito en -104, la mejor banda medida del sistema (-115 a +100), sin ninguna contradiccion mayor.",
+      "equipos": [
+        "PHI",
+        "MIN"
+      ],
+      "destacado": "MIN",
+      "hora": "6:30 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -123,
+      "unidades": 1.0,
+      "razon": "Tres capas a favor del local: (1) ofensiva funcional y caliente, CWS con .788 OPS, 5.5 carreras por juego y 11 HR en la semana, y .235/.720 vs zurdos, que es la mano de A. Abbott (3.92 ERA pero 4.62 FIP, senal de que su ERA esta inflada de suerte); (2) CIN llega congelado en el bateo: .176 de average, .588 OPS, 2.8 c/j y 61 ponches en 6 juegos, un lineup que no impulsa; (3) ventaja clara de relevo, bullpen CWS 3.16 con G. Taylor (2.20) frente al 4.34 de Cincinnati con E. Pagan (4.10) — el cierre lo gana el local. D. Martin (4.17 ERA pero 3.71 FIP) esta mejor de lo que dice su ERA. El modelo apoya con 60.7% vs 55.2% implicito.",
+      "equipos": [
+        "CIN",
+        "CWS"
+      ],
+      "destacado": "CWS",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "BOS/TOR o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.0",
+      "cuota": -109,
+      "unidades": 1.0,
+      "razon": "Total con las cuatro comprobaciones a favor del over: M. Scherzer llega con 7.25 ERA y 5.51 FIP, es el abridor mas castigable del dia; BOS viene con .276/.779 OPS, 5.6 carreras por juego y 6.5 carreras anotadas por juego en sus ultimos 10, y batea .243/.704 vs derechos; TOR tampoco esta apagado (.271, 4.7 c/j) y aunque P. Tolle (3.20) es solido, es zurdo joven con volumen limitado, asi que ambos bullpens veran entradas medias; la tendencia respalda con 6/10 overs de 8.5 en los dos equipos. El modelo proyecta 10.16 carreras como contexto. La linea de 8.0 es corta para este emparejamiento.",
+      "equipos": [
+        "BOS",
+        "TOR"
+      ],
+      "destacado": null,
+      "hora": "2:07 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.0
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -153
+      },
+      {
+        "pick": "CWS ML",
+        "deporte": "MLB",
+        "destacado": "CWS",
+        "cuota": -123
+      }
+    ],
+    "cuota_combinada": 200,
+    "nota": "Dos patas con valor PROPIO, no dos favoritos por ser favoritos: BOS tiene 63.2% de modelo contra 60.5% implicito (Tolle 3.20 vs Scherzer 7.25 y TOR batea solo .218/.628 vs zurdos, con Chapman 2.04 cerrando), y CWS 60.7% contra 55.2% implicito. El combinado paga +200 y exige 33.3%; multiplicando las dos probabilidades estimadas queda cerca del 38%, ahi esta el margen. Nada de favoritos pesados tipo -400.",
+    "": ""
+  },
+  "descartes": [
+    "TEX ML -148 vs LAA: precio en la banda que el sistema mide como perdedora (peor de -140) y ofensiva de Texas helada (.200/.575, 3.3 c/j); ademas acaba de caer 2-3 ante este mismo rival, no lo repito por inercia.",
+    "SEA ML +127: lineup de Seattle en caida libre (.194/.592 y 1.7 carreras por juego) y enfrente M. Fried (2.88) con el mejor bullpen del dia (2.62). Sin ofensiva funcional no hay ML de perro (SYS-004).",
+    "NYY ML -137: valor real pero pagando de mas para una ofensiva de 4.6 c/j; el modelo lo ve en 65% y el mercado casi lo tiene ahi, margen justo.",
+    "CHC/WSH: dos ofensivas encendidas (7.0 y 5.8 c/j) pero el over 8.5 esta cargado a -120 y el ML de Chicago a -146 en la banda mala; sin precio no hay pick.",
+    "MIL/LAD: partido de dos punteros con ofensivas frias (3.7 c/j ambos) y linea sin distorsion; modelo casi 50-50, nada que explotar.",
+    "PIT/MIA: PIT favorito a -119 con .644 OPS y 3.0 carreras por juego en la semana y record 2-8; MIA batea .286/.808 en casa, la cuota va al lado equivocado, pero el bullpen de Miami (4.18, Fairbanks 6.03) impide fiarse del ML local.",
+    "CLE/DET: DET +111 con modelo 52.5% es interesante, pero P. Messick (2.57 ERA, 3.47 FIP) es zurdo y Detroit apenas .235/.706 vs zurdos; la contradiccion lo saca de la lista."
+  ],
+  "autopsia": "El ultimo cierre (SD ML, TB F5 spread y CHC/WSH o9.5) fue 3-0 y tienen algo en comun: precios razonables y un over apoyado en ofensivas reales, no en el proyectado del modelo. El fallo que si fue de proceso es el TEX ML a -149: pagar peor de -140 por un equipo con .575 de OPS en la semana, exactamente lo que el auto-diagnostico dice que pierde dinero (58% de acierto cuando hacia falta 60%). Correccion de HOY: la Elite se va a dinero parejo (MIN -104) en vez de comprar seguridad cara, y en el total elijo el lado over tras revisar bullpen, ofensivas y tendencia, en lugar de mi sesgo del 78% a unders que va 2-5.",
+  "resumen": "Tres jugadas y riesgo total de 3.5 unidades. La principal es Minnesota a dinero parejo aprovechando el desplome de A. Nola frente a un lineup que llega a 5.1 carreras por juego y castiga a derechos. Detras, los White Sox en casa contra una ofensiva de Cincinnati que no anota (2.8 carreras por juego) y con clara ventaja de bullpen. Cierro con el over 8 en Toronto, donde Scherzer llega con 7.25 de efectividad ante el bateo mas caliente de Boston. Ademas, parlay informativo de Boston y White Sox a +200, que no cuenta en el balance.",
+  "descartes_extra": ""
+}

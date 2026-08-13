@@ -1978,39 +1978,6 @@
     "marcador": "MIL 2-3 SD"
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-08-11",
     "pick": "DET ML",
     "deporte": "MLB",
@@ -2050,5 +2017,75 @@
       "W",
       "L"
     ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-12",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 105,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.57,
+    "marcador": "MIL 3-4 SD",
+    "clv": -0.2,
+    "cuota_cierre": 106
+  },
+  {
+    "fecha": "2026-08-12",
+    "pick": "TB F5 Spread -0.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -135,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.74,
+    "marcador": "TB 8-4 ATH"
+  },
+  {
+    "fecha": "2026-08-12",
+    "pick": "CHC/WSH o9.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -107,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "CHC 12-6 WSH",
+    "clv": 1.1,
+    "cuota_cierre": -112
   }
 ]
