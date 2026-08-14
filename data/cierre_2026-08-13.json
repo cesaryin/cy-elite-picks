@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-08-13T23:30Z",
   "visto": "2026-08-13T22:07:05+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TEX@LAA": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-08-14T02:07Z",
   "visto": "2026-08-13T22:07:05+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIL@LAD": {
   "ml": {
@@ -213,6 +213,6 @@
   },
   "inicio_utc": "2026-08-14T02:10Z",
   "visto": "2026-08-13T22:07:05+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
