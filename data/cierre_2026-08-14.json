@@ -25,8 +25,8 @@
  },
  "MIA@CIN": {
   "ml": {
-   "MIA": 104,
-   "CIN": -112
+   "MIA": 103,
+   "CIN": -111
   },
   "total": {
    "linea": 8.0,
@@ -36,21 +36,21 @@
   "spread": {
    "MIA": {
     "linea": -1.5,
-    "cuota": 165
+    "cuota": 167
    },
    "CIN": {
     "linea": 1.5,
-    "cuota": -201
+    "cuota": -204
    }
   },
   "inicio_utc": "2026-08-14T22:10Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "BOS@PIT": {
   "ml": {
-   "BOS": -119,
-   "PIT": 111
+   "BOS": -116,
+   "PIT": 108
   },
   "total": {
    "linea": 8.0,
@@ -68,157 +68,157 @@
    }
   },
   "inicio_utc": "2026-08-14T22:40Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "CWS@DET": {
   "ml": {
-   "CWS": 120,
-   "DET": -129
+   "CWS": 124,
+   "DET": -134
   },
   "total": {
    "linea": 8.5,
-   "over": -119,
+   "over": -118,
    "under": -102
   },
   "spread": {
    "CWS": {
     "linea": 1.5,
-    "cuota": -181
+    "cuota": -170
    },
    "DET": {
     "linea": -1.5,
-    "cuota": 149
+    "cuota": 140
    }
   },
   "inicio_utc": "2026-08-14T22:40Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "BAL@TB": {
   "ml": {
-   "BAL": 147,
-   "TB": -158
+   "BAL": 138,
+   "TB": -148
   },
   "total": {
    "linea": 8.0,
-   "over": -112,
-   "under": -107
+   "over": -116,
+   "under": -104
   },
   "spread": {
    "BAL": {
     "linea": 1.5,
-    "cuota": -157
+    "cuota": -163
    },
    "TB": {
     "linea": -1.5,
-    "cuota": 130
+    "cuota": 135
    }
   },
   "inicio_utc": "2026-08-14T23:10Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "SD@CLE": {
   "ml": {
-   "SD": 108,
-   "CLE": -116
+   "SD": 111,
+   "CLE": -119
   },
   "total": {
    "linea": 7.0,
-   "over": -119,
+   "over": -118,
    "under": -102
   },
   "spread": {
    "SD": {
-    "linea": 1.5,
-    "cuota": -205
+    "linea": -1.5,
+    "cuota": -211
    },
    "CLE": {
-    "linea": -1.5,
-    "cuota": 168
+    "linea": 1.5,
+    "cuota": -212
    }
   },
   "inicio_utc": "2026-08-14T23:10Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "WSH@NYM": {
   "ml": {
-   "WSH": 106,
+   "WSH": 111,
    "NYM": -114
   },
   "total": {
    "linea": 8.5,
-   "over": -113,
-   "under": -107
+   "over": -116,
+   "under": -104
   },
   "spread": {
    "WSH": {
     "linea": 1.5,
-    "cuota": -198
+    "cuota": -193
    },
    "NYM": {
     "linea": -1.5,
-    "cuota": 162
+    "cuota": 158
    }
   },
   "inicio_utc": "2026-08-14T23:10Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "AZ@ATL": {
   "ml": {
-   "AZ": 173,
-   "ATL": -187
+   "AZ": 177,
+   "ATL": -191
   },
   "total": {
    "linea": 8.0,
-   "over": -108,
-   "under": -112
+   "over": -110,
+   "under": -110
   },
   "spread": {
    "AZ": {
     "linea": 1.5,
-    "cuota": -127
+    "cuota": -125
    },
    "ATL": {
     "linea": -1.5,
-    "cuota": 105
+    "cuota": 104
    }
   },
   "inicio_utc": "2026-08-14T23:15Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "NYY@TOR": {
   "ml": {
-   "NYY": -142,
-   "TOR": 132
+   "NYY": -141,
+   "TOR": 131
   },
   "total": {
    "linea": 8.0,
-   "over": -102,
-   "under": -119
+   "over": -104,
+   "under": -116
   },
   "spread": {
    "NYY": {
     "linea": -1.5,
-    "cuota": 112
+    "cuota": 113
    },
    "TOR": {
     "linea": 1.5,
-    "cuota": -135
+    "cuota": -136
    }
   },
   "inicio_utc": "2026-08-14T23:15Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "SEA@HOU": {
   "ml": {
-   "SEA": 106,
-   "HOU": -114
+   "SEA": 111,
+   "HOU": -119
   },
   "total": {
    "linea": 8.0,
@@ -227,22 +227,22 @@
   },
   "spread": {
    "SEA": {
-    "linea": -1.5,
-    "cuota": 165
+    "linea": 1.5,
+    "cuota": -198
    },
    "HOU": {
-    "linea": 1.5,
-    "cuota": -202
+    "linea": -1.5,
+    "cuota": 162
    }
   },
   "inicio_utc": "2026-08-15T00:10Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "KC@LAA": {
   "ml": {
-   "KC": -109,
-   "LAA": 101
+   "KC": -105,
+   "LAA": -103
   },
   "total": {
    "linea": 8.5,
@@ -252,31 +252,31 @@
   "spread": {
    "KC": {
     "linea": -1.5,
-    "cuota": 141
+    "cuota": 153
    },
    "LAA": {
     "linea": 1.5,
-    "cuota": -171
+    "cuota": -186
    }
   },
   "inicio_utc": "2026-08-15T01:38Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "TEX@ATH": {
   "ml": {
-   "TEX": -106,
-   "ATH": -102
+   "TEX": -103,
+   "ATH": -104
   },
   "total": {
    "linea": 9.5,
    "over": -104,
-   "under": -115
+   "under": -116
   },
   "spread": {
    "TEX": {
     "linea": -1.5,
-    "cuota": 144
+    "cuota": 145
    },
    "ATH": {
     "linea": 1.5,
@@ -284,13 +284,13 @@
    }
   },
   "inicio_utc": "2026-08-15T01:40Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "MIL@LAD": {
   "ml": {
-   "MIL": 158,
-   "LAD": -170
+   "MIL": 166,
+   "LAD": -179
   },
   "total": {
    "linea": 7.5,
@@ -300,39 +300,39 @@
   "spread": {
    "MIL": {
     "linea": 1.5,
-    "cuota": -144
+    "cuota": -137
    },
    "LAD": {
     "linea": -1.5,
-    "cuota": 119
+    "cuota": 113
    }
   },
   "inicio_utc": "2026-08-15T02:10Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  },
  "COL@SF": {
   "ml": {
-   "COL": 116,
-   "SF": -124
+   "COL": 125,
+   "SF": -134
   },
   "total": {
    "linea": 7.5,
-   "over": -112,
-   "under": -107
+   "over": -108,
+   "under": -112
   },
   "spread": {
    "COL": {
     "linea": 1.5,
-    "cuota": -198
+    "cuota": -193
    },
    "SF": {
     "linea": -1.5,
-    "cuota": 162
+    "cuota": 158
    }
   },
   "inicio_utc": "2026-08-15T02:15Z",
-  "visto": "2026-08-14T19:23:30+00:00",
+  "visto": "2026-08-14T21:45:14+00:00",
   "cerrado": false
  }
 }
