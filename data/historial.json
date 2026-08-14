@@ -2019,39 +2019,6 @@
     ]
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-08-12",
     "pick": "SD ML",
     "deporte": "MLB",
@@ -2087,5 +2054,92 @@
     "marcador": "CHC 12-6 WSH",
     "clv": 1.1,
     "cuota_cierre": -112
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-13",
+    "pick": "MIN ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -104,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "PHI 7-1 MIN",
+    "clv": 0.0,
+    "cuota_cierre": -104
+  },
+  {
+    "fecha": "2026-08-13",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -123,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CIN 9-8 CWS",
+    "clv": -0.2,
+    "cuota_cierre": -122
+  },
+  {
+    "fecha": "2026-08-13",
+    "pick": "BOS/TOR o8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -109,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "BOS 7-0 TOR",
+    "clv": -0.2,
+    "cuota_cierre": -108
+  },
+  {
+    "fecha": "2026-08-13",
+    "pick": "PARLAY: BOS ML + CWS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 200,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "BOS 7-0 TOR / CIN 9-8 CWS",
+    "patas_res": [
+      "W",
+      "L"
+    ]
   }
 ]

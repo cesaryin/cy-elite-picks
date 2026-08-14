@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -142,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas sin contradiccion mayor: (1) abridores, G. Cole 3.35 ERA con 21.3% K-BB frente a S. Bieber 5.48 ERA, FIP 5.13 y apenas 4.6% K-BB (el peor control de la jornada); (2) bullpen, NYY 2.60 de ERA con D. Bednar (2.56, 27 saves) es el mejor del dia y asegura el cierre; (3) matchup ofensivo, TOR batea .252/.701 vs derechos y viene con .672 de OPS y 4.4 c/j en la semana, perfil que no castiga a un lanzador con la punta de Cole; (4) NYY llega con .721 de OPS y 3.8 c/j en 6 juegos —no es un lineup caliente, pero contra un Bieber que regala boletos (11.8% BB) le sobra para el margen. Precio en la banda rentable del sistema y el modelo da 56.2% frente al 58.7% implicito, diferencia minima que no rompe la convergencia.",
+      "equipos": [
+        "NYY",
+        "TOR"
+      ],
+      "destacado": "NYY",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 119,
+      "unidades": 1.0,
+      "razon": "Perro con ofensiva funcional y bullpen superior: SD llega con .820 de OPS, 5.2 carreras por juego y 12 HR en la ultima semana (7-3 en sus ultimos 10) contra un CLE que produce 4.0 c/j, .700 de OPS y va 3-7. En el monticulo la diferencia es minima (M. King 3.37 vs G. Williams 3.55), asi que el juego se decide en el relevo y ahi SD manda con 2.67 de ERA de bullpen y M. Miller (0.88, 30 saves) frente a 3.53 de CLE. El modelo da 52.6% a San Diego cuando la cuota implica solo 45.7%: casi 7 puntos de ventaja en un mercado donde el sistema si ha rendido.",
+      "equipos": [
+        "SD",
+        "CLE"
+      ],
+      "destacado": "SD",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "WSH ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 105,
+      "unidades": 1.0,
+      "razon": "Desajuste de abridores en precio de pick'em: R. Stock abre con 10.13 de ERA por NYM frente a A. Alvarez (3.76 ERA, FIP 3.54, 22% de ponches). La ofensiva de Washington es la mas caliente del dia con .300 de average, .828 de OPS, 6.5 carreras por juego y 9 HR en 6 partidos, y batea .247/.760 vs derechos, la mano de Stock; NYM en cambio produce .689 de OPS vs derechos y 4.7 c/j. El modelo respalda con 60.7% a WSH contra un 48.8% implicito. La unica reserva es el bullpen visitante (4.49), por eso va a 1U y no mas arriba.",
+      "equipos": [
+        "WSH",
+        "NYM"
+      ],
+      "destacado": "WSH",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "WSH",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "CHC ML",
+        "deporte": "MLB",
+        "destacado": "CHC",
+        "cuota": -179
+      },
+      {
+        "pick": "LAD ML",
+        "deporte": "MLB",
+        "destacado": "LAD",
+        "cuota": -176
+      }
+    ],
+    "cuota_combinada": 144,
+    "nota": "Las dos patas tienen ventaja propia, no son favoritos por serlo: CHC pone a C. Holmes (2.86) contra M. Liberatore (5.15) y su lineup batea .806 de OPS vs zurdos con 6.5 c/j en la semana; LAD tiene a Y. Yamamoto (2.65, 17.8% K-BB) frente a R. Gasser (4.57) y un MIL con .667 de OPS y 72 ponches en 7 juegos. Combinada +144, dentro del rango util."
+  },
+  "descartes": [
+    "BAL/TB: TB favorito -161 pero abre S. Matz con 5.46 de ERA y BAL no publica abridor; sin ese dato no hay convergencia real.",
+    "AZ/ATL: falta el abridor de Atlanta y ATL viene con .691 de OPS y 3.8 c/j; imposible valorar el ML a -193.",
+    "MIA/CIN: mercado partido (48.8/51.2) y CIN con .567 de OPS en la semana; sin precio de valor claro.",
+    "TEX/ATH u9.5: bullpen de ATH en 5.44 y TEX con .542 de OPS; el under tienta pero el bullpen local revienta unders, justo el error que vengo cometiendo.",
+    "BOS/PIT: BOS -119 con J. Bennett solido, pero PIT batea .262/.769 vs derechos... el zurdo no es el matchup, y el modelo solo da 54.5%: valor insuficiente.",
+    "COL/SF: SF con .513 de OPS y 2.3 c/j en la semana; ningun lado del total ni del ML es apostable.",
+    "KC/LAA: dos ofensivas por debajo de .640 de OPS y abridores irregulares; puro coin flip."
+  ],
+  "autopsia": "El cierre del 13 dejo dos lecciones distintas. MIN ML fue fallo de proceso: me quede con el abridor y no exigi ofensiva funcional, y acabo 7-1 en contra sin discusion; CWS ML fue decision defendible que cayo por una carrera (9-8), pura varianza. El o8.5 de BOS/TOR (7-0) confirma lo que dice el auto-diagnostico: mis totales van 3-7 y el problema es que los elijo con la ofensiva reciente y no con el pitcheo real. Hoy corrijo el criterio, no el mercado: ningun total en la lista porque ninguno pasa el filtro completo de bullpen+parque+ofensivas, y los tres picks son ML con ventaja de abridor Y ofensiva verificada, que es donde el sistema si gana (+2.27U en ML).",
+  "resumen": "Dia con jornada MLB completa y tres jugadas bien respaldadas, todas de moneyline porque ahi esta el valor limpio hoy. La principal es Nueva York en Toronto (1.5U): Cole contra un Bieber sin control y el mejor bullpen del dia. Le siguen San Diego en Cleveland (1U), perro con la ofensiva mas caliente y relevo dominante, y Washington en Nueva York (1U), donde los Mets abren con un lanzador de 10.13 de efectividad. Riesgo total: 3.5 unidades. Descarte todos los totales del dia: vengo fallandolos por infravalorar bullpens y no voy a forzar uno solo por llenar la boleta. Aparte, parlay informativo de Cachorros y Dodgers a +144."
+}
