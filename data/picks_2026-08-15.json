@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -119,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas sin contradicción mayor: (1) matchup de abridores parejo en ERA (Hancock 3.35 vs Wesneski 3.86) pero el juego se decide atrás y ahí HOU es muy superior: bullpen 3.34 con J. Hader (0.93 ERA) frente a un bullpen de SEA en 4.12 con A. Muñoz castigado (4.47) cerrando; (2) la ofensiva de Seattle está desplomada — 2.8 carreras/juego y .660 ops en la semana, 2.2 carreras a favor en los últimos 10 con récord 2-8, y ante derechos apenas .701; (3) HOU también viene frío (3.8 c/j, .552 ops), pero su base de temporada vs derechos es .743 (índice 102) contra el .683 de SEA, y en un juego de pocas carreras la diferencia la marca el relevo; (4) el precio está en la banda donde el sistema realmente gana (-119) y el modelo da 57.4% a Houston frente al 54.3% implícito, un apoyo de +3 puntos sin contradicción.",
+      "equipos": [
+        "SEA",
+        "HOU"
+      ],
+      "destacado": "HOU",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 125,
+      "unidades": 1.0,
+      "razon": "Perro con respaldo real: E. Rodriguez llega con 2.70 de ERA y enfrenta a una ofensiva de Atlanta apagada (.631 ops y 3.5 carreras/juego en la semana) que además cae ante zurdos (.715 vs .740 frente a derechos). Del otro lado G. Holmes tiene 3.47 de ERA pero un FIP de 4.71 y 9.9% de boletos, señal de que su número está inflado. El bullpen de Arizona es el mejor del duelo (2.88 vs 3.29). La ofensiva visitante cumple el filtro funcional con .783 de ops en los últimos 7 días, aunque su split vs derechos (.687) es el punto flojo y por eso no sube a la jugada del día. El modelo da 52.1% a Arizona contra un 44.4% implícito: casi 8 puntos de ventaja al precio de +125.",
+      "equipos": [
+        "AZ",
+        "ATL"
+      ],
+      "destacado": "AZ",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYY/TOR u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -120,
+      "unidades": 1.0,
+      "razon": "Paso el under por el filtro de las cuatro trampas antes de darlo: (1) bullpens, ninguno quemado ni flojo — NYY es el mejor del día (2.61, Bednar 2.56) y Toronto cierra con L. Varland en 1.28; (2) parque techado, sin viento a favor que dispare el conteo; (3) ninguna de las dos ofensivas está caliente: Yankees 3.5 carreras/juego y .699 ops en la semana (3.4 a favor en los últimos 10), Toronto .653 ops y 4.1 c/j con un pobre .678 de ops de temporada; (4) C. Schlittler llega entero y con perfil dominante (2.21 ERA, 31.4% K, 26.1 de K-BB), y B. Fisher, aunque regala boletos (13.3%), poncha 23% ante un lineup que lleva 53 ponches en 6 juegos. El total proyectado de 8.01 es apenas contexto; el under se sostiene en pitcheo y bullpen, no en la proyección.",
+      "equipos": [
+        "NYY",
+        "TOR"
+      ],
+      "destacado": null,
+      "hora": "2:07 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "CHC ML",
+        "deporte": "MLB",
+        "destacado": "CHC",
+        "cuota": -171
+      },
+      {
+        "pick": "NYY ML",
+        "deporte": "MLB",
+        "destacado": "NYY",
+        "cuota": -165
+      }
+    ],
+    "cuota_combinada": 154,
+    "nota": "Cada pata se sostiene sola por valor, no por ser favorita. Chicago llega 8-2 en sus últimos 10 con 5.7 carreras por juego, 6.0 c/j y .805 ops en la semana, M. Boyd (3.50) al mando y un bullpen de 3.43 con J. Webb en 2.33, ante un McGreevy con 16.6% de ponches y FIP 4.29 y una ofensiva de St. Louis en .685 de ops. Nueva York apoya en C. Schlittler (2.21, 26.1 de K-BB) y el mejor bullpen del día (2.61) contra un lineup de Toronto con .653 de ops en la semana. Combinado en +154, dentro del rango y con ventaja real en las dos patas.",
+    "cuota_combinada_nota": null
+  },
+  "descartes": [
+    "WSH ML +126 pese al valor del modelo (52.0% vs 44.2% implícito): perdió ayer mismo ante NYM en esta serie, regla anti-inercia.",
+    "SD ML +108: el abridor visitante no aparece en los datos, imposible evaluar la capa principal de MLB.",
+    "BOS ML -120 con S. Gray: la ofensiva de Boston está en .667 ops y 3.6 c/j, y PIT llega con 5.5 c/j y .769 vs derechos; el modelo (52.4%) queda por debajo del 54.5% implícito.",
+    "TB ML -146: buen equipo y ofensiva caliente (7.0 c/j), pero el modelo (57.9%) prácticamente iguala al implícito (59.3%), no hay margen.",
+    "DET ML -136: modelo 56.8% vs 57.6% implícito y lineup local frío (.656 ops); CWS llega con .883 de ops, riesgo sin pago.",
+    "TEX/ATH: bullpen de Oakland en 5.37 y ofensiva de Texas hundida (.553 ops, 3.0 c/j); ningún lado del total ni del ML ofrece precio limpio.",
+    "MIL ML -123 con Misiorowski: el arma es enorme, pero el lineup de Milwaukee lleva 3.0 carreras por juego y 75 ponches en 7 juegos (SYS-004 lo frena)."
+  ],
+  "autopsia": "Del último cierre, WSH +126 fue una decisión defendible que se cayó (1-4) y NYY -142 también, pero repetir hoy cualquiera de esos dos habría sido inercia pura contra el mismo rival: por eso WSH queda fuera aunque el modelo le vea 8 puntos de ventaja. El fallo de proceso real está en el bronce (2-9, -6.96U): venía dando terceros picks especulativos sin la misma exigencia de convergencia, y hoy el bronce solo entra porque pasa el filtro completo de bullpen, parque, ofensivas frías y abridor entero. En totales llevo 2-5 en unders por infravalorar la ofensiva y el relevo; hoy el u7.5 se justifica con dos bullpens élite y dos lineups por debajo de .700 de ops, no con una proyección.",
+  "resumen": "Día con muchos juegos pero poco precio limpio: el mercado tiene bien tasados a los grandes favoritos, así que el valor está en Houston al mejor bullpen del duelo frente a la peor ofensiva del día, en Arizona como perro con abridor superior y bullpen élite, y en un under con las cuatro condiciones cumplidas en Toronto. Riesgo total del día: 3.5 unidades (1.5 + 1 + 1). Vengo de dos días en rojo, así que corto la exposición a underdogs largos y me quedo en la banda de precios donde el sistema demuestra que gana.",
+  "riesgo_total": 3.5
+}
