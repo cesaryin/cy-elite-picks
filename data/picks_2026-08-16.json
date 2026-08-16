@@ -1,0 +1,80 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "unidades": 1.5,
+      "razon": "Convergencia de cuatro capas sin contradiccion. Pitcheo: C. Mize (3.38 ERA, FIP 3.33, K-BB 17.6%) supera con claridad a T. Bibee (3.99 ERA, FIP 4.50, K-BB 12.6% y 4-12). Bullpen: San Diego 2.71 de ERA con M. Miller (0.88, 30 saves) frente a 3.50 de Cleveland, ventaja decisiva en el cierre. Ofensiva (SYS-004): SD viene caliente con .826 de ops y 5.5 carreras por juego en la semana con 12 HR, y su split vs derechos (.709) es superior al de CLE (.692) ante otro derecho. Forma: SD 7-3 en sus ultimos 10 contra un Cleveland 3-7 que recibe 5.3 carreras por juego. El modelo da 56.2% a SD frente al 51.9% implicito de -108, apoyo cuantitativo en la mejor banda de precio del sistema.",
+      "equipos": [
+        "SD",
+        "CLE"
+      ],
+      "destacado": "SD",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 114,
+      "unidades": 1.0,
+      "razon": "Perro con ventaja real en las tres capas duras. M. Soroka (2.92 ERA, FIP 3.38, apenas 5.7% de boletos) es netamente mejor que B. Elder (4.03 ERA, FIP 4.55, K-BB 11.3%). Bullpen de Arizona 2.88 de ERA, el mejor del dia entre los dos, por encima del 3.18 de Atlanta. Ofensiva (SYS-004): AZ llega con .862 de ops y 5.2 carreras por juego en la semana, mientras Atlanta esta helado (.607 de ops, 3.3 carreras por juego, 50 ponches en 6 juegos), y AZ ha permitido solo 2.8 carreras por juego en sus ultimos 10 (6-4). El modelo proyecta 56.5% para Arizona contra un 46.7% implicito en +114: se paga como perro un equipo que llega mejor en pitcheo, bullpen y bate.",
+      "equipos": [
+        "AZ",
+        "ATL"
+      ],
+      "destacado": "AZ",
+      "hora": "12:35 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 101,
+      "unidades": 0.5,
+      "razon": "Precio de moneda para el equipo con mejor abridor y mejor bate de hoy en ese duelo: S. Burke (2.99 ERA, 27.6% de ponches, K-BB 20.5%) frente a D. Anderson (3.91 ERA, FIP 4.06, 8.8% de boletos). Ofensiva (SYS-004): Chicago encabeza la semana con .893 de ops y 5.8 carreras por juego con 10 HR, y su split vs derechos (.729) supera al momento actual de Detroit, que esta en .617 de ops y 4.0 carreras por juego. Bullpens igualados (3.32 ambos), asi que la ventaja de abridor y de bate no queda diluida al final. El modelo da 54% a los White Sox contra 49.8% implicito. Va a media unidad por prudencia dada la racha reciente del nivel.",
+      "equipos": [
+        "CWS",
+        "DET"
+      ],
+      "destacado": "CWS",
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "NYM ML -159: el mercado implica 61.4% y el modelo solo 55%; ademas el bullpen de los Mets es el peor del dia (4.91) con K. Senga en el cierre a 7.95 de ERA. No hay valor.",
+    "CHC ML -174: implicita 63.5% contra 53.1% del modelo y E. Cabrera abre con 5.10 de ERA y FIP 4.79. Favorito caro.",
+    "LAD ML -176: duelo Skubal vs Henderson muy parejo (ambos con K-BB sobre 26%), ofensivas frias en las dos partes; a ese precio no queda margen.",
+    "NYY/TOR u7.0 -122: aunque Cease y ambos bullpens invitan al under, la linea ya esta en 7.0 y el sistema viene infravalorando ofensivas en los unders; sin margen de precio, se descarta.",
+    "TB ML -140: Rays en gran forma (8-2, 7.0 carreras por juego), pero abre F. Peralta con 5.33 de ERA y Baltimore llega con .858 de ops; el precio no compensa el riesgo de abridor.",
+    "PHI/MIN: ambos abridores por encima de 5.25 de ERA y ML casi pick'em; sin ventaja identificable en ningun mercado.",
+    "COL/SF y KC/LAA: equipos con bates helados en ambos lados (ops bajo .660 la ultima semana) y abridores sin muestra fiable; nada accionable.",
+    "PARLAY: hoy ninguna pata en la banda -160/-360 pasa el filtro de valor propio (NYM, CHC y LAD estan por encima de lo que el analisis y el modelo justifican). Combinar favoritos sin ventaja es margen cero por matematica, asi que se deja vacio."
+  ],
+  "autopsia": "El HOU ML fue fallo de proceso puro: Houston llegaba con .597 de ops en la semana y lo tome igual por el nombre del bullpen; eso viola mi propia regla de ofensiva funcional y hoy la aplico primero, no al final. En cambio AZ ML y el u7.5 de NYY/TOR fueron decisiones bien construidas y entraron: ambas nacian de cruzar abridor, bullpen y bate real, no de una sola capa. La correccion de hoy es de criterio, no de mercado: ningun ML entra si el equipo elegido no tiene bate funcionando ahora mismo, y el parlay se queda vacio porque no encuentro dos patas con ventaja propia, que es exactamente lo que lo tiene 1-10.",
+  "resumen": "Dia con tres jugadas de moneyline donde el abridor, el bullpen y el bate reciente apuntan al mismo lado y el precio sigue siendo razonable: San Diego en Cleveland como jugada principal, Arizona como perro con ventaja en Atlanta y los White Sox a precio de moneda en Detroit, este ultimo a media unidad por prudencia. Sin parlay hoy porque ningun favorito grande ofrece ventaja real. Riesgo total: 3.0 unidades."
+}

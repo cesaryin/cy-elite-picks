@@ -2110,39 +2110,6 @@
     ]
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-08-14",
     "pick": "NYY ML",
     "deporte": "MLB",
@@ -2194,6 +2161,93 @@
     "patas_res": [
       "W",
       "W"
+    ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-15",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -119,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "SEA 10-5 HOU",
+    "clv": 0.0,
+    "cuota_cierre": -119
+  },
+  {
+    "fecha": "2026-08-15",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 125,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.25,
+    "marcador": "AZ 10-3 ATL",
+    "clv": 0.4,
+    "cuota_cierre": 123
+  },
+  {
+    "fecha": "2026-08-15",
+    "pick": "NYY/TOR u7.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -120,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.83,
+    "marcador": "NYY 1-4 TOR",
+    "clv": 1.0,
+    "cuota_cierre": -125
+  },
+  {
+    "fecha": "2026-08-15",
+    "pick": "PARLAY: CHC ML + NYY ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 154,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "STL 8-4 CHC / NYY 1-4 TOR",
+    "patas_res": [
+      "L",
+      "L"
     ]
   }
 ]
