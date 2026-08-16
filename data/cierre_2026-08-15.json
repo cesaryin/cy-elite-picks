@@ -141,7 +141,7 @@
   },
   "inicio_utc": "2026-08-15T22:10Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIA@CIN": {
   "ml": {
@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-08-15T22:40Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SD@CLE": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-08-15T23:10Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PHI@MIN": {
   "ml": {
@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-08-15T23:10Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SEA@HOU": {
   "ml": {
@@ -237,7 +237,7 @@
   },
   "inicio_utc": "2026-08-15T23:10Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "AZ@ATL": {
   "ml": {
@@ -261,7 +261,7 @@
   },
   "inicio_utc": "2026-08-15T23:15Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "BOS@PIT": {
   "ml": {
@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-08-15T23:15Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIL@LAD": {
   "ml": {
@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-08-15T23:15Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "KC@LAA": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-08-16T01:38Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TEX@ATH": {
   "ml": {
@@ -357,6 +357,6 @@
   },
   "inicio_utc": "2026-08-16T01:40Z",
   "visto": "2026-08-15T21:40:03+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
