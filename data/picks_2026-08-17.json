@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "STL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -119,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas y precio en la banda buena. 1) Matchup ofensivo: Cincinnati está en caída libre con el bate (.182 avg, .582 ops y 3.3 carreras por juego en la última semana, 53 ponches en 6 juegos) y su split vs derechos es .688; St. Louis llega con .735 ops y 5.5 carreras por juego en los últimos 7. 2) Pitcheo local vulnerable: R. Lowder 5.15 ERA, 4.46 FIP y 9.5% de boletos, sin poder de ponche (18.2% K). 3) Bullpen: 3.79 de los relevistas de STL con R. O'Brien (3.08, 30 saves) contra 4.64 de CIN y E. Pagán 3.95 — el cierre favorece al visitante. 4) Forma: STL 7-3 en 10 con 5.2 anotadas y 3.3 permitidas, CIN 4-6 con 3.2 anotadas y 5.7 permitidas. El modelo da 57.5% a STL frente al 54.3% implícito de la cuota, apoyo sin contradicción. Se paga -119, dentro de la zona donde el sistema es más rentable.",
+      "equipos": [
+        "STL",
+        "CIN"
+      ],
+      "destacado": "STL",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "STL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 106,
+      "unidades": 1.0,
+      "razon": "El valor está en la diferencia de bullpen, que es la mayor del día: San Diego 2.69 de ERA en relevo con M. Miller (0.88, 30 saves) frente a 4.86 de los Mets, cuyo cierre depende de K. Senga con 7.79. En un juego que se decide por una carrera, ahí está el margen. La ofensiva de SD respalda el ML: .817 ops, 5.2 carreras por juego y 12 jonrones en la semana, y viene 8-2 en 10 con 4.9 anotadas y solo 2.9 permitidas; NYM baja a 4.0 carreras por juego y .696 vs derechos, la mano de W. Buehler. Acepto la desventaja nominal de abridor (Buehler 4.88 vs N. McLean 3.42) porque el FIP de Buehler es 4.32 y el juego completo lo terminan los relevistas. Modelo 50.7% a SD contra 48.5% implícito, y se cobra a favorito de campo neutro con precio de perro.",
+      "equipos": [
+        "SD",
+        "NYM"
+      ],
+      "destacado": "SD",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS/CHC o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.0",
+      "cuota": -113,
+      "unidades": 1.0,
+      "razon": "Corrijo el sesgo a under con un over que sí pasa el filtro completo. Ofensivas calientes: Chicago Sox con .888 ops, 6.2 carreras por juego y 12 jonrones en la semana (y .734 vs zurdos, la mano de S. Imanaga); Cubs con 5.2 carreras por juego, 11 jonrones y un potente .800 ops vs zurdos que ya no aplica, pero .738 vs derechos contra L. Castillo, que carga 4.96 de ERA. Imanaga aparenta mejor de lo que es: 3.74 ERA con 4.53 de FIP. Tendencia clara: 7 de 10 juegos por encima de 8.5 en AMBOS equipos, y en los últimos 10 CWS promedia 6.1 anotadas y 5.3 permitidas, CHC 5.3 y 5.2. La línea de solo 8.0 en Wrigley con estos dos lineups y dos abridores con FIP arriba de 4.35 es corta; el único freno son los bullpens (3.32 y 3.42), y por eso va a 1U y no más.",
+      "equipos": [
+        "CWS",
+        "CHC"
+      ],
+      "destacado": null,
+      "hora": "7:05 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.0
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -246
+      },
+      {
+        "pick": "CHC ML",
+        "deporte": "MLB",
+        "destacado": "CHC",
+        "cuota": -161
+      }
+    ],
+    "cuota_combinada": 128,
+    "nota": "Dos patas elegidas por ventaja propia, no por ser favoritas. PHI: C. Sánchez 2.54 ERA, 2.99 FIP, 28% K y 5.4% BB contra un Miami que cae a .698 ops y 4.3 carreras por juego, más bullpen 3.34 con J. Durán (1.66) frente a 4.31 y un cerrador rival en 5.87. CHC: L. Castillo (4.96) contra un lineup local que castiga a zurdos y derechos por igual y bullpen parejo con J. Webb 2.33. El combinado paga +128 y exige 43.9%; con 71% y 62% implícitos ajustados al alza por matchup, queda con margen. No cuenta en el balance.",
+    "descartes": []
+  },
+  "descartes": [
+    "TB ML -158: la cuota exige 61% y el modelo solo da 57%; además TB baja a .685 vs zurdos... no aplica (abre BAL con derecho), pero el precio ya se come el margen. BAL +147 queda fuera de la banda rentable.",
+    "PHI Spread -1.5 -114: buen matchup, pero el modelo da 60.9% de victoria simple frente al 71% implícito del ML; pedir 2 carreras de margen a ese precio no deja valor.",
+    "AZ@BOS: abridor de Boston sin confirmar y M. Bratt con solo 143 bateadores enfrentados y 13.3% de boletos. Datos insuficientes.",
+    "ATL ML -124: el modelo da 52.3% contra 55.4% implícito y la ofensiva de Atlanta viene helada (.670 ops, 3.8 c/j). Contradicción, fuera.",
+    "ATH@KC o9.0: tentador por los bullpens (5.31 y 4.43, cerrador de KC en 6.02), pero el bate de KC está congelado (.560 ops, 3.5 c/j) y M. Wacha controla; preferí el over de Wrigley.",
+    "PIT ML -103: edge real pero fino (modelo 53.5% vs 50.7% implícito); no supera a los tres picks elegidos.",
+    "LAD@COL: LAD -259 fuera de rango y el total de 10.5 en Coors con B. Snell recién reincorporado es lotería.",
+    "CIN team total u4.5 -142: la lógica está, pero con el abridor de STL sin confirmar no doy un under a ese precio."
+  ],
+  "autopsia": "Del último cierre, SD y CWS fueron decisiones correctas y bien construidas; el fallo fue AZ ML a +114, y ahí la lección no es el equipo sino el precio: los perros de +100 a +140 solo rinden 50% en mi historial y ese lo tomé sin una capa dominante. Hoy concentro el riesgo en la banda -119/+106, donde el sistema realmente gana. También corrijo el criterio de totales: llevo 2-5 en unders por infravalorar ofensivas, así que el total de hoy es un over y solo después de comprobar bullpens, tendencia y bate reciente de los dos lados. El bronce (3-8) sigue siendo mi punto débil, por eso hoy exige las mismas capas que la Elite y no lo relleno con especulación.",
+  "resumen": "Tres jugadas hoy por 3.5 unidades de riesgo total: St. Louis en la línea de dinero como la más sólida del día (bate de Cincinnati hundido, abridor local con 5.15 y ventaja de bullpen), San Diego a precio de perro apoyado en la mayor brecha de relevo de la jornada, y el over 8 en Wrigley como corrección consciente a mi exceso de unders. Descarté los favoritos caros (TB, PHI, LAD) porque el precio ya se come la probabilidad. Parlay informativo de PHI + CHC a +128, sin efecto en el balance."
+}

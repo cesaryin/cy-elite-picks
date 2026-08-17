@@ -2164,39 +2164,6 @@
     ]
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-08-15",
     "pick": "HOU ML",
     "deporte": "MLB",
@@ -2249,5 +2216,77 @@
       "L",
       "L"
     ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-16",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -108,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.39,
+    "marcador": "SD 5-0 CLE",
+    "clv": -0.7,
+    "cuota_cierre": -105
+  },
+  {
+    "fecha": "2026-08-16",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 114,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "AZ 3-5 ATL",
+    "clv": -0.2,
+    "cuota_cierre": 115
+  },
+  {
+    "fecha": "2026-08-16",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 101,
+    "unidades": 0.5,
+    "resultado": "W",
+    "neto_u": 0.5,
+    "marcador": "CWS 7-5 DET",
+    "clv": -0.5,
+    "cuota_cierre": 103
   }
 ]
