@@ -1,0 +1,97 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -128,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas sin contradicción: (1) abridor, N. Martinez 2.74 ERA con solo 3.6% de boletos frente a J. Soriano (3.16 pero 11.2% BB y FIP 3.96, se complica solo); (2) ofensiva funcional (SYS-004) — TB llega con .868 ops y 6.2 carreras/juego con 11 HR en la semana y batea .765 ops vs derechos, justo la mano del rival; (3) TOR está en apagón ofensivo: .654 ops, 3.5 c/j y UN solo HR en 6 juegos; (4) cierre asegurado — bullpen TB 3.48 con B. Baker 1.47 y 35 saves, mientras el de TOR está en 4.03. El modelo da 59.9% a TB contra 56.1% implícito de la cuota, y el precio (-128) cae en la banda -140/-115 que es donde el sistema realmente gana.",
+      "equipos": [
+        "TOR",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "STL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -116,
+      "unidades": 1.0,
+      "razon": "Ventaja real de abridor: K. Leahy 3.38 ERA con 14.1% K-BB frente a A. Abbott 4.13 ERA, FIP 4.60 y apenas 6.6% K-BB (control pobre, 11.1% de boletos). Ofensiva funcional a favor: STL promedia 5.0 carreras/juego con .731 ops y 9 HR en la última semana y viene 6-4 con 5.3 anotadas y 3.7 permitidas; CIN está congelado (.608 ops, 3.4 c/j, 77 ponches en 8 juegos) aunque batee mejor vs zurdos, dato que hoy no aplica porque Leahy es derecho. Bullpen también inclinado: 3.73 con R. O'Brien (3.02, 31 saves) contra 4.13 de Cincinnati. El modelo marca 57% a STL vs 53.7% implícito y la cuota está en la mejor banda del sistema.",
+      "equipos": [
+        "STL",
+        "CIN"
+      ],
+      "destacado": "STL",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "STL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "BAL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 104,
+      "unidades": 1.0,
+      "razon": "Perro con la mejor ofensiva del día en forma: BAL viene con .286 de average, .855 ops, 6.0 carreras por juego y 13 jonrones en 6 partidos (SYS-002 y SYS-004 cumplidos de sobra), mientras los Yankees están secos: .630 ops, 3.3 c/j y 52 ponches en 6 juegos, y su split vs derechos es apenas .713 frente a S. Baz, que tiene FIP 3.58 (mejor que su ERA de 4.00) y solo 7.9% de boletos. C. Rodón lanza bien (3.30) pero regala 13.4% de bases por bolas, lo que le da vida a un lineup caliente en su parque. El modelo da 53.1% a Baltimore contra 49% implícito: valor claro a precio pequeño. Riesgo asumido: el bullpen visitante (2.64) es superior al local (4.30), por eso va como tercer pick y no más arriba.",
+      "equipos": [
+        "NYY",
+        "BAL"
+      ],
+      "destacado": "BAL",
+      "hora": "5:35 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BAL",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -229
+      },
+      {
+        "pick": "CLE ML",
+        "deporte": "MLB",
+        "destacado": "CLE",
+        "cuota": -182
+      }
+    ],
+    "cuota_combinada": 123,
+    "nota": "Cada pata tiene ventaja propia, no van por ser favoritas. PHI: Z. Wheeler (2.89 ERA, 30.2% K y 23.8% K-BB) frente a C. Gibson (5.61 ERA), con Filadelfia bateando .786 ops y 5.0 c/j y bullpen 3.43 cerrado por J. Duran (1.83) contra el 4.34 de Miami con P. Fairbanks en 5.87. CLE: F. Griffin (3.25) contra C. Whisenhunt (6.11 ERA y 3.1% de K-BB, el peor control del día), con bullpen 3.50 y C. Smith (2.29, 31 saves) frente al 4.31 de San Francisco. El combinado a +123 exige 44.8% y las dos probabilidades reales estimadas lo superan.",
+    "nota_extra": null
+  },
+  "descartes": [
+    "SD ML vs NYM: acaba de perder 1-2 contra este mismo rival en la misma serie; sin cambio de escenario que lo justifique, regla anti-inercia lo bloquea.",
+    "BOS ML -165 y AZ +153: precio fuera de la banda rentable medida (-160/+140 útil) y ambos lineups con lecturas mixtas.",
+    "CWS +150 vs CHC: no hay abridor confirmado de Chicago Sox en los datos; sin esa capa no se puede evaluar el matchup (SYS-001).",
+    "SEA/MIL u7.5: dos abridores buenos, pero MIL con bullpen y ofensiva irregulares y SEA con .766 ops en la semana; no pasa el filtro de las cuatro condiciones para under.",
+    "ATL ML -124: su ofensiva está en .633 ops y 3.3 carreras por juego, no cumple SYS-004 pese al mejor bullpen.",
+    "LAD/COL: total 11.5 en Coors con bullpen local en 5.38 es una moneda al aire; LAD -187 fuera de rango.",
+    "TEX -153 vs WSH: Texas anota 2.3 carreras por juego con .573 ops en la semana; no se paga un favorito con el bate muerto."
+  ],
+  "autopsia": "El SD ML de ayer fue una buena decisión que murió por una carrera (1-2): proceso correcto, margen mínimo — pero hoy no lo repito contra el mismo rival, esa es justamente la trampa de la inercia que ya me costó antes. Lo que sí corrijo es el criterio de los niveles: bronce va 4-7 y plata 6-8 porque bajaba el listón en el segundo y tercer pick; hoy los tres salen del mismo filtro de convergencia y solo cambia el orden de calidad. En totales dejo de elegir el lado por defecto: el under va 2-4 y hoy no aparece ninguno que pase las cuatro condiciones (bullpen, parque, ofensivas frías, abridor sin límite), así que no fuerzo ninguno.",
+  "resumen": "Tres jugadas de MLB por 3.5 unidades en total: Tampa en casa con Martinez y el lineup más caliente del día frente a unos Azulejos sin poder (1.5U), San Luis con clara ventaja de abridor y bullpen sobre unos Rojos congelados (1U), y Baltimore como perro barato con 6 carreras por juego contra unos Yankees que no están bateando (1U). Además el parlay informativo Filadelfia + Cleveland a +123, donde ambas patas tienen ventaja de abridor y bullpen, no solo etiqueta de favorito."
+}
