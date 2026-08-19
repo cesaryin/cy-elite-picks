@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -118,
+      "unidades": 1.5,
+      "razon": "Convergencia de cuatro capas en un precio de banda óptima (-118 = 54.1% implícito). (1) Ofensiva funcional y caliente: Milwaukee viene de .760 ops y 6.8 carreras por juego en la semana, con .748 de ops vs derechos, justo la mano de D. May y de todo el staff rival. (2) Bullpen: 3.60 de era con T. Megill (2.44) contra un bullpen de Seattle en 4.45 con A. Muñoz en 4.37 — el cierre favorece claramente al local. (3) Forma: MIL 6-4 con 5.3 a favor y 3.4 en contra; SEA 3-7 recibiendo 6.2 carreras por juego y con .642 de ops vs zurdos y solo .705 vs derechos, ofensiva por debajo de la media (índice 95). (4) El modelo da 59.0% a Milwaukee frente al 54.1% implícito, apoyo sin contradicción. La única capa a favor de Seattle es L. Gilbert (3.28) sobre May (4.13), pero May tiene mejor fip (3.58) que su era y la diferencia se diluye en las entradas 6-9, donde el local domina.",
+      "equipos": [
+        "SEA",
+        "MIL"
+      ],
+      "destacado": "MIL",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIA/PHI o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -110,
+      "unidades": 1.0,
+      "razon": "Over con las cuatro comprobaciones a favor. Abridor local vulnerable: A. Nola con 5.33 de era y 4.90 de fip, y enfrente Miami llega con 4.7 carreras por juego y .739 de ops vs derechos. Del otro lado, aunque S. Alcántara (3.43) es sólido, Filadelfia está encendido: .296 de average, .813 de ops y 6.0 carreras por juego en la semana, y su tendencia de over es 7/10 en los últimos 10. Y el punto que suele romper los unders: el bullpen de Miami está en 4.39 con P. Fairbanks en 5.87 de era como cerrador, así que las entradas finales son terreno de anotación. Ambos equipos promedian más de 5.4 carreras a favor en sus últimos 10. Contexto: el modelo proyecta 11.59 carreras (solo apoyo, no la base del pick).",
+      "equipos": [
+        "MIA",
+        "PHI"
+      ],
+      "destacado": null,
+      "hora": "5:05 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TB team total o4.5",
+      "deporte": "MLB",
+      "tipo": "team total o4.5",
+      "cuota": 105,
+      "unidades": 1.0,
+      "razon": "En vez de pagar -204 por el ML de Tampa, el valor está en su producción. M. Scherzer llega con 6.59 de era y 5.34 de fip, apenas 17.1% de ponches y 9.4% de boletos en 181 bateadores: no está reteniendo lineups. Enfrente, la ofensiva de Tampa es la más caliente de su serie: .314 de average, .800 de ops y 5.0 carreras por juego en la semana, con .765 de ops vs derechos (la mano de Scherzer) y índice ofensivo 103. Si el abridor visitante no completa, detrás hay un bullpen de Toronto en 4.06 de era. A +105 se paga más que la probabilidad real de que el mejor equipo de la liga (75-50) pase de 4 carreras en casa ante un abridor con esos números.",
+      "equipos": [
+        "TOR",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "TB",
+        "lado": "over",
+        "linea": 4.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "CLE ML",
+        "deporte": "MLB",
+        "destacado": "CLE",
+        "cuota": -206
+      },
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -204
+      }
+    ],
+    "cuota_combinada": 122,
+    "nota": "Dos patas con ventaja propia, no solo favoritas. Cleveland manda a P. Messick (2.59 era, 3.51 fip, 25.1% k) contra un abridor de San Francisco sin registro en el nivel, y los Giants llegan 3-7 con .681 de ops y 3.6 carreras por juego, además de .666 de ops vs zurdos: mal cruce total. Tampa pone a D. Rasmussen (2.78, 21.7% k-bb) frente a M. Scherzer (6.59) con su lineup en .800 de ops. Combinado +122 sobre una probabilidad conjunta que estimo por encima del 45% que exige el precio.",
+    "nota_riesgo": null
+  },
+  "descartes": [
+    "SD ML -136 vs NYM: el matchup de abridores (M. King vs R. Stock, 6.57) y el bullpen (2.68 con M. Miller 0.86 vs 4.69 con K. Senga cerrando en 7.79) son atractivos, pero acabo de perder este mismo ML en esta misma serie y la ofensiva de San Diego solo produce 3.8 carreras por juego con .711 vs derechos. Anti-inercia: no lo repito.",
+    "CIN ML -148 vs STL: el modelo da 51% frente al 59.7% implícito y la ofensiva de Cincinnati está congelada (.577 ops, 2.8 carreras por juego en 8 juegos). Buen abridor (C. Burns) no compensa un lineup así a ese precio.",
+    "CWS ML +130 en Chicago: el modelo apoya (50.2% vs 43.5%), pero es duelo de dos abridores en 2.5x de era con bullpens casi idénticos; sin capa desempatante clara y en banda +100/+140, que apenas es rentable en el historial.",
+    "AZ +147 / BOS -158 en Fenway: el precio de Boston está fuera de la banda rentable y Arizona batea .686 vs derechos, sin margen real por ningún lado.",
+    "LAD/COL: total 11.5 demasiado inflado en Coors y el ML de los Dodgers a -191 fuera de rango.",
+    "DET/PIT y ATH/KC: abridores incompletos o sin dato fiable (Jobe con 6.23 y sin abridores confirmados en Kansas City), no hay base para exigir convergencia."
+  ],
+  "autopsia": "El último cierre deja dos lecturas distintas: BAL +104 fue una decisión razonable que cayó por dos carreras (proceso válido, varianza), pero TB ML -128 fue puro fallo de proceso: repetir un equipo dentro de la misma serie sin una razón nueva y acabar 10-5 en contra. Hoy aplico eso literalmente descartando SD ML pese a que el matchup pinta bien. El otro ajuste es de criterio en totales: mi under 2-2 y el over 2-1 me dicen que estaba castigando ofensivas calientes, así que en Miami-Filadelfia el over lo sostengo sobre bullpen (Fairbanks 5.87) y ritmo de anotación, no sobre la proyección del modelo.",
+  "resumen": "Día largo de MLB, 15 juegos, y el mejor respaldo está en Milwaukee en casa: ofensiva encendida, bullpen superior y un Seattle que llega hundido; ahí van 1.5 unidades. Complemento con el over de Miami-Filadelfia (Nola flojo, dos lineups produciendo y bullpen visitante quebrado) y con la producción de Tampa contra un Scherzer que ya no retiene lineups, 1 unidad cada uno. Riesgo total del día: 3.5 unidades. El parlay de Cleveland y Tampa va aparte, como información, sin contar al balance."
+}
