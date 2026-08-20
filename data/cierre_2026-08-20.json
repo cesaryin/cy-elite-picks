@@ -21,7 +21,7 @@
   },
   "inicio_utc": "2026-08-20T16:40Z",
   "visto": "2026-08-20T15:51:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SF@CLE": {
   "ml": {
@@ -45,7 +45,7 @@
   },
   "inicio_utc": "2026-08-20T17:10Z",
   "visto": "2026-08-20T15:51:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TOR@TB": {
   "ml": {
@@ -69,7 +69,7 @@
   },
   "inicio_utc": "2026-08-20T17:10Z",
   "visto": "2026-08-20T15:51:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATH@KC": {
   "ml": {
@@ -93,7 +93,7 @@
   },
   "inicio_utc": "2026-08-20T18:10Z",
   "visto": "2026-08-20T15:51:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SEA@MIL": {
   "ml": {
@@ -117,7 +117,7 @@
   },
   "inicio_utc": "2026-08-20T18:10Z",
   "visto": "2026-08-20T15:51:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATL@CWS": {
   "ml": {
@@ -141,12 +141,12 @@
   },
   "inicio_utc": "2026-08-20T18:10Z",
   "visto": "2026-08-20T15:51:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "NYY@BAL": {
   "ml": {
-   "NYY": -116,
-   "BAL": 108
+   "NYY": -105,
+   "BAL": -102
   },
   "total": {
    "linea": 7.5,
@@ -156,45 +156,45 @@
   "spread": {
    "NYY": {
     "linea": -1.5,
-    "cuota": 138
+    "cuota": 148
    },
    "BAL": {
     "linea": 1.5,
-    "cuota": -167
+    "cuota": -180
    }
   },
   "inicio_utc": "2026-08-20T22:35Z",
-  "visto": "2026-08-20T15:51:14+00:00",
+  "visto": "2026-08-20T19:06:43+00:00",
   "cerrado": false
  },
  "WSH@TEX": {
   "ml": {
-   "WSH": 147,
-   "TEX": -158
+   "WSH": 160,
+   "TEX": -172
   },
   "total": {
    "linea": 7.5,
-   "over": -110,
-   "under": -110
+   "over": -105,
+   "under": -115
   },
   "spread": {
    "WSH": {
     "linea": 1.5,
-    "cuota": -157
+    "cuota": -142
    },
    "TEX": {
     "linea": -1.5,
-    "cuota": 130
+    "cuota": 118
    }
   },
   "inicio_utc": "2026-08-21T00:05Z",
-  "visto": "2026-08-20T15:51:14+00:00",
+  "visto": "2026-08-20T19:06:43+00:00",
   "cerrado": false
  },
  "LAA@HOU": {
   "ml": {
-   "LAA": 164,
-   "HOU": -177
+   "LAA": 163,
+   "HOU": -176
   },
   "total": {
    "linea": 8.5,
@@ -212,7 +212,7 @@
    }
   },
   "inicio_utc": "2026-08-21T00:10Z",
-  "visto": "2026-08-20T15:51:14+00:00",
+  "visto": "2026-08-20T19:06:43+00:00",
   "cerrado": false
  }
 }
