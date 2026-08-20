@@ -1,0 +1,81 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -102,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas y precio en la mejor banda del sistema (-115 a +100). Ofensiva: CWS es el lineup mas caliente del dia con .833 ops, 5.6 carreras/juego y 10 HR en la ultima semana, mientras ATL llega en colapso total (.522 ops, 2.5 c/j, 53 K en 6 juegos). Pitcheo: A. Kay (4.01) no es inferior a G. Holmes (3.82) y el FIP delata a Holmes (4.78 con 10.1% BB), es decir su ERA esta inflada de suerte. Bullpen: 3.27 CWS con G. Taylor (2.05) sostiene el cierre frente a 3.13 de ATL, sin desventaja real. Localia y el modelo apoyan: 58.2% a CWS contra 50.5% implicito del -102, o sea el mercado esta cobrando un pick'em por el equipo que hoy batea y el que no.",
+      "equipos": [
+        "ATL",
+        "CWS"
+      ],
+      "destacado": "CWS",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "ATH/KC o8.0",
+      "deporte": "MLB",
+      "tipo": "o8.0",
+      "cuota": -115,
+      "unidades": 1.0,
+      "razon": "Over con las cuatro condiciones cubiertas. Ofensivas calientes las DOS: ATH con .812 ops y 5.2 c/j (10 HR en 6 juegos) y KC con .759 ops y 5.3 c/j. Abridores flojos: G. Jump 4.50 con 10.9% de boletos y R. Dobnak con un espejismo de 1.73 de ERA que su FIP 3.96 y su ridiculo 14.2% de ponches desmienten (no genera swing-and-miss, todo va en juego). Y sobre todo los bullpens, que es donde mueren estas lineas: ATH 5.29 y KC 4.81 con A. Lange cerrando a 5.98 de ERA — las entradas 6-9 son gasolina. Ambos vienen 6/10 en overs de 8.5 y esta linea es solo 8.0.",
+      "equipos": [
+        "ATH",
+        "KC"
+      ],
+      "destacado": null,
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.0
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "STL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -106,
+      "unidades": 1.0,
+      "razon": "Precio de moneda para un juego que no lo es. STL viene 6-4 con 4.7 carreras a favor y 3.0 en contra en 10 juegos, y su lineup responde (.748 ops, 4.7 c/j en la semana), mientras CIN esta apagado: .620 ops y 3.4 c/j en 8 juegos con 75 ponches. Pitcheo a favor: M. McGreevy 3.48 contra B. Singer 4.66 (5-11), ambos derechos, y STL batea .697 ops vs derechos frente al .683 de CIN. Bullpen tambien: 3.72 de STL con R. O'Brien (2.96, 32 saves) contra 4.13 de CIN con E. Pagan a 4.30. El modelo da 56% a STL frente al 51.5% implicito. Voy a 1U porque el parque de Cincinnati siempre deja la puerta abierta a un jonron que empareja.",
+      "equipos": [
+        "STL",
+        "CIN"
+      ],
+      "destacado": "STL",
+      "hora": "11:40 AM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "STL",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "TB ML (-163): fuera de rango de cuota y ademas TOR ya le gano 10-5 en esta misma serie; no repito por inercia sin ventaja nueva.",
+    "TOR ML (+152): TOR batea apenas .628 de ops vs zurdos y enfrenta a I. Seymour (L, 28.8% K). Sin respaldo ofensivo.",
+    "MIL ML (-127): perdio hace un dia contra este mismo SEA (7-5) y el modelo (57.2%) apenas supera el 55.9% implicito. Sin margen, anti-inercia.",
+    "BAL ML (+112): tentador con NYY en .525 ops, pero ya cayo contra NYY en esta serie y hoy enfrenta a G. Cole (3.22, 26.1% K) con el bullpen mas dominante de la liga (2.59) detras.",
+    "SF ML (+165): banda de cuota sin evidencia de rentabilidad y la ofensiva visitante va a 3.6 c/j contra G. Williams (31.8% K).",
+    "WSH/TEX u7.5: deGrom y dos ofensivas frias invitan, pero el bullpen de WSH (4.29) y el modelo en 8.35 dejan el under demasiado justo; no fuerzo un under mas.",
+    "LAA/HOU: HOU -177 fuera de rango y el ML de LAA (+165) no tiene ofensiva (.586 ops, 3.2 c/j) que lo respalde.",
+    "Parlay: solo HOU pasaba el filtro de valor propio (modelo 63.5% vs 63.9% implicito, ni eso). CLE, TB y TEX cotizan por encima de lo que el modelo les da, y combinar favoritos sin ventaja es -EV garantizado. Prefiero no darlo a inventarlo."
+  ],
+  "autopsia": "Del ultimo cierre, el team total o4.5 de TB fue la buena decision: leer una ofensiva caliente y jugarla en el mercado correcto, no en el ML. El MIL ML fue fallo de proceso puro: repeti al favorito de la serie despues de que SEA ya le habia ganado, pagando -118 por un edge que el modelo apenas veia. Y el o8.5 de MIA/PHI acabo en 5 carreras: me fui al over sin exigir que las DOS ofensivas vinieran calientes, solo con la del favorito. Hoy corrijo el criterio: cada total lo apruebo unicamente si ambos lineups estan produciendo Y los dos bullpenes son vulnerables, que es exactamente lo que pasa en Kansas City.",
+  "resumen": "Tres jugadas, 3.5 unidades de riesgo total. La principal es Chicago White Sox en casa a precio de moneda: son el mejor bateo de la semana contra unos Bravos que llevan 6 juegos sin anotar (2.5 carreras por juego). La segunda es el over 8.0 en Kansas City, donde chocan dos ofensivas calientes contra dos abridores mediocres y, sobre todo, dos bullpenes con ERA por encima de 4.80. Cierro con San Luis a -106 en Cincinnati, mejor en pitcheo, bullpen y bateo reciente por el mismo precio. Vengo de dos dias en rojo, asi que me quedo solo en las bandas de cuota donde el sistema si gana dinero (-115 a +100) y dejo el parlay vacio: hoy no habia dos patas con ventaja real y combinar favoritos caros es tirar informacion.",
+  "picks_count": 3
+}

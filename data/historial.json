@@ -2311,39 +2311,6 @@
     ]
   },
   {
-    "fecha": "2026-07-21",
-    "pick": "BOS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 1.5,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -138,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.72,
-    "marcador": "MIN 2-5 CLE"
-  },
-  {
-    "fecha": "2026-07-21",
-    "pick": "TB ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "TB 12-2 TOR"
-  },
-  {
     "fecha": "2026-08-18",
     "pick": "TB ML",
     "deporte": "MLB",
@@ -2394,6 +2361,89 @@
     "marcador": "MIA 4-6 PHI / SF 1-8 CLE",
     "patas_res": [
       "W",
+      "W"
+    ]
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "BOS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 1.5,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "⛔ BAL@BOS — Postponed (Rain)"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -138,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.72,
+    "marcador": "MIN 2-5 CLE"
+  },
+  {
+    "fecha": "2026-07-21",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "TB 12-2 TOR"
+  },
+  {
+    "fecha": "2026-08-19",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -118,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "SEA 7-5 MIL",
+    "clv": 1.2,
+    "cuota_cierre": -124
+  },
+  {
+    "fecha": "2026-08-19",
+    "pick": "MIA/PHI o8.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -110,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIA 1-4 PHI"
+  },
+  {
+    "fecha": "2026-08-19",
+    "pick": "TB team total o4.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 105,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.05,
+    "marcador": "TOR 6-7 TB"
+  },
+  {
+    "fecha": "2026-08-19",
+    "pick": "PARLAY: CLE ML + TB ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 122,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "SF 1-0 CLE / TOR 6-7 TB",
+    "patas_res": [
+      "L",
       "W"
     ]
   }
