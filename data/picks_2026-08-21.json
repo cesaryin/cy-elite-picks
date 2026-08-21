@@ -1,0 +1,80 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -134,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas: (1) pitcheo — J. Misiorowski 1.75 ERA con 39.8% de ponches y 34% K-BB, el mejor perfil de dominio de la jornada; (2) ofensiva rival muerta — ATL viene con .524 de OPS, 2.4 carreras por juego y 64 ponches en 7 juegos, el peor lineup del board, y su split vs derechos es apenas .731; (3) bullpen/cierre — T. Megill 2.39 con 23 saves para blindar un juego de pocas carreras, justo el escenario que marca la línea de 6.0; (4) ofensiva propia caliente: MIL 7.5 c/j, .811 de OPS y 8 HR en 6 juegos en casa. El modelo da 65% a MIL contra 57.3% implícito de -134, y el precio cae en la banda buena. Único matiz: C. Sale (2.16) es élite y MIL batea .697 vs zurdos, por eso el pick es al ML y no al spread -1.5.",
+      "equipos": [
+        "ATL",
+        "MIL"
+      ],
+      "destacado": "MIL",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -141,
+      "unidades": 1.0,
+      "razon": "Ventaja de abridor real y no nominal: S. Burke 3.15 ERA con 27% de ponches y 19.6% K-BB frente a S. Manaea 4.22 (FIP 4.30). La capa que decide es el bullpen: NYM carga con 4.77 de ERA en relevo y un cerrador con 7.82 (K. Senga), contra 3.24 de CWS con G. Taylor en 2.05, así que el tramo 6-9 favorece claro al local. Ofensiva funcional: CWS con .756 de OPS, 4.4 c/j y 10 HR en 7 juegos, y .729 vs zurdos, que es la mano de Manaea; NYM baja a 3.5 c/j con .708. El modelo da 64% a CWS vs 58.5% implícito. No es inercia del pick anterior: ahí el problema fue quedarse en blanco ante un abridor dominante, y hoy el rival es un zurdo con FIP de 4.30.",
+      "equipos": [
+        "NYM",
+        "CWS"
+      ],
+      "destacado": "CWS",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -113,
+      "unidades": 1.0,
+      "razon": "Precio en la mejor banda del sistema para un juego que el mercado tiene casi en pick'em. T. Melton llega con 1.49 de ERA (FIP 3.80, así que no lo sobrevaloro) contra N. Cameron 4.16, y la diferencia grande está en el relevo: KC tiene 4.75 de ERA de bullpen con A. Lange cerrando en 5.98, mientras DET va con 3.43. Ofensiva funcional de DET: 4.2 c/j y .701 de OPS en la semana, .694 vs zurdos, suficiente para castigar a ese bullpen en el cierre. El modelo da 56.8% a DET frente a 53.1% implícito. Aviso asumido: KC viene bateando 5.4 c/j, por eso va a 1U y no más.",
+      "equipos": [
+        "DET",
+        "KC"
+      ],
+      "destacado": "DET",
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CLE ML -148 en Coors: el modelo lo pone en 52.4% contra 59.7% implícito y la ofensiva de CLE está en .669 de OPS; contradicción grande, fuera.",
+    "Over 10.5 en COL-CLE: el bullpen de COL (5.18) invita, pero el total ya está inflado y la proyección queda pegada a la línea; sin margen.",
+    "BOS ML -170: hay convergencia (S. Gray 2.65, SF a 3.3 c/j) pero el precio peor de -140 es la banda donde el sistema pierde dinero.",
+    "NYY -231, LAD -245 y PHI -209: favoritos con el modelo por debajo de la probabilidad implícita; se paga de más.",
+    "LAA +131 pese al edge del modelo (55.7% vs 43.3%): batea .696 vs zurdos y enfrenta a un zurdo, con bullpen de 4.39; el respaldo no acompaña al número.",
+    "Under 6.0 en ATL-MIL: dos abridores élite, pero MIL viene a 7.5 c/j y el bullpen local es 3.48; la línea ya descuenta el escenario.",
+    "MIN-SD y STL-PHI: sin abridor confirmado en un lado (STL) o directamente ausente (SD), no se puede evaluar la capa principal.",
+    "TB +116 con F. Peralta en 5.27 de ERA: la ventaja de pitcheo no existe."
+  ],
+  "autopsia": "Del último cierre, STL ML fue una buena decisión que confirmó el patrón que sí funciona: abridor con ventaja real más ofensiva que impulsa. El CWS ML que perdió 2-0 no fue un error de precio ni de convergencia, fue el lineup quedándose en blanco: eso me obliga a exigir que la ofensiva del elegido tenga carreras por juego decentes en la semana, no solo un buen bullpen detrás. Con tres días en rojo y el ML en -3.59U, hoy no evito ese mercado pero sí subo el listón: los tres picks están entre -141 y -113, la banda medida como rentable, y descarté cinco favoritos donde el modelo contradice al precio.",
+  "resumen": "Tres jugadas de MLB, todas dentro de la banda de precio que el historial señala como rentable (-141 a -113) y ninguna comprada cara. La principal es Milwaukee en casa: el abridor más dominante del día contra la ofensiva más fría del calendario. Se suman Chicago White Sox, apoyados en el desastre del bullpen visitante, y Detroit, donde el relevo de Kansas City es el punto de quiebre. Sin parlay hoy: solo encontré una pata de favorito con valor propio y combinar favoritos sin ventaja es tirar dinero. Riesgo total: 3.5 unidades."
+}
