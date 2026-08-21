@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-08-20T22:35Z",
   "visto": "2026-08-20T21:48:35+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "WSH@TEX": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-08-21T00:05Z",
   "visto": "2026-08-20T21:48:35+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "LAA@HOU": {
   "ml": {
@@ -213,6 +213,6 @@
   },
   "inicio_utc": "2026-08-21T00:10Z",
   "visto": "2026-08-20T21:48:35+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
