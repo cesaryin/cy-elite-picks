@@ -2485,5 +2485,44 @@
     "marcador": "STL 10-9 CIN",
     "clv": 0.0,
     "cuota_cierre": -106
+  },
+  {
+    "fecha": "2026-08-21",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -134,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.12,
+    "marcador": "ATL 1-2 MIL",
+    "clv": 1.1,
+    "cuota_cierre": -140
+  },
+  {
+    "fecha": "2026-08-21",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -141,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.71,
+    "marcador": "NYM 4-6 CWS",
+    "clv": -3.1,
+    "cuota_cierre": -124
+  },
+  {
+    "fecha": "2026-08-21",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -113,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "DET 2-5 KC",
+    "clv": -3.1,
+    "cuota_cierre": 100
   }
 ]

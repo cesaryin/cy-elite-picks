@@ -1,0 +1,95 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TOR ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -104,
+      "unidades": 1.5,
+      "razon": "Ventaja de abridor real y grande: D. Cease llega con 2.42 ERA, 2.83 FIP y 36.3% de ponches (K-BB 25.7%) frente a R. Weathers (3.56 ERA, 3.83 FIP, K-BB 18.5%). La segunda capa es el bate: Toronto viene con .295/.807 y 4.8 carreras por juego en la semana, mientras el lineup local está en .626 de OPS, 3.7 c/j y 66 ponches en 6 juegos, justo el perfil que un lanzador de 36% K castiga. Tercera capa, el bullpen visitante aguanta el cierre (3.39 con cerrador de 1.24 y 28 salvados). El modelo da 53.7% a Toronto contra 50.5% implícito y el precio de -104 está en la banda donde el sistema mejor rinde. Único matiz: TOR batea .638 vs zurdos, por eso el valor está en el ML y no en el spread.",
+      "equipos": [
+        "TOR",
+        "NYY"
+      ],
+      "destacado": "TOR",
+      "hora": "12:35 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TOR",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIN/SD u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -114,
+      "unidades": 1.0,
+      "razon": "Under con las cuatro condiciones cubiertas, que es lo que se exige tras fallar unders por infravalorar la ofensiva: (1) ningún bullpen quemado ni flojo — San Diego 2.68 con M. Miller (0.84, 31 salvados) y Minnesota 3.54 con Y. Gómez (3.20); (2) parque amplio y de pitcheo; (3) ninguna ofensiva caliente — Padres 3.3 carreras por juego y .700 OPS en la semana, Twins 3.7 c/j y .678; (4) el abridor bueno responde: C. Mize 3.18 ERA con 3.30 de FIP y solo 6.1% de boletos. D. Kremer (5.40) es el riesgo, pero la línea de 8.5 da margen y San Diego solo ha pasado de 8.5 en 2 de sus últimos 10 (2.8 carreras permitidas por juego). El modelo proyecta 7.54, por debajo de la línea, como contexto de apoyo.",
+      "equipos": [
+        "MIN",
+        "SD"
+      ],
+      "destacado": null,
+      "hora": "7:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "AZ team total o4.5",
+      "deporte": "MLB",
+      "tipo": "team total o4.5",
+      "cuota": 102,
+      "unidades": 1.0,
+      "razon": "El ML de Arizona a -170 está fuera de precio, pero su producción sí paga: 5.7 carreras por juego, .267 y .805 de OPS con 8 jonrones en los últimos 6, y en casa con parque corto. Enfrente, R. Lowder es el abridor más batible del cruce (5.17 ERA, 4.46 FIP, apenas 8.8% de K-BB) y detrás el bullpen de Cincinnati es 4.05 con E. Pagán (4.30) cerrando, así que las entradas 6-9 tampoco frenan el daño. A +102 la implícita es 49.5% y una ofensiva que promedia 5.7 c/j supera 4.5 con más frecuencia que eso. Único freno: AZ batea .687 vs derechos en temporada, por eso va a una unidad y no más.",
+      "equipos": [
+        "CIN",
+        "AZ"
+      ],
+      "destacado": "AZ",
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "AZ",
+        "lado": "over",
+        "linea": 4.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIL ML",
+        "deporte": "MLB",
+        "destacado": "MIL",
+        "cuota": -173
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -204
+      }
+    ],
+    "cuota_combinada": 135,
+    "nota": "Dos patas con ventaja propia, no solo favoritas: Milwaukee mete 7.7 carreras por juego (.827 OPS) y abre L. Henderson (2.70 ERA, 26.2% K-BB) contra una ofensiva de Atlanta hundida en .575 de OPS y 2.6 c/j; Boston llega con .909 de OPS y 6.5 c/j frente a B. Tidwell (110 bateadores enfrentados, 9.1% de K-BB) y con un bullpen de 3.16 y A. Chapman cerrando ante unos Gigantes en .657 vs zurdos. Combinada a +135 exige 42.6% y ambas probabilidades reales están por encima de eso al multiplicarse."
+  },
+  "descartes": [
+    "DET ML: acaba de perder 2-5 ante este mismo rival y su ofensiva sigue en .661 de OPS; repetirlo sería inercia pura.",
+    "CLE @ COL: total de 11 en Coors con bullpen local de 5.28 — demasiada varianza en ambos lados para tomar posición.",
+    "HOU -232 y LAD -253: favoritos pesados sin margen, pagan mucho menos de lo que valen.",
+    "SF/BOS: BOS -1.5 a +103 tentaba, pero un favorito de este perfil cubre por 2+ con menos frecuencia de la que exige el precio; se usó en el parlay, no como pick.",
+    "NYM/CWS: bullpen de los Mets es 4.81 con cerrador en 7.82, pero el precio pick'em no compensa un duelo tan parejo.",
+    "TOR/NYY total 6.5: línea ya muy baja para el over y el modelo proyecta 7.33, sin lado claro."
+  ],
+  "autopsia": "De los tres del último cierre, dos entraron (MIL y CWS) y el que cayó fue DET ML: ese sí fue fallo de proceso, no varianza — elegí un lineup con .661 de OPS y 3.7 c/j contra un KC que llegaba a 5.1 c/j y .813 en la semana; el filtro de ofensiva funcional lo marcaba y lo pasé por alto. Hoy lo aplico primero: el pick oro se sostiene precisamente en el contraste ofensivo (.807 contra .626), no solo en el ERA del abridor. El otro ajuste es de mercado: los ML acumulan -2.23U mientras los totales van +2.51U, así que hoy solo firmo el ML donde el precio está en la banda de -140 a +100 y reparto el resto a total y team total.",
+  "resumen": "Tres jugadas hoy y ningún partido de Mundial en el calendario. La principal es Toronto en Nueva York: Cease con 36% de ponches contra un lineup que acumula 66 chocolates en seis juegos, y a precio justo de -104. La segunda es el under de 8.5 en San Diego, que pasa las cuatro comprobaciones (bullpens sólidos, parque grande, dos ofensivas frías y un abridor local en 3.18). La tercera busca el lado ofensivo para no cargar todo al mismo perfil: Arizona por encima de 4.5 carreras ante un abridor de 5.17 y un bullpen visitante de 4.05. Riesgo total: 3.5 unidades. Se mantiene la disciplina de precio tras la racha floja: nada por debajo de -140 ni perros de largo alcance."
+}
