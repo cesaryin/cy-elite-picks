@@ -45,7 +45,7 @@
   },
   "inicio_utc": "2026-08-21T22:40Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TOR@NYY": {
   "ml": {
@@ -69,7 +69,7 @@
   },
   "inicio_utc": "2026-08-21T23:05Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SF@BOS": {
   "ml": {
@@ -93,7 +93,7 @@
   },
   "inicio_utc": "2026-08-21T23:10Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "WSH@MIA": {
   "ml": {
@@ -117,7 +117,7 @@
   },
   "inicio_utc": "2026-08-21T23:10Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TB@BAL": {
   "ml": {
@@ -141,7 +141,7 @@
   },
   "inicio_utc": "2026-08-21T23:15Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "NYM@CWS": {
   "ml": {
@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-08-21T23:40Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATH@HOU": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-08-22T00:10Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "DET@KC": {
   "ml": {
@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-08-22T00:10Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "LAA@TEX": {
   "ml": {
@@ -237,7 +237,7 @@
   },
   "inicio_utc": "2026-08-22T00:15Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CLE@COL": {
   "ml": {
@@ -261,7 +261,7 @@
   },
   "inicio_utc": "2026-08-22T00:40Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CIN@AZ": {
   "ml": {
@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-08-22T01:40Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@SD": {
   "ml": {
@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-08-22T01:40Z",
   "visto": "2026-08-21T21:43:52+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CHC@SEA": {
   "ml": {
@@ -318,21 +318,21 @@
   },
   "total": {
    "linea": 8.0,
-   "over": -108,
-   "under": -112
+   "over": -102,
+   "under": -118
   },
   "spread": {
    "CHC": {
     "linea": -1.5,
-    "cuota": 152
+    "cuota": 155
    },
    "SEA": {
     "linea": 1.5,
-    "cuota": -185
+    "cuota": -188
    }
   },
   "inicio_utc": "2026-08-22T02:10Z",
-  "visto": "2026-08-21T21:43:52+00:00",
+  "visto": "2026-08-22T01:53:17+00:00",
   "cerrado": false
  },
  "PIT@LAD": {
@@ -356,7 +356,7 @@
    }
   },
   "inicio_utc": "2026-08-22T02:10Z",
-  "visto": "2026-08-21T21:43:52+00:00",
+  "visto": "2026-08-22T01:53:17+00:00",
   "cerrado": false
  }
 }
