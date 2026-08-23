@@ -93,7 +93,7 @@
   },
   "inicio_utc": "2026-08-22T22:05Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TB@BAL": {
   "ml": {
@@ -117,7 +117,7 @@
   },
   "inicio_utc": "2026-08-22T23:05Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "LAA@TEX": {
   "ml": {
@@ -141,7 +141,7 @@
   },
   "inicio_utc": "2026-08-22T23:05Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATH@HOU": {
   "ml": {
@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-08-22T23:10Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "NYM@CWS": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-08-22T23:10Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SF@BOS": {
   "ml": {
@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-08-22T23:15Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "DET@KC": {
   "ml": {
@@ -237,7 +237,7 @@
   },
   "inicio_utc": "2026-08-22T23:15Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CHC@SEA": {
   "ml": {
@@ -261,7 +261,7 @@
   },
   "inicio_utc": "2026-08-22T23:15Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PIT@LAD": {
   "ml": {
@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-08-22T23:15Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CLE@COL": {
   "ml": {
@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-08-23T00:10Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CIN@AZ": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-08-23T00:10Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@SD": {
   "ml": {
@@ -357,6 +357,6 @@
   },
   "inicio_utc": "2026-08-23T00:40Z",
   "visto": "2026-08-22T21:41:19+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
