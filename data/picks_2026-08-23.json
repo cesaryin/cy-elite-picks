@@ -1,0 +1,98 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -123,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia de cuatro capas. Ofensiva (SYS-004): Milwaukee viene con 7.7 carreras por juego y .851 de ops en la última semana, y batea .259/.748 vs derechos, justo la mano de T. Mahle (4.53 ERA, 8.5% BB). Enfrente, Atlanta está en apagón total: .573 de ops y 2.3 carreras por juego en 7 días, 3-7 en sus últimos 10 con 2.5 carreras a favor. Pitcheo: S. Drohan (3.86 ERA, FIP 3.64, 15.7% K-BB) supera claramente a Mahle. Bullpen: 3.46 con T. Megill (2.34, 24 saves) protegiendo en casa. Precio en la banda rentable del sistema (-123) y el modelo da 68.6% a MIL frente al 55% implícito, sin contradicción alguna.",
+      "equipos": [
+        "ATL",
+        "MIL"
+      ],
+      "destacado": "MIL",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "BOS team total o4.5",
+      "deporte": "MLB",
+      "tipo": "team total o4.5",
+      "cuota": -125,
+      "unidades": 1.0,
+      "razon": "El ML de Boston está impagable a -206, así que el valor está en su producción. Boston promedia 6.3 carreras por juego con .887 de ops en la última semana y es el mejor lineup de la casa vs zurdos (.258/.766), justo la mano de M. Wilkinson, un abridor sin recorrido (FIP 4.15 pese al 0.00 de ERA en muestra mínima). Detrás de él, el bullpen de San Francisco carga un 4.31... 4.22 de ERA y su cerrador tiene apenas 3 saves, así que las entradas 6-9 no cierran la puerta. Boston lleva 7/10 overs de 8.5 en su forma reciente. Este es el mercado con mejor +EV del juego, no el ML cargado.",
+      "equipos": [
+        "SF",
+        "BOS"
+      ],
+      "destacado": "BOS",
+      "hora": "2:15 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "BOS",
+        "lado": "over",
+        "linea": 4.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "KC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 103,
+      "unidades": 1.0,
+      "razon": "Perro de casa con la mejor ofensiva caliente del día: Kansas City lleva .291/.868 y 5.6 carreras por juego en 7 días, con 8-2 en sus últimos 10 y solo 3.1 carreras permitidas. D. Lynch IV (2.83 ERA) enfrenta a un Detroit hundido en el bateo (.210/.631, 3.3 carreras por juego, 2-8 en diez juegos) y que hoy ni siquiera tiene abridor confirmado, lo que obliga a exprimir un bullpen que ya viene cargado. El único punto flojo es el relevo local (4.59, A. Lange 5.86), y por eso va como jugada de valor y no como Elite. El modelo da 58.3% a KC frente al 49% implícito: a precio de pick'em, es +EV claro.",
+      "equipos": [
+        "DET",
+        "KC"
+      ],
+      "destacado": "KC",
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "KC",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "PHI ML",
+        "deporte": "MLB",
+        "destacado": "PHI",
+        "cuota": -216
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -206
+      }
+    ],
+    "cuota_combinada": 117,
+    "nota": "Dos patas con ventaja propia, no solo favoritas. Philadelphia lanza a C. Sánchez (2.51 ERA, FIP 2.98, 22.1% K-BB) con el lineup a 7.0 carreras por juego y .855 de ops en la semana, bullpen 3.35 y J. Durán (1.75) cerrando; St. Louis batea .238/.712 vs zurdos. Boston llega a 6.3 carreras por juego con .766 de ops vs zurdos ante un abridor debutante de SF y un relevo visitante a 4.22. Ambas superan su implícita, que es la única forma de que un parlay sea rentable.",
+    "cuota_combinada_nota": null
+  },
+  "descartes": [
+    "CWS ML -103 vs NYM: muy tentado (bullpen NYM 4.77 con K. Senga a 7.66 cerrando frente al 3.30 de Chicago, modelo 62.5%), pero el lineup local batea .205 en la semana y S. Newcomb solo tiene 283 bateadores enfrentados; se queda como cuarta opción.",
+    "TB/BAL: pick'em real (modelo 50.5-49.5), Tampa 3-7 con .688 de ops y Baltimore .226 de average; sin ventaja de ningún lado.",
+    "TOR ML +120: la ofensiva de Toronto se cae contra zurdos (.225/.642) y hoy abre C. Rodón; el bullpen de NYY (2.56) es el mejor del día. Sin valor.",
+    "CLE/COL o11.5: total inflado por Coors; con F. Griffin (3.18) y el bullpen de Cleveland a 3.34, no pago ese número.",
+    "MIN/SD: no repito el under que ya reventó en 12 carreras; hoy tampoco hay lado claro con dos abridores por encima de 4.60 de ERA.",
+    "PIT/LAD y el ML de LAD: -271 fuera de rango y sin margen.",
+    "LAA/TEX u8.0: Texas a 1.8 carreras por juego lo apoya, pero Kikuchi (5.81) y un bullpen visitante a 4.24 son el tipo de riesgo que ha estado matando los unders. Descartado.",
+    "ATH ML +159: la banda de +140 o más no tiene respaldo en el historial del sistema y el bullpen de Oakland (5.34) mata cualquier ventaja tardía."
+  ],
+  "autopsia": "Del último cierre, TOR ML y el team total over de AZ fueron decisiones sanas: ofensiva caliente contra pitcheo vulnerable, exactamente el patrón que viene pagando. El u8.5 de MIN/SD sí fue fallo de proceso, no varianza: se fueron 12 carreras porque no pesé lo suficiente al bullpen ni el bateo reciente antes de tomar el under. Hoy corrijo el criterio, no el mercado: el único total que doy es un over de equipo donde el relevo rival es débil y el split vs la mano del abridor lo respalda. También ajusto la inercia en Detroit: perdí con DET ML ante KC hace dos días y hoy el análisis apunta al otro lado, así que voy con Kansas City y su lineup a 5.6 carreras por juego.",
+  "resumen": "Día con mucho volumen de MLB y tres jugadas con valor real, 3.5 unidades de riesgo total. La principal es Milwaukee en casa: su lineup está a 7.7 carreras por juego mientras Atlanta apenas produce 2.3, con ventaja de abridor y de bullpen, y a un precio razonable. La segunda va al mercado correcto en vez del moneyline caro: Boston debe pasar de 4.5 carreras ante un abridor sin recorrido y un relevo visitante flojo. La tercera es Kansas City a precio de moneda al aire, con la ofensiva más caliente del día frente a un Detroit frío y sin abridor confirmado. El parlay combina Philadelphia y Boston, ambas con ventaja propia y no solo por ser favoritas."
+}
