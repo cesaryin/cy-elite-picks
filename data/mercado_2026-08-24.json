@@ -374,6 +374,131 @@
      "inicio_utc": "2026-08-25T01:45Z"
     }
    }
+  },
+  {
+   "ts": "2026-08-24T21:48:56+00:00",
+   "juegos": {
+    "BOS@MIA": {
+     "ml": {
+      "BOS": -119,
+      "MIA": 111
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -120,
+      "under": 100
+     },
+     "inicio_utc": "2026-08-24T22:40Z"
+    },
+    "TB@DET": {
+     "ml": {
+      "TB": -127,
+      "DET": 116
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -112,
+      "under": -108
+     },
+     "inicio_utc": "2026-08-24T22:40Z"
+    },
+    "COL@WSH": {
+     "ml": {
+      "COL": 180,
+      "WSH": -194
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-08-24T22:45Z"
+    },
+    "TEX@CWS": {
+     "ml": {
+      "TEX": 116,
+      "CWS": -124
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -115,
+      "under": -105
+     },
+     "inicio_utc": "2026-08-24T23:40Z"
+    },
+    "CLE@LAA": {
+     "ml": {
+      "CLE": -158,
+      "LAA": 147
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -110,
+      "under": -106
+     },
+     "inicio_utc": "2026-08-25T01:38Z"
+    },
+    "CHC@AZ": {
+     "ml": {
+      "CHC": -133,
+      "AZ": 124
+     },
+     "total": {
+      "linea": 9.0,
+      "over": -110,
+      "under": -110
+     },
+     "inicio_utc": "2026-08-25T01:40Z"
+    },
+    "MIN@ATH": {
+     "ml": {
+      "MIN": -141,
+      "ATH": 131
+     },
+     "total": {
+      "linea": 11.0,
+      "over": -117,
+      "under": -103
+     },
+     "inicio_utc": "2026-08-25T01:40Z"
+    },
+    "PHI@SEA": {
+     "ml": {
+      "PHI": -108,
+      "SEA": 101
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -122,
+      "under": 102
+     },
+     "inicio_utc": "2026-08-25T01:40Z"
+    },
+    "PIT@SD": {
+     "ml": {
+      "PIT": 104,
+      "SD": -112
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -103,
+      "under": -117
+     },
+     "inicio_utc": "2026-08-25T01:40Z"
+    },
+    "CIN@SF": {
+     "ml": {
+      "CIN": -158,
+      "SF": 147
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -121,
+      "under": 101
+     },
+     "inicio_utc": "2026-08-25T01:45Z"
+    }
+   }
   }
  ]
 }
