@@ -1,0 +1,97 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "PHI ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -115,
+      "unidades": 1.5,
+      "razon": "Cuatro capas alineadas y a precio de banda ideal (-115 = 53.5% implicito). Pitcheo: Z. Wheeler 2.92 ERA con 30.4% K y 23.4% K-BB, el mejor perfil del dia, frente a L. Gilbert (3.35, tambien bueno pero un escalon por debajo en dominancia). Ofensiva: PHI llega con .858 ops y 6.8 carreras/juego en la semana y 9-1 en sus ultimos 10; SEA esta helado (.620 ops, 4.0 c/j) y su split vs derechos (.703) no asusta a Wheeler. Bullpen: 3.33 con J. Duran (1.75) contra 4.75 de Seattle con A. Munoz en 4.37 — el cierre favorece claramente a Filadelfia. El modelo respalda con 63.3% vs 53.5% implicito, casi 10 puntos de ventaja, sin ninguna contradiccion entre capas.",
+      "equipos": [
+        "PHI",
+        "SEA"
+      ],
+      "destacado": "PHI",
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -128,
+      "unidades": 1.0,
+      "razon": "SYS-004 cumplido con holgura: Boston batea .322 con .943 ops y 6.7 carreras por juego en la semana (9 HR) y viene 7-3 con 5.8 anotadas de promedio; Miami esta en .694 ops y 3.8 c/j. Cruce de manos a favor: R. Suarez (L, 3.41 ERA, 3.27 FIP) enfrenta a un lineup de Miami que rinde .704 de ops vs zurdos. Bullpen decisivo: 3.12 de ERA con A. Chapman (1.85) contra 4.34 de Miami y un cerrador en 5.80 (P. Fairbanks), es decir el juego cerrado se inclina a Boston. S. Alcantara compite (3.46) pero su FIP 3.96 y solo 18% de ponches lo hacen vulnerable ante un lineup caliente. El modelo da 62.5% frente al 56.1% implicito.",
+      "equipos": [
+        "BOS",
+        "MIA"
+      ],
+      "destacado": "BOS",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CHC/AZ o9.0",
+      "deporte": "MLB",
+      "tipo": "o9.0",
+      "cuota": -110,
+      "unidades": 1.0,
+      "razon": "Duelo de abridores castigables en un parque corto: M. Kelly con 5.37 ERA, 5.47 FIP y solo 4.8% de K-BB, y K. Gausman con 4.58 ERA. Las dos ofensivas estan encendidas: Chicago con .902 ops, 15 HR y 6.5 carreras por juego en la semana, Arizona con .786 ops y 5.2 c/j, y ademas AZ castiga a los derechos zurdos aparte (.798 vs zurdos) mientras su .689 vs derechos se compensa con el pobre control de Kelly. Tendencia coherente: 7/10 overs de 8.5 en AZ y 6/10 en CHC, con ambos equipos permitiendo 5.0+ carreras en sus ultimos 10. Ningun bullpen es elite (3.41 y 3.56) para frenar la segunda mitad del juego.",
+      "equipos": [
+        "CHC",
+        "AZ"
+      ],
+      "destacado": null,
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.0
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "CLE ML",
+        "deporte": "MLB",
+        "destacado": "CLE",
+        "cuota": -168
+      },
+      {
+        "pick": "CIN ML",
+        "deporte": "MLB",
+        "destacado": "CIN",
+        "cuota": -162
+      }
+    ],
+    "cuota_combinada": 158,
+    "nota": "Dos patas con valor propio, no dos favoritos por serlo. CLE: P. Messick (2.54 ERA, 19% K-BB) contra G. Klassen, que regala boletos al 17.8%, con Cleveland en 5.5 carreras/juego la ultima semana y bullpen 3.30 vs 4.23 de LAA. CIN: C. Burns (2.51 ERA, 29% K) frente a un San Francisco que apenas produce 2.3 carreras por juego con .614 de ops y aun sin abridor confirmado. Combinado +158 sobre una probabilidad conjunta que estimo por encima del 39% implicito.",
+    "": ""
+  },
+  "descartes": [
+    "TB ML -130: la ofensiva de Tampa esta en .675 ops y 4.0 c/j y viene 3-7; ventaja de abridor real (D. Rasmussen sobre F. Valdez) pero sin lineup que la respalde, no cumple SYS-004.",
+    "WSH ML -185: fuera de rango de cuota y con una ofensiva en .524 de ops y 2.0 carreras por juego; imposible pagar ese precio.",
+    "COL ML +172: perro con bullpen de 5.20 y abridor de 5.97 ERA, sin respaldo de capas.",
+    "CWS ML -129: ofensiva local en .196 de average y Texas sin abridor listado del lado local; falta informacion clave.",
+    "PIT/SD: pick'em real, sin ventaja de precio en ninguno de los dos lados.",
+    "MIN/ATH o10.5: linea ya inflada; el mercado descuenta el desastre de pitcheo y no queda margen.",
+    "Under del TB/DET: ambos bullpens medios y team totals baratos, pero la tendencia de overs (5/10 y 4/10) no da la convergencia que exijo tras los unders fallados."
+  ],
+  "autopsia": "Del ultimo cierre, el MIL ML fue el fallo de proceso: volvi a un equipo por inercia de la semana cuando la ofensiva y el matchup no lo pedian, y ATL lo gano 4-2. Lo acertable fue lo que salio del bateo real: BOS team total o4.5 y KC ML, dos picks donde la capa ofensiva mandaba sobre el nombre del abridor. Hoy corrijo el criterio, no el mercado: cada ML exige que el lineup elegido este produciendo AHORA (PHI 6.8 c/j, BOS 6.7 c/j) y que el bullpen gane el cierre; ademas dejo de pagar de mas: los tres picks estan en la banda -128 a -110, donde el sistema si tiene margen.",
+  "resumen": "Dia con tres jugadas y 3.5 unidades de riesgo total. La principal es Filadelfia en Seattle: Wheeler dominante, lineup encendido, bullpen superior y un precio de -115 que es la mejor banda de valor del sistema. La segunda es Boston en Miami, con el bateo mas caliente del dia cruzado contra un bullpen local roto. La tercera busca carreras en Arizona, con dos abridores castigables y dos ofensivas en forma. El parlay va aparte y no afecta el balance."
+}

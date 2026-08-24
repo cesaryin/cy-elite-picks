@@ -2454,6 +2454,56 @@
     "cuota_cierre": 100
   },
   {
+    "fecha": "2026-08-22",
+    "pick": "TOR ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -104,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.44,
+    "marcador": "TOR 4-3 NYY",
+    "clv": 0.0,
+    "cuota_cierre": -104
+  },
+  {
+    "fecha": "2026-08-22",
+    "pick": "MIN/SD u8.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIN 5-7 SD"
+  },
+  {
+    "fecha": "2026-08-22",
+    "pick": "AZ team total o4.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 102,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.02,
+    "marcador": "CIN 11-5 AZ"
+  },
+  {
+    "fecha": "2026-08-22",
+    "pick": "PARLAY: MIL ML + BOS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 135,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "ATL 1-4 MIL / SF 2-3 BOS",
+    "patas_res": [
+      "W",
+      "W"
+    ]
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -2526,50 +2576,52 @@
     "cuota_cierre": -106
   },
   {
-    "fecha": "2026-08-22",
-    "pick": "TOR ML",
+    "fecha": "2026-08-23",
+    "pick": "MIL ML",
     "deporte": "MLB",
     "nivel": "oro",
-    "cuota": -104,
+    "cuota": -123,
     "unidades": 1.5,
-    "resultado": "W",
-    "neto_u": 1.44,
-    "marcador": "TOR 4-3 NYY",
-    "clv": 0.0,
-    "cuota_cierre": -104
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "ATL 4-2 MIL",
+    "clv": -2.3,
+    "cuota_cierre": -112
   },
   {
-    "fecha": "2026-08-22",
-    "pick": "MIN/SD u8.5",
+    "fecha": "2026-08-23",
+    "pick": "BOS team total o4.5",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -114,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "MIN 5-7 SD"
-  },
-  {
-    "fecha": "2026-08-22",
-    "pick": "AZ team total o4.5",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 102,
+    "cuota": -125,
     "unidades": 1.0,
     "resultado": "W",
-    "neto_u": 1.02,
-    "marcador": "CIN 11-5 AZ"
+    "neto_u": 0.8,
+    "marcador": "SF 4-5 BOS"
   },
   {
-    "fecha": "2026-08-22",
-    "pick": "PARLAY: MIL ML + BOS ML",
+    "fecha": "2026-08-23",
+    "pick": "KC ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 103,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.03,
+    "marcador": "DET 7-11 KC",
+    "clv": 0.7,
+    "cuota_cierre": 100
+  },
+  {
+    "fecha": "2026-08-23",
+    "pick": "PARLAY: PHI ML + BOS ML",
     "deporte": "Parlay",
     "nivel": "parlay",
-    "cuota": 135,
+    "cuota": 117,
     "unidades": 0,
     "resultado": "W",
     "neto_u": 0.0,
-    "marcador": "ATL 1-4 MIL / SF 2-3 BOS",
+    "marcador": "STL 4-6 PHI / SF 4-5 BOS",
     "patas_res": [
       "W",
       "W"
