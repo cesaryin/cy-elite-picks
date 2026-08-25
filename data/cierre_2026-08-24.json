@@ -21,7 +21,7 @@
   },
   "inicio_utc": "2026-08-24T22:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TB@DET": {
   "ml": {
@@ -45,7 +45,7 @@
   },
   "inicio_utc": "2026-08-24T22:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "COL@WSH": {
   "ml": {
@@ -69,7 +69,7 @@
   },
   "inicio_utc": "2026-08-24T22:45Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TEX@CWS": {
   "ml": {
@@ -93,7 +93,7 @@
   },
   "inicio_utc": "2026-08-24T23:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CLE@LAA": {
   "ml": {
@@ -117,7 +117,7 @@
   },
   "inicio_utc": "2026-08-25T01:38Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CHC@AZ": {
   "ml": {
@@ -141,7 +141,7 @@
   },
   "inicio_utc": "2026-08-25T01:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@ATH": {
   "ml": {
@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-08-25T01:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PHI@SEA": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-08-25T01:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PIT@SD": {
   "ml": {
@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-08-25T01:40Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CIN@SF": {
   "ml": {
@@ -237,6 +237,6 @@
   },
   "inicio_utc": "2026-08-25T01:45Z",
   "visto": "2026-08-24T21:48:46+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
