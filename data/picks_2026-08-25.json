@@ -1,0 +1,99 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "KC team total o3.5",
+      "deporte": "MLB",
+      "tipo": "team total o3.5",
+      "cuota": -146,
+      "unidades": 1.5,
+      "razon": "Convergencia de tres capas limpias sobre el bate de Kansas City. (1) Matchup de pitcheo: M. Scherzer llega con 7.40 de ERA, 5.47 de FIP y un K-BB de apenas 5.9% en 202 bateadores enfrentados: no domina ni evita el contacto duro. (2) Ofensiva funcional (SYS-004): KC es el lineup más caliente del día con .301 de average, .904 de OPS, 6.3 carreras por juego y 9 jonrones en la última semana, y viene 9-1 en sus últimos 10 con 5.7 carreras a favor de promedio; contra derechos batea .244/.715, un split neutro que no frena esta racha. (3) El mercado del juego respalda el volumen: el total abre en 8.5 con over a -119 y el modelo proyecta 10.32 carreras (59.2% de victoria para KC frente a 46.3% implícito de su ML). Elijo el team total y no el ML porque el bullpen de KC (4.60 de ERA, A. Lange con 5.86) es la grieta del equipo y en este mercado no interviene: solo necesito que el lineup haga su trabajo contra Scherzer y los relevistas de Toronto.",
+      "equipos": [
+        "KC",
+        "TOR"
+      ],
+      "destacado": "KC",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "KC",
+        "lado": "over",
+        "linea": 3.5
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "TEX ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "Precio de moneda para un lado con ventaja real en las tres capas. J. deGrom aporta el mejor perfil del duelo (3.42 de FIP, 30.3% de ponches y solo 6.2% de boletos) frente a A. Kay, zurdo con 4.58 de FIP y un K-BB de 10.4% que vive del contacto. La ofensiva de Texas cumple SYS-004: .733 de OPS y 3.6 carreras por juego en los últimos 7 días, y sobre todo un split de .253/.745 contra zurdos, justo la mano que abre Chicago; enfrente, el lineup de los White Sox está helado con .202 de average, .652 de OPS y 3.0 carreras por juego en la semana. El cierre también favorece a Texas: bullpen de 3.36 con J. Latz en 1.68 y 26 rescates. El modelo da 52.5% a Texas frente al 51.9% implícito, sin contradicción, y la cuota -108 está en la mejor banda histórica del sistema.",
+      "equipos": [
+        "TEX",
+        "CWS"
+      ],
+      "destacado": "TEX",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TEX",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "ATL team total u3.5",
+      "deporte": "MLB",
+      "tipo": "team total u3.5",
+      "cuota": -115,
+      "unidades": 1.0,
+      "razon": "Under que pasa los cuatro filtros antiofensiva antes de darlo. (1) Bullpen: el que tendría que aguantar el final es el de Los Ángeles, y está fino (3.29 de ERA, T. Scott en 2.24), no hay relevo quemado que regale carreras tardías. (2) Ofensiva rival: Atlanta está en caída libre con .598 de OPS, 2.2 carreras por juego, solo 2 jonrones y 56 ponches en sus últimos 6 juegos, y 2.3 carreras a favor en sus últimos 10. (3) Abridor: T. Glasnow llega con 2.72 de ERA y 33.1% de ponches, el perfil exacto que aplasta a un lineup que ya no conecta. (4) Aunque el parque de Atlanta ayuda al jonrón, la línea de 3.5 exige que un equipo que promedia 2.2 carreras suba más del 50% su producción contra el mejor brazo del duelo. Prefiero este mercado al ML de Los Ángeles a -153, precio en la banda que históricamente me quita margen.",
+      "equipos": [
+        "LAD",
+        "ATL"
+      ],
+      "destacado": "ATL",
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "ATL",
+        "lado": "under",
+        "linea": 3.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIL ML",
+        "deporte": "MLB",
+        "destacado": "MIL",
+        "cuota": -161
+      },
+      {
+        "pick": "BOS ML",
+        "deporte": "MLB",
+        "destacado": "BOS",
+        "cuota": -158
+      }
+    ],
+    "cuota_combinada": 165,
+    "nota": "Dos patas elegidas por valor propio, no por ser favoritas. Milwaukee: K. Harrison con 2.84 de ERA y 30.3% de ponches, lineup a 7.0 carreras por juego y .863 de OPS en la semana, y enfrente un bullpen de los Mets en 4.79 con K. Senga cerrando en 7.79; el modelo da 63.3% frente al 61.7% implícito. Boston: P. Tolle con 3.08 de ERA y 3.47 de FIP, ofensiva a .295/.865 y 5.5 carreras por juego, bullpen de 3.10 con A. Chapman en 1.81 contra un relevo de Miami en 4.38 y P. Fairbanks en 6.02; el modelo da 63.6% frente al 61.2% implícito. Al multiplicar dos ventajas reales el combinado a +165 queda con margen.",
+    "cuota_combinada_nota": null
+  },
+  "descartes": [
+    "TB ML -125 vs DET: Detroit viene 1-9 y con .558 de OPS, pero Tampa tampoco batea (.633 de OPS, 3.6 carreras) y el modelo da 53.2% frente al 55.6% implícito: el mercado lo tiene caro.",
+    "TB/DET u7.5: dos lineups fríos, pero ninguno de los dos abridores domina (4.17 y 4.50 de ERA) y el modelo proyecta 7.87; sin un brazo que sostenga el under, no lo doy.",
+    "CLE ML -149 y BOS ML -158 como picks: buen respaldo, pero peor de -140 es la banda donde el sistema pierde dinero; los dejo fuera del balance (Boston va al parlay).",
+    "COL/WSH: sin abridor confirmado de Colorado, no puedo evaluar la capa principal.",
+    "BAL/STL: sin abridor de San Luis anunciado; además Baltimore está en .546 de OPS, demasiada incertidumbre.",
+    "MIN/ATH o10: total inflado (10.0) por dos bullpens flojos; el precio ya recoge todo y no queda valor en ninguno de los dos lados.",
+    "PHI/SEA: dos abridores con ERA de 5.12 y 4.18 y bullpen local en 4.66 invitan al over, pero PHI viene de caer 9-2 aquí y el precio del over a -111 con línea baja de 7.5 no compensa la volatilidad; paso por disciplina.",
+    "CHC/AZ: ambos lineups calientes pero el ML está partido (-112/-108) y no encuentro ventaja clara en ningún mercado."
+  ],
+  "autopsia": "Del último cierre, PHI ML fue una decisión defendible que se rompió por completo (2-9): ahí no hubo mala suerte, hubo un abridor caro y un rival caliente que subestimé. El CHC/AZ o9.0 sí fue fallo de proceso: pedí carreras sin comprobar que el pitcheo de Arizona podía blanquear, y acabó 7-0 con un solo bate produciendo. Lo que corrijo hoy es el criterio de precio: mi nivel oro va 6-8 con un margen de -10.9 porque pago favoritos por encima de -140, así que hoy ninguna jugada sale de la banda buena y la Elite la pongo en un mercado (team total) donde el bullpen propio no puede arruinármela. Refuerzo lo que viene ganando: los team totals bien argumentados van 2-0 y los totales en general suman +1.51U, mientras el ML me cuesta -3.75U.",
+  "resumen": "Día de 15 juegos y elijo tres jugadas con precio disciplinado, todas dentro de la banda donde el sistema realmente gana. La principal es el bate de Kansas City contra Max Scherzer: el lineup más caliente de la jornada frente al abridor más castigado, y en team total para que el bullpen flojo de los Royals no me quite el pick. Complemento con deGrom a precio de moneda contra un lineup de Chicago congelado, y con el under del team total de Atlanta, que promedia 2.2 carreras por juego y se topa con Glasnow y un bullpen rival sólido. Riesgo total: 3.5 unidades. Aparte, un parlay informativo de Milwaukee y Boston a +165 que no cuenta en el balance.",
+  "riesgo_total_unidades": 3.5
+}
