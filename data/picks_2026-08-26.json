@@ -1,0 +1,96 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -135,
+      "unidades": 1.5,
+      "razon": "Convergencia limpia de cuatro capas: abridor (S. Gray 2.79 ERA, 16-3, K-BB 15.5%) muy por encima de R. Gusto (4.37 ERA, 0-3, FIP 4.12); bullpen 3.05 con A. Chapman (1.81, 30 sv) contra 4.21 de Miami y cerrador V. Vodnik en 4.98; ofensiva funcional y caliente de Boston (ops .802 y 5.2 carreras/juego en la semana, .718 vs derechos, 5.8 c/j en los ultimos 10) frente a un lineup de Miami frio (ops .652, 3.2 c/j). El modelo da 63.2% a BOS contra 57.4% implicito de la cuota, y el precio cae en la mejor banda del sistema (-140/-115). Sin contradiccion mayor: el bullpen no es riesgo aqui, es ventaja.",
+      "equipos": [
+        "BOS",
+        "MIA"
+      ],
+      "destacado": "BOS",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "CLE team total o4.5",
+      "deporte": "MLB",
+      "tipo": "team total o4.5",
+      "cuota": -110,
+      "unidades": 1.0,
+      "razon": "El valor de este juego no esta en el ML cargado sino en las carreras de Cleveland: G. Rodriguez llega con 6.41 ERA y 10.1% de BB, y detras esta un bullpen de LAA en 4.21 (el peor eslabon del cierre). Cleveland viene con ofensiva funcional y en alza: avg .273, ops .717 y 5.3 carreras/juego en los ultimos 7, con 5.1 carreras a favor en los ultimos 10 (8-2). El total proyectado del juego (9.09) acompana el ambiente de anotacion y la linea de 4.5 queda justo por debajo de su produccion reciente, con precio neutro.",
+      "equipos": [
+        "CLE",
+        "LAA"
+      ],
+      "destacado": "CLE",
+      "hora": "3:07 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "CLE",
+        "lado": "over",
+        "linea": 4.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "KC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 125,
+      "unidades": 1.0,
+      "razon": "Perro con ofensiva claramente funcional: Kansas City bate .310 con ops .912 y 6.5 carreras/juego en la ultima semana (9 HR, solo 37 K) y llega 9-1 con 5.5 carreras a favor y 3.1 en contra; enfrenta a un derecho, y su split vs derechos (.717) no lo penaliza. Toronto abre con S. Miles (3.02 ERA) pero su lineup esta apagado en produccion (3.7 carreras/juego pese al .284) y castiga poco. El modelo da 54.3% a KC contra 44.4% implicito de +125: casi 10 puntos de ventaja. El riesgo asumido es el bullpen de KC (4.58) frente al de TOR (3.51), por eso va a nivel bronce y no mas arriba.",
+      "equipos": [
+        "KC",
+        "TOR"
+      ],
+      "destacado": "KC",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "KC",
+        "lado": null,
+        "linea": null
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "KC Spread +1.5",
+        "deporte": "MLB",
+        "destacado": "KC",
+        "cuota": -175
+      },
+      {
+        "pick": "TEX Spread +1.5",
+        "deporte": "MLB",
+        "destacado": "TEX",
+        "cuota": -208
+      }
+    ],
+    "cuota_combinada": 133,
+    "nota": "Dos patas elegidas por valor propio, no por ser favoritas: KC llega 9-1 con 6.5 carreras/juego y ops .912, y su margen de derrota mas probable ante un TOR que solo produce 3.7 c/j es de una carrera; TEX abre con M. Gore (26% K, FIP 3.86) y solo concede 3.4 carreras por juego en los ultimos 10 ante un CWS con ops .697 en la semana. Ambas son coberturas de +1.5 con pitcheo y contencion detras, no favoritismos pesados."
+  },
+  "descartes": [
+    "PHI ML -128 vs SEA: acaba de perder 2-9 en esta misma serie y no hay justificacion nueva y fuerte (SEA anota 5.3 c/j en casa con 10 HR semanales). Anti-inercia aplicada.",
+    "MIL ML -154 en Nueva York: precio fuera de la banda rentable y D. May con 4.57 ERA; la ventaja real es de bullpen, no de abridor.",
+    "COL/WSH u9.0: dos abridores con 5.75 y 7.54 de ERA y bullpens en 5.12 y 4.85; el under aqui es exactamente el error que el sistema viene pagando (infravalorar el cierre).",
+    "MIN/ATH: linea 10.5 con bullpen de Oakland en 5.35 y Prielipp en 5.57 ERA; ni el over paga ni el under es defendible.",
+    "TB/DET u7.5: ambos lineups frios (3.0 c/j), pero T. Melton (1.70 ERA con FIP 4.0) huele a correccion y el cierre de DET pasa por K. Jansen (4.08); no cumple las cuatro condiciones del under.",
+    "CHC/AZ: ML a moneda (-101/-106) sin ventaja de precio; el over 8.5 a -118 esta ya pagado por el mercado (7/10 overs en ambos).",
+    "BAL/STL: ML a pick'em con dos abridores parecidos y ninguna capa que rompa el empate."
+  ],
+  "autopsia": "Del ultimo cierre, ATL team total u3.5 fue un fallo de proceso puro: pedi under con LAD enfrente y un bullpen que no cerraba, justo el patron que ya me habia costado dinero. TEX ML -108 fue mas defendible como decision, pero el 7-11 confirma que compre pitcheo nominal sin exigir que la ofensiva rival estuviera frenada. Hoy corrijo el criterio, no el mercado: los totales solo los juego por el lado de la anotacion cuando abridor flojo + bullpen debil + lineup caliente coinciden (CLE o4.5), y en los ML exijo que la ofensiva propia venga produciendo de verdad, como los aciertos recientes de KC y BOS.",
+  "resumen": "Dia de 3 jugadas y 3.5 unidades de riesgo en total. La principal es Boston en Miami: mejor abridor, mejor bullpen y el unico de los dos lineups que esta bateando, a un precio dentro de la banda donde el sistema si gana. La segunda evita el moneyline caro de Cleveland y ataca sus carreras contra un abridor con 6.41 de ERA y un bullpen flojo. La tercera es un perro con la ofensiva mas caliente del dia a +125. Se descartaron picks por inercia (Philadelphia) y todos los unders, que es donde vengo fallando por mucho margen."
+}
