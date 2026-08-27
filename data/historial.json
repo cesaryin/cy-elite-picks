@@ -2610,6 +2610,56 @@
     ]
   },
   {
+    "fecha": "2026-08-25",
+    "pick": "KC team total o3.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -146,
+    "unidades": 1.5,
+    "resultado": "W",
+    "neto_u": 1.03,
+    "marcador": "KC 5-3 TOR"
+  },
+  {
+    "fecha": "2026-08-25",
+    "pick": "TEX ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TEX 7-11 CWS",
+    "clv": 0.7,
+    "cuota_cierre": -111
+  },
+  {
+    "fecha": "2026-08-25",
+    "pick": "ATL team total u3.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -115,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "LAD 3-4 ATL"
+  },
+  {
+    "fecha": "2026-08-25",
+    "pick": "PARLAY: MIL ML + BOS ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 165,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIL 2-3 NYM / BOS 7-3 MIA",
+    "patas_res": [
+      "L",
+      "W"
+    ]
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -2682,53 +2732,55 @@
     "cuota_cierre": -106
   },
   {
-    "fecha": "2026-08-25",
-    "pick": "KC team total o3.5",
+    "fecha": "2026-08-26",
+    "pick": "BOS ML",
     "deporte": "MLB",
     "nivel": "oro",
-    "cuota": -146,
+    "cuota": -135,
     "unidades": 1.5,
-    "resultado": "W",
-    "neto_u": 1.03,
-    "marcador": "KC 5-3 TOR"
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "BOS 0-4 MIA",
+    "clv": -2.1,
+    "cuota_cierre": -124
   },
   {
-    "fecha": "2026-08-25",
-    "pick": "TEX ML",
+    "fecha": "2026-08-26",
+    "pick": "CLE team total o4.5",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -108,
+    "cuota": -110,
     "unidades": 1.0,
     "resultado": "L",
     "neto_u": -1.0,
-    "marcador": "TEX 7-11 CWS",
-    "clv": 0.7,
-    "cuota_cierre": -111
+    "marcador": "CLE 4-3 LAA"
   },
   {
-    "fecha": "2026-08-25",
-    "pick": "ATL team total u3.5",
+    "fecha": "2026-08-26",
+    "pick": "KC ML",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -115,
+    "cuota": 125,
     "unidades": 1.0,
     "resultado": "L",
     "neto_u": -1.0,
-    "marcador": "LAD 3-4 ATL"
+    "marcador": "KC 0-3 TOR",
+    "clv": -3.1,
+    "cuota_cierre": 142
   },
   {
-    "fecha": "2026-08-25",
-    "pick": "PARLAY: MIL ML + BOS ML",
+    "fecha": "2026-08-26",
+    "pick": "PARLAY: KC Spread +1.5 + TEX Spread +1.5",
     "deporte": "Parlay",
     "nivel": "parlay",
-    "cuota": 165,
+    "cuota": 133,
     "unidades": 0,
     "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "MIL 2-3 NYM / BOS 7-3 MIA",
+    "marcador": "KC 0-3 TOR / TEX 4-10 CWS",
     "patas_res": [
       "L",
-      "W"
+      "L"
     ]
   }
 ]

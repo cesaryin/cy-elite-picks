@@ -1,0 +1,94 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "KC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "unidades": 1.0,
+      "razon": "Matchup de mano decisivo: Toronto batea .641 de ops contra zurdos y hoy enfrenta a N. Cameron (L), mientras KC llega con ofensiva caliente (.823 ops y 5.0 carreras/juego en la semana, solo 44 k) frente a un abridor con 13% de bases por bolas. Precio de pick'em para el mejor equipo en forma del día.",
+      "equipos": [
+        "KC",
+        "TOR"
+      ],
+      "destacado": "KC",
+      "hora": "6:07 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "KC",
+        "lado": null,
+        "linea": null
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAD/ATL u6.5",
+      "deporte": "MLB",
+      "tipo": "u6.5",
+      "cuota": -102,
+      "unidades": 1.0,
+      "razon": "Duelo de aces con las cuatro comprobaciones del under a favor: ningún bullpen quemado (3.28 y 3.01 de era con cerradores fiables), ninguna ofensiva caliente (ATL 3.0 carreras/juego y LAD .667 de ops en la última semana) y ambos abridores con FIP bajo y control (bb% ~5-6). ATL solo 2/10 overs recientes.",
+      "equipos": [
+        "LAD",
+        "ATL"
+      ],
+      "destacado": null,
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 6.5
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYY team total o4.5",
+      "deporte": "MLB",
+      "tipo": "team total o4.5",
+      "cuota": 100,
+      "unidades": 1.0,
+      "razon": "El lineup más caliente del día: 6.0 carreras por juego, .830 de ops y 10 jonrones en seis partidos, en un parque corto y contra H. Wesneski, derecho de muestra corta con 8.8% de bases por bolas y apenas 10.6 de k-bb. A dinero, 5 carreras es un listón bajo para este bateo.",
+      "equipos": [
+        "HOU",
+        "NYY"
+      ],
+      "destacado": "NYY",
+      "hora": "6:05 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "NYY",
+        "lado": "over",
+        "linea": 4.5
+      }
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIL ML",
+        "deporte": "MLB",
+        "destacado": "MIL",
+        "cuota": -216
+      },
+      {
+        "pick": "NYY ML",
+        "deporte": "MLB",
+        "destacado": "NYY",
+        "cuota": -158
+      }
+    ],
+    "cuota_combinada": 139,
+    "nota": "Dos patas con ventaja propia, no solo favoritismo: J. Misiorowski (1.68 era, 39% de k) con bullpen de 3.38 frente a un lineup de .698 de ops, y G. Cole (3.11) con el mejor bullpen del día (2.76) y ofensiva en 6.0 carreras/juego ante un Houston 3-7 que recibe 6.3 por partido."
+  },
+  "descartes": [
+    "BAL/STL: San Luis sin abridor confirmado en los datos, imposible evaluar el matchup clave.",
+    "COL ML +126: el modelo le da 54.4% y Washington batea .578 de ops en la semana, pero el bullpen de Colorado (5.03) y su bateo lejos de casa no dan convergencia suficiente en la banda +100/+140.",
+    "MIL ML: -216 fuera del rango jugable; NYM +200 sin respaldo ofensivo ante un abridor con 39% de ponches.",
+    "AZ/SF: J. Cabrera con muestra mínima y mercado en pick'em, sin ventaja identificable.",
+    "COL/WSH o9.5: la ofensiva de Washington (3.0 carreras/juego, 2/10 overs) contradice el total alto que proyecta el modelo."
+  ],
+  "autopsia": "Del último cierre, BOS ML a -135 y KC ML a +125 fueron derrotas por proceso más que por varianza: pagué precio de favorito y busqué perro sin exigir que el bateo respondiera, y ambos lineups se quedaron en blanco. El CLE team total o4.5 fue decisión correcta que cayó por una carrera; ese criterio lo mantengo. Hoy corrijo el criterio, no el mercado: ML solo en banda -115/+100 y con matchup de mano medible, y el total lo justifico con bullpen y ofensivas frías, no con la proyección.",
+  "resumen": "Día de tres jugadas y 3.0 unidades de riesgo total. Recorto la unidad de la principal por la racha en rojo: Kansas City a dinero apoyado en el matchup contra zurdos de Toronto, el under en el duelo de aces de Atlanta con ambos bullpens fiables, y el team total alto de los Yankees, que es el bateo más caliente del cartel. Además, un combinado informativo de Milwaukee y Nueva York que no entra al balance."
+}
