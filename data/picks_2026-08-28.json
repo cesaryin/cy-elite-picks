@@ -1,0 +1,141 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 116,
+      "prob_estimada": 48.5,
+      "razon": "Perro con precio inflado: TB llega con el bate congelado (.614 ops y 2.7 carreras/juego en la semana) y SD viene permitiendo 2.0 carreras por juego en sus últimos 10. El modelo apoya con 5.9 pp válidos y el bullpen visitante (3.23, Mason Miller 0.96) cierra mejor un juego cerrado.",
+      "equipos": [
+        "SD",
+        "TB"
+      ],
+      "destacado": "SD",
+      "hora": "6:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 119,
+      "valor": {
+        "prob_estimada": 48.5,
+        "prob_justa": 45.2,
+        "prob_implicita": 46.3,
+        "cuota": 116,
+        "cuota_justa_mercado": 121,
+        "ev_pct": 4.76,
+        "precio_minimo": 111,
+        "precio_publicado": 111,
+        "precio_equilibrio": 107,
+        "discrepancia_pp": 3.3,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.76% · no tomar peor de +111",
+        "mejor_precio": {
+          "cuota": 119,
+          "casa": "draftkings"
+        },
+        "alcanzable": true
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAD/DET u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -120,
+      "prob_estimada": 56.0,
+      "razon": "Las dos ofensivas están apagadas de verdad: 3.5 carreras/juego y .625 ops una, 2.5 y .530 la otra, y DET suma 2-8 en diez juegos. Ninguno de los dos bullpens está flojo (3.41 y 3.63), así que las entradas 6-9 tampoco invitan al over; parque amplio y proyección de 7.38 carreras.",
+      "equipos": [
+        "LAD",
+        "DET"
+      ],
+      "destacado": null,
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "cuota_apertura_ref": -120,
+      "valor": {
+        "prob_estimada": 56.0,
+        "prob_justa": 52.17,
+        "prob_implicita": 54.55,
+        "cuota": -120,
+        "cuota_justa_mercado": -109,
+        "ev_pct": 2.67,
+        "precio_minimo": -121,
+        "precio_publicado": -121,
+        "precio_equilibrio": -127,
+        "discrepancia_pp": 3.83,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.67% · no tomar peor de -121"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS/MIN o9.0",
+      "deporte": "MLB",
+      "tipo": "o9.0",
+      "cuota": 100,
+      "prob_estimada": 52.0,
+      "razon": "Duelo de dos abridores castigados (5.19 y 5.22 de ERA, FIP 4.6/4.8) con la ofensiva visitante caliente: .858 ops y 6.0 carreras/juego en la semana, y MIN suma 4.2 anotadas y 5.2 permitidas. Ambos equipos van 6/10 en overs de 8.5. Jugada más floja del día por el precio ajustado.",
+      "equipos": [
+        "CWS",
+        "MIN"
+      ],
+      "destacado": null,
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.0
+      },
+      "cuota_apertura_ref": -102,
+      "valor": {
+        "prob_estimada": 52.0,
+        "prob_justa": 47.83,
+        "prob_implicita": 50.0,
+        "cuota": 100,
+        "cuota_justa_mercado": 109,
+        "ev_pct": 4.0,
+        "precio_minimo": -104,
+        "precio_publicado": -104,
+        "precio_equilibrio": -108,
+        "discrepancia_pp": 4.17,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.00% · no tomar peor de -104"
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "DET ML +185: el modelo le da ventaja válida, pero el lineup local está en .530 de ops y 2.5 carreras por juego; SYS-004 lo tumba.",
+    "TEX +154 y COL +195: el precio ofrecido está por debajo de su propia línea justa (+162 y +204), no hay valor.",
+    "CWS ML +108: edge del modelo con alerta (7.3 pp) y precio implícito por encima de la justa; preferí el total del mismo juego.",
+    "MIA/WSH o8.5: el abridor local con 8.03 de ERA invita, pero ambas ofensivas vienen bajas (3.7 y 4.0 c/j) y solo 3/10 y 2/10 overs; no llega la convergencia.",
+    "BOS ML +140: clara desventaja de abridor (4.54 vs 2.16) y bullpens iguales; sin ventaja sobre la justa.",
+    "SD/TB u7.5: mismo razonamiento que el under de Detroit pero con menos margen; me quedo con un solo under."
+  ],
+  "autopsia": "Del último cierre, el u6.5 de LAD/ATL y el ML de KC fueron decisiones limpias que pagaron; el team total o4.5 de NYY fue el fallo de proceso: pedí 5 carreras a una ofensiva que venía irregular contra un buen abridor y acabó en 1. La lección que aplico hoy es no pedirle producción extra a un lineup solo por nombre: en el over que doy, la ofensiva ya viene en 6.0 carreras por juego y enfrente hay dos ERA de 5.2. También corrijo el under: antes de darlo revisé bullpens (3.41 y 3.63) y que ninguna de las dos ofensivas esté caliente.",
+  "resumen": "Día de tres jugadas con lógica distinta y sin forzar favoritos caros. La principal es San Diego como perro barato: Tampa Bay batea 2.7 carreras por juego en la semana y el bullpen visitante es superior en el cierre. La segunda es el under en Detroit, donde dos ofensivas heladas y bullpens fiables sostienen un total de 7.5. La tercera, más ajustada, es el over en Minnesota: dos abridores muy castigados frente a un lineup de Chicago en .858 de ops. Descarté los ML de Texas y Colorado por precio y el de Detroit por ofensiva inexistente.",
+  "valor_dia": {
+    "apostables": 3,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 3.0,
+    "ev_min": 2.0
+  }
+}

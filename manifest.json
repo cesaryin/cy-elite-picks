@@ -1,0 +1,9 @@
+{
+  "name": "CY Elite Picks",
+  "short_name": "CY Elite",
+  "start_url": "/cy-elite-picks/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [{"src": "og.png", "sizes": "1200x630", "type": "image/png"}]
+}
