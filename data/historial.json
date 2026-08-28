@@ -2712,6 +2712,59 @@
     ]
   },
   {
+    "fecha": "2026-08-27",
+    "pick": "KC ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "KC 13-2 TOR",
+    "clv": 0.0,
+    "cuota_cierre": -108
+  },
+  {
+    "fecha": "2026-08-27",
+    "pick": "LAD/ATL u6.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -102,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.98,
+    "marcador": "LAD 0-1 ATL",
+    "clv": 1.9,
+    "cuota_cierre": -110
+  },
+  {
+    "fecha": "2026-08-27",
+    "pick": "NYY team total o4.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 100,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "HOU 5-1 NYY",
+    "causa": "sin_datos"
+  },
+  {
+    "fecha": "2026-08-27",
+    "pick": "PARLAY: MIL ML + NYY ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 139,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIL 8-2 NYM / HOU 5-1 NYY",
+    "patas_res": [
+      "W",
+      "L"
+    ]
+  },
+  {
     "fecha": "2026-07-21",
     "pick": "BOS ML",
     "deporte": "MLB",
@@ -2783,58 +2836,5 @@
     "marcador": "STL 10-9 CIN",
     "clv": 0.0,
     "cuota_cierre": -106
-  },
-  {
-    "fecha": "2026-08-27",
-    "pick": "KC ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -108,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "KC 13-2 TOR",
-    "clv": 0.0,
-    "cuota_cierre": -108
-  },
-  {
-    "fecha": "2026-08-27",
-    "pick": "LAD/ATL u6.5",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -102,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.98,
-    "marcador": "LAD 0-1 ATL",
-    "clv": 1.9,
-    "cuota_cierre": -110
-  },
-  {
-    "fecha": "2026-08-27",
-    "pick": "NYY team total o4.5",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 100,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "HOU 5-1 NYY",
-    "causa": "sin_datos"
-  },
-  {
-    "fecha": "2026-08-27",
-    "pick": "PARLAY: MIL ML + NYY ML",
-    "deporte": "Parlay",
-    "nivel": "parlay",
-    "cuota": 139,
-    "unidades": 0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "MIL 8-2 NYM / HOU 5-1 NYY",
-    "patas_res": [
-      "W",
-      "L"
-    ]
   }
 ]

@@ -93,10 +93,24 @@ header .fecha{color:#8b949e;font-size:14px;margin-top:4px}
 .cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
 .aut-texto{padding:10px 6px;font-size:13px;line-height:1.6}
 .cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
-.cmp-h{display:flex;align-items:center;gap:7px;padding:9px 11px;cursor:pointer}
-.cmp-h .mt{flex:1;min-width:0;font-size:12.5px;font-weight:700}
-.cmp-lg{width:20px;height:20px;object-fit:contain;flex-shrink:0}
-.cmp-v{font-size:10px;font-weight:900;background:#0f2e1a;color:#3fb950;border:1px solid #1f5c37;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.cmp-h{display:flex;align-items:center;gap:9px;padding:10px 11px}
+.cmp-mt{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.cmp-p{display:flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.35;min-width:0}
+.cmp-who{flex:1;min-width:0;display:flex;align-items:baseline;gap:5px}
+.cmp-nm{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmp-p.win .cmp-nm{color:#f0c75e}
+.cmp-rec{flex-shrink:0;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
+.cmp-er{width:34px;text-align:right;font-weight:800;font-size:12.5px;font-variant-numeric:tabular-nums}
+.cmp-pen{width:32px;text-align:right;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-cl{width:26px;text-align:right;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-lg{width:18px;height:18px;object-fit:contain;flex-shrink:0}
+.cmp-hd{display:flex;justify-content:flex-end;gap:9px;padding:0 12px 5px}
+.cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:9px;font-weight:800;color:#6e7681;letter-spacing:.5px}
+.cmp-vsp{width:84px;flex-shrink:0}
+.cmp-v{flex-shrink:0;min-width:84px;text-align:right;font-size:10px;font-weight:900;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap}
+.cmp-v.alta{background:#0f2e1a;color:#3fb950;border-color:#1f5c37}
+@media (max-width:409px){.cmp-cl,.cmp-hd .cmp-cl{display:none}}
 .cmp-d{display:none;padding:0 11px 9px;font-size:11.5px;color:#c9d1d9}
 .cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
 .cmp-note{font-size:10.5px;color:#6e7681;text-align:center;margin-top:4px}
@@ -109,12 +123,12 @@ footer{text-align:center;color:#6e7681;font-size:12px;padding:22px 0 6px;line-he
 <body>
 <div class="wrap">
 <header>
-<h1>👑 CY Elite Picks</h1>
+<h1>CY Elite Picks</h1>
 <div class="fecha">Rendimiento del sistema · récord real</div>
 <a class="lab-btn" href="lab.html">🧪 CY Elite LAB — proyecciones del día ›</a>
 <a class="lab-btn tr-btn" href="trends.html">📈 CY Elite Trends — tendencias del día ›</a>
 </header>
-<div class="resumen" style="text-align:center;border-left:0;border:1px solid #d4af37;background:linear-gradient(160deg,#1e1a0e,#161b22)">📊 Este es el <b>rendimiento real</b> de mi sistema, verificable día a día. Sígueme para no perdértelo. 👑</div><div id="hist">
+<div class="resumen" style="text-align:center;border-left:0;border:1px solid #d4af37;background:linear-gradient(160deg,#1e1a0e,#161b22)">📊 Este es el <b>rendimiento real</b> de mi sistema, verificable día a día. Sígueme para no perdértelo.</div><div id="hist">
   <div class="hist-acc" onclick="histTog()">
     <span class="ic">📊</span><span class="ti">Rendimiento del sistema</span>
     <span class="nt g" id="histNet">+6.5U</span><span class="ar" id="histAr">▾</span>
@@ -196,7 +210,7 @@ pintarMes();hhint();
 </script><script>var hp=document.getElementById("histPanel");if(hp){hp.style.display="block";var ar=document.getElementById("histAr");if(ar)ar.textContent="▴";}</script>
 <footer>
 Apuesta con responsabilidad — ninguna jugada es segura; el sistema busca valor a largo plazo.<br>
-Actualizado: 08/28/2026 8:17 AM CT
+Actualizado: 08/28/2026 4:23 PM CT
 </footer>
 </div>
 </body>
