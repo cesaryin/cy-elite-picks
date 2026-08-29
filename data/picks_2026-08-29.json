@@ -1,0 +1,137 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BAL/ATH o9.5",
+      "deporte": "MLB",
+      "tipo": "o9.5",
+      "cuota": -115,
+      "prob_estimada": 55.0,
+      "razon": "Las cuatro capas del over convergen: abridor local muy castigable (6.68 ERA), los dos bullpens son los peores del cartel (BAL 4.09, ATH 5.26) y ambas ofensivas llegan calientes (BAL 5.7 c/j y ops .707; ATH 5.2 c/j y ops .794 en la semana) en un parque corto. Sin ningún starter dominante que frene el juego.",
+      "equipos": [
+        "BAL",
+        "ATH"
+      ],
+      "destacado": null,
+      "hora": "9:05 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.5
+      },
+      "cuota_apertura_ref": -118,
+      "valor": {
+        "prob_estimada": 55.0,
+        "prob_justa": 51.08,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 2.83,
+        "precio_minimo": -117,
+        "precio_publicado": -117,
+        "precio_equilibrio": -122,
+        "discrepancia_pp": 3.92,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.83% · no tomar peor de -117"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAD/DET u7.0",
+      "deporte": "MLB",
+      "tipo": "u7.0",
+      "cuota": 100,
+      "prob_estimada": 52.5,
+      "razon": "Las dos ofensivas están congeladas: LAD 3.0 c/j con ops .645 y DET 2.3 c/j con ops .512 en la última semana. Repaso de riesgos del under: ningún bullpen quemado (LAD 3.38, DET 3.58), parque amplio y ningún lineup en racha. A dinero par el número es aceptable.",
+      "equipos": [
+        "LAD",
+        "DET"
+      ],
+      "destacado": null,
+      "hora": "12:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.0
+      },
+      "cuota_apertura_ref": 101,
+      "valor": {
+        "prob_estimada": 52.5,
+        "prob_justa": 47.83,
+        "prob_implicita": 50.0,
+        "cuota": 100,
+        "cuota_justa_mercado": 109,
+        "ev_pct": 5.0,
+        "precio_minimo": -106,
+        "precio_publicado": -106,
+        "precio_equilibrio": -110,
+        "discrepancia_pp": 4.67,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.00% · no tomar peor de -106"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CIN/CHC o9.0",
+      "deporte": "MLB",
+      "tipo": "o9.0",
+      "cuota": -115,
+      "prob_estimada": 54.0,
+      "razon": "Dos lineups encendidos: CHC 7.0 c/j con ops .848 y 11 HR, CIN 5.8 c/j con ops .845 y 12 HR en seis juegos. Enfrente, A. Abbott regala bases (10.8% BB) y el bullpen visitante es flojo (4.12). El número ya subió de 8.5 a 9.0, así que el margen es fino: jugada de menor convicción.",
+      "equipos": [
+        "CIN",
+        "CHC"
+      ],
+      "destacado": null,
+      "hora": "1:20 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.0
+      },
+      "cuota_apertura_ref": -117,
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 51.08,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 0.96,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 2.92,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.96% por debajo del minimo exigido (2.0%)"
+      },
+      "unidades": 0.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "PHI Spread -1.5 (-135): ventaja real de abridor, pero la línea justa ya paga 55.3% y el precio exige 57.4%; margen demasiado fino para arriesgar.",
+    "NYY ML -130: el abridor visitante no está confirmado en los datos y el total subió con fuerza; sin esa información no se puede sostener el precio.",
+    "CWS ML: el edge del modelo viene con alerta (6.6 pp) y la línea del total bajó de 9.5 a 9.0, señal en contra de la ofensiva caliente de CWS.",
+    "STL ML: edge del modelo con alerta (9.6 pp) y su ofensiva es apenas .679 de ops; sin ventaja sobre la justa.",
+    "MIA/WSH o7.5 (-120): bullpens malos apoyan el over, pero dos abridores con buen K-BB y el precio ya cargado dejan el valor en cero.",
+    "ATL ML y PHI ML: fuera del rango de cuotas permitido (-225 y -235).",
+    "AZ/SF: solo 3 casas de referencia y sin abridor local confirmado, referencia de precio floja."
+  ],
+  "autopsia": "Del último cierre, LAD/DET u7.5 y CWS/MIN o9.0 fueron decisiones limpias: totales sostenidos por ofensivas y bullpen, y así entraron. SD ML a +116 fue el fallo de proceso: apostar al perro sin ofensiva funcional (ops .631 en la semana) y acabó 4-9. Hoy corrijo el criterio: no doy ML de perro con lineup frío y llevo el peso a totales, donde el proceso viene sostenido (+2.42U), revisando siempre bullpen y parque antes de elegir lado.",
+  "resumen": "Día de totales. La jugada principal está en Sacramento: abridor local muy vulnerable, los dos peores bullpens del cartel y ambas ofensivas produciendo más de cinco carreras por juego, así que el o9.5 es el número con más respaldo. Como segunda opción, el under de 7.0 entre Dodgers y Tigres con dos lineups en pleno apagón ofensivo y parque amplio. Cierro con el over de Wrigley, apoyado en dos ofensivas encendidas, aunque con menos margen porque el número ya se movió. Sin parlay: solo hay una pata con valor propio y combinar favoritos sin ventaja no es rentable.",
+  "valor_dia": {
+    "apostables": 2,
+    "seguimiento": 1,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
+  }
+}
