@@ -1,0 +1,146 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "LAD/DET u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -118,
+      "prob_estimada": 55.5,
+      "razon": "Las cuatro comprobaciones del under se cumplen: ningún bullpen quemado (3.36 y 3.55), parque amplio, ninguna ofensiva caliente (LAD 2.5 c/j y ops .621, DET 2.5 c/j y ops .552 en la semana) y DET viene de 1/10 overs. Ambos lineups llevan una semana sin impulsar carreras.",
+      "equipos": [
+        "LAD",
+        "DET"
+      ],
+      "destacado": null,
+      "hora": "12:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "cuota_apertura_ref": -118,
+      "valor": {
+        "prob_estimada": 55.5,
+        "prob_justa": 51.74,
+        "prob_implicita": 54.13,
+        "cuota": -118,
+        "cuota_justa_mercado": -107,
+        "ev_pct": 2.53,
+        "precio_minimo": -119,
+        "precio_publicado": -119,
+        "precio_equilibrio": -124,
+        "discrepancia_pp": 3.76,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.53% · no tomar peor de -119"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 109,
+      "prob_estimada": 50.5,
+      "razon": "Perro en casa con la mejor ofensiva funcional del duelo: 5.0 c/j en la semana frente a un BOS con ops .667 y 3.4 c/j. NYY batea igual o mejor contra zurdos (.719) que contra derechos, así que R. Suárez no es la ventaja que sugiere el precio, y el bullpen local (2.52) domina el cierre.",
+      "equipos": [
+        "BOS",
+        "NYY"
+      ],
+      "destacado": "NYY",
+      "hora": "12:35 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 111,
+      "valor": {
+        "prob_estimada": 50.5,
+        "prob_justa": 46.64,
+        "prob_implicita": 47.85,
+        "cuota": 109,
+        "cuota_justa_mercado": 114,
+        "ev_pct": 5.54,
+        "precio_minimo": 102,
+        "precio_publicado": 102,
+        "precio_equilibrio": -102,
+        "discrepancia_pp": 3.86,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.54% · no tomar peor de +102",
+        "mejor_precio": {
+          "cuota": 111,
+          "casa": "draftkings"
+        },
+        "alcanzable": true
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CHC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -150,
+      "prob_estimada": 61.0,
+      "razon": "Ofensiva local desbordada: 9.2 c/j, ops .966 y 15 HR en seis juegos, con .752 de ops contra derechos. El dinero acompañó (CIN se alargó de +118 a +138). Aviso: C. Burns es el freno real del pick, por eso no sube de nivel.",
+      "equipos": [
+        "CIN",
+        "CHC"
+      ],
+      "destacado": "CHC",
+      "hora": "6:20 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -148,
+      "valor": {
+        "prob_estimada": 61.0,
+        "prob_justa": 58.4,
+        "prob_implicita": 60.0,
+        "cuota": -150,
+        "cuota_justa_mercado": -140,
+        "ev_pct": 1.67,
+        "precio_minimo": -148,
+        "precio_publicado": -148,
+        "precio_equilibrio": -156,
+        "discrepancia_pp": 2.6,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.67% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": -146,
+          "casa": "fanduel"
+        },
+        "alcanzable": true
+      },
+      "unidades": 0.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "BAL/ATH over: la línea del total cayó de 10.5 a 10.0 (señal FUERTE en contra) y ese mismo over ya falló ayer en la serie; anti-inercia.",
+    "SEA ML pese a M. Scherzer (7.02): lineup de SEA helado (ops .620, 3.2 c/j) — SYS-004 lo veta, y el dinero se fue a TOR.",
+    "PHI ML a -172: fuera del rango de cuota y con movimiento FUERTE en contra (-198 a -174).",
+    "PIT/STL under 7.5: la línea ya bajó de 8.0 a 7.5 y STL lleva 8/10 overs con 4.8 c/j; sin margen sobre la justa.",
+    "KC +164: precio idéntico a su línea justa (171) pese a la racha ofensiva; sin ventaja real contra P. Messick.",
+    "COL/ATL: el edge del modelo a favor de COL (15.7 pp) está en zona de alerta, no de oportunidad."
+  ],
+  "autopsia": "Del último cierre, los dos totales de juegos con ofensivas frías (LAD/DET u7.0, CIN/CHC o9.0) fueron decisiones limpias; el fallo fue BAL/ATH o9.5, que se quedó en 8 carreras y ya venía con la línea bajando: entré contra el movimiento del mercado. Corrijo el criterio: si la LÍNEA del total se mueve en mi contra, no juego ese lado aunque el matchup me guste. Hoy el ML sigue siendo mi mercado más caro (-5.04U), así que solo lo toco donde la ofensiva funcional respalda el precio.",
+  "resumen": "Día corto de valor real. La jugada principal es el under en Detroit: dos lineups apagados, bullpens sólidos y parque grande. Como segunda opción, los Yankees en casa a precio de perro con la única ofensiva que está produciendo en ese duelo, y de cierre los Cubs, cuyo bateo lleva una semana histórica en Wrigley aunque enfrenten a un abridor serio. Sin parlay: solo apareció una pata con valor propio y combinar favoritos sin ventaja no paga a la larga.",
+  "valor_dia": {
+    "apostables": 2,
+    "seguimiento": 1,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
+  }
+}
