@@ -35,6 +35,23 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
+      # SOLO SE PUBLICA LA WEB (30-ago-2026). El deploy subia `path: .`, es decir
+      # TODO el repositorio, y con el se colaban paginas que son de trabajo:
+      #   /test/       la web PRO de pruebas
+      #   /lab-test/   los bocetos de la tarjeta del LAB
+      #   preview*     los mockups de diseno
+      # Estaban accesibles para cualquiera que adivinara la URL. No es un
+      # problema de peso —entre las tres no llegan a 100 KB— sino de que son
+      # borradores publicos: cosas a medio hacer con la marca encima.
+      # Se borran del CHECKOUT, no del repositorio: siguen versionadas y se
+      # pueden abrir en local, simplemente dejan de publicarse.
+      - name: Quitar del despliegue lo que no es la web
+        run: |
+          rm -rf test lab-test
+          rm -f preview*.html
+          echo "Publicando:"; ls -1
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
