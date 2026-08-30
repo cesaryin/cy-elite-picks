@@ -571,6 +571,47 @@
      "inicio_utc": "2026-08-30T23:20Z"
     }
    }
+  },
+  {
+   "ts": "2026-08-30T19:48:49+00:00",
+   "juegos": {
+    "BAL@ATH": {
+     "ml": {
+      "BAL": -147,
+      "ATH": 137
+     },
+     "total": {
+      "linea": 10.0,
+      "over": -108,
+      "under": -112
+     },
+     "inicio_utc": "2026-08-30T20:05Z"
+    },
+    "PHI@LAA": {
+     "ml": {
+      "PHI": -161,
+      "LAA": 150
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -117,
+      "under": -103
+     },
+     "inicio_utc": "2026-08-30T20:07Z"
+    },
+    "CIN@CHC": {
+     "ml": {
+      "CIN": 143,
+      "CHC": -154
+     },
+     "total": {
+      "linea": 9.0,
+      "over": -120,
+      "under": -101
+     },
+     "inicio_utc": "2026-08-30T23:20Z"
+    }
+   }
   }
  ]
 }
