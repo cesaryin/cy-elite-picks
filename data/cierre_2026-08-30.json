@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-08-30T20:05Z",
   "visto": "2026-08-30T19:48:48+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PHI@LAA": {
   "ml": {
@@ -309,17 +309,17 @@
   },
   "inicio_utc": "2026-08-30T20:07Z",
   "visto": "2026-08-30T19:48:48+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CIN@CHC": {
   "ml": {
-   "CIN": 143,
-   "CHC": -154
+   "CIN": 140,
+   "CHC": -150
   },
   "total": {
-   "linea": 9.0,
-   "over": -120,
-   "under": -101
+   "linea": 9.5,
+   "over": 102,
+   "under": -122
   },
   "spread": {
    "CIN": {
@@ -332,7 +332,7 @@
    }
   },
   "inicio_utc": "2026-08-30T23:20Z",
-  "visto": "2026-08-30T19:48:48+00:00",
+  "visto": "2026-08-30T21:14:45+00:00",
   "cerrado": false
  }
 }
