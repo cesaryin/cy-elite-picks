@@ -58,7 +58,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": -101,
+      "cuota_apertura_ref": 101,
       "valor": {
         "prob_estimada": 52.0,
         "prob_justa": 49.3,
