@@ -89,7 +89,12 @@ header .fecha{color:#8b949e;font-size:14px;margin-top:4px}
 /* ===== COMPARATIVA DE PITCHERS ===== */
 #cmp{margin:13px 0}
 .mut{color:#8b949e}
-.cmp-acc{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14.5px;cursor:pointer}
+/* La cabecera del acordeon en fila: el titulo a la izquierda y el contador
+   con la flecha a la DERECHA (peticion de Cesar, 31-ago). Antes iba todo
+   seguido detras del titulo y el "5 con valor" quedaba flotando en medio
+   de la barra, sin alinearse con nada. */
+.cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14.5px;cursor:pointer}
+.cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12px;color:#8b949e}
 .cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
 .aut-texto{padding:10px 6px;font-size:13px;line-height:1.6}
 .cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
@@ -210,7 +215,7 @@ pintarMes();hhint();
 </script><script>var hp=document.getElementById("histPanel");if(hp){hp.style.display="block";var ar=document.getElementById("histAr");if(ar)ar.textContent="▴";}</script>
 <footer>
 Apuesta con responsabilidad — ninguna jugada es segura; el sistema busca valor a largo plazo.<br>
-Actualizado: 08/31/2026 11:54 AM CT
+Actualizado: 08/31/2026 12:14 PM CT
 </footer>
 </div>
 </body>
