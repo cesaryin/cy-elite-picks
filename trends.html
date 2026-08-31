@@ -4,23 +4,18 @@
 <title>CY Elite Trends</title>
 <meta name="theme-color" content="#0b0f14">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<style>
-:root{
-  --bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
+<style>:root{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
   --text:#e6edf3; --soft:#c3ccd6; --mute:#8b949e; --faint:#6e7681;
   --gold:#f0c75e; --gold-bg:rgba(240,199,94,.10); --gold-ln:rgba(240,199,94,.30);
   --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   --disp:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-}
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;
      padding:16px;-webkit-font-smoothing:antialiased}
 .wrap{max-width:560px;margin:0 auto}
-.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
-
 /* ---------- cabecera ---------- */
 header{text-align:center;padding:14px 0 8px}
 header h1{font-family:var(--disp);font-size:27px;font-weight:800;letter-spacing:-.02em;color:var(--gold)}
@@ -29,7 +24,18 @@ header .fecha{color:var(--mute);font-size:13px;margin-top:5px;font-family:var(--
          color:var(--blue);font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:99px;
          text-decoration:none;font-family:var(--disp)}
 .lab-btn.g{color:var(--gold);margin-left:6px}
-
+/* El aire extra en pantalla ancha es del DOCUMENTO suelto: si viajara al
+   dashboard le meteria 24 px al body de la app. */
+@media(min-width:600px){body{padding:24px}}
+.trends-real{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
+  --text:#e6edf3; --soft:#c3ccd6; --mute:#8b949e; --faint:#6e7681;
+  --gold:#f0c75e; --gold-bg:rgba(240,199,94,.10); --gold-ln:rgba(240,199,94,.30);
+  --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --disp:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
 /* ---------- separadores de capa ---------- */
 .sep{display:flex;align-items:center;gap:12px;margin:30px 0 6px}
 .sep .n{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--bg);
@@ -40,14 +46,12 @@ h2{font-family:var(--disp);font-size:19px;font-weight:700;letter-spacing:-.015em
 .h2s b{color:var(--soft)}
 .vacio{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
        text-align:center;font-size:12.5px;color:var(--mute);box-shadow:var(--shadow)}
-
 /* ---------- CAPA 1: alertas ---------- */
 .al{display:flex;gap:9px;align-items:flex-start;background:var(--gold-bg);
     border:1px solid var(--gold-ln);border-radius:10px;padding:11px 12px;margin-bottom:8px;
     font-size:12.5px;color:var(--soft);line-height:1.45}
 .al .ali{color:var(--gold);font-weight:700;flex-shrink:0;font-family:var(--mono)}
 .al b{color:var(--mute);font-weight:600}
-
 /* ---------- CAPA 2: fichas ---------- */
 .fi{background:var(--surf);border:1px solid var(--line);border-radius:11px;margin-bottom:8px;
     overflow:hidden;box-shadow:var(--shadow)}
@@ -70,7 +74,6 @@ h2{font-family:var(--disp);font-size:19px;font-weight:700;letter-spacing:-.015em
 .chp.r{color:var(--red);border-color:rgba(248,81,73,.4)}
 .pie{font-size:10.5px;color:var(--mute);margin-top:9px;padding-top:8px;border-top:1px solid var(--line)}
 .pie b{color:var(--soft)}
-
 /* ---------- señales: tarjeta neutra, color solo en el % ---------- */
 .s{display:flex;align-items:center;gap:10px;background:var(--surf);border:1px solid var(--line);
    border-radius:11px;padding:11px 12px;margin-bottom:8px;box-shadow:var(--shadow)}
@@ -85,7 +88,6 @@ h2{font-family:var(--disp);font-size:19px;font-weight:700;letter-spacing:-.015em
 .pc{flex-shrink:0;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--mute);
     width:38px;text-align:right}
 .s.fuerte .pc{color:var(--green)}
-
 /* ---------- CAPA 3: una tarjeta-tabla por juego ---------- */
 .jc{background:var(--surf);border:1px solid var(--line);border-radius:11px;padding:11px 12px;
     margin-bottom:8px;box-shadow:var(--shadow)}
@@ -107,7 +109,6 @@ table.t9 td.eq{font-family:var(--disp);font-weight:800;color:var(--text);text-al
 table.t9 tr.b td{border-bottom:1px solid var(--line)}
 table.t9 .g{color:var(--green)}
 table.t9 .r{color:var(--red)}
-
 /* ---------- CAPA 3: radar de suerte ---------- */
 .rd{display:flex;align-items:center;gap:8px;background:var(--surf);border:1px solid var(--line);
     border-radius:10px;padding:11px 12px;margin-bottom:8px;font-size:12px;box-shadow:var(--shadow)}
@@ -116,21 +117,20 @@ table.t9 .r{color:var(--red)}
 .rdt{flex:1;color:var(--mute);font-size:11px;min-width:0;font-family:var(--mono)}
 .rdv{font-family:var(--mono);font-weight:600;font-size:14px;width:34px;text-align:right;flex-shrink:0}
 .rdl{font-size:10px;color:var(--faint);width:78px;text-align:right;flex-shrink:0}
-
 /* ---------- pie ---------- */
 .leyenda{font-size:10.5px;color:var(--faint);margin-top:10px;line-height:1.75}
 .leyenda b{color:var(--mute)}
 footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-height:1.8;
        padding-top:16px;border-top:1px solid var(--line)}
-@media(min-width:600px){body{padding:24px}}
 </style></head>
 <body><div class="wrap">
   <header>
 <h1>CY Elite Trends</h1>
-<div class="fecha">31 de agosto de 2026 · 16 señales · 12 fuertes · 4 buenas · actualizado 08/31/2026 12:14 PM CT</div>
+<div class="fecha">31 de agosto de 2026 · 16 señales · 12 fuertes · 4 buenas · actualizado 08/31/2026 1:45 PM CT</div>
 <a class="lab-btn" href="index.html">CY Elite Picks — picks del día ›</a>
 <a class="lab-btn g" href="lab.html">LAB ›</a>
   </header>
+<div class="trends-real">
 
   <div class="sep"><span class="n">SEÑALES</span><span class="ln"></span></div>
   <h2>Las señales del día</h2>
@@ -174,4 +174,5 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
     Datos oficiales de MLB · temporada en curso<br>
     Todo real y verificable — ninguna cifra estimada.
   </footer>
+</div>
 </div></body></html>
