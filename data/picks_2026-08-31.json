@@ -1,0 +1,147 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "DET/MIN u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -115,
+      "prob_estimada": 56.0,
+      "razon": "Under limpio: Detroit está congelado (.445 ops y 1.5 carreras/juego en la semana, 55 ponches) y Minnesota apenas 4.3 c/j. Los dos bullpens aguantan (3.58 y 3.79), no hay relevo quemado que reviente el cierre, y ninguna ofensiva llega caliente de verdad.",
+      "equipos": [
+        "DET",
+        "MIN"
+      ],
+      "destacado": null,
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      },
+      "cuota_apertura_ref": -114,
+      "valor": {
+        "prob_estimada": 56.0,
+        "prob_justa": 51.08,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 4.7,
+        "precio_minimo": -121,
+        "precio_publicado": -121,
+        "precio_equilibrio": -127,
+        "discrepancia_pp": 4.92,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.70% · no tomar peor de -121"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -102,
+      "prob_estimada": 52.0,
+      "razon": "Precio de moneda al aire para el mejor equipo del año en un duelo que no está parejo: Milwaukee llega con el lineup encendido (5.5 c/j y .787 ops en la semana) y bullpen más fiable (3.32 con Megill). El riesgo real es que Chicago castiga zurdos (.807 ops), por eso no sube a oro.",
+      "equipos": [
+        "MIL",
+        "CHC"
+      ],
+      "destacado": "MIL",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -101,
+      "valor": {
+        "prob_estimada": 52.0,
+        "prob_justa": 49.3,
+        "prob_implicita": 50.5,
+        "cuota": -102,
+        "cuota_justa_mercado": 103,
+        "ev_pct": 2.98,
+        "precio_minimo": -104,
+        "precio_publicado": -104,
+        "precio_equilibrio": -108,
+        "discrepancia_pp": 2.7,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.98% · no tomar peor de -104",
+        "mejor_precio": {
+          "cuota": 100,
+          "casa": "fanduel"
+        },
+        "alcanzable": true
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 115,
+      "prob_estimada": 47.5,
+      "razon": "Perro con ofensiva funcional: Chicago viene a 5.7 carreras por juego y .755 ops, y Houston es el lado flojo contra zurdos (.709 ops) frente a A. Kay. Bullpens parejos, así que el precio plus paga un juego que es casi 50-50; jugada menor porque la línea se movió levemente en contra.",
+      "equipos": [
+        "CWS",
+        "HOU"
+      ],
+      "destacado": "CWS",
+      "hora": "7:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 119,
+      "valor": {
+        "prob_estimada": 47.5,
+        "prob_justa": 45.4,
+        "prob_implicita": 46.51,
+        "cuota": 115,
+        "cuota_justa_mercado": 120,
+        "ev_pct": 2.12,
+        "precio_minimo": 115,
+        "precio_publicado": 115,
+        "precio_equilibrio": 111,
+        "discrepancia_pp": 2.1,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.12% · no tomar peor de +115",
+        "mejor_precio": {
+          "cuota": 120,
+          "casa": "betrivers"
+        },
+        "alcanzable": true
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "TB ML -170: fuera del rango de cuota permitido y la línea justa (61.2%) ya recoge casi toda la ventaja del abridor rival improvisado.",
+    "BAL ML -135 en Coors: falta el abridor visitante en los datos; sin esa capa no se puede sostener un favorito.",
+    "ATH +186 vs TEX: el edge del modelo es válido pero mínimo; mi probabilidad honesta (~34%) no supera lo que exige el precio.",
+    "SF +166 en Atlanta: movimiento de línea FUERTE en contra y bullpen visitante 4.73.",
+    "SEA/BOS u8.0: la idea es buena (dos lineups helados) pero el bullpen de Seattle (4.50) y Fenway son dos banderas rojas de las cuatro que revientan unders.",
+    "MIA/WSH: bullpen de Washington en 5.06 mata cualquier under y el ML está a precio justo por ambos lados.",
+    "NYY ML: la línea se acortó FUERTE hacia Los Ángeles y el abridor de Nueva York (K-BB 2.9%) no respalda el favoritismo."
+  ],
+  "autopsia": "El cierre más reciente dejó una lección clara: los dos aciertos vinieron de totales bien construidos (LAD/DET u7.5) y de un ML barato, mientras la pérdida fue un favorito caro (CHC -150) donde pagué precio de élite por un equipo con 3-7 en sus últimos diez. Ahí no hubo mala suerte, hubo mal criterio de precio. Hoy corrijo eso: ningún ML por encima de -120 y la jugada principal es un total donde reviso bullpen, parque y ofensiva antes de darlo.",
+  "resumen": "Día sin regalos: casi todos los mercados vienen ajustados a su línea justa. La mejor jugada está en el total de Detroit-Minnesota, con un lineup de Tigres en caída libre (1.5 carreras por juego) y dos bullpens que no sangran. Detrás, Milwaukee a precio de moneda al aire pese a ser el mejor equipo del año, y un perro con bate caliente en Chicago White Sox. Sin parlay: no hay dos patas con valor propio en el rango de precio correcto.",
+  "valor_dia": {
+    "apostables": 3,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 3.0,
+    "ev_min": 2.0
+  }
+}

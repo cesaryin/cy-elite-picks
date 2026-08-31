@@ -1,42 +1,42 @@
 {
  "SF@ATL": {
   "ml": {
-   "SF": 135,
-   "ATL": -163
+   "SF": 174,
+   "ATL": -187
   },
   "total": {
-   "linea": 8.0,
-   "over": -118,
-   "under": -102
+   "linea": 9.0,
+   "over": -108,
+   "under": -111
   },
   "spread": {
    "SF": {
     "linea": 1.5,
-    "cuota": -163
+    "cuota": -135
    },
    "ATL": {
     "linea": -1.5,
-    "cuota": 135
+    "cuota": 112
    }
   },
   "inicio_utc": "2026-08-31T22:05Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "NYM@TB": {
   "ml": {
-   "NYM": 144,
-   "TB": -175
+   "NYM": 154,
+   "TB": -165
   },
   "total": {
    "linea": 8.0,
-   "over": -107,
-   "under": -113
+   "over": -110,
+   "under": -110
   },
   "spread": {
    "NYM": {
     "linea": 1.5,
-    "cuota": -148
+    "cuota": -149
    },
    "TB": {
     "linea": -1.5,
@@ -44,23 +44,23 @@
    }
   },
   "inicio_utc": "2026-08-31T22:40Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "SD@CIN": {
   "ml": {
-   "SD": -148,
-   "CIN": 122
+   "SD": -141,
+   "CIN": 131
   },
   "total": {
    "linea": 9.0,
-   "over": -118,
-   "under": -102
+   "over": -107,
+   "under": -112
   },
   "spread": {
    "SD": {
     "linea": -1.5,
-    "cuota": 109
+    "cuota": 108
    },
    "CIN": {
     "linea": 1.5,
@@ -68,61 +68,61 @@
    }
   },
   "inicio_utc": "2026-08-31T22:40Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "MIA@WSH": {
   "ml": {
-   "MIA": -123,
-   "WSH": 102
+   "MIA": -112,
+   "WSH": 104
   },
   "total": {
-   "linea": 9.0,
-   "over": 102,
-   "under": -122
+   "linea": 8.5,
+   "over": -120,
+   "under": 100
   },
   "spread": {
    "MIA": {
     "linea": -1.5,
-    "cuota": 135
+    "cuota": 138
    },
    "WSH": {
     "linea": 1.5,
-    "cuota": -163
+    "cuota": -167
    }
   },
   "inicio_utc": "2026-08-31T22:45Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "SEA@BOS": {
   "ml": {
-   "SEA": 139,
-   "BOS": -168
+   "SEA": 151,
+   "BOS": -162
   },
   "total": {
-   "linea": 8.0,
-   "over": -107,
-   "under": -112
+   "linea": 7.5,
+   "over": -119,
+   "under": -101
   },
   "spread": {
    "SEA": {
     "linea": 1.5,
-    "cuota": -149
+    "cuota": -155
    },
    "BOS": {
     "linea": -1.5,
-    "cuota": 124
+    "cuota": 129
    }
   },
   "inicio_utc": "2026-08-31T22:45Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "DET@MIN": {
   "ml": {
-   "DET": 112,
-   "MIN": -135
+   "DET": 116,
+   "MIN": -125
   },
   "total": {
    "linea": 8.5,
@@ -132,74 +132,74 @@
   "spread": {
    "DET": {
     "linea": 1.5,
-    "cuota": -187
+    "cuota": -191
    },
    "MIN": {
     "linea": -1.5,
-    "cuota": 153
+    "cuota": 157
    }
   },
   "inicio_utc": "2026-08-31T23:40Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "MIL@CHC": {
   "ml": {
-   "MIL": -106,
-   "CHC": -114
+   "MIL": -101,
+   "CHC": -106
   },
   "total": {
    "linea": 9.5,
-   "over": -103,
-   "under": -117
+   "over": -108,
+   "under": -112
   },
   "spread": {
    "MIL": {
     "linea": -1.5,
-    "cuota": 149
+    "cuota": 147
    },
    "CHC": {
     "linea": 1.5,
-    "cuota": -181
+    "cuota": -178
    }
   },
   "inicio_utc": "2026-08-31T23:40Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "ATH@TEX": {
   "ml": {
-   "ATH": 197,
-   "TEX": -244
+   "ATH": 196,
+   "TEX": -212
   },
   "total": {
    "linea": 7.5,
-   "over": -111,
-   "under": -109
+   "over": -104,
+   "under": -115
   },
   "spread": {
    "ATH": {
     "linea": 1.5,
-    "cuota": -112
+    "cuota": -120
    },
    "TEX": {
     "linea": -1.5,
-    "cuota": -107
+    "cuota": 100
    }
   },
   "inicio_utc": "2026-09-01T00:05Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "CWS@HOU": {
   "ml": {
-   "CWS": 109,
-   "HOU": -131
+   "CWS": 119,
+   "HOU": -127
   },
   "total": {
    "linea": 8.5,
-   "over": -104,
-   "under": -115
+   "over": -107,
+   "under": -112
   },
   "spread": {
    "CWS": {
@@ -212,79 +212,79 @@
    }
   },
   "inicio_utc": "2026-09-01T00:10Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "BAL@COL": {
   "ml": {
-   "BAL": -143,
-   "COL": 119
+   "BAL": -130,
+   "COL": 121
   },
   "total": {
    "linea": 11.0,
-   "over": -108,
-   "under": -112
+   "over": 100,
+   "under": -120
   },
   "spread": {
    "BAL": {
     "linea": -1.5,
-    "cuota": 104
+    "cuota": 108
    },
    "COL": {
     "linea": 1.5,
-    "cuota": -126
+    "cuota": -131
    }
   },
   "inicio_utc": "2026-09-01T00:40Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "NYY@LAA": {
   "ml": {
-   "NYY": -143,
-   "LAA": 119
+   "NYY": -126,
+   "LAA": 104
   },
   "total": {
    "linea": 8.5,
-   "over": -120,
-   "under": 100
+   "over": -102,
+   "under": -118
   },
   "spread": {
    "NYY": {
     "linea": -1.5,
-    "cuota": 119
+    "cuota": 130
    },
    "LAA": {
     "linea": 1.5,
-    "cuota": -143
+    "cuota": -157
    }
   },
   "inicio_utc": "2026-09-01T01:38Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  },
  "PHI@AZ": {
   "ml": {
    "PHI": -125,
-   "AZ": 104
+   "AZ": 103
   },
   "total": {
-   "linea": 8.0,
-   "over": -118,
-   "under": -102
+   "linea": 8.5,
+   "over": -102,
+   "under": -119
   },
   "spread": {
    "PHI": {
     "linea": -1.5,
-    "cuota": 135
+    "cuota": 136
    },
    "AZ": {
     "linea": 1.5,
-    "cuota": -163
+    "cuota": -164
    }
   },
   "inicio_utc": "2026-09-01T01:40Z",
-  "visto": "2026-08-31T05:30:52+00:00",
+  "visto": "2026-08-31T13:45:03+00:00",
   "cerrado": false
  }
 }
