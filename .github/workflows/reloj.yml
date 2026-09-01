@@ -47,9 +47,13 @@ on:
 permissions:
   contents: read
 
+# EL ULTIMO RELOJ MANDA. Si se relanza el run de picks a media jornada —cosa que
+# pasa cuando se republica la web— el reloj nuevo cancela al viejo y arranca
+# limpio: al recorrer sus objetivos se salta los que ya pasaron, asi que no hay
+# disparos repetidos. Con `false` se habrian quedado dos relojes en cola pisandose.
 concurrency:
   group: reloj-del-dia
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   reloj:
