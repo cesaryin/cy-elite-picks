@@ -1,0 +1,147 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -125,
+      "prob_estimada": 58.0,
+      "razon": "El cierre decide: relevo de TB 3.39 con Baker (1.50, 39 saves) contra un bullpen visitante de 4.80 y cerrador en 7.36. NYM llega con la ofensiva apagada (.621 ops y 2.7 c/j en la semana, 63 K), mientras TB batea 4.5 c/j en casa y .755 vs derechos ante Peralta.",
+      "equipos": [
+        "NYM",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -124,
+      "valor": {
+        "prob_estimada": 58.0,
+        "prob_justa": 54.2,
+        "prob_implicita": 55.56,
+        "cuota": -125,
+        "cuota_justa_mercado": -118,
+        "ev_pct": 4.4,
+        "precio_minimo": -131,
+        "precio_publicado": -131,
+        "precio_equilibrio": -138,
+        "discrepancia_pp": 3.8,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.40% · no tomar peor de -131",
+        "mejor_precio": {
+          "cuota": -124,
+          "casa": "fanduel"
+        },
+        "alcanzable": true
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -111,
+      "prob_estimada": 54.5,
+      "razon": "Desequilibrio ofensivo brutal: DET viene con .462 ops y 1.5 carreras por juego en 6 partidos, MIN con .755 y 4.7 c/j (10 HR) y .742 vs derechos ante Melton, cuyo FIP 3.92 desmiente el 1.86 de ERA. El dinero movió la línea 4.5 pp hacia MIN, confirmando la lectura.",
+      "equipos": [
+        "DET",
+        "MIN"
+      ],
+      "destacado": "MIN",
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -106,
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 50.67,
+        "prob_implicita": 52.61,
+        "cuota": -111,
+        "cuota_justa_mercado": -103,
+        "ev_pct": 3.6,
+        "precio_minimo": -114,
+        "precio_publicado": -114,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 3.83,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.60% · no tomar peor de -114",
+        "mejor_precio": {
+          "cuota": -103,
+          "casa": "betrivers"
+        },
+        "alcanzable": true
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "PHI/AZ u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -103,
+      "prob_estimada": 52.0,
+      "razon": "Duelo de zurdos de calidad (Luzardo 22.8% K-BB, E-Rod 2.50) con los dos bullpens sólidos (3.27 y 3.49) y cerradores en 1.61 y 2.25, así que no hay grieta en las entradas 6-9. Ninguna ofensiva está caliente: PHI 3.8 c/j y .678 ops, AZ 4.0 c/j y .658. Riesgo: AZ pega .785 vs zurdos.",
+      "equipos": [
+        "PHI",
+        "AZ"
+      ],
+      "destacado": null,
+      "hora": "8:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "cuota_apertura_ref": -102,
+      "valor": {
+        "prob_estimada": 52.0,
+        "prob_justa": 48.68,
+        "prob_implicita": 50.74,
+        "cuota": -103,
+        "cuota_justa_mercado": 105,
+        "ev_pct": 2.49,
+        "precio_minimo": -104,
+        "precio_publicado": -104,
+        "precio_equilibrio": -108,
+        "discrepancia_pp": 3.32,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.49% · no tomar peor de -104"
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CWS ML vs HOU: perdió ayer contra el mismo rival en esta serie y no hay justificación nueva; además la línea justa lo pone en 50/50 sin margen.",
+    "SD ML: ofensiva en .575 ops y 3.7 c/j, no sostiene un favorito a -136.",
+    "SF/PIT: la línea justa está en 50/50 en el total y el ML de ambos lados paga peor que su precio justo.",
+    "BAL ML -139 en Coors: el edge del modelo es válido (5.5 pp) pero el parque multiplica la varianza y el margen sobre la justa es mínimo.",
+    "NYY ML -182 y F5 ML -183: fuera del rango de cuota permitido; el spread -1.5 a -108 no supera su probabilidad justa.",
+    "ATL -172 fuera de rango y WSH +152 paga menos que su cuota justa (+159).",
+    "CIN team total o4.5 y over 9.5: la ofensiva caliente ya está pagada en el precio, sin ventaja sobre la justa."
+  ],
+  "autopsia": "El u8.5 de DET/MIN no fue mala suerte: fue proceso — dí under con el bullpen de DET en 4.04 y MIN bateando 4.7 c/j, y acabó 1-11. Igual el MIL ML: apostar al equipo visitante contra un lineup que promediaba 8.6 carreras en 10 juegos era ignorar la capa ofensiva. Hoy exijo que la ofensiva del lado elegido esté funcional y que el bullpen aguante el cierre; por eso el under de hoy solo entra con los dos relevos bajo 3.50 y las dos ofensivas frías.",
+  "resumen": "Día de tres jugadas con criterio estrecho tras la racha negativa. La principal es Tampa en casa: mismo nivel de abridores, pero el bullpen y el cerrador marcan la diferencia contra unos Mets sin bateo. La segunda ataca el desplome ofensivo de Detroit (1.5 carreras por juego) con Minnesota respaldada por el movimiento de línea. La tercera es un under en Arizona sostenido por dos zurdos de calidad y bullpens fiables, con la advertencia de que Arizona castiga a los lefties. Sin parlay: hoy no hay dos patas con valor propio en el rango correcto.",
+  "valor_dia": {
+    "apostables": 3,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 3.0,
+    "ev_min": 2.0
+  }
+}
