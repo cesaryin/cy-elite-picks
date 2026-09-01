@@ -260,7 +260,7 @@
    }
   },
   "inicio_utc": "2026-09-01T01:38Z",
-  "visto": "2026-09-01T00:40:34+00:00",
+  "visto": "2026-09-01T01:16:27+00:00",
   "cerrado": false
  },
  "PHI@AZ": {
@@ -269,22 +269,22 @@
    "AZ": -102
   },
   "total": {
-   "linea": 8.5,
-   "over": -102,
-   "under": -118
+   "linea": 8.0,
+   "over": -117,
+   "under": -103
   },
   "spread": {
    "PHI": {
     "linea": -1.5,
-    "cuota": 148
+    "cuota": 149
    },
    "AZ": {
     "linea": 1.5,
-    "cuota": -179
+    "cuota": -180
    }
   },
   "inicio_utc": "2026-09-01T01:40Z",
-  "visto": "2026-09-01T00:40:34+00:00",
+  "visto": "2026-09-01T01:16:27+00:00",
   "cerrado": false
  }
 }
