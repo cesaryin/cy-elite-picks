@@ -1,0 +1,130 @@
+name: Reloj del dia (dispara el motor)
+
+# ===========================================================================
+# POR QUE EXISTE ESTE WORKFLOW
+#
+# Los eventos `schedule` de GitHub no son fiables en el repo PRIVADO del motor.
+# Medido sobre 143 ejecuciones del refresco del LAB desde el 27 de julio:
+#
+#     27-jul a  6-ago .... llegaban con 170-240 min de retraso
+#      7-ago a 25-ago .... 37-80 min de media (el mejor tramo)
+#     26-ago en adelante .. 93-300 min de media, con picos de 11 HORAS
+#
+# Es decir: el LAB nunca ha sido puntual, y desde finales de agosto directamente
+# no sirve. Un refresco pensado para las 10:23 que llega a las 14:00 se pierde
+# los juegos de mediodia, que es justo para lo que existia.
+#
+# LA SALIDA. El reloj no puede vivir en el motor porque dormir se FACTURA: cubrir
+# de 10:00 a 21:10 CT son ~690 min al dia, y la cuota gratis del repo privado es
+# ~66 min al dia. Serian unos 150 $/mes.
+#
+# Pero ESTE repo es PUBLICO, y los repos publicos tienen minutos de Actions
+# ilimitados y gratis. Aqui un job que duerme once horas no cuesta nada.
+#
+# COMO FUNCIONA. Arranca una vez al dia, duerme hasta cada hora objetivo y va
+# disparando por `workflow_dispatch` los workflows del motor —que SIEMPRE son
+# puntuales, a diferencia de los `schedule`—. Como un job no puede pasar de 6
+# horas, al acercarse a las 5 se dispara a si mismo con el testigo (`desde`) y
+# el siguiente tramo sigue donde lo dejo.
+#
+# QUE HACE FALTA: el secreto MOTOR_DISPATCH_TOKEN, un token fine-grained con
+# permiso "Actions: write" sobre cy-elite-motor Y sobre cy-elite-picks (lo
+# segundo, para poder pasarse el testigo a si mismo). Nada mas.
+# ===========================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Minutos desde las 13:00 UTC a partir de los que seguir (uso interno)"
+        required: false
+        default: "0"
+  schedule:
+    # 13:05 UTC = 8:05 AM CT. Es el arranque de respaldo: lo normal es que lo
+    # dispare el propio run de picks de la manana, que si es puntual.
+    - cron: "5 13 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reloj-del-dia
+  cancel-in-progress: false
+
+jobs:
+  reloj:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Disparar el motor a sus horas
+        env:
+          TK: ${{ secrets.MOTOR_DISPATCH_TOKEN }}
+          DESDE: ${{ github.event.inputs.desde }}
+        run: |
+          set -u
+          MOTOR="https://api.github.com/repos/cesaryin/cy-elite-motor/actions/workflows"
+          YO="https://api.github.com/repos/cesaryin/cy-elite-picks/actions/workflows/reloj.yml/dispatches"
+          A="Accept: application/vnd.github+json"
+          PRESUPUESTO=$((5 * 3600))     # 5 h; el limite duro de un job son 6
+
+          if [ -z "${TK:-}" ]; then
+            echo "FALTA el secreto MOTOR_DISPATCH_TOKEN."
+            echo "Crealo en Settings > Secrets and variables > Actions de este repo."
+            exit 1
+          fi
+
+          # Horas objetivo, en MINUTOS DESDE LAS 13:00 UTC (= 8:00 AM CT).
+          # Se cuenta asi para que la jornada no se parta a medianoche UTC.
+          #   LAB  -> refresca proyecciones, alineaciones, clima y bullpen
+          #   CAP  -> foto de las cuotas para el detector de movimiento (steam)
+          TARGETS="
+          143:lab-refresh.yml
+          215:cierre-captura.yml
+          323:lab-refresh.yml
+          395:cierre-captura.yml
+          503:lab-refresh.yml
+          580:cierre-captura.yml
+          645:cierre-captura.yml
+          683:lab-refresh.yml
+          730:cierre-captura.yml
+          790:cierre-captura.yml
+          "
+
+          # El ancla de la jornada: las 13:00 UTC de hoy. Si ya cruzamos la
+          # medianoche UTC pero seguimos en la misma jornada de beisbol, el ancla
+          # es la de ayer.
+          ANCLA=$(date -u -d "$(date -u +%F) 13:00:00" +%s)
+          if [ "$(date -u +%H)" -lt 13 ]; then ANCLA=$((ANCLA - 86400)); fi
+
+          INICIO=$(date +%s)
+          echo "Arranca el reloj. Testigo recibido: ${DESDE:-0} min."
+
+          for T in $TARGETS; do
+            MIN="${T%%:*}"
+            WF="${T##*:}"
+            [ "$MIN" -le "${DESDE:-0}" ] && continue
+
+            OBJ=$((ANCLA + MIN * 60))
+            AHORA=$(date +%s)
+            if [ "$OBJ" -le "$AHORA" ]; then
+              echo "  [$(date -u -d @$OBJ +%H:%M) UTC] $WF - ya paso, se salta"
+              continue
+            fi
+
+            ESPERA=$((OBJ - AHORA))
+            if [ $(( (AHORA - INICIO) + ESPERA )) -gt "$PRESUPUESTO" ]; then
+              echo "El siguiente objetivo no cabe en este tramo. Paso el testigo en $((MIN - 1)) min."
+              curl -s -o /dev/null -w "  relevo -> %{http_code}\n" -X POST \
+                -H "Authorization: Bearer $TK" -H "$A" "$YO" \
+                -d "{\"ref\":\"master\",\"inputs\":{\"desde\":\"$((MIN - 1))\"}}"
+              exit 0
+            fi
+
+            echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
+            sleep "$ESPERA"
+            curl -s -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" \
+              "$MOTOR/$WF/dispatches" -d '{"ref":"main"}'
+          done
+
+          echo "Jornada cubierta."
