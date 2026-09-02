@@ -1,85 +1,85 @@
 {
- "v": 3,
+ "v": 5,
  "fecha": "2026-09-01",
- "rpg": 4.468,
- "era": 4.16,
+ "rpg": 4.478,
+ "era": 4.171,
  "pf": {
-  "2395": 96.3,
-  "3289": 98.8,
-  "32": 95.1,
+  "2395": 96.4,
+  "3289": 99.1,
+  "32": 96.0,
   "17": 94.0,
-  "2": 97.7,
+  "2": 98.2,
   "2602": 102.0,
   "2392": 102.0,
-  "2680": 91.3,
-  "2889": 90.9,
-  "2681": 111.5,
-  "22": 98.6,
-  "680": 81.5,
-  "14": 101.4,
-  "4169": 96.3,
-  "4705": 99.5,
+  "2680": 93.5,
+  "2889": 93.0,
+  "2681": 108.8,
+  "22": 102.0,
+  "680": 85.6,
+  "14": 101.3,
+  "4169": 97.1,
+  "4705": 99.3,
   "7": 102.0,
   "15": 106.0,
   "3309": 104.0,
-  "2394": 100.0,
-  "3313": 101.6,
+  "2394": 99.6,
+  "3313": 101.3,
   "3": 106.0,
-  "4": 96.0,
+  "4": 97.1,
   "5325": 86.0,
   "5": 98.0,
   "3312": 104.0,
   "19": 125.0,
   "31": 102.0,
-  "1": 94.6,
-  "2529": 120.6,
+  "1": 98.0,
+  "2529": 115.7,
   "12": 94.0,
-  "2523": 108.0,
-  "10": 99.3
+  "2523": 106.1,
+  "10": 99.5
  },
  "pf_equipo": {
-  "SF": 96.3,
-  "NYM": 98.8,
-  "MIL": 95.1,
+  "SF": 96.4,
+  "NYM": 99.1,
+  "MIL": 96.0,
   "CHC": 94.0,
-  "BAL": 97.7,
+  "BAL": 98.2,
   "CIN": 102.0,
   "HOU": 102.0,
-  "SD": 91.3,
-  "STL": 90.9,
-  "PHI": 111.5,
-  "LAD": 98.6,
-  "SEA": 81.5,
-  "TOR": 101.4,
-  "MIA": 96.3,
-  "ATL": 99.5,
+  "SD": 93.5,
+  "STL": 93.0,
+  "PHI": 108.8,
+  "LAD": 102.0,
+  "SEA": 85.6,
+  "TOR": 101.3,
+  "MIA": 97.1,
+  "ATL": 99.3,
   "KC": 102.0,
   "AZ": 106.0,
   "WSH": 104.0,
-  "DET": 100.0,
-  "NYY": 101.6,
+  "DET": 99.6,
+  "NYY": 101.3,
   "BOS": 106.0,
-  "CWS": 96.0,
+  "CWS": 97.1,
   "TEX": 86.0,
   "CLE": 98.0,
   "MIN": 104.0,
   "COL": 125.0,
   "PIT": 102.0,
-  "LAA": 94.6,
-  "ATH": 99.3,
-  "TB": 108.0
+  "LAA": 98.0,
+  "ATH": 99.5,
+  "TB": 106.1
  },
  "pf_detalle": {
   "2395": {
-   "pf": 96.3,
-   "bruto": 97.9,
+   "pf": 96.4,
+   "bruto": 97.4,
    "juegos": 231,
    "equipo": "SF",
    "fuente": "propio x escala",
-   "pf_propio": 98.4
+   "pf_propio": 98.0
   },
   "3289": {
-   "pf": 98.8,
+   "pf": 99.1,
    "bruto": 99.4,
    "juegos": 231,
    "equipo": "NYM",
@@ -87,24 +87,24 @@
    "pf_propio": 99.5
   },
   "32": {
-   "pf": 95.1,
-   "bruto": 97.4,
+   "pf": 96.0,
+   "bruto": 97.3,
    "juegos": 233,
    "equipo": "MIL",
    "fuente": "propio x escala",
-   "pf_propio": 97.9
+   "pf_propio": 97.8
   },
   "17": {
    "pf": 94.0,
-   "bruto": 96.5,
-   "juegos": 229,
+   "bruto": 96.6,
+   "juegos": 230,
    "equipo": "CHC",
    "fuente": "referencia",
-   "pf_propio": 97.2
+   "pf_propio": 97.3
   },
   "2": {
-   "pf": 97.7,
-   "bruto": 98.7,
+   "pf": 98.2,
+   "bruto": 98.8,
    "juegos": 230,
    "equipo": "BAL",
    "fuente": "propio x escala",
@@ -112,30 +112,30 @@
   },
   "2602": {
    "pf": 102.0,
-   "bruto": 100.0,
-   "juegos": 231,
+   "bruto": 99.9,
+   "juegos": 232,
    "equipo": "CIN",
    "fuente": "referencia",
    "pf_propio": 100.0
   },
   "2392": {
    "pf": 102.0,
-   "bruto": 99.7,
-   "juegos": 231,
+   "bruto": 99.6,
+   "juegos": 232,
    "equipo": "HOU",
    "fuente": "referencia",
-   "pf_propio": 99.8
+   "pf_propio": 99.7
   },
   "2680": {
-   "pf": 91.3,
+   "pf": 93.5,
    "bruto": 95.4,
    "juegos": 230,
    "equipo": "SD",
    "fuente": "propio x escala",
-   "pf_propio": 96.3
+   "pf_propio": 96.4
   },
   "2889": {
-   "pf": 90.9,
+   "pf": 93.0,
    "bruto": 95.0,
    "juegos": 234,
    "equipo": "STL",
@@ -143,7 +143,7 @@
    "pf_propio": 96.1
   },
   "2681": {
-   "pf": 111.5,
+   "pf": 108.8,
    "bruto": 106.2,
    "juegos": 229,
    "equipo": "PHI",
@@ -151,31 +151,31 @@
    "pf_propio": 104.9
   },
   "22": {
-   "pf": 98.6,
+   "pf": 102.0,
    "bruto": 99.2,
    "juegos": 227,
    "equipo": "LAD",
-   "fuente": "propio x escala",
+   "fuente": "referencia",
    "pf_propio": 99.4
   },
   "680": {
-   "pf": 81.5,
-   "bruto": 90.0,
+   "pf": 85.6,
+   "bruto": 89.9,
    "juegos": 230,
    "equipo": "SEA",
    "fuente": "propio x escala",
-   "pf_propio": 92.1
+   "pf_propio": 92.0
   },
   "14": {
-   "pf": 101.4,
+   "pf": 101.3,
    "bruto": 100.8,
    "juegos": 234,
    "equipo": "TOR",
    "fuente": "propio x escala",
-   "pf_propio": 100.6
+   "pf_propio": 100.7
   },
   "4169": {
-   "pf": 96.3,
+   "pf": 97.1,
    "bruto": 97.9,
    "juegos": 231,
    "equipo": "MIA",
@@ -183,47 +183,47 @@
    "pf_propio": 98.4
   },
   "4705": {
-   "pf": 99.5,
-   "bruto": 99.7,
+   "pf": 99.3,
+   "bruto": 99.6,
    "juegos": 235,
    "equipo": "ATL",
    "fuente": "propio x escala",
-   "pf_propio": 99.8
+   "pf_propio": 99.6
   },
   "7": {
    "pf": 102.0,
    "bruto": 102.0,
-   "juegos": 228,
+   "juegos": 229,
    "equipo": "KC",
    "fuente": "referencia",
    "pf_propio": 101.6
   },
   "15": {
    "pf": 106.0,
-   "bruto": 100.7,
-   "juegos": 230,
+   "bruto": 100.6,
+   "juegos": 231,
    "equipo": "AZ",
    "fuente": "referencia",
    "pf_propio": 100.5
   },
   "3309": {
    "pf": 104.0,
-   "bruto": 102.7,
-   "juegos": 233,
+   "bruto": 102.8,
+   "juegos": 234,
    "equipo": "WSH",
    "fuente": "referencia",
    "pf_propio": 102.2
   },
   "2394": {
-   "pf": 100.0,
-   "bruto": 100.1,
+   "pf": 99.6,
+   "bruto": 99.8,
    "juegos": 230,
    "equipo": "DET",
    "fuente": "propio x escala",
-   "pf_propio": 100.0
+   "pf_propio": 99.8
   },
   "3313": {
-   "pf": 101.6,
+   "pf": 101.3,
    "bruto": 100.9,
    "juegos": 230,
    "equipo": "NYY",
@@ -232,86 +232,86 @@
   },
   "3": {
    "pf": 106.0,
-   "bruto": 101.4,
-   "juegos": 231,
+   "bruto": 101.6,
+   "juegos": 232,
    "equipo": "BOS",
    "fuente": "referencia",
-   "pf_propio": 101.1
+   "pf_propio": 101.3
   },
   "4": {
-   "pf": 96.0,
-   "bruto": 97.9,
+   "pf": 97.1,
+   "bruto": 98.0,
    "juegos": 231,
    "equipo": "CWS",
    "fuente": "propio x escala",
-   "pf_propio": 98.3
+   "pf_propio": 98.4
   },
   "5325": {
    "pf": 86.0,
-   "bruto": 91.7,
-   "juegos": 228,
+   "bruto": 91.9,
+   "juegos": 229,
    "equipo": "TEX",
    "fuente": "referencia",
-   "pf_propio": 93.4
+   "pf_propio": 93.6
   },
   "5": {
    "pf": 98.0,
-   "bruto": 102.3,
-   "juegos": 229,
+   "bruto": 102.2,
+   "juegos": 230,
    "equipo": "CLE",
    "fuente": "referencia",
    "pf_propio": 101.8
   },
   "3312": {
    "pf": 104.0,
-   "bruto": 100.5,
-   "juegos": 232,
+   "bruto": 100.8,
+   "juegos": 233,
    "equipo": "MIN",
    "fuente": "referencia",
-   "pf_propio": 100.4
+   "pf_propio": 100.6
   },
   "19": {
    "pf": 125.0,
-   "bruto": 111.0,
-   "juegos": 226,
+   "bruto": 110.8,
+   "juegos": 227,
    "equipo": "COL",
    "fuente": "referencia",
-   "pf_propio": 108.7
+   "pf_propio": 108.5
   },
   "31": {
    "pf": 102.0,
-   "bruto": 104.6,
-   "juegos": 228,
+   "bruto": 105.1,
+   "juegos": 229,
    "equipo": "PIT",
    "fuente": "referencia",
-   "pf_propio": 103.6
+   "pf_propio": 104.0
   },
   "1": {
-   "pf": 94.6,
-   "bruto": 97.1,
-   "juegos": 234,
+   "pf": 98.0,
+   "bruto": 97.2,
+   "juegos": 235,
    "equipo": "LAA",
-   "fuente": "propio x escala",
-   "pf_propio": 97.7
+   "fuente": "referencia",
+   "pf_propio": 97.8
   },
   "2529": {
-   "pf": 120.6,
-   "bruto": 112.4,
+   "pf": 115.7,
+   "bruto": 112.3,
    "juegos": 144,
    "equipo": "ATH",
    "fuente": "propio x escala",
-   "pf_propio": 108.8
+   "pf_propio": 108.7
   },
   "12": {
    "pf": 94.0,
    "bruto": 99.1,
-   "juegos": 151,
+   "juegos": 152,
    "equipo": "TB",
    "fuente": "referencia",
    "pf_propio": 99.3
   },
   "2523": {
-   "pf": 108.0,
+   "pf": 106.1,
    "bruto": 105.9,
    "juegos": 81,
    "equipo": "TB",
@@ -319,7 +319,7 @@
    "pf_propio": 103.4
   },
   "10": {
-   "pf": 99.3,
+   "pf": 99.5,
    "bruto": 99.5,
    "juegos": 81,
    "equipo": "ATH",
@@ -327,9 +327,9 @@
    "pf_propio": 99.7
   }
  },
- "ops_vl": 0.7213,
- "ops_vr": 0.7252,
- "fip_c": 3.078,
+ "ops_vl": 0.7113,
+ "ops_vr": 0.7222,
+ "fip_c": 3.087,
  "fuente": {
   "rpg": "real",
   "era": "real",
