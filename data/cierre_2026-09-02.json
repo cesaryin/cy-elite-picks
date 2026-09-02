@@ -140,7 +140,7 @@
    }
   },
   "inicio_utc": "2026-09-02T22:40Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "SF@PIT": {
@@ -164,7 +164,7 @@
    }
   },
   "inicio_utc": "2026-09-02T22:40Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "TOR@CLE": {
@@ -188,31 +188,31 @@
    }
   },
   "inicio_utc": "2026-09-02T22:40Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "DET@MIN": {
   "ml": {
-   "DET": -103,
-   "MIN": -117
+   "DET": -102,
+   "MIN": -118
   },
   "total": {
    "linea": 8.5,
-   "over": -120,
-   "under": 100
+   "over": -115,
+   "under": -105
   },
   "spread": {
    "DET": {
     "linea": -1.5,
-    "cuota": 157
+    "cuota": 160
    },
    "MIN": {
     "linea": 1.5,
-    "cuota": -192
+    "cuota": -195
    }
   },
   "inicio_utc": "2026-09-02T23:40Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "MIA@KC": {
@@ -236,31 +236,31 @@
    }
   },
   "inicio_utc": "2026-09-02T23:40Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "MIL@CHC": {
   "ml": {
-   "MIL": -167,
-   "CHC": 138
+   "MIL": -157,
+   "CHC": 130
   },
   "total": {
    "linea": 8.5,
-   "over": -102,
-   "under": -118
+   "over": -112,
+   "under": -108
   },
   "spread": {
    "MIL": {
     "linea": -1.5,
-    "cuota": 100
+    "cuota": 107
    },
    "CHC": {
     "linea": 1.5,
-    "cuota": -121
+    "cuota": -128
    }
   },
   "inicio_utc": "2026-09-02T23:40Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "CWS@HOU": {
@@ -276,15 +276,15 @@
   "spread": {
    "CWS": {
     "linea": 1.5,
-    "cuota": -181
+    "cuota": -180
    },
    "HOU": {
     "linea": -1.5,
-    "cuota": 149
+    "cuota": 148
    }
   },
   "inicio_utc": "2026-09-03T00:10Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "NYY@LAA": {
@@ -308,7 +308,7 @@
    }
   },
   "inicio_utc": "2026-09-03T01:38Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "STL@LAD": {
@@ -332,7 +332,7 @@
    }
   },
   "inicio_utc": "2026-09-03T02:10Z",
-  "visto": "2026-09-02T21:23:24+00:00",
+  "visto": "2026-09-02T21:37:08+00:00",
   "cerrado": false
  },
  "PHI@AZ": {
