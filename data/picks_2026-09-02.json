@@ -1,0 +1,141 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "BOS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -135,
+      "prob_estimada": 58.5,
+      "razon": "Boston tiene la ventaja real en las entradas de cierre: bullpen 3.51 con Chapman (1.77) frente a un relevo visitante de 4.35. Seattle llega con el lineup congelado (.635 ops y 3.5 c/j en la semana) y su peor split es justo contra zurdos (.638), que es lo que verá hoy. Fenway y localía completan la convergencia.",
+      "equipos": [
+        "SEA",
+        "BOS"
+      ],
+      "destacado": "BOS",
+      "hora": "3:10 PM CT",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "BOS",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -137,
+      "valor": {
+        "prob_estimada": 58.5,
+        "prob_justa": 55.6,
+        "prob_implicita": 57.45,
+        "cuota": -135,
+        "cuota_justa_mercado": -125,
+        "ev_pct": 1.83,
+        "precio_minimo": -134,
+        "precio_publicado": -134,
+        "precio_equilibrio": -140,
+        "discrepancia_pp": 2.9,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.83% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": -133,
+          "casa": "betus"
+        },
+        "alcanzable": true
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "NYM team total u3.5",
+      "deporte": "MLB",
+      "tipo": "team total u3.5",
+      "cuota": -126,
+      "prob_estimada": 57.5,
+      "razon": "Ataque de los Mets en caída libre: .562 ops y 2.6 carreras por juego en la semana con 66 ponches. Enfrente, un abridor con 26.4% de K y, sobre todo, un bullpen de 3.40 con cerrador de 1.50 que no regala entradas tardías; Tropicana es parque de pitcheo, así que el techo de carreras visitante es bajo.",
+      "equipos": [
+        "NYM",
+        "TB"
+      ],
+      "destacado": "NYM",
+      "hora": "5:40 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "NYM",
+        "lado": "under",
+        "linea": 3.5
+      },
+      "valor": {
+        "prob_estimada": 57.5,
+        "prob_justa": 52.35,
+        "prob_implicita": 55.75,
+        "cuota": -126,
+        "cuota_justa_mercado": -110,
+        "ev_pct": 3.13,
+        "precio_minimo": -129,
+        "precio_publicado": -129,
+        "precio_equilibrio": -135,
+        "discrepancia_pp": 5.15,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.13% · no tomar peor de -129"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "ATH/TEX o7.5",
+      "deporte": "MLB",
+      "tipo": "o7.5",
+      "cuota": -120,
+      "prob_estimada": 56.0,
+      "razon": "Línea corta para dos ofensivas funcionales: Texas 5.2 c/j y .757 ops contra zurdos, y los Athletics 4.0 c/j con .712 vs zurdos. El bullpen visitante (5.43) es el peor de la tarjeta y el abridor local apenas poncha (11.4% K) con muestra mínima, así que hay carreras disponibles tanto temprano como en el cierre.",
+      "equipos": [
+        "ATH",
+        "TEX"
+      ],
+      "destacado": null,
+      "hora": "1:35 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 7.5
+      },
+      "cuota_apertura_ref": -117,
+      "valor": {
+        "prob_estimada": 56.0,
+        "prob_justa": 52.17,
+        "prob_implicita": 54.55,
+        "cuota": -120,
+        "cuota_justa_mercado": -109,
+        "ev_pct": 2.67,
+        "precio_minimo": -121,
+        "precio_publicado": -121,
+        "precio_equilibrio": -127,
+        "discrepancia_pp": 3.83,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.67% · no tomar peor de -121"
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "MIL ML en Wrigley: perdió 3-17 contra este mismo rival hace dos días y el lineup local viene con .990 ops y 8.5 carreras por juego. Anti-inercia, fuera.",
+    "NYY ML: el matchup gusta, pero -163 queda fuera del rango de precio permitido y el modelo se va al otro lado.",
+    "TB ML: -178 fuera de rango; el valor del juego lo tomo por el lado del team total visitante.",
+    "AZ ML +114: el edge del modelo es válido, pero el lineup de Arizona está frío (.652 ops, 3.4 c/j) y SYS-004 lo bloquea.",
+    "WSH +118: el movimiento fuerte de línea la favorece, pero su bullpen de 4.87 no sostiene un juego cerrado.",
+    "BAL/COL en Coors: total y ML con demasiada varianza de parque para exigir ventaja fiable.",
+    "STL/LAD: LAD -250 fuera de rango y sin abridor visitante confirmado."
+  ],
+  "autopsia": "El cierre más reciente fue mixto: los dos ML de favorito corto entraron y el que se cayó fue el under de 7.5 en Chase, donde una ofensiva visitante caliente reventó la línea desde temprano. Ese es el patrón que llevo repitiendo: unders elegidos por el abridor rival sin comprobar el momento del bateo. Hoy el único under que doy es sobre un lineup con 2.6 carreras por juego y contra un bullpen elite, y en el juego donde las dos ofensivas están funcionales tomo el over, no el under.",
+  "resumen": "Día con tres jugadas de perfil distinto y poco ruido: la principal es Boston en Fenway, donde el bullpen y el split contra zurdos del rival marcan la diferencia. Complemento con el techo bajo del ataque de los Mets en Tampa y con un over de línea corta en Texas, donde el relevo visitante es el punto débil de la tarjeta. Sin parlay: solo una pata cumple el rango de precio con valor propio, y forzar la segunda es exactamente lo que ha costado dinero.",
+  "valor_dia": {
+    "apostables": 2,
+    "seguimiento": 1,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
+  }
+}
