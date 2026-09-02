@@ -20,7 +20,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": -137,
+      "cuota_apertura_ref": -149,
       "valor": {
         "prob_estimada": 58.5,
         "prob_justa": 55.6,
@@ -65,15 +65,15 @@
       },
       "valor": {
         "prob_estimada": 57.5,
-        "prob_justa": 52.35,
+        "prob_justa": null,
         "prob_implicita": 55.75,
         "cuota": -126,
-        "cuota_justa_mercado": -110,
+        "cuota_justa_mercado": null,
         "ev_pct": 3.13,
         "precio_minimo": -129,
         "precio_publicado": -129,
         "precio_equilibrio": -135,
-        "discrepancia_pp": 5.15,
+        "discrepancia_pp": null,
         "unidades": 1.0,
         "veredicto": "apostable",
         "motivo": "EV +3.13% · no tomar peor de -129"
@@ -100,7 +100,7 @@
         "lado": "over",
         "linea": 7.5
       },
-      "cuota_apertura_ref": -117,
+      "cuota_apertura_ref": -119,
       "valor": {
         "prob_estimada": 56.0,
         "prob_justa": 52.17,
