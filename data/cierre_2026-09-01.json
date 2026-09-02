@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-09-02T01:38Z",
   "visto": "2026-09-02T01:10:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PHI@AZ": {
   "ml": {
@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-09-02T01:40Z",
   "visto": "2026-09-02T01:10:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "STL@LAD": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-09-02T02:10Z",
   "visto": "2026-09-02T01:10:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CWS@HOU": {
   "ml": {
