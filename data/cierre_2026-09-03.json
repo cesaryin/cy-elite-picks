@@ -141,30 +141,30 @@
   },
   "inicio_utc": "2026-09-03T23:40Z",
   "visto": "2026-09-03T23:20:26+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TB@TEX": {
   "ml": {
-   "TB": -127,
-   "TEX": 105
+   "TB": -125,
+   "TEX": 104
   },
   "total": {
    "linea": 8.0,
-   "over": -105,
-   "under": -115
+   "over": -102,
+   "under": -118
   },
   "spread": {
    "TB": {
     "linea": -1.5,
-    "cuota": 134
+    "cuota": 135
    },
    "TEX": {
     "linea": 1.5,
-    "cuota": -162
+    "cuota": -163
    }
   },
   "inicio_utc": "2026-09-04T00:05Z",
-  "visto": "2026-09-03T23:20:26+00:00",
+  "visto": "2026-09-03T23:45:15+00:00",
   "cerrado": false
  },
  "ATH@SEA": {
@@ -188,7 +188,7 @@
    }
   },
   "inicio_utc": "2026-09-04T01:40Z",
-  "visto": "2026-09-03T23:20:26+00:00",
+  "visto": "2026-09-03T23:45:15+00:00",
   "cerrado": false
  },
  "STL@LAD": {
@@ -212,7 +212,7 @@
    }
   },
   "inicio_utc": "2026-09-04T02:10Z",
-  "visto": "2026-09-03T23:20:26+00:00",
+  "visto": "2026-09-03T23:45:15+00:00",
   "cerrado": false
  }
 }
