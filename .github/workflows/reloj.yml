@@ -40,9 +40,21 @@ on:
         required: false
         default: "0"
   schedule:
-    # 13:05 UTC = 8:05 AM CT. Es el arranque de respaldo: lo normal es que lo
-    # dispare el propio run de picks de la manana, que si es puntual.
-    - cron: "5 13 * * *"
+    # EL ENCENDIDO ES LO UNICO QUE FALLA (medido el 3-sep-2026). Los objetivos
+    # del reloj salen con 0.0 min de desvio --6 de 6 exactos--, pero el cron que
+    # DESPIERTA al reloj llego una sola vez y con 237 minutos de retraso.
+    #
+    # Por eso se ponen VARIOS. GitHub retrasa o se salta los cron cuando tiene
+    # carga, pero rara vez falla a todos seguidos. El primero que entre arranca
+    # la jornada; los siguientes se encuentran el trabajo hecho y se saltan los
+    # objetivos ya pasados, asi que no duplican nada.
+    #
+    # Todos ANTES de las 13:00 UTC, que es el ancla: asi el objetivo del RUN
+    # (minuto 0 = 8:00 AM CT) todavia esta por delante cuando el reloj despierta.
+    - cron: "35 12 * * *"
+    - cron: "45 12 * * *"
+    - cron: "52 12 * * *"
+    - cron: "58 12 * * *"
 
 permissions:
   contents: read
@@ -81,7 +93,15 @@ jobs:
           # Se cuenta asi para que la jornada no se parta a medianoche UTC.
           #   LAB  -> refresca proyecciones, alineaciones, clima y bullpen
           #   CAP  -> foto de las cuotas para el detector de movimiento (steam)
+          #   RUN  -> los picks del dia. Va el PRIMERO, en el minuto 0 (8:00 AM
+          #           CT). La hora se eligio con datos: el juego mas temprano de
+          #           las ultimas 5 semanas empezo a las 11:15 AM CT, y a las
+          #           9:22 ya estaban publicados los 9 abridores. A las 8:00 hay
+          #           datos de sobra y quedan mas de 3 horas de margen, que con
+          #           el CLV en -1.44 pp importa: cada hora que pasa, el mercado
+          #           se ajusta y el precio empeora.
           TARGETS="
+          0:picks.yml
           143:lab-refresh.yml
           215:cierre-captura.yml
           323:lab-refresh.yml
@@ -128,7 +148,18 @@ jobs:
             sleep "$ESPERA"
             curl -s -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
               -H "Authorization: Bearer $TK" -H "$A" \
-              "$MOTOR/$WF/dispatches" -d '{"ref":"main"}'
+            # EL BUCLE QUE MAREABA AL RELOJ. picks.yml, al terminar, despierta al
+            # reloj para arrancar la jornada; eso esta bien cuando lo lanzas a
+            # mano, pero si lo lanza el propio reloj se cierra el circulo
+            # --reloj -> picks -> reloj-- y como aqui hay cancel-in-progress, el
+            # reloj nuevo MATA al que estaba durmiendo. En el historial del 2-sep
+            # se ven 9 arranques en "cancelled" por esto. Se corta diciendole al
+            # RUN que no arranque nada: ya esta arrancado.
+            CUERPO='{"ref":"main"}'
+            if [ "$WF" = "picks.yml" ]; then
+              CUERPO='{"ref":"main","inputs":{"arranca_reloj":"false"}}'
+            fi
+              "$MOTOR/$WF/dispatches" -d "$CUERPO"
           done
 
           echo "Jornada cubierta."
