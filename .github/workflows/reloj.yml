@@ -146,8 +146,7 @@ jobs:
 
             echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
             sleep "$ESPERA"
-            curl -s -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
-              -H "Authorization: Bearer $TK" -H "$A" \
+
             # EL BUCLE QUE MAREABA AL RELOJ. picks.yml, al terminar, despierta al
             # reloj para arrancar la jornada; eso esta bien cuando lo lanzas a
             # mano, pero si lo lanza el propio reloj se cierra el circulo
@@ -155,10 +154,20 @@ jobs:
             # reloj nuevo MATA al que estaba durmiendo. En el historial del 2-sep
             # se ven 9 arranques en "cancelled" por esto. Se corta diciendole al
             # RUN que no arranque nada: ya esta arrancado.
+            #
+            # OJO CON DONDE VA ESTO (arreglado el 3-sep-2026). Este bloque estaba
+            # metido EN MEDIO de la continuacion del curl, entre la -H y la URL.
+            # La barra de continuacion empalmaba con la primera linea de
+            # comentario, asi que curl se quedaba SIN URL y moria con "no URL
+            # specified". El reloj despertaba a su hora exacta, disparaba... y no
+            # llegaba nada. Lo que vaya antes del curl, va AQUI, no ahi dentro.
             CUERPO='{"ref":"main"}'
             if [ "$WF" = "picks.yml" ]; then
               CUERPO='{"ref":"main","inputs":{"arranca_reloj":"false"}}'
             fi
+
+            curl -s -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" \
               "$MOTOR/$WF/dispatches" -d "$CUERPO"
           done
 
