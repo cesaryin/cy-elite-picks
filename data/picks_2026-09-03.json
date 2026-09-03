@@ -1,0 +1,137 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL/CHC o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -103,
+      "prob_estimada": 53.5,
+      "razon": "Wrigley con las dos ofensivas encendidas: CHC 9.3 c/j y ops 1.026 con 20 HR en 6 juegos, MIL 6.3 c/j y ops .855. El mercado movió la línea 8.0->8.5 (señal FUERTE) y aun así el precio se paga plano; el bullpen local (3.93) es la grieta del cierre.",
+      "equipos": [
+        "MIL",
+        "CHC"
+      ],
+      "destacado": null,
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      },
+      "cuota_apertura_ref": -103,
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 48.38,
+        "prob_implicita": 50.74,
+        "cuota": -103,
+        "cuota_justa_mercado": 107,
+        "ev_pct": 5.44,
+        "precio_minimo": -110,
+        "precio_publicado": -110,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 5.12,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.44% · no tomar peor de -110"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "CWS/HOU u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -115,
+      "prob_estimada": 54.5,
+      "razon": "Las dos ofensivas están congeladas: CWS .581 de ops y 3.2 c/j en la semana, HOU .620 y 3.6 c/j. Los dos bullpens sostienen el cierre (3.50 y 3.55 con Hader) y ninguno viene quemado, que es lo que suele reventar un under.",
+      "equipos": [
+        "CWS",
+        "HOU"
+      ],
+      "destacado": null,
+      "hora": "1:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      },
+      "cuota_apertura_ref": -114,
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 51.08,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 1.89,
+        "precio_minimo": -114,
+        "precio_publicado": -114,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 3.42,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.89% por debajo del minimo exigido (2.0%)"
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIA/KC o9.0",
+      "deporte": "MLB",
+      "tipo": "o9.0",
+      "cuota": -110,
+      "prob_estimada": 53.0,
+      "razon": "El valor está en los relevos, no en los abridores: bullpen de KC 4.70 con cerrador de 6.04 y MIA 4.13 con cerrador de 4.91, así que las entradas 6-9 son terreno de over. KC llega con 5.7 c/j y .810 de ops, MIA con 5.0 c/j.",
+      "equipos": [
+        "MIA",
+        "KC"
+      ],
+      "destacado": null,
+      "hora": "6:40 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.0
+      },
+      "cuota_apertura_ref": -110,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 50.0,
+        "prob_implicita": 52.38,
+        "cuota": -110,
+        "cuota_justa_mercado": -100,
+        "ev_pct": 1.18,
+        "precio_minimo": -108,
+        "precio_publicado": -108,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 3.0,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.18% por debajo del minimo exigido (2.0%)"
+      },
+      "unidades": 0.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CWS ML +138: la línea justa lo pone en 40.6% y su lineup viene con .581 de ops y 3.2 c/j; además ya perdió contra HOU en esta serie (anti-inercia).",
+    "BOS ML -124: precio peor que la justa (-114) y ofensiva en 3.9 c/j; el modelo apunta a BAL pero con alerta de discrepancia, así que no hay lado fiable.",
+    "PIT ML -166 y SF +141: los dos lados se pagan peor que su cuota justa, el valor del juego está en el total.",
+    "TOR/CLE u8.0 a -120: la justa es -109 y TOR llega con 5.5 c/j; el precio se come el margen.",
+    "ATH +178 y SEA -215: uno por debajo de la justa (+190), el otro fuera del rango de cuotas.",
+    "LAD -1.5 a -136 y STL +245: el spread exige 57.6% cuando la justa da 55.4%, y la ofensiva de LAD viene en 3.8 c/j.",
+    "TB ML -126: justa -116; el edge del modelo hacia TEX viene marcado con alerta, tramo donde el modelo acierta 27-43%."
+  ],
+  "autopsia": "El cierre más reciente mezcla las dos cosas: BOS ML fue decisión defendible que se cayó por marcador amplio (3-8), pero el NYM team total u3.5 fue fallo de proceso: dí un under sin exigir bullpen y ofensiva frías y acabó 10 carreras. El ATH/TEX o7.5 confirma lo que dice el diagnóstico: mis overs van +0.68U y mis unders -1.34U. Hoy corrijo el criterio, no el mercado: los overs los pido con bullpen flojo y ofensiva caliente medibles, y el único under del día pasa las cuatro comprobaciones (relevos sólidos, parque neutro, ambos lineups congelados, abridor fresco).",
+  "resumen": "Día de totales, no de moneylines: los favoritos se pagan hoy peor que su precio justo, así que el valor está en las carreras. Lo mejor del día es el over 8.5 en Wrigley, con las dos ofensivas encendidas y la línea movida al alza por el dinero. Complemento con el under 8.5 en Houston, donde ambos lineups vienen congelados y los dos bullpens aguantan el cierre, y con el over 9 en Kansas City, sostenido por dos cuerpos de relevo muy frágiles.",
+  "valor_dia": {
+    "apostables": 1,
+    "seguimiento": 2,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 1.0,
+    "ev_min": 2.0
+  }
+}
