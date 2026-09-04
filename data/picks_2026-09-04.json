@@ -1,0 +1,136 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL/CIN o9.5",
+      "deporte": "MLB",
+      "tipo": "o9.5",
+      "cuota": -110,
+      "prob_estimada": 54.0,
+      "razon": "Great American Ball Park con las dos ofensivas encendidas: MIL 5.3 c/j y ops .791 en la semana (.754 vs derechos ante R. Lowder), CIN 5.5 c/j con 13 HR en 6 juegos y .735 vs zurdos. El relevo local (4.25) es la puerta de atrás que rompe los unders en las entradas 6-9.",
+      "equipos": [
+        "MIL",
+        "CIN"
+      ],
+      "destacado": null,
+      "hora": "5:10 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.5
+      },
+      "cuota_apertura_ref": -112,
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 50.0,
+        "prob_implicita": 52.38,
+        "cuota": -110,
+        "cuota_justa_mercado": -100,
+        "ev_pct": 3.09,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 4.0,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.09% · no tomar peor de -112"
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "PIT team total o4.5",
+      "deporte": "MLB",
+      "tipo": "team total o4.5",
+      "cuota": -115,
+      "prob_estimada": 54.0,
+      "razon": "PIT llega con 5.7 c/j y ops .736 en la semana y batea .757 vs derechos, justo el perfil que castiga a R. Johnson (5.52 FIP, 11.4% de boletos y 5.1 de k-bb). Detrás, bullpen visitante de 4.21 y unos Angels 1-9 en sus últimos 10. Riesgo: PNC deprime carreras.",
+      "equipos": [
+        "LAA",
+        "PIT"
+      ],
+      "destacado": "PIT",
+      "hora": "5:45 PM CT",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "PIT",
+        "lado": "over",
+        "linea": 4.5
+      },
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 50.1,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -100,
+        "ev_pct": 0.96,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 3.9,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.96% por debajo del minimo exigido (2.0%)"
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "DET/CLE u8.0",
+      "deporte": "MLB",
+      "tipo": "u8.0",
+      "cuota": -108,
+      "prob_estimada": 53.5,
+      "razon": "Las dos ofensivas están apagadas: DET con ops .587 y 3.0 c/j (63 ponches en 6 juegos) y CLE con .663 y 3.8 c/j. Pasan las cuatro comprobaciones del under salvo una: el bullpen de DET (4.21) es el flanco flojo, por eso es la jugada más discreta del día.",
+      "equipos": [
+        "DET",
+        "CLE"
+      ],
+      "destacado": null,
+      "hora": "6:15 PM CT",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      },
+      "cuota_apertura_ref": -106,
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 49.78,
+        "prob_implicita": 51.92,
+        "cuota": -108,
+        "cuota_justa_mercado": 101,
+        "ev_pct": 3.04,
+        "precio_minimo": -110,
+        "precio_publicado": -110,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 3.72,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.04% · no tomar peor de -110"
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CHC ML -156: la línea justa exige 58.8% y el precio pide 60.9%; el dinero ya se comió el valor pese a la ofensiva caliente.",
+    "AZ/HOU u9.0 -120: ofensivas frías, pero los DOS abridores son malos (Kelly 5.30 FIP, Javier 6.45 ERA); el under no pasa el filtro.",
+    "WSH +235 y SEA -220: fuera de rango de cuota y con alertas de discrepancia del modelo (14.7 y 10.0 pp).",
+    "ATL/PHI u6.5: línea ya muy baja para dos bullpens que igual permiten carreras tardías; sin margen sobre la justa.",
+    "LAA ML +163: ops .566 en la semana, la ofensiva no sostiene un ML de perro (SYS-002).",
+    "TOR/KC o10.0: TOR batea solo .652 vs zurdos y enfrenta a D. Lynch IV; la línea ya subió medio punto.",
+    "Parlay: solo encontré picks con ventaja pequeña y ninguno en el rango de cuota adecuado; combinar sin valor propio en cada pata es pagar comisión."
+  ],
+  "autopsia": "Del último cierre, el u8.5 de CWS/HOU y el o9.0 de MIA/KC salieron por lectura correcta de bullpen y ofensiva, no por suerte. El o8.5 de MIL/CHC (1-2) fue el fallo: me apoyé en la forma anotadora sin pesar que enfrente había pitcheo de calidad, y el juego murió en 3 carreras. Hoy corrijo el criterio: solo doy over cuando el abridor rival es medible como flojo (FIP y k-bb) y el bullpen contrario acompaña, como en Cincinnati.",
+  "resumen": "Día de tres jugadas de mercados alternativos, ninguna de moneyline: el valor de hoy está en las carreras. La principal es el over de 9.5 en Cincinnati, con dos lineups calientes, un abridor local castigable y un bullpen rojo en un parque corto. Le sigue el team total alto de Pittsburgh contra un abridor con problemas de control, y cierro con el under de 8 en Cleveland, donde ninguna de las dos ofensivas está produciendo, aunque el relevo de Detroit obliga a moderar la confianza. Sin parlay: no había dos patas con valor propio.",
+  "valor_dia": {
+    "apostables": 2,
+    "seguimiento": 1,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
+  }
+}
