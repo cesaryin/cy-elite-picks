@@ -38,6 +38,15 @@ on:
       desde:
         description: "Minutos desde las 13:00 UTC a partir de los que seguir (uso interno)"
         required: false
+        # -1 Y NO 0 (arreglado el 4-sep-2026). El filtro del bucle es
+        # "$MIN -le $DESDE -> saltar", porque el relevo pasa MIN-1 para que el
+        # objetivo MIN todavia entre. Con el valor por defecto en 0 se cumplia
+        # 0 -le 0 y el reloj se saltaba SIEMPRE su primer objetivo, que es
+        # justo el RUN de los picks. Con -1 no se salta ninguno.
+        default: "-1"
+      espera:
+        description: "1 = no dispares nada, solo espera al ancla siguiente (uso interno)"
+        required: false
         default: "0"
   schedule:
     # EL ENCENDIDO ES LO UNICO QUE FALLA (medido el 3-sep-2026). Los objetivos
@@ -76,6 +85,7 @@ jobs:
         env:
           TK: ${{ secrets.MOTOR_DISPATCH_TOKEN }}
           DESDE: ${{ github.event.inputs.desde }}
+          MODO_ESPERA: ${{ github.event.inputs.espera }}
         run: |
           set -u
           MOTOR="https://api.github.com/repos/cesaryin/cy-elite-motor/actions/workflows"
@@ -102,6 +112,7 @@ jobs:
           #           se ajusta y el precio empeora.
           TARGETS="
           0:picks.yml
+          90:vigilante.yml
           143:lab-refresh.yml
           215:cierre-captura.yml
           323:lab-refresh.yml
@@ -118,10 +129,29 @@ jobs:
           # medianoche UTC pero seguimos en la misma jornada de beisbol, el ancla
           # es la de ayer.
           ANCLA=$(date -u -d "$(date -u +%F) 13:00:00" +%s)
-          if [ "$(date -u +%H)" -lt 13 ]; then ANCLA=$((ANCLA - 86400)); fi
+          # EL FALLO QUE ROMPIA EL ENCENDIDO (encontrado el 4-sep-2026).
+          # Aqui ponia "-lt 13". La intencion era buena: un reloj que despierta
+          # de madrugada sigue en la jornada de AYER --el ultimo objetivo, el
+          # minuto 790, cae a las 02:10 UTC-- y debe usar el ancla de ayer.
+          # Pero los cron de encendido estan a las 12:35-12:58 UTC, y a esa hora
+          # "-lt 13" TAMBIEN es cierto: el ancla se iba a ayer, el objetivo del
+          # RUN quedaba 23 horas en el pasado y el reloj lo saltaba. Es decir:
+          # aunque el cron entrara, la jornada no arrancaba. El unico cron que
+          # llego en toda su historia lo hizo a las 17:02 --267 min tarde-- y por
+          # eso funciono: para entonces ya habia pasado la 13:00.
+          # El corte correcto es despues del ultimo objetivo (02:10 UTC), no
+          # antes del ancla. Con 3 quedan 50 min de margen.
+          if [ "$(date -u +%H)" -lt 3 ]; then ANCLA=$((ANCLA - 86400)); fi
 
           INICIO=$(date +%s)
           echo "Arranca el reloj. Testigo recibido: ${DESDE:-0} min."
+
+          # En modo espera este reloj no dispara nada: solo existe para llegar
+          # vivo hasta el ancla de manana. Ver el bloque del final.
+          if [ "${MODO_ESPERA:-0}" = "1" ]; then
+            echo "Modo espera: sin objetivos, solo relevo hasta el ancla."
+            TARGETS=""
+          fi
 
           for T in $TARGETS; do
             MIN="${T%%:*}"
@@ -172,3 +202,56 @@ jobs:
           done
 
           echo "Jornada cubierta."
+
+          # ------------------------------------------------------------------
+          # EL RELOJ YA NO SE APAGA (4-sep-2026).
+          #
+          # POR QUE. Hasta hoy el reloj moria aqui y quien lo despertaba a la
+          # mañana siguiente era un cron de GitHub. Medido sobre su historia
+          # entera: 1 arranque por cron contra 16 a mano, y el 4-sep no entro
+          # NINGUNO de los cuatro. Los objetivos, en cambio, salen con 0.0 min
+          # de desvio. La conclusion es clara: dormir y disparar funciona; que
+          # GitHub te despierte, no.
+          #
+          # QUE HACE AHORA. Antes de terminar, el reloj se asegura de que existe
+          # su relevo: duerme hacia el ancla de mañana y, si no le cabe en el
+          # presupuesto, pasa el testigo a otro reloj en modo espera que sigue
+          # durmiendo. Al llegar el ancla arranca la jornada nueva con desde=0.
+          # Es el MISMO mecanismo de relevo que ya funciona dentro del dia.
+          #
+          # POR QUE ES GRATIS. Este repo es publico, y los repos publicos tienen
+          # minutos de Actions ilimitados. Un job dormido no cuesta nada.
+          #
+          # LOS CRON SE QUEDAN como red de seguridad: si un dia la cadena se
+          # rompe, todavia hay cuatro oportunidades de que GitHub la reanude. Y
+          # como el reloj nuevo cancela al viejo (cancel-in-progress), que entren
+          # los dos no duplica nada.
+          # ------------------------------------------------------------------
+          SIG=$(date -u -d "$(date -u +%F) 13:00:00" +%s)
+          while [ "$SIG" -le "$(date +%s)" ]; do SIG=$((SIG + 86400)); done
+          ARRANQUE=$((SIG - 1500))          # 25 min antes: margen para el relevo
+
+          AHORA=$(date +%s)
+          CABE=$((PRESUPUESTO - (AHORA - INICIO)))
+          FALTA=$((ARRANQUE - AHORA))
+          echo "Siguiente jornada: $(date -u -d @$SIG +'%Y-%m-%d %H:%M') UTC."
+          echo "  faltan $((FALTA / 60)) min y en este tramo caben $((CABE / 60))."
+
+          if [ "$FALTA" -le 0 ]; then
+            echo "  el ancla ya paso; arranco la jornada ahora mismo."
+            curl -s -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" "$YO" \
+              -d '{"ref":"master","inputs":{"desde":"-1"}}'
+          elif [ "$FALTA" -le "$CABE" ]; then
+            echo "  duermo $((FALTA / 60)) min y arranco la jornada."
+            sleep "$FALTA"
+            curl -s -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" "$YO" \
+              -d '{"ref":"master","inputs":{"desde":"-1"}}'
+          else
+            echo "  no cabe: duermo lo que puedo y paso el testigo."
+            sleep "$CABE"
+            curl -s -o /dev/null -w "  relevo de espera -> %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" "$YO" \
+              -d '{"ref":"master","inputs":{"desde":"-1","espera":"1"}}'
+          fi
