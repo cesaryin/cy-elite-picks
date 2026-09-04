@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-09-04T01:40Z",
   "visto": "2026-09-04T01:10:13+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "STL@LAD": {
   "ml": {
@@ -213,6 +213,6 @@
   },
   "inicio_utc": "2026-09-04T02:10Z",
   "visto": "2026-09-04T01:10:13+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
