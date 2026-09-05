@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-09-05T23:05Z",
   "visto": "2026-09-05T23:00:16+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TB@TEX": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-09-05T23:05Z",
   "visto": "2026-09-05T23:00:16+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@CWS": {
   "ml": {
@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-09-05T23:10Z",
   "visto": "2026-09-05T23:00:16+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TOR@KC": {
   "ml": {
@@ -237,7 +237,7 @@
   },
   "inicio_utc": "2026-09-05T23:10Z",
   "visto": "2026-09-05T23:00:16+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "AZ@HOU": {
   "ml": {
@@ -261,7 +261,7 @@
   },
   "inicio_utc": "2026-09-05T23:15Z",
   "visto": "2026-09-05T23:00:16+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "NYY@SD": {
   "ml": {
@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-09-05T23:15Z",
   "visto": "2026-09-05T23:00:16+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "STL@COL": {
   "ml": {
@@ -294,7 +294,7 @@
   },
   "total": {
    "linea": 11.0,
-   "over": -102,
+   "over": -101,
    "under": -119
   },
   "spread": {
@@ -308,31 +308,31 @@
    }
   },
   "inicio_utc": "2026-09-06T00:10Z",
-  "visto": "2026-09-05T23:00:16+00:00",
+  "visto": "2026-09-05T23:45:09+00:00",
   "cerrado": false
  },
  "WSH@LAD": {
   "ml": {
-   "WSH": 172,
-   "LAD": -211
+   "WSH": 155,
+   "LAD": -188
   },
   "total": {
    "linea": 7.0,
-   "over": -110,
-   "under": -110
+   "over": -103,
+   "under": -117
   },
   "spread": {
    "WSH": {
     "linea": 1.5,
-    "cuota": -130
+    "cuota": -150
    },
    "LAD": {
     "linea": -1.5,
-    "cuota": 108
+    "cuota": 124
    }
   },
   "inicio_utc": "2026-09-06T01:10Z",
-  "visto": "2026-09-05T23:00:16+00:00",
+  "visto": "2026-09-05T23:45:09+00:00",
   "cerrado": false
  },
  "ATH@SEA": {
@@ -356,7 +356,7 @@
    }
   },
   "inicio_utc": "2026-09-06T01:40Z",
-  "visto": "2026-09-05T23:00:16+00:00",
+  "visto": "2026-09-05T23:45:09+00:00",
   "cerrado": false
  }
 }
