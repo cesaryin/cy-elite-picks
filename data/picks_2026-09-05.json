@@ -29,25 +29,23 @@
       "cuota_apertura_ref": -106,
       "valor": {
         "prob_estimada": 53.0,
-        "prob_justa": 49.12,
+        "prob_justa": null,
         "prob_implicita": 51.22,
         "cuota": -105,
-        "cuota_justa_mercado": 104,
+        "cuota_justa_mercado": null,
         "ev_pct": 3.48,
         "precio_minimo": -107,
         "precio_publicado": -107,
         "precio_equilibrio": -112,
-        "discrepancia_pp": 3.88,
+        "discrepancia_pp": null,
         "unidades": 1.0,
         "veredicto": "apostable",
         "motivo": "EV +3.48% · no tomar peor de -107",
-        "mejor_precio": {
-          "cuota": 100,
-          "casa": "betrivers"
-        },
-        "alcanzable": true,
         "contexto": {
-          "mercado_movido": false
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "delta_pp": -3.6
         }
       },
       "unidades": 1.0
@@ -80,23 +78,18 @@
       "cuota_apertura_ref": 101,
       "valor": {
         "prob_estimada": 51.0,
-        "prob_justa": 47.33,
+        "prob_justa": null,
         "prob_implicita": 49.02,
         "cuota": 104,
-        "cuota_justa_mercado": 111,
+        "cuota_justa_mercado": null,
         "ev_pct": 4.04,
         "precio_minimo": 100,
         "precio_publicado": 100,
         "precio_equilibrio": -104,
-        "discrepancia_pp": 3.67,
+        "discrepancia_pp": null,
         "unidades": 1.0,
         "veredicto": "apostable",
         "motivo": "EV +4.04% · no tomar peor de +100",
-        "mejor_precio": {
-          "cuota": 106,
-          "casa": "fanduel"
-        },
-        "alcanzable": true,
         "contexto": {
           "mercado_movido": false
         }
@@ -132,25 +125,21 @@
       "cuota_apertura_ref": -105,
       "valor": {
         "prob_estimada": 52.5,
-        "prob_justa": 49.22,
+        "prob_justa": null,
         "prob_implicita": 50.98,
         "cuota": -104,
-        "cuota_justa_mercado": 103,
+        "cuota_justa_mercado": null,
         "ev_pct": 2.98,
         "precio_minimo": -105,
         "precio_publicado": -105,
         "precio_equilibrio": -110,
-        "discrepancia_pp": 3.28,
+        "discrepancia_pp": null,
         "unidades": 1.0,
         "veredicto": "apostable",
         "motivo": "EV +2.98% · no tomar peor de -105",
-        "mejor_precio": {
-          "cuota": 100,
-          "casa": "betrivers"
-        },
-        "alcanzable": true,
         "contexto": {
-          "mercado_movido": false
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
         }
       },
       "unidades": 1.0
