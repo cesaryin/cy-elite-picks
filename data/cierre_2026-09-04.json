@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-09-05T01:40Z",
   "visto": "2026-09-05T01:10:12+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATH@SEA": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-09-05T02:10Z",
   "visto": "2026-09-05T01:10:12+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "WSH@LAD": {
   "ml": {
@@ -357,6 +357,6 @@
   },
   "inicio_utc": "2026-09-05T02:10Z",
   "visto": "2026-09-05T01:10:12+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
