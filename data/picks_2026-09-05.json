@@ -1,0 +1,199 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -105,
+      "prob_estimada": 53.0,
+      "razon": "Precio de moneda al aire para el equipo con mejor bate y mejor bullpen hoy: NYY llega con 5.9 c/j y .294 de avg en la semana, SD con 4.0 c/j y ops .679 y 3-7 en sus ultimos 10. Contra zurdo, NYY rinde .726 de ops frente a .688 de SD.",
+      "equipos": [
+        "NYY",
+        "SD"
+      ],
+      "destacado": "NYY",
+      "hora": "6:15 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "forma"
+      ],
+      "contra": "Petco Park deprime carreras y el bullpen de SD con M. Miller (1.21) puede cerrar cualquier juego cerrado en su favor.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -106,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 49.12,
+        "prob_implicita": 51.22,
+        "cuota": -105,
+        "cuota_justa_mercado": 104,
+        "ev_pct": 3.48,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 3.88,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.48% · no tomar peor de -107",
+        "mejor_precio": {
+          "cuota": 100,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 104,
+      "prob_estimada": 51.0,
+      "razon": "El mercado paga plus por el lado que si esta bateando: MIN promedia 6.7 carreras por juego con ops .787 en la semana, mientras CWS esta en .170 de avg, ops .551 y 2.6 c/j en siete juegos. Ventaja tambien en el abridor por ERA y por dominio (27.2% de ponches).",
+      "equipos": [
+        "MIN",
+        "CWS"
+      ],
+      "destacado": "MIN",
+      "hora": "6:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo"
+      ],
+      "contra": "MIN batea solo .691 de ops contra zurdos y hoy enfrenta a un zurdo, ademas el bullpen local (3.43) es mejor que el visitante.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 101,
+      "valor": {
+        "prob_estimada": 51.0,
+        "prob_justa": 47.33,
+        "prob_implicita": 49.02,
+        "cuota": 104,
+        "cuota_justa_mercado": 111,
+        "ev_pct": 4.04,
+        "precio_minimo": 100,
+        "precio_publicado": 100,
+        "precio_equilibrio": -104,
+        "discrepancia_pp": 3.67,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.04% · no tomar peor de +100",
+        "mejor_precio": {
+          "cuota": 106,
+          "casa": "fanduel"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TOR ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -104,
+      "prob_estimada": 52.5,
+      "razon": "Juego parejo donde la diferencia esta en el cierre: bullpen de TOR en 3.40 con cerrador de 1.16 contra 4.77 y cerrador de 6.04 en KC. TOR ademas viene 7-3 anotando 6.3 carreras por juego con ops .749.",
+      "equipos": [
+        "TOR",
+        "KC"
+      ],
+      "destacado": "TOR",
+      "hora": "6:10 PM CT",
+      "capas": [
+        "bullpen",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "M. Scherzer llega con 6.16 de ERA y 5.08 de FIP: si deja el juego roto temprano, el bullpen no sirve de nada.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TOR",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -105,
+      "valor": {
+        "prob_estimada": 52.5,
+        "prob_justa": 49.22,
+        "prob_implicita": 50.98,
+        "cuota": -104,
+        "cuota_justa_mercado": 103,
+        "ev_pct": 2.98,
+        "precio_minimo": -105,
+        "precio_publicado": -105,
+        "precio_equilibrio": -110,
+        "discrepancia_pp": 3.28,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.98% · no tomar peor de -105",
+        "mejor_precio": {
+          "cuota": 100,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "NYY ML",
+        "deporte": "MLB",
+        "destacado": "NYY",
+        "cuota": -105
+      },
+      {
+        "pick": "MIN ML",
+        "deporte": "MLB",
+        "destacado": "MIN",
+        "cuota": 104
+      }
+    ],
+    "cuota_combinada": 298,
+    "prob_combinada": 27.03,
+    "ev_pct": 7.66,
+    "nota": "Las dos jugadas del dia con mas valor medido, combinadas. Cada pata pasa el filtro por si sola — es la unica forma de que un parlay gane a la larga. No cuenta en el balance. EV del combinado: +7.7%."
+  },
+  "descartes": [
+    "SF/NYM: cuota de NYM fuera de rango y SF sin ventaja real sobre su linea justa (37.6%).",
+    "ATL/PHI: la linea del total se movio de 8.0 a 8.5 (senal FUERTE ya consumida) y ambas ofensivas locales estan frias; sin ventaja clara en ML a -159.",
+    "DET/CLE: DET con ops .615 y 3.7 c/j no da ML de perro (SYS-002/004) y el under ya fallo aqui con marcador 6-7.",
+    "LAA/PIT: LAA con ops .563 y 3.3 c/j, ofensiva no funcional; PIT a -184 fuera de rango.",
+    "MIL/CIN: modelo con alerta (8.0 pp) y ninguna ventaja sobre la justa en ML ni en el total de 9.0.",
+    "TB/TEX: mercado pick'em correctamente valorado, dos abridores de elite y sin discrepancia medible.",
+    "AZ/HOU: HOU con abridor debutante de 6.23 ERA y AZ con ops .537 en la semana; demasiada incertidumbre para 2.9 pp.",
+    "STL/COL: Coors con total de 11.0 y un abridor local sin muestra; sin referencia fiable.",
+    "WSH/LAD y ATH/SEA: favoritos a -225 y -245 fuera de rango; los perros con edge de modelo en alerta."
+  ],
+  "autopsia": "Del cierre del 4-sep, el u8.0 de DET/CLE termino 6-7: no fue mala suerte sino el error que ya tengo identificado, dar under con el bullpen de DET en 4.15 y sin exigir las cuatro condiciones. El PIT team total o4.5 se cayo con 1 carrera: decision de precio pobre sobre un mercado de vig alto (6.5 pp). Lo que si funciono fue el o9.5 de MIL/CIN, que era el pick con lectura de ofensiva y bullpen claros. Hoy corrijo el criterio: nada de totales sin las cuatro comprobaciones y me concentro en la banda de precio pareja, que es la unica que rinde.",
+  "resumen": "Dia de precios parejos: las tres jugadas estan entre -105 y +104, justo donde el sistema rinde. NYY se lleva la principal porque llega con el bate mas caliente y el mejor bullpen del juego a precio de moneda al aire ante un SD frio. MIN da plus contra un CWS que anota 2.6 carreras por juego, y TOR se apoya en una ventaja enorme de bullpen sobre KC. Se descartan los favoritos caros y los totales sin respaldo claro de ofensiva y relevo.",
+  "valor_dia": {
+    "apostables": 3,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 3.0,
+    "ev_min": 2.0
+  }
+}
