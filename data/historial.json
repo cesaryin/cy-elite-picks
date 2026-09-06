@@ -3762,5 +3762,110 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-05",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -105,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.95,
+    "marcador": "NYY 5-1 SD",
+    "veredicto": "apostable",
+    "prob_estimada": 53.0,
+    "prob_justa": null,
+    "ev_pct": 3.48,
+    "precio_publicado": -107,
+    "discrepancia_pp": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "Petco Park deprime carreras y el bullpen de SD con M. Miller (1.21) puede cerrar cualquier juego cerrado en su favor.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "delta_pp": -3.6
+    },
+    "clv": -6.7,
+    "prob_cierre": 44.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-05",
+    "pick": "MIN ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 104,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.04,
+    "marcador": "MIN 6-4 CWS",
+    "veredicto": "apostable",
+    "prob_estimada": 51.0,
+    "prob_justa": null,
+    "ev_pct": 4.04,
+    "precio_publicado": 100,
+    "discrepancia_pp": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo"
+    ],
+    "contra": "MIN batea solo .691 de ops contra zurdos y hoy enfrenta a un zurdo, ademas el bullpen local (3.43) es mejor que el visitante.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -2.5,
+    "prob_cierre": 46.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-05",
+    "pick": "TOR ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -104,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.96,
+    "marcador": "TOR 4-3 KC",
+    "veredicto": "apostable",
+    "prob_estimada": 52.5,
+    "prob_justa": null,
+    "ev_pct": 2.98,
+    "precio_publicado": -105,
+    "discrepancia_pp": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "M. Scherzer llega con 6.16 de ERA y 5.08 de FIP: si deja el juego roto temprano, el bullpen no sirve de nada.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "clv": -0.5,
+    "prob_cierre": 50.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-05",
+    "pick": "PARLAY: NYY ML + MIN ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 298,
+    "unidades": 0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "NYY 5-1 SD / MIN 6-4 CWS",
+    "patas_res": [
+      "W",
+      "W"
+    ]
   }
 ]

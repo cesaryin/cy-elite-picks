@@ -1,0 +1,198 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -110,
+      "prob_estimada": 54.5,
+      "razon": "Juego a precio parejo donde la brecha ofensiva es enorme: NYY llega con 6.2 carreras/juego y ops .804 en la semana, SD con 3.2 y ops .638. Cole aventaja a King en FIP (3.59 vs 4.23) y el bullpen visitante (2.88) aguanta el cierre en un parque que frena a ambos.",
+      "equipos": [
+        "NYY",
+        "SD"
+      ],
+      "destacado": "NYY",
+      "hora": "3:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "bullpen"
+      ],
+      "contra": "Petco y Mason Miller (1.21) achican cualquier juego cerrado; con 7 carreras de total, un solo swing de SD decide y el precio no perdona.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -112,
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 50.56,
+        "prob_implicita": 52.38,
+        "cuota": -110,
+        "cuota_justa_mercado": -102,
+        "ev_pct": 4.05,
+        "precio_minimo": -113,
+        "precio_publicado": -113,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 3.94,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.05% · no tomar peor de -113",
+        "mejor_precio": {
+          "cuota": -107,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "ATL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "prob_estimada": 53.0,
+      "razon": "Pick'em con ventaja real para el visitante: ATL produce 4.5 c/j y ops .727 en la semana frente a un lineup de PHI apagado (3.3 c/j, ops .672). Mahle supera a Nola en ERA y FIP, y el bullpen de Atlanta (2.90) es el mejor del duelo.",
+      "equipos": [
+        "ATL",
+        "PHI"
+      ],
+      "destacado": "ATL",
+      "hora": "12:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "bullpen"
+      ],
+      "contra": "PHI viene 7-3 permitiendo solo 2.1 carreras por juego en casa y Duran cierra a 1.58: si el juego se va bajo en carreras, la localia manda.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "ATL",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -110,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 49.78,
+        "prob_implicita": 51.92,
+        "cuota": -108,
+        "cuota_justa_mercado": 101,
+        "ev_pct": 2.07,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 3.22,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.07% por debajo del minimo exigido (2.5%)",
+        "mejor_precio": {
+          "cuota": -105,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "HOU ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -110,
+      "prob_estimada": 54.0,
+      "razon": "AZ llega en caida libre con el bate: 1.6 carreras por juego y ops .545 en sus ultimos 5. HOU, con 7-3 en la decena y solo 2.6 carreras permitidas, batea .706 contra zurdos y tiene a Hader detras. El modelo apoya con 4.8 pp de ventaja valida.",
+      "equipos": [
+        "AZ",
+        "HOU"
+      ],
+      "destacado": "HOU",
+      "hora": "1:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "forma",
+        "bullpen",
+        "modelo"
+      ],
+      "contra": "AZ batea .778 de ops contra zurdos de temporada y E. Rodriguez (2.59) puede dominar a un lineup local que tampoco pasa de 3.9 c/j.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -112,
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 50.45,
+        "prob_implicita": 52.38,
+        "cuota": -110,
+        "cuota_justa_mercado": -102,
+        "ev_pct": 3.09,
+        "precio_minimo": -111,
+        "precio_publicado": -111,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 3.55,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.09% · no tomar peor de -111",
+        "mejor_precio": {
+          "cuota": -107,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "NYY ML",
+        "deporte": "MLB",
+        "destacado": "NYY",
+        "cuota": -110
+      },
+      {
+        "pick": "HOU ML",
+        "deporte": "MLB",
+        "destacado": "HOU",
+        "cuota": -110
+      }
+    ],
+    "cuota_combinada": 264,
+    "prob_combinada": 29.43,
+    "ev_pct": 7.26,
+    "nota": "Las dos jugadas del dia con mas valor medido, combinadas. Cada pata pasa el filtro por si sola — es la unica forma de que un parlay gane a la larga. No cuenta en el balance. EV del combinado: +7.3%."
+  },
+  "descartes": [
+    "MIN ML +128: el modelo le da 4.4 pp validos y el bate viene caliente (7.3 c/j), pero el precio cae en la banda de perros por encima de +110, donde el sistema acierta un tercio; sin margen extra, no entra.",
+    "MIL ML -161: fuera de rango de precio y el bate de Cincinnati (.823 ops, 12 HR en 6 juegos) en un parque corto lo hace caro.",
+    "MIL/CIN u8.5: la linea ya bajo de 9.0 a 8.5 (movimiento FUERTE ya consumido) y con dos ofensivas en 5.6 y 5.0 c/j y el bullpen de CIN en 4.24 el under no cumple los cuatro filtros.",
+    "PIT ML -192 y SEA ML -198: precios fuera del limite; ademas PIT depende de un bate de 4.8 c/j sin margen.",
+    "STL/COL: total 11.0 en Coors sin lectura fiable y ML de STL sin ventaja sobre la justa.",
+    "CHC/MIA, TOR/KC, TB/TEX y WSH/LAD: sin cuotas ni linea justa en los datos, imposible medir valor."
+  ],
+  "autopsia": "El ultimo cierre salio limpio en los tres ML (NYY, MIN, TOR), todos en juegos de precio contenido: confirma que la ventaja del sistema vive en la banda pareja, no en favoritos cargados. El fallo mas util sigue siendo el PIT team total o4.5 del 4-sep, que murio 1-0: pedir carreras de un solo equipo en un parque grande es apostar a un evento sin respaldo de datos. Hoy corrijo el criterio quedandome en mercados con referencia justa solida y precios entre -110 y +100.",
+  "resumen": "Dia de tres moneylines en juegos practicamente parejos, que es donde el sistema mejor rinde. La jugada principal es Yankees en San Diego por la brecha ofensiva (6.2 c/j contra 3.2) y la ventaja de Cole en FIP. Atlanta en Filadelfia repite el patron: mejor bate reciente, mejor abridor y mejor bullpen a precio de moneda al aire. Y Houston aprovecha a unos Diamondbacks con el bate congelado. Se descartan los favoritos caros y el under de Cincinnati, donde el movimiento de linea ya se consumio.",
+  "valor_dia": {
+    "apostables": 2,
+    "seguimiento": 1,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
+  }
+}
