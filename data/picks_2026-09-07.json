@@ -1,27 +1,198 @@
 {
-  "picks": [],
-  "parlay": null,
-  "descartes": [
-    "ATL@PHI: sin cuotas de consenso ni linea justa en los datos (cuotas_ml, total y spread nulos). Sin precio de referencia no se puede medir valor: descartado aunque J. Luzardo (30.0% K, FIP 3.16) frente a un lineup de PHI frio (.637 ops, 3.2 c/j) daba material para under.",
-    "NYM@MIA: sin cuotas ni justa. Ademas la ML de NYM se alargo de +100 a +109 (fuerza MEDIA), senal en contra; bullpen de NYM en 5.12 hace inviable cualquier ML sin precio.",
-    "LAA@BOS: sin cuotas y ademas falta el abridor de BOS. Doble falta de datos: descartado por SYS-001.",
-    "CLE@BAL: sin cuotas ni justa. El total bajo de 8.5 a 7.5 (movimiento FUERTE de linea) es la senal mas fuerte del dia, pero al no haber precio publicado no hay forma de saber si queda valor tras el ajuste.",
-    "AZ@KC: sin cuotas. AZ llega con ofensiva rota (.577 ops, 1.8 c/j en 6 juegos) y abridor de apertura (D. Law); sin precio no hay pick.",
-    "CHC@MIL: sin cuotas ni justa. Dos ofensivas calientes (6.1 c/j ambas) y dos zurdos con FIP 4.5/4.35 apuntaban a over, pero sin linea publicada no hay mercado que atacar.",
-    "MIN@DET: sin cuotas y sin abridor de MIN. Descartado.",
-    "WSH@SD: sin cuotas ni justa. J. Irvin con 5.57 ERA y bullpen de WSH en 4.84 daba angulo, pero no hay precio.",
-    "STL@SF: sin cuotas ni justa. Descartado.",
-    "CIN@LAD: sin cuotas; la ML de CIN se alargo de +129 a +141, senal de dinero al lado de LAD. Sin precio, descartado.",
-    "TOR@ATH: sin cuotas ni justa. D. Cease (35.5% K, FIP 2.81) contra un bullpen local de 5.26 era el mejor matchup del dia para F5, pero el juego no trae cuotas_extra ni ML publicada."
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIN ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 109,
+      "prob_estimada": 50.0,
+      "razon": "El precio trata a Minnesota como perro claro cuando el enfrentamiento está parejo: J. Ryan aporta el mejor perfil de control del duelo (5.2% BB, 26.4% K) y el 2.20 de ERA local es cosmético frente a su FIP 4.06. La ofensiva visitante llega a 6.7 c/j con ops .769 y .742 vs derechos, mientras el lineup rival se hunde en .663 con 82 ponches en la semana.",
+      "equipos": [
+        "MIN",
+        "DET"
+      ],
+      "destacado": "MIN",
+      "hora": "2:10 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "forma",
+        "modelo"
+      ],
+      "contra": "Comerica es amplio y castiga a un lineup que depende del jonrón; si el bullpen de Minnesota (3.83) entrega la séptima, el juego se va igual que sus últimos 4-6.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -101,
+      "valor": {
+        "prob_estimada": 50.0,
+        "prob_justa": 45.84,
+        "prob_implicita": 47.85,
+        "cuota": 109,
+        "cuota_justa_mercado": 118,
+        "ev_pct": 4.5,
+        "precio_minimo": 104,
+        "precio_publicado": 104,
+        "precio_equilibrio": 100,
+        "discrepancia_pp": 4.16,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.50% · no tomar peor de +104",
+        "mejor_precio": {
+          "cuota": 114,
+          "casa": "betus"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "CHC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 108,
+      "prob_estimada": 49.5,
+      "razon": "Ventaja concreta de matchup: Chicago batea .266 con ops .810 contra zurdos y hoy enfrenta a un zurdo con FIP 4.35 y solo 377 bateadores de experiencia. Su ofensiva viene a 6.1 c/j con ops .855 y 14 jonrones en la semana, suficiente para cobrar precio de perro en un juego que el mercado limpio ve casi 50-50.",
+      "equipos": [
+        "CHC",
+        "MIL"
+      ],
+      "destacado": "CHC",
+      "hora": "1:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "matchup",
+        "pitcheo"
+      ],
+      "contra": "El bullpen local (3.34 y cerrador de 2.15 ERA) es netamente superior al visitante (3.68), así que un juego cerrado en la novena se decide en contra del pick.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CHC",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 105,
+      "valor": {
+        "prob_estimada": 49.5,
+        "prob_justa": 46.48,
+        "prob_implicita": 48.08,
+        "cuota": 108,
+        "cuota_justa_mercado": 115,
+        "ev_pct": 2.96,
+        "precio_minimo": 107,
+        "precio_publicado": 107,
+        "precio_equilibrio": 103,
+        "discrepancia_pp": 3.02,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.96% · no tomar peor de +107",
+        "mejor_precio": {
+          "cuota": 111,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CLE/BAL u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -120,
+      "prob_estimada": 55.0,
+      "razon": "Las dos ofensivas están apagadas al mismo tiempo: Baltimore en .550 de ops y 2.1 c/j con 65 ponches en 7 juegos, Cleveland en .653 y 3.3 c/j. Ambos abridores son zurdos contra lineups que no castigan zurdos y los dos bullpens sostienen (3.30 y 3.93, con cerradores de 2.25 y 3.27). La línea cayó de 8.5 a 7.0, señal fuerte en la misma dirección.",
+      "equipos": [
+        "CLE",
+        "BAL"
+      ],
+      "destacado": null,
+      "hora": "12:35 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "pitcheo",
+        "mercado"
+      ],
+      "contra": "Cantillo regala bases (11.7% BB) y Camden premia el jonrón; una entrada de tres carreras con dos boletos rompe un total ya bajado a 7.5, y el precio -120 deja poco margen.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "valor": {
+        "prob_estimada": 55.0,
+        "prob_justa": 52.17,
+        "prob_implicita": 54.55,
+        "cuota": -120,
+        "cuota_justa_mercado": -109,
+        "ev_pct": 0.83,
+        "precio_minimo": -114,
+        "precio_publicado": -114,
+        "precio_equilibrio": -122,
+        "discrepancia_pp": 2.83,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.83% por debajo del minimo exigido (3.1%)",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": -1.5
+        }
+      },
+      "unidades": 0.0
+    }
   ],
-  "autopsia": "Del ultimo cierre, ATL ML fue una buena decision limpia; los dos ML que cayeron (NYY -110 ante SD y HOU -110 ante AZ) se perdieron por una carrera cada uno: decisiones acertables, no fallo de proceso, aunque el parlay que los unia era margen cero por matematica y ahi si hubo error. El patron que si duele es el ML de favorito caro: el oro va 6-8 con margen -10.7 y casi todo eran precios por debajo de -110. Hoy corrijo exigiendo banda de precio pareja y, sobre todo, no invento valor donde no hay precio publicado.",
-  "resumen": "Hoy no hay picks. El JSON de la jornada llego sin cuotas de consenso, sin lineas justas y sin bloques de precio en los once juegos de MLB: no existe ni un solo mercado con precio contra el que medir ventaja, y ademas faltan los abridores de BOS, MIN y LAD. Publicar un pick en estas condiciones seria inventarse la cuota, que es exactamente el error que mas caro se paga. Habia material de analisis interesante -el total de CLE/BAL cayendo de 8.5 a 7.5 con movimiento fuerte, D. Cease contra el bullpen de 5.26 de ATH, y el choque de ofensivas calientes en Milwaukee-, pero sin precio no hay valor que capturar. Dia de cero riesgo y a esperar la proxima jornada con datos completos.",
-  "audit": null,
+  "parlay": {
+    "patas": [
+      {
+        "pick": "MIN ML",
+        "deporte": "MLB",
+        "destacado": "MIN",
+        "cuota": 109
+      },
+      {
+        "pick": "CHC ML",
+        "deporte": "MLB",
+        "destacado": "CHC",
+        "cuota": 108
+      }
+    ],
+    "cuota_combinada": 335,
+    "prob_combinada": 24.75,
+    "ev_pct": 7.59,
+    "nota": "Las dos jugadas del dia con mas valor medido, combinadas. Cada pata pasa el filtro por si sola — es la unica forma de que un parlay gane a la larga. No cuenta en el balance. EV del combinado: +7.6%."
+  },
+  "descartes": [
+    "ATL ML +141: el modelo le da ventaja válida, pero el precio está en la banda de perros caros que peor rinde y la línea se alargó en su contra (139 a 155): el dinero fue al local.",
+    "PHI ML -164: fuera de rango y con la ofensiva local en .637 de ops y 3.2 c/j; pagar ese precio con el lineup frío no tiene margen.",
+    "NYM/MIA: NYM a +102 casi coincide con su línea justa (47.8%) y su bullpen de 5.06 con cerrador improvisado no permite subirle la probabilidad.",
+    "LAA/BOS: perro a +149 con ofensiva en .603 de ops y 3.7 c/j viola la exigencia de ofensiva funcional; el under quedó caro tras mover a 8.0.",
+    "AZ/KC: AZ abre con un relevista (juego de bullpen) y su ofensiva está en 1.8 c/j; ningún lado supera su línea justa con claridad.",
+    "TOR/ATH: el edge de 13.4 pp a favor del local está marcado en alerta, tramo donde el modelo acierta 27-43%; sin referencia fiable se descarta.",
+    "STL/SF y CIN/LAD: sin abridor confirmado en LAD y con STL sobre un pico ofensivo insostenible (.317 en 6 juegos), no hay diferencia medible contra la línea limpia.",
+    "WSH +168: precio de perro caro con abridor de 5.57 ERA y bullpen de 4.84 frente al mejor cierre de la liga."
+  ],
+  "autopsia": "El último cierre fue de dos favoritos a -110 que se cayeron por una carrera cada uno (3-4 y 3-2): decisión aceptable, resultado de varianza, pero el diagnóstico es de precio — a ese nivel hacía falta más ventaja de la que tenía. Hoy corrijo eso: los tres análisis salen en la banda pareja o en un total, y ningún favorito de -125 o peor entra por simpatía. El parlay de ayer murió justo por ahí, combinando dos favoritos sin margen propio; hoy no se arma nada por inercia.",
+  "resumen": "Día de precios parejos, y ahí es donde el sistema gana. La jugada principal es Minnesota en Detroit: el visitante llega con el mejor control en el montículo y una ofensiva a 6.7 carreras por juego, y el mercado lo sigue tratando como perro. Detrás, los Cubs a precio de perro con un lineup que castiga zurdos (.810 de ops) frente a un abridor zurdo con FIP 4.35. Y como tercera lectura, el under de Cleveland en Baltimore, con dos ofensivas hundidas, dos bullpens sólidos y una línea que ya cayó de 8.5 a 7.0. Se descartaron todos los favoritos caros del cartel y los perros de más de +140.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 0,
+    "apostables": 2,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
+    "riesgo_u": 2.0,
     "ev_min": 2.0
   }
 }
