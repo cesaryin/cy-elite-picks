@@ -3721,49 +3721,6 @@
     "causa": "doble tanda: se habia cerrado con el juego equivocado"
   },
   {
-    "fecha": "2026-08-20",
-    "pick": "CWS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -102,
-    "unidades": 1.5,
-    "resultado": "L",
-    "neto_u": -1.5,
-    "marcador": "ATL 2-0 CWS",
-    "clv": -1.0,
-    "prob_cierre": 49.5,
-    "clv_metodo": "kalshi_historico",
-    "causa": "varianza"
-  },
-  {
-    "fecha": "2026-08-20",
-    "pick": "ATH/KC o8.0",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -115,
-    "unidades": 1.0,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "ATH 2-6 KC",
-    "clv": 2.0,
-    "prob_cierre": 55.5,
-    "clv_metodo": "kalshi_historico"
-  },
-  {
-    "fecha": "2026-08-20",
-    "pick": "STL ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -106,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.94,
-    "marcador": "STL 10-9 CIN",
-    "clv": 0.0,
-    "prob_cierre": 51.5,
-    "clv_metodo": "kalshi_historico"
-  },
-  {
     "fecha": "2026-09-05",
     "pick": "NYY ML",
     "deporte": "MLB",
@@ -3866,6 +3823,154 @@
     "patas_res": [
       "W",
       "W"
+    ]
+  },
+  {
+    "fecha": "2026-08-20",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -102,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "ATL 2-0 CWS",
+    "clv": -1.0,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "varianza"
+  },
+  {
+    "fecha": "2026-08-20",
+    "pick": "ATH/KC o8.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -115,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "ATH 2-6 KC",
+    "clv": 2.0,
+    "prob_cierre": 55.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-08-20",
+    "pick": "STL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -106,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.94,
+    "marcador": "STL 10-9 CIN",
+    "clv": 0.0,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-06",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -110,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "NYY 3-4 SD",
+    "veredicto": "apostable",
+    "prob_estimada": 54.5,
+    "prob_justa": 50.56,
+    "ev_pct": 4.05,
+    "precio_publicado": -113,
+    "discrepancia_pp": 3.94,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen"
+    ],
+    "contra": "Petco y Mason Miller (1.21) achican cualquier juego cerrado; con 7 carreras de total, un solo swing de SD decide y el precio no perdona.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -3.9,
+    "prob_cierre": 48.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "precio"
+  },
+  {
+    "fecha": "2026-09-06",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -108,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "ATL 5-4 PHI",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 49.78,
+    "ev_pct": 2.07,
+    "precio_publicado": -107,
+    "discrepancia_pp": 3.22,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen"
+    ],
+    "contra": "PHI viene 7-3 permitiendo solo 2.1 carreras por juego en casa y Duran cierra a 1.58: si el juego se va bajo en carreras, la localia manda.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -2.4,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-06",
+    "pick": "HOU ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -110,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "AZ 3-2 HOU",
+    "veredicto": "apostable",
+    "prob_estimada": 54.0,
+    "prob_justa": 50.45,
+    "ev_pct": 3.09,
+    "precio_publicado": -111,
+    "discrepancia_pp": 3.55,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "bullpen",
+      "modelo"
+    ],
+    "contra": "AZ batea .778 de ops contra zurdos de temporada y E. Rodriguez (2.59) puede dominar a un lineup local que tampoco pasa de 3.9 c/j.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -0.9,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "ajustado"
+  },
+  {
+    "fecha": "2026-09-06",
+    "pick": "PARLAY: NYY ML + HOU ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 264,
+    "unidades": 0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "NYY 3-4 SD / AZ 3-2 HOU",
+    "patas_res": [
+      "L",
+      "L"
     ]
   }
 ]

@@ -1,0 +1,26 @@
+{
+  "picks": [],
+  "parlay": null,
+  "descartes": [
+    "ATL/PHI: sin cuotas de consenso ni linea justa en los datos (cuotas_ml, total, spread y 'justa' vienen nulos). Imposible medir ventaja sobre el precio; J. Luzardo (30.0% K, FIP 3.16) contra un lineup de PHI frio (.637 ops, 3.2 c/j) era el candidato mas claro, pero sin precio no hay pick.",
+    "NYM/MIA: sin precios. Ademas bullpen de NYM en 5.12 y cerrador con 7.11 de era hace inviable cualquier under o ML sin referencia de valor.",
+    "LAA/BOS: no hay abridor publicado por BOS y no hay cuotas. El total cayo de 8.5 a 8.0 (movimiento FUERTE), senal de mercado que no puedo tomar sin precio ni saber quien abre en casa.",
+    "CLE/BAL: total movido 8.5 -> 7.5 (FUERTE) con dos zurdos y BAL en .550 de ops semanal, pero sin cuota publicada del under no hay forma de saber si el precio ya se comio la ventaja.",
+    "AZ/KC: falta el abridor de AZ y no hay cuotas; ofensiva de AZ helada (1.8 c/j, .577 ops) pero sin precio no hay pick.",
+    "CHC/MIL: dos ofensivas calientes (6.1 c/j ambas) contra abridores de FIP 4.51 y 4.35 apuntaba a over, pero sin linea de total ni cuota no se puede evaluar.",
+    "MIN/DET: sin abridor visitante y sin precios.",
+    "WSH/SD: sin cuotas; ademas J. Irvin (5.57 era, FIP 4.82) y bullpen de WSH en 4.84 contra M. Miller (1.19) era el matchup mas desequilibrado del dia, pero SD seria favorito a precio desconocido.",
+    "STL/SF: sin precios; el .880 de ops de STL en 6 juegos choca con su split real vs derechos (.699), asi que ni con cuota habria sido claro.",
+    "CIN/LAD: no hay abridor de LAD ni cuotas.",
+    "TOR/ATH: D. Cease (2.25 era, 35.5% K) contra bullpen de ATH en 5.26 era el mejor perfil de F5, pero el juego no trae ni cuotas_extra ni ML publicado."
+  ],
+  "autopsia": "Del cierre del 6-sep: NYY ML a -110 (3-4 con SD) y HOU ML a -110 (2-3 con AZ) fueron dos decisiones acertables perdidas por una carrera cada una — varianza pura en la banda de precio pareja, que es justo la banda que rinde; ATL ML si entro. El error real fue el parlay: combine dos favoritos que ya estaban en el limite y bastando que uno cayera perdi ambos conceptos a la vez. Hoy la correccion es distinta y viene forzada por los datos: ningun juego trae cuotas de consenso ni linea justa, y sin precio no existe ventaja medible. Prefiero cerrar el dia en blanco que inventar un precio y apostarle; el sistema pierde mas por picks forzados que por dias sin pick.",
+  "resumen": "Dia sin jugadas. El feed de hoy llego sin cuotas de consenso, sin totales, sin spreads y sin lineas justas en los once juegos de MLB, asi que no hay contra que medir el valor: cualquier pick seria adivinar el precio. Analicé igual el cartel y los perfiles mas interesantes eran Luzardo frente a un Philadelphia apagado (.637 ops en la semana), Cease contra un bullpen de Atleticos en 5.26, y los dos totales con movimiento fuerte de linea (LAA/BOS 8.5 a 8.0 y CLE/BAL 8.5 a 7.5). Todos quedan anotados como observacion, no como apuesta. Volvemos cuando el mercado publique precios.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": 2.0
+  }
+}
