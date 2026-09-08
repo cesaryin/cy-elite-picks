@@ -1,32 +1,267 @@
-<!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CY Elite Trends</title>
-<meta name="theme-color" content="#0b0f14">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<style>:root{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
-  --text:#e6edf3; --soft:#c3ccd6; --mute:#8b949e; --faint:#6e7681;
-  --gold:#f0c75e; --gold-bg:rgba(240,199,94,.10); --gold-ln:rgba(240,199,94,.30);
-  --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff;
-  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --disp:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;
-     padding:16px;-webkit-font-smoothing:antialiased}
-.wrap{max-width:560px;margin:0 auto}
-/* ---------- cabecera ---------- */
-header{text-align:center;padding:14px 0 8px}
-header h1{font-family:var(--disp);font-size:27px;font-weight:800;letter-spacing:-.02em;color:var(--gold)}
-header .fecha{color:var(--mute);font-size:13px;margin-top:5px;font-family:var(--mono)}
-.lab-btn{display:inline-block;margin-top:11px;background:var(--surf);border:1px solid var(--line);
-         color:var(--blue);font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:99px;
-         text-decoration:none;font-family:var(--disp)}
-.lab-btn.g{color:var(--gold);margin-left:6px}
-/* El aire extra en pantalla ancha es del DOCUMENTO suelto: si viajara al
-   dashboard le meteria 24 px al body de la app. */
-@media(min-width:600px){body{padding:24px}}
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>CY Elite Trends</title><meta name="description" content="115-97 en 212 picks · +3.8U. Cada pick con su precio mínimo: válido en cualquier casa."><meta name="theme-color" content="#0d1117"><meta property="og:type" content="website"><meta property="og:site_name" content="CY Elite Picks"><meta property="og:title" content="CY Elite Picks — 2026-09-08"><meta property="og:description" content="115-97 en 212 picks · +3.8U. Cada pick con su precio mínimo: válido en cualquier casa."><meta property="og:image" content="https://cesaryin.github.io/cy-elite-picks/og.png?v=2026-09-08"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://cesaryin.github.io/cy-elite-picks/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CY Elite Picks — 2026-09-08"><meta name="twitter:description" content="115-97 en 212 picks · +3.8U. Cada pick con su precio mínimo: válido en cualquier casa."><meta name="twitter:image" content="https://cesaryin.github.io/cy-elite-picks/og.png?v=2026-09-08"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d1117'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial,sans-serif' font-weight='bold' fill='%23f0c75e' text-anchor='middle'%3ECY%3C/text%3E%3C/svg%3E"><link rel="manifest" href="https://cesaryin.github.io/cy-elite-picks/manifest.json"><style>
+:root{--bg:#0d1117;--card:#161b22;--panel:#0f141a;--line:#30363d;--line2:#21262d;
+--text:#e6edf3;--soft:#c9d1d9;--mut:#8b949e;--faint:#6e7681;--mut2:#9aa3ac;
+--green:#3fb950;--red:#f85149;--gold:#d4af37;--gold2:#f0c75e;--purple:#a371f7;--blue:#58a6ff;
+--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+.mono{font-variant-numeric:tabular-nums}
+.app{max-width:480px;margin:0 auto;min-height:100vh;padding-top:66px;padding-bottom:calc(74px + env(safe-area-inset-bottom));position:relative;overflow-x:hidden}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;max-width:480px;margin:0 auto;background:rgba(13,17,23,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:15px 18px;text-align:center}
+.topbar h1{font-size:24px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#d4af37,#f0c75e,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.date{padding:16px 18px 4px;font-size:14px;color:var(--mut);font-weight:600;text-transform:capitalize}
+/* LAS CUATRO PAGINAS EMPIEZAN A LA MISMA ALTURA (3-sep-2026).
+   Picks e Historial abren con la linea .date; LAB y Trends no --Cesar los
+   pidio sin encabezado-- y por eso su contenido arrancaba 41px mas arriba.
+   Cambiando de pestaña se notaba el salto. 41px es exactamente lo que ocupa
+   esa linea (16 de padding + 21 de texto + 4), asi que este hueco no es un
+   numero inventado: es el mismo sitio, solo que vacio. Los 12 de abajo son
+   los que las otras dos reciben del margen de su ultima tarjeta. */
+.lab-real,.trends-real{padding-top:41px;padding-bottom:12px}
+/* ...Y LAS DOS ARRANCAN IGUAL DE VERDAD (5-sep-2026). El padding de arriba las
+   pone a la misma altura, pero solo el LAB llegaba ahi: su primera tarjeta no
+   lleva margen (`.gitem+.gitem`, solo entre hermanas) mientras que Trends abre
+   con un `.sep`, que lleva 30px de margen para separar una capa de la de
+   arriba. Sumaba 71 contra 41 y Trends caia mas abajo. El primer separador no
+   separa de nada, asi que aqui no tiene margen. Va en el CSS del shell y no en
+   CSS_TRENDS a proposito: en trends.html suelto ese margen SI hace falta, es
+   el aire que deja la cabecera de la pagina. */
+.trends-real>.sep:first-child{margin-top:0}
+main{padding:0 16px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin:12px 0}
+.card.elite{border:1px solid var(--gold);background:linear-gradient(160deg,#1e1a0e,#161b22)}
+.badge{font-size:12px;font-weight:800;letter-spacing:.4px;color:var(--mut);margin-bottom:12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.badge.elite{color:var(--gold2)}.badge.valor{color:#aab4c2}.badge.bronce{color:#cc8b52}.badge.parlay{color:var(--purple)}
+.stars{letter-spacing:1px;font-size:11px}
+.row{display:flex;align-items:center;gap:12px}
+.logos{display:flex;flex-shrink:0}
+.logo{width:42px;height:42px;object-fit:contain;background:none;border:none}
+.logo:nth-child(2){margin-left:6px}.logo.sm{width:30px;height:30px}
+.info{flex:1;min-width:0}
+.pick{font-size:22px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:12px;font-weight:600;margin-top:3px}
+.odds{text-align:right;flex-shrink:0}
+.cuota{font-size:23px;font-weight:800}.cuota.pos{color:var(--green)}.cuota.neg{color:var(--text)}
+.u{background:var(--line2);border-radius:8px;padding:2px 9px;font-size:12px;font-weight:700;display:inline-block;margin-top:4px;color:var(--soft)}
+.edge-pro{display:flex;align-items:center;gap:11px;margin-top:13px;background:rgba(63,185,80,.09);border:1px solid rgba(63,185,80,.35);border-radius:12px;padding:11px 13px}
+.edge-pro.warn{background:rgba(210,153,34,.09);border-color:rgba(210,153,34,.4)}
+.edge-pro .ep-i{font-size:18px}.edge-pro .ep-t{flex:1;display:flex;flex-direction:column;gap:1px}
+.edge-pro .ep-l{font-size:13px;font-weight:800;color:var(--text)}.edge-pro .ep-s{font-size:11px;color:var(--mut);font-weight:600}
+.edge-pro .ep-v{font-size:23px;font-weight:900;color:var(--green)}.edge-pro.warn .ep-v{color:#d29922}
+/* PRECIO MINIMO (27-ago-2026) — el dato que hace el pick valido en CUALQUIER
+   casa. Reusa la estructura del chip de ventaja para no romper el diseno. */
+.pmin{display:flex;align-items:center;gap:11px;margin-top:10px;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.38);border-radius:12px;padding:11px 13px}
+.pmin .ep-i{font-size:18px}.pmin .ep-t{flex:1;display:flex;flex-direction:column;gap:1px}
+.pmin .ep-l{font-size:13px;font-weight:800;color:var(--text)}
+.pmin .ep-s{font-size:11px;color:var(--mut);font-weight:600}
+.pmin .ep-v{font-size:23px;font-weight:900;color:#58a6ff}
+.pmin-casa{font-size:11px;color:var(--mut);font-weight:600;margin-top:3px}
+.pmin-casa b{color:var(--soft);font-variant-numeric:tabular-nums}
+.pmin-gan{color:var(--green)}
+.pmin.lejos{background:rgba(210,153,34,.09);border-color:rgba(210,153,34,.4)}
+.pmin.lejos .ep-v{color:#d29922}
+/* SEGUIMIENTO — se publica el analisis pero NO lleva dinero.
+   ANTES SE APAGABA LA TARJETA ENTERA (opacity:.62 + el pick y la cuota en
+   gris). Distinguia, si, pero a costa de no poder leerla: hay dias en que dos
+   de los tres analisis son seguimiento, asi que media pagina quedaba en
+   penumbra justo cuando lo que se quiere es LEERLA --el seguimiento existe
+   para ver si el filtro acierta, y no se puede juzgar lo que no se lee--.
+   Ahora se distingue por COLOR y no por falta de luz: azul, que en esta paleta
+   no significa ni dinero (dorado) ni resultado (verde/rojo), y que se separa
+   del dorado tambien con vision deutan. El borde discontinuo se queda como
+   segunda señal, para no depender solo del color. */
+.card.seg{border-style:dashed;border-color:rgba(88,166,255,.5)}
+.u.seg{background:rgba(88,166,255,.14);border:1px solid rgba(88,166,255,.5);color:#79b8ff;font-size:10.5px;letter-spacing:.3px}
+.razon{color:var(--soft);font-size:13.5px;line-height:1.62;margin-top:13px;border-left:2px solid var(--gold);padding-left:12px}
+.verdict{font-size:14px;font-weight:700;color:var(--text);margin-top:13px;line-height:1.42}
+.caps{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.cap{font-size:12px;font-weight:700;padding:6px 10px;border-radius:8px;background:var(--panel);border:1px solid var(--line);color:var(--soft)}
+.cap b{color:var(--gold2)}
+.more{margin-top:11px}
+.more summary{cursor:pointer;color:var(--gold2);font-weight:700;font-size:12.5px;list-style:none}
+.card.valor .more summary{color:#aab4c2}
+.card.bronce .more summary{color:#cc8b52}
+.more summary::-webkit-details-marker{display:none}
+.more .txt{margin-top:8px;color:var(--soft);font-size:13px;line-height:1.6}
+.mut{color:#8b949e}
+/* La cabecera del acordeon en fila: el titulo a la izquierda y el contador
+   con la flecha a la DERECHA (peticion de Cesar, 31-ago). Antes iba todo
+   seguido detras del titulo y el "5 con valor" quedaba flotando en medio
+   de la barra, sin alinearse con nada. */
+.cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14.5px;cursor:pointer}
+.cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12px;color:#8b949e}
+.cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
+.cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
+.cmp-h{display:flex;align-items:center;gap:9px;padding:10px 11px}
+.cmp-mt{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.cmp-p{display:flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.35;min-width:0}
+.cmp-who{flex:1;min-width:0;display:flex;align-items:baseline;gap:5px}
+.cmp-nm{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmp-p.win .cmp-nm{color:#f0c75e}
+.cmp-rec{flex-shrink:0;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
+.cmp-er{width:34px;text-align:right;font-weight:800;font-size:12.5px;font-variant-numeric:tabular-nums}
+.cmp-pen{width:32px;text-align:right;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-cl{width:26px;text-align:right;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-lg{width:18px;height:18px;object-fit:contain;flex-shrink:0}
+.cmp-hd{display:flex;justify-content:flex-end;gap:9px;padding:0 12px 5px}
+.cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:9px;font-weight:800;color:#6e7681;letter-spacing:.5px}
+.cmp-vsp{width:84px;flex-shrink:0}
+.cmp-v{flex-shrink:0;min-width:84px;text-align:right;font-size:10px;font-weight:900;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap}
+.cmp-v.alta{background:#0f2e1a;color:#3fb950;border-color:#1f5c37}
+@media (max-width:409px){.cmp-cl,.cmp-hd .cmp-cl{display:none}}
+.cmp-d{display:none;padding:0 11px 9px;font-size:11.5px;color:#c9d1d9}
+.cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
+.cmp-note{font-size:10.5px;color:#6e7681;text-align:center;margin-top:4px}
+.card.valor .razon{border-color:#aab4c2}.card.bronce .razon{border-color:#cc8b52}
+.card.parlay{border:2px dashed var(--purple);background:#15121d;padding:14px 16px}
+.patas{display:flex;flex-direction:column;gap:2px}
+.pata{display:flex;align-items:center;gap:11px;padding:8px 0}
+.pata .pn{flex:1;font-size:15px;font-weight:700}.pata .pc{font-size:14px;font-weight:800;color:var(--mut)}
+.combo{display:flex;justify-content:space-between;align-items:center;margin-top:9px;padding-top:11px;border-top:1px solid var(--line2);font-weight:700}
+.combo .cuota{font-size:20px;color:var(--purple)}
+.resumen{background:var(--card);border-left:3px solid var(--green);border-radius:8px;padding:15px 16px;font-size:14px;color:var(--soft);line-height:1.55;margin:12px 0}
+.clv-box{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:12px 0}
+.clv-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.clv-ti{font-size:12.5px;font-weight:800;color:var(--soft)}
+.clv-n{font-size:17px;font-weight:900}.clv-n.g{color:var(--green)}.clv-n.r{color:var(--red)}
+.clv-sub{font-size:12px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11.5px;color:var(--faint);margin-top:4px;font-style:italic}
+/* ===== HISTORIAL PRO (2-sep-2026) ==========================================
+   TODAS las clases llevan prefijo "hi-", sin excepcion. Es la leccion del mismo
+   dia: el dashboard concatena su hoja, la del LAB y la de Trends, y a igualdad
+   de especificidad gana la ultima. Ese dia costo cuatro fallos en vivo --.gc,
+   .logo, .mut y .chip-- todos por clases cortas sin prefijo. */
+
+/* el veredicto: lo primero que se lee, y sin maquillaje */
+.hi-ver{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:14px 15px;border-left:3px solid var(--gold2)}
+.hi-ver h4{font-size:10.5px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold2);margin:0 0 8px}
+.hi-ver p{font-size:13px;line-height:1.62;color:var(--text);margin:0}
+.hi-ver p+p{margin-top:8px;color:var(--mut);font-size:12.5px}
+.hi-ver b{color:var(--text);font-weight:700}
+
+/* el balance */
+.hi-hero{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px;overflow:hidden}
+.hi-ht{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.hi-hn{font-size:34px;font-weight:800;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.hi-hs{font-size:12.5px;color:var(--mut)}
+.hi-hg{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:13px;
+  padding-top:12px;border-top:1px solid var(--line)}
+.hi-kpi{text-align:center}
+.hi-kpi b{display:block;font-size:15.5px;font-weight:800;color:var(--text);
+  line-height:1.2;font-variant-numeric:tabular-nums}
+.hi-kpi span{display:block;font-size:10.5px;color:var(--mut);margin-top:2px}
+.hi-nota{font-size:12.5px;line-height:1.6;color:var(--mut);margin:10px 2px 0}
+
+/* la curva. El trazo toma el COLOR DEL LADO en el que esta (verde arriba del
+   cero, rojo abajo) con el mismo recorte que el area: nada de un cuarto color
+   encima del relleno, y el signo se lee por la posicion, no por el color. */
+.hi-cv{width:100%;height:auto;display:block;margin:14px 0 0}
+.hi-cv .hi-ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.hi-cv .hi-ln.g{stroke:var(--green)}
+.hi-cv .hi-ln.r{stroke:var(--red)}
+.hi-cv .hi-ar{stroke:none}
+.hi-cv .hi-ar.g{fill:rgba(63,185,80,.15)}
+.hi-cv .hi-ar.r{fill:rgba(248,81,73,.15)}
+.hi-cv .hi-cero{stroke:var(--line);stroke-width:1;stroke-dasharray:3 3}
+.hi-cv .hi-pt{fill:var(--green);stroke:var(--card);stroke-width:2}
+
+/* CLV */
+.hi-clv{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px}
+.hi-clvt{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.hi-clvn{font-size:29px;font-weight:800;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.hi-clvs{font-size:12.5px;color:var(--mut)}
+.hi-pr{margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
+.hi-prh{font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mut);margin-bottom:9px}
+.hi-pr2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.hi-pr2>div{background:var(--bg);border:1px solid var(--line);border-radius:10px;
+  padding:10px}
+.hi-pr2 b{display:block;font-size:16.5px;font-weight:800;line-height:1.2;
+  font-variant-numeric:tabular-nums}
+.hi-pr2 span{display:block;font-size:10.5px;color:var(--mut);margin-top:3px;
+  line-height:1.4}
+
+/* barras divergentes. EL COLOR NO LLEVA EL SIGNIFICADO: verde y rojo no se
+   distinguen con daltonismo (DeltaE 2.2 en deuteranopia, medido con el
+   validador). Lo llevan la POSICION respecto al cero y el numero con signo. */
+.hi-brs{display:flex;flex-direction:column;gap:9px}
+.hi-br{display:grid;grid-template-columns:1fr 92px 62px;align-items:center;gap:9px}
+.hi-brk{font-size:12.5px;font-weight:700;color:var(--text);min-width:0}
+.hi-brk span{display:block;font-size:10.5px;font-weight:400;color:var(--mut);
+  margin-top:1px;font-variant-numeric:tabular-nums}
+.hi-brt{position:relative;height:16px;background:var(--card);border-radius:4px}
+.hi-brt i{position:absolute;top:3px;height:10px;border-radius:3px}
+.hi-brt i.g{background:var(--green)}
+.hi-brt i.r{background:var(--red)}
+.hi-brt i.z{background:var(--mut)}
+.hi-brt b{position:absolute;left:50%;top:0;width:1px;height:16px;background:var(--line)}
+.hi-brv{font-size:13px;font-weight:800;text-align:right;
+  font-variant-numeric:tabular-nums}
+
+/* mes a mes */
+.hi-t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hi-t th{font-size:9.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--mut);text-align:right;padding:0 4px 7px}
+.hi-t th:first-child{text-align:left}
+.hi-t td{font-size:12.5px;padding:7px 4px;border-top:1px solid var(--line)}
+.hi-t td.hi-n{text-align:right;font-weight:700}
+.hi-t td.hi-ms{font-weight:700;color:var(--text)}
+
+/* los ultimos picks, dentro del desplegable */
+.hi-pk{display:flex;align-items:center;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--line)}
+.hi-pk:last-child{border-bottom:none}
+.hi-pkr{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:800;flex:none}
+.hi-pkr.W{background:rgba(63,185,80,.14);color:var(--green)}
+.hi-pkr.L{background:rgba(248,81,73,.14);color:var(--red)}
+.hi-pkr.P{background:var(--line);color:var(--mut)}
+.hi-pkb{flex:1;min-width:0}
+.hi-pkp{font-size:12.5px;font-weight:700;color:var(--text)}
+.hi-pkd{font-size:10.5px;color:var(--mut);margin-top:1px;
+  font-variant-numeric:tabular-nums}
+.hi-pkn{font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
+
+/* el verde y el rojo del historial, compartidos por curva, barras y picks */
+.hi-hn.g,.hi-clvn.g,.hi-brv.g,.hi-pkn.g,.hi-kpi b.g,.hi-pr2 b.g,.hi-t td.g{color:var(--green)}
+.hi-hn.r,.hi-clvn.r,.hi-brv.r,.hi-pkn.r,.hi-kpi b.r,.hi-pr2 b.r,.hi-t td.r{color:var(--red)}
+.hi-brv.z,.hi-pkn.z,.hi-t td.z{color:var(--mut)}
+.acc{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:var(--text);font-weight:800;font-size:14px;cursor:pointer;margin:10px 0;display:flex;align-items:center;gap:7px}
+.acc .cnt{color:var(--mut);font-weight:600;font-size:12px}.acc .ar{margin-left:auto;color:var(--mut)}
+details.dd summary{list-style:none}details.dd summary::-webkit-details-marker{display:none}
+details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:12px;background:var(--panel)}
+.dlist{list-style:none;font-size:13px;color:var(--soft)}.dlist li{padding:6px 0;border-top:1px solid var(--line2)}.dlist li:first-child{border:none}
+.hero{background:linear-gradient(160deg,#16191f,#101216);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0 4px}
+.hero .lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.hero .net{font-size:42px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 2px}
+.hero .net.g{color:var(--green)}.hero .net.r{color:var(--red)}
+.hero .sub2{font-size:13px;color:var(--mut);font-weight:600}
+.hero .bar{height:7px;border-radius:99px;background:var(--red);margin:14px 0 10px;overflow:hidden;display:flex}
+.hero .bar i{background:var(--green);display:block}
+.hero .stats{display:flex;gap:8px}
+.hero .stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 11px}
+.hero .stat b{font-size:17px;font-weight:800}.hero .stat span{display:block;font-size:10px;color:var(--faint);font-weight:600;margin-top:1px;text-transform:uppercase;letter-spacing:.05em}
+.hrow{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line2)}
+.hres{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-size:11px;font-weight:800;flex:none}
+.hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
+.hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11.5px;color:var(--faint);font-weight:600}
+.hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
+.aut-texto{font-size:13px;color:var(--soft);line-height:1.6}
+.frame-wrap{border:none;margin:0}
+.frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+.note{color:var(--faint);font-size:12px;text-align:center;padding:12px 8px 2px;line-height:1.55}
+.nota-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;text-align:center;color:var(--soft);margin:12px 0}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 auto;background:rgba(15,20,26,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;padding:8px 4px calc(8px + env(safe-area-inset-bottom))}
+.nav-i{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:none;color:var(--faint);font-family:inherit;cursor:pointer;padding:5px 0;text-decoration:none}
+.nav-i svg{width:24px;height:24px;display:block}.nav-i span{font-size:11px;font-weight:700}
+.nav-i.on{color:var(--text)}.nav-i.on svg{color:var(--gold2)}
 .trends-real{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
   --text:#e6edf3; --soft:#c3ccd6; --mute:#8b949e; --faint:#6e7681;
   --gold:#f0c75e; --gold-bg:rgba(240,199,94,.10); --gold-ln:rgba(240,199,94,.30);
@@ -238,33 +473,236 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
    Asi que la regla dice el tamano que ya tenia heredado de table.t9: no cambia
    ni un pixel de como se ve hoy, y deja escrito que es deliberado. */
 .trends-real table.t4 th,.trends-real table.t4 td{font-size:10.5px}
-</style></head>
-<body><div class="wrap">
-  <header>
-<h1>CY Elite Trends</h1>
-<div class="fecha">8 de septiembre de 2026 · 144 mercados vigilados · 4 juegos con movimiento · actualizado 09/08/2026 10:34 AM CT</div>
-<a class="lab-btn" href="index.html">CY Elite Picks — picks del día ›</a>
-<a class="lab-btn g" href="lab.html">LAB ›</a>
-  </header>
-<div class="trends-real">
+</style></head><body><div class="app"><div class="topbar"><h1>CY Elite Picks</h1></div><main><section class="on"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"><style>.trends-real{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
+  --text:#e6edf3; --soft:#c3ccd6; --mute:#8b949e; --faint:#6e7681;
+  --gold:#f0c75e; --gold-bg:rgba(240,199,94,.10); --gold-ln:rgba(240,199,94,.30);
+  --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --disp:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+/* ---------- separadores de capa ---------- */
+.sep{display:flex;align-items:center;gap:12px;margin:30px 0 6px}
+.sep .n{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--bg);
+        background:var(--gold);border-radius:5px;padding:2px 9px;flex-shrink:0;letter-spacing:.04em}
+.sep .ln{height:1px;background:var(--line);flex:1}
+h2{font-family:var(--disp);font-size:19px;font-weight:700;letter-spacing:-.015em;margin-bottom:3px}
+.h2s{font-size:12.5px;color:var(--mute);margin-bottom:12px;line-height:1.5}
+.h2s b{color:var(--soft)}
+.vacio{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+       text-align:center;font-size:12.5px;color:var(--mute);box-shadow:var(--shadow)}
+/* ---------- CAPA 1: alertas ---------- */
+.al{display:flex;gap:9px;align-items:flex-start;background:var(--gold-bg);
+    border:1px solid var(--gold-ln);border-radius:10px;padding:11px 12px;margin-bottom:8px;
+    font-size:12.5px;color:var(--soft);line-height:1.45}
+.al .ali{color:var(--gold);font-weight:700;flex-shrink:0;font-family:var(--mono)}
+.al b{color:var(--mute);font-weight:600}
+/* ---------- CAPA 2: fichas ---------- */
+.fi{background:var(--surf);border:1px solid var(--line);border-radius:11px;margin-bottom:8px;
+    overflow:hidden;box-shadow:var(--shadow)}
+.fis{display:flex;justify-content:space-between;align-items:center;padding:11px 13px;
+     cursor:pointer;font-size:13.5px;list-style:none}
+.fis::-webkit-details-marker{display:none}
+.fis b{font-family:var(--disp);font-weight:800;letter-spacing:-.01em;font-size:14.5px}
+.fih{color:var(--mute);font-size:11px;font-family:var(--mono)}
+.fic{padding:0 13px 12px;border-top:1px solid var(--line2)}
+.sp2{font-size:11.5px;color:var(--soft);padding:9px 0 8px}
+/* ACOTADA A .trends-real (2-sep-2026). Sin acotar, esta regla repintaba TODO el
+   dashboard: el LAB y los picks tambien tienen .mut, y como el paquete de
+   Trends se pega el ultimo, ganaba este color en los 182 elementos de la
+   pagina, no en los 16 suyos. Y --faint (#6e7681) es 45 puntos mas oscuro que
+   el gris del LAB (#9aa3ac), asi que todo el texto atenuado del dashboard
+   salia mas apagado de lo diseñado. Los 16 .mut de Trends viven dentro de
+   .trends-real en las dos paginas, asi que acotarla no le quita nada. */
+.trends-real .mut{color:var(--faint)}
+.cxs2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cx{background:var(--surf2);border-radius:8px;padding:7px 9px}
+.cxk{font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
+.cxv{font-family:var(--mono);font-size:16px;font-weight:600;margin-top:2px}
+.cxs{font-size:10.5px;color:var(--faint)}
+.chps{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.chp{font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:5px;
+     background:var(--surf2);border:1px solid var(--line);color:var(--soft)}
+.chp.r{color:var(--red);border-color:rgba(248,81,73,.4)}
+.pie{font-size:10.5px;color:var(--mute);margin-top:9px;padding-top:8px;border-top:1px solid var(--line)}
+.pie b{color:var(--soft)}
+/* ---------- señales: tarjeta neutra, color solo en el % ---------- */
+.s{display:flex;align-items:center;gap:10px;background:var(--surf);border:1px solid var(--line);
+   border-radius:11px;padding:11px 12px;margin-bottom:8px;box-shadow:var(--shadow)}
+.lgs{display:flex;flex-shrink:0;width:30px;justify-content:center}
+.lg{width:22px;height:22px;object-fit:contain}
+.lgs .lg+.lg{margin-left:-8px}
+.sc{flex:1;min-width:0}
+.st{font-family:var(--disp);font-size:13px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
+.sd{font-size:10.5px;color:var(--mute);line-height:1.4;margin-top:1px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sho{color:var(--faint)}
+.pc{flex-shrink:0;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--mute);
+    width:38px;text-align:right}
+.s.fuerte .pc{color:var(--green)}
+/* ---------- CAPA 3: una tarjeta-tabla por juego ---------- */
+.jc{background:var(--surf);border:1px solid var(--line);border-radius:11px;padding:11px 12px;
+    margin-bottom:8px;box-shadow:var(--shadow)}
+.jch{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-bottom:7px}
+.jct{display:flex;align-items:center;gap:6px;min-width:0}
+.jlg{width:22px;height:22px;object-fit:contain;flex-shrink:0}
+.chip{font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:5px;
+      background:var(--surf2);border:1px solid var(--line);color:var(--soft);white-space:nowrap}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.t9{width:100%;border-collapse:collapse;font-family:var(--mono);
+         font-variant-numeric:tabular-nums;font-size:10.5px;min-width:404px}
+table.t9 th{font-family:var(--disp);font-size:8.5px;letter-spacing:.04em;text-transform:uppercase;
+            color:var(--mute);font-weight:700;padding:4px 3px;text-align:center;
+            border-bottom:1px solid var(--line);white-space:nowrap}
+table.t9 th.l{text-align:left;padding-left:2px}
+table.t9 td{padding:5px 3px;text-align:center;color:var(--soft);white-space:nowrap}
+table.t9 td.eq{font-family:var(--disp);font-weight:800;color:var(--text);text-align:left;
+               font-size:11.5px;padding-left:2px}
+table.t9 tr.b td{border-bottom:1px solid var(--line)}
+table.t9 .g{color:var(--green)}
+table.t9 .r{color:var(--red)}
+/* ---------- CAPA 3: radar de suerte ---------- */
+.rd{display:flex;align-items:center;gap:8px;background:var(--surf);border:1px solid var(--line);
+    border-radius:10px;padding:11px 12px;margin-bottom:8px;font-size:12px;box-shadow:var(--shadow)}
+.lgt{width:19px;height:19px;object-fit:contain;flex-shrink:0}
+.rde{font-family:var(--disp);font-weight:800;width:38px;flex-shrink:0}
+.rdt{flex:1;color:var(--mute);font-size:11px;min-width:0;font-family:var(--mono)}
+.rdv{font-family:var(--mono);font-weight:600;font-size:14px;width:34px;text-align:right;flex-shrink:0}
+.rdl{font-size:10px;color:var(--faint);width:78px;text-align:right;flex-shrink:0}
+/* ---------- pie ---------- */
+.leyenda{font-size:10.5px;color:var(--faint);margin-top:10px;line-height:1.75}
+.leyenda b{color:var(--mute)}
+footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-height:1.8;
+       padding-top:16px;border-top:1px solid var(--line)}
+
+/* ==================== TRENDS v2 (7-sep-2026) ====================
+   EL COLOR TIENE SEMANTICA, y es la del LAB: el VERDE es lo bueno/activo
+   (alli son 8 usos: .lb-pill.ok, .up, .ec.on, el grado A) y el DORADO es solo
+   marca (3 usos). Aqui igual: verde sube/bueno, rojo baja/malo, y el dorado no
+   se usa como senal en ningun sitio. Sin tarjetas tintadas. */
+.trends-real .lgc{width:20px;height:20px;object-fit:contain;vertical-align:middle}
+.trends-real .hh{font-size:9.5px;color:var(--faint);white-space:nowrap}
+.trends-real .pil{font-family:var(--mono);font-size:9px;color:var(--mute);
+  background:var(--surf2);border:1px solid var(--line);border-radius:5px;
+  padding:2px 7px;flex-shrink:0}
+.trends-real .pil.on{color:var(--green);border-color:#1d4428}
+.trends-real i.sube{color:var(--green);font-style:normal}
+.trends-real i.baja{color:var(--red);font-style:normal}
+.trends-real i.igual{color:var(--faint);font-style:normal}
+/* --- capas 1 y 1b: una linea por juego --- */
+.trends-real .mv,.trends-real .pk{display:flex;align-items:center;gap:8px;
+  background:var(--surf);border:1px solid var(--line);border-radius:10px;
+  padding:8px 11px;margin-bottom:6px}
+.trends-real .mvl{display:flex;gap:3px;flex-shrink:0}
+.trends-real .mvt{flex:1;min-width:0;font-size:12px;color:var(--soft);line-height:1.35}
+.trends-real .mvt b{color:var(--text);font-weight:700}
+.trends-real .mvs{display:block;font-size:10.5px;color:var(--mute)}
+.trends-real .mvr,.trends-real .pkr{display:flex;flex-direction:column;
+  align-items:flex-end;gap:1px;flex-shrink:0}
+.trends-real .mvr i,.trends-real .pkr i{font-size:12.5px;font-weight:600}
+.trends-real .pkl{flex-shrink:0}
+.trends-real .pkt{flex:1;min-width:0}
+.trends-real .pkt b{font-family:var(--disp);font-weight:800;display:block;font-size:14px}
+.trends-real .pkt span{font-size:10.5px;color:var(--mute)}
+.trends-real .pkr span{font-size:9.5px;color:var(--faint)}
+/* --- la tarjeta que comparten las capas 2, 3 y 4 --- */
+.trends-real .jc3{background:var(--surf);border:1px solid var(--line);border-radius:11px;
+  padding:7px 11px 5px;margin-bottom:6px;box-shadow:var(--shadow)}
+.trends-real .jch3{display:flex;align-items:center;gap:6px;justify-content:flex-end;
+  margin-bottom:1px}
+.trends-real .jch4{display:flex;align-items:center;gap:6px;margin-bottom:2px}
+.trends-real .jch4 .hh{margin-left:auto}
+.trends-real .pie2{font-size:10px;color:var(--mute);padding:6px 0 3px;
+  border-top:1px solid var(--line2);margin-top:3px;line-height:1.45}
+.trends-real .pie2 b{color:var(--soft);font-family:var(--mono)}
+/* --- UNOS PIXELES MENOS PARA QUE QUEPA EN EL MOVIL ---
+   table.t9 traia min-width:404px, y un movil de 390 solo tiene ~336 utiles: de
+   ahi que hubiera que arrastrar la tabla de izquierda a derecha. Se baja el
+   minimo y se recorta el aire de las celdas. NO se toca el reparto de columnas
+   ni el centrado: la tabla se sigue repartiendo sola.
+   Y el TD del abridor se alinea a la izquierda porque la regla de CSS_TRENDS
+   (`table.t9 th.l`) es solo para el TH: el TD heredaba el centrado y el nombre
+   salia flotando lejos del escudo. */
+.trends-real table.t9{min-width:0}
+.trends-real table.t9 th{padding:4px 2px}
+.trends-real table.t9 td{padding:5px 2px}
+.trends-real table.t9 td.l{text-align:left;padding-left:2px}
+/* --- LAS COLUMNAS, EN EL MISMO SITIO EN LOS 15 JUEGOS (8-sep-2026) ---
+   Cesar: "he notado algunos desajustes en las columnas vs MANO, ML, F5, RL-1.5
+   y TT". Tenia razon y la causa no estaba en esas cinco: cada juego es su
+   PROPIA <table>, y con el reparto automatico del navegador cada una medía sus
+   columnas segun SU contenido. Medido sobre los 15 juegos publicados del 7-sep,
+   el ancho del texto mas largo por columna:
+
+       ABRIDOR    1 -> 16 caracteres   ("—" contra "A. Smith-Shawver")
+       vs MANO    1 -> 9
+       ML/F5/RL/TT  1 -> 8   (un mercado sin precio colapsa a "—")
+
+   El abridor es el que manda: al cambiar de ancho arrastra con el a las cinco
+   columnas de su derecha, y bajando la pagina la reticula baila de tarjeta en
+   tarjeta. Con table-layout:fixed el reparto lo fija el colgroup y deja de
+   depender del contenido, asi que las 15 tablas caen en la misma reticula.
+
+   LAS t3 Y t4 NO SE TOCAN: se midieron igual y salen con rango 0 en todas sus
+   columnas --su contenido es numerico de ancho fijo-- asi que ya estaban
+   alineadas y no hay nada que arreglar ahi. */
+.trends-real table.t2{table-layout:fixed}
+/* EL REPARTO, medido contra los ~336 px utiles de un movil de 390 y contra el
+   contenido real de los 15 juegos del 7-sep:
+       EQ       27 px  el escudo son 20 (.lgc) + aire
+       ABRIDOR  97 px  = 16 caracteres en mono de 10px; el nombre mas largo del
+                       dia ("A. Smith-Shawver") son exactamente 16
+       vs MANO  57 px  "29-22 57%" mide ~56
+       mercado  39 px  x4; manda la CABECERA "RL-1.5" (~35), no la cuota (~30)
+   Suman 100. */
+.trends-real table.t2 col.c-eq{width:8%}
+.trends-real table.t2 col.c-sp{width:29%}
+.trends-real table.t2 col.c-vs{width:17%}
+.trends-real table.t2 col.c-mk{width:11.5%}
+/* Con el ancho fijo, un apellido largo ya no puede ensanchar la columna: se
+   recorta con puntos suspensivos. Es la unica celda que puede desbordar --las
+   otras son cuotas de 4 o 5 caracteres-- y perder tres letras del apellido
+   cuesta menos que perder la reticula. */
+.trends-real table.t2 td.sp{overflow:hidden;text-overflow:ellipsis}
+.trends-real table.t2 th,.trends-real table.t2 td{font-size:10px}
+.trends-real table.t2 td.sp{color:var(--soft)}
+.trends-real table.t2 td b{font-size:11px;color:var(--text);font-weight:600}
+.trends-real table.t2 td i{display:block;font-size:8.5px;line-height:1.2}
+.trends-real table.t3 th,.trends-real table.t3 td{font-size:10px;
+  padding-left:1px;padding-right:1px}
+/* --- LA t4 SE QUEDA EN EL TAMANO BASE, Y ESO ES UNA DECISION (8-sep-2026) ---
+   comprobar_web.py fallaba con "usa clases sin regla CSS: t4". No lo rompio
+   nadie hoy: la clase entro con la reforma del 7-sep como hermana de t2 y t3 y
+   se quedo sin regla. El guardian hace bien en cantarlo, porque una clase
+   huerfana es normalmente una regla perdida o una errata.
+
+   Aqui no lo es. La t2 lleva SIETE columnas y la t3 DIEZ, y las dos bajan a
+   10px para caber en un movil; la t4 lleva SEIS y todas numericas, y ocupa 151
+   de los ~336 px utiles de un movil de 390. No necesita apretarse.
+
+   Asi que la regla dice el tamano que ya tenia heredado de table.t9: no cambia
+   ni un pixel de como se ve hoy, y deja escrito que es deliberado. */
+.trends-real table.t4 th,.trends-real table.t4 td{font-size:10.5px}
+</style><div class="trends-real">
 
   <div class="sep"><span class="n">CAPA 1</span><span class="ln"></span></div>
   <h2>El mercado hoy</h2>
   <div class="h2s">Dónde ha entrado el dinero desde que abrieron las líneas esta mañana.
   Si una línea se mueve hacia un lado, alguien apostó ahí antes de que la casa moviera
   el número: <b>a favor</b> de tu pick confirma, <b>en contra</b> es un aviso.</div>
-  <div class="mv"><div class="mvl"><img class="lgc" src="logos/COL.png" alt="COL"><img class="lgc" src="logos/NYY.png" alt="NYY"></div><div class="mvt"><b>Over</b> en el Total 8<span class="mvs mono">54% &rarr; 52%</span></div><div class="mvr"><i class="baja mono">-3.0</i><span class="hh mono">6:05 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/TOR.png" alt="TOR"><img class="lgc" src="logos/ATH.png" alt="ATH"></div><div class="mvt"><b>Over</b> en el Total 9.5<span class="mvs mono">50% &rarr; 48%</span></div><div class="mvr"><i class="baja mono">-2.0</i><span class="hh mono">8:40 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/CLE.png" alt="CLE"><img class="lgc" src="logos/BAL.png" alt="BAL"></div><div class="mvt"><b>Over</b> en el Total 8.5<span class="mvs mono">50% &rarr; 48%</span></div><div class="mvr"><i class="baja mono">-2.0</i><span class="hh mono">5:35 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/TEX.png" alt="TEX"><img class="lgc" src="logos/SEA.png" alt="SEA"></div><div class="mvt"><b>SEA</b> en el F5 Moneyline<span class="mvs mono">46% &rarr; 48%</span></div><div class="mvr"><i class="sube mono">+1.5</i><span class="hh mono">8:40 PM CT</span></div></div>
+  <div class="mv"><div class="mvl"><img class="lgc" src="logos/COL.png" alt="COL"><img class="lgc" src="logos/NYY.png" alt="NYY"></div><div class="mvt"><b>Over</b> en el Total 8<span class="mvs mono">54% &rarr; 52%</span></div><div class="mvr"><i class="baja mono">-3.0</i><span class="hh mono">6:05 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/TEX.png" alt="TEX"><img class="lgc" src="logos/SEA.png" alt="SEA"></div><div class="mvt"><b>Over</b> en el Total 8<span class="mvs mono">52% &rarr; 54%</span></div><div class="mvr"><i class="sube mono">+2.0</i><span class="hh mono">8:40 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/TB.png" alt="TB"><img class="lgc" src="logos/ATL.png" alt="ATL"></div><div class="mvt"><b>Over</b> en el Total 8.5<span class="mvs mono">48% &rarr; 50%</span></div><div class="mvr"><i class="sube mono">+2.0</i><span class="hh mono">6:15 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/NYM.png" alt="NYM"><img class="lgc" src="logos/MIA.png" alt="MIA"></div><div class="mvt"><b>Over</b> en el Total 8<span class="mvs mono">54% &rarr; 56%</span></div><div class="mvr"><i class="sube mono">+2.0</i><span class="hh mono">5:40 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/MIN.png" alt="MIN"><img class="lgc" src="logos/DET.png" alt="DET"></div><div class="mvt"><b>MIN</b> en el F5 Moneyline<span class="mvs mono">34% &rarr; 36%</span></div><div class="mvr"><i class="sube mono">+2.0</i><span class="hh mono">5:40 PM CT</span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/CLE.png" alt="CLE"><img class="lgc" src="logos/BAL.png" alt="BAL"></div><div class="mvt"><b>BAL</b> en el Run line -1.5<span class="mvs mono">36% &rarr; 34%</span></div><div class="mvr"><i class="baja mono">-2.0</i><span class="hh mono">5:35 PM CT</span></div></div>
 
   <div class="sep"><span class="n">CAPA 1b</span><span class="ln"></span></div>
   <h2>Tus picks contra el mercado</h2>
   <div class="h2s">Cómo se ha movido la línea de cada pick <b>desde que se dio</b>.</div>
-  <div class="pk"><div class="pkl"><img class="lgc" src="logos/HOU.png" alt="HOU"></div><div class="pkt"><b>HOU/PHI u8.5</b><span class="mono">-105 &middot; 48% &rarr; 48%</span></div><div class="pkr"><i class="igual mono">+0.0</i><span>sin moverse</span></div></div><div class="pk"><div class="pkl"><img class="lgc" src="logos/ATL.png" alt="ATL"></div><div class="pkt"><b>ATL ML</b><span class="mono">-114 &middot; 52% &rarr; 52%</span></div><div class="pkr"><i class="baja mono">-1.0</i><span>en tu contra</span></div></div><div class="pk"><div class="pkl"><img class="lgc" src="logos/KC.png" alt="KC"></div><div class="pkt"><b>KC ML</b><span class="mono">+102 &middot; 48% &rarr; 48%</span></div><div class="pkr"><i class="igual mono">+0.0</i><span>sin moverse</span></div></div>
+  <div class="pk"><div class="pkl"><img class="lgc" src="logos/HOU.png" alt="HOU"></div><div class="pkt"><b>HOU/PHI u8.5</b><span class="mono">-105 &middot; 48% &rarr; 48%</span></div><div class="pkr"><i class="igual mono">+0.0</i><span>sin moverse</span></div></div><div class="pk"><div class="pkl"><img class="lgc" src="logos/ATL.png" alt="ATL"></div><div class="pkt"><b>ATL ML</b><span class="mono">-114 &middot; 52% &rarr; 52%</span></div><div class="pkr"><i class="baja mono">-1.0</i><span>en tu contra</span></div></div><div class="pk"><div class="pkl"><img class="lgc" src="logos/KC.png" alt="KC"></div><div class="pkt"><b>KC ML</b><span class="mono">+102 &middot; 48% &rarr; 48%</span></div><div class="pkr"><i class="baja mono">-1.0</i><span>en tu contra</span></div></div>
 
   <div class="sep"><span class="n">CAPA 2</span><span class="ln"></span></div>
   <h2>El juego, mercado a mercado</h2>
   <div class="h2s">El abridor, el cruce contra su mano y <b>todos los mercados</b> con su
   cuota y lo que se han movido hoy. El visitante arriba y el local debajo.</div>
-  <div class="jc3"><div class="jch3"><span class="hh mono">5:35 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/CLE.png" alt="CLE"></td><td class="l sp">T. Bibee</td><td>27-23 <b>54%</b></td><td><b>+111</b><i class="sube">+1.0</i></td><td><b>+153</b><i>&mdash;</i></td><td><b>+182</b><i class="sube">+1.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="l sp">B. Young</td><td>23-25 <b>48%</b></td><td><b>-111</b><i class="baja">-1.0</i></td><td><b>+125</b><i>&mdash;</i></td><td><b>+182</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+106</b> / under <b>-106</b> &middot; serie CLE <b>3-2</b>, media 8.8 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td class="l sp">D. Kremer</td><td class="r">20-28 <b>42%</b></td><td><b>+130</b><i>&mdash;</i></td><td><b>+182</b><i class="sube">+1.0</i></td><td><b>+208</b><i class="sube">+0.5</i></td><td><b>-106</b><i class="baja">-0.5</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td class="l sp">D. Anderson</td><td>26-20 <b>57%</b></td><td><b>-125</b><i class="baja">-1.0</i></td><td><b>+111</b><i class="baja">-1.0</i></td><td><b>+167</b><i>&mdash;</i></td><td><b>+130</b><i class="baja">-0.5</i></td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+111</b> / under <b>-111</b> &middot; serie MIN <b>7-4</b>, media 11.3 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/HOU.png" alt="HOU"></td><td class="l sp">H. Wesneski</td><td>26-22 <b>54%</b></td><td><b>+127</b><i class="sube">+0.5</i></td><td><b>+167</b><i>&mdash;</i></td><td><b>+208</b><i>&mdash;</i></td><td><b>-115</b><i>&mdash;</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/PHI.png" alt="PHI"></td><td class="l sp">A. Painter</td><td class="g">27-17 <b>61%</b></td><td><b>-130</b><i>&mdash;</i></td><td><b>+120</b><i class="baja">-0.5</i></td><td><b>+153</b><i>&mdash;</i></td><td><b>+111</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>-106</b> / under <b>+106</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/NYM.png" alt="NYM"></td><td class="l sp">S. Manaea</td><td>27-26 <b>51%</b></td><td><b>+115</b><i class="sube">+1.0</i></td><td><b>+167</b><i class="sube">+1.0</i></td><td><b>+199</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/MIA.png" alt="MIA"></td><td class="l sp">S. Alcantara</td><td class="r">16-24 <b>40%</b></td><td><b>-115</b><i class="baja">-1.0</i></td><td><b>+122</b><i class="baja">-1.0</i></td><td><b>+182</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-120</b> / under <b>+120</b> &middot; serie NYM <b>5-6</b>, media 7.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:45 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/LAA.png" alt="LAA"></td><td class="l sp">R. Detmers</td><td class="r">13-29 <b>31%</b></td><td><b>+133</b><i class="sube">+0.5</i></td><td><b>+160</b><i>&mdash;</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BOS.png" alt="BOS"></td><td class="l sp">P. Sandoval</td><td class="g">21-13 <b>62%</b></td><td><b>-135</b><i>&mdash;</i></td><td><b>+130</b><i>&mdash;</i></td><td><b>+167</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>-102</b> / under <b>+102</b> &middot; serie LAA <b>0-4</b>, media 8.8 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:05 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/COL.png" alt="COL"></td><td class="l sp">G. Hughes</td><td class="r">16-33 <b>33%</b></td><td><b>+308</b><i>&mdash;</i></td><td><b>+365</b><i>&mdash;</i></td><td><b>+506</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/NYY.png" alt="NYY"></td><td class="l sp">C. Schlittler</td><td>24-23 <b>51%</b></td><td><b>-308</b><i>&mdash;</i></td><td><b>-167</b><i class="baja">-1.0</i></td><td><b>-135</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-106</b> / under <b>+106</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:15 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TB.png" alt="TB"></td><td class="l sp">F. Peralta</td><td>29-22 <b>57%</b></td><td><b>+106</b><i>&mdash;</i></td><td><b>+138</b><i class="sube">+0.5</i></td><td><b>+174</b><i>&mdash;</i></td><td><b>-127</b><i>&mdash;</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/ATL.png" alt="ATL"></td><td class="l sp">A. Smith-Shawver</td><td class="g">34-14 <b>71%</b></td><td><b>-106</b><i class="baja">-1.0</i></td><td><b>+147</b><i class="baja">-0.5</i></td><td><b>+199</b><i>&mdash;</i></td><td><b>-122</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+106</b> / under <b>-106</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/AZ.png" alt="AZ"></td><td class="l sp">C. Burnes</td><td>23-31 <b>43%</b></td><td><b>-111</b><i class="sube">+0.5</i></td><td><b>+135</b><i>&mdash;</i></td><td><b>+147</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/KC.png" alt="KC"></td><td class="l sp">M. Wacha</td><td>31-25 <b>55%</b></td><td><b>+106</b><i>&mdash;</i></td><td><b>+138</b><i>&mdash;</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 9 &middot; over <b>-141</b> / under <b>+141</b> &middot; serie AZ <b>1-0</b>, media 9.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/PIT.png" alt="PIT"></td><td class="l sp">B. Chandler</td><td>25-22 <b>53%</b></td><td><b>+130</b><i>&mdash;</i></td><td><b>+182</b><i>&mdash;</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/CWS.png" alt="CWS"></td><td class="l sp">S. Burke</td><td class="g">28-17 <b>62%</b></td><td><b>-130</b><i class="baja">-1.0</i></td><td><b>+111</b><i>&mdash;</i></td><td><b>+160</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+111</b> / under <b>-111</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/CHC.png" alt="CHC"></td><td class="l sp">D. Peterson</td><td>31-23 <b>57%</b></td><td><b>+190</b><i class="sube">+1.0</i></td><td><b>+277</b><i>&mdash;</i></td><td><b>+326</b><i>&mdash;</i></td><td><b>-120</b><i class="sube">+0.5</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/MIL.png" alt="MIL"></td><td class="l sp">J. Misiorowski</td><td class="g">31-14 <b>69%</b></td><td><b>-199</b><i class="sube">+1.0</i></td><td><b>-130</b><i>&mdash;</i></td><td><b>+113</b><i class="sube">+0.5</i></td><td><b>+122</b><i class="baja">-0.5</i></td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>+111</b> / under <b>-111</b> &middot; serie CHC <b>4-7</b>, media 9.6 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td class="l sp">R. Cornelio</td><td class="r">16-27 <b>37%</b></td><td><b>+167</b><i class="sube">+1.0</i></td><td><b>+194</b><i class="baja">-0.5</i></td><td><b>+277</b><i>&mdash;</i></td><td><b>+120</b><i>&mdash;</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/SD.png" alt="SD"></td><td class="l sp">C. Mize</td><td class="g">35-21 <b>62%</b></td><td><b>-167</b><i>&mdash;</i></td><td><b>+106</b><i class="baja">-0.5</i></td><td><b>+130</b><i>&mdash;</i></td><td><b>+113</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-111</b> / under <b>+111</b> &middot; serie WSH <b>2-2</b>, media 9.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TEX.png" alt="TEX"></td><td class="l sp">&mdash;</td><td>&mdash;</td><td><b>+125</b><i class="baja">-0.5</i></td><td><b>+167</b><i class="baja">-0.5</i></td><td><b>+208</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SEA.png" alt="SEA"></td><td class="l sp">&mdash;</td><td>&mdash;</td><td><b>-125</b><i class="sube">+1.0</i></td><td><b>+108</b><i class="sube">+1.5</i></td><td><b>+167</b><i class="sube">+0.5</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-115</b> / under <b>+115</b> &middot; serie TEX <b>7-3</b>, media 7.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="l sp">J. Soriano</td><td>23-30 <b>43%</b></td><td><b>-167</b><i>&mdash;</i></td><td><b>-106</b><i>&mdash;</i></td><td><b>-102</b><i>&mdash;</i></td><td><b>+106</b><i>&mdash;</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/ATH.png" alt="ATH"></td><td class="l sp">J. Perkins</td><td class="r">14-30 <b>32%</b></td><td><b>+167</b><i>&mdash;</i></td><td><b>+199</b><i>&mdash;</i></td><td><b>+326</b><i>&mdash;</i></td><td><b>-117</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 9.5 &middot; over <b>+111</b> / under <b>-111</b> &middot; serie TOR <b>3-1</b>, media 9.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:45 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/STL.png" alt="STL"></td><td class="l sp">Q. Mathews</td><td>26-27 <b>49%</b></td><td><b>-102</b><i class="sube">+1.0</i></td><td><b>+144</b><i class="sube">+0.5</i></td><td><b>+174</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="l sp">L. Roupp</td><td class="r">17-25 <b>40%</b></td><td><b>-102</b><i>&mdash;</i></td><td><b>+141</b><i>&mdash;</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>-106</b> / under <b>+106</b> &middot; serie STL <b>0-1</b>, media 9.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">9:10 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/CIN.png" alt="CIN"></td><td class="l sp">N. Lodolo</td><td>16-19 <b>46%</b></td><td><b>+292</b><i>&mdash;</i></td><td><b>+344</b><i>&mdash;</i></td><td><b>+471</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/LAD.png" alt="LAD"></td><td class="l sp">T. Skubal</td><td>16-11 <b>59%</b></td><td><b>-292</b><i>&mdash;</i></td><td><b>-163</b><i class="baja">-0.5</i></td><td><b>-130</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-115</b> / under <b>+115</b> &middot; serie CIN <b>0-1</b>, media 9.0 c.</div></div>
+  <div class="jc3"><div class="jch3"><span class="hh mono">5:35 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/CLE.png" alt="CLE"></td><td class="l sp">T. Bibee</td><td>27-23 <b>54%</b></td><td><b>+111</b><i class="sube">+1.0</i></td><td><b>+150</b><i class="sube">+0.5</i></td><td><b>+182</b><i class="sube">+1.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="l sp">B. Young</td><td>23-25 <b>48%</b></td><td><b>-111</b><i class="baja">-1.0</i></td><td><b>+125</b><i>&mdash;</i></td><td><b>+190</b><i class="baja">-2.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+106</b> / under <b>-106</b> &middot; serie CLE <b>3-2</b>, media 8.8 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td class="l sp">D. Kremer</td><td class="r">20-28 <b>42%</b></td><td><b>+130</b><i>&mdash;</i></td><td><b>+174</b><i class="sube">+2.0</i></td><td><b>+208</b><i class="sube">+0.5</i></td><td><b>-108</b><i>&mdash;</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td class="l sp">D. Anderson</td><td>26-20 <b>57%</b></td><td><b>-125</b><i class="baja">-1.0</i></td><td><b>+111</b><i class="baja">-1.0</i></td><td><b>+167</b><i>&mdash;</i></td><td><b>+127</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+111</b> / under <b>-111</b> &middot; serie MIN <b>7-4</b>, media 11.3 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/HOU.png" alt="HOU"></td><td class="l sp">H. Wesneski</td><td>26-22 <b>54%</b></td><td><b>+127</b><i class="sube">+0.5</i></td><td><b>+163</b><i class="sube">+0.5</i></td><td><b>+208</b><i>&mdash;</i></td><td><b>-117</b><i class="sube">+0.5</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/PHI.png" alt="PHI"></td><td class="l sp">A. Painter</td><td class="g">27-17 <b>61%</b></td><td><b>-130</b><i>&mdash;</i></td><td><b>+117</b><i>&mdash;</i></td><td><b>+153</b><i>&mdash;</i></td><td><b>+111</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>-106</b> / under <b>+106</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/NYM.png" alt="NYM"></td><td class="l sp">S. Manaea</td><td>27-26 <b>51%</b></td><td><b>+115</b><i class="sube">+1.0</i></td><td><b>+167</b><i class="sube">+1.0</i></td><td><b>+190</b><i class="sube">+1.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/MIA.png" alt="MIA"></td><td class="l sp">S. Alcantara</td><td class="r">16-24 <b>40%</b></td><td><b>-115</b><i class="baja">-1.0</i></td><td><b>+122</b><i class="baja">-1.0</i></td><td><b>+182</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-125</b> / under <b>+125</b> &middot; serie NYM <b>5-6</b>, media 7.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">5:45 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/LAA.png" alt="LAA"></td><td class="l sp">R. Detmers</td><td class="r">13-29 <b>31%</b></td><td><b>+135</b><i>&mdash;</i></td><td><b>+156</b><i class="sube">+0.5</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BOS.png" alt="BOS"></td><td class="l sp">P. Sandoval</td><td class="g">21-13 <b>62%</b></td><td><b>-135</b><i>&mdash;</i></td><td><b>+127</b><i class="sube">+0.5</i></td><td><b>+167</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>-102</b> / under <b>+102</b> &middot; serie LAA <b>0-4</b>, media 8.8 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:05 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/COL.png" alt="COL"></td><td class="l sp">G. Hughes</td><td class="r">16-33 <b>33%</b></td><td><b>+308</b><i>&mdash;</i></td><td><b>+344</b><i class="sube">+1.0</i></td><td><b>+506</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/NYY.png" alt="NYY"></td><td class="l sp">C. Schlittler</td><td>24-23 <b>51%</b></td><td><b>-308</b><i>&mdash;</i></td><td><b>-167</b><i class="baja">-1.0</i></td><td><b>-135</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-106</b> / under <b>+106</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:15 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TB.png" alt="TB"></td><td class="l sp">F. Peralta</td><td>29-22 <b>57%</b></td><td><b>+106</b><i>&mdash;</i></td><td><b>+138</b><i class="sube">+0.5</i></td><td><b>+174</b><i>&mdash;</i></td><td><b>-130</b><i class="sube">+0.5</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/ATL.png" alt="ATL"></td><td class="l sp">A. Smith-Shawver</td><td class="g">34-14 <b>71%</b></td><td><b>-106</b><i class="baja">-1.0</i></td><td><b>+141</b><i class="sube">+0.5</i></td><td><b>+199</b><i>&mdash;</i></td><td><b>-130</b><i class="sube">+1.5</i></td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>-102</b> / under <b>+102</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/AZ.png" alt="AZ"></td><td class="l sp">C. Burnes</td><td>23-31 <b>43%</b></td><td><b>-111</b><i class="sube">+0.5</i></td><td><b>+133</b><i class="sube">+0.5</i></td><td><b>+147</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/KC.png" alt="KC"></td><td class="l sp">M. Wacha</td><td>31-25 <b>55%</b></td><td><b>+111</b><i class="baja">-1.0</i></td><td><b>+138</b><i>&mdash;</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 9 &middot; over <b>-141</b> / under <b>+141</b> &middot; serie AZ <b>1-0</b>, media 9.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/PIT.png" alt="PIT"></td><td class="l sp">B. Chandler</td><td>25-22 <b>53%</b></td><td><b>+130</b><i>&mdash;</i></td><td><b>+182</b><i>&mdash;</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/CWS.png" alt="CWS"></td><td class="l sp">S. Burke</td><td class="g">28-17 <b>62%</b></td><td><b>-130</b><i class="baja">-1.0</i></td><td><b>+108</b><i class="sube">+0.5</i></td><td><b>+160</b><i class="baja">-1.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8.5 &middot; over <b>+111</b> / under <b>-111</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono">6:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/CHC.png" alt="CHC"></td><td class="l sp">D. Peterson</td><td>31-23 <b>57%</b></td><td><b>+190</b><i class="sube">+1.0</i></td><td><b>+277</b><i>&mdash;</i></td><td><b>+326</b><i>&mdash;</i></td><td><b>-120</b><i class="sube">+0.5</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/MIL.png" alt="MIL"></td><td class="l sp">J. Misiorowski</td><td class="g">31-14 <b>69%</b></td><td><b>-199</b><i class="sube">+1.0</i></td><td><b>-130</b><i>&mdash;</i></td><td><b>+111</b><i class="sube">+1.0</i></td><td><b>+125</b><i class="baja">-1.0</i></td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>+111</b> / under <b>-111</b> &middot; serie CHC <b>4-7</b>, media 9.6 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td class="l sp">R. Cornelio</td><td class="r">16-27 <b>37%</b></td><td><b>+167</b><i class="sube">+1.0</i></td><td><b>+194</b><i class="baja">-0.5</i></td><td><b>+277</b><i>&mdash;</i></td><td><b>+115</b><i class="sube">+1.0</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/SD.png" alt="SD"></td><td class="l sp">C. Mize</td><td class="g">35-21 <b>62%</b></td><td><b>-174</b><i class="sube">+1.0</i></td><td><b>+106</b><i class="baja">-0.5</i></td><td><b>+130</b><i>&mdash;</i></td><td><b>+113</b><i>&mdash;</i></td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-115</b> / under <b>+115</b> &middot; serie WSH <b>2-2</b>, media 9.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TEX.png" alt="TEX"></td><td class="l sp">&mdash;</td><td>&mdash;</td><td><b>+125</b><i class="baja">-0.5</i></td><td><b>+170</b><i class="baja">-1.0</i></td><td><b>+208</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SEA.png" alt="SEA"></td><td class="l sp">&mdash;</td><td>&mdash;</td><td><b>-125</b><i class="sube">+1.0</i></td><td><b>+108</b><i class="sube">+1.5</i></td><td><b>+167</b><i class="sube">+0.5</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-120</b> / under <b>+120</b> &middot; serie TEX <b>7-3</b>, media 7.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:40 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="l sp">J. Soriano</td><td>23-30 <b>43%</b></td><td><b>-167</b><i>&mdash;</i></td><td><b>-106</b><i>&mdash;</i></td><td><b>-106</b><i class="sube">+1.0</i></td><td><b>+108</b><i class="baja">-0.5</i></td></tr><tr><td class="eq"><img class="lgc" src="logos/ATH.png" alt="ATH"></td><td class="l sp">J. Perkins</td><td class="r">14-30 <b>32%</b></td><td><b>+167</b><i>&mdash;</i></td><td><b>+194</b><i class="sube">+0.5</i></td><td><b>+326</b><i>&mdash;</i></td><td><b>-115</b><i class="baja">-0.5</i></td></tr></tbody></table></div><div class="pie2">Total 9.5 &middot; over <b>+106</b> / under <b>-106</b> &middot; serie TOR <b>3-1</b>, media 9.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">8:45 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/STL.png" alt="STL"></td><td class="l sp">Q. Mathews</td><td>26-27 <b>49%</b></td><td><b>-102</b><i class="sube">+1.0</i></td><td><b>+144</b><i class="sube">+0.5</i></td><td><b>+167</b><i class="sube">+1.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="l sp">L. Roupp</td><td class="r">17-25 <b>40%</b></td><td><b>+102</b><i class="baja">-1.0</i></td><td><b>+138</b><i class="sube">+0.5</i></td><td><b>+217</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>-106</b> / under <b>+106</b> &middot; serie STL <b>0-1</b>, media 9.0 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono">9:10 PM CT</span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/CIN.png" alt="CIN"></td><td class="l sp">N. Lodolo</td><td>16-19 <b>46%</b></td><td><b>+277</b><i class="sube">+1.0</i></td><td><b>+344</b><i>&mdash;</i></td><td><b>+471</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/LAD.png" alt="LAD"></td><td class="l sp">T. Skubal</td><td>16-11 <b>59%</b></td><td><b>-277</b><i class="baja">-1.0</i></td><td><b>-160</b><i class="baja">-1.0</i></td><td><b>-130</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-115</b> / under <b>+115</b> &middot; serie CIN <b>0-1</b>, media 9.0 c.</div></div>
 
   <div class="sep"><span class="n">CAPA 3</span><span class="ln"></span></div>
   <h2>La temporada, entera</h2>
@@ -291,5 +729,4 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
     Datos oficiales de MLB · precios y movimiento de Kalshi<br>
     Todo real y verificable — ninguna cifra estimada.
   </footer>
-</div>
-</div></body></html>
+</div></section></main><nav><a href="index.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Picks</span></a><a href="lab.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>LAB</span></a><a href="trends.html" class="nav-i on" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Trends</span></a><a href="historial.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Historial</span></a></nav></div><!-- generado 09/08/2026 11:55 AM CT --></body></html>
