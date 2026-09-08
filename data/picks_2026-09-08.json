@@ -1,0 +1,174 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "HOU/PHI u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": -105,
+      "prob_estimada": 53.5,
+      "razon": "Las dos ofensivas llegan heladas: HOU 2.8 carreras/juego y .627 ops, PHI 3.0 y .632 en la semana, con 3.4 carreras a favor cada una en los ultimos 10. Ademas los dos bullpens son de los mejores del dia (3.66 con Hader, 3.35 con Duran), que es donde suelen morir los unders. Tendencia clara: over 8.5 solo 2/10 y 1/10.",
+      "equipos": [
+        "HOU",
+        "PHI"
+      ],
+      "destacado": null,
+      "hora": "5:40 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "forma",
+        "pitcheo"
+      ],
+      "contra": "Painter (5.55 ERA) puede desmoronarse temprano en un parque corto como Citizens Bank y llevarse el under en tres entradas.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      },
+      "cuota_apertura_ref": -105,
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 48.92,
+        "prob_implicita": 51.22,
+        "cuota": -105,
+        "cuota_justa_mercado": 104,
+        "ev_pct": 4.45,
+        "precio_minimo": -109,
+        "precio_publicado": -109,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 4.58,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.45% · no tomar peor de -109",
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "ATL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -114,
+      "prob_estimada": 54.0,
+      "razon": "Juego parejo donde la diferencia real esta en el cierre: bullpen de ATL 2.93 con Iglesias frente a un Peralta de 4.96 que obliga a TB a usar relevo temprano. ATL batea .735 ops vs derechos y llega con 4.3 carreras/juego, suficiente para sostener el ML en casa a precio casi de moneda.",
+      "equipos": [
+        "TB",
+        "ATL"
+      ],
+      "destacado": "ATL",
+      "hora": "6:15 PM CT",
+      "capas": [
+        "bullpen",
+        "modelo",
+        "ofensiva"
+      ],
+      "contra": "Smith-Shawver abre con 7.13 de ERA y puede regalar el juego antes de que el bullpen entre en escena.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "ATL",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -117,
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 51.34,
+        "prob_implicita": 53.27,
+        "cuota": -114,
+        "cuota_justa_mercado": -106,
+        "ev_pct": 1.37,
+        "precio_minimo": -110,
+        "precio_publicado": -110,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 2.66,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.37% por debajo del minimo exigido (2.8%)",
+        "mejor_precio": {
+          "cuota": -110,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "KC ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 102,
+      "prob_estimada": 50.0,
+      "razon": "AZ llega con la peor ofensiva activa del dia (.571 ops y 2.5 carreras/juego en la semana) mientras KC batea .741 ops con 4.4 carreras/juego en casa y Wacha sostiene 3.36 de ERA. A precio de moneda en un juego que el mercado valora casi igualado, el local es el lado barato.",
+      "equipos": [
+        "AZ",
+        "KC"
+      ],
+      "destacado": "KC",
+      "hora": "6:40 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "modelo"
+      ],
+      "contra": "Burnes puede dominar de entrada y el bullpen de KC (4.75, cerrador en 5.93) es capaz de tirar cualquier ventaja al final.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "KC",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -101,
+      "valor": {
+        "prob_estimada": 50.0,
+        "prob_justa": 47.58,
+        "prob_implicita": 49.5,
+        "cuota": 102,
+        "cuota_justa_mercado": 110,
+        "ev_pct": 1.0,
+        "precio_minimo": 104,
+        "precio_publicado": 104,
+        "precio_equilibrio": 100,
+        "discrepancia_pp": 2.42,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.00% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": 106,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 0.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "CLE/BAL under: el mismo mercado en la misma serie ya cayo ayer (4-6) y el bullpen de BAL (4.00) no da garantia; anti-inercia.",
+    "PIT ML +124: el precio esta en la banda de perros largos que viene rindiendo mal, sin ventaja suficiente sobre la justa.",
+    "COL ML y CIN ML: cuotas fuera de rango y el modelo marca alerta por discrepancia de 15-18 pp, senal de que el equivocado es el modelo.",
+    "CHC ML/F5: MIL con Misiorowski (1.97) y precio del perro con edge en alerta de 10.6 pp.",
+    "LAA team total u3.5 a -120: la lectura es correcta pero el precio exige mas margen del que tengo."
+  ],
+  "autopsia": "Del ultimo cierre, MIN y CHC fueron decisiones defendibles que cayeron por una carrera cada una: varianza, no proceso. El fallo real fue CLE/BAL u7.5, donde di un under con el bullpen de BAL a 4.00 sin exigir las cuatro comprobaciones; hoy solo doy under cuando ambos bullpenes son solidos, como en HOU/PHI. Tambien corrijo el precio: los tres picks de hoy estan en banda pareja (-114 a +102), no en favoritos caros.",
+  "resumen": "Dia sin favoritos caros: la mejor jugada es el under en Filadelfia, donde dos ofensivas apagadas se cruzan con dos de los mejores bullpenes del calendario. Completo con Atlanta en casa a precio de moneda por su ventaja en el relevo y con Kansas City aprovechando que Arizona llega con el bate mas frio del dia.",
+  "valor_dia": {
+    "apostables": 1,
+    "seguimiento": 2,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 1.0,
+    "ev_min": 2.0
+  }
+}
