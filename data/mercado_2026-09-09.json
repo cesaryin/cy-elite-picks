@@ -2354,6 +2354,47 @@
      "inicio_utc": "2026-09-10T02:10Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-09T23:22:12+00:00",
+   "juegos": {
+    "CHC@MIL": {
+     "ml": {
+      "CHC": 113,
+      "MIL": -136
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -110,
+      "under": -110
+     },
+     "inicio_utc": "2026-09-09T23:40Z"
+    },
+    "PIT@CWS": {
+     "ml": {
+      "PIT": 109,
+      "CWS": -131
+     },
+     "total": {
+      "linea": 9.0,
+      "over": 100,
+      "under": -120
+     },
+     "inicio_utc": "2026-09-09T23:40Z"
+    },
+    "CIN@LAD": {
+     "ml": {
+      "CIN": 232,
+      "LAD": -291
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -118,
+      "under": -102
+     },
+     "inicio_utc": "2026-09-10T02:10Z"
+    }
+   }
   }
  ]
 }
