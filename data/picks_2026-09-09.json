@@ -1,0 +1,200 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CLE/BAL u8.5",
+      "deporte": "MLB",
+      "tipo": "u8.5",
+      "cuota": 100,
+      "prob_estimada": 53.0,
+      "razon": "Las dos ofensivas estan frias a la vez: CLE 3.8 c/pj con .660 ops y BAL 3.1 c/pj con .612 ops en la ultima semana, y ambos bullpens son fiables (3.20 y 3.93, con cerradores de 2.22 y 3.83). El mercado ya bajo el numero de 9.0 a 8.5 y el precio queda pareja.",
+      "equipos": [
+        "CLE",
+        "BAL"
+      ],
+      "destacado": null,
+      "hora": "5:35 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "pitcheo",
+        "mercado"
+      ],
+      "contra": "Camden Yards es un parque corto y cualquier tanda de jonrones rompe el under, como paso ayer mismo en esta serie con 10 carreras.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.5
+      },
+      "cuota_apertura_ref": 100,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 47.83,
+        "prob_implicita": 50.0,
+        "cuota": 100,
+        "cuota_justa_mercado": 109,
+        "ev_pct": 6.0,
+        "precio_minimo": -108,
+        "precio_publicado": -108,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 5.17,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +6.00% · no tomar peor de -108",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": -0.5
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "TEX ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 129,
+      "prob_estimada": 46.0,
+      "razon": "Texas llega con el bate encendido (5.8 c/pj, .803 ops en 6 juegos, 13 HR) y batea .767 ops contra zurdos, justo lo que abre Seattle con un novato de 5.40 ERA y sin muestra. Del otro lado, SEA es el peor lineup del dia contra zurdos (.629 ops) y su bullpen (4.38) cede al de TEX (3.42, Latz 1.85).",
+      "equipos": [
+        "TEX",
+        "SEA"
+      ],
+      "destacado": "TEX",
+      "hora": "3:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "matchup",
+        "bullpen",
+        "forma"
+      ],
+      "contra": "T-Mobile Park suprime carreras y Bradford apenas poncha (11.9% K), asi que un dia de contacto local puede voltear el juego temprano.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TEX",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 129,
+      "valor": {
+        "prob_estimada": 46.0,
+        "prob_justa": 41.99,
+        "prob_implicita": 43.67,
+        "cuota": 129,
+        "cuota_justa_mercado": 138,
+        "ev_pct": 5.34,
+        "precio_minimo": 122,
+        "precio_publicado": 122,
+        "precio_equilibrio": 118,
+        "discrepancia_pp": 4.01,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.34% · no tomar peor de +122",
+        "mejor_precio": {
+          "cuota": 135,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "PIT ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 129,
+      "prob_estimada": 45.5,
+      "razon": "Juego mas parejo de lo que refleja el precio: Pittsburgh viene 7-3 con 4.6 anotadas por 3.8 recibidas y batea .757 ops contra derechos, la mano de Martin. El modelo del lab le da 5.1 pp de ventaja dentro de su banda fiable. Jugada de menor respaldo del dia y lo digo claro.",
+      "equipos": [
+        "PIT",
+        "CWS"
+      ],
+      "destacado": "PIT",
+      "hora": "6:40 PM CT",
+      "capas": [
+        "forma",
+        "ofensiva",
+        "modelo"
+      ],
+      "contra": "El lineup de PIT solo produce 3.5 c/pj en la semana y el bullpen local (3.37, Taylor 2.16) cierra mejor que el visitante.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PIT",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 129,
+      "valor": {
+        "prob_estimada": 45.5,
+        "prob_justa": 42.12,
+        "prob_implicita": 43.67,
+        "cuota": 129,
+        "cuota_justa_mercado": 137,
+        "ev_pct": 4.2,
+        "precio_minimo": 125,
+        "precio_publicado": 125,
+        "precio_equilibrio": 120,
+        "discrepancia_pp": 3.38,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.20% · no tomar peor de +125",
+        "mejor_precio": {
+          "cuota": 133,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 1.0
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "CLE/BAL u8.5",
+        "deporte": "MLB",
+        "destacado": null,
+        "cuota": 100
+      },
+      {
+        "pick": "TEX ML",
+        "deporte": "MLB",
+        "destacado": "TEX",
+        "cuota": 129
+      }
+    ],
+    "cuota_combinada": 358,
+    "prob_combinada": 24.38,
+    "ev_pct": 11.66,
+    "nota": "Las dos jugadas del dia con mas valor medido, combinadas. Cada pata pasa el filtro por si sola — es la unica forma de que un parlay gane a la larga. No cuenta en el balance. EV del combinado: +11.7%."
+  },
+  "descartes": [
+    "HOU/PHI u8.0: las dos ofensivas frias y ambos bullpens elite invitaban, pero Citizens Bank es parque corto y ayer el mismo under en esta serie acabo en 11 carreras; no repito sin las cuatro comprobaciones limpias.",
+    "PIT/CWS u8.5: ofensivas frias pero el mercado subio la linea de 8.0 a 8.5 (senal en contra) y Rate Field es corto.",
+    "MIN ML +112: el modelo le da 3.3 pp validos, pero el lineup viene helado (.620 ops, 3.5 c/pj) y SYS-004 lo prohibe.",
+    "SF ML +108: precio atractivo y Tidwell es flojo, pero el edge del modelo trae alerta y la ofensiva local solo produce 4.4 c/pj.",
+    "TB ML +106: Atlanta no tiene abridor confirmado en los datos, sin esa capa no se puede valorar.",
+    "LAA +178 y COL +203: perros de precio alto sin ofensiva funcional (2.8 c/pj LAA), justo la banda que peor rinde.",
+    "AZ/KC over 8.5: Gallen con 6.34 ERA apunta a carreras, pero el bate de AZ esta en .610 ops y el precio -120 exige mas ventaja de la que veo."
+  ],
+  "autopsia": "El cierre del 8-sep dejo dos cosas distintas. HOU/PHI u8.5 fue decision razonable que murio por una carrera (6-5, 11 totales), varianza pura; pero ATL ML cayendo 7-1 y KC ML a +102 fueron fallo de proceso: entre en dos lineups sin comprobar si el bate acompañaba y pague favoritismo. Hoy corrijo el criterio, no el mercado: exijo ofensiva medida en ambos lados del total y evito precios cargados, priorizando la banda pareja donde el sistema si gana.",
+  "resumen": "Dia sin favoritos claros que valgan su precio, asi que el valor esta en juegos parejos. Lo mejor es el under de Cleveland-Baltimore: dos ofensivas por debajo de 4 carreras por juego, bullpens solidos y el mercado bajando el numero de 9 a 8.5. Detras, Texas aprovechando un zurdo novato de Seattle con el bate caliente, y Pittsburgh como perro barato en un juego mas parejo de lo que marca la linea. Los grandes favoritos (LAD, NYY, BOS) quedan fuera: el mercado ya cobra por ellos.",
+  "valor_dia": {
+    "apostables": 3,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 3.0,
+    "ev_min": 2.0
+  }
+}

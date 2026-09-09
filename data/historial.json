@@ -4082,5 +4082,97 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-08",
+    "pick": "HOU/PHI u8.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -105,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "HOU 6-5 PHI",
+    "veredicto": "apostable",
+    "prob_estimada": 53.5,
+    "prob_justa": 48.92,
+    "ev_pct": 4.45,
+    "precio_publicado": -109,
+    "discrepancia_pp": 4.58,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma",
+      "pitcheo"
+    ],
+    "contra": "Painter (5.55 ERA) puede desmoronarse temprano en un parque corto como Citizens Bank y llevarse el under en tres entradas.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -2.7,
+    "prob_cierre": 48.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "precio"
+  },
+  {
+    "fecha": "2026-09-08",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 7-1 ATL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.0,
+    "prob_justa": 51.34,
+    "ev_pct": 1.37,
+    "precio_publicado": -110,
+    "discrepancia_pp": 2.66,
+    "capas": [
+      "bullpen",
+      "modelo",
+      "ofensiva"
+    ],
+    "contra": "Smith-Shawver abre con 7.13 de ERA y puede regalar el juego antes de que el bullpen entre en escena.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "clv": -1.8,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "proceso"
+  },
+  {
+    "fecha": "2026-09-08",
+    "pick": "KC ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 102,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "AZ 5-3 KC",
+    "veredicto": "seguimiento",
+    "prob_estimada": 50.0,
+    "prob_justa": 47.58,
+    "ev_pct": 1.0,
+    "precio_publicado": 104,
+    "discrepancia_pp": 2.42,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "modelo"
+    ],
+    "contra": "Burnes puede dominar de entrada y el bullpen de KC (4.75, cerrador en 5.93) es capaz de tirar cualquier ventaja al final.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": 2.0,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "proceso"
   }
 ]
