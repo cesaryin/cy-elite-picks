@@ -93,16 +93,16 @@
   },
   "inicio_utc": "2026-09-10T23:05Z",
   "visto": "2026-09-10T22:40:12+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PIT@CWS": {
   "ml": {
-   "PIT": -105,
+   "PIT": -104,
    "CWS": -115
   },
   "total": {
    "linea": 7.5,
-   "over": -119,
+   "over": -118,
    "under": -102
   },
   "spread": {
@@ -116,7 +116,7 @@
    }
   },
   "inicio_utc": "2026-09-10T23:40Z",
-  "visto": "2026-09-10T22:40:12+00:00",
+  "visto": "2026-09-10T23:15:08+00:00",
   "cerrado": false
  }
 }
