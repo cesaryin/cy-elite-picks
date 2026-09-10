@@ -27,7 +27,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": 105,
+      "cuota_apertura_ref": -107,
       "valor": {
         "prob_estimada": 50.0,
         "prob_justa": 46.3,
@@ -35,6 +35,7 @@
         "cuota": 108,
         "cuota_justa_mercado": 116,
         "ev_pct": 4.0,
+        "ev_kalshi_pct": 0.37,
         "precio_minimo": 104,
         "precio_publicado": 104,
         "precio_equilibrio": 100,
@@ -48,8 +49,7 @@
         },
         "alcanzable": true,
         "contexto": {
-          "mercado_movido": true,
-          "fuerza": "MEDIA"
+          "mercado_movido": false
         }
       },
       "unidades": 1.0
@@ -88,6 +88,7 @@
         "cuota": -101,
         "cuota_justa_mercado": 107,
         "ev_pct": 2.49,
+        "ev_kalshi_pct": -0.99,
         "precio_minimo": -101,
         "precio_publicado": -101,
         "precio_equilibrio": -106,
@@ -132,7 +133,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": -112,
+      "cuota_apertura_ref": -110,
       "valor": {
         "prob_estimada": 52.0,
         "prob_justa": 50.11,
@@ -140,6 +141,7 @@
         "cuota": -109,
         "cuota_justa_mercado": -100,
         "ev_pct": -0.29,
+        "ev_kalshi_pct": -3.64,
         "precio_minimo": -102,
         "precio_publicado": -102,
         "precio_equilibrio": -108,
@@ -165,12 +167,20 @@
         "pick": "TEX ML",
         "deporte": "MLB",
         "destacado": "TEX",
+        "equipos": [
+          "TEX",
+          "SEA"
+        ],
         "cuota": 108
       },
       {
         "pick": "TB ML",
         "deporte": "MLB",
         "destacado": "TB",
+        "equipos": [
+          "TB",
+          "ATL"
+        ],
         "cuota": -101
       }
     ],

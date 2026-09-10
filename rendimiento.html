@@ -103,7 +103,16 @@ header .fecha{color:#8b949e;font-size:14px;margin-top:4px}
 .cmp-p{display:flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.35;min-width:0}
 .cmp-who{flex:1;min-width:0;display:flex;align-items:baseline;gap:5px}
 .cmp-nm{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cmp-p.win .cmp-nm{color:#f0c75e}
+/* SIN COLOR EN LA FILA (10-sep-2026, peticion de Cesar): "noto demasiados
+   colores, dejamos color neutro las letras". Antes la ERA iba tenida por su
+   valor (verde/ambar/rojo) y el nombre del que gana el duelo en dorado; con
+   seis juegos en pantalla eso son doce numeros y seis nombres pidiendo
+   atencion a la vez, y el ojo deja de saber donde mirar.
+   EL UNICO COLOR QUE SE QUEDA es el del chip de ventaja (.cmp-v.alta), que ya
+   dice quien gana y cuanto. Con uno solo, no hay duda. La clase .win se
+   conserva --sigue marcando el lado con mejor pitcheo por si alguna vez hace
+   falta-- pero ya no pinta nada. */
+.cmp-p.win .cmp-nm{font-weight:800}
 .cmp-rec{flex-shrink:0;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
 .cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
 .cmp-er{width:34px;text-align:right;font-weight:800;font-size:12.5px;font-variant-numeric:tabular-nums}
@@ -215,7 +224,7 @@ pintarMes();hhint();
 </script><script>var hp=document.getElementById("histPanel");if(hp){hp.style.display="block";var ar=document.getElementById("histAr");if(ar)ar.textContent="▴";}</script>
 <footer>
 Apuesta con responsabilidad — ninguna jugada es segura; el sistema busca valor a largo plazo.<br>
-Actualizado: 09/10/2026 8:01 AM CT
+Actualizado: 09/10/2026 3:23 PM CT
 </footer>
 </div>
 </body>
