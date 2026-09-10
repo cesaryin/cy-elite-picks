@@ -86,48 +86,64 @@ header .fecha{color:#8b949e;font-size:14px;margin-top:4px}
 .hist-drow{display:flex;justify-content:space-between;font-size:11px;padding:4px 0;border-top:1px solid #21262d;gap:6px}
 .hist-drow span:first-child{font-weight:700}
 .hist-hint{color:#586069;font-size:11px;text-align:center;padding:20px 6px}
-/* ===== COMPARATIVA DE PITCHERS ===== */
+/* El CSS de .cmp-* se inyecta desde CSS_PITCHEO (arriba). */
+
 #cmp{margin:13px 0}
-.mut{color:#8b949e}
-/* La cabecera del acordeon en fila: el titulo a la izquierda y el contador
-   con la flecha a la DERECHA (peticion de Cesar, 31-ago). Antes iba todo
-   seguido detras del titulo y el "5 con valor" quedaba flotando en medio
-   de la barra, sin alinearse con nada. */
 .cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14.5px;cursor:pointer}
 .cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12px;color:#8b949e}
 .cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
-.aut-texto{padding:10px 6px;font-size:13px;line-height:1.6}
 .cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
-.cmp-h{display:flex;align-items:center;gap:9px;padding:10px 11px}
-.cmp-mt{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+/* LA REJILLA QUE SUJETA LAS COLUMNAS (10-sep-2026).
+   Antes esto era `display:flex` con `.cmp-mt{flex:1}` al lado de un chip de
+   `min-width:84px`. El chip crece con su texto --"SF · +2.5" mide 72px y
+   "WSH · +10.2" mide 90px, medido sobre la fuente real-- asi que cada juego
+   le dejaba a la parte de la izquierda un ancho DISTINTO, y las columnas de
+   ERA / BP / SV aparecian corridas unos pixeles de un juego a otro. Cesar lo
+   vio: "se han movido porque no tienen el mismo tamano".
+   Con grid, la primera pista es siempre `1fr` sobre un ancho fijo: la columna
+   del chip mide 96px pase lo que pase y los numeros caen SIEMPRE en el mismo
+   sitio. La cabecera usa el mismo hueco (.cmp-vsp) y el mismo gap. */
+.cmp-h{display:grid;grid-template-columns:1fr 96px;align-items:center;gap:9px;padding:10px 11px}
+.cmp-mt{min-width:0;display:flex;flex-direction:column;gap:3px}
 .cmp-p{display:flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.35;min-width:0}
 .cmp-who{flex:1;min-width:0;display:flex;align-items:baseline;gap:5px}
 .cmp-nm{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-/* SIN COLOR EN LA FILA (10-sep-2026, peticion de Cesar): "noto demasiados
-   colores, dejamos color neutro las letras". Antes la ERA iba tenida por su
-   valor (verde/ambar/rojo) y el nombre del que gana el duelo en dorado; con
-   seis juegos en pantalla eso son doce numeros y seis nombres pidiendo
-   atencion a la vez, y el ojo deja de saber donde mirar.
-   EL UNICO COLOR QUE SE QUEDA es el del chip de ventaja (.cmp-v.alta), que ya
-   dice quien gana y cuanto. Con uno solo, no hay duda. La clase .win se
-   conserva --sigue marcando el lado con mejor pitcheo por si alguna vez hace
-   falta-- pero ya no pinta nada. */
+/* SIN COLOR EN LA FILA (peticion de Cesar): "noto demasiados colores, dejamos
+   color neutro las letras". La ERA iba tenida por su valor y el nombre del
+   que gana el duelo en dorado; con seis juegos en pantalla son doce numeros y
+   seis nombres pidiendo atencion a la vez. EL UNICO COLOR QUE SE QUEDA es el
+   del chip de ventaja (.cmp-v.alta), que ya dice quien gana y cuanto.
+   La clase .win se conserva y marca al que gana el duelo solo con el grosor,
+   sin color. */
 .cmp-p.win .cmp-nm{font-weight:800}
 .cmp-rec{flex-shrink:0;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
 .cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
-.cmp-er{width:34px;text-align:right;font-weight:800;font-size:12.5px;font-variant-numeric:tabular-nums}
-.cmp-pen{width:32px;text-align:right;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
-.cmp-cl{width:26px;text-align:right;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+/* LAS TRES COLUMNAS, IGUALES (10-sep-2026). La ERA iba a 12.5px y en negrita
+   800 mientras BP y SV iban a 10.5px normales: se leia como si fueran tres
+   cosas de tres importancias distintas y ademas descuadraba la linea base.
+   Cesar: "los numeros de ERA estan en negrita y mas grande que los demas, que
+   quede todo igual". Mismo tamano, mismo grosor y mismo ancho de columna las
+   tres; la ERA conserva el gris claro porque es el dato del que va el bloque,
+   BP y SV van en gris apagado. */
+.cmp-er,.cmp-pen,.cmp-cl{width:32px;text-align:right;font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.cmp-er{color:#e6edf3}
+.cmp-pen,.cmp-cl{color:#8b949e}
 .cmp-lg{width:18px;height:18px;object-fit:contain;flex-shrink:0}
+/* El padding derecho es 12px y no 11px a proposito: la fila vive dentro de
+   .cmp-g, que tiene 1px de borde. 11 + 1 = 12, y asi las etiquetas caen justo
+   encima de sus numeros. */
 .cmp-hd{display:flex;justify-content:flex-end;gap:9px;padding:0 12px 5px}
 .cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:9px;font-weight:800;color:#6e7681;letter-spacing:.5px}
-.cmp-vsp{width:84px;flex-shrink:0}
-.cmp-v{flex-shrink:0;min-width:84px;text-align:right;font-size:10px;font-weight:900;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap}
+.cmp-vsp{width:96px;flex-shrink:0}
+.cmp-v{text-align:right;font-size:10px;font-weight:900;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .cmp-v.alta{background:#0f2e1a;color:#3fb950;border-color:#1f5c37}
 @media (max-width:409px){.cmp-cl,.cmp-hd .cmp-cl{display:none}}
 .cmp-d{display:none;padding:0 11px 9px;font-size:11.5px;color:#c9d1d9}
 .cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
 .cmp-note{font-size:10.5px;color:#6e7681;text-align:center;margin-top:4px}
+
+.mut{color:#8b949e}
+.aut-texto{padding:10px 6px;font-size:13px;line-height:1.6}
 footer{text-align:center;color:#6e7681;font-size:12px;padding:22px 0 6px;line-height:1.7}
 .lab-btn{display:inline-block;margin-top:10px;background:#161b22;border:1px solid #30363d;color:#58a6ff;font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:99px;text-decoration:none}
 .tr-btn{color:#f0c75e;margin-left:6px}
@@ -227,7 +243,7 @@ function cmpDx(i){var d=document.getElementById('cmpd'+i);d.style.display=d.styl
 </script><div id="aut" style="margin-top:10px"><button class="cmp-acc" onclick="autTog()">🧠 Cierre del 9 de septiembre de 2026 <span id="autAr">▾</span></button><div class="cmp-panel" id="autPanel" style="display:none"><div class="aut-texto">🧠 El cierre reciente deja una lectura clara: TOR/ATH o9.5 terminó 0-2, un over pedido a dos abridores en un parque grande sin que ninguna de las dos ofensivas viniera caliente — eso es fallo de proceso, no varianza. En cambio TB ML y SD Spread -1.5 salieron de matchups donde la ofensiva propia estaba funcionando, que es el patrón que sostiene los aciertos. Hoy corrijo el criterio de totales: no doy ninguno porque en los tres candidatos falta la señal de ofensivas frías o el precio ya está justo, y me quedo solo en moneylines parejos.</div></div></div><script>function autTog(){var p=document.getElementById('autPanel');var o=p.style.display!=='none';p.style.display=o?'none':'block';document.getElementById('autAr').textContent=o?'▾':'▴';}</script><details class="descartes"><summary>❌ Descartes del día</summary><ul><li>HOU/PHI: PHI -190 y HOU +161 quedan fuera de la banda de precio donde el sistema tiene ventaja; el spread HOU +1.5 a -132 tampoco entra.</li><li>COL/NYY: NYY -325 exige acertar 76%, imposible de estimar con honestidad; COL +265 no tiene ofensiva ni pitcheo para justificarlo.</li><li>TB/ATL u8.5: aunque ATL está helada, TB llega a 5.5 c/j, así que no se cumple el requisito de las dos ofensivas frías.</li><li>PIT/CWS u7.5: bullpens sanos pero ninguna ofensiva por debajo de 3,0 c/j y el mercado ya paga el under a precio justo; sin margen.</li><li>TEX/SEA o6.5 o u6.5: la línea de 6.5 con dos abridores de élite deja el total sin ventaja medible contra la línea justa.</li></ul></details><div class="clv-box"><div class="clv-top"><span class="clv-ti">📈 CLV — valor vs línea de cierre</span><span class="clv-n r">-1.4 pp</span></div><div class="clv-sub">44 de 198 picks cogieron mejor precio que el cierre (22%)</div><div class="clv-lec">el mercado cierra mejor que tu precio: revisar timing y selección</div></div>
 <footer>
 Apuesta con responsabilidad — ninguna jugada es segura; el sistema busca valor a largo plazo.<br>
-Actualizado: 09/10/2026 3:23 PM CT
+Actualizado: 09/10/2026 3:41 PM CT
 </footer>
 </div>
 </body>
