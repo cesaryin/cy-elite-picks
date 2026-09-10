@@ -4174,5 +4174,111 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-09",
+    "pick": "TOR/ATH o9.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 102,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TOR 0-2 ATH",
+    "veredicto": "apostable",
+    "prob_estimada": 52.5,
+    "prob_justa": 47.58,
+    "ev_pct": 6.05,
+    "precio_publicado": -106,
+    "discrepancia_pp": 4.92,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "parque",
+      "forma"
+    ],
+    "contra": "El bullpen de Toronto es elite (3.26 con Varland a 1.26) y puede congelar cinco entradas finales, dejando el juego en 8 o 9 carreras.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -2.0,
+    "prob_cierre": 47.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "precio"
+  },
+  {
+    "fecha": "2026-09-09",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 106,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.06,
+    "marcador": "TB 7-2 ATL",
+    "veredicto": "apostable",
+    "prob_estimada": 50.0,
+    "prob_justa": 46.72,
+    "ev_pct": 3.0,
+    "precio_publicado": 104,
+    "discrepancia_pp": 3.28,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "forma"
+    ],
+    "contra": "R. Lopez en casa con el bullpen de Iglesias detras puede sostener un juego de pocas carreras y ATL solo necesita un rally corto para llevarselo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "clv": -2.0,
+    "prob_cierre": 46.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-09",
+    "pick": "SD Spread -1.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 116,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.16,
+    "marcador": "WSH 2-9 SD",
+    "veredicto": "apostable",
+    "prob_estimada": 47.5,
+    "prob_justa": 44.47,
+    "ev_pct": 2.6,
+    "precio_publicado": 115,
+    "discrepancia_pp": 3.03,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "SD tambien batea frio (3.2 c/j, .636 ops) en un Petco amplio: gana 3-2 y el spread se cae aunque el ML entre.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "clv": -2.8,
+    "prob_cierre": 43.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-09",
+    "pick": "PARLAY: TOR/ATH o9.5 + TB ML",
+    "deporte": "Parlay",
+    "nivel": "parlay",
+    "cuota": 316,
+    "unidades": 0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "TB 7-2 ATL",
+    "patas_res": [
+      "P",
+      "W"
+    ]
   }
 ]

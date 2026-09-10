@@ -1,13 +1,13 @@
 {
  "TB@ATL": {
   "ml": {
-   "TB": 104,
-   "ATL": -125
+   "TB": -101,
+   "ATL": -120
   },
   "total": {
    "linea": 8.5,
-   "over": -103,
-   "under": -117
+   "over": -105,
+   "under": -114
   },
   "spread": {
    "TB": {
@@ -20,13 +20,13 @@
    }
   },
   "inicio_utc": "2026-09-10T16:15Z",
-  "visto": "2026-09-10T06:36:05+00:00",
+  "visto": "2026-09-10T13:01:51+00:00",
   "cerrado": false
  },
  "HOU@PHI": {
   "ml": {
-   "HOU": 157,
-   "PHI": -191
+   "HOU": 161,
+   "PHI": -196
   },
   "total": {
    "linea": 8.5,
@@ -36,69 +36,69 @@
   "spread": {
    "HOU": {
     "linea": 1.5,
-    "cuota": -136
+    "cuota": -132
    },
    "PHI": {
     "linea": -1.5,
-    "cuota": 113
+    "cuota": 110
    }
   },
   "inicio_utc": "2026-09-10T17:05Z",
-  "visto": "2026-09-10T06:36:05+00:00",
+  "visto": "2026-09-10T13:01:51+00:00",
   "cerrado": false
  },
  "TEX@SEA": {
   "ml": {
-   "TEX": 109,
-   "SEA": -131
+   "TEX": 105,
+   "SEA": -126
   },
   "total": {
    "linea": 6.5,
-   "over": -125,
-   "under": 104
+   "over": -114,
+   "under": -105
   },
   "spread": {
    "TEX": {
     "linea": 1.5,
-    "cuota": -207
+    "cuota": -217
    },
    "SEA": {
     "linea": -1.5,
-    "cuota": 169
+    "cuota": 177
    }
   },
   "inicio_utc": "2026-09-10T20:10Z",
-  "visto": "2026-09-10T06:36:05+00:00",
+  "visto": "2026-09-10T13:01:51+00:00",
   "cerrado": false
  },
  "COL@NYY": {
   "ml": {
-   "COL": 270,
-   "NYY": -344
+   "COL": 260,
+   "NYY": -330
   },
   "total": {
    "linea": 9.0,
-   "over": 100,
-   "under": -120
+   "over": 102,
+   "under": -123
   },
   "spread": {
    "COL": {
     "linea": 1.5,
-    "cuota": 123
+    "cuota": 119
    },
    "NYY": {
     "linea": -1.5,
-    "cuota": -149
+    "cuota": -144
    }
   },
   "inicio_utc": "2026-09-10T23:05Z",
-  "visto": "2026-09-10T06:36:05+00:00",
+  "visto": "2026-09-10T13:01:51+00:00",
   "cerrado": false
  },
  "PIT@CWS": {
   "ml": {
-   "PIT": -110,
-   "CWS": -110
+   "PIT": -108,
+   "CWS": -112
   },
   "total": {
    "linea": 7.5,
@@ -116,7 +116,7 @@
    }
   },
   "inicio_utc": "2026-09-10T23:40Z",
-  "visto": "2026-09-10T06:36:05+00:00",
+  "visto": "2026-09-10T13:01:51+00:00",
   "cerrado": false
  }
 }

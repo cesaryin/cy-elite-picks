@@ -1,0 +1,198 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TEX ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 108,
+      "prob_estimada": 50.0,
+      "razon": "El mercado paga a Texas como perro solo por la localía: J. deGrom llega con mejor FIP (3.45) y K-BB (23.4%) que L. Gilbert, y el bullpen de Seattle (4.36) es muy inferior al de Texas (3.39). Ofensiva de TEX en 5.8 c/j y ops .796 en la semana frente a SEA en 3.7 c/j y ops .641.",
+      "equipos": [
+        "TEX",
+        "SEA"
+      ],
+      "destacado": "TEX",
+      "hora": "3:10 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "TEX batea solo .699 de ops contra derechos y Gilbert es diestro con dominio en T-Mobile, un parque que apaga a los visitantes.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TEX",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 105,
+      "valor": {
+        "prob_estimada": 50.0,
+        "prob_justa": 46.3,
+        "prob_implicita": 48.08,
+        "cuota": 108,
+        "cuota_justa_mercado": 116,
+        "ev_pct": 4.0,
+        "precio_minimo": 104,
+        "precio_publicado": 104,
+        "precio_equilibrio": 100,
+        "discrepancia_pp": 3.7,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.00% · no tomar peor de +104",
+        "mejor_precio": {
+          "cuota": 112,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -101,
+      "prob_estimada": 51.5,
+      "razon": "Precio de moneda al aire para el equipo con mejor récord y con la ofensiva funcionando: TB llega a 5.5 c/j con ops .765 en la semana, mientras Atlanta está congelada en 2.5 c/j y ops .527 en sus últimos 6. N. Martinez sostiene 3.04 de ERA con control extremo (3.7% BB).",
+      "equipos": [
+        "TB",
+        "ATL"
+      ],
+      "destacado": "TB",
+      "hora": "11:15 AM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "forma"
+      ],
+      "contra": "M. Pérez es zurdo y TB cae a .687 de ops contra zurdos; además el FIP de Martinez (4.05) sugiere que su ERA está inflada por suerte.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -101,
+      "valor": {
+        "prob_estimada": 51.5,
+        "prob_justa": 48.24,
+        "prob_implicita": 50.25,
+        "cuota": -101,
+        "cuota_justa_mercado": 107,
+        "ev_pct": 2.49,
+        "precio_minimo": -101,
+        "precio_publicado": -101,
+        "precio_equilibrio": -106,
+        "discrepancia_pp": 3.26,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.49% · no tomar peor de -101",
+        "mejor_precio": {
+          "cuota": 102,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 1.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -109,
+      "prob_estimada": 52.0,
+      "razon": "Juego a precio parejo donde el cruce de manos favorece al local: H. Smith es zurdo y Pittsburgh cae a .685 de ops contra zurdos, con apenas 3.5 c/j en la semana. CWS batea .722 contra derechos y suma 9 HR en 6 juegos pese al mal récord reciente. Ventaja corta, pick de menor peso.",
+      "equipos": [
+        "PIT",
+        "CWS"
+      ],
+      "destacado": "CWS",
+      "hora": "6:40 PM CT",
+      "capas": [
+        "matchup",
+        "ofensiva",
+        "pitcheo"
+      ],
+      "contra": "Pittsburgh viene 8-2 con solo 3.6 carreras permitidas por juego y Smith tiene muy poca muestra (FIP 3.85 frente a un ERA irreal de 0.56).",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -112,
+      "valor": {
+        "prob_estimada": 52.0,
+        "prob_justa": 50.11,
+        "prob_implicita": 52.15,
+        "cuota": -109,
+        "cuota_justa_mercado": -100,
+        "ev_pct": -0.29,
+        "precio_minimo": -102,
+        "precio_publicado": -102,
+        "precio_equilibrio": -108,
+        "discrepancia_pp": 1.89,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.29% por debajo del minimo exigido (2.5%)",
+        "mejor_precio": {
+          "cuota": -106,
+          "casa": "betonlineag"
+        },
+        "alcanzable": false,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 0.0
+    }
+  ],
+  "parlay": {
+    "patas": [
+      {
+        "pick": "TEX ML",
+        "deporte": "MLB",
+        "destacado": "TEX",
+        "cuota": 108
+      },
+      {
+        "pick": "TB ML",
+        "deporte": "MLB",
+        "destacado": "TB",
+        "cuota": -101
+      }
+    ],
+    "cuota_combinada": 314,
+    "prob_combinada": 25.75,
+    "ev_pct": 6.59,
+    "nota": "Las dos jugadas del dia con mas valor medido, combinadas. Cada pata pasa el filtro por si sola — es la unica forma de que un parlay gane a la larga. No cuenta en el balance. EV del combinado: +6.6%."
+  },
+  "descartes": [
+    "HOU/PHI: PHI -190 y HOU +161 quedan fuera de la banda de precio donde el sistema tiene ventaja; el spread HOU +1.5 a -132 tampoco entra.",
+    "COL/NYY: NYY -325 exige acertar 76%, imposible de estimar con honestidad; COL +265 no tiene ofensiva ni pitcheo para justificarlo.",
+    "TB/ATL u8.5: aunque ATL está helada, TB llega a 5.5 c/j, así que no se cumple el requisito de las dos ofensivas frías.",
+    "PIT/CWS u7.5: bullpens sanos pero ninguna ofensiva por debajo de 3,0 c/j y el mercado ya paga el under a precio justo; sin margen.",
+    "TEX/SEA o6.5 o u6.5: la línea de 6.5 con dos abridores de élite deja el total sin ventaja medible contra la línea justa."
+  ],
+  "autopsia": "El cierre reciente deja una lectura clara: TOR/ATH o9.5 terminó 0-2, un over pedido a dos abridores en un parque grande sin que ninguna de las dos ofensivas viniera caliente — eso es fallo de proceso, no varianza. En cambio TB ML y SD Spread -1.5 salieron de matchups donde la ofensiva propia estaba funcionando, que es el patrón que sostiene los aciertos. Hoy corrijo el criterio de totales: no doy ninguno porque en los tres candidatos falta la señal de ofensivas frías o el precio ya está justo, y me quedo solo en moneylines parejos.",
+  "resumen": "Día corto y selectivo: cuatro de los cinco juegos o están fuera de la banda de precio o no ofrecen margen real. Me quedo con tres moneylines a precio parejo donde el mercado parece estar cobrando reputación o localía por encima de lo que dicen los datos: Texas con deGrom y el bullpen de Seattle en contra, Tampa Bay ante una Atlanta que apenas anota 2.5 carreras por juego, y los White Sox aprovechando que Pittsburgh no batea a los zurdos. Ningún total hoy: ninguno pasó las comprobaciones de bullpen, parque y ofensiva.",
+  "valor_dia": {
+    "apostables": 2,
+    "seguimiento": 1,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
+  }
+}
