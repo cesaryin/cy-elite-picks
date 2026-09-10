@@ -92,31 +92,31 @@
    }
   },
   "inicio_utc": "2026-09-10T23:05Z",
-  "visto": "2026-09-10T20:57:42+00:00",
+  "visto": "2026-09-10T21:23:21+00:00",
   "cerrado": false
  },
  "PIT@CWS": {
   "ml": {
-   "PIT": -109,
-   "CWS": -110
+   "PIT": -104,
+   "CWS": -115
   },
   "total": {
    "linea": 7.5,
-   "over": -115,
-   "under": -104
+   "over": -119,
+   "under": -102
   },
   "spread": {
    "PIT": {
     "linea": -1.5,
-    "cuota": 154
+    "cuota": 158
    },
    "CWS": {
     "linea": 1.5,
-    "cuota": -187
+    "cuota": -193
    }
   },
   "inicio_utc": "2026-09-10T23:40Z",
-  "visto": "2026-09-10T20:57:42+00:00",
+  "visto": "2026-09-10T21:23:21+00:00",
   "cerrado": false
  }
 }
