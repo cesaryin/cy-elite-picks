@@ -73,7 +73,7 @@
         "lado": "under",
         "linea": 7.0
       },
-      "cuota_apertura_ref": 100,
+      "cuota_apertura_ref": -103,
       "valor": {
         "prob_estimada": 52.0,
         "prob_justa": 48.24,
@@ -125,7 +125,7 @@
     "cuota_combinada": 332,
     "prob_combinada": 24.7,
     "ev_pct": 6.67,
-    "nota": "Las dos jugadas del dia con mas valor medido, combinadas. Cada pata pasa el filtro por si sola — es la unica forma de que un parlay gane a la larga. No cuenta en el balance. EV del combinado: +6.7%."
+    "nota": "Los dos analisis del dia con mas valor medido, combinados. Cada pata pasa el filtro por si sola — es la unica forma de que una combinada gane a la larga. No computa en el record. EV del combinado: +6.7%."
   },
   "descartes": [
     "KC/BOS u8.5: capas a favor (Gray, bullpen BOS 3.20, ambas ofensivas bajo 4.3 c/j) pero el consenso esta a -115, fuera de la banda de precio donde este sistema gana.",
