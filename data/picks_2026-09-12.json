@@ -26,7 +26,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": -109,
+      "cuota_apertura_ref": -108,
       "valor": {
         "prob_estimada": 53.0,
         "prob_justa": 50.0,
@@ -132,7 +132,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": 100,
+      "cuota_apertura_ref": 109,
       "valor": {
         "prob_estimada": 49.0,
         "prob_justa": 47.48,
@@ -155,7 +155,9 @@
         "alcanzable": false,
         "contexto": {
           "mercado_movido": true,
-          "fuerza": "FUERTE"
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "delta_pp": -3.6
         }
       },
       "unidades": 0.0
