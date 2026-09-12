@@ -28,7 +28,7 @@ name: Reloj del dia (dispara el motor)
 # el siguiente tramo sigue donde lo dejo.
 #
 # QUE HACE FALTA: el secreto MOTOR_DISPATCH_TOKEN, un token fine-grained con
-# permiso "Actions: write" sobre cy-elite-motor Y sobre cy-elite-picks (lo
+# permiso "Actions: write" sobre cy-elite-motor Y sobre cy-elite-lab (lo
 # segundo, para poder pasarse el testigo a si mismo). Nada mas.
 # ===========================================================================
 
@@ -89,7 +89,23 @@ jobs:
         run: |
           set -u
           MOTOR="https://api.github.com/repos/cesaryin/cy-elite-motor/actions/workflows"
-          YO="https://api.github.com/repos/cesaryin/cy-elite-picks/actions/workflows/reloj.yml/dispatches"
+          # LA URL DE SI MISMO SE DEDUCE, NO SE ESCRIBE (12-sep-2026).
+          #
+          # ESTO ROMPIO EL RELOJ Y COSTO UN DIA ENTERO DE AUTOMATIZACION. El
+          # 11-sep el repo se renombro de cy-elite-picks a cy-elite-lab. Aqui
+          # el nombre estaba escrito a mano, asi que a las 02:23 del dia
+          # siguiente, al pasarse el testigo, la API respondio:
+          #
+          #     relevo de espera -> 307
+          #
+          # 307 es "eso se llama ahora de otra forma". curl SIN -L no sigue
+          # redirecciones, asi que el POST se perdio, el testigo no llego y la
+          # cadena murio ahi: ni picks, ni refrescos del LAB, ni capturas de
+          # cuotas durante todo el dia. El workflow salio en VERDE.
+          #
+          # github.repository lo rellena GitHub con el nombre REAL del repo en
+          # cada ejecucion. Vuelve a renombrarse y esto sigue funcionando.
+          YO="https://api.github.com/repos/${{ github.repository }}/actions/workflows/reloj.yml/dispatches"
           A="Accept: application/vnd.github+json"
           PRESUPUESTO=$((5 * 3600))     # 5 h; el limite duro de un job son 6
 
@@ -168,7 +184,7 @@ jobs:
             ESPERA=$((OBJ - AHORA))
             if [ $(( (AHORA - INICIO) + ESPERA )) -gt "$PRESUPUESTO" ]; then
               echo "El siguiente objetivo no cabe en este tramo. Paso el testigo en $((MIN - 1)) min."
-              curl -s -o /dev/null -w "  relevo -> %{http_code}\n" -X POST \
+              curl -sL -o /dev/null -w "  relevo -> %{http_code}\n" -X POST \
                 -H "Authorization: Bearer $TK" -H "$A" "$YO" \
                 -d "{\"ref\":\"master\",\"inputs\":{\"desde\":\"$((MIN - 1))\"}}"
               exit 0
@@ -196,7 +212,7 @@ jobs:
               CUERPO='{"ref":"main","inputs":{"arranca_reloj":"false"}}'
             fi
 
-            curl -s -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
+            curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
               -H "Authorization: Bearer $TK" -H "$A" \
               "$MOTOR/$WF/dispatches" -d "$CUERPO"
           done
@@ -239,19 +255,19 @@ jobs:
 
           if [ "$FALTA" -le 0 ]; then
             echo "  el ancla ya paso; arranco la jornada ahora mismo."
-            curl -s -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
+            curl -sL -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
               -H "Authorization: Bearer $TK" -H "$A" "$YO" \
               -d '{"ref":"master","inputs":{"desde":"-1"}}'
           elif [ "$FALTA" -le "$CABE" ]; then
             echo "  duermo $((FALTA / 60)) min y arranco la jornada."
             sleep "$FALTA"
-            curl -s -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
+            curl -sL -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
               -H "Authorization: Bearer $TK" -H "$A" "$YO" \
               -d '{"ref":"master","inputs":{"desde":"-1"}}'
           else
             echo "  no cabe: duermo lo que puedo y paso el testigo."
             sleep "$CABE"
-            curl -s -o /dev/null -w "  relevo de espera -> %{http_code}\n" -X POST \
+            curl -sL -o /dev/null -w "  relevo de espera -> %{http_code}\n" -X POST \
               -H "Authorization: Bearer $TK" -H "$A" "$YO" \
               -d '{"ref":"master","inputs":{"desde":"-1","espera":"1"}}'
           fi
