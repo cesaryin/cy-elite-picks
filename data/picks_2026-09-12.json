@@ -52,7 +52,8 @@
           "fuerza": "FUERTE"
         }
       },
-      "unidades": 0.0
+      "unidades": 0.0,
+      "inicio_utc": "2026-09-12T20:10:00Z"
     },
     {
       "nivel": "plata",
@@ -105,7 +106,8 @@
           "mercado_movido": false
         }
       },
-      "unidades": 0.0
+      "unidades": 0.0,
+      "inicio_utc": "2026-09-12T18:20:00Z"
     },
     {
       "nivel": "bronce",
@@ -160,7 +162,8 @@
           "delta_pp": -3.6
         }
       },
-      "unidades": 0.0
+      "unidades": 0.0,
+      "inicio_utc": "2026-09-12T23:15:00Z"
     }
   ],
   "parlay": null,
