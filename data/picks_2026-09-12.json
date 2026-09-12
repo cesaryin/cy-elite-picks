@@ -1,0 +1,183 @@
+{
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CLE ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -108,
+      "prob_estimada": 53.0,
+      "razon": "Mercado a 50/50 exacto y no lo veo así: MIN llega con el lineup apagado (.193 avg y 3.0 carreras/juego en la semana) frente a un abridor local con 5.25 de ERA. CLE anota 4.3 c/j y cierra con el bullpen más fiable de los dos (3.15 vs 3.89).",
+      "equipos": [
+        "CLE",
+        "MIN"
+      ],
+      "destacado": "CLE",
+      "hora": "3:10 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva"
+      ],
+      "contra": "El abridor de CLE no tiene muestra real de temporada y CLE batea .662 de OPS contra zurdos, justo la mano del rival.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": -109,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 50.0,
+        "prob_implicita": 51.92,
+        "cuota": -108,
+        "cuota_justa_mercado": -100,
+        "ev_pct": 2.07,
+        "ev_kalshi_pct": -1.3,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 3.0,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.07% por debajo del minimo exigido (2.5%)",
+        "mejor_precio": {
+          "cuota": -103,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "plata",
+      "pick": "PIT ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 105,
+      "prob_estimada": 49.5,
+      "razon": "Ventaja clara de brazo abridor (FIP 2.62 multianual contra un rival con apenas 10% de K-BB) en un juego que el mercado paga por encima de la paridad. PIT batea .754 de OPS contra derechos y sus relevistas van 3.77, a la par de los locales.",
+      "equipos": [
+        "PIT",
+        "CHC"
+      ],
+      "destacado": "PIT",
+      "hora": "1:20 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "bullpen"
+      ],
+      "contra": "PIT solo produce 3.2 carreras por juego en la última semana y CHC llega caliente con 5.5 c/j en un parque que suele premiar al bateo.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PIT",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 104,
+      "valor": {
+        "prob_estimada": 49.5,
+        "prob_justa": 47.02,
+        "prob_implicita": 48.78,
+        "cuota": 105,
+        "cuota_justa_mercado": 113,
+        "ev_pct": 1.47,
+        "ev_kalshi_pct": -2.12,
+        "precio_minimo": 107,
+        "precio_publicado": 107,
+        "precio_equilibrio": 103,
+        "discrepancia_pp": 2.48,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.47% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": 109,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        }
+      },
+      "unidades": 0.0
+    },
+    {
+      "nivel": "bronce",
+      "pick": "PHI ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 102,
+      "prob_estimada": 49.0,
+      "razon": "Lectura floja pero con precio: ATL viene con la ofensiva hundida (.565 de OPS y 2.7 carreras/juego en siete juegos) contra un abridor propio de FIP 4.04, y PHI cierra mejor (bullpen 3.38 con cerrador de 1.82). Ventaja corta, por eso va al final.",
+      "equipos": [
+        "PHI",
+        "ATL"
+      ],
+      "destacado": "PHI",
+      "hora": "6:15 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen"
+      ],
+      "contra": "No hay abridor confirmado de PHI en los datos: si sale un brazo menor, toda la lectura se cae y PHI tampoco batea bien (.663 de OPS semanal).",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": null
+      },
+      "cuota_apertura_ref": 100,
+      "valor": {
+        "prob_estimada": 49.0,
+        "prob_justa": 47.48,
+        "prob_implicita": 49.5,
+        "cuota": 102,
+        "cuota_justa_mercado": 111,
+        "ev_pct": -1.02,
+        "ev_kalshi_pct": -4.55,
+        "precio_minimo": 109,
+        "precio_publicado": 109,
+        "precio_equilibrio": 105,
+        "discrepancia_pp": 1.52,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -1.02% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": 108,
+          "casa": "fanduel"
+        },
+        "alcanzable": false,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 0.0
+    }
+  ],
+  "parlay": null,
+  "descartes": [
+    "COL/DET, NYM/NYY, SD/SF, LAD/MIA, CIN/MIL, KC/BOS, SEA/ATH: los favoritos quedan fuera de la banda de precio donde este sistema tiene ventaja demostrada (-109 a +125).",
+    "SEA/ATH o9.5: el consenso lo paga -110, fuera de banda, pese a los dos bullpen flojos y el parque corto.",
+    "BAL ML: la línea se alargó 3.4 pp en su contra durante la mañana y el abridor local lleva FIP 3.24; no hay ventaja sobre la justa.",
+    "TEX ML +109: el movimiento hacia TEX ya está consumido y su OPS contra derechos (.695) no respalda al abridor con 4.61 de ERA.",
+    "CLE/MIN u8.5: la línea bajó de 9.0 a 8.5 pero el precio (-119) ya se llevó todo el margen.",
+    "HOU ML +122: ofensiva de 3.5 c/j frente a un TB que promedia 5.0 y 11 HR en la semana; mi número no supera la justa.",
+    "Team totals de BAL, TOR, AZ, TEX, CLE y MIN: todos con vig de 6+ puntos y sin diferencia real contra la línea justa."
+  ],
+  "autopsia": "Del último cierre, el F5 de CLE fue una decisión acertable que se torció en el segmento equivocado: CLE terminó ganando 5-2, así que la lectura del equipo era correcta y lo que falló fue acotarla a cinco entradas con un abridor sin muestra. El u7.5 en Atlanta sí fue fallo de proceso: 11 carreras en un juego que cerré por el papel ofensivo reciente sin pesar cómo terminaban los bullpen. Hoy corrijo el criterio, no el mercado: no toco ningún under que no tenga a las dos ofensivas realmente frías y los dos bullpen frescos, y cuando la ventaja está en el equipo completo la tomo en el juego entero, no en un tramo.",
+  "resumen": "Día de mercados caros: la mayoría de los favoritos de la cartelera cotizan por encima del rango donde este análisis rinde, así que el foco está en los tres juegos más parejos. La lectura principal es Cleveland en Minnesota, donde el consenso pone un 50/50 que no cuadra con un lineup local anotando 3.0 carreras por juego y un abridor de 5.25. Detrás, Pittsburgh con la mejor ventaja de brazo abridor del día a precio de perro, y Filadelfia como lectura corta y declaradamente floja apoyada en una ofensiva de Atlanta en caída libre.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 3,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": 2.0
+  }
+}
