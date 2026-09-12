@@ -85,6 +85,20 @@ section{display:none}section.on{display:block}
    adaptado a tu reloj, y el title cuenta cual era la de Houston. Sin color
    propio — no es una alerta, es una cortesia. */
 .h-loc{border-bottom:1px dotted var(--faint);cursor:help}
+/* LA TARJETA CERRADA Y SU GANCHO (12-sep-2026) — ver _tarjeta_cerrada().
+   Conserva el marco y la medalla del nivel a proposito: lo que se tapa es el
+   contenido, no la categoria. Que se vea que ahi hay una señal elite es medio
+   argumento de venta; taparla tambien seria tirarlo. */
+.card.cerr{border-style:dashed}
+.cerr-t{color:var(--soft);font-size:19px}
+.cerr-ic{width:26px;height:26px;color:var(--faint)}
+.gan{margin-top:13px;background:linear-gradient(160deg,rgba(212,175,55,.10),var(--panel));border:1px solid rgba(212,175,55,.4);border-radius:12px;padding:13px 14px}
+.gan-t{font-size:13px;font-weight:800;color:var(--gold2);margin-bottom:6px}
+.gan-t time{border-bottom-color:rgba(212,175,55,.5)}
+.gan-d{font-size:12.5px;line-height:1.55;color:var(--soft)}
+.gan-d b{color:var(--text)}
+.gan-b{display:inline-block;margin-top:11px;background:var(--gold);color:#0d1117;font-weight:800;font-size:13px;padding:9px 16px;border-radius:9px;text-decoration:none}
+.gan-b:hover,.gan-b:focus-visible{background:var(--gold2)}
 .mut{color:#8b949e}
 /* EL PIE LEGAL (11-sep-2026) — ver _pie(). Se llama .legal y NO .pie porque
    Trends ya usa .pie para el pie de sus tarjetas de rival, con otros valores:
@@ -442,4 +456,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     } catch (e) {}
   }
 })();
-</script><!-- generado 09/12/2026 10:43 AM CT --></body></html>
+</script><!-- generado 09/12/2026 11:23 AM CT --></body></html>
