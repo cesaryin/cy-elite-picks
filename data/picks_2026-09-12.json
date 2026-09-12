@@ -103,7 +103,8 @@
         },
         "alcanzable": true,
         "contexto": {
-          "mercado_movido": false
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
         }
       },
       "unidades": 0.0,
@@ -134,7 +135,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": 109,
+      "cuota_apertura_ref": 114,
       "valor": {
         "prob_estimada": 49.0,
         "prob_justa": 47.48,
@@ -159,7 +160,7 @@
           "mercado_movido": true,
           "fuerza": "FUERTE",
           "a_favor": true,
-          "delta_pp": -3.6
+          "delta_pp": -4.7
         }
       },
       "unidades": 0.0,
