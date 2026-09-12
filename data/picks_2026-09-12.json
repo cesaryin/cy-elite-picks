@@ -26,7 +26,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": -108,
+      "cuota_apertura_ref": -109,
       "valor": {
         "prob_estimada": 53.0,
         "prob_justa": 50.0,
@@ -48,8 +48,7 @@
         },
         "alcanzable": true,
         "contexto": {
-          "mercado_movido": true,
-          "fuerza": "FUERTE"
+          "mercado_movido": false
         }
       },
       "unidades": 0.0,
@@ -103,8 +102,7 @@
         },
         "alcanzable": true,
         "contexto": {
-          "mercado_movido": true,
-          "fuerza": "FUERTE"
+          "mercado_movido": false
         }
       },
       "unidades": 0.0,
@@ -135,7 +133,7 @@
         "lado": null,
         "linea": null
       },
-      "cuota_apertura_ref": 114,
+      "cuota_apertura_ref": 120,
       "valor": {
         "prob_estimada": 49.0,
         "prob_justa": 47.48,
@@ -160,7 +158,7 @@
           "mercado_movido": true,
           "fuerza": "FUERTE",
           "a_favor": true,
-          "delta_pp": -4.7
+          "delta_pp": -6.0
         }
       },
       "unidades": 0.0,
